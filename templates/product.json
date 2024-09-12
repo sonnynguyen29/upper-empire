@@ -1,0 +1,149 @@
+{
+  "sections": {
+    "product-form": {
+      "type": "template--product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_font": "h2",
+            "margin_bottom": 0
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_font": "h3",
+            "shipping_policy": false,
+            "tax_included": false,
+            "margin_bottom": 20
+          }
+        },
+        "f0f0e917-92a5-4957-a68e-2d0bb38d7819": {
+          "type": "separator",
+          "settings": {
+            "margin_bottom": 40
+          }
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "hide_out_of_stock_variants": false,
+            "variant_style": "swatches",
+            "thumbnail_changes_variant": false,
+            "size_guide_page": "",
+            "size_option_name": "Size",
+            "margin_bottom": 20
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+            "margin_bottom": 40
+          }
+        },
+        "a7717974-ed85-4cde-80ef-4751178acf57": {
+          "type": "text-with-icon",
+          "settings": {
+            "icon": "truck",
+            "text": "Ships within 1-2 business days",
+            "link": "",
+            "margin_bottom": 10
+          }
+        },
+        "2f3ddc8d-6514-403d-a884-88c9a0294300": {
+          "type": "stock-level-indicator",
+          "settings": {
+            "stock-level-indicator-style": "classic",
+            "bar-indicator-color": "standard",
+            "stock_indicator_animation": true,
+            "stock-range": 10,
+            "show-stock-count": false,
+            "stock-level-notice": "always",
+            "in-stock-message": "Ready to ship",
+            "low-stock-message": "Selling fast",
+            "out-of-stock-message": "Back in soon",
+            "margin_bottom": 40
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_smart_checkout": true,
+            "enable_gift_card_recipient_form": true,
+            "margin_bottom": 20
+          }
+        },
+        "a55b9011-1b1a-4353-9d97-7bdcd60949f2": {
+          "type": "product-description",
+          "settings": {
+            "collapsible_tab": false,
+            "icon": "none",
+            "heading": "Description",
+            "open_close_icon": "plus_minus",
+            "margin_bottom": 20
+          }
+        },
+        "fbfe241f-1b44-41cd-ae22-e866bdad9aaf": {
+          "type": "cross-sells",
+          "settings": {
+            "title": "You may also like...",
+            "cross_sell_product_1": "",
+            "cross_sell_product_2": "",
+            "cross_sell_product_3": "",
+            "collapsible_tab": false,
+            "icon": "none",
+            "open_close_icon": "plus_minus",
+            "margin_bottom": 20
+          }
+        },
+        "4fdb087c-4728-4785-b270-a71a092b7898": {
+          "type": "social_sharing",
+          "settings": {
+            "margin_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "f0f0e917-92a5-4957-a68e-2d0bb38d7819",
+        "options",
+        "quantity",
+        "a7717974-ed85-4cde-80ef-4751178acf57",
+        "2f3ddc8d-6514-403d-a884-88c9a0294300",
+        "buy_buttons",
+        "a55b9011-1b1a-4353-9d97-7bdcd60949f2",
+        "fbfe241f-1b44-41cd-ae22-e866bdad9aaf",
+        "4fdb087c-4728-4785-b270-a71a092b7898"
+      ],
+      "settings": {
+        "enable_sticky": true,
+        "show_out_of_stock_email": false,
+        "image_size": "medium",
+        "image-display": "thumbnails",
+        "thumbnail_position": "left",
+        "enable_video_loop": true,
+        "app_margin_bottom": 20
+      }
+    },
+    "product-description": {
+      "type": "template--product--description",
+      "disabled": true,
+      "settings": {
+        "enable_readmore": false
+      }
+    },
+    "apps": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "product-form",
+    "product-description",
+    "apps"
+  ]
+}

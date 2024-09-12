@@ -1,0 +1,11 @@
+.style_Members Only{
+  text-align: center;
+}
+
+.style_Members Only a {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: #efefef;
+  margin: 0 5px;
+}

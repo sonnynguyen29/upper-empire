@@ -1,0 +1,310 @@
+{
+  "sections": {
+    "main": {
+      "type": "template--page",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "page_title_enabled": true,
+        "page_width": "narrow"
+      }
+    },
+    "image_gallery_HVnH94": {
+      "type": "image--gallery",
+      "blocks": {
+        "image_jwqbDC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC00039.jpg",
+            "link": "",
+            "title": "",
+            "subheading": "",
+            "overlay-btn-text": "",
+            "show-gradient-overlay": false,
+            "overlay_font_color": "#262428",
+            "overlay_color": "#ffffff"
+          }
+        },
+        "image_qre63k": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/phoenix-64.jpg",
+            "link": "",
+            "title": "",
+            "subheading": "",
+            "overlay-btn-text": "",
+            "show-gradient-overlay": false,
+            "overlay_font_color": "#262428",
+            "overlay_color": "#ffffff"
+          }
+        },
+        "image_xbVLjm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC04452.jpg",
+            "link": "",
+            "title": "",
+            "subheading": "",
+            "overlay-btn-text": "",
+            "show-gradient-overlay": false,
+            "overlay_font_color": "#262428",
+            "overlay_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_jwqbDC",
+        "image_qre63k",
+        "image_xbVLjm"
+      ],
+      "settings": {
+        "colors": "white",
+        "title": "",
+        "richtext": "",
+        "remove-spacing": true,
+        "full-width": false,
+        "section-width": "full",
+        "content-position": "hide"
+      }
+    },
+    "image_image_with_text_6k3KKP": {
+      "type": "image--image-with-text",
+      "settings": {
+        "colors": "light",
+        "image": "shopify:\/\/shop_images\/seattler-106.jpg",
+        "text_overlapping_image": false,
+        "section-width": "full",
+        "layout": "left",
+        "text_alignment": "left",
+        "title": "Upper Empire Culture",
+        "text": "<p>Upper Empire continues to unite sneaker enthusiasts and members around the world. We dedicate our focus and resources towards building community values and spreading our name through generosity. We attend numerous events and organize giveaways to give back to those who support and share the same passion as us within the sneaker community. With each event, our goal is the inspire change, spread joy, and cultivate a lasting impression of positivity for event attendees. Feel free to join our Instagram and Facebook community to get the most updated news on when we attend events or host giveaways!<\/p><p><\/p><p><\/p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "collage_builder_xF4qDP": {
+      "type": "collage-builder",
+      "blocks": {
+        "video_DW7jqC": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=QI6NEgXifCs",
+            "mobile_video_url": "",
+            "button_icon_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_icon_hover_color": "#d4d3d4",
+            "button_background_hover_color": "#494949"
+          }
+        },
+        "video_QV9NVA": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=mbzBucKL1N4",
+            "mobile_video_url": "",
+            "button_icon_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_icon_hover_color": "#d4d3d4",
+            "button_background_hover_color": "#494949"
+          }
+        },
+        "video_6GbUVm": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=gvZYX0VV8Pw",
+            "mobile_video_url": "",
+            "button_icon_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_icon_hover_color": "#d4d3d4",
+            "button_background_hover_color": "#494949"
+          }
+        },
+        "text_9b8Ceh": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading": "Include text details",
+            "heading_size": 60,
+            "text": "Use text paired with images or videos to create a captivating brand story, explain details of your products, or highlight store promotions.",
+            "text_alignment": "left",
+            "button_label": "",
+            "url": "shopify:\/\/collections\/all",
+            "desktop_position": "md-min-align-center md-min-justify-left",
+            "background_color": "#e6e5e7",
+            "text_color": "#262428",
+            "button_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#d4d3d4",
+            "button_hover_background_color": "#494949"
+          }
+        }
+      },
+      "block_order": [
+        "video_DW7jqC",
+        "video_QV9NVA",
+        "video_6GbUVm",
+        "text_9b8Ceh"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "content",
+        "width_1": "3",
+        "height_1": "3",
+        "width_2": "3",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
+      }
+    },
+    "visual_navigation_banner_ibNRLk": {
+      "type": "visual-navigation-banner",
+      "blocks": {
+        "navigation_link_JGDmHg": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "shopify:\/\/blogs\/news\/dior-x-jordan-1",
+            "link_image": "shopify:\/\/shop_images\/113.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_qrnjXb": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "shopify:\/\/blogs\/news",
+            "link_image": "shopify:\/\/shop_images\/IMG_1158.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_wFiaGM": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "shopify:\/\/blogs\/news",
+            "link_image": "shopify:\/\/shop_images\/IMG_2784.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_ehBYfW": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "shopify:\/\/blogs\/news",
+            "link_image": "shopify:\/\/shop_images\/IMG_2834.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_bL3XDc": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "shopify:\/\/blogs\/news",
+            "link_image": "shopify:\/\/shop_images\/LIS09336.jpg",
+            "link_text": ""
+          }
+        },
+        "navigation_link_nmewip": {
+          "type": "navigation_link",
+          "settings": {
+            "link_url": "shopify:\/\/blogs\/news\/air-jordan-1-travis-x-fragment",
+            "link_image": "shopify:\/\/shop_images\/LIS05909.jpg",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_JGDmHg",
+        "navigation_link_qrnjXb",
+        "navigation_link_wFiaGM",
+        "navigation_link_ehBYfW",
+        "navigation_link_bL3XDc",
+        "navigation_link_nmewip"
+      ],
+      "settings": {
+        "title": "",
+        "image_style": "circle"
+      }
+    },
+    "video_video_Th9VdK": {
+      "type": "video--video",
+      "disabled": true,
+      "settings": {
+        "colors": "white",
+        "title": "",
+        "richtext": "",
+        "width_classes": 75,
+        "url": "",
+        "autoplay": false,
+        "loop": true,
+        "mute": true,
+        "video_overlay_opacity": 50
+      }
+    },
+    "collage_builder_MVK88j": {
+      "type": "collage-builder",
+      "blocks": {
+        "video_jrCwji": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=HmiP6xKHbLk",
+            "mobile_video_url": "",
+            "button_icon_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_icon_hover_color": "#d4d3d4",
+            "button_background_hover_color": "#494949"
+          }
+        },
+        "video_KYbKxT": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=s8jxuQcN1Ys&t=2s",
+            "mobile_video_url": "",
+            "button_icon_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_icon_hover_color": "#d4d3d4",
+            "button_background_hover_color": "#494949"
+          }
+        }
+      },
+      "block_order": [
+        "video_jrCwji",
+        "video_KYbKxT"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "content",
+        "width_1": "2",
+        "height_1": "3",
+        "width_2": "2",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_gallery_HVnH94",
+    "image_image_with_text_6k3KKP",
+    "collage_builder_xF4qDP",
+    "visual_navigation_banner_ibNRLk",
+    "video_video_Th9VdK",
+    "collage_builder_MVK88j"
+  ]
+}

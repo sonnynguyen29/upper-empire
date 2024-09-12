@@ -1,0 +1,53 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer-main": {
+      "type": "footer-main",
+      "blocks": {
+        "social": {
+          "type": "social",
+          "settings": {
+            "social_title": "Connect with us"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "newsletter_title": "Join the Mailing List",
+            "footer_newsletter_description": "<p>Subscribe! Be the first to know about new collections and exclusive promos!<\/p>"
+          }
+        },
+        "menu_nyiLVm": {
+          "type": "menu",
+          "settings": {
+            "menu_title": "Navigation",
+            "footer_linklist": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "social",
+        "newsletter",
+        "menu_nyiLVm"
+      ],
+      "settings": {
+        "alignment": "left"
+      }
+    },
+    "footer-bottom": {
+      "type": "footer-bottom",
+      "settings": {
+        "show_methods_of_payment": true,
+        "center_content_on_desktop": true,
+        "footer_text": "",
+        "show_currency_selector": true,
+        "show_locale_selector": true
+      }
+    }
+  },
+  "order": [
+    "footer-main",
+    "footer-bottom"
+  ]
+}

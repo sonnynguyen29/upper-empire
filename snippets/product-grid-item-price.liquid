@@ -1,0 +1,46 @@
+{% comment %}
+  Check if the product is on sale and set a variable to be used below.
+{% endcomment %}
+{% assign on_sale = false %}
+{% if product.compare_at_price > product.price %}
+  {% assign on_sale = true %}
+{% endif %}
+
+{% comment %}
+  Check if the product is sold out and set a variable to be used below.
+{% endcomment %}
+{% assign sold_out = true %}
+{% if product.available %}
+  {% assign sold_out = false %}
+{% endif %}
+
+{% comment %}
+  You can show a leading 'from' or 'up to' by checking 'product.price_varies'
+  if your variants have different prices.
+{% endcomment %}
+<a href="{{ product.url | within: collection }}" data-product-id="{{ product.id }}" tabindex="-1">
+    <div class="product-price--sale{% unless on_sale %} hidden{% endunless %}">
+      {% if product.price_varies %}
+        <span class="price--from-text">{{ 'products.general.from_text' | t }}</span>
+      {% endif %}
+
+      <span class="money price-line-through sale-price price--compare-at-price">
+        <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+        {{- product.compare_at_price | money -}}
+      </span>
+
+      <span class="money price--sale-price">{{ product.price | money }}</span>
+    </div>
+  
+    <div class="product-price--regular{% if on_sale %} hidden{% endif %}">
+      {% if product.price_varies %}
+        <span class="price--from-text">{{ 'products.general.from_text' | t }}</span> 
+        <span class="money price--from-price">{{ product.price | money }}</span>
+      {% else %}
+        <span class="money price--regular-price">{{ product.price | money }}</span>
+      {% endif %}
+    </div>
+
+  {% assign first_variant = product.variants[0] %}
+  {% render 'unit-price-measurement-variant', variant: first_variant %}
+</a>

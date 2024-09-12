@@ -1,0 +1,146 @@
+{
+  "sections": {
+    "af74e87e-1556-4a47-b50d-86b13100ed8a": {
+      "type": "collage-builder",
+      "blocks": {
+        "template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1": {
+          "type": "image",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/DSC04208.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/DSC04208.jpg",
+            "heading": "Contact us",
+            "heading_size": 60,
+            "button_label": "",
+            "url": "",
+            "desktop_position": "md-min-align-center md-min-justify-center",
+            "mobile_position": "md-max-align-center md-max-justify-center",
+            "text_color": "#fff",
+            "button_color": "#e6e5e7",
+            "button_background_color": "#262428",
+            "button_hover_color": "#d4d3d4",
+            "button_hover_background_color": "#494949",
+            "overlay_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "template--14831909306438__af74e87e-1556-4a47-b50d-86b13100ed8a-image-1"
+      ],
+      "settings": {
+        "color_scheme": "white",
+        "title": "",
+        "description": "",
+        "remove_spacing": false,
+        "section_width": "full",
+        "width_1": "1",
+        "height_1": "6",
+        "width_2": "3",
+        "height_2": "3",
+        "width_3": "3",
+        "height_3": "3",
+        "width_4": "2",
+        "height_4": "2",
+        "width_5": "2",
+        "height_5": "2",
+        "width_6": "1",
+        "height_6": "4",
+        "block_alignment": "center"
+      }
+    },
+    "1645633383c94b2bb2": {
+      "type": "accordion",
+      "blocks": {
+        "16456333831a200dc8-0": {
+          "type": "tab_content",
+          "settings": {
+            "question": "What is your return or exchange policy?",
+            "text": "<p>upperempire.com does not offer returns or exchanges on any products. All sales are final. Upper Empire will also not be held liable for any lost or misrouted parcels. Please provide correct information before placing an order to prevent losses in transit or uncertainties. Please refer to our Refund Policy page under navigation for more details.<\/p>"
+          }
+        },
+        "16456333831a200dc8-1": {
+          "type": "tab_content",
+          "settings": {
+            "question": "Are all shoes and products authentic?",
+            "text": "<p>Yes, all shoes and products sold by Upper Empire are guaranteed to be authentic. Each item is carefully checked in hand by our verification team between distribution centers.<\/p>"
+          }
+        },
+        "16456333831a200dc8-2": {
+          "type": "tab_content",
+          "settings": {
+            "question": "How long does it take for my order to ship?",
+            "text": "<p>All orders take about 1-2 business days to be processed and then shipped. Orders placed on Fridays or weekend days will be shipped out the following Monday. We appreciate your patience. Please refer to our Shipping Policy page under navigation for more details.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16456333831a200dc8-0",
+        "16456333831a200dc8-1",
+        "16456333831a200dc8-2"
+      ],
+      "settings": {
+        "colors": "white",
+        "title": "Frequently asked questions",
+        "faq_icon": "caret"
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b959a": {
+      "type": "section--contact-form",
+      "blocks": {
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-0": {
+          "type": "name_input",
+          "settings": {
+            "required": true,
+            "input_width": "full"
+          }
+        },
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-1": {
+          "type": "email_input",
+          "settings": {
+            "required": true,
+            "input_width": "partial"
+          }
+        },
+        "f03adfd7-1474-4f7a-a28a-c0c1430bd42d": {
+          "type": "tel_input",
+          "settings": {
+            "required": false,
+            "input_width": "partial"
+          }
+        },
+        "fbb2a872-0770-4f56-913c-b7853e33a9c0": {
+          "type": "custom_input",
+          "settings": {
+            "placeholder": "Order number",
+            "required": false,
+            "input_width": "full"
+          }
+        },
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-3": {
+          "type": "message_input",
+          "settings": {
+            "required": false,
+            "input_width": "full"
+          }
+        }
+      },
+      "block_order": [
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-0",
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-1",
+        "f03adfd7-1474-4f7a-a28a-c0c1430bd42d",
+        "fbb2a872-0770-4f56-913c-b7853e33a9c0",
+        "template--14753984643142__057a50d5-3fee-4ea2-a832-2d38f47b959a-16788945317184afd8-3"
+      ],
+      "settings": {
+        "section_color_scheme": "white",
+        "form_width": "narrow",
+        "form_title": "CONTACT US",
+        "form_description": "<p>At Upper Empire, we understand that you may have concerns or questions about our products or services. We are here to address any inquiries you may have and provide you with the information you need to make an informed decision. <\/p><p>Leave any responses down below in our comment box!<\/p>"
+      }
+    }
+  },
+  "order": [
+    "af74e87e-1556-4a47-b50d-86b13100ed8a",
+    "1645633383c94b2bb2",
+    "057a50d5-3fee-4ea2-a832-2d38f47b959a"
+  ]
+}

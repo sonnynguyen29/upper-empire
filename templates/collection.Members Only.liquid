@@ -1,0 +1,9 @@
+{% if customer.tags contains "Members Only" %}
+{% section 'main-collection-product-grid' %}
+{% else %}
+<div class="page-width style_Members Only">
+  <h2>Please login to view this collection</h2>
+  <a href="{{ routes.account_login_url }}">Login</a>
+<!--   <a href="{{ routes.account_register_url }}">Register</a> -->
+</div>
+{% endif %}
