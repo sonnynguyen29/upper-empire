@@ -1,0 +1,176 @@
+.product-pre-order-block .btn {
+  font-weight: 400;
+}
+.product-pre-order-block pre-order-layout {
+  display: none;
+}
+.product-pre-order-block pre-order-layout.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.product-pre-order-block pre-order-layout #overlay {
+  position: absolute;
+  display: block;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  visibility: hidden;
+  animation: 0.3s ease 0s 1 normal forwards running overlay-background-fade-in;
+}
+.product-pre-order-block pre-order-layout pre-order-container {
+  max-height: 90vh;
+  overflow-y: auto;
+  display: block;
+  min-width: 335px;
+  max-width: 370px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 26px 80px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  z-index: 11;
+  padding: 35px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+.product-pre-order-block pre-order-layout pre-order-container .btn-close {
+  position: absolute;
+  z-index: 3;
+  top: 30px;
+  right: 30px;
+  line-height: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.product-pre-order-block pre-order-layout pre-order-container .heading-block {
+  text-align: center;
+  margin: 15px;
+}
+.product-pre-order-block pre-order-layout pre-order-container .heading-block .heading {
+  margin-bottom: 0;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form.hidden {
+  display: none;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field {
+  position: relative;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field input {
+  width: 100%;
+  padding: 22.5px 15px 7.5px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin: 0;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field label {
+  pointer-events: none;
+  z-index: 1;
+  position: absolute;
+  left: 15px;
+  top: 16px;
+  transform-origin: top left;
+  transform: none;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  color: rgba(32, 32, 32, 0.5019607843);
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field:focus-within label,
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field label.filled {
+  transform: translateY(-8px) scale(0.7);
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field input.error {
+  border: 1.5px solid red;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field .error-message {
+  color: red;
+  display: none;
+  font-size: 12px;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field .error-message.block {
+  display: block;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .btn {
+  width: 100%;
+  border-radius: 5px;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-policy {
+  text-align: center;
+  font-size: 10px;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .btn-submit.disabled {
+  cursor: not-allowed;
+  background-color: #373737;
+  opacity: 0.7;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .btn-submit.disabled .title {
+  display: none;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .btn-submit.disabled .loader {
+  display: inline-block;
+}
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .btn-submit .loader {
+  display: none;
+  width: 32px;
+  height: 32px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+@media screen and (min-width: 768px) {
+  .product-pre-order-block pre-order-layout pre-order-container {
+    max-width: 450px;
+  }
+}
+.product-pre-order-block pre-order-layout .success-notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+}
+.product-pre-order-block .pre-order-button {
+  width: 100%;
+  max-width: none;
+}
+
+.z-auto {
+  z-index: auto;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+@keyframes overlay-background-fade-in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: #000000;
+    visibility: visible;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
