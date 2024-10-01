@@ -208,28 +208,76 @@ class PreOrderForm extends HTMLElement {
 
         window.Shopify.captcha.protect(this, () => {
             // EmailJS send function
-            emailjs.send('service_qyf9904', 'template_ajdcxgc', {
-                name: formData.name.value,
-                email: formData.email.value,
-                phone: formData.phone.value,
-                required: formData.required.value,
-                productName: this.dataset.productName,
-                productSKU: this.dataset.productSKU,
-                productURl: window.location.href,
-                productHandle: this.dataset.productHandle
-            })
-                .then(response => {
-                    console.log('Success:', response);
-                    // alert('Email sent successfully!');
+            // emailjs.send('service_qyf9904', 'template_ajdcxgc', {
+            //     name: formData.name.value,
+            //     email: formData.email.value,
+            //     phone: formData.phone.value,
+            //     required: formData.required.value,
+            //     productName: this.dataset.productName,
+            //     productSKU: this.dataset.productSKU,
+            //     productURl: window.location.href,
+            //     productHandle: this.dataset.productHandle
+            // })
+            //     .then(response => {
+            //         console.log('Success:', response);
+            //         // alert('Email sent successfully!');
 
-                    this.classList.add('hidden');
-                    document.querySelector('.success-notification').classList.remove('hidden');
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('Failed to send email.');
-                });
+            //         this.classList.add('hidden');
+            //         document.querySelector('.success-notification').classList.remove('hidden');
+            //     })
+            //     .catch(error => {
+            //         console.error('Error:', error);
+            //         alert('Failed to send email.');
+            //     });
+
+            const data = {
+                "customer": {
+                    "name": formData.name.value,
+                    "email": formData.email.value,
+                    "phone": formData.phone.value,
+                    "additional_information": formData.required.value
+                },
+                "product": {
+                    "title": this.dataset.productName,
+                    "url": window.location.href,
+                    "image": "https://upperempire.com/cdn/shop/files/CAD64B9D-6249-45B1-9A90-3FC2CA7537F8.jpg?v=1704783732",
+                    "handle": this.dataset.productHandle
+                }
+            }
+
+            this.sendDynamicTemplateEmail(data);
         })
+    }
+
+    async sendDynamicTemplateEmail(emailData) {
+        const url = 'https://ysd9na5g80.execute-api.us-east-1.amazonaws.com/upper-empire/preorder-notification-email';
+
+        const data = {
+            body: JSON.stringify({
+                "toEmail": "dat.nguyennguyenthanh2@gmail.com",
+                "templateData": {
+                    ...emailData
+                }
+            })
+        };
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                console.log('Email sent successfully');
+            } else {
+                console.error('Error sending email:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Request failed:', error);
+        }
     }
 
     initialEventFormField() {
@@ -256,9 +304,6 @@ class PreOrderForm extends HTMLElement {
         this.classList.remove('hidden');
         document.querySelector('.success-notification').classList.add('hidden');
 
-        emailjs.init({
-            publicKey: '7s0KFRTTMnl9wwpBV',
-        });
         this.formFields = this.querySelectorAll('.form-field');
         this.initialEvent();
     }
