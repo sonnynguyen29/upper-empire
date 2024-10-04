@@ -1,74 +1,91 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
-<head>
-  <link rel="preload" href="{{ 'theme.min.css' | asset_url }}" as="style" />
-  {% render 'site-favicon' %}
-  <!-- MetaData ================================================== -->
-  {% render 'page-metadata' %}
-  <!-- FontHandler ================================================== -->
-  {% render 'font-handler' %}
+  <head>
+    {% render 'site-favicon' %}
+    <!-- MetaData ================================================== -->
+    {% render 'page-metadata' %}
+    <!-- FontHandler ================================================== -->
+    {% render 'font-handler' %}
 
-  {% render 'critical-resources' %}
-  <!-- CSS ================================================== -->
-  {% render 'page-styles' %}
+    {% render 'critical-resources' %}
+    <!-- CSS ================================================== -->
+    {% render 'page-styles' %}
 
-  <!-- Header hook for plugins ================================================== -->
-  {{ content_for_header }}
-</head>
+    <!-- Header hook for plugins ================================================== -->
+    {{ content_for_header }}
+  </head>
 
-{% comment %}
-  Add the page template as a class for easy page or template specific styling.
-{% endcomment %}
-<body id="{{ page_title | handle }}" class="{% if template == 'page.contact' %}contact-page {% endif %}{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% unless settings.animations_enabled %} animations-disabled{% endunless %}{% if settings.page_fade_enabled %} page-fade{% endif %}{% if settings.color_body_bg == settings.header-bg-color %} white--match{% endif %}{% if settings.product-grid != 'natural' %} images-aspect-ratio{% endif %} ">
   {% comment %}
-  Cart Drawer, also used by 'Quick View', and 'Search'
+    Add the page template as a class for easy page or template specific styling.
   {% endcomment %}
-  {% render 'right-drawer' %}
+  <body
+    id="{{ page_title | handle }}"
+    class="{% if template == 'page.contact' %}contact-page {% endif %}{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% unless settings.animations_enabled %} animations-disabled{% endunless %}{% if settings.page_fade_enabled %} page-fade{% endif %}{% if settings.color_body_bg == settings.header-bg-color %} white--match{% endif %}{% if settings.product-grid != 'natural' %} images-aspect-ratio{% endif %} "
+  >
+    {% comment %}
+      Cart Drawer, also used by 'Quick View', and 'Search'
+    {% endcomment %}
+    {% render 'right-drawer' %}
 
-  <div id="DrawerOverlay" class="drawer-overlay"></div>
+    <div id="DrawerOverlay" class="drawer-overlay"></div>
 
-  <div id="PageContainer" data-editor-open="{{ request.design_mode }}" data-cart-action="{{ settings.ajax_cart_method }}" data-language-url="{{ localization.language.root_url }}">
-    <div class="no-js disclaimer">
-      <p>This store requires javascript to be enabled for some features to work correctly.</p>
-    </div>
+    <div
+      id="PageContainer"
+      data-editor-open="{{ request.design_mode }}"
+      data-cart-action="{{ settings.ajax_cart_method }}"
+      data-language-url="{{ localization.language.root_url }}"
+    >
+      <div class="no-js disclaimer">
+        <p>This store requires javascript to be enabled for some features to work correctly.</p>
+      </div>
 
-    {% sections 'header-group' %}
+      {% sections 'header-group' %}
 
-    {% if settings.enable_breadcrumbs %}
-      {% unless template == 'index' or template == 'cart' or template == 'search' %}
-        {% unless template.name == 'collection' or template == 'list-collections' or template contains 'contact' or template.name == 'product' %}
-          <div id="breadcrumbs" class="wrapper-padded">
-            {% render 'breadcrumb' %}
-          </div>
+      {% if settings.enable_breadcrumbs %}
+        {% unless template == 'index' or template == 'cart' or template == 'search' %}
+          {% unless template.name == 'collection'
+            or template == 'list-collections'
+            or template contains 'contact'
+            or template.name == 'product'
+          %}
+            <div id="breadcrumbs" class="wrapper-padded">
+              {% render 'breadcrumb' %}
+            </div>
+          {% endunless %}
         {% endunless %}
-      {% endunless %}
-    {% endif %}
+      {% endif %}
 
-    {% if template == 'index' %}
-      <div class="flow-homepage">
-    {% elsif template == 'cart' or template contains 'customers/' %}
-      <div class="main-content page-main--wrapper">
-    {% else %}
-      <div class="wrapper main-content page-main--wrapper">
-    {% endif %}
+      {% liquid
+        assign className = ''
+
+        if template == 'index'
+          assign className = 'flow-homepage'
+        elsif template == 'cart' or template contains 'customers/'
+          assign className = 'main-content page-main--wrapper'
+        else
+          assign className = 'wrapper main-content page-main--wrapper'
+        endif
+      %}
+
+      <div class="{{ className }}">
         {{ content_for_layout }}
       </div>
-  </div>
+    </div>
 
     <div class="footer-wrapper">
       {% sections 'footer-group' %}
     </div>
 
-  {% if settings.popup--enable %}
-    {% render 'popup' %}
-  {% endif %}
+    {% if settings['popup--enable'] %}
+      {% render 'popup' %}
+    {% endif %}
 
-  {% if settings.enable_verification_popup %}
-    {% render 'verification-popup' %}
-  {% endif %}
+    {% if settings.enable_verification_popup %}
+      {% render 'verification-popup' %}
+    {% endif %}
 
-  {% render 'back-to-top-button' %}
+    {% render 'back-to-top-button' %}
 
-  {%  render 'page-scripts' %}
-</body>
+    {% render 'page-scripts' %}
+  </body>
 </html>
