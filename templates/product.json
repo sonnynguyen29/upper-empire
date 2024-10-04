@@ -120,7 +120,7 @@
       "settings": {
         "enable_sticky": true,
         "show_out_of_stock_email": false,
-        "image_size": "medium",
+        "image_size": "large",
         "image-display": "thumbnails",
         "thumbnail_position": "left",
         "enable_video_loop": true,

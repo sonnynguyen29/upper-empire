@@ -54,9 +54,9 @@
         "grid-desktop": 3,
         "grid-mobile": "2",
         "colors": "white",
-        "title": "",
+        "title": "NEW ARRIVALS",
         "richtext": "",
-        "collection": "collection-1",
+        "collection": "new-arrivals",
         "show_view_all": true
       }
     },
