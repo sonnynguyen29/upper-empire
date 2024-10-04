@@ -1,0 +1,13 @@
+{% if settings.favicon != blank %}
+  <link rel="shortcut icon" href="{{ settings.favicon | img_url: '180x180', crop: 'center' }}" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ settings.favicon | img_url: '180x180', crop: 'center'  }}">
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="180x180"
+    href="{{ settings.favicon | img_url: '180x180', crop: 'center'  }}"
+  >
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ settings.favicon | img_url: '32x32', crop: 'center'  }}">
+  <link rel="icon" type="image/png" sizes="194x194" href="{{ settings.favicon | img_url: '194x194', crop: 'center'  }}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ settings.favicon | img_url: '192x192', crop: 'center'  }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ settings.favicon | img_url: '16x16', crop: 'center'  }}">
+{% endif %}
