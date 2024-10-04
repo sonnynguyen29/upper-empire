@@ -1,0 +1,41 @@
+<script type="application/json" id="wetheme-global">
+  {
+    {% comment %}Translations that will be used in javascript section handling{% endcomment %}
+    "translations": {
+      "addToCart": {{ 'products.product.add_to_cart' | t | json }},
+      "added": {{ 'products.product.added' | t | json }},
+      "soldOut": {{ 'products.product.sold_out' | t | json }},
+      "unavailable": {{ 'products.product.unavailable' | t | json }},
+      "no_results_html": {{ 'general.search.no_results_html' | t | json }},
+      "results_for_html": {{ 'general.search.results_for_html' | t | json }},
+      "products": {{ 'general.search.products' | t | json }},
+      "pages": {{ 'general.search.pages' | t | json }},
+      "collections": {{ 'general.search.collections' | t | json }},
+      "articles": {{ 'general.search.articles' | t | json }},
+      "suggestions": {{ 'general.search.suggestions' | t | json }},
+      "quick_shop": {{ 'products.product.quick_shop' | t | json }},
+      "view_options": {{ 'products.product.view_options' | t | json }},
+      "read_more_html": {{ 'products.product.read_more_html' | t | json }},
+      "read_less_html": {{ 'products.product.read_less_html' | t | json }},
+      "youve_viewed": {{ 'collections.paginate.youve_viewed' | t | json }},
+      "load_more": {{ 'collections.paginate.load_more' | t | json }},
+      "productAdded": {{ 'products.product.added' | t | json }},
+      "loading": {{ 'collections.paginate.loading' | t | json }},
+      "giftwrap_label": {{ 'products.general.giftwrap_label' | t | json }},
+      "yes": {{ 'products.general.yes' | t | json }},
+      "days": {{ 'general.time.days' | t | json }},
+      "hours": {{ 'general.time.hours' | t | json }},
+      "minutes": {{ 'general.time.minutes' | t | json }},
+      "seconds": {{ 'general.time.seconds' | t | json }}
+    },
+    "moneyFormat": {{ shop.money_format | json }},
+    "giftwrapProduct": {{ settings.giftwrap_product_selector | json }}
+  }
+</script>
+{% if request.design_mode %}
+  <script is="delay-script" url="{{ 'theme-editor.js' | asset_url }}"></script>
+{% endif %}
+
+<script is="delay-script" url="{{ 'lazy-component.js' | asset_url }}"></script>
+<script is="delay-script" url="{{ 'SafeLoadScripts.js' | asset_url }}"></script>
+<script is="delay-script" nomodule url="{{ 'theme.legacy.min.js' | asset_url }}"></script>

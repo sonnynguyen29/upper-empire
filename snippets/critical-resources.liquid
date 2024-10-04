@@ -1,0 +1,35 @@
+<script src="//unpkg.com/@ungap/custom-elements" async></script>
+
+<script defer src="{{ 'delay-resource.js' | asset_url }}"></script>
+<script is="delay-script" url="{{ 'first-interactive.min.js' | asset_url }}"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script defer type="module" src="{{ 'theme.min.js' | asset_url }}"></script>
+
+<script type="text/javascript">
+  window.wetheme = {
+    name: 'Flow',
+    webcomponentRegistry: {
+      registry: {},
+      checkScriptLoaded: function (key) {
+        return window.wetheme.webcomponentRegistry.registry[key] ? true : false;
+      },
+      register: function (registration) {
+        if (!window.wetheme.webcomponentRegistry.checkScriptLoaded(registration.key)) {
+          window.wetheme.webcomponentRegistry.registry[registration.key] = registration;
+        }
+      },
+    },
+  };
+</script>
+
+{% if template contains 'customers' %}
+  <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer></script>
+{% endif %}
+
+{% if template.name == 'article' %}
+  <script src="{{ 'textSlideshow.js' | asset_url }}" defer></script>
+{% endif %}
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+</script>

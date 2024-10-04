@@ -1,0 +1,58 @@
+{% render 'css-variables' %}
+{% style %}
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+    background-color: var(--body-color);
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background-color: var(--body-color);
+    min-height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 100%;
+    overflow-x: hidden;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .sr-only-focusable:active,
+  .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+{% endstyle %}
+
+{{ 'theme.min.css' | asset_url | stylesheet_tag }}
+<link is="delay-stylesheet" href="{{ 'swiper.min.css' | asset_url }}">
+<link is="delay-stylesheet" href="{{ 'photoswipe.min.css' | asset_url }}">
+<link is="delay-stylesheet" href="{{ 'custom.css' | asset_url }}">
+{% if settings.animations_enabled %}
+  <link is="delay-stylesheet" href="{{ 'animate.min.css' | asset_url }}">
+{% endif %}
+
+{% if settings['popup--enable'] %}
+  <link is="delay-stylesheet" href="{{ 'fancybox.min.css' | asset_url }}">
+{% endif %}
