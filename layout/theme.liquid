@@ -56,18 +56,18 @@
       {% endif %}
 
       {% liquid
-        assign className = ''
+        assign class_name = ''
 
         if template == 'index'
-          assign className = 'flow-homepage'
+          assign class_name = 'flow-homepage'
         elsif template == 'cart' or template contains 'customers/'
-          assign className = 'main-content page-main--wrapper'
+          assign class_name = 'main-content page-main--wrapper'
         else
-          assign className = 'wrapper main-content page-main--wrapper'
+          assign class_name = 'wrapper main-content page-main--wrapper'
         endif
       %}
 
-      <div class="{{ className }}">
+      <div class="{{ class_name }}">
         {{ content_for_layout }}
       </div>
     </div>
