@@ -1,0 +1,112 @@
+#product-grid-slide {
+    background-color: #f9f9f9;
+    padding: 60px 8px;
+    .product-grid-container {
+        .product-grid-title {
+            text-align: center;
+
+            h2 {
+                font-size: 38px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+        }
+
+        .splide {
+            .splide__arrow {
+                background: transparent;
+            }
+        }
+
+        .product-grid {
+            .product-grid-item {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .product-image {
+                    position: relative;
+
+                    .product-image--default {
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    .product-image--hover {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 2;
+                        opacity: 0;
+                        transition: opacity 0.5s;
+                    }
+                }
+
+                .product-info {
+                    color: #000000;
+                    font-weight: 500;
+                    letter-spacing: -0.02rem;
+                    position: relative;
+
+                    .product-description {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+                    }
+
+                    .product-variants {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 8px;
+                        align-items: start;
+                        justify-content: start;
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        .product-variants-title {
+                            text-align: center;
+                            padding: 2px;
+
+                            &:hover {
+                                border-bottom: 1px solid #000000;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .product-image {
+                        .product-image--hover {
+                            opacity: 1;
+                        }
+                    }
+
+                    .product-info {
+                        .product-description {
+                            opacity: 0;
+                        }
+
+                        .product-variants {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section-redirect-url {
+            margin-top: 20px;
+            text-align: center;
+
+            a {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+}

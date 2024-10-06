@@ -7,7 +7,27 @@
         "hero_banner_image_mobile": "shopify:\/\/shop_images\/mobile-hero-image.png",
         "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
       }
-    }
+    },
+    "product-grid-slide": {
+      "type": "product-grid-slide",
+      "settings": {
+        "section_title": "New Arrivals",
+        "product_list": [
+          "adidas-yeezy-boost-350-v2-beluga-reflective",
+          "adidas-yeezy-boost-350-v2-bred-infants",
+          "adidas-yeezy-boost-350-v2-static-black-reflective",
+          "adidas-yeezy-boost-700-wave-runner",
+          "adidas-yeezy-desert-boot-oil",
+          "adidas-yeezy-desert-boot-rock",
+          "adidas-yeezy-boost-700-wave-runner-infants",
+          "adidas-yeezy-foam-runner-mx-cinder",
+          "adidas-yeezy-foam-runner-mx-granite",
+          "adidas-yeezy-foam-runner-sand"
+        ],
+        "section_url": "/",
+        "redirect_label": "● Shop all"
+      }
+    },
     // "video_video_hero_iM9X83": {
     //   "type": "video--video-hero",
     //   "settings": {
@@ -278,7 +298,8 @@
     // }
   },
   "order": [
-    "hero_banner"
+    "hero_banner",
+    "product-grid-slide"
     // "video_video_hero_iM9X83",
     // "3643d38b-24f2-4040-ab67-4b4b44a63aab",
     // "image_gallery_Q4QX9m",
