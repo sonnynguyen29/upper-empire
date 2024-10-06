@@ -1,0 +1,40 @@
+section#hero-banner {
+    .hero__banner-container {
+        position: relative;
+
+        .hero__banner-image-wrapper {
+            .hero__banner-image-desktop {
+                display: none;
+
+                @media screen and (min-width: 768px) {
+                    display: block;
+                }
+            }
+
+            .hero__banner-image-mobile {
+                display: block;
+
+                @media screen and (min-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+        .hero__banner-title {
+            position: absolute;
+            top: auto;
+            bottom: 20px;
+            left: 10px;
+            text-align: left;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            width: 80%;
+
+            @media screen and (min-width: 768px) {
+                width: auto;
+            }
+        }
+    }
+}

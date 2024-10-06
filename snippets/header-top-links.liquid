@@ -1,0 +1,67 @@
+{{ 'header-top-links.css' | asset_url | stylesheet_tag }}
+
+<ul class="site-header__links top-links--icon-links">
+  {% if section.settings.enable_search %}
+    <li>
+      <a href="{{ routes.search_url }}" class="search-button" aria-label="{{ 'layout.header.search' | t }}">
+        {% if section.settings.show_icons %}
+          {% render 'theme-icon' with icon: 'search', iconSize: 20 %}
+        {% else %}
+          <span class="header--supporting-text">{{ 'layout.header.search' | t }}</span>
+        {% endif %}
+      </a>
+    </li>
+  {% endif %}
+
+  <li>
+    <a
+      href="{{ routes.cart_url }}"
+      class="site-header__cart-toggle{% if settings.ajax_cart_method == "drawer" %} js-drawer-open-right-link{% endif %}{% if section.settings.cart_count %} cart-count-enabled {{ section.settings.cart-style }}{% endif %}"
+      aria-controls="CartDrawer"
+      aria-expanded="false"
+      aria-label="{{ 'layout.header.your_cart' | t }}"
+    >
+      {% if section.settings.show_icons %}
+        {% render 'theme-icon' with icon: section.settings.cart-style %}
+        {% if section.settings.cart_count %}
+          <span class="cart-item-count-bubble cart-item-count-header cart-item-count-header--quantity{% if cart.item_count == 0 %} {% endif %}">
+            {{- cart.item_count -}}
+          </span>
+        {% endif %}
+      {% else %}
+        <span class="header--supporting-text">
+          {{ 'layout.header.your_cart' | t }}
+          {% if section.settings.cart_count %}
+            <span class="cart-item-count-header cart-item-count-header--has-label cart-item-count-header--quantity{% if cart.item_count == 0 %} {% endif %}">
+              {{- cart.item_count -}}
+            </span>
+          {% endif %}
+        </span>
+      {% endif %}
+    </a>
+  </li>
+
+  {% if shop.customer_accounts_enabled %}
+    {% if customer %}
+      <li>
+        <a href="{{ routes.account_url }}" title="{{ 'layout.customer.account' | t }}" class="account-button">
+          {% if section.settings.show_icons %}
+            {% render 'theme-icon' with icon: 'user', iconSize: 20 %}
+          {% else %}
+            <span class="header--supporting-text">{{ 'layout.header.account' | t }}</span>
+          {% endif %}
+        </a>
+      </li>
+    {% else %}
+      <li>
+        <a href="{{ routes.account_login_url }}" title="{{ 'layout.customer.log_in' | t }}" class="log-in-button">
+          {% if section.settings.show_icons %}
+            {% render 'theme-icon' with icon: 'user', iconSize: 20 %}
+          {% else %}
+            <span class="header--supporting-text">{{ 'layout.header.account' | t }}</span>
+          {% endif %}
+        </a>
+      </li>
+    {% endif %}
+  {% endif %}
+</ul>

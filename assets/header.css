@@ -1,0 +1,61 @@
+.header-section--wrapper .nav-bar.mobile-nav-bar-wrapper .mobile-nav-bar--inner .mobile-grid--table {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 13px;
+}
+.header-section--wrapper .nav-bar.mobile-nav-bar-wrapper .mobile-nav-bar--inner .mobile-grid--table button.site-nav__link {
+  padding: 0;
+  margin: 0;
+}
+.header-section--wrapper .nav-bar.mobile-nav-bar-wrapper .mobile-nav-bar--inner .mobile-grid--table .site-header__logo {
+  padding: 0;
+}
+.header-section--wrapper .nav-bar.mobile-nav-bar-wrapper .mobile-nav-bar--inner .mobile-grid--table .site-nav--mobile {
+  gap: 12px;
+}
+.header-section--wrapper .nav-bar.mobile-nav-bar-wrapper .mobile-nav-bar--inner .mobile-grid--table .site-nav--mobile a {
+  padding: 0;
+}
+.header-section--wrapper .nav-bar.mobile-nav-bar-wrapper .mobile-nav-bar--inner .mobile-grid--table .grid__item {
+  margin: 0;
+}
+.header-section--wrapper .site-header {
+  padding: 0 10px 0 16px;
+  border-bottom: 0;
+}
+.header-section--wrapper .site-header .site-header__wrapper .site-header__wrapper__left {
+  margin: 0;
+}
+.header-section--wrapper .site-header .site-header__wrapper .site-header__wrapper__left .logo-desktop {
+  height: 27px;
+}
+.header-section--wrapper .site-header .site-header__wrapper .site-header__wrapper__right {
+  margin: 0;
+  justify-content: space-between;
+}
+.header-section--wrapper .site-header .site-header__wrapper .site-header__wrapper__right .site-nav .site-nav--link-wrapper .site-nav--link-text.active {
+  background-position: left bottom, left bottom;
+  background-size: 100% 1px, 100% 1px;
+}
+
+.mega-menu-wrapper .mega-menu .site-nav__dropdown {
+  padding: 0 27px;
+}
+.mega-menu-wrapper .mega-menu .site-nav__dropdown .container {
+  max-width: unset;
+  margin: 0 auto;
+}
+.mega-menu-wrapper .mega-menu .site-nav__dropdown .container .mega-menu-block {
+  padding: 15px 0 30px 0;
+}
+.mega-menu-wrapper .mega-menu .site-nav__dropdown .container .mega-menu-block .menu-link a {
+  color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (min-width: 1290px) {
+  .mega-menu-wrapper .mega-menu .site-nav__dropdown .container {
+    margin: 0 240px;
+  }
+}

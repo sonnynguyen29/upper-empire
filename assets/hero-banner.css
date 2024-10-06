@@ -1,0 +1,36 @@
+section#hero-banner .hero__banner-container {
+  position: relative;
+}
+section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop {
+    display: block;
+  }
+}
+section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile {
+    display: none;
+  }
+}
+section#hero-banner .hero__banner-container .hero__banner-title {
+  position: absolute;
+  top: auto;
+  bottom: 20px;
+  left: 10px;
+  text-align: left;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  section#hero-banner .hero__banner-container .hero__banner-title {
+    width: auto;
+  }
+}
