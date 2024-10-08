@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="section-redirect-url">
-        <a href="{{ section.settings.section_url }}" class="section-redirect-button">
+        <a href="{{ section.settings.collection.url }}" class="section-redirect-button">
           {{- section.settings.redirect_label -}}
         </a>
       </div>
@@ -109,9 +109,9 @@
       "limit": 10
     },
     {
-      "type": "page",
-      "id": "section_url",
-      "label": "Section Url"
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
     },
     {
       "type": "text",
