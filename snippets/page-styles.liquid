@@ -1,52 +1,123 @@
 {% render 'css-variables' %}
 {% style %}
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+      background-color: var(--body-color);
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background-color: var(--body-color);
+      min-height: 100%;
+      margin: 0;
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-columns: 100%;
+      overflow-x: hidden;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+    }
+
+    @font-face {
+      font-family: 'Regensburg';
+      src: url('{{ 'Regensburg.ttf' |  asset_url }}') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'PPNeueMontreal';
+      src: url("{{ 'PP Neue Montreal-Variable.ttf' | asset_url }}") format('truetype');
+      font-weight: 100;
+      font-style: normal;
   }
 
-  html {
-    box-sizing: border-box;
-    background-color: var(--body-color);
-    height: 100%;
-    margin: 0;
+  @font-face {
+      font-family: 'PPNeueMontreal';
+      src: url("{{ 'PP Neue Montreal-Variable.ttf' | asset_url }}") format('truetype');
+      font-weight: 200;
+      font-style: normal;
   }
 
-  body {
-    background-color: var(--body-color);
-    min-height: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 100%;
-    overflow-x: hidden;
+  @font-face {
+      font-family: 'PPNeueMontreal';
+      src: url("{{ 'PP Neue Montreal-Variable.ttf' | asset_url }}") format('truetype');
+      font-weight: 300;
+      font-style: normal;
   }
 
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+  @font-face {
+      font-family: 'PPNeueMontreal';
+      src: url("{{ 'PP Neue Montreal-Variable.ttf' | asset_url }}") format('truetype');
+      font-weight: 400;
+      font-style: normal;
   }
 
-  .sr-only-focusable:active,
-  .sr-only-focusable:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto;
+  @font-face {
+      font-family: 'PPNeueMontreal';
+      src: url("{{ 'PP Neue Montreal-Variable.ttf' | asset_url }}") format('truetype');
+      font-weight: 500;
+      font-style: normal;
   }
+
+  @font-face {
+      font-family: 'PPNeueMontreal';
+      src: url("{{ 'PP Neue Montreal-Variable.ttf' | asset_url }}") format('truetype');
+      font-weight: 600;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'PPNeueMontreal';
+      src: url("{{ 'PP Neue Montreal-Variable.ttf' | asset_url }}") format('truetype');
+      font-weight: 700;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'PPNeueMontreal';
+      src: url("{{ 'PP Neue Montreal-Variable.ttf' | asset_url }}") format('truetype');
+      font-weight: 800;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'PPNeueMontreal';
+      src: url("{{ 'PP Neue Montreal-Variable.ttf' | asset_url }}") format('truetype');
+      font-weight: 900;
+      font-style: normal;
+  }t-style: normal;
+    }
 {% endstyle %}
 
 {{ 'theme.min.css' | asset_url | stylesheet_tag }}
-{{ 'theme-custom.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'theme-custom.css' | asset_url | stylesheet_tag }} {% endcomment %}
 {{ 'header.css' | asset_url | stylesheet_tag }}
 
 <link is="delay-stylesheet" href="{{ 'swiper.min.css' | asset_url }}">

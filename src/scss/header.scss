@@ -1,5 +1,19 @@
 .header-section--wrapper {
     .nav-bar.mobile-nav-bar-wrapper {
+        .wrapper-padded {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            max-width: 1660px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            .wrapper-padded {
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+        }
+
         .mobile-nav-bar--inner {
             .mobile-grid--table {
                 height: 40px;
@@ -42,6 +56,10 @@
 
                 .logo-desktop {
                     height: 27px;
+                }
+
+                .responsive-image-wrapper img {
+                    object-fit: contain !important;
                 }
             }
 

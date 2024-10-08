@@ -1,3 +1,15 @@
+.header-section--wrapper .nav-bar.mobile-nav-bar-wrapper .wrapper-padded {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  max-width: 1660px;
+}
+@media screen and (min-width: 1280px) {
+  .header-section--wrapper .nav-bar.mobile-nav-bar-wrapper .wrapper-padded {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
 .header-section--wrapper .nav-bar.mobile-nav-bar-wrapper .mobile-nav-bar--inner .mobile-grid--table {
   height: 40px;
   display: flex;
@@ -31,6 +43,9 @@
 }
 .header-section--wrapper .site-header .site-header__wrapper .site-header__wrapper__left .logo-desktop {
   height: 27px;
+}
+.header-section--wrapper .site-header .site-header__wrapper .site-header__wrapper__left .responsive-image-wrapper img {
+  object-fit: contain !important;
 }
 .header-section--wrapper .site-header .site-header__wrapper .site-header__wrapper__right {
   margin: 0;
