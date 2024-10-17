@@ -110,26 +110,23 @@
       "blocks": {
         "19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "title_xdJAyX": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
         "19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67",
         "title_xdJAyX"
       ],
-      "settings": {
-      }
+      "settings": {},
+      "disabled": true
     },
     "advanced_layout_custom_html_HPYVtm": {
       "type": "advanced-layout--custom-html",
-      "settings": {
-      }
+      "settings": {}
     },
     "product-grid": {
       "type": "template--collection",
@@ -152,18 +149,12 @@
           "settings": {
             "product_card_price__font": "body"
           }
-        },
-        "product_card_quick_shop": {
-          "type": "product_card_quick_shop",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "product_card_image",
         "product_card_title",
-        "product_card_price",
-        "product_card_quick_shop"
+        "product_card_price"
       ],
       "settings": {
         "products-per-page": 10,

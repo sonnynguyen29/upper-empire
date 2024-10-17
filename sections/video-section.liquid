@@ -1,11 +1,12 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
-
 <section id="video-section">
   <div class="video-section-container">
     <div class="video-section-wrapper">
-      {{ section.settings.video_thumbnail | image_url: height: 800 | image_tag }}
-      <div class="video-section-video">
-        <iframe src="{{ section.settings.video_section_url }}" frameborder="0"></iframe>
+      <div id="video-section">
+        {{
+          section.settings.video
+          | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, width: 1000, height: 1000
+        }}
       </div>
     </div>
     <div class="image-right-side-wrapper">
@@ -25,9 +26,9 @@
   "name": "Video Section",
   "settings": [
     {
-      "type": "text",
-      "id": "video_section_url",
-      "label": "Video URL"
+      "type": "video",
+      "id": "video",
+      "label": "Video"
     },
     {
       "type": "image_picker",

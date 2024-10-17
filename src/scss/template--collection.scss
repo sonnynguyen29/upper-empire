@@ -1,0 +1,100 @@
+.wrapper.main-content.page-main--wrapper {
+    .main-page-container {
+        &.wrapper-padded {
+            max-width: unset;
+            padding: 0 8px;
+        }
+
+        .collection_grid {
+            .collection-header__title {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+
+                @media screen and (min-width: 768px) {
+                    padding: 20px 0;
+                    margin: 0;
+                }
+
+                .page-title {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .collection-main-body {
+            margin: 0;
+            .collection-main-body-inner {
+                margin: 0;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 8px;
+
+                @media screen and (min-width: 768px) {
+                    grid-template-columns: 1fr 1fr;
+                    row-gap: 20px;
+                }
+
+                @media screen and (min-width: 1280px) {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                .grid__item {
+                    width: unset !important;
+                    padding: 0;
+                    margin: 0;
+
+                    product-card {
+                        text-align: start;
+                        margin: 0;
+
+                        .product-card-detail--wrapper {
+                            position: relative;
+                            .product-card-detail {
+                                position: relative;
+                                opacity: 1;
+                            }
+
+                            .product-cart-variants {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 10px;
+                                justify-content: start;
+                                align-items: center;
+                                position: absolute;
+                                opacity: 0;
+                                top: 0;
+                                left: 0;
+
+                                .product-cart-variants__variant {
+                                    font-size: 14px;
+                                    font-weight: 500;
+
+                                    &:hover {
+                                        border-bottom: 1px solid #000000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        product-card {
+                            .product-card-detail--wrapper {
+                                .product-card-detail {
+                                    opacity: 0;
+                                }
+
+                                .product-cart-variants {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

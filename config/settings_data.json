@@ -2,7 +2,7 @@
   "current": {
     "color_body_text": "#373737",
     "color_primary": "#373737",
-    "color_body_bg_secondary": "#F4F4F4",
+    "color_body_bg_secondary": "#f9f9f9",
     "sale_price_color": "#373737",
     "sale_badge_color": "#E95050",
     "sold_out_badge_color": "#373737",
@@ -71,7 +71,7 @@
       "color_body_text": "#242424",
       "color_primary": "#242424",
       "color_body_bg": "#ffffff",
-      "color_body_bg_secondary": "#f9f9fb",
+      "color_body_bg_secondary": "#f9f9f9",
       "sale_price_color": "#dc3545",
       "sale_badge_color": "#494949",
       "sold_out_badge_color": "#494949",
@@ -157,7 +157,7 @@
     "Crafted": {
       "color_body_text": "#373737",
       "color_primary": "#373737",
-      "color_body_bg_secondary": "#F4F4F4",
+      "color_body_bg_secondary": "#f9f9f9",
       "sale_badge_color": "#E95050",
       "sale_price_color": "#373737",
       "sold_out_badge_color": "#373737",

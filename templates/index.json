@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_banner": {
@@ -80,7 +80,7 @@
     "video-section": {
       "type": "video-section",
       "settings": {
-        "video_section_url": "",
+        "video": "shopify://files/videos/Travis j4.mp4",
         "video_thumbnail": "shopify://shop_images/Travis_j4_1.png",
         "image_right_side": "shopify://shop_images/video-right-image.png",
         "section_title": "We are on a mission to create a close-knit community founded on authentic passion and admiration for sneakers.",

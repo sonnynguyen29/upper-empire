@@ -17,6 +17,24 @@
 #video-section .video-section-container .video-section-wrapper {
   grid-column: 1/2;
   grid-row: 2/2;
+  position: relative;
+  width: 100%;
+  height: 600px; /* Full height of the viewport or you can set a specific height */
+  overflow: hidden;
+}
+#video-section .video-section-container .video-section-wrapper #video-section {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Takes up the full height of the parent */
+}
+#video-section .video-section-container .video-section-wrapper #video-section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire area without stretching */
+  transform: translate(-50%, -50%);
 }
 #video-section .video-section-container .video-section-title-wrapper {
   grid-column: 1/1;
@@ -35,14 +53,6 @@
   text-transform: uppercase;
   font-size: 12px;
 }
-#video-section .video-section-wrapper {
-  position: relative;
-}
-#video-section .video-section-wrapper .video-section-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 @media screen and (min-width: 768px) {
   #video-section {
     padding: 0 8px;
@@ -55,6 +65,8 @@
   #video-section .video-section-container .video-section-wrapper {
     grid-row: 1/3;
     grid-column: 1/1;
+    height: 100%;
+    max-height: 1200px;
   }
   #video-section .video-section-container .image-right-side-wrapper {
     grid-row: 1/1;
