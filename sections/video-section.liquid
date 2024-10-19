@@ -3,10 +3,7 @@
   <div class="video-section-container">
     <div class="video-section-wrapper">
       <div id="video-section">
-        {{
-          section.settings.video
-          | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, width: 1000, height: 1000
-        }}
+        {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
       </div>
     </div>
     <div class="image-right-side-wrapper">

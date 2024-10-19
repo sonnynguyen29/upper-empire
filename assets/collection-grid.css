@@ -28,6 +28,17 @@
   font-size: 14px;
   letter-spacing: -0.02rem;
 }
+#collection-grid .collection-grid-layout .collection-grid-item .collection-image .responsive-image-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#collection-grid .collection-grid-layout .collection-grid-item .collection-image .responsive-image-wrapper img {
+  transition: 850ms cubic-bezier(0.455, 0.03, 0.21, 0.985);
+}
+#collection-grid .collection-grid-layout .collection-grid-item:hover .collection-image .responsive-image-wrapper img {
+  transform: scale(1.075);
+}
 @media screen and (min-width: 768px) {
   #collection-grid {
     padding: 60px 8px;
