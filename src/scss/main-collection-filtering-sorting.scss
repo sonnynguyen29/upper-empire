@@ -486,6 +486,11 @@ summary::-webkit-details-marker {
 .facets__list {
     padding: 0 8px;
     margin: 0;
+
+    &.facets__list_two_columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .facets__item {
@@ -815,6 +820,8 @@ collection-filtering-form .drawer__close button {
     display: flex !important;
     flex-direction: column-reverse;
     gap: 2rem;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .facets__wrapper {
@@ -847,6 +854,13 @@ a[data-swatch="true"] div.color-icon {
         flex-direction: row;
         border: 0;
         background-color: transparent;
+
+        .collection-filters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
     }
 
     .collection-filters__item {

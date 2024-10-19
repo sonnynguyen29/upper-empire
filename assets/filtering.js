@@ -292,6 +292,8 @@ class CollectionFiltersForm extends HTMLElement {
     this.renderActiveFacets(parsedHTML);
 
     if (countsToRender) this.renderCounts(countsToRender, event.target.closest('.js-filter'));
+
+    this.renderTotalFiltersCount(parsedHTML);
   }
 
   renderActiveFacets(html) {
@@ -325,6 +327,21 @@ class CollectionFiltersForm extends HTMLElement {
         target.querySelector(selector).outerHTML = source.querySelector(selector).outerHTML;
       }
     });
+  }
+
+  renderTotalFiltersCount(html) {
+    let totalFilter = 0;
+    html.querySelectorAll('.count-bubble').forEach((e) => {
+      console.log('e.dataset.activeValues', e.dataset.activeValues);
+      if (e.dataset.activeValues) {
+        totalFilter += parseInt(e.dataset.activeValues);
+      }
+    });
+
+    const countBubbleEl = document.querySelector('.collection-filters .count-bubble');
+
+    countBubbleEl.innerHTML = totalFilter;
+    countBubbleEl.style.display = totalFilter > 0 ? 'block' : 'none';
   }
 
   bindActiveFacetButtonEvents() {
