@@ -18,6 +18,11 @@ section#hero-banner {
                     display: none;
                 }
             }
+
+            .hero__banner-image-desktop,
+            .hero__banner-image-mobile {
+                position: relative;
+            }
         }
 
         .hero__banner-title {

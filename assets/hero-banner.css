@@ -17,6 +17,10 @@ section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__b
     display: none;
   }
 }
+section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop,
+section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile {
+  position: relative;
+}
 section#hero-banner .hero__banner-container .hero__banner-title {
   position: absolute;
   top: auto;

@@ -17,9 +17,6 @@
     }
 
     .collection-grid-layout {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(200px, 1fr));
-
         .collection-grid-item {
             position: relative;
 
@@ -68,10 +65,9 @@
                 }
             }
         }
-
-        .collection-grid-layout {
-            grid-template-columns: repeat(3, minmax(200px, 1fr));
-            gap: 8px;
-        }
     }
+}
+
+.splide__arrow {
+    padding-top: 2px;
 }

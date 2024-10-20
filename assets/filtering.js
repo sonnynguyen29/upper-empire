@@ -34,6 +34,15 @@ class CollectionFiltersForm extends HTMLElement {
 
     this.bindActiveFacetButtonEvents();
     this.onDropDownBlur();
+    this.handleEscapeKey();
+  }
+
+  handleEscapeKey() {
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' || event.keyCode === 27) {
+        this.handleDrawerClose().bind(thisproduct);
+      }
+    });
   }
 
   onDropDownBlur() {

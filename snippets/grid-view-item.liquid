@@ -96,9 +96,11 @@
               -%}
             {% endif %}
 
-            {% unless product.available %}
-              {%- render 'badge' with 'sold-out' -%}
-            {% endunless %}
+            {% comment %}
+              {% unless product.available %}
+                {%- render 'badge' with 'sold-out' -%}
+              {% endunless %}
+            {% endcomment %}
           {% endif %}
 
           {% if settings['hover-effect'] and product.media.size > 1 %}
@@ -282,13 +284,17 @@
     <div class="product-card-detail">
       {{ product_title }}
       {{ product_price }}
+      {% if product.available %}
+      {% else %}
+        <span class="product-grid--title">SOLD OUT - Request for Order</span>
+      {% endif %}
     </div>
 
     <div class="product-cart-variants">
       {% for variant in product.variants %}
         <a href="{{ variant.url }}" class="product-cart-variants__variant" data-variant-id="{{ variant.id }}">
           <label for="variant-{{ variant.id }}">
-            <span>{{ variant.title }}</span>
+            <span class="product-grid--title product-grid--title-font-body">{{ variant.title }}</span>
           </label>
         </a>
       {% endfor %}

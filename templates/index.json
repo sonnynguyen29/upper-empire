@@ -11,11 +11,59 @@
   "sections": {
     "hero_banner": {
       "type": "hero-banner",
-      "settings": {
-        "hero_banner_image_desktop": "shopify://shop_images/desktop-hero-image.png",
-        "hero_banner_image_mobile": "shopify://shop_images/mobile-hero-image.png",
-        "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
-      }
+      "blocks": {
+        "hero_banner_desktop_NJwjwc": {
+          "type": "hero_banner_desktop",
+          "settings": {
+            "hero_banner_image_desktop": "shopify://shop_images/desktop-hero-image.png",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+          }
+        },
+        "hero_banner_desktop_nabi6P": {
+          "type": "hero_banner_desktop",
+          "settings": {
+            "hero_banner_image_desktop": "shopify://shop_images/desktop-hero-image.png",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+          }
+        },
+        "hero_banner_desktop_jBMf4T": {
+          "type": "hero_banner_desktop",
+          "settings": {
+            "hero_banner_image_desktop": "shopify://shop_images/desktop-hero-image.png",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+          }
+        },
+        "hero_banner_mobile_WR4U9f": {
+          "type": "hero_banner_mobile",
+          "settings": {
+            "hero_banner_image_mobile": "shopify://shop_images/mobile-hero-image.png",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+          }
+        },
+        "hero_banner_mobile_XidkEr": {
+          "type": "hero_banner_mobile",
+          "settings": {
+            "hero_banner_image_mobile": "shopify://shop_images/mobile-hero-image.png",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+          }
+        },
+        "hero_banner_mobile_MRnmCH": {
+          "type": "hero_banner_mobile",
+          "settings": {
+            "hero_banner_image_mobile": "shopify://shop_images/mobile-hero-image.png",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+          }
+        }
+      },
+      "block_order": [
+        "hero_banner_desktop_NJwjwc",
+        "hero_banner_desktop_nabi6P",
+        "hero_banner_desktop_jBMf4T",
+        "hero_banner_mobile_WR4U9f",
+        "hero_banner_mobile_XidkEr",
+        "hero_banner_mobile_MRnmCH"
+      ],
+      "settings": {}
     },
     "product-grid-slide": {
       "type": "product-grid-slide",
@@ -33,7 +81,7 @@
           "adidas-yeezy-foam-runner-mx-granite",
           "adidas-yeezy-foam-runner-sand"
         ],
-        "collection": "adidas",
+        "collection": "new-arrivals",
         "redirect_label": "● Shop all"
       }
     },
@@ -94,49 +142,49 @@
         "image_picker_cnfLtd": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify://shop_images/25076.png"
+            "image": "shopify://shop_images/432121939_774218811273980_7552797366821012998_n.jpg"
           }
         },
         "image_picker_ULpqPQ": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify://shop_images/62444.png"
+            "image": "shopify://shop_images/432243864_323411054077131_7246398251192015688_n.jpg"
           }
         },
         "image_picker_MaBwAx": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify://shop_images/96121.png"
+            "image": "shopify://shop_images/432243862_916361410492666_2439988818322703425_n.jpg"
           }
         },
         "image_picker_LEUbFx": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify://shop_images/62219.png"
+            "image": "shopify://shop_images/432248630_948762373915641_6136749529405811846_n.jpg"
           }
         },
         "image_picker_bhQH3N": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify://shop_images/25076_1.png"
+            "image": "shopify://shop_images/432121824_946114286865808_291591982407326616_n.jpg"
           }
         },
         "image_picker_WCAbMU": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify://shop_images/62444_1.png"
+            "image": "shopify://shop_images/432240444_887971216413761_2254936241483375737_n.jpg"
           }
         },
         "image_picker_LarQzj": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify://shop_images/96121_1.png"
+            "image": "shopify://shop_images/432248613_7004019346391480_6408442333364406157_n.jpg"
           }
         },
         "image_picker_r7xR9D": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify://shop_images/62219_1.png"
+            "image": "shopify://shop_images/432240445_3647940508820980_6860918781650793869_n.jpg"
           }
         }
       },
