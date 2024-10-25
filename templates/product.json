@@ -102,18 +102,40 @@
           "settings": {
             "margin_bottom": 20
           }
-        }
+        },
+        "product-detail": {
+          "type": "product-detail",
+          "settings": {
+            "block_content": "<p>Product details go here</p>"
+          }
+        },
+        "product-materials": {
+          "type": "product-materials",
+          "settings": {}
+        },
+        "product-size-guide": {
+          "type": "product-size-guide",
+          "settings": {}
+        },
+        "product-shipping-return": {
+          "type": "product-shipping-return",
+          "settings": {}
+        },
       },
       "block_order": [
         "title",
         "price",
         "f0f0e917-92a5-4957-a68e-2d0bb38d7819",
         "options",
+        "a55b9011-1b1a-4353-9d97-7bdcd60949f2",
         "quantity",
         "a7717974-ed85-4cde-80ef-4751178acf57",
         "2f3ddc8d-6514-403d-a884-88c9a0294300",
+        "product-detail",
+        "product-materials",
+        "product-size-guide",
+        "product-shipping-return",
         "buy_buttons",
-        "a55b9011-1b1a-4353-9d97-7bdcd60949f2",
         "fbfe241f-1b44-41cd-ae22-e866bdad9aaf",
         "4fdb087c-4728-4785-b270-a71a092b7898"
       ],

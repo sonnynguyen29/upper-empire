@@ -42,9 +42,6 @@
   #collection-grid .collection-grid-container .collection-grid-title h2 {
     font-size: 38px;
   }
-  #collection-grid .collection-grid-layout {
-    gap: 8px;
-  }
 }
 
 .splide__arrow {
