@@ -52,10 +52,10 @@ class CollectionFiltersForm extends HTMLElement {
       document.addEventListener('click', function (event) {
         var isClickInside = item.contains(event.target);
 
-        if (!isClickInside) {
-          //the click was outside the specifiedElement, close the dropdown
-          item.removeAttribute('open');
-        }
+        // if (!isClickInside) {
+        //   //the click was outside the specifiedElement, close the dropdown
+        //   item.removeAttribute('open');
+        // }
       });
     }
   }
@@ -303,6 +303,7 @@ class CollectionFiltersForm extends HTMLElement {
     if (countsToRender) this.renderCounts(countsToRender, event.target.closest('.js-filter'));
 
     this.renderTotalFiltersCount(parsedHTML);
+    this.renderResetButton(parsedHTML);
   }
 
   renderActiveFacets(html) {
@@ -341,7 +342,6 @@ class CollectionFiltersForm extends HTMLElement {
   renderTotalFiltersCount(html) {
     let totalFilter = 0;
     html.querySelectorAll('.count-bubble').forEach((e) => {
-      console.log('e.dataset.activeValues', e.dataset.activeValues);
       if (e.dataset.activeValues) {
         totalFilter += parseInt(e.dataset.activeValues);
       }
@@ -351,6 +351,21 @@ class CollectionFiltersForm extends HTMLElement {
 
     countBubbleEl.innerHTML = totalFilter;
     countBubbleEl.style.display = totalFilter > 0 ? 'block' : 'none';
+  }
+
+  renderResetButton(parsedHTML) {
+    parsedHTML.querySelectorAll('details.facets__disclosure').forEach((detailEl, index) => {
+      let totalFilter = 0;
+      const countBubble = detailEl.querySelector('.count-bubble');
+      if (countBubble.dataset.activeValues) {
+        totalFilter += parseInt(countBubble.dataset.activeValues);
+      }
+
+      console.log('totalFilter', totalFilter);
+
+      const resetElement = document.querySelector(`details.facets__disclosure[data-index="${index + 1}"] .facets__reset`);
+      resetElement.style.display = totalFilter > 0 ? 'block' : 'none';
+    });
   }
 
   bindActiveFacetButtonEvents() {

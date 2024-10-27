@@ -1,0 +1,54 @@
+{% comment %}
+  {% liquid
+    assign tag_to_collection = 'Women:sneakers-women,Men:sneakers-men,Kids:sneakers-kids' | split: ','
+    assign product_handles = ''
+
+    for tag in product.tags
+      for tag_collection_pair in tag_to_collection
+        assign tag_name = tag_collection_pair | split: ':' | first
+        assign collection_handle = tag_collection_pair | split: ':' | last
+
+        if tag == tag_name
+          assign collection_to_display = collections[collection_handle]
+
+          for collection_product in collection_to_display.products
+            assign product_handles = product_handles | append: collection_product.handle | append: ','
+          endfor
+        endif
+      endfor
+    endfor
+
+    assign product_handles_array = product_handles | split: ',' | uniq
+
+    assign filtered_product_handles_array = ''
+    for handle in product_handles_array
+      assign matched_product = all_products[handle]
+      if matched_product.vendor == product.vendor
+        comment
+          assign filtered_product_handles_array = filtered_product_handles_array | append: handle | append: ','
+        endcomment
+
+        assign filtered_product_handles_array = filtered_product_handles_array | append: handle | append: '*****' | append: matched_product.vendor | append: ','
+      endif
+    endfor
+
+    assign filtered_product_handles_array = filtered_product_handles_array | split: ',' | uniq
+  %}
+
+  <script>
+    console.log({{ product_handles_array | json }})
+    console.log({{ filtered_product_handles_array | json }})
+    console.log({{ product.vendor | json }})
+  </script>
+
+  <section id="suggestion-products">
+    <div class="suggestion-products-wrapper">
+      <div class="suggestion-products-title">
+        <h2>YOU MAY ALSO LIKE</h2>
+      </div>
+      <div class="suggestion-products">
+        <div class="suggestion-product"></div>
+      </div>
+    </div>
+  </section>
+{% endcomment %}

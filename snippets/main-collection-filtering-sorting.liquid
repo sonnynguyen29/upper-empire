@@ -171,25 +171,35 @@ Accepts:
                       endif
                     %}
 
-                    <div class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}" open>
-                      <div class="facets__summary">
+                    <details class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}">
+                      <summary class="facets__summary">
                         <div>
-                          <span >{{ filter.label | escape }}</span>
-                          <span class="count-bubble" data-active-values="{{ filter.active_values.size }}">{%- if filter.active_values.size > 0 -%}{{ filter.active_values.size }}{%- endif -%}</span>
-                          {% comment %} {{ icon_caret }} {% endcomment %}
-
-                          <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link js-facet-remove" >{{ 'sections.collection_template.reset' | t }}</a>
+                          <div class="facets__title">
+                            <span >{{ filter.label | escape }}</span>
+                            <span class="count-bubble" data-active-values="{{ filter.active_values.size }}">{%- if filter.active_values.size > 0 -%}{{ filter.active_values.size }}{%- endif -%}</span>
+                            <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link js-facet-remove" style="display: {%- if filter.active_values.size > 0 -%}block{% else %}none{%- endif -%};">
+                              {{ 'sections.collection_template.reset' | t }}
+                            </a>
+                          </div>
+                          {{ icon_caret }}
                         </div>
-                      </div>
+                      </summary>
                       {% liquid
                         for value in filter.values
-                          assign faces_list_2_column = forloop.length
+                          assign faces_list_items = forloop.length
                           break
                         endfor
                       %}
 
                       <div class="facets__display">
-                        <ul class="facets__list list-unstyled{% if faces_list_2_column > 8 %} facets__list_two_columns {% endif %}" role="list">
+                        {% liquid
+                            if faces_list_items > 11
+                              assign facets_class = ' facets__list_three_columns'
+                            elsif faces_list_items > 7
+                              assign facets_class = ' facets__list_two_columns'
+                            endif
+                        %}
+                        <ul class="facets__list list-unstyled{{ facets_class }}" role="list">
                           {%- for value in filter.values -%}
                             {% liquid 
                               assign image_url = value.label | handle | append: '.' | append: file_extension | asset_url
@@ -234,7 +244,7 @@ Accepts:
                           {%- endfor -%}
                         </ul>
                       </div>
-                    </div>
+                    </details>
                   {% when 'price_range' %}
                     {% liquid
                       assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,TRY,UYU,VES,VND' | split: ','
@@ -243,9 +253,11 @@ Accepts:
                         assign uses_comma_decimals = true
                       endif
                     %}
-                    <div class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}" open>
-                      <div class="facets__summary">
-                        <div style="margin-bottom: 10px;">
+                    <details class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}">
+                      <summary class="facets__summary">
+                        <div style="margin-bottom: 5px">
+                          <div class="facets__title">
+                            
                           <span>{{ filter.label | escape }}</span>
                           
                           {% liquid
@@ -254,10 +266,11 @@ Accepts:
                             endif
                           %}
                           <span class="count-bubble{%- if filter_active == true -%}{{ filter.active_values.size }} count-bubble--dot{% endif %}" data-active-values="{%- if filter_active == true -%}1{% endif %}"></span>
-                          {% comment %} {{ icon_caret }} {% endcomment %}
-                          <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link js-facet-remove" >{{ 'sections.collection_template.reset' | t }}</a>
-                        </div>
-                      </div>
+                          <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link js-facet-remove" style="display: {%- if filter_active == true -%}block{% else %}none{% endif %};">{{ 'sections.collection_template.reset' | t }}</a>
+                            </div>
+                          {{ icon_caret }} 
+                          </div>
+                      </summary>
                       <div class="facets__display">
                         {% comment %} <div class="facets__header text-inline-link-animated">
                         </div> {% endcomment %}
@@ -306,7 +319,7 @@ Accepts:
                           </div>
                         </div>
                       </price-range-selector>
-                    </div>
+                    </details>
                   {% endcase %}
                 {%- endfor -%}
                 <noscript>

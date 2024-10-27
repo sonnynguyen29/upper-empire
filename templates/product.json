@@ -129,8 +129,8 @@
         "options",
         "a55b9011-1b1a-4353-9d97-7bdcd60949f2",
         "quantity",
-        "a7717974-ed85-4cde-80ef-4751178acf57",
-        "2f3ddc8d-6514-403d-a884-88c9a0294300",
+        // "a7717974-ed85-4cde-80ef-4751178acf57",
+        // "2f3ddc8d-6514-403d-a884-88c9a0294300",
         "product-detail",
         "product-materials",
         "product-size-guide",
@@ -161,11 +161,16 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "suggestion-products": {
+      "type": "suggestion-products",
+      "settings": {}
     }
   },
   "order": [
     "product-form",
     "product-description",
-    "apps"
+    "apps",
+    "suggestion-products"
   ]
 }
