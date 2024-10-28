@@ -1,0 +1,92 @@
+#suggestion-products {
+    .suggestion-products-wrapper {
+        .suggestion-products-title {
+            width: 100%;
+            text-align: center;
+        }
+
+        .product-grid-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+            padding: 0 8px;
+
+            .product-image {
+                position: relative;
+                width: 100%;
+
+                .product-image--default {
+                    position: relative;
+                    z-index: 1;
+                    width: 100%;
+                }
+
+                .product-image--hover {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    opacity: 0;
+                    transition: opacity 0.5s;
+                    width: 100%;
+                }
+            }
+
+            .product-info {
+                color: #000000;
+                font-weight: 500;
+                letter-spacing: -0.02rem;
+                position: relative;
+
+                .product-description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                }
+
+                .product-variants {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    align-items: start;
+                    justify-content: start;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    .product-variants-title {
+                        text-align: center;
+                        padding: 2px;
+
+                        &:hover {
+                            border-bottom: 1px solid #000000;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1280px) {
+                &:hover {
+                    .product-image {
+                        .product-image--hover {
+                            opacity: 1;
+                        }
+                    }
+
+                    .product-info {
+                        .product-description {
+                            opacity: 0;
+                        }
+
+                        .product-variants {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
