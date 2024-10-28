@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "product-form": {
@@ -36,44 +45,6 @@
             "margin_bottom": 20
           }
         },
-        "quantity": {
-          "type": "quantity",
-          "settings": {
-            "margin_bottom": 40
-          }
-        },
-        "a7717974-ed85-4cde-80ef-4751178acf57": {
-          "type": "text-with-icon",
-          "settings": {
-            "icon": "truck",
-            "text": "Ships within 1-2 business days",
-            "link": "",
-            "margin_bottom": 10
-          }
-        },
-        "2f3ddc8d-6514-403d-a884-88c9a0294300": {
-          "type": "stock-level-indicator",
-          "settings": {
-            "stock-level-indicator-style": "classic",
-            "bar-indicator-color": "standard",
-            "stock_indicator_animation": true,
-            "stock-range": 10,
-            "show-stock-count": false,
-            "stock-level-notice": "always",
-            "in-stock-message": "Ready to ship",
-            "low-stock-message": "Selling fast",
-            "out-of-stock-message": "Back in soon",
-            "margin_bottom": 40
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_smart_checkout": true,
-            "enable_gift_card_recipient_form": true,
-            "margin_bottom": 20
-          }
-        },
         "a55b9011-1b1a-4353-9d97-7bdcd60949f2": {
           "type": "product-description",
           "settings": {
@@ -81,6 +52,55 @@
             "icon": "none",
             "heading": "Description",
             "open_close_icon": "plus_minus",
+            "margin_bottom": 20
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+            "margin_bottom": 40
+          }
+        },
+        "product-detail": {
+          "type": "product-detail",
+          "settings": {
+            "block_title": "Detail",
+            "block_content": "<p>Product details go here</p>"
+          }
+        },
+        "product-materials": {
+          "type": "product-materials",
+          "settings": {
+            "block_title": "Materials",
+            "block_content": "<ul>\n<li>Nike Wmns Air Max SNDR</li>\n<li>Neoprene upper</li>\n<li>Lace shroud with zip closure</li>\n<li>Pull tab on heel</li>\n<li>3M reflective detailing</li>\n<li>Foam midsole</li>\n<li>Rubber outsole</li>\n</ul>"
+          }
+        },
+        "product-size-guide": {
+          "type": "product-size-guide",
+          "settings": {
+            "block_title": "Size guide",
+            "block_content": "<ul>\n<li>Nike Wmns Air Max SNDR</li>\n<li>Neoprene upper</li>\n<li>Lace shroud with zip closure</li>\n<li>Pull tab on heel</li>\n<li>3M reflective detailing</li>\n<li>Foam midsole</li>\n<li>Rubber outsole</li>\n</ul>"
+          }
+        },
+        "product-shipping-return": {
+          "type": "product-shipping-return",
+          "settings": {
+            "block_title": "Shipping and return",
+            "block_content": "<ul>\n<li>Nike Wmns Air Max SNDR</li>\n<li>Neoprene upper</li>\n<li>Lace shroud with zip closure</li>\n<li>Pull tab on heel</li>\n<li>3M reflective detailing</li>\n<li>Foam midsole</li>\n<li>Rubber outsole</li>\n</ul>"
+          }
+        },
+        "size_notice_NWDxaw": {
+          "type": "size_notice",
+          "settings": {
+            "notice": "<p>This is offered in <b>men's sizing.</b> There is an approximate <b>1.5-size</b> difference between men's sizing and women's sizing. For example, a <b>men size 9</b> is roughly equivalent to a <b>womens size 10.5.</b></p>",
+            "collection": "sneakers-men"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_smart_checkout": true,
+            "enable_gift_card_recipient_form": true,
             "margin_bottom": 20
           }
         },
@@ -102,25 +122,7 @@
           "settings": {
             "margin_bottom": 20
           }
-        },
-        "product-detail": {
-          "type": "product-detail",
-          "settings": {
-            "block_content": "<p>Product details go here</p>"
-          }
-        },
-        "product-materials": {
-          "type": "product-materials",
-          "settings": {}
-        },
-        "product-size-guide": {
-          "type": "product-size-guide",
-          "settings": {}
-        },
-        "product-shipping-return": {
-          "type": "product-shipping-return",
-          "settings": {}
-        },
+        }
       },
       "block_order": [
         "title",
@@ -129,12 +131,11 @@
         "options",
         "a55b9011-1b1a-4353-9d97-7bdcd60949f2",
         "quantity",
-        // "a7717974-ed85-4cde-80ef-4751178acf57",
-        // "2f3ddc8d-6514-403d-a884-88c9a0294300",
         "product-detail",
         "product-materials",
         "product-size-guide",
         "product-shipping-return",
+        "size_notice_NWDxaw",
         "buy_buttons",
         "fbfe241f-1b44-41cd-ae22-e866bdad9aaf",
         "4fdb087c-4728-4785-b270-a71a092b7898"

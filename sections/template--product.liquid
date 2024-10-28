@@ -580,6 +580,17 @@
                           {% when 'product-shipping-return' %}
                             {% render 'product-shipping-return', settings: block.settings %}
 
+                          {% when 'size_notice' %}
+                            {% liquid
+                              assign url_path = request.path
+                              assign collection_handle = block.settings.collection.handle
+                              assign collection_path = '/collections/' | append: collection_handle
+                            %}
+
+                            {% if url_path contains collection_path %}
+                              <div id="size_notice" style="margin-top: 30px;">{{ block.settings.notice }}</div>
+                            {% endif %}
+
                           {%- when 'buy_buttons' -%}
                             {% render 'product-buy-buttons',
                               block: block,
@@ -2830,6 +2841,22 @@
           "id": "block_content",
           "label": "Block Content",
           "default": "<ul><li>Nike Wmns Air Max SNDR</li><li>Neoprene upper</li><li>Lace shroud with zip closure</li><li>Pull tab on heel</li><li>3M reflective detailing</li><li>Foam midsole</li><li>Rubber outsole</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "size_notice",
+      "name": "Size Notice",
+      "settings": [
+        {
+          "type": "html",
+          "id": "notice",
+          "label": "Notice"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection Notice"
         }
       ]
     }
