@@ -19,7 +19,7 @@
                 }
 
                 .page-title {
-                    font-size: 16px;
+                    font-size: 24px;
                     font-weight: 700;
                 }
             }
@@ -55,6 +55,25 @@
                             .product-card-detail {
                                 position: relative;
                                 opacity: 1;
+
+                                .product-card--price-vendor-wrapper {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: start;
+                                    align-items: center;
+                                    gap: 6px;
+
+                                    .sold-out {
+                                        font-weight: 700;
+                                    }
+
+                                    .dot {
+                                        width: 4px;
+                                        height: 4px;
+                                        border-radius: 50%;
+                                        background: #d9d9d9;
+                                    }
+                                }
                             }
 
                             .product-cart-variants {

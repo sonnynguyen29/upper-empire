@@ -283,11 +283,16 @@
   <div class="product-card-detail--wrapper">
     <div class="product-card-detail">
       {{ product_title }}
-      {{ product_price }}
-      {% if product.available %}
-      {% else %}
-        <span class="product-grid--title">SOLD OUT - Request for Order</span>
-      {% endif %}
+      <div class="product-card--price-vendor-wrapper">
+        {{ product_price }}
+        {% if product.available %}
+        {% else %}
+          <span class="dot"></span>
+          <span class="product-grid--title sold-out">Sold Out</span>
+          <span class="dot"></span>
+          <span class="product-grid--title">Request for Order</span>
+        {% endif %}
+      </div>
     </div>
 
     <div class="product-cart-variants">

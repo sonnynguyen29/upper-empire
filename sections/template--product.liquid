@@ -568,12 +568,6 @@
                               </div>
                             {% endcomment %}
 
-                          {% when 'product-detail' %}
-                            {% render 'product-detail', settings: block.settings %}
-
-                          {% when 'product-materials' %}
-                            {% render 'product-materials', settings: block.settings %}
-
                           {% when 'product-size-guide' %}
                             {% render 'product-size-guide', settings: block.settings %}
 
@@ -2753,50 +2747,6 @@
           "step": 1,
           "unit": "t:all.px",
           "default": 20
-        }
-      ]
-    },
-    {
-      "type": "product-detail",
-      "name": "Product Detail Block",
-      "settings": [
-        {
-          "type": "header",
-          "content": "Block Settings"
-        },
-        {
-          "type": "text",
-          "id": "block_title",
-          "label": "Block Title",
-          "default": "Detail"
-        },
-        {
-          "type": "text",
-          "id": "block_content",
-          "label": "Block Content",
-          "default": "<ul><li>Nike Wmns Air Max SNDR</li><li>Neoprene upper</li><li>Lace shroud with zip closure</li><li>Pull tab on heel</li><li>3M reflective detailing</li><li>Foam midsole</li><li>Rubber outsole</li></ul>"
-        }
-      ]
-    },
-    {
-      "type": "product-materials",
-      "name": "Product Materials",
-      "settings": [
-        {
-          "type": "header",
-          "content": "Block Settings"
-        },
-        {
-          "type": "text",
-          "id": "block_title",
-          "label": "Block Title",
-          "default": "Materials"
-        },
-        {
-          "type": "text",
-          "id": "block_content",
-          "label": "Block Content",
-          "default": "<ul><li>Nike Wmns Air Max SNDR</li><li>Neoprene upper</li><li>Lace shroud with zip closure</li><li>Pull tab on heel</li><li>3M reflective detailing</li><li>Foam midsole</li><li>Rubber outsole</li></ul>"
         }
       ]
     },

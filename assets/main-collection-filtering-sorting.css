@@ -24,9 +24,9 @@ summary .icon-caret,
 .customer select + svg {
   pointer-events: none;
   position: absolute;
-  top: 50%;
+  top: 30%;
   right: 10px;
-  transform: translateY(-50%);
+  transition: all 0.3s ease;
 }
 
 .select__select,
@@ -401,6 +401,9 @@ summary::-webkit-details-marker {
 .facets__disclosure {
   transition: box-shadow 100ms ease;
   border-bottom: 1px solid var(--filter-border-color);
+}
+.facets__disclosure[open] .facets__summary .icon-caret {
+  transform: rotate(180deg);
 }
 
 .facets__disclosure:last-of-type {

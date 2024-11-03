@@ -109,8 +109,12 @@
 
         .image-with-text {
             margin-top: 40px;
+            perspective: 1000px;
+
             .image-background {
-                width: 100%;
+                // width: 110%; /* Slightly larger than container for movement room */
+                // height: 110%;
+                transition: transform 0.3s ease; /* Smooth transition */
                 display: flex;
                 justify-self: center;
                 background-clip: text;

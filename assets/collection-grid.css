@@ -19,6 +19,7 @@
   position: absolute;
   left: 20px;
   bottom: 20px;
+  font-weight: bold;
 }
 #collection-grid .collection-grid-layout .collection-grid-item .collection-text p {
   font-size: 14px;

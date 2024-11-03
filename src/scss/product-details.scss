@@ -75,25 +75,39 @@
     }
 
     /* Rotate the SVG icon when details is open */
-    details[open] summary svg {
-        transform: rotate(180deg);
+    details[open] {
+        summary .icon {
+            transform: scaleY(-1);
+
+            .v-line {
+                display: none;
+            }
+        }
+
+        .content ul {
+            transition: opacity 0.3s ease 0.1s;
+            opacity: 1;
+        }
     }
 
     .content {
         margin: 10px 0;
         overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.5s ease; /* Smooth transition */
+        transition: height 0.3s cubic-bezier(0.2, 0.6, 0.4, 1);
 
-        ul li {
-            list-style-type: none;
-            position: relative;
-        }
+        ul {
+            transition: opacity 0.3s ease 0s;
+            opacity: 0;
+            li {
+                list-style-type: none;
+                position: relative;
+            }
 
-        ul li::before {
-            content: "-"; /* Dash as bullet */
-            position: absolute;
-            left: -20px; /* Position dash outside the content */
+            & li::before {
+                content: "-"; /* Dash as bullet */
+                position: absolute;
+                left: -20px; /* Position dash outside the content */
+            }
         }
     }
 

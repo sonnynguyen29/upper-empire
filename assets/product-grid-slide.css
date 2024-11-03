@@ -49,6 +49,9 @@
   flex-direction: column;
   gap: 4px;
 }
+#product-grid-slide .product-grid-container .product-grid .product-grid-item .product-info .product-description p {
+  margin: 0;
+}
 #product-grid-slide .product-grid-container .product-grid .product-grid-item .product-info .product-variants {
   display: flex;
   flex-direction: row;

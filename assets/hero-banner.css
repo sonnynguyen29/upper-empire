@@ -1,6 +1,9 @@
 section#hero-banner .hero__banner-container {
   position: relative;
 }
+section#hero-banner .hero__banner-container .hero__banner-image-wrapper .splide__track {
+  overflow: unset;
+}
 section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop {
   display: none;
 }
@@ -20,21 +23,35 @@ section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__b
 section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop,
 section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile {
   position: relative;
+  width: 100%;
+  height: 120vh;
+}
+section#hero-banner .hero__banner-container .responsive-image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 120vh;
+  top: 0;
+}
+section#hero-banner .hero__banner-container .responsive-image-wrapper img {
+  height: 100%;
+  object-fit: cover;
 }
 section#hero-banner .hero__banner-container .hero__banner-title {
-  position: absolute;
-  top: auto;
-  bottom: 20px;
-  left: 10px;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 50%;
+  align-self: flex-start;
+  height: auto;
   text-align: left;
   color: #fff;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
-  width: 80%;
+  margin-left: 1rem;
 }
 @media screen and (min-width: 768px) {
   section#hero-banner .hero__banner-container .hero__banner-title {
     width: auto;
+    margin-left: 4rem;
   }
 }
