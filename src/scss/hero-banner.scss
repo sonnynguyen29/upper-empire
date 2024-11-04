@@ -41,10 +41,14 @@ section#hero-banner {
                 }
 
                 @media screen and (min-width: 1920px) {
-                    height: 120vh;
+                    height: 105vh;
 
                     .responsive-image-wrapper {
-                        height: 120vh;
+                        height: 105vh;
+
+                        img {
+                            object-fit: cover;
+                        }
                     }
                 }
             }

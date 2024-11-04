@@ -41,11 +41,15 @@ section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__b
 @media screen and (min-width: 1920px) {
   section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop,
   section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile {
-    height: 120vh;
+    height: 105vh;
   }
   section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop .responsive-image-wrapper,
   section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile .responsive-image-wrapper {
-    height: 120vh;
+    height: 105vh;
+  }
+  section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop .responsive-image-wrapper img,
+  section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile .responsive-image-wrapper img {
+    object-fit: cover;
   }
 }
 section#hero-banner .hero__banner-container .hero__banner-title {
