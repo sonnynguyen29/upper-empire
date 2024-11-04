@@ -109,12 +109,9 @@
 
         .image-with-text {
             margin-top: 40px;
-            perspective: 1000px;
+            display: block;
 
             .image-background {
-                // width: 110%; /* Slightly larger than container for movement room */
-                // height: 110%;
-                transition: transform 0.3s ease; /* Smooth transition */
                 display: flex;
                 justify-self: center;
                 background-clip: text;
@@ -129,12 +126,34 @@
                     line-height: 1;
                     text-transform: uppercase;
                     margin-bottom: 0;
-
-                    @media screen and (min-width: 1024px) {
-                        font-size: 21vw;
-                        background-size: contain;
-                    }
                 }
+            }
+
+            @media screen and (min-width: 1024px) {
+                display: none;
+            }
+        }
+
+        .image-with-mask {
+            display: none;
+            position: relative;
+            perspective: 1000px;
+            overflow: hidden;
+
+            @media screen and (min-width: 1024px) {
+                display: block;
+            }
+
+            .image_mask {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .image_background {
+                width: 110%;
+                height: 110%;
+                transition: transform 0.2s ease;
             }
         }
     }

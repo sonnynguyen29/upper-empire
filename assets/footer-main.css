@@ -97,10 +97,9 @@
 }
 .footer-wrapper #footer-section .image-with-text {
   margin-top: 40px;
-  perspective: 1000px;
+  display: block;
 }
 .footer-wrapper #footer-section .image-with-text .image-background {
-  transition: transform 0.3s ease; /* Smooth transition */
   display: flex;
   justify-self: center;
   background-clip: text;
@@ -117,8 +116,29 @@
   margin-bottom: 0;
 }
 @media screen and (min-width: 1024px) {
-  .footer-wrapper #footer-section .image-with-text .image-background h2 {
-    font-size: 21vw;
-    background-size: contain;
+  .footer-wrapper #footer-section .image-with-text {
+    display: none;
   }
+}
+.footer-wrapper #footer-section .image-with-mask {
+  display: none;
+  position: relative;
+  perspective: 1000px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .footer-wrapper #footer-section .image-with-mask {
+    display: block;
+  }
+}
+.footer-wrapper #footer-section .image-with-mask .image_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.footer-wrapper #footer-section .image-with-mask .image_background {
+  width: 110%;
+  height: 110%;
+  transition: transform 0.2s ease;
 }
