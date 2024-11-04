@@ -22,14 +22,14 @@
         "hero_banner_desktop_nabi6P": {
           "type": "hero_banner_desktop",
           "settings": {
-            "hero_banner_image_desktop": "shopify://shop_images/desktop-hero-image.png",
+            "hero_banner_image_desktop": "shopify://shop_images/75237.png",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
           }
         },
         "hero_banner_desktop_jBMf4T": {
           "type": "hero_banner_desktop",
           "settings": {
-            "hero_banner_image_desktop": "shopify://shop_images/desktop-hero-image.png",
+            "hero_banner_image_desktop": "shopify://shop_images/99235.png",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
           }
         },
@@ -43,14 +43,14 @@
         "hero_banner_mobile_XidkEr": {
           "type": "hero_banner_mobile",
           "settings": {
-            "hero_banner_image_mobile": "shopify://shop_images/mobile-hero-image.png",
+            "hero_banner_image_mobile": "shopify://shop_images/75237.png",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
           }
         },
         "hero_banner_mobile_MRnmCH": {
           "type": "hero_banner_mobile",
           "settings": {
-            "hero_banner_image_mobile": "shopify://shop_images/mobile-hero-image.png",
+            "hero_banner_image_mobile": "shopify://shop_images/99235.png",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
           }
         }
@@ -114,12 +114,32 @@
             "collection_text": "Nike Air Force 1 '07",
             "collection_text_color": "#ffffff"
           }
+        },
+        "collection_kqxfhm": {
+          "type": "collection",
+          "settings": {
+            "collection": "socks",
+            "collection_image": "shopify://shop_images/Frame_42.png",
+            "collection_text": "",
+            "collection_text_color": "#000000"
+          }
+        },
+        "collection_U7c8dK": {
+          "type": "collection",
+          "settings": {
+            "collection": "sneakers",
+            "collection_image": "shopify://shop_images/Frame_134.png",
+            "collection_text": "",
+            "collection_text_color": "#000000"
+          }
         }
       },
       "block_order": [
         "collection_JN6Jf9",
         "collection_9zy8YR",
-        "collection_g6NUeq"
+        "collection_g6NUeq",
+        "collection_kqxfhm",
+        "collection_U7c8dK"
       ],
       "settings": {
         "section_title": "Our Collections"
