@@ -1,4 +1,6 @@
-<details>
+{{ 'product-size-guide.css' | asset_url | stylesheet_tag }}
+
+<details id="product-size-guide">
   <summary>
     {{ settings.block_title }}
     <svg
@@ -17,6 +19,22 @@
     </svg>
   </summary>
   <div class="content">
-    {{ settings.block_content }}
+    {% comment %} {{ settings.block_content }} {% endcomment %}
+    <size-chart-table class="size-chart-container">
+      <div class="size-chart-unit-switch">
+        <button class="active" data-control-table="inches">Inches</button>
+        <button data-control-table="cm">cm</button>
+      </div>
+      <div class="size-chart-wrapper">
+        <div data-table="inches" class="size-chart-table visible">
+          {% render 'product-size-inches-table' %}
+        </div>
+        <div data-table="cm" class="size-chart-table">
+          {% render 'product-size-cm-table' %}
+        </div>
+      </div>
+    </size-chart-table>
   </div>
 </details>
+
+<script src="{{ 'product-size-chart-table.js' |  asset_url}}" defer></script>

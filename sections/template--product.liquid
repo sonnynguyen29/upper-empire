@@ -569,7 +569,9 @@
                             {% endcomment %}
 
                           {% when 'product-size-guide' %}
-                            {% render 'product-size-guide', settings: block.settings %}
+                            {% if product.tags contains 'Sneaker' %}
+                              {% render 'product-size-guide', settings: block.settings %}
+                            {% endif %}
 
                           {% when 'product-shipping-return' %}
                             {% render 'product-shipping-return', settings: block.settings %}

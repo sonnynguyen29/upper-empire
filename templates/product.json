@@ -61,20 +61,6 @@
             "margin_bottom": 40
           }
         },
-        "product-detail": {
-          "type": "product-detail",
-          "settings": {
-            "block_title": "Detail",
-            "block_content": "<p>Product details go here</p>"
-          }
-        },
-        "product-materials": {
-          "type": "product-materials",
-          "settings": {
-            "block_title": "Materials",
-            "block_content": "<ul>\n<li>Nike Wmns Air Max SNDR</li>\n<li>Neoprene upper</li>\n<li>Lace shroud with zip closure</li>\n<li>Pull tab on heel</li>\n<li>3M reflective detailing</li>\n<li>Foam midsole</li>\n<li>Rubber outsole</li>\n</ul>"
-          }
-        },
         "product-size-guide": {
           "type": "product-size-guide",
           "settings": {
@@ -86,7 +72,7 @@
           "type": "product-shipping-return",
           "settings": {
             "block_title": "Shipping and return",
-            "block_content": "<ul>\n<li>Nike Wmns Air Max SNDR</li>\n<li>Neoprene upper</li>\n<li>Lace shroud with zip closure</li>\n<li>Pull tab on heel</li>\n<li>3M reflective detailing</li>\n<li>Foam midsole</li>\n<li>Rubber outsole</li>\n</ul>"
+            "block_content": "2-7 business days, depending on your location"
           }
         },
         "size_notice_NWDxaw": {
@@ -131,8 +117,6 @@
         "options",
         "a55b9011-1b1a-4353-9d97-7bdcd60949f2",
         "quantity",
-        "product-detail",
-        "product-materials",
         "product-size-guide",
         "product-shipping-return",
         "size_notice_NWDxaw",

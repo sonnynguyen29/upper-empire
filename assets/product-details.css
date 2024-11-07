@@ -23,7 +23,7 @@
   color: rgba(0, 0, 0, 0.5);
 }
 .product-section .product-description {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgb(0, 0, 0);
   font-weight: 500;
   width: 80%;
 }
