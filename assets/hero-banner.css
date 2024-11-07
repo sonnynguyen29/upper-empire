@@ -46,9 +46,10 @@ section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__b
 section#hero-banner .hero__banner-container .hero__banner-title {
   position: -webkit-sticky !important;
   position: sticky !important;
-  top: 53.5%;
+  top: 50%;
+  transform: translateY(49%);
   align-self: flex-start;
-  height: auto;
+  height: 100%;
   text-align: left;
   color: #fff;
   font-size: 24px;

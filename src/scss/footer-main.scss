@@ -11,7 +11,7 @@
             gap: 10px;
 
             .footer-section-wrapper {
-                padding: 0 8px;
+                padding: 0;
                 margin: 0;
                 display: grid;
                 grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -145,15 +145,25 @@
             }
 
             .image_mask {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                // z-index: 1;
             }
+
             .image_background {
                 width: 110%;
                 height: 110%;
-                transition: transform 0.2s ease;
+                transition: transform 0.6s ease;
+                position: absolute;
+                transform: translateY(100%);
+                top: 0;
+                left: 0;
+                z-index: -1;
+
+                &.active {
+                    transform: translate(0);
+                }
             }
         }
     }

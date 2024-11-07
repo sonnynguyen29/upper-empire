@@ -14,8 +14,8 @@
     "footer-main": {
       "type": "footer-main",
       "settings": {
-        "footer_background_text_image": "shopify://shop_images/70948_2.png",
-        "footer_background_mask": "shopify://shop_images/mask.png",
+        "footer_background_text_image": "shopify://shop_images/footer_image_Desktop.png",
+        "footer_background_mask": "shopify://shop_images/mask-1.png",
         "footer_background_text": "Upper empire"
       }
     }

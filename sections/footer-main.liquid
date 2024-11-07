@@ -58,22 +58,7 @@
 </footer>
 
 {% if template contains 'index' %}
-  <script>
-    const container = document.querySelector('.image-with-mask');
-    const image = document.querySelector('.parallax-image');
-
-    container.addEventListener('mousemove', (e) => {
-      const { left, top, width, height } = container.getBoundingClientRect();
-      const x = ((e.clientX - left - width / 2) / width) * 10;
-      const y = ((e.clientY - top - height / 2) / height) * 10;
-
-      image.style.transform = `translate(${x}%, ${y}%) scale(1.1)`;
-    });
-
-    container.addEventListener('mouseleave', () => {
-      image.style.transform = `translate(0, 0) scale(1)`;
-    });
-  </script>
+  <script src="{{ 'footer-main.js' |  asset_url }}" defer></script>
 {% endif %}
 
 {% schema %}

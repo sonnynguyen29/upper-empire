@@ -51,9 +51,10 @@ section#hero-banner {
         .hero__banner-title {
             position: -webkit-sticky !important; // for safari
             position: sticky !important;
-            top: 53.5%;
+            top: 50%;
+            transform: translateY(49%);
             align-self: flex-start;
-            height: auto;
+            height: 100%;
             text-align: left;
             color: #fff;
             font-size: 24px;

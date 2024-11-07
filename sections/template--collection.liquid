@@ -13,7 +13,7 @@
 {{ 'template--collection.css' | asset_url | stylesheet_tag }}
 
 <section class="shopify-section main-page-container wrapper-padded">
-  <div class="collection_grid{% if filterin g_enabled %} filtering_enabled--{{ section.settings.desktop_position }}{% endif %}">
+  <div class="collection_grid{% if filtering_enabled %} filtering_enabled--{{ section.settings.desktop_position }}{% endif %}">
     <div class="collection-header__title">
       <h1 class="page-title">
         {{ collection.title }}
