@@ -45,6 +45,7 @@
   window.addEventListener('load', (event) => {
     const loadHeroBannderSplideDesktop = () => {
       var desktopSplide = new Splide('.desktop-splide', {
+        type: 'loop',
         perPage: 1,
         perMove: 1,
         mediaQuery: 'min',
@@ -60,6 +61,7 @@
 
     const loadHeroBannderSplideMobile = () => {
       var desktopSplide = new Splide('.mobile-splide', {
+        type: 'loop',
         perPage: 1,
         perMove: 1,
         mediaQuery: 'min',

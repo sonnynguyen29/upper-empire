@@ -45,14 +45,12 @@
     </div>
 
     <div class="image-with-mask">
-      <div>
-        {{ section.settings.footer_background_mask | image_url: width: 3000 | image_tag: class: 'image_mask' }}
-        {{
-          section.settings.footer_background_text_image
-          | image_url: width: 3000
-          | image_tag: class: 'image_background parallax-image'
-        }}
-      </div>
+      {{ section.settings.footer_background_mask | image_url: width: 3000 | image_tag: class: 'image_mask' }}
+      {{
+        section.settings.footer_background_text_image
+        | image_url: width: 3000
+        | image_tag: class: 'image_background parallax-image'
+      }}
     </div>
   {% endif %}
 </footer>

@@ -16,7 +16,7 @@
                     <div class="product-image--default">
                       {% render 'responsive-image' with product.featured_image,
                         alt: product.featured_image.alt,
-                      class: 'product-image'
+                        class: 'product-image'
                       %}
                     </div>
                     <div class="product-image--hover">
@@ -29,7 +29,16 @@
                   <div class="product-info">
                     <div class="product-description">
                       <p class="product-title">{{ product.title }}</p>
-                      <p class="product-price">{{ product.price | money }}</p>
+                      <div class="product-card--price-vendor-wrapper">
+                        <p class="product-price">{{ product.price | money }}</p>
+                        {% if product.available %}
+                        {% else %}
+                          <span class="dot"></span>
+                          <span class="product-grid--title sold-out">Sold Out</span>
+                          <span class="dot"></span>
+                          <span class="product-grid--title">Request for Order</span>
+                        {% endif %}
+                      </div>
                     </div>
                     <div class="product-variants">
                       {% for variant in product.variants %}

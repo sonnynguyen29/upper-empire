@@ -577,13 +577,7 @@
                             {% render 'product-shipping-return', settings: block.settings %}
 
                           {% when 'size_notice' %}
-                            {% liquid
-                              assign url_path = request.path
-                              assign collection_handle = block.settings.collection.handle
-                              assign collection_path = '/collections/' | append: collection_handle
-                            %}
-
-                            {% if url_path contains collection_path %}
+                            {% if product.tags contains 'Sneaker' and product.tags contains 'Men' %}
                               <div id="size_notice" style="margin-top: 30px;">{{ block.settings.notice }}</div>
                             {% endif %}
 

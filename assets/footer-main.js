@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const imageMask = document.querySelector('.image-mask');
     const container = document.querySelector('.image-with-mask');
     const image = document.querySelector('.parallax-image');
 
@@ -27,16 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Intersection Observer options
     const options = {
         root: null, // Use the viewport as the root
-        threshold: 1, // Trigger when 50% of the footer is in view
+        threshold: 0.65, // Trigger when 50% of the footer is in view
     };
 
     // Callback function for the observer
     const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                setTimeout(() => {
-                    image.classList.add("active"); // Add active class when footer is in view
-                }, 1000)
+                image.classList.add("active"); // Add active class when footer is in view
             } else {
                 image.classList.remove("active"); // Remove active class when footer is out of view
             }
@@ -47,5 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(observerCallback, options);
 
     // Observe the footer
-    observer.observe(footer);
+    observer.observe(container);
 });

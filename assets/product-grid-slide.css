@@ -52,6 +52,22 @@
 #product-grid-slide .product-grid-container .product-grid .product-grid-item .product-info .product-description p {
   margin: 0;
 }
+#product-grid-slide .product-grid-container .product-grid .product-grid-item .product-info .product-description .product-card--price-vendor-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+}
+#product-grid-slide .product-grid-container .product-grid .product-grid-item .product-info .product-description .product-card--price-vendor-wrapper .sold-out {
+  font-weight: 700;
+}
+#product-grid-slide .product-grid-container .product-grid .product-grid-item .product-info .product-description .product-card--price-vendor-wrapper .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #d9d9d9;
+}
 #product-grid-slide .product-grid-container .product-grid .product-grid-item .product-info .product-variants {
   display: flex;
   flex-direction: row;

@@ -128,8 +128,11 @@
 }
 @media screen and (min-width: 1024px) {
   .footer-wrapper #footer-section .image-with-mask {
-    display: block;
+    display: flex;
   }
+}
+.footer-wrapper #footer-section .image-with-mask .image_mask {
+  transform: scale(1.003);
 }
 .footer-wrapper #footer-section .image-with-mask .image_background {
   width: 110%;
