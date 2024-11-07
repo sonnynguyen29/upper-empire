@@ -119,13 +119,24 @@
                 font-weight: 800;
                 background-size: cover;
                 background-repeat: no-repeat;
+                width: 100%;
 
                 h2 {
                     font-family: "Regensburg";
-                    font-size: 35vw;
+                    font-size: 40vw;
                     line-height: 1;
                     text-transform: uppercase;
                     margin-bottom: 0;
+                    width: 100%;
+                }
+            }
+
+            .text-span {
+                display: flex;
+                justify-content: space-between;
+
+                &:first-of-type {
+                    align-self: end;
                 }
             }
 
@@ -157,6 +168,7 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
+                object-fit: cover;
 
                 &.active {
                     transform: translate(0);

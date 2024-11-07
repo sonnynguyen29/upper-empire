@@ -107,13 +107,22 @@
   font-weight: 800;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
 }
 .footer-wrapper #footer-section .image-with-text .image-background h2 {
   font-family: "Regensburg";
-  font-size: 35vw;
+  font-size: 40vw;
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 0;
+  width: 100%;
+}
+.footer-wrapper #footer-section .image-with-text .text-span {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper #footer-section .image-with-text .text-span:first-of-type {
+  align-self: end;
 }
 @media screen and (min-width: 1024px) {
   .footer-wrapper #footer-section .image-with-text {
@@ -143,6 +152,7 @@
   top: 0;
   left: 0;
   z-index: -1;
+  object-fit: cover;
 }
 .footer-wrapper #footer-section .image-with-mask .image_background.active {
   transform: translate(0);

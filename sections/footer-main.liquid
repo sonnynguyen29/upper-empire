@@ -36,10 +36,25 @@
     <div class="image-with-text">
       <div
         class="image-background"
-        style="background-image: url('{{ section.settings.footer_background_text_image | image_url: width: 1393  }}');"
+        style="background-image: url('{{ section.settings.footer_background_text_image_mobile | image_url: width: 1393  }}');"
       >
         <h2>
-          {{ section.settings.footer_background_text }}
+          {% comment %} {{ section.settings.footer_background_text }} {% endcomment %}
+          <span class="text-span">
+            <span>U</span>
+            <span>P</span>
+            <span>P</span>
+            <span>E</span>
+            <span>R</span>
+          </span>
+          <span class="text-span">
+            <span>E</span>
+            <span>M</span>
+            <span>P</span>
+            <span>I</span>
+            <span>R</span>
+            <span>E</span>
+          </span>
         </h2>
       </div>
     </div>
@@ -67,6 +82,11 @@
       "type": "image_picker",
       "id": "footer_background_text_image",
       "label": "Footer Background Text Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_background_text_image_mobile",
+      "label": "Footer Background Text - Image Mobile"
     },
     {
       "type": "image_picker",
