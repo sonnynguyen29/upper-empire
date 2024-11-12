@@ -22,6 +22,11 @@
   cursor: all-scroll;
   padding-bottom: 8px;
 }
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table,
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table th,
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table td {
+  border: 1px solid #e5e5e5;
+}
 #product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table.visible {
   display: block;
   visibility: visible;
@@ -29,12 +34,8 @@
 #product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table {
   font-size: 13px;
 }
-#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table thead {
-  color: white;
-  background-color: black;
-}
 #product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table thead th:first-child {
-  background-color: black;
+  background-color: #e5e5e5;
 }
 #product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table th:first-child {
   width: 140px;
@@ -51,13 +52,11 @@
   right: 0;
   width: 1px;
   height: 100%;
-  background-color: black;
-}
-#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table th {
-  min-width: 100px;
+  background-color: #e5e5e5;
 }
 #product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table td,
 #product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table th {
+  min-width: 100px;
   text-align: center;
   border-bottom: none;
   padding: 12px;
@@ -69,4 +68,9 @@
   height: 4px; /* height of horizontal scrollbar ← You're missing this */
   width: 4px; /* width of vertical scrollbar */
   border: 1px solid #d5d5d5;
+  -webkit-appearance: none;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table.table-adidas-cm thead th, #product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table.table-adidas-inch thead th {
+  background-color: black;
+  color: white;
 }

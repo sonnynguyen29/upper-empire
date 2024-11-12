@@ -570,14 +570,17 @@
 
                           {% when 'product-size-guide' %}
                             {% if product.tags contains 'Sneaker' %}
-                              {% render 'product-size-guide', settings: block.settings %}
+                              {% render 'product-size-guide', settings: block.settings, product: product %}
                             {% endif %}
 
                           {% when 'product-shipping-return' %}
                             {% render 'product-shipping-return', settings: block.settings %}
 
                           {% when 'size_notice' %}
-                            {% if product.tags contains 'Sneaker' and product.tags contains 'Men' %}
+                            {% if product.tags contains 'Sneaker'
+                              and product.tags contains 'Men'
+                              and product.vendor == 'Nike'
+                            %}
                               <div id="size_notice" style="margin-top: 30px;">{{ block.settings.notice }}</div>
                             {% endif %}
 

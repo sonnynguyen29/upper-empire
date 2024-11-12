@@ -27,10 +27,10 @@
       </div>
       <div class="size-chart-wrapper">
         <div data-table="inches" class="size-chart-table visible">
-          {% render 'product-size-inches-table' %}
+          {% render 'product-size-inches-table', vendor: product.vendor %}
         </div>
         <div data-table="cm" class="size-chart-table">
-          {% render 'product-size-cm-table' %}
+          {% render 'product-size-cm-table', vendor: product.vendor %}
         </div>
       </div>
     </size-chart-table>

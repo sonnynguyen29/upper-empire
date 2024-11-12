@@ -3,6 +3,10 @@ section#hero-banner {
         position: relative;
 
         .hero__banner-image-wrapper {
+            .splide__track {
+                overflow: clip;
+            }
+
             .desktop-splide {
                 display: none;
 
@@ -35,6 +39,14 @@ section#hero-banner {
                     }
                 }
 
+                @media screen and (min-width: 990px) {
+                    height: calc(100vh - 57px);
+
+                    .responsive-image-wrapper {
+                        height: calc(100vh - 57px);
+                    }
+                }
+
                 @media screen and (min-width: 1920px) {
                     .responsive-image-wrapper {
                         img {
@@ -49,19 +61,19 @@ section#hero-banner {
             position: sticky !important;
             top: 50%;
             transform: translateY(49%);
-            align-self: flex-start;
-            height: 100%;
             text-align: left;
             color: #fff;
             font-size: 24px;
             font-weight: 700;
             line-height: 1.2;
-            margin-left: 1rem;
+            margin-left: 3.5rem;
+            margin-bottom: 3.5rem;
+            width: 70%;
 
             @media screen and (min-width: 768px) {
                 width: auto;
-
                 margin-left: 4rem;
+                margin-bottom: 4.5rem;
             }
         }
     }

@@ -1,6 +1,9 @@
 section#hero-banner .hero__banner-container {
   position: relative;
 }
+section#hero-banner .hero__banner-container .hero__banner-image-wrapper .splide__track {
+  overflow: clip;
+}
 section#hero-banner .hero__banner-container .hero__banner-image-wrapper .desktop-splide {
   display: none;
 }
@@ -34,6 +37,16 @@ section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__b
   height: 100%;
   object-fit: cover;
 }
+@media screen and (min-width: 990px) {
+  section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop,
+  section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile {
+    height: calc(100vh - 57px);
+  }
+  section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop .responsive-image-wrapper,
+  section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile .responsive-image-wrapper {
+    height: calc(100vh - 57px);
+  }
+}
 @media screen and (min-width: 1920px) {
   section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop .responsive-image-wrapper img,
   section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile .responsive-image-wrapper img {
@@ -45,18 +58,19 @@ section#hero-banner .hero__banner-container .hero__banner-title {
   position: sticky !important;
   top: 50%;
   transform: translateY(49%);
-  align-self: flex-start;
-  height: 100%;
   text-align: left;
   color: #fff;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
-  margin-left: 1rem;
+  margin-left: 3.5rem;
+  margin-bottom: 3.5rem;
+  width: 70%;
 }
 @media screen and (min-width: 768px) {
   section#hero-banner .hero__banner-container .hero__banner-title {
     width: auto;
     margin-left: 4rem;
+    margin-bottom: 4.5rem;
   }
 }
