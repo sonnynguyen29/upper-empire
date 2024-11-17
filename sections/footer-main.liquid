@@ -35,10 +35,9 @@
 
         <ul>
           {% for link in navigation_links %}
-            {% assign link = link.settings.page | default: link.settings.link %}
             <li>
               <a
-                href="{{ link }}"
+                href="{{ link.settings.link }}"
                 {% if link.settings.is_open_in_new_tab %}
                   target="_blank"
                 {% endif %}
@@ -131,7 +130,7 @@
           "default": "Homepage"
         },
         {
-          "type": "url",
+          "type": "text",
           "id": "link",
           "label": "Link",
           "default": "https://upperempire.com"
