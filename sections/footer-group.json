@@ -13,6 +13,95 @@
   "sections": {
     "footer-main": {
       "type": "footer-main",
+      "blocks": {
+        "social_media_76xCBa": {
+          "type": "social-media",
+          "settings": {
+            "title": "Facebook",
+            "link": "https://www.facebook.com/profile.php?id=100089191310223",
+            "is_open_in_new_tab": true
+          }
+        },
+        "social_media_rELK4p": {
+          "type": "social-media",
+          "settings": {
+            "title": "Youtube",
+            "link": "https://www.youtube.com/@UpperEmpire",
+            "is_open_in_new_tab": true
+          }
+        },
+        "social_media_T47HmL": {
+          "type": "social-media",
+          "settings": {
+            "title": "Instagram",
+            "link": "https://www.instagram.com/upper.empire/",
+            "is_open_in_new_tab": true
+          }
+        },
+        "social_media_j86ky8": {
+          "type": "social-media",
+          "settings": {
+            "title": "Whatnot",
+            "link": "https://www.whatnot.com/user/upperempire/shows",
+            "is_open_in_new_tab": true
+          }
+        },
+        "social_media_7egz3K": {
+          "type": "social-media",
+          "settings": {
+            "title": "Tiktok",
+            "link": "https://www.tiktok.com/@upper.empire",
+            "is_open_in_new_tab": true
+          }
+        },
+        "navigation_Hejrpw": {
+          "type": "navigation",
+          "settings": {
+            "title": "Blogs",
+            "page": "",
+            "link": "https://upperempire.com/blogs/news",
+            "is_open_in_new_tab": false
+          }
+        },
+        "navigation_F8zFcJ": {
+          "type": "navigation",
+          "settings": {
+            "title": "Refund policy",
+            "page": "",
+            "link": "https://upperempire.com/policies/refund-policy",
+            "is_open_in_new_tab": false
+          }
+        },
+        "navigation_EEF6rw": {
+          "type": "navigation",
+          "settings": {
+            "title": "Shipping policy",
+            "page": "",
+            "link": "https://upperempire.com/policies/shipping-policy",
+            "is_open_in_new_tab": false
+          }
+        },
+        "navigation_jJgD3y": {
+          "type": "navigation",
+          "settings": {
+            "title": "Terms of Service",
+            "page": "",
+            "link": "https://upperempire.com/policies/terms-of-service",
+            "is_open_in_new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "social_media_76xCBa",
+        "social_media_rELK4p",
+        "social_media_T47HmL",
+        "social_media_j86ky8",
+        "social_media_7egz3K",
+        "navigation_Hejrpw",
+        "navigation_F8zFcJ",
+        "navigation_EEF6rw",
+        "navigation_jJgD3y"
+      ],
       "settings": {
         "footer_background_text_image": "shopify://shop_images/footer_image_Desktop.png",
         "footer_background_text_image_mobile": "shopify://shop_images/footer_image_Mobile.png",

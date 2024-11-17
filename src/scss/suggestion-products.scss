@@ -43,6 +43,29 @@
                     display: flex;
                     flex-direction: column;
                     gap: 4px;
+
+                    .product-title {
+                        margin: 0;
+                    }
+
+                    .product-card--price-vendor-wrapper {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        gap: 6px;
+
+                        .sold-out {
+                            font-weight: 700;
+                        }
+
+                        .dot {
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            background: #d9d9d9;
+                        }
+                    }
                 }
 
                 .product-variants {

@@ -5,12 +5,21 @@
     <div class="footer-section-wrapper">
       <div class="footer-section social-media-wrapper">
         <h3>Follow us on</h3>
+        {% assign social_media_links = section.blocks | where: 'type', 'social-media' %}
+
         <ul>
-          <li><a href="/pages/contact-us">Facebook</a></li>
-          <li><a href="/pages/returns">X</a></li>
-          <li><a href="/pages/shipping">Instagram</a></li>
-          <li><a href="/pages/privacy-policy">YouTube</a></li>
-          <li><a href="/pages/terms-of-service">Tiktok</a></li>
+          {% for link in social_media_links %}
+            <li>
+              <a
+                href="{{ link.settings.link }}"
+                {% if link.settings.is_open_in_new_tab %}
+                  target="_blank"
+                {% endif %}
+              >
+                {{ link.settings.title }}
+              </a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
       <div class="footer-section newsletter-wrapper ">
@@ -22,12 +31,22 @@
       </div>
       <div class="footer-section policy-wrapper">
         <h3>Navigation</h3>
+        {% assign navigation_links = section.blocks | where: 'type', 'navigation' %}
+
         <ul>
-          <li><a href="https://www.facebook.com/" target="_blank">Blogs</a></li>
-          <li><a href="https://www.instagram.com/" target="_blank">Size guide</a></li>
-          <li><a href="https://www.twitter.com/" target="_blank">Refund policy</a></li>
-          <li><a href="https://www.pinterest.com/" target="_blank">Privacy policy</a></li>
-          <li><a href="https://www.youtube.com/" target="_blank">Terms of service</a></li>
+          {% for link in navigation_links %}
+            {% assign link = link.settings.page | default: link.settings.link %}
+            <li>
+              <a
+                href="{{ link }}"
+                {% if link.settings.is_open_in_new_tab %}
+                  target="_blank"
+                {% endif %}
+              >
+                {{ link.settings.title }}
+              </a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -98,6 +117,61 @@
       "id": "footer_background_text",
       "label": "Footer Background Text",
       "default": "Upper empire"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Social Media",
+      "type": "social-media",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Homepage"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "default": "https://upperempire.com"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_open_in_new_tab",
+          "label": "Is open in new tab",
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Navigation",
+      "type": "navigation",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Homepage"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Page"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "Link",
+          "default": "https://upperempire.com"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_open_in_new_tab",
+          "label": "Is open in new tab",
+          "default": false
+        }
+      ]
     }
   ]
 }

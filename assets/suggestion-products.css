@@ -38,6 +38,25 @@
   flex-direction: column;
   gap: 4px;
 }
+#suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-description .product-title {
+  margin: 0;
+}
+#suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-description .product-card--price-vendor-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+}
+#suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-description .product-card--price-vendor-wrapper .sold-out {
+  font-weight: 700;
+}
+#suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-description .product-card--price-vendor-wrapper .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #d9d9d9;
+}
 #suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-variants {
   display: flex;
   flex-direction: row;

@@ -1,291 +1,324 @@
-{% comment %}
-  <script>
-    console.log({{ product.tags | json }})
-  </script>
-{% endcomment %}
-
 {% liquid
-  comment
-    assign tag_to_collection = 'Women:sneakers-women,Men:sneakers-men,Kids:sneakers-kids' | split: ','
-    assign tag_to_collection = 'Adidas:adidas,Nike:nike' | split: ','
-    assign filter_by_collections = ''
-  endcomment
+  assign product_quantity_target = 8
+  assign suggestion_size = 0
+  assign suggestion_product_handles = ''
+  assign fixed_tags_sample = 'Accessories,Clothing,Sneaker,New Arrivals,Women,Men,Home'
 
-  comment
-    **************************************************************************************************************
-    Get all products by:
-    - vendor
-  endcomment
+  assign fixed_tags = ''
+  assign dynamic_tags = ''
 
-  assign products_by_vendor = ''
-  assign vendor_collection_handle = product.vendor | handleize
-  assign collection_to_display = collections[vendor_collection_handle]
-
-  for collection_product in collection_to_display.products
-    if product.handle == collection_product.handle
-      continue
+  for tag in product.tags
+    assign tag_handle = tag | handleize
+    if fixed_tags_sample contains tag
+      assign fixed_tags = fixed_tags | append: tag_handle | append: ','
+    else
+      assign dynamic_tags = dynamic_tags | append: tag_handle | append: ','
     endif
-
-    assign products_by_vendor = products_by_vendor | append: collection_product.handle | append: ','
   endfor
 
-  assign products_by_vendor = products_by_vendor | split: ',' | uniq
+  assign collection_list = dynamic_tags | append: fixed_tags | split: ',' | compact
 
-  comment
-    **************************************************************************************************************
-  endcomment
+  assign temp = ''
 
-  comment
-    Get all products by:
-    - vendor
-  endcomment
+  for collection_handle in collection_list
+    comment
+      **************************************************************************************************************
+      Get all products by:
+      - vendor
+    endcomment
+    assign collection_handle = collection_handle | handleize
 
-  comment
-    for tag in product.tags
-      for tag_collection_pair in tag_to_collection
-        assign tag_name = tag_collection_pair | split: ':' | first
-        assign collection_handle = tag_collection_pair | split: ':' | last
+    assign collection_to_display = collections[collection_handle]
 
-        if tag == tag_name
-          assign collection_to_display = collections[collection_handle]
+    comment
+      ************************************** Filter by product type ***************************************************
+    endcomment
 
-          for collection_product in collection_to_display.products
-            assign filter_by_collections = filter_by_collections | append: collection_product.handle | append: ','
-          endfor
+    for product_in_collection in collection_to_display.products
+      if product.handle == product_in_collection.handle or suggestion_product_handles contains product_in_collection.handle
+        continue
+      endif
+
+      if suggestion_size > product_quantity_target
+        break
+      endif
+
+      assign product_type = product.type | downcase
+      assign product_in_collection_type = product_in_collection.type | downcase
+
+      if product_type == product_in_collection_type
+        assign suggestion_product_handles = suggestion_product_handles | append: product_in_collection.handle | append: '|'
+        assign suggestion_size = suggestion_size | plus: 1
+      endif
+    endfor
+
+    if suggestion_size >= product_quantity_target
+      break
+    endif
+
+    comment
+      ************************************** End by product type ***************************************************
+    endcomment
+
+    comment
+      ************************************** Filter by tag ***************************************************
+    endcomment
+
+    assign product_tag = product.tags
+    assign filtered_tags = ''
+    assign exclusive_tags = 'home,new arrivals,men,women,kids,sneaker' | split: ','
+
+    for tag in product_tag
+      assign lowercase_tag = tag | downcase
+      unless exclusive_tags contains lowercase_tag
+        assign filtered_tags = filtered_tags | append: tag | append: '|'
+      endunless
+    endfor
+
+    assign filtered_tags_array = filtered_tags | split: '|' | sort: 'size' | reverse
+
+    for tag in filtered_tags_array
+      for product_in_collection in collection_to_display.products
+        if suggestion_size > product_quantity_target
+          break
+        endif
+
+        if product.handle == product_in_collection.handle or suggestion_product_handles contains product_in_collection.handle
+          continue
+        endif
+
+        if product_in_collection.tags contains tag
+          assign suggestion_product_handles = suggestion_product_handles | append: product_in_collection.handle | append: '|'
+          assign suggestion_size = suggestion_size | plus: 1
         endif
       endfor
     endfor
 
-    assign filter_by_collections = filter_by_collections | split: ',' | uniq
-  endcomment
-
-  assign filter_by_type = ''
-  for handle in products_by_vendor
-    assign matched_product = all_products[handle]
-    if matched_product.type == product.type
-      assign filter_by_type = filter_by_type | append: ','
+    if suggestion_size > product_quantity_target
+      break
     endif
+
     comment
-      assign filtered_product_handles_array = filtered_product_handles_array | append: handle | append: '*****' | append: matched_product.vendor | append: ','
+      ************************************** End by tag ***************************************************
+    endcomment
+
+    comment
+      *************************************** Filter by Name ******************************************************
+    endcomment
+
+    assign matched_rank = ''
+
+    assign main_title = product.title | replace: ' - ', ' '
+    assign main_keywords = main_title | split: ' '
+    assign source_compare = main_keywords
+
+    for product_match in collection_to_display.products
+      if product.handle == product_match.handle or suggestion_product_handles contains product_match.handle
+        continue
+      endif
+
+      assign product_title = product_match.title | replace: ' - ', ' '
+      assign product_keywords = product_title | split: ' '
+      assign compare = product_title | split: ' '
+
+      if product_keywords.size > main_keywords.size
+        assign source_compare = product_keywords
+        assign compare = main_keywords
+      endif
+
+      assign match_number = 0
+
+      for keyword in source_compare
+        if compare contains keyword
+          assign match_number = match_number | plus: 1
+        endif
+      endfor
+
+      assign index = forloop.index0
+
+      assign matched_rank = matched_rank | append: match_number | append: '-' | append: index | append: '_______' | append: product_match.title | append: '|'
+    endfor
+
+    assign matched_rank = matched_rank | split: '|'
+
+    assign sort_matched_rank = ''
+
+    for value in (1..20)
+      for item in matched_rank
+        assign parts = item | split: '-'
+        assign num = parts[0] | plus: 0
+        if num == value
+          assign sort_matched_rank = sort_matched_rank | append: item | append: '|'
+        endif
+      endfor
+    endfor
+
+    assign reverse_sort_matched_rank = sort_matched_rank | split: '|' | reverse
+
+    for match in reverse_sort_matched_rank
+      assign number_str = match | split: '-'
+      assign index = number_str[1] | plus: 0
+      assign match_number = number_str[0] | plus: 0
+
+      if suggestion_size > product_quantity_target
+        break
+      endif
+
+      assign suggestion_product_handles = suggestion_product_handles | append: collection_to_display.products[index].handle | append: '|'
+      assign suggestion_size = suggestion_size | plus: 1
+    endfor
+
+    assign temp = suggestion_product_handles
+
+    if suggestion_size > product_quantity_target
+      break
+    endif
+
+    comment
+      *************************************** End filter by Name ******************************************************
     endcomment
   endfor
 
-  assign filter_by_type = filter_by_type | split: ',' | uniq
+  if product.tags contains 'Basketball Shoes'
+    assign collection_handle = 'Basketball Shoes' | handleize
 
-  comment
-    **************************************************************************************************************
-  endcomment
-
-  comment
-    assign filter_by_type = ''
-
-    for handle in filter_by_collections
-      assign matched_product = all_products[handle]
-      if matched_product.type == product.type
-          assign filtered_product_handles_array = filtered_product_handles_array | append: handle | append: '*****' | append: matched_product.vendor | append: ','
-
-
-        assign filter_by_type = filter_by_type | append: handle | append: ','
-      endif
+    for product in collections[collection_handle].products
+      assign suggestion_product_handles = suggestion_product_handles | append: product.handle | append: '|'
     endfor
+  endif
 
-    assign filter_by_type = filter_by_type | split: ',' | uniq
-  endcomment
+  assign suggestion_product_handles = suggestion_product_handles | split: '|' | compact | uniq
 %}
-
-{% comment %}
-  {% for tag in product.tags %}
-    {% assign tag_handle = tag | handleize %}
-    <script>
-      console.log('tag', {{ tag_handle | json }})
-    </script>
-  {% endfor %}
-{% endcomment %}
-
-{% comment %}
-  <script>
-    console.log('collection_handle', {{ collection_handle | json }});
-  </script>
-{% endcomment %}
-{{ 'suggestion-products.css' | asset_url | stylesheet_tag }}
-
-{% liquid
-  assign main_title = 'nike-air-jordan-13-retro-premio-bin-23'
-  assign main_keywords = main_title | split: '-'
-  assign matched_rank = ''
-  assign product_titles = products_by_vendor
-  assign source_compare = main_keywords
-
-  for product_match in product_titles
-    assign product_keywords = product_match | split: '-'
-    assign compare = product_match
-
-    if product_keywords.size > main_keywords.size
-      assign source_compare = product_keywords
-      assign compare = main_keywords
-    endif
-
-    assign match_number = 0
-
-    for keyword in source_compare
-      if compare contains keyword
-        assign match_number = match_number | plus: 1
-      endif
-    endfor
-
-    assign index = forloop.index0
-
-    assign matched_rank = matched_rank | append: match_number | append: '-' | append: index | append: '|'
-  endfor
-
-  assign matched_rank = matched_rank | split: '|'
-
-  assign sort_matched_rank = ''
-
-  for value in (1..20)
-    for item in matched_rank
-      assign parts = item | split: '-'
-      assign num = parts[0] | plus: 0
-      if num == value
-        assign sort_matched_rank = sort_matched_rank | append: item | append: '|'
-      endif
-    endfor
-  endfor
-
-  assign reverse_sort_matched_rank = sort_matched_rank | split: '|' | reverse
-  assign product_matched_handle = ''
-
-  for match in reverse_sort_matched_rank limit: 3
-    assign number_str = match | split: '-'
-    assign index = number_str[1] | plus: 0
-    assign product_matched_handle = product_matched_handle | append: products_by_vendor[index] | append: '|'
-  endfor
-
-  assign product_matched_handle = product_matched_handle | split: '|' | uniq
-
-  assign suggestion_products = filter_by_type | concat: product_matched_handle | uniq
-%}
-
 <script>
-  console.log('products_by_vendor', {{ products_by_vendor | json }})
-  console.log('filter_by_type', {{ filter_by_type | json }})
-  console.log('product_matched_handle', {{ product_matched_handle | json }})
-  console.log('suggestion_products', {{ suggestion_products | json }})
+  console.log('collection_to_display', {{ collections[collection_handle].products | json }})
+  console.log('suggestion_product_handles', {{  suggestion_product_handles  | json }})
   console.log('product.type', {{ product.type | json }})
-  console.log({{ product.vendor | json }})
+  console.log('product.vendor', {{ product.vendor | json }})
+  console.log('main_keywords', {{ main_keywords | json }})
+  console.log('product.tags', {{ product.tags | json }})
+  console.log('collection_list', {{ collection_list | json }})
+  console.info('temp', {{ temp | json }})
 </script>
 
 <script>
   console.log('matched_rank', {{ matched_rank | json }})
   console.log('reverse_sort_matched_rank', {{ reverse_sort_matched_rank | json }})
-  console.log('product_matched_handle', {{ product_matched_handle | json }})
 </script>
 
-{% for handle in product_matched_handle %}
-  <script type="application/json" id="ProductJson">
-    {{ all_products[handle] | json }}
-  </script>
-{% endfor %}
+{{ 'suggestion-products.css' | asset_url | stylesheet_tag }}
 
-<section id="suggestion-products">
-  <div class="suggestion-products-wrapper">
-    <div class="suggestion-products-title">
-      <h2>YOU MAY ALSO LIKE</h2>
-    </div>
-    <suggestion-products class="suggestion-products splide">
-      <div class="splide__track">
-        <div class="splide__list">
-          {% for handle in suggestion_products limit: 8 %}
-            {% if handle == product.handle %}
-              {% continue %}
-            {% endif %}
-            <script>
-              console.log('handle', {{ handle | json }})
-            </script>
-            {% liquid
-              assign suggestion_product = all_products[handle]
-            %}
-            <a href="{{ suggestion_product.url }}" class="splide__slide">
-              <div class="product-grid-item">
-                <div class="product-image">
-                  <div class="product-image--default">
-                    {% render 'responsive-image' with suggestion_product.featured_image,
-                      alt: suggestion_product.featured_image.alt,
-                      class: 'product-image'
-                    %}
-                  </div>
-                  <div class="product-image--hover">
-                    {% render 'responsive-image' with suggestion_product.images[1],
-                      alt: suggestion_product.featured_image.alt,
-                      class: 'product-image'
-                    %}
-                  </div>
-                </div>
-                <div class="product-info">
-                  <div class="product-description">
-                    <p class="product-title">{{ suggestion_product.title }}</p>
-                    <p class="product-price">{{ suggestion_product.price | money }}</p>
-                  </div>
-                  <div class="product-variants">
-                    {% for variant in suggestion_product.variants %}
-                      <span
-                        class="product-variants-title"
-                        data-variant-url="{{ variant.url }}"
-                        data-variant-id="{{ variant.id }}"
-                      >
-                        {{- variant.title -}}
-                      </span>
-                    {% endfor %}
-                  </div>
-                </div>
-              </div>
-            </a>
-            {% comment %}
-              {% if forloop.index > 6 %}
-                {% break %}
-              {% endif %}
-            {% endcomment %}
-          {% endfor %}
-        </div>
+{% if suggestion_product_handles.size > 0 %}
+  <section id="suggestion-products">
+    <div class="suggestion-products-wrapper">
+      <div class="suggestion-products-title">
+        <h2>YOU MAY ALSO LIKE</h2>
       </div>
-    </suggestion-products>
-  </div>
-</section>
+      <suggestion-products class="suggestion-products splide">
+        <div class="splide__track">
+          <div class="splide__list">
+            {% for handle in suggestion_product_handles %}
+              {% if handle == product.handle %}
+                {% continue %}
+              {% endif %}
 
-<script>
-  window.addEventListener('load', (event) => {
-    const loadProductGridSplide = () => {
-      var productGridSlide = new Splide('.suggestion-products', {
-        perPage: 1,
-        perMove: 1,
-        mediaQuery: 'min',
-        arrows: false,
-        pagination: false,
-        gap: 8,
-        padding: { left: 0, right: '5%' },
-        arrowPath:
-          'M 39.511719 19.195312 L 24.511719 34.382812 C 24.199219 34.699219 23.773438 34.875 23.332031 34.875 C 22.890625 34.875 22.464844 34.699219 22.152344 34.382812 C 21.839844 34.066406 21.664062 33.636719 21.664062 33.1875 C 21.664062 32.738281 21.839844 32.308594 22.152344 31.992188 L 34.308594 19.6875 L 1.667969 19.6875 C 1.222656 19.6875 0.800781 19.511719 0.488281 19.191406 C 0.175781 18.875 0 18.449219 0 18 C 0 17.550781 0.175781 17.125 0.488281 16.808594 C 0.800781 16.492188 1.222656 16.3125 1.667969 16.3125 L 34.308594 16.3125 L 22.152344 4.007812 C 21.839844 3.691406 21.664062 3.261719 21.664062 2.8125 C 21.664062 2.363281 21.839844 1.933594 22.152344 1.617188 C 22.464844 1.300781 22.890625 1.125 23.332031 1.125 C 23.773438 1.125 24.199219 1.300781 24.511719 1.617188 L 39.511719 16.804688 C 39.667969 16.964844 39.789062 17.148438 39.875 17.355469 C 39.957031 17.558594 40 17.777344 40 18 C 40 18.222656 39.957031 18.441406 39.875 18.644531 C 39.789062 18.851562 39.667969 19.039062 39.511719 19.195312 Z M 39.511719 19.195312',
-        breakpoints: {
-          768: {
-            perPage: 2,
-            arrows: true,
-            padding: { left: 0, right: 0 },
+              {% liquid
+                assign suggestion_product = all_products[handle]
+              %}
+              <script>
+                console.log('handle', {{ handle | json }})
+                console.log('product', {{ suggestion_product | json }})
+              </script>
+              <a href="{{ suggestion_product.url }}" class="splide__slide">
+                <div class="product-grid-item">
+                  <div class="product-image">
+                    <div class="product-image--default">
+                      {% render 'responsive-image' with suggestion_product.featured_image,
+                        alt: suggestion_product.featured_image.alt,
+                        class: 'product-image'
+                      %}
+                    </div>
+                    <div class="product-image--hover">
+                      {% render 'responsive-image' with suggestion_product.images[1],
+                        alt: suggestion_product.featured_image.alt,
+                        class: 'product-image'
+                      %}
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-description">
+                      <p class="product-title">{{ suggestion_product.title }}</p>
+                      <div class="product-card--price-vendor-wrapper">
+                        {{ suggestion_product.price | money }}
+                        {% if product.available %}
+                        {% else %}
+                          <span class="dot"></span>
+                          <span class="product-grid--title sold-out">Sold Out</span>
+                          <span class="dot"></span>
+                          <span class="product-grid--title">Request for Order</span>
+                        {% endif %}
+                      </div>
+                    </div>
+                    <div class="product-variants">
+                      {% for variant in suggestion_product.variants %}
+                        <span
+                          class="product-variants-title"
+                          data-variant-url="{{ variant.url }}"
+                          data-variant-id="{{ variant.id }}"
+                        >
+                          {{- variant.title -}}
+                        </span>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </a>
+              {% comment %}
+                {% if forloop.index > 6 %}
+                  {% break %}
+                {% endif %}
+              {% endcomment %}
+            {% endfor %}
+          </div>
+        </div>
+      </suggestion-products>
+    </div>
+  </section>
+
+  <script>
+    window.addEventListener('load', (event) => {
+      const loadProductGridSplide = () => {
+        var productGridSlide = new Splide('.suggestion-products', {
+          perPage: 1,
+          perMove: 1,
+          mediaQuery: 'min',
+          arrows: false,
+          pagination: false,
+          gap: 8,
+          padding: { left: 0, right: '5%' },
+          arrowPath:
+            'M 39.511719 19.195312 L 24.511719 34.382812 C 24.199219 34.699219 23.773438 34.875 23.332031 34.875 C 22.890625 34.875 22.464844 34.699219 22.152344 34.382812 C 21.839844 34.066406 21.664062 33.636719 21.664062 33.1875 C 21.664062 32.738281 21.839844 32.308594 22.152344 31.992188 L 34.308594 19.6875 L 1.667969 19.6875 C 1.222656 19.6875 0.800781 19.511719 0.488281 19.191406 C 0.175781 18.875 0 18.449219 0 18 C 0 17.550781 0.175781 17.125 0.488281 16.808594 C 0.800781 16.492188 1.222656 16.3125 1.667969 16.3125 L 34.308594 16.3125 L 22.152344 4.007812 C 21.839844 3.691406 21.664062 3.261719 21.664062 2.8125 C 21.664062 2.363281 21.839844 1.933594 22.152344 1.617188 C 22.464844 1.300781 22.890625 1.125 23.332031 1.125 C 23.773438 1.125 24.199219 1.300781 24.511719 1.617188 L 39.511719 16.804688 C 39.667969 16.964844 39.789062 17.148438 39.875 17.355469 C 39.957031 17.558594 40 17.777344 40 18 C 40 18.222656 39.957031 18.441406 39.875 18.644531 C 39.789062 18.851562 39.667969 19.039062 39.511719 19.195312 Z M 39.511719 19.195312',
+          breakpoints: {
+            768: {
+              perPage: 2,
+              arrows: true,
+              padding: { left: 0, right: 0 },
+            },
+            1280: {
+              perPage: 3,
+            },
           },
-          1280: {
-            perPage: 3,
-          },
-        },
-      });
-      productGridSlide.mount();
-    };
+        });
+        productGridSlide.mount();
+      };
 
-    loadProductGridSplide();
+      loadProductGridSplide();
 
-    document.querySelectorAll('.product-variants-title').forEach(function (element) {
-      element.addEventListener('click', function (event) {
-        event.preventDefault();
-        window.location.href = element.getAttribute('data-variant-url');
+      document.querySelectorAll('.product-variants-title').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+          event.preventDefault();
+          window.location.href = element.getAttribute('data-variant-url');
+        });
       });
     });
-  });
-</script>
+  </script>
+{% endif %}
