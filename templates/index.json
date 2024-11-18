@@ -156,70 +156,66 @@
         "section_subtitle_url": "https://www.facebook.com/groups/upperempire"
       }
     },
-    "instagram-grid-section": {
-      "type": "instagram-grid",
+    "social-media-grid": {
+      "type": "social-media-grid",
       "blocks": {
-        "image_picker_cnfLtd": {
-          "type": "image_picker",
+        "instagram_image_m87PNa": {
+          "type": "instagram-image",
           "settings": {
             "image": "shopify://shop_images/432121939_774218811273980_7552797366821012998_n.jpg"
           }
         },
-        "image_picker_ULpqPQ": {
-          "type": "image_picker",
-          "settings": {
-            "image": "shopify://shop_images/432243864_323411054077131_7246398251192015688_n.jpg"
-          }
-        },
-        "image_picker_MaBwAx": {
-          "type": "image_picker",
-          "settings": {
-            "image": "shopify://shop_images/432243862_916361410492666_2439988818322703425_n.jpg"
-          }
-        },
-        "image_picker_LEUbFx": {
-          "type": "image_picker",
+        "instagram_image_ffCBar": {
+          "type": "instagram-image",
           "settings": {
             "image": "shopify://shop_images/432248630_948762373915641_6136749529405811846_n.jpg"
           }
         },
-        "image_picker_bhQH3N": {
-          "type": "image_picker",
-          "settings": {
-            "image": "shopify://shop_images/432121824_946114286865808_291591982407326616_n.jpg"
-          }
-        },
-        "image_picker_WCAbMU": {
-          "type": "image_picker",
+        "instagram_image_nRnM9Q": {
+          "type": "instagram-image",
           "settings": {
             "image": "shopify://shop_images/432240444_887971216413761_2254936241483375737_n.jpg"
           }
         },
-        "image_picker_LarQzj": {
-          "type": "image_picker",
+        "instagram_image_xPCp3U": {
+          "type": "instagram-image",
+          "settings": {
+            "image": "shopify://shop_images/432121824_946114286865808_291591982407326616_n.jpg"
+          }
+        },
+        "whatnot_video_pLrzEj": {
+          "type": "whatnot-video",
+          "settings": {
+            "video": "shopify://files/videos/MJ 20k box.mp4"
+          }
+        },
+        "whatnot_image_E9hDgH": {
+          "type": "whatnot-image",
           "settings": {
             "image": "shopify://shop_images/432248613_7004019346391480_6408442333364406157_n.jpg"
           }
         },
-        "image_picker_r7xR9D": {
-          "type": "image_picker",
+        "whatnot_image_FCwMAh": {
+          "type": "whatnot-image",
           "settings": {
-            "image": "shopify://shop_images/432240445_3647940508820980_6860918781650793869_n.jpg"
+            "image": "shopify://shop_images/432243864_323411054077131_7246398251192015688_n.jpg"
           }
         }
       },
       "block_order": [
-        "image_picker_cnfLtd",
-        "image_picker_ULpqPQ",
-        "image_picker_MaBwAx",
-        "image_picker_LEUbFx",
-        "image_picker_bhQH3N",
-        "image_picker_WCAbMU",
-        "image_picker_LarQzj",
-        "image_picker_r7xR9D"
+        "instagram_image_m87PNa",
+        "instagram_image_ffCBar",
+        "instagram_image_nRnM9Q",
+        "instagram_image_xPCp3U",
+        "whatnot_video_pLrzEj",
+        "whatnot_image_E9hDgH",
+        "whatnot_image_FCwMAh"
       ],
       "settings": {
-        "section_title": "@Follow us on instagram"
+        "instagram_image": "shopify://shop_images/instagram.png",
+        "instagram_title": "INSTAGRAM",
+        "whatnot_image": "shopify://shop_images/whatnot.png",
+        "whatnot_title": "WHATNOT"
       }
     }
   },
@@ -228,6 +224,6 @@
     "product-grid-slide",
     "collection-grid",
     "video-section",
-    "instagram-grid-section"
+    "social-media-grid"
   ]
 }

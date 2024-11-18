@@ -1,49 +1,17 @@
-#instagram-grid {
-  background-color: #f9f9f9;
-  padding: 60px 0px 0 0px;
-}
-#instagram-grid .instagram-grid-container .instagram-grid-title {
-  text-align: center;
-}
-#instagram-grid .instagram-grid-container .instagram-grid-title h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: -0.02rem;
-}
 #instagram-grid .instagram-grid-layout {
   display: grid;
-  grid-template-rows: repeat(4, minmax(50px, 1fr));
-  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
-#instagram-grid .instagram-grid-layout .instagram-grid-item .instagram-image {
-  height: 100%;
-  width: 100%;
-}
-#instagram-grid .instagram-grid-layout .instagram-grid-item .instagram-image .responsive-image-wrapper {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-#instagram-grid .instagram-grid-layout .instagram-grid-item .instagram-image .responsive-image-wrapper img {
-  height: 100% !important;
-  transition: 850ms cubic-bezier(0.455, 0.03, 0.21, 0.985);
+#instagram-grid .image-grid-item {
   aspect-ratio: 1/1;
 }
-#instagram-grid .instagram-grid-layout .instagram-grid-item:hover .instagram-image .responsive-image-wrapper img {
-  transform: scale(1.075);
-}
 @media screen and (min-width: 768px) {
-  #instagram-grid {
-    padding: 60px 8px;
+  #instagram-grid .image-grid-item {
+    aspect-ratio: 1.074;
   }
-  #instagram-grid .instagram-grid-container .instagram-grid-title h2 {
-    font-size: 32px;
-  }
-  #instagram-grid .instagram-grid-layout {
-    grid-template-rows: repeat(2, minmax(200px, 1fr));
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-  }
+}
+#instagram-grid .title-wrapper img {
+  margin-bottom: 5px;
 }
