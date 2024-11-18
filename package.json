@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pull:live": "shopify theme pull --store 577f9e-4.myshopify.com --l",
-    "pull:dev": "shopify theme pull --store 577f9e-4.myshopify.com",
-    "dev": "shopify theme dev --store 577f9e-4.myshopify.com & sass --watch --no-source-map src/scss:assets",
+    "pull": "shopify theme pull --store 577f9e-4.myshopify.com",
+    "dev": "shopify theme dev --store 577f9e-4.myshopify.com",
     "push": "shopify theme push --store 577f9e-4.myshopify.com"
   },
   "keywords": [],

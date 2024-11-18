@@ -59,6 +59,26 @@
             "mega_image_header_1": "",
             "mega_image_subheader_1": "",
             "overlay_text_on_image_promo_1": true,
+            "overlay_text_color_promo_1": "#ffffff",
+            "mega_image_link_1": "",
+            "show_promo_1_in_mobile_drawer": true,
+            "image_2_aspect_ratio": "square",
+            "mega_image_header_2": "",
+            "mega_image_subheader_2": "",
+            "overlay_text_on_image_promo_2": true,
+            "overlay_text_color_promo_2": "#ffffff",
+            "mega_image_link_2": "",
+            "show_promo_2_in_mobile_drawer": true
+          }
+        },
+        "content_9UK6j6": {
+          "type": "content",
+          "settings": {
+            "mega-menu": "",
+            "image_1_aspect_ratio": "square",
+            "mega_image_header_1": "",
+            "mega_image_subheader_1": "",
+            "overlay_text_on_image_promo_1": true,
             "overlay_text_color_promo_1": "#FFFFFF",
             "mega_image_link_1": "",
             "show_promo_1_in_mobile_drawer": true,
@@ -73,19 +93,20 @@
         }
       },
       "block_order": [
-        "content_HFFJYn"
+        "content_HFFJYn",
+        "content_9UK6j6"
       ],
       "settings": {
         "sticky_header": true,
         "enable_search": true,
         "logo": "shopify:\/\/shop_images\/77d151ef-b946-48c8-b7d9-35f04d36a532.png",
         "logo-placement": "left",
-        "logo_max_width": 330,
+        "logo_max_width": 240,
         "logo_max_width_mobile": 150,
         "logo_padding": 15,
         "mobile_social_icons": true,
         "show_icons": true,
-        "cart-style": "shopping-cart",
+        "cart-style": "shopping-bag",
         "cart_count": true,
         "overlay_header_homepage": false,
         "overlay_header_collection": false,
@@ -94,7 +115,7 @@
         "overlay_opacity": 0,
         "show_currency_selector": true,
         "show_locale_selector": true,
-        "main_linklist": "main-menu",
+        "main_linklist": "header-menu",
         "dropdown_alignment": "left"
       }
     }
