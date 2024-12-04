@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer",
@@ -5,49 +14,103 @@
     "footer-main": {
       "type": "footer-main",
       "blocks": {
-        "social": {
-          "type": "social",
+        "social_media_76xCBa": {
+          "type": "social-media",
           "settings": {
-            "social_title": "Connect with us"
+            "title": "Facebook",
+            "link": "https://www.facebook.com/profile.php?id=100089191310223",
+            "is_open_in_new_tab": true
           }
         },
-        "newsletter": {
-          "type": "newsletter",
+        "social_media_rELK4p": {
+          "type": "social-media",
           "settings": {
-            "newsletter_title": "Join the Mailing List",
-            "footer_newsletter_description": "<p>Subscribe! Be the first to know about new collections and exclusive promos!<\/p>"
+            "title": "Youtube",
+            "link": "https://www.youtube.com/@UpperEmpire",
+            "is_open_in_new_tab": true
           }
         },
-        "menu_nyiLVm": {
-          "type": "menu",
+        "social_media_T47HmL": {
+          "type": "social-media",
           "settings": {
-            "menu_title": "Navigation",
-            "footer_linklist": "footer"
+            "title": "Instagram",
+            "link": "https://www.instagram.com/upper.empire/",
+            "is_open_in_new_tab": true
+          }
+        },
+        "social_media_j86ky8": {
+          "type": "social-media",
+          "settings": {
+            "title": "Whatnot",
+            "link": "https://www.whatnot.com/user/upperempire/shows",
+            "is_open_in_new_tab": true
+          }
+        },
+        "social_media_7egz3K": {
+          "type": "social-media",
+          "settings": {
+            "title": "Tiktok",
+            "link": "https://www.tiktok.com/@upper.empire",
+            "is_open_in_new_tab": true
+          }
+        },
+        "navigation_Hejrpw": {
+          "type": "navigation",
+          "settings": {
+            "title": "Blogs",
+            "page": "",
+            "link": "https://upperempire.com/blogs/news",
+            "is_open_in_new_tab": false
+          }
+        },
+        "navigation_F8zFcJ": {
+          "type": "navigation",
+          "settings": {
+            "title": "Refund policy",
+            "page": "",
+            "link": "https://upperempire.com/policies/refund-policy",
+            "is_open_in_new_tab": false
+          }
+        },
+        "navigation_EEF6rw": {
+          "type": "navigation",
+          "settings": {
+            "title": "Shipping policy",
+            "page": "",
+            "link": "https://upperempire.com/policies/shipping-policy",
+            "is_open_in_new_tab": false
+          }
+        },
+        "navigation_jJgD3y": {
+          "type": "navigation",
+          "settings": {
+            "title": "Terms of Service",
+            "page": "",
+            "link": "https://upperempire.com/policies/terms-of-service",
+            "is_open_in_new_tab": false
           }
         }
       },
       "block_order": [
-        "social",
-        "newsletter",
-        "menu_nyiLVm"
+        "social_media_76xCBa",
+        "social_media_rELK4p",
+        "social_media_T47HmL",
+        "social_media_j86ky8",
+        "social_media_7egz3K",
+        "navigation_Hejrpw",
+        "navigation_F8zFcJ",
+        "navigation_EEF6rw",
+        "navigation_jJgD3y"
       ],
       "settings": {
-        "alignment": "left"
-      }
-    },
-    "footer-bottom": {
-      "type": "footer-bottom",
-      "settings": {
-        "show_methods_of_payment": true,
-        "center_content_on_desktop": true,
-        "footer_text": "",
-        "show_currency_selector": true,
-        "show_locale_selector": true
+        "footer_background_text_image": "shopify://shop_images/footer_image_Desktop.png",
+        "footer_background_text_image_mobile": "shopify://shop_images/footer_image_Mobile.png",
+        "footer_background_mask": "shopify://shop_images/mask-1.png",
+        "footer_background_text": "Upper empire"
       }
     }
   },
   "order": [
-    "footer-main",
-    "footer-bottom"
+    "footer-main"
   ]
 }

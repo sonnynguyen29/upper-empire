@@ -1,0 +1,29 @@
+<!-- Basic page needs ================================================== -->
+<meta charset="utf-8">
+{%- comment -%}DemoStoreRequirements{%- endcomment -%}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+{%- unless settings.type_header_font.system? -%}
+  <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+{%- endunless -%}
+
+<!-- Title and description ================================================== -->
+<title>
+  {{ page_title }}
+  {% if current_tags -%}
+    {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+  {%- endif %}
+  {% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}
+  {% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+</title>
+
+{% if page_description %}
+  <meta name="description" content="{{ page_description | escape }}">
+{% endif %}
+
+<!-- Helpers ================================================== -->
+{% render 'social-meta-tags' %}
+<link rel="canonical" href="{{ canonical_url }}">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="{{ settings.color_primary }}">

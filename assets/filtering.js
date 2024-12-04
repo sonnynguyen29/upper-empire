@@ -22,6 +22,11 @@ class CollectionFiltersForm extends HTMLElement {
     }, 500);
 
     this.querySelector('form').addEventListener('input', this.debouncedOnSubmit.bind(this));
+    this.querySelector('.filter-selector').addEventListener('change', () => {
+      this.querySelector('form .collection-filters__sort').value = this.querySelector('.filter-selector').value;
+      this.querySelector('form').dispatchEvent(new Event('input'));
+    });
+
     document.querySelector('[data-drawer-open-btn]').addEventListener('click', this.handleDrawerOpen.bind(this));
     this.addDrawerListeners.bind(this);
     window.addEventListener('resize', this.addDrawerListeners.bind(this));
@@ -29,6 +34,15 @@ class CollectionFiltersForm extends HTMLElement {
 
     this.bindActiveFacetButtonEvents();
     this.onDropDownBlur();
+    this.handleEscapeKey();
+  }
+
+  handleEscapeKey() {
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' || event.keyCode === 27) {
+        this.handleDrawerClose().bind(thisproduct);
+      }
+    });
   }
 
   onDropDownBlur() {
@@ -38,10 +52,10 @@ class CollectionFiltersForm extends HTMLElement {
       document.addEventListener('click', function (event) {
         var isClickInside = item.contains(event.target);
 
-        if (!isClickInside) {
-          //the click was outside the specifiedElement, close the dropdown
-          item.removeAttribute('open');
-        }
+        // if (!isClickInside) {
+        //   //the click was outside the specifiedElement, close the dropdown
+        //   item.removeAttribute('open');
+        // }
       });
     }
   }
@@ -70,7 +84,9 @@ class CollectionFiltersForm extends HTMLElement {
   handleDrawerOpen(e) {
     e.target.setAttribute('tabIndex', '-1');
     const filterDrawer = document.querySelector('collection-filtering-form');
-    const drawerCloseBtn = this.querySelector('[data-drawer-close-btn]')
+    const drawerCloseBtn = this.querySelector('[data-drawer-close-btn]');
+    const navDrawerEl = document.querySelector('#NavDrawer');
+    navDrawerEl.style.display = 'none';
 
     // filterDrawer.style.visibility = 'visible';
     filterDrawer.classList.add('is-open');
@@ -79,14 +95,17 @@ class CollectionFiltersForm extends HTMLElement {
     drawerCloseBtn.addEventListener('click', this.handleDrawerClose.bind(this));
 
     const drawerOverlay = document.querySelector('#NavDrawerOverlay');
-    if (drawerOverlay) drawerOverlay.addEventListener('click', this.handleDrawerClose.bind(this));
+    if (drawerOverlay) drawerOverlay.addEventListener('click', () => this.handleDrawerClose());
   }
 
   handleDrawerClose() {
     const filterDrawer = document.querySelector('collection-filtering-form');
     const filterBtn = document.querySelector('[data-drawer-open-btn]');
+    const navDrawerEl = document.querySelector('#NavDrawer');
 
     document.body.classList.remove('js-drawer-open-left', 'js-drawer-open');
+
+    navDrawerEl.style.display = 'flex';
 
     filterDrawer.classList.remove('is-open');
     filterBtn.setAttribute('tabIndex', '0');
@@ -282,6 +301,9 @@ class CollectionFiltersForm extends HTMLElement {
     this.renderActiveFacets(parsedHTML);
 
     if (countsToRender) this.renderCounts(countsToRender, event.target.closest('.js-filter'));
+
+    this.renderTotalFiltersCount(parsedHTML);
+    this.renderResetButton(parsedHTML);
   }
 
   renderActiveFacets(html) {
@@ -314,6 +336,35 @@ class CollectionFiltersForm extends HTMLElement {
       if (sourceElement && targetElement) {
         target.querySelector(selector).outerHTML = source.querySelector(selector).outerHTML;
       }
+    });
+  }
+
+  renderTotalFiltersCount(html) {
+    let totalFilter = 0;
+    html.querySelectorAll('.count-bubble').forEach((e) => {
+      if (e.dataset.activeValues) {
+        totalFilter += parseInt(e.dataset.activeValues);
+      }
+    });
+
+    const countBubbleEl = document.querySelector('.collection-filters .count-bubble');
+
+    countBubbleEl.innerHTML = totalFilter;
+    countBubbleEl.style.display = totalFilter > 0 ? 'block' : 'none';
+  }
+
+  renderResetButton(parsedHTML) {
+    parsedHTML.querySelectorAll('details.facets__disclosure').forEach((detailEl, index) => {
+      let totalFilter = 0;
+      const countBubble = detailEl.querySelector('.count-bubble');
+      if (countBubble.dataset.activeValues) {
+        totalFilter += parseInt(countBubble.dataset.activeValues);
+      }
+
+      console.log('totalFilter', totalFilter);
+
+      const resetElement = document.querySelector(`details.facets__disclosure[data-index="${index + 1}"] .facets__reset`);
+      resetElement.style.display = totalFilter > 0 ? 'block' : 'none';
     });
   }
 

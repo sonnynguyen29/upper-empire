@@ -1,0 +1,606 @@
+{{ 'menu-drawer.css' | asset_url | stylesheet_tag }}
+
+<div id="NavDrawerOverlay" class="drawer-overlay"></div>
+<div id="NavDrawer" class="drawer drawer--left">
+  <div class="mobile-nav-grid-container">
+    <div class="mobile-nav__logo-title">
+      <div class="mobile-nav__logo-title--inner">
+        <span class="mobile-nav__logo-title--title"> Menu </span>
+        {% render 'header-top-links' %}
+
+        <a class="mobile-menu--close-btn" aria-label="{{ 'layout.drawers.close_menu' | t }}" role="button">
+          {% render 'theme-icon' with icon: 'close', iconSize: 20 %}
+        </a>
+      </div>
+    </div>
+
+    <!-- begin mobile-nav -->
+    <ul class="mobile-nav mobile-nav--main">
+      {% assign menu = linklists[section.settings.main_linklist] %}
+      {% for link in menu.links %}
+        {% liquid
+          assign link-title = link.title | strip | downcase
+          assign is-mega-menu = false
+
+          assign show_first_promo_image = false
+          assign show_second_promo_image = false
+
+          for block in section.blocks
+            if block.settings.show_promo_1_in_mobile_drawer == true and block.settings.mega_image_1
+              assign show_first_promo_image = true
+            endif
+
+            if block.settings.show_promo_2_in_mobile_drawer == true and block.settings.mega_image_2
+              assign show_second_promo_image = true
+            endif
+
+            assign block-title = block.settings['mega-menu'] | strip | downcase
+            if block-title == link-title
+              if show_first_promo_image == true or show_second_promo_image == true
+                assign is-mega-menu = true
+              endif
+            endif
+          endfor
+        %}
+        {% if link.links != blank %}
+          <li
+            class="mobile-nav__item top-level{% if link.active %} mobile-nav__item--active{% endif %}{% if is-mega-menu %} mega-menu--mobile{% endif %}"
+            aria-haspopup="true"
+          >
+            <div class="mobile-nav__has-sublist">
+              <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
+              <div class="mobile-nav__toggle">
+                <button
+                  type="button"
+                  class="icon-fallback-text mobile-nav__toggle-open"
+                  aria-label="{{ 'cart.general.see_more' | t }}"
+                >
+                  {% render 'theme-icon', icon: 'chevron_down', iconSize: 16, iconAttributes: 'aria-hidden="true"' %}
+                </button>
+                <button
+                  type="button"
+                  class="icon-fallback-text mobile-nav__toggle-close"
+                  aria-label="{{ 'layout.drawers.close_menu' | t }}"
+                >
+                  {% render 'theme-icon', icon: 'chevron_up', iconSize: 16, iconAttributes: 'aria-hidden="true"' %}
+                </button>
+              </div>
+            </div>
+            <ul class="mobile-nav__sublist">
+              {% for sub_link in link.links %}
+                {% if sub_link.levels > 0 %}
+                  <li class="mobile-nav__item {% if sub_link.active %} mobile-nav__item--active{% endif %}">
+                    <div class="mobile-nav__has-sublist mobile-nav--expanded">
+                      <a href="{{ sub_link.url }}" class="mobile-nav__link">{{ sub_link.title | escape }}</a>
+                      <div class="mobile-nav__toggle">
+                        {% comment %}
+                          <button
+                            type="button"
+                            class="icon-fallback-text mobile-nav__toggle-open"
+                            name="{{ 'cart.general.see_more' | t }}"
+                          >
+                            {% render 'theme-icon',
+                              icon: 'chevron_down',
+                              iconSize: 16,
+                              iconAttributes: 'aria-hidden="true"'
+                            %}
+                            <span class="fallback-text">{{ 'cart.general.see_more' | t }}</span>
+                          </button>
+                          <button
+                            type="button"
+                            class="icon-fallback-text mobile-nav__toggle-close"
+                            name="{{ 'layout.drawers.close_menu' | t }}"
+                          >
+                            {% render 'theme-icon',
+                              icon: 'chevron_up',
+                              iconSize: 16,
+                              iconAttributes: 'aria-hidden="true"'
+                            %}
+                            <span class="fallback-text">{{ 'layout.drawers.close_menu' | t }}</span>
+                          </button>
+                        {% endcomment %}
+                      </div>
+                    </div>
+                    <ul class="mobile-nav__sublist">
+                      {% for sub_sub_link in sub_link.links %}
+                        <li class="mobile-nav__item third-child__nav-item">
+                          <a href="{{ sub_sub_link.url  }}" class="mobile-nav__link">
+                            {{- sub_sub_link.title | escape -}}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% else %}
+                  <li class="mobile-nav__item{% if sub_link.active %} mobile-nav__item--active{% endif %}">
+                    <a href="{{ sub_link.url }}" class="mobile-nav__link">{{ sub_link.title | escape }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+
+              {% if is-mega-menu %}
+                <ul class="mobile-promo--block">
+                  {% for block in section.blocks %}
+                    {% liquid
+                      assign link-title = link.title | strip | downcase
+                      assign block-title = block.settings['mega-menu'] | strip | downcase
+
+                      assign image_2_stretch = false
+                      assign crop_setting_2 = block.settings.image_2_aspect_ratio
+                      if crop_setting_2 == 'square'
+                        assign image_2_crop = 'aspect-ratio--square'
+                        assign image_2_stretch = true
+                      elsif crop_setting_2 == 'tall'
+                        assign image_2_crop = 'aspect-ratio--tall'
+                        assign image_2_stretch = true
+                      elsif crop_setting_2 == 'wide'
+                        assign image_2_crop = 'aspect-ratio--wide'
+                        assign image_2_stretch = true
+                      else
+                        assign image_2_crop = false
+                        assign image_2_stretch = false
+                      endif
+
+                      assign first_promo_has_text = false
+                      if block.settings.mega_image_header_1 != blank or block.settings.mega_image_subheader_1 != blank
+                        assign first_promo_has_text = true
+                      endif
+
+                      assign second_promo_has_text = false
+                      if block.settings.mega_image_header_2 != blank or block.settings.mega_image_subheader_2 != blank
+                        assign second_promo_has_text = true
+                      endif
+                    %}
+
+                    {% style %}
+                      .block-id-{{ block.id }} .overlay-text-on-image-promo-1 {
+                        color: {{ block.settings.overlay_text_color_promo_1 }} !important;
+                      }
+
+                      .block-id-{{ block.id }} .overlay-text-on-image-promo-2 {
+                        color: {{ block.settings.overlay_text_color_promo_2 }} !important;
+                      }
+                    {% endstyle %}
+
+                    {% if link-title == block-title %}
+                      {% if block.settings.mega_image_1 and block.settings.show_promo_1_in_mobile_drawer %}
+                        {%
+                          render 'mega-menu-promo-card' with
+                          promo_wrapper_classes: "mobile-nav__item",
+                          promo_block_id: block.id,
+                          promo_img: block.settings.mega_image_1,
+                          promo_img_crop: block.settings.image_1_aspect_ratio,
+                          promo_text_overlay: block.settings.overlay_text_on_image_promo_1,
+                          promo_text_heading: block.settings.mega_image_header_1,
+                          promo_text_subheading: block.settings.mega_image_subheader_1,
+                          promo_text_color: block.settings.overlay_text_color_promo_1,
+                          promo_link: block.settings.mega_image_link_1
+                        %}
+                      {% endif %}
+
+                      {% if block.settings.mega_image_2 and block.settings.show_promo_2_in_mobile_drawer %}
+                        {%
+                          render 'mega-menu-promo-card' with
+                          promo_wrapper_classes: "mobile-nav__item",
+                          promo_block_id: block.id,
+                          promo_img: block.settings.mega_image_2,
+                          promo_img_crop: block.settings.image_2_aspect_ratio,
+                          promo_text_overlay: block.settings.overlay_text_on_image_promo_2,
+                          promo_text_heading: block.settings.mega_image_header_2,
+                          promo_text_subheading: block.settings.mega_image_subheader_2,
+                          promo_text_color: block.settings.overlay_text_color_promo_2,
+                          promo_link: block.settings.mega_image_link_2
+                        %}
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </ul>
+          </li>
+        {% else %}
+          <li class="mobile-nav__item top-level{% if link.active %} mobile-nav__item--active{% endif %}{% if is-mega-menu %} mega-menu--mobile no-links{% endif %}">
+            {% if is-mega-menu %}
+              <div class="mobile-nav__has-sublist">
+                <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
+                <div class="mobile-nav__toggle">
+                  <button
+                    type="button"
+                    class="icon-fallback-text mobile-nav__toggle-open"
+                    aria-label="{{ 'cart.general.see_more' | t }}"
+                  >
+                    {% render 'theme-icon', icon: 'chevron_down', iconSize: 16, iconAttributes: 'aria-hidden="true"' %}
+                  </button>
+                  <button
+                    type="button"
+                    class="icon-fallback-text mobile-nav__toggle-close"
+                    aria-label="{{ 'layout.drawers.close_menu' | t }}"
+                  >
+                    {% render 'theme-icon', icon: 'chevron_up', iconSize: 16, iconAttributes: 'aria-hidden="true"' %}
+                  </button>
+                </div>
+              </div>
+
+              <ul class="mobile-nav__sublist">
+                <ul class="mobile-promo--block">
+                  {% for block in section.blocks %}
+                    {% liquid
+                      assign link-title = link.title | strip | downcase
+                      assign block-title = block.settings['mega-menu'] | strip | downcase
+
+                      assign image_1_stretch = false
+                      assign crop_setting_1 = block.settings.image_1_aspect_ratio
+                      if crop_setting_1 == 'square'
+                        assign image_1_crop = 'aspect-ratio--square'
+                        assign image_1_stretch = true
+                      elsif crop_setting_1 == 'tall'
+                        assign image_1_crop = 'aspect-ratio--tall'
+                        assign image_1_stretch = true
+                      elsif crop_setting_1 == 'wide'
+                        assign image_1_crop = 'aspect-ratio--wide'
+                        assign image_1_stretch = true
+                      else
+                        assign image_1_crop = false
+                        assign image_1_stretch = false
+                      endif
+
+                      assign image_2_stretch = false
+                      assign crop_setting_2 = block.settings.image_2_aspect_ratio
+                      if crop_setting_2 == 'square'
+                        assign image_2_crop = 'aspect-ratio--square'
+                        assign image_2_stretch = true
+                      elsif crop_setting_2 == 'tall'
+                        assign image_2_crop = 'aspect-ratio--tall'
+                        assign image_2_stretch = true
+                      elsif crop_setting_2 == 'wide'
+                        assign image_2_crop = 'aspect-ratio--wide'
+                        assign image_2_stretch = true
+                      else
+                        assign image_2_crop = false
+                        assign image_2_stretch = false
+                      endif
+
+                      assign first_promo_has_text = false
+                      if block.settings.mega_image_header_1 != blank or block.settings.mega_image_subheader_1 != blank
+                        assign first_promo_has_text = true
+                      endif
+
+                      assign second_promo_has_text = false
+                      if block.settings.mega_image_header_2 != blank or block.settings.mega_image_subheader_2 != blank
+                        assign second_promo_has_text = true
+                      endif
+                    %}
+
+                    {% style %}
+                      .block-id-{{ block.id }} .overlay-text-on-image-promo-1 {
+                        color: {{ block.settings.overlay_text_color_promo_1 }};
+                      }
+
+                      .block-id-{{ block.id }} .overlay-text-on-image-promo-2 {
+                        color: {{ block.settings.overlay_text_color_promo_2 }};
+                      }
+                    {% endstyle %}
+
+                    {% if link-title == block-title %}
+                      {% if block.settings.mega_image_1 == blank and block.settings.mega_image_2 == blank %}
+                        <li class="mobile-nav__item {% if sub_link.active %} mobile-nav__item--active{% endif %}">
+                          <p
+                            class="mega-menu--empty"
+                            {% unless request.design_mode %}
+                              style="visibility:hidden;"
+                            {% endunless %}
+                          >
+                            This megamenu doesn't currently have any content. Add content to the megamenu in the Shopify
+                            admin at: Online store > Menu.
+                          </p>
+                        </li>
+                      {% else %}
+                        {% if block.settings.mega_image_1 and block.settings.show_promo_1_in_mobile_drawer %}
+                          <li class="mobile-nav__item block-id-{{ block.id }}">
+                            <div class="inner mega-menu--image-wrapper">
+                              <div class="mega-menu--image{% if block.settings.overlay_text_on_image_promo_1 %} overlay--enabled{% endif %}{% if first_promo_has_text %} has-promo-text{% endif %}">
+                                {% if block.settings.mega_image_link_1 %}
+                                  <a
+                                    class="mega-menu-promo--image{% if image_1_crop %} mega-menu-aspect-ratio {{ image_1_crop }}{% endif %}"
+                                    href="{{ block.settings.mega_image_link_1 }}"
+                                  >
+                                {% else %}
+                                  <div
+                                    class="mega-menu-promo--image{% if image_1_crop %} mega-menu-aspect-ratio {{ image_1_crop }}{% endif %}"
+                                  >
+                                {% endif %}
+                                {% capture img_props %}style="max-width: {{ block.settings.mega_image_1.width }}px"{% endcapture %}
+
+                                {% if block.settings.mega_image_1.alt != empty %}
+                                  {% capture img_alt %}{{ block.settings.mega_image_1.alt }}{% endcapture %}
+                                {% else %}
+                                  {% if block.settings.mega_image_header_1 != empty %}
+                                    {% capture img_alt %}{{ block.settings.mega_image_header_1 }}{% endcapture %}
+                                  {% else %}
+                                    {% capture img_alt %}{{ shop.name }}{% endcapture %}
+                                  {% endif %}
+                                {% endif %}
+
+                                {% render 'responsive-image' with block.settings.mega_image_1, allow_stretch: image_1_stretch, alt: img_alt | escape, props: img_props %}
+                                {% if block.settings.mega_image_link_1 %}
+                                  </a>
+                                {% else %}
+                                  </div>
+                                {% endif %}
+
+                                <div class="mega-menu--text">
+                                  {% if block.settings.mega_image_header_1 %}
+                                    <p class="h4 mega-menu--image-title{% if block.settings.mega_image_subheader_1 != blank %} has-padding{% endif %}{% if block.settings.overlay_text_on_image_promo_1 %} overlay-text-on-image-promo-1{% else %} default-menu-drawer-text-color{% endif %}">
+                                      {% if block.settings.mega_image_link_1 %}
+                                        <a
+                                          href="{{ block.settings.mega_image_link_1 }}"
+                                          class="{% if block.settings.overlay_text_on_image_promo_1 %} overlay-text-on-image-promo-1{% else %} default-menu-drawer-text-color{% endif %}"
+                                        >
+                                      {% endif %}
+                                      {{ block.settings.mega_image_header_1 }}
+                                      {% if block.settings.mega_image_link_1 %}
+                                        </a>
+                                      {% endif %}
+                                    </p>
+                                  {% endif %}
+                                  {% if block.settings.mega_image_subheader_1 %}
+                                    <p class="h5 mega-menu--image-subtitle{% if block.settings.overlay_text_on_image_promo_1 %} overlay-text-on-image-promo-1{% else %} default-menu-drawer-text-color{% endif %}">
+                                      {% if block.settings.mega_image_link_1 %}
+                                        <a
+                                          href="{{ block.settings.mega_image_link_1 }}"
+                                          class="{% if block.settings.overlay_text_on_image_promo_1 %} overlay-text-on-image-promo-1{% else %} default-menu-drawer-text-color{% endif %}"
+                                        >
+                                      {% endif %}
+                                      {{ block.settings.mega_image_subheader_1 }}
+                                      {% if block.settings.mega_image_link_1 %}
+                                        </a>
+                                      {% endif %}
+                                    </p>
+                                  {% endif %}
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        {% endif %}
+
+                        {% if block.settings.mega_image_2 and block.settings.show_promo_2_in_mobile_drawer %}
+                          <li class="mobile-nav__item block-id-{{ block.id }}">
+                            <div class="inner mega-menu--image-wrapper">
+                              <div class="mega-menu--image{% if block.settings.overlay_text_on_image_promo_2 %} overlay--enabled{% endif %}{% if second_promo_has_text %} has-promo-text{% endif %}">
+                                {% if block.settings.mega_image_link_2 %}
+                                  <a
+                                    class="mega-menu-promo--image{% if image_2_crop %} mega-menu-aspect-ratio {{ image_2_crop }}{% endif %}"
+                                    href="{{ block.settings.mega_image_link_2 }}"
+                                  >
+                                {% else %}
+                                  <div
+                                    class="mega-menu-promo--image{% if image_2_crop %} mega-menu-aspect-ratio {{ image_2_crop }}{% endif %}"
+                                  >
+                                {% endif %}
+                                {% capture img_props %}style="max-width: {{ block.settings.mega_image_2.width }}px"{% endcapture %}
+
+                                {% if block.settings.mega_image_2.alt != empty %}
+                                  {% capture img_alt %}{{ block.settings.mega_image_2.alt }}{% endcapture %}
+                                {% else %}
+                                  {% if block.settings.mega_image_header_2 != empty %}
+                                    {% capture img_alt %}{{ block.settings.mega_image_header_2 }}{% endcapture %}
+                                  {% else %}
+                                    {% capture img_alt %}{{ shop.name }}{% endcapture %}
+                                  {% endif %}
+                                {% endif %}
+
+                                {% render 'responsive-image' with block.settings.mega_image_2, allow_stretch: image_2_stretch, alt: img_alt | escape, props: img_props %}
+                                {% if block.settings.mega_image_link_2 %}
+                                  </a>
+                                {% else %}
+                                  </div>
+                                {% endif %}
+
+                                <div class="mega-menu--text">
+                                  {% if block.settings.mega_image_header_2 %}
+                                    <p class="h4 mega-menu--image-title{% if block.settings.mega_image_subheader_2 != blank %} has-padding{% endif %}{% if block.settings.overlay_text_on_image_promo_2 %} overlay-text-on-image-promo-2{% else %} default-menu-drawer-text-color{% endif %}">
+                                      {% if block.settings.mega_image_link_2 %}
+                                        <a
+                                          href="{{ block.settings.mega_image_link_2 }}"
+                                          class="{% if block.settings.overlay_text_on_image_promo_2 %} overlay-text-on-image-promo-2{% else %} default-menu-drawer-text-color{% endif %}"
+                                        >
+                                      {% endif %}
+                                      {{ block.settings.mega_image_header_2 }}
+                                      {% if block.settings.mega_image_link_2 %}
+                                        </a>
+                                      {% endif %}
+                                    </p>
+                                  {% endif %}
+                                  {% if block.settings.mega_image_subheader_2 %}
+                                    <p class="h5 mega-menu--image-subtitle{% if block.settings.overlay_text_on_image_promo_2 %} overlay-text-on-image-promo-2{% else %} default-menu-drawer-text-color{% endif %}">
+                                      {% if block.settings.mega_image_link_2 %}
+                                        <a
+                                          href="{{ block.settings.mega_image_link_2 }}"
+                                          class="{% if block.settings.overlay_text_on_image_promo_2 %} overlay-text-on-image-promo-2{% else %} default-menu-drawer-text-color{% endif %}"
+                                        >
+                                      {% endif %}
+                                      {{ block.settings.mega_image_subheader_2 }}
+                                      {% if block.settings.mega_image_link_2 %}
+                                        </a>
+                                      {% endif %}
+                                    </p>
+                                  {% endif %}
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        {% endif %}
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </ul>
+            {% else %}
+              <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <div class="mobile-nav--footer">
+      <div class="mobile-nav locale--mobile">
+        {{ locale }}
+      </div>
+
+      {% comment %}
+        If customer accounts are enabled, provide login and create account links
+      {% endcomment %}
+      {% liquid
+        assign social_icons = false
+        if settings.sm_facebook_link != blank or settings.sm_x_link != blank or settings.sm_youtube_link != blank or settings.sm_flickr_link != blank or settings.sm_pinterest_link != blank or settings.sm_instagram_link != blank or settings.sm_tumblr_link != blank or settings.sm_pinterest_link != blank or settings.sm_youtube_link != blank or settings.sm_vimeo_link != blank or settings.sm_flickr_link != blank or settings.sm_snapchat_link != blank or settings.sm_houzz_link != blank or settings.sm_linkedin_link != blank or settings.sm_tiktok_link != blank
+          assign social_icons = true
+        endif
+      %}
+      {% style %}
+        .mobile-nav.nav--meta {
+          display: grid;
+          gap: 15px;
+        }
+
+        .mobile-nav.nav--meta .mobile-nav__item.customer--info,
+        .mobile-nav.nav--meta .mobile-nav__item.customer-logout-link,
+        .mobile-nav.nav--meta .mobile-nav__item.customer-login-link,
+        .mobile-nav.nav--meta .mobile-nav__item.sm-icons--wrapper {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .mobile-nav.nav--meta .mobile-nav__item.sm-icons--wrapper #sm-icons {
+          width: 100%;
+        }
+
+        {% if shop.customer_accounts_enabled and social_icons %}
+          .mobile-nav.nav--meta .mobile-nav__social-icons {
+            justify-content: end;
+          }
+
+          {% if customer %}
+            .mobile-nav.nav--meta {
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: repeat(2, minmax(0, auto));
+              align-items: center;
+            }
+
+            .mobile-nav.nav--meta .mobile-nav__item.customer--info {
+              grid-column-start: 1;
+              grid-column-end: 3;
+              grid-row-start: 1;
+              grid-row-end: 2;
+            }
+
+            .mobile-nav.nav--meta .mobile-nav__item.customer-logout-link {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 2;
+              grid-row-end: 3;
+            }
+
+            .mobile-nav.nav--meta .mobile-nav__item.sm-icons--wrapper {
+              grid-column-start: 2;
+              grid-column-end: 3;
+              grid-row-start: 2;
+              grid-row-end: 3;
+            }
+          {% else %}
+            .mobile-nav.nav--meta {
+              grid-template-columns: 1fr 1fr;
+            }
+
+            .mobile-nav.nav--meta .mobile-nav__item.customer-login-link {
+              grid-column-start: 1;
+              grid-column-end: 2;
+            }
+
+            .mobile-nav.nav--meta .mobile-nav__item.sm-icons--wrapper {
+              grid-column-start: 2;
+              grid-column-end: 3;
+            }
+          {% endif %}
+        {% elsif shop.customer_accounts_enabled and social_icons == false %}
+          {% if customer %}
+            .mobile-nav.nav--meta {
+              grid-template-columns: 1fr;
+              grid-template-rows: repeat(2, minmax(0, auto));
+            }
+
+            .mobile-nav.nav--meta .mobile-nav__item.customer--info {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 1;
+              grid-row-end: 2;
+            }
+
+            .mobile-nav.nav--meta .mobile-nav__item.customer-logout-link {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 2;
+              grid-row-end: 3;
+            }
+          {% else %}
+            .mobile-nav.nav--meta {
+              grid-template-columns: 1fr;
+            }
+
+            .mobile-nav.nav--meta .mobile-nav__item.customer-login-link {
+              grid-column-start: 1;
+              grid-column-end: 2;
+            }
+          {% endif %}
+        {% elsif shop.customer_accounts_enabled == false and social_icons %}
+          .mobile-nav.nav--meta {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+          }
+
+          .mobile-nav.nav--meta .mobile-nav__social-icons {
+            justify-content: center;
+          }
+        {% endif %}
+      {% endstyle %}
+      <ul class="mobile-nav nav--meta{% unless shop.customer_accounts_enabled or social_icons %} hidden{% endunless %}">
+        {% if shop.customer_accounts_enabled %}
+          {% if customer %}
+            <li class="mobile-nav__item customer--info">
+              {% if customer.first_name != blank %}
+                {% capture first_name %}{{ customer.first_name }}{% endcapture %}
+                <a href="{{ routes.account_url }}">
+                  {{- 'layout.customer.logged_in_as_html' | t: first_name: first_name -}}
+                </a>
+              {% else %}
+                <a href="{{ routes.account_url }}">{{ 'layout.customer.account' | t }}</a>
+              {% endif %}
+            </li>
+            <li class="mobile-nav__item customer-logout-link">
+              {{ 'layout.customer.log_out' | t | customer_logout_link }}
+            </li>
+          {% else %}
+            <li class="mobile-nav__item customer-login-link">
+              {{ 'layout.customer.log_in' | t | customer_login_link }}
+            </li>
+          {% endif %}
+        {% endif %}
+
+        {%- liquid
+          assign enable_social_icons = false
+          if section.settings.mobile_social_icons and social_icons
+            assign enable_social_icons = true
+          endif
+        -%}
+        {% if enable_social_icons %}
+          <li class="mobile-nav__item sm-icons--wrapper">
+            {% render 'social-icons' with wrapper_classes: 'mobile-nav__social-icons', icon_classes: 'fa-2x' %}
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+    <!-- //mobile-nav -->
+  </div>
+</div>

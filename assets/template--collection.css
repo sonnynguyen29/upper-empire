@@ -1,0 +1,97 @@
+.wrapper.main-content.page-main--wrapper .main-page-container.wrapper-padded {
+  max-width: unset;
+  padding: 0 8px;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection_grid .collection-header__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .wrapper.main-content.page-main--wrapper .main-page-container .collection_grid .collection-header__title {
+    padding: 20px 0;
+    margin: 0;
+  }
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection_grid .collection-header__title .page-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body {
+  margin: 0;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item {
+  width: unset !important;
+  padding: 0;
+  margin: 0;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item product-card {
+  text-align: start;
+  margin: 0;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item product-card .product-card-detail--wrapper {
+  position: relative;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item product-card .product-card-detail--wrapper .product-card-detail {
+  position: relative;
+  opacity: 1;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item product-card .product-card-detail--wrapper .product-card-detail .product-card--price-vendor-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item product-card .product-card-detail--wrapper .product-card-detail .product-card--price-vendor-wrapper .sold-out {
+  font-weight: 700;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item product-card .product-card-detail--wrapper .product-card-detail .product-card--price-vendor-wrapper .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #d9d9d9;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item product-card .product-card-detail--wrapper .product-cart-variants {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item product-card .product-card-detail--wrapper .product-cart-variants .product-cart-variants__variant {
+  font-size: 14px;
+  font-weight: 500;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item product-card .product-card-detail--wrapper .product-cart-variants .product-cart-variants__variant:hover {
+  border-bottom: 1px solid #000000;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item:hover product-card .product-card-detail--wrapper .product-card-detail {
+  opacity: 0;
+}
+.wrapper.main-content.page-main--wrapper .main-page-container .collection-main-body .collection-main-body-inner .grid__item:hover product-card .product-card-detail--wrapper .product-cart-variants {
+  opacity: 1;
+}

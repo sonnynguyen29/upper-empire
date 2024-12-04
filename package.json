@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pull": "shopify theme pull --store 577f9e-4.myshopify.com",
-    "dev": "shopify theme dev --store 577f9e-4.myshopify.com",
-    "push": "shopify theme push --store 577f9e-4.myshopify.com"
+    "dev": "shopify theme dev --store 577f9e-4.myshopify.com & sass --watch --no-source-map src/scss:assets",
+    "push": "sass --no-source-map src/scss:assets & shopify theme push --store 577f9e-4.myshopify.com"
   },
   "keywords": [],
   "author": "",

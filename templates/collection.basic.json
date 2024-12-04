@@ -6,44 +6,38 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
         "title",
         "19eeeda1-0ae2-47d0-ab8d-2c7a043f0c67"
       ],
-      "settings": {
-      }
+      "settings": {},
+      "disabled": true
     },
     "product-grid": {
       "type": "template--collection",
       "blocks": {
         "product_card_image": {
           "type": "product_card_image",
-          "settings": {
-          }
+          "settings": {}
         },
         "product_card_title": {
           "type": "product_card_title",
-          "settings": {
-          }
+          "settings": {}
         },
         "product_card_price": {
           "type": "product_card_price",
-          "settings": {
-          }
+          "settings": {}
         },
         "product_card_quick_shop": {
           "type": "product_card_quick_shop",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [

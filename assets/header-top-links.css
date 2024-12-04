@@ -1,0 +1,27 @@
+.top-links ul li {
+  font-weight: 600;
+}
+
+.top-links--icon-links {
+  gap: 12px;
+}
+.top-links--icon-links li a {
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .top-links--icon-links {
+    gap: 35px;
+  }
+}
+
+.shopping-bag .cart-item-count-bubble {
+  width: 12px;
+  height: 12px;
+  font-size: 8px !important;
+  right: -6px;
+  top: -6px;
+  transform: none;
+  display: block;
+  background-color: var(--nav-text-color);
+  color: var(--header-color);
+}

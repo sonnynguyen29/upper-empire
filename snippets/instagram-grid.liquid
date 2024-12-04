@@ -1,0 +1,21 @@
+{{ 'instagram-grid.css' | asset_url | stylesheet_tag }}
+
+<div id="instagram-grid">
+  <div class="instagram-grid-container">
+    <div class="instagram-grid-wrapper">
+      <div class="instagram-grid-title title-wrapper">
+        {% render 'responsive-image' with logo_image %}
+        <h2>{{ title }}</h2>
+      </div>
+      <div class="instagram-grid-layout">
+        {% for image in instagram_images %}
+          <div class="image-grid-item">
+            <div class="image">
+              {% render 'responsive-image' with image.settings.image %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

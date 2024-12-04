@@ -1,0 +1,105 @@
+.header-section--wrapper {
+    .nav-bar.mobile-nav-bar-wrapper {
+        .wrapper-padded {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            max-width: 1660px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            .wrapper-padded {
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+        }
+
+        .mobile-nav-bar--inner {
+            .mobile-grid--table {
+                height: 40px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: row;
+                padding: 0px 13px;
+
+                button.site-nav__link {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .site-header__logo {
+                    padding: 0;
+                }
+
+                .site-nav--mobile {
+                    gap: 12px;
+                    a {
+                        padding: 0;
+                    }
+                }
+
+                .grid__item {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .site-header {
+        padding: 0 10px 0 8px;
+        border-bottom: 0;
+
+        .site-header__wrapper {
+            .site-header__wrapper__left {
+                margin: 0;
+
+                .logo-desktop {
+                    height: 27px;
+                }
+
+                .responsive-image-wrapper img {
+                    object-fit: contain !important;
+                }
+            }
+
+            .site-header__wrapper__right {
+                margin: 0;
+                justify-content: space-between;
+
+                .site-nav {
+                    .site-nav--link-wrapper {
+                        .site-nav--link-text.active {
+                            background-position:
+                                left bottom,
+                                left bottom;
+                            background-size:
+                                100% 1px,
+                                100% 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mega-menu-wrapper .mega-menu .site-nav__dropdown {
+    padding: 0 27px;
+
+    .container {
+        max-width: unset;
+        margin: 0 auto;
+
+        .mega-menu-block {
+            padding: 15px 0 30px 0;
+
+            .menu-link a {
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        @media screen and (min-width: 1290px) {
+            margin: 0 240px;
+        }
+    }
+}

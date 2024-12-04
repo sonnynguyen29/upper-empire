@@ -1,0 +1,109 @@
+{{ 'social-media-grid.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign instagram_images = section.blocks | where: 'type', 'instagram-image'
+  assign whatnot_videos = section.blocks | where: 'type', 'whatnot-video'
+  assign whatnot_images = section.blocks | where: 'type', 'whatnot-image'
+%}
+
+<section id="social-media-grid">
+  <div class="social-media-wrapper">
+    {% render 'instagram-grid',
+      instagram_images: instagram_images,
+      title: section.settings.instagram_title,
+      logo_image: section.settings.instagram_image
+    %}
+    <div class="whatnot-grid">
+      <div class="whatnot-grid-container">
+        <div class="whatnot-grid-title title-wrapper">
+          {% render 'responsive-image' with section.settings.whatnot_image %}
+          <h2>{{ section.settings.whatnot_title }}</h2>
+        </div>
+        <div class="whatnot-grid-layout">
+          {% for video in whatnot_videos %}
+            <div class="whatnot-grid-video">
+              <div class="whatnot-video">
+                {{ video.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+              </div>
+            </div>
+          {% endfor %}
+          {% for image in whatnot_images %}
+            <div class="whatnot-grid-image image-grid-item">
+              <div class="image">
+                {% render 'responsive-image' with image.settings.image %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Social Media Grid",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "instagram_image",
+      "label": "Instagram Image"
+    },
+    {
+      "type": "text",
+      "id": "instagram_title",
+      "label": "Instagram Title",
+      "default": "INSTAGRAM"
+    },
+    {
+      "type": "image_picker",
+      "id": "whatnot_image",
+      "label": "Whatnot Image"
+    },
+    {
+      "type": "text",
+      "id": "whatnot_title",
+      "label": "Whatnot Title",
+      "default": "WHATNOT"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "instagram-image",
+      "name": "Instagram Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ],
+      "limit": 4
+    },
+    {
+      "type": "whatnot-video",
+      "name": "Whatnot Video",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "whatnot-image",
+      "name": "Whatnot Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ],
+      "limit": 2
+    }
+  ]
+}
+{% endschema %}

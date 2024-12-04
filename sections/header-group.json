@@ -46,7 +46,8 @@
       ],
       "settings": {
         "desktop_social_icons": true
-      }
+      },
+      "disabled": true
     },
     "header": {
       "type": "header",
@@ -99,10 +100,11 @@
       "settings": {
         "sticky_header": true,
         "enable_search": true,
-        "logo": "shopify:\/\/shop_images\/77d151ef-b946-48c8-b7d9-35f04d36a532.png",
+        "logo": "shopify:\/\/shop_images\/upper-empire-logo-desktop.png",
+        "mobile_logo": "shopify:\/\/shop_images\/upper-empire-mobile-logo.png",
         "logo-placement": "left",
         "logo_max_width": 240,
-        "logo_max_width_mobile": 150,
+        "logo_max_width_mobile": 24,
         "logo_padding": 15,
         "mobile_social_icons": true,
         "show_icons": true,
@@ -115,7 +117,7 @@
         "overlay_opacity": 0,
         "show_currency_selector": true,
         "show_locale_selector": true,
-        "main_linklist": "header-menu",
+        "main_linklist": "new-main-menu",
         "dropdown_alignment": "left"
       }
     }

@@ -1,0 +1,22 @@
+{% if section.settings.logo %}
+  <a href="{{ routes.root_url }}" itemprop="url" class="site-header__logo-image">
+    <style>
+      .logo_image {
+        max-height: unset!important;
+      }
+      @media screen and (max-width: 989px) {
+        .logo_image {
+          width: {{ section.settings.logo_max_width_mobile }}px;
+        }
+      }
+    </style>
+
+    {% liquid
+      assign alt = section.settings.logo.alt | default: shop.name
+      assign class = 'logo_image ' | append: className
+      render 'responsive-image' with logo_image, alt: alt |escape, props: 'itemprop="logo"', allow_stretch: true,  blur: false, class: class
+    %}
+  </a>
+{% else %}
+  <a class="site-header__logo-link" href="{{ routes.root_url }}" itemprop="url">{{ shop.name }}</a>
+{% endif %}

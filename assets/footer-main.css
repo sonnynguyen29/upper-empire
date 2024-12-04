@@ -1,0 +1,159 @@
+.footer-wrapper {
+  width: 100%;
+}
+.footer-wrapper #footer-section {
+  padding: 12px 8px;
+}
+.footer-wrapper #footer-section .footer-section-container {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-wrapper #footer-section .footer-section-container .footer-section-wrapper {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper #footer-section .footer-section-container .footer-section-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-wrapper #footer-section .footer-section-container .footer-section-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+}
+.footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .newsletter-wrapper {
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+@media screen and (min-width: 1024px) {
+  .footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .newsletter-wrapper {
+    padding: 0 10px;
+    grid-column: 2/2;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .newsletter-wrapper {
+    padding: 0 50px;
+    grid-column: 2/2;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .policy-wrapper {
+    grid-row: 2/2;
+    grid-column: 2/2;
+  }
+}
+.footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .footer-section {
+  display: grid;
+  grid-template-rows: 20px 1fr;
+  align-items: center;
+  width: 100%;
+}
+.footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .footer-section h3 {
+  color: rgba(0, 0, 0, 0.5019607843);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .footer-section ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: black;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  height: 100%;
+  align-items: center;
+}
+.footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .footer-section ul li a {
+  color: black;
+  font-size: 14px;
+}
+.footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .footer-section .submit-newsletter-wrapper {
+  position: relative;
+  width: 100%;
+}
+.footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .footer-section .submit-newsletter-wrapper .submit-newsletter {
+  width: 100%;
+}
+.footer-wrapper #footer-section .footer-section-container .footer-section-wrapper .footer-section .submit-newsletter-wrapper .submit-btn {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 10px;
+  right: 0;
+  cursor: pointer;
+  bottom: 15px;
+}
+.footer-wrapper #footer-section .image-with-text {
+  margin-top: 40px;
+  display: block;
+}
+.footer-wrapper #footer-section .image-with-text .image-background {
+  display: flex;
+  justify-self: center;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.footer-wrapper #footer-section .image-with-text .image-background h2 {
+  font-family: "Regensburg";
+  font-size: 40vw;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  width: 100%;
+}
+.footer-wrapper #footer-section .image-with-text .text-span {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper #footer-section .image-with-text .text-span:first-of-type {
+  align-self: end;
+}
+@media screen and (min-width: 1024px) {
+  .footer-wrapper #footer-section .image-with-text {
+    display: none;
+  }
+}
+.footer-wrapper #footer-section .image-with-mask {
+  display: none;
+  position: relative;
+  perspective: 1000px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .footer-wrapper #footer-section .image-with-mask {
+    display: flex;
+  }
+}
+.footer-wrapper #footer-section .image-with-mask .image_mask {
+  transform: scale(1.003);
+}
+.footer-wrapper #footer-section .image-with-mask .image_background {
+  width: 110%;
+  height: 110%;
+  transition: transform 0.6s ease;
+  position: absolute;
+  transform: translateY(100%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+.footer-wrapper #footer-section .image-with-mask .image_background.active {
+  transform: translate(0);
+}

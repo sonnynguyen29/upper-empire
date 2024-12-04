@@ -1,0 +1,22 @@
+#instagram-grid {
+    .instagram-grid-layout {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .image-grid-item {
+        aspect-ratio: 1/1;
+
+        @media screen and (min-width: 768px) {
+            aspect-ratio: 1.074;
+        }
+    }
+
+    .title-wrapper {
+        img {
+            margin-bottom: 5px;
+        }
+    }
+}
