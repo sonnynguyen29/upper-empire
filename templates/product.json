@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "product-form": {
@@ -56,7 +65,7 @@
           "type": "product-size-guide",
           "settings": {
             "block_title": "Size guide",
-            "block_content": "<ul>\n<li>Nike Wmns Air Max SNDR<\/li>\n<li>Neoprene upper<\/li>\n<li>Lace shroud with zip closure<\/li>\n<li>Pull tab on heel<\/li>\n<li>3M reflective detailing<\/li>\n<li>Foam midsole<\/li>\n<li>Rubber outsole<\/li>\n<\/ul>"
+            "block_content": "<ul>\n<li>Nike Wmns Air Max SNDR</li>\n<li>Neoprene upper</li>\n<li>Lace shroud with zip closure</li>\n<li>Pull tab on heel</li>\n<li>3M reflective detailing</li>\n<li>Foam midsole</li>\n<li>Rubber outsole</li>\n</ul>"
           }
         },
         "product-shipping-return": {
@@ -69,7 +78,7 @@
         "size_notice_NWDxaw": {
           "type": "size_notice",
           "settings": {
-            "notice": "<p>This is offered in <b>men's sizing.<\/b> There is an approximate <b>1.5-size<\/b> difference between men's sizing and women's sizing. For example, a <b>men size 9<\/b> is roughly equivalent to a <b>womens size 10.5.<\/b><\/p>",
+            "notice": "<p>This is offered in <b>men's sizing.</b> There is an approximate <b>1.5-size</b> difference between men's sizing and women's sizing. For example, a <b>men size 9</b> is roughly equivalent to a <b>womens size 10.5.</b></p>",
             "collection": "sneakers-men"
           }
         },
@@ -79,6 +88,15 @@
             "show_smart_checkout": true,
             "enable_gift_card_recipient_form": true,
             "margin_bottom": 20
+          }
+        },
+        "pre-order-button": {
+          "type": "pre-order-button",
+          "settings": {
+            "button_color": "#007bff",
+            "button_text": "Request for Order",
+            "form_heading": "Leave your information",
+            "form_submit_button_text": "Submit"
           }
         },
         "fbfe241f-1b44-41cd-ae22-e866bdad9aaf": {
@@ -99,6 +117,13 @@
           "settings": {
             "margin_bottom": 20
           }
+        },
+        "sold_out_badge_cMqGUA": {
+          "type": "sold-out-badge",
+          "settings": {
+            "badge_color": "#000000",
+            "badge_text": "SOLD OUT"
+          }
         }
       },
       "block_order": [
@@ -112,8 +137,10 @@
         "product-shipping-return",
         "size_notice_NWDxaw",
         "buy_buttons",
+        "pre-order-button",
         "fbfe241f-1b44-41cd-ae22-e866bdad9aaf",
-        "4fdb087c-4728-4785-b270-a71a092b7898"
+        "4fdb087c-4728-4785-b270-a71a092b7898",
+        "sold_out_badge_cMqGUA"
       ],
       "settings": {
         "enable_sticky": true,
@@ -141,12 +168,135 @@
     "suggestion-products": {
       "type": "suggestion-products",
       "settings": {}
+    },
+    "template_product_recommendations_q3znpB": {
+      "type": "template--product--recommendations",
+      "blocks": {
+        "product_card_image_g6fmeW": {
+          "type": "product_card_image",
+          "settings": {
+            "enable_quick_shop": false,
+            "disable_quick_shop_mobile": true
+          }
+        },
+        "product_card_title_z87UGQ": {
+          "type": "product_card_title",
+          "settings": {
+            "product_card_title__font": "body"
+          }
+        },
+        "product_card_price_6Ead7K": {
+          "type": "product_card_price",
+          "settings": {
+            "product_card_price__font": "body"
+          }
+        },
+        "product_card_vendor_mkCEz6": {
+          "type": "product_card_vendor",
+          "settings": {
+            "product_card_vendor__font": "body"
+          }
+        },
+        "product_card_quick_shop_QKLJFt": {
+          "type": "product_card_quick_shop",
+          "settings": {}
+        },
+        "product_card_swatches_NX4Tfh": {
+          "type": "product_card_swatches",
+          "settings": {
+            "show_color_label": true
+          }
+        }
+      },
+      "block_order": [
+        "product_card_image_g6fmeW",
+        "product_card_title_z87UGQ",
+        "product_card_price_6Ead7K",
+        "product_card_vendor_mkCEz6",
+        "product_card_quick_shop_QKLJFt",
+        "product_card_swatches_NX4Tfh"
+      ],
+      "settings": {
+        "product_recommendations_heading": "You may also like"
+      }
+    },
+    "pre-order-form": {
+      "type": "template--product--pre-order-form",
+      "blocks": {
+        "form_input_field_kqBYc6": {
+          "type": "form_input_field",
+          "settings": {
+            "label": "Your Name",
+            "name": "name",
+            "placeholder": "Your Name",
+            "required": true,
+            "is_textarea": false,
+            "validation": "/^[A-Z][a-z]+(?: [A-Z][a-zA-Z]+)*$/",
+            "error_message": "Invalid Name: The name should start with a capital letter, contain only letters and spaces, and have no special characters or numbers."
+          }
+        },
+        "form_input_field_AeiwcG": {
+          "type": "form_input_field",
+          "settings": {
+            "label": "Your Email",
+            "name": "email",
+            "placeholder": "Your Email",
+            "required": true,
+            "is_textarea": false,
+            "validation": "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/",
+            "error_message": "Invalid Email: Please enter a valid email address in the format 'example@domain.com'."
+          }
+        },
+        "form_input_field_VzpwnG": {
+          "type": "form_input_field",
+          "settings": {
+            "label": "Your Phone Number",
+            "name": "phone",
+            "placeholder": "Your Phone Number",
+            "required": true,
+            "is_textarea": false,
+            "validation": "/^(?:\\+1[- ]?)?(?:\\(\\d{3}\\)|\\d{3})[- ]?\\d{3}[- ]?\\d{4}$/",
+            "error_message": "Invalid Phone Number: The phone number should be a valid US number in formats like '123-456-7890', '(123) 456-7890', or '+1 123-456-7890'."
+          }
+        },
+        "form_input_field_nDzP7K": {
+          "type": "form_input_field",
+          "settings": {
+            "label": "Required",
+            "name": "required",
+            "placeholder": "Let us know more about Size, Color... (optional)",
+            "required": false,
+            "is_textarea": true,
+            "validation": "",
+            "error_message": ""
+          }
+        }
+      },
+      "block_order": [
+        "form_input_field_kqBYc6",
+        "form_input_field_AeiwcG",
+        "form_input_field_VzpwnG",
+        "form_input_field_nDzP7K"
+      ],
+      "settings": {
+        "add_to_cart_button_text": "Request for Order",
+        "form_heading": "Request for Order",
+        "form_sub_heading": "We will let you know soon once it ready.",
+        "form_success_heading": "Submit Success",
+        "form_success_sub_heading": "Thank you for your patient. The form has been submitted.",
+        "form_failed_heading": "Oops !!",
+        "form_failed_sub_heading": "Submission failed. Please re-enter your information and submit again.",
+        "form_policy_text": "By signing up, you agree to receive marketing emails. View our privacy policy and terms of service for more info.",
+        "form_submit_button_text": "Submit"
+      }
     }
   },
   "order": [
     "product-form",
     "product-description",
     "apps",
-    "suggestion-products"
+    "suggestion-products",
+    "template_product_recommendations_q3znpB",
+    "pre-order-form"
   ]
 }

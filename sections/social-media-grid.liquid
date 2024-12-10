@@ -12,25 +12,26 @@
       instagram_images: instagram_images,
       title: section.settings.instagram_title,
       logo_image: section.settings.instagram_image
+      url: section.settings.instagram_url
     %}
     <div class="whatnot-grid">
       <div class="whatnot-grid-container">
         <div class="whatnot-grid-title title-wrapper">
           {% render 'responsive-image' with section.settings.whatnot_image %}
-          <h2>{{ section.settings.whatnot_title }}</h2>
+          <a href="{{ section.settings.whatnot_url | default: '#' }}" class="title"><h2>{{ section.settings.whatnot_title }}</h2></a>
         </div>
         <div class="whatnot-grid-layout">
           {% for video in whatnot_videos %}
             <div class="whatnot-grid-video">
-              <div class="whatnot-video">
-                {{ video.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
-              </div>
+              {% render 'whatnot-upcoming-event', video: video.settings.video %}
             </div>
           {% endfor %}
           {% for image in whatnot_images %}
             <div class="whatnot-grid-image image-grid-item">
               <div class="image">
-                {% render 'responsive-image' with image.settings.image %}
+                <a href="{{ image.settings.image_url | default: '#' }}">
+                  {% render 'responsive-image' with image.settings.image %}
+                </a>
               </div>
             </div>
           {% endfor %}
@@ -56,6 +57,11 @@
       "default": "INSTAGRAM"
     },
     {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram Url"
+    },
+    {
       "type": "image_picker",
       "id": "whatnot_image",
       "label": "Whatnot Image"
@@ -65,6 +71,11 @@
       "id": "whatnot_title",
       "label": "Whatnot Title",
       "default": "WHATNOT"
+    },
+    {
+      "type": "url",
+      "id": "whatnot_url",
+      "label": "Whatnot Url"
     }
   ],
   "blocks": [
@@ -76,6 +87,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "image_url",
+          "label": "Image Link"
         }
       ],
       "limit": 4
@@ -100,6 +116,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "image_url",
+          "label": "Image Link"
         }
       ],
       "limit": 2

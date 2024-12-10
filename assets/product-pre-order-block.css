@@ -55,18 +55,19 @@
 .product-pre-order-block pre-order-layout pre-order-container .heading-block .heading {
   margin-bottom: 0;
 }
+.product-pre-order-block pre-order-layout pre-order-container .form.hidden {
+  display: none;
+}
 .product-pre-order-block pre-order-layout pre-order-container pre-order-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.product-pre-order-block pre-order-layout pre-order-container pre-order-form.hidden {
-  display: none;
-}
 .product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field {
   position: relative;
 }
-.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field input {
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field input,
+.product-pre-order-block pre-order-layout pre-order-container pre-order-form .form-field textarea {
   width: 100%;
   padding: 22.5px 15px 7.5px 15px;
   border: 1px solid var(--border-color);
@@ -133,8 +134,7 @@
     max-width: 450px;
   }
 }
-.product-pre-order-block pre-order-layout .success-notification {
-  position: absolute;
+.product-pre-order-block pre-order-layout .submitted-notification {
   top: 0;
   right: 0;
   background-color: white;
@@ -142,10 +142,6 @@
   height: 100%;
   padding: 30px;
   text-align: center;
-}
-.product-pre-order-block .pre-order-button {
-  width: 100%;
-  max-width: none;
 }
 
 .z-auto {

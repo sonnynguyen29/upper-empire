@@ -16,10 +16,10 @@
         <div class="splide__track">
           <div class="splide__list">
             {% for item in banner_desktop %}
-              <div class="hero__banner-image-desktop splide__slide">
-                {% render 'responsive-image' with item.settings.hero_banner_image_desktop, sizes: desktop_sizes %}
+              <a href="{{ item.settings.hero_banner_lin | default: '#' }}" class="hero__banner-image-desktop splide__slide">
+                {% render 'responsive-image' with item.settings.hero_banner_image_desktop %}
                 <div class="hero__banner-title">{{ item.settings.hero_banner_title }}</div>
-              </div>
+              </a>
             {% endfor %}
           </div>
         </div>
@@ -29,10 +29,10 @@
         <div class="splide__track">
           <div class="splide__list">
             {% for item in banner_mobile %}
-              <div class="hero__banner-image-mobile splide__slide">
+              <a href="{{ item.settings.hero_banner_link | default: '#' }}" class="hero__banner-image-mobile splide__slide">
                 {% render 'responsive-image' with item.settings.hero_banner_image_mobile %}
                 <div class="hero__banner-title">{{ item.settings.hero_banner_title }}</div>
-              </div>
+              </a>
             {% endfor %}
           </div>
         </div>
@@ -98,6 +98,11 @@
           "type": "text",
           "id": "hero_banner_title",
           "label": "Hero Banner Title"
+        },
+        {
+          "type": "url",
+          "id": "hero_banner_link",
+          "label": "Hero Banner Link"
         }
       ],
       "limit": 3
@@ -115,6 +120,11 @@
           "type": "text",
           "id": "hero_banner_title",
           "label": "Hero Banner Title"
+        },
+        {
+          "type": "url",
+          "id": "hero_banner_link",
+          "label": "Hero Banner Link"
         }
       ],
       "limit": 3

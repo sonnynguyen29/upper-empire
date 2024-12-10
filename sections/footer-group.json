@@ -108,9 +108,122 @@
         "footer_background_mask": "shopify://shop_images/mask-1.png",
         "footer_background_text": "Upper empire"
       }
+    },
+    "whatnot-events": {
+      "type": "whatnot-events",
+      "blocks": {
+        "whatnot_event_1A2B3C": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Winter Sneaker Collection",
+            "date_time": "11/29/2024, 10:00 AM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/1a2b3c123?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_4D5E6F": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Holiday Sneaker Extravaganza",
+            "date_time": "11/30/2024, 5:30 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/4d5e6f456?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_7G8H9I": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Luxury Leather Sneakers",
+            "date_time": "12/02/2024, 2:00 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/7g8h9i789?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_JK1L2M": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Retro Sneakers Revival",
+            "date_time": "12/03/2024, 6:45 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/jk1l2m123?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_N3O4P5": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "High-Performance Sneakers",
+            "date_time": "12/04/2024, 4:30 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/n3o4p5n3o4?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_Q6R7S8": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Classic Canvas Sneakers",
+            "date_time": "12/18/2024, 1:15 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/q6r7s8q6r?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_T9U1V2": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Designer Sneakers Showcase",
+            "date_time": "12/21/2024, 3:00 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/t9u1v2t9u?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_W3X4Y5": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Custom Kicks Experience",
+            "date_time": "12/25/2024, 12:00 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/w3x4y5w3x?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_Z6A7B8": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "End-of-Year Sneaker Sale",
+            "date_time": "12/30/2024, 7:30 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/z6a7b8z6a?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        }
+      },
+      "block_order": [
+        "whatnot_event_1A2B3C",
+        "whatnot_event_4D5E6F",
+        "whatnot_event_7G8H9I",
+        "whatnot_event_JK1L2M",
+        "whatnot_event_N3O4P5",
+        "whatnot_event_Q6R7S8",
+        "whatnot_event_T9U1V2",
+        "whatnot_event_W3X4Y5",
+        "whatnot_event_Z6A7B8"
+      ],
+      "settings": {
+        "default_heading": "EXCLUSIVE TRAVIS MERCH & UNRELEASED TRAVIS SHOE, $1 STARTS!",
+        "default_sub_heading": "No Upcoming Shows",
+        "default_video": "shopify://files/videos/MJ 20k box.mp4",
+        "link": "https://upperempire.com"
+      }
     }
   },
   "order": [
-    "footer-main"
+    "footer-main",
+    "whatnot-events"
   ]
 }

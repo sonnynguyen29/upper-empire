@@ -1,83 +1,100 @@
-<div
-  class="{{ spacing_classes }}"
-  style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
-  {{ block.shopify_attributes }}
->
-  {%- if product.gift_card? and block.settings.enable_gift_card_recipient_form and product.available -%}
-    {% render 'gift-card-recipient-form' %}
-  {%- endif -%}
+{% liquid
+  assign is_pre_order_product = product.metafields.custom.pre_order
+%}
 
-  <div
-    class="paymentButtonsWrapper"
-    {% unless current_variant.available %}
-      style="grid-template-columns: 1fr;"
-    {% endunless %}
+{% if is_pre_order_product == true and current_variant.available == false %}
+  <button
+    type="button"
+    class="pre-order-button btn add-to-cart--secondary"
+    style="width: 100%; max-width: none; margin-top: 20px;"
+    disabled
   >
-    <button
-      type="submit"
-      data-cart-url="{{ routes.cart_url }}"
-      aria-label="Add To Bag"
-      name="add"
-      id="AddToCart"
-      class="btn{% if buttons_block.settings.show_smart_checkout and product.selling_plan_groups.size == 0 %} add-to-cart--secondary{% endif %}"
-      v-bind:class="{ disabled: addToCartDisabled }"
-      v-bind:disabled="addToCartDisabled"
-    >
-      {% assign icon_attrs = 'v-if="state === ' | append: "'adding'" | append: '" v-cloak' %}
-      {% render 'theme-icon' with icon: 'circle-notch', iconClasses: 'spin js fa-2x flex-full', iconAttributes: icon_attrs, icon_fill: settings.color_primary_button_text -%}
-      <span class="sr-only">{{ 'collections.paginate.loading' | t }}</span>
-      <span
-        class="{% if current_variant.available %}js{% endif %} add-to-cart"
-        v-if="state === 'ready'"
-        {% unless current_variant.available %}
-          v-cloak
-        {% endunless %}
-      >
-        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12.25 6.69202C12.25 6.82463 12.1973 6.9518 12.1036 7.04557C12.0098 7.13934 11.8826 7.19202 11.75 7.19202H6.75V12.192C6.75 12.3246 6.69732 12.4518 6.60355 12.5456C6.50979 12.6393 6.38261 12.692 6.25 12.692C6.11739 12.692 5.99021 12.6393 5.89645 12.5456C5.80268 12.4518 5.75 12.3246 5.75 12.192V7.19202H0.75C0.617392 7.19202 0.490215 7.13934 0.396447 7.04557C0.302679 6.9518 0.25 6.82463 0.25 6.69202C0.25 6.55941 0.302679 6.43223 0.396447 6.33846C0.490215 6.2447 0.617392 6.19202 0.75 6.19202H5.75V1.19202C5.75 1.05941 5.80268 0.932231 5.89645 0.838463C5.99021 0.744695 6.11739 0.692017 6.25 0.692017C6.38261 0.692017 6.50979 0.744695 6.60355 0.838463C6.69732 0.932231 6.75 1.05941 6.75 1.19202V6.19202H11.75C11.8826 6.19202 12.0098 6.2447 12.1036 6.33846C12.1973 6.43223 12.25 6.55941 12.25 6.69202Z" fill="black"/>
-        </svg>
+    {{ block_settings.button_text }}
+  </button>
+{% else %}
+  <div
+    class="{{ spacing_classes }}"
+    style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
+    {{ block.shopify_attributes }}
+  >
+    {%- if product.gift_card? and block.settings.enable_gift_card_recipient_form and product.available -%}
+      {% render 'gift-card-recipient-form' %}
+    {%- endif -%}
 
-        <span> Add To Bag </span>
-      </span>
-      <span class="js" v-if="state === 'added'" v-cloak>
-        {{- 'products.product.added' | t -}}
-      </span>
-      <span
-        class="{% unless current_variant.available %}js{% endunless %}"
-        v-if="state === 'soldOut'"
-        v-cloak
-      >
-        {{- 'products.product.sold_out' | t -}}
-      </span>
-      <span class="js" v-if="state === 'unavailable'" v-cloak>
-        {{- 'products.product.unavailable' | t -}}
-      </span>
-    </button>
-    <button
-      id="CheckOut"
-      data-product-available="{{ current_variant.available }}"
-      style="display: {% if current_variant.available == true %}flex{% else %}none{% endif %};"
+    <div
+      class="paymentButtonsWrapper"
+      {% unless current_variant.available %}
+        style="grid-template-columns: 1fr;"
+      {% endunless %}
     >
-      <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12.75 0.192017H1.75C1.48478 0.192017 1.23043 0.297373 1.04289 0.48491C0.855357 0.672446 0.75 0.9268 0.75 1.19202V10.192C0.75 10.4572 0.855357 10.7116 1.04289 10.8991C1.23043 11.0867 1.48478 11.192 1.75 11.192H12.75C13.0152 11.192 13.2696 11.0867 13.4571 10.8991C13.6446 10.7116 13.75 10.4572 13.75 10.192V1.19202C13.75 0.9268 13.6446 0.672446 13.4571 0.48491C13.2696 0.297373 13.0152 0.192017 12.75 0.192017ZM12.75 1.19202V2.19202H1.75V1.19202H12.75ZM12.75 10.192H1.75V3.19202H12.75V10.192ZM10.25 4.69202C10.25 5.48767 9.93393 6.25073 9.37132 6.81334C8.80871 7.37595 8.04565 7.69202 7.25 7.69202C6.45435 7.69202 5.69129 7.37595 5.12868 6.81334C4.56607 6.25073 4.25 5.48767 4.25 4.69202C4.25 4.55941 4.30268 4.43223 4.39645 4.33846C4.49021 4.2447 4.61739 4.19202 4.75 4.19202C4.88261 4.19202 5.00979 4.2447 5.10355 4.33846C5.19732 4.43223 5.25 4.55941 5.25 4.69202C5.25 5.22245 5.46071 5.73116 5.83579 6.10623C6.21086 6.4813 6.71957 6.69202 7.25 6.69202C7.78043 6.69202 8.28914 6.4813 8.66421 6.10623C9.03929 5.73116 9.25 5.22245 9.25 4.69202C9.25 4.55941 9.30268 4.43223 9.39645 4.33846C9.49021 4.2447 9.61739 4.19202 9.75 4.19202C9.88261 4.19202 10.0098 4.2447 10.1036 4.33846C10.1973 4.43223 10.25 4.55941 10.25 4.69202Z" fill="white"/>
-      </svg>
-      <span> Checkout </span>
-    </button>
-
-    <noscript>
       <button
         type="submit"
-        class="btn"
-        aria-label="{{ 'products.product.add_to_cart' | t }}"
+        data-cart-url="{{ routes.cart_url }}"
+        aria-label="Add To Bag"
+        name="add"
+        id="AddToCart"
+        class="btn{% if buttons_block.settings.show_smart_checkout and product.selling_plan_groups.size == 0 %} add-to-cart--secondary{% endif %}"
+        v-bind:class="{ disabled: addToCartDisabled }"
+        v-bind:disabled="addToCartDisabled"
       >
-        <span>{{ 'products.product.add_to_cart' | t }}</span>
-      </button>
-    </noscript>
-  </div>
+        {% assign icon_attrs = 'v-if="state === ' | append: "'adding'" | append: '" v-cloak' %}
+        {% render 'theme-icon' with icon: 'circle-notch', iconClasses: 'spin js fa-2x flex-full', iconAttributes: icon_attrs, icon_fill: settings.color_primary_button_text -%}
+        <span class="sr-only">{{ 'collections.paginate.loading' | t }}</span>
+        <spanp
+          class="{% if current_variant.available %}js{% endif %} add-to-cart"
+          v-if="state === 'ready'"
+          {% unless current_variant.available %}
+            v-cloak
+          {% endunless %}
+        >
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.25 6.69202C12.25 6.82463 12.1973 6.9518 12.1036 7.04557C12.0098 7.13934 11.8826 7.19202 11.75 7.19202H6.75V12.192C6.75 12.3246 6.69732 12.4518 6.60355 12.5456C6.50979 12.6393 6.38261 12.692 6.25 12.692C6.11739 12.692 5.99021 12.6393 5.89645 12.5456C5.80268 12.4518 5.75 12.3246 5.75 12.192V7.19202H0.75C0.617392 7.19202 0.490215 7.13934 0.396447 7.04557C0.302679 6.9518 0.25 6.82463 0.25 6.69202C0.25 6.55941 0.302679 6.43223 0.396447 6.33846C0.490215 6.2447 0.617392 6.19202 0.75 6.19202H5.75V1.19202C5.75 1.05941 5.80268 0.932231 5.89645 0.838463C5.99021 0.744695 6.11739 0.692017 6.25 0.692017C6.38261 0.692017 6.50979 0.744695 6.60355 0.838463C6.69732 0.932231 6.75 1.05941 6.75 1.19202V6.19202H11.75C11.8826 6.19202 12.0098 6.2447 12.1036 6.33846C12.1973 6.43223 12.25 6.55941 12.25 6.69202Z" fill="black"/>
+          </svg>
 
-  {% if buttons_block.settings.show_smart_checkout %}
-    {{ form | payment_button }}
-  {% endif %}
-</div>
+          <span> Add To Bag </span>
+        </spanp>
+        <span class="js" v-if="state === 'added'" v-cloak>
+          {{- 'products.product.added' | t -}}
+        </span>
+        <span
+          class="{% unless current_variant.available %}js{% endunless %}"
+          v-if="state === 'soldOut'"
+          v-cloak
+        >
+          {{- 'products.product.sold_out' | t -}}
+        </span>
+        <span class="js" v-if="state === 'unavailable'" v-cloak>
+          {{- 'products.product.unavailable' | t -}}
+        </span>
+      </button>
+
+      {% if buttons_block.settings.show_smart_checkout %}
+        {{ form | payment_button }}
+      {% endif %}
+      {% comment %}
+        <button
+          id="CheckOut"
+          data-product-available="{{ current_variant.available }}"
+          style="display: {% if current_variant.available == true %}flex{% else %}none{% endif %};"
+        >
+          <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.75 0.192017H1.75C1.48478 0.192017 1.23043 0.297373 1.04289 0.48491C0.855357 0.672446 0.75 0.9268 0.75 1.19202V10.192C0.75 10.4572 0.855357 10.7116 1.04289 10.8991C1.23043 11.0867 1.48478 11.192 1.75 11.192H12.75C13.0152 11.192 13.2696 11.0867 13.4571 10.8991C13.6446 10.7116 13.75 10.4572 13.75 10.192V1.19202C13.75 0.9268 13.6446 0.672446 13.4571 0.48491C13.2696 0.297373 13.0152 0.192017 12.75 0.192017ZM12.75 1.19202V2.19202H1.75V1.19202H12.75ZM12.75 10.192H1.75V3.19202H12.75V10.192ZM10.25 4.69202C10.25 5.48767 9.93393 6.25073 9.37132 6.81334C8.80871 7.37595 8.04565 7.69202 7.25 7.69202C6.45435 7.69202 5.69129 7.37595 5.12868 6.81334C4.56607 6.25073 4.25 5.48767 4.25 4.69202C4.25 4.55941 4.30268 4.43223 4.39645 4.33846C4.49021 4.2447 4.61739 4.19202 4.75 4.19202C4.88261 4.19202 5.00979 4.2447 5.10355 4.33846C5.19732 4.43223 5.25 4.55941 5.25 4.69202C5.25 5.22245 5.46071 5.73116 5.83579 6.10623C6.21086 6.4813 6.71957 6.69202 7.25 6.69202C7.78043 6.69202 8.28914 6.4813 8.66421 6.10623C9.03929 5.73116 9.25 5.22245 9.25 4.69202C9.25 4.55941 9.30268 4.43223 9.39645 4.33846C9.49021 4.2447 9.61739 4.19202 9.75 4.19202C9.88261 4.19202 10.0098 4.2447 10.1036 4.33846C10.1973 4.43223 10.25 4.55941 10.25 4.69202Z" fill="white"/>
+          </svg>
+          <span> Checkout </span>
+        </button>
+      {% endcomment %}
+
+      <noscript>
+        <button
+          type="submit"
+          class="btn"
+          aria-label="{{ 'products.product.add_to_cart' | t }}"
+        >
+          <span>{{ 'products.product.add_to_cart' | t }}</span>
+        </button>
+      </noscript>
+    </div>
+  </div>
+{% endif %}
 
 <script src="{{ 'product-buy-button.js' |  asset_url }}" defer></script>

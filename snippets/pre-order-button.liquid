@@ -17,60 +17,10 @@
     ></span>
   {% endfor %}
 
-  <button type="button" class="pre-order-button btn add-to-cart--secondary">{{ block_settings.button_text }}</button>
   <pre-order-layout>
     <div id="overlay"></div>
 
     <pre-order-container>
-      <div class="heading-block">
-        <h2 class="heading">Place your E-mail</h2>
-        <span class="sub-heading">We will let you know soon once it ready.</span>
-      </div>
-      <pre-order-form
-        role="dialog"
-        tabindex="-1"
-        aria-modal="true"
-        aria-label="Place your E-mail"
-        data-product-name="{{ product_name }}"
-        data-product-sku="{{ default_sku }}"
-        data-product-handle="{{ product.handle }}"
-      >
-        <div id="form-field-name" class="form-field">
-          <input type="text" name="name" aria-labelledby="label-name" required>
-          <label id="label-name" for="label-name">Your name*</label>
-          <span class="error-message block"></span>
-        </div>
-        <div id="form-field-email" class="form-field">
-          <input type="email" name="email" aria-labelledby="label-email" required>
-          <label id="label-email" for="label-email">Your Email*</label>
-          <span class="error-message block"></span>
-        </div>
-        <div id="form-field-phone" class="form-field">
-          <input type="tel" name="phone" aria-labelledby="label-phone_number" required>
-          <label id="label-phone_number" for="label-phone_number">Your Phone Number*</label>
-          <span class="error-message block"></span>
-        </div>
-        <div id="form-field-required" class="form-field">
-          <input type="text" name="required" aria-labelledby="label-required">
-          <label id="label-required" for="label-required">Required</label>
-          <span class="error-message block"></span>
-        </div>
-
-        <button class="btn-submit btn add-to-cart--secondary">
-          <span class="loader"></span>
-          <span class="title"> {{ block_settings.form_submit_button_text }}</span>
-        </button>
-        <span class="form-policy">
-          By signing up, you agree to receive marketing emails. View our privacy policy and terms of service for more
-          info.
-        </span>
-      </pre-order-form>
-
-      <div class="success-notification hidden">
-        <h3>Submit Success</h3>
-        <span> Thank you for your patient. The form has been submitted. </span>
-      </div>
-
       <button type="button" class="form-close btn-close">
         <svg
           aria-hidden="true"
@@ -83,13 +33,65 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41401 6.00012L11.707 1.70721C12.098 1.31622 12.098 0.684236 11.707 0.293244C11.316 -0.097748 10.684 -0.097748 10.293 0.293244L6.00001 4.58615L1.70701 0.293244C1.31601 -0.097748 0.684006 -0.097748 0.293006 0.293244C-0.0979941 0.684236 -0.0979941 1.31622 0.293006 1.70721L4.58601 6.00012L0.293006 10.293C-0.0979941 10.684 -0.0979941 11.316 0.293006 11.707C0.488006 11.902 0.744006 12 1.00001 12C1.25601 12 1.51201 11.902 1.70701 11.707L6.00001 7.4141L10.293 11.707C10.488 11.902 10.744 12 11 12C11.256 12 11.512 11.902 11.707 11.707C12.098 11.316 12.098 10.684 11.707 10.293L7.41401 6.00012Z"></path>
         </svg>
       </button>
+      <div class="form">
+        <div class="heading-block">
+          <h2 class="heading">Place your E-mail</h2>
+          <span class="sub-heading">We will let you know soon once it ready.</span>
+        </div>
+        <pre-order-form
+          role="dialog"
+          tabindex="-1"
+          aria-modal="true"
+          aria-label="Place your E-mail"
+          data-product-name="{{ product_name }}"
+          data-product-sku="{{ default_sku }}"
+          data-product-handle="{{ product.handle }}"
+          data-product-image="{{ product.featured_image.src | image_url: width: 200 }}"
+          data-product-price="{{ product.price | money }}"
+        >
+          <div id="form-field-name" class="form-field">
+            <input type="text" name="name" aria-labelledby="label-name" required>
+            <label id="label-name" for="label-name">Your name*</label>
+            <span class="error-message block"></span>
+          </div>
+          <div id="form-field-email" class="form-field">
+            <input type="email" name="email" aria-labelledby="label-email" required>
+            <label id="label-email" for="label-email">Your Email*</label>
+            <span class="error-message block"></span>
+          </div>
+          <div id="form-field-phone" class="form-field">
+            <input type="tel" name="phone" aria-labelledby="label-phone_number" required>
+            <label id="label-phone_number" for="label-phone_number">Your Phone Number*</label>
+            <span class="error-message block"></span>
+          </div>
+          <div id="form-field-required" class="form-field">
+            <input type="text" name="required" aria-labelledby="label-required">
+            <label id="label-required" for="label-required">Required</label>
+            <span class="error-message block"></span>
+          </div>
+
+          <button class="btn-submit btn add-to-cart--secondary" style="width: 100%;">
+            <span class="loader"></span>
+            <span class="title"> {{ block_settings.form_submit_button_text }}</span>
+          </button>
+          <span class="form-policy">
+            By signing up, you agree to receive marketing emails. View our privacy policy and terms of service for more
+            info.
+          </span>
+        </pre-order-form>
+      </div>
+
+      <div class="submitted-notification success-notification hidden">
+        <h3>Submit Success</h3>
+        <span> Thank you for your patient. The form has been submitted. </span>
+      </div>
+
+      <div class="submitted-notification failed-notification hidden">
+        <h3>Oops !!</h3>
+        <span>Submission failed. Please re-enter your information and submit again.</span>
+      </div>
     </pre-order-container>
   </pre-order-layout>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    async
-  ></script>
   <script src="{{ 'pre-order-block.js' | asset_url }}" defer type="text/javascript"></script>
 </pre-order-block>
 

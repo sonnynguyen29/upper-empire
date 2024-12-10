@@ -283,7 +283,17 @@
                                   </span>
                                 </p>
 
-                                {% render 'product-pricing', current_variant: current_variant %}
+                                {% if current_variant.available == false %}
+                                  {% assign sold_out_badge_settings = section.blocks
+                                    | where: 'type', 'sold-out-badge'
+                                    | first
+                                  %}
+                                {% endif %}
+
+                                {% render 'product-pricing',
+                                  current_variant: current_variant,
+                                  sold_out_badge_settings: sold_out_badge_settings
+                                %}
                                 {% render 'unit-price-measurement-variant', variant: current_variant %}
                               </div>
 
@@ -585,6 +595,13 @@
                             {% endif %}
 
                           {%- when 'buy_buttons' -%}
+                            {% liquid
+                              for block in section.blocks
+                                if block.type == 'pre-order-button'
+                                  assign block_settings = block.settings
+                                endif
+                              endfor
+                            %}
                             {% render 'product-buy-buttons',
                               block: block,
                               product: product,
@@ -592,7 +609,8 @@
                               current_variant: current_variant,
                               routes: routes,
                               settings: settings,
-                              form: form
+                              form: form,
+                              block_settings: block_settings
                             %}
 
                           {%- when 'local_pickup' -%}
@@ -878,12 +896,15 @@
                       <div class="errors qty-error" v-if="hasErrors" v-html="hasErrors" v-cloak></div>
                     {% endform %}
 
-                    {% if section.settings.show_out_of_stock_email %}
+                    {% comment %}
                       {% render 'out-of-stock-form' %}
-                      <div class="shopify-disclaimer--hidden">
-                        {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
-                      </div>
-                    {% endif %}
+                      {% if section.settings.show_out_of_stock_email %}
+                        {% render 'out-of-stock-form' %}
+                        <div class="shopify-disclaimer--hidden">
+                          {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+                        </div>
+                      {% endif %}
+                    {% endcomment %}
                   </div>
                 </div>
               </div>
@@ -2806,6 +2827,62 @@
           "type": "collection",
           "id": "collection",
           "label": "Collection Notice"
+        }
+      ]
+    },
+    {
+      "type": "pre-order-button",
+      "name": "Pre-order Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "button_color",
+          "label": "Button Color",
+          "default": "#007bff"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Sold Out - Click here to be notified by email when product becomes available"
+        },
+        {
+          "type": "text",
+          "id": "form_heading",
+          "label": "Form Heading",
+          "default": "Leave your information"
+        },
+        {
+          "type": "text",
+          "id": "form_submit_button_text",
+          "label": "Form Button Text",
+          "default": "Submit"
+        }
+      ]
+    },
+    {
+      "type": "sold-out-badge",
+      "name": "Sold Out Badge",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "badge_color",
+          "label": "Badge Color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "badge_text_color",
+          "label": "Badge Text Color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Badge Text",
+          "default": "Sold Out"
         }
       ]
     }

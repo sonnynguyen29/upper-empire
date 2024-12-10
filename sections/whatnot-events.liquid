@@ -1,0 +1,104 @@
+<whatnot-events>
+  <template>
+    {% assign event_blocks = section.blocks | where: 'type', 'whatnot-event' %}
+
+    {% for event_block in event_blocks %}
+      {% assign event = event_block.settings %}
+
+      <div id="{{ event_block.id }}" class="whatnot-event">
+        <script>
+          {
+            heading: '{{ event.heading }}',
+            date_time: '{{ event.date_time }}',
+            link: '{{ event.link }}',
+            sub_heading: '{{ event.sub_heading }}',
+          }
+        </script>
+        <div class="whatnot-video">
+          {{ event.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+        </div>
+      </div>
+    {% endfor %}
+  </template>
+</whatnot-events>
+
+{% schema %}
+{
+  "name": "Whatnot Events",
+  "class": "whatnot-events-wrapper",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Default Settings",
+      "info": "When you don't have any upcoming event, this will be displayed as default."
+    },
+    {
+      "type": "text",
+      "id": "default_heading",
+      "label": "Default Heading",
+      "default": "EXCLUSIVE TRAVIS MERCH & UNRELEASED TRAVIS SHOE, $1 STARTS!"
+    },
+    {
+      "type": "text",
+      "id": "default_sub_heading",
+      "label": "Default Subheading",
+      "default": "No Upcoming Shows"
+    },
+    {
+      "type": "video",
+      "id": "default_video",
+      "label": "Default Video"
+    },
+    {
+      "type": "text",
+      "id": "link",
+      "label": "Link",
+      "default": "https://upperempire.com",
+      "info": "User will access the link once they click event."
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Whatnot Event",
+      "type": "whatnot-event",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Event Name"
+        },
+        {
+          "type": "header",
+          "content": "Event Date",
+          "info": "Please enter the date of the event with format MM/DD/YYYY, h:mm AM/PM. Example: 11/28/2024, 3:45 PM"
+        },
+        {
+          "type": "text",
+          "id": "date_time",
+          "label": "Date-Time",
+          "default": "11/28/2024, 3:45 PM"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "Link",
+          "default": "https://upperempire.com",
+          "info": "User will access the link once they click event."
+        },
+        {
+          "type": "text",
+          "id": "sub_heading",
+          "label": "Subheading",
+          "default": "Upcoming Shows"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

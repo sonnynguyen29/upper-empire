@@ -34,6 +34,7 @@
 
         img {
             height: 24px;
+            width: auto;
         }
 
         @media screen and (min-width: 1024px) {
@@ -92,6 +93,7 @@
                 position: relative;
                 padding-bottom: 176.6%;
                 height: 0;
+                display: block;
 
                 video {
                     position: absolute;
@@ -100,6 +102,53 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                }
+
+                .whatnot-up-coming-event,
+                .whatnot__heading {
+                    z-index: 5;
+                    position: absolute;
+                }
+
+                .whatnot-up-coming-event {
+                    top: 10px;
+                    left: 10px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 5px;
+                    flex-direction: column;
+
+                    h4 {
+                        color: white;
+                        font-weight: 700;
+                        margin: 0;
+                    }
+
+                    .whatnot__date-time__wrapper {
+                        background-color: #f9f9f9;
+                        border-radius: 5px;
+                        padding: 5px;
+
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .whatnot__heading {
+                    bottom: 0;
+                    left: 10px;
+                    color: white;
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-family: "PPNeueMontreal", sans-serif;
+                    font-size: 24px;
+                    font-weight: 800;
+                    line-height: 28.8px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
                 }
             }
         }

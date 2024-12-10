@@ -5,13 +5,15 @@
     <div class="instagram-grid-wrapper">
       <div class="instagram-grid-title title-wrapper">
         {% render 'responsive-image' with logo_image %}
-        <h2>{{ title }}</h2>
+        <a href="{{ url |  default: '#' }}"><h2>{{ title }}</h2></a>
       </div>
       <div class="instagram-grid-layout">
         {% for image in instagram_images %}
           <div class="image-grid-item">
             <div class="image">
-              {% render 'responsive-image' with image.settings.image %}
+              <a href="{{ image.settings.image_url | default: '#' }}">
+                {% render 'responsive-image' with image.settings.image %}
+              </a>
             </div>
           </div>
         {% endfor %}

@@ -23,4 +23,20 @@ document.addEventListener('DOMContentLoaded', function () {
     swatchEl.forEach((swatch) => {
         swatch.addEventListener('click', onVariantChange);
     });
+
+});
+
+window.addEventListener('load', function () {
+    const preOrderBtn = document.querySelector('button.pre-order-button');
+
+    if (preOrderBtn) {
+
+        preOrderBtn.addEventListener('click', () => {
+            document.querySelector('pre-order-layout').classList.add('active');
+            document.querySelector('pre-order-block').state.isFormOpened = true;
+            console.log('Pre-order button clicked', document.querySelector('pre-order-block').state);
+        });
+
+        preOrderBtn.removeAttribute('disabled');
+    }
 });
