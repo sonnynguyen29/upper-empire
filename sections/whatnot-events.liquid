@@ -1,7 +1,22 @@
 <whatnot-events>
   <template>
-    {% assign event_blocks = section.blocks | where: 'type', 'whatnot-event' %}
+    {% assign event_settings = section.settings %}
 
+    <div id="whatnot-event-default" class="whatnot-event">
+      <script>
+        {
+          heading: '{{ event_settings.default_heading }}',
+          date_time: '{{ event_settings.date_time }}',
+          link: '{{ event_settings.link }}',
+          sub_heading: '{{ event_settings.default_sub_heading }}',
+        }
+      </script>
+      <div class="whatnot-video">
+        {{ event_settings.default_video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+      </div>
+    </div>
+
+    {% assign event_blocks = section.blocks | where: 'type', 'whatnot-event' %}
     {% for event_block in event_blocks %}
       {% assign event = event_block.settings %}
 

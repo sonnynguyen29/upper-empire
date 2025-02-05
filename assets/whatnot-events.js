@@ -4,6 +4,8 @@ class WhatnotUpcomingEvent extends HTMLElement {
     }
 
     formatDate(date_time) {
+        if (!date_time) { return 'Upcoming'; }
+
         const now = new Date();
         const targetDate = new Date(date_time);
 
@@ -117,6 +119,23 @@ class WhatnotEvents extends HTMLElement {
                     console.log(this.upComingEvents);
                 } else {
                     console.log('No upcoming events.');
+
+                    const whatnotEventDefaultSettingEl = templateContent.querySelector('#whatnot-event-default');
+                    const scriptDefault = templateContent.querySelector('script');
+                    const videoDefaultElement = whatnotEventDefaultSettingEl.querySelector('.whatnot-video video');
+                    const sourceDefaultElement = whatnotEventDefaultSettingEl.querySelector('.whatnot-video source');
+                    const imageDefaultElement = whatnotEventDefaultSettingEl.querySelector('.whatnot-video img');
+
+                    let whatnotEventDefaultSettings = eval(`(${scriptDefault.textContent.trim()})`);
+                    whatnotEventDefaultSettings = { 
+                        ...whatnotEventDefaultSettings,
+                        video_poster: videoDefaultElement?.getAttribute('poster') || null,
+                        video_src: sourceDefaultElement?.getAttribute('src') || null,
+                        img_src: imageDefaultElement?.getAttribute('src') || null,
+                        isDefaultSettings: true,
+                    }
+
+                    this.upComingEvents = whatnotEventDefaultSettings;
                 }
             }
         }
