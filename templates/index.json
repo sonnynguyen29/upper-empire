@@ -15,7 +15,7 @@
         "hero_banner_desktop_NJwjwc": {
           "type": "hero_banner_desktop",
           "settings": {
-            "hero_banner_image_desktop": "shopify://shop_images/desktop-hero-image.png",
+            "hero_banner_image_desktop": "shopify://shop_images/home-banner-01.jpg",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
             "hero_banner_link": ""
           }
@@ -23,23 +23,23 @@
         "hero_banner_desktop_nabi6P": {
           "type": "hero_banner_desktop",
           "settings": {
-            "hero_banner_image_desktop": "shopify://shop_images/mp-desktop_88536c2a-1051-461e-9de9-46c7b565ed5c.jpg",
-            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
+            "hero_banner_image_desktop": "shopify://shop_images/home-banner-02.jpg",
+            "hero_banner_title": "● Bred October",
             "hero_banner_link": ""
           }
         },
         "hero_banner_desktop_jBMf4T": {
           "type": "hero_banner_desktop",
           "settings": {
-            "hero_banner_image_desktop": "shopify://shop_images/99235.png",
-            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
+            "hero_banner_image_desktop": "shopify://shop_images/home-banner-03.jpg",
+            "hero_banner_title": "",
             "hero_banner_link": ""
           }
         },
         "hero_banner_mobile_WR4U9f": {
           "type": "hero_banner_mobile",
           "settings": {
-            "hero_banner_image_mobile": "shopify://shop_images/mobile-hero-image.png",
+            "hero_banner_image_mobile": "shopify://shop_images/home-mobile-banner.jpg",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
             "hero_banner_link": ""
           }
@@ -47,7 +47,7 @@
         "hero_banner_mobile_XidkEr": {
           "type": "hero_banner_mobile",
           "settings": {
-            "hero_banner_image_mobile": "shopify://shop_images/mp-desktop_88536c2a-1051-461e-9de9-46c7b565ed5c.jpg",
+            "hero_banner_image_mobile": "shopify://shop_images/home-mobile-banner-01.jpg",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
             "hero_banner_link": ""
           }
@@ -55,7 +55,7 @@
         "hero_banner_mobile_MRnmCH": {
           "type": "hero_banner_mobile",
           "settings": {
-            "hero_banner_image_mobile": "shopify://shop_images/99235.png",
+            "hero_banner_image_mobile": "shopify://shop_images/home-mobile-banner-3.jpg",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
             "hero_banner_link": ""
           }
@@ -155,9 +155,9 @@
     "video-section": {
       "type": "video-section",
       "settings": {
-        "video": "shopify://files/videos/Travis j4.mp4",
-        "video_thumbnail": "shopify://shop_images/Travis_j4_1.png",
-        "image_right_side": "shopify://shop_images/11304_2.png",
+        "video": "shopify://files/videos/community.mp4",
+        "video_thumbnail": "shopify://shop_images/video-thumb.jpg",
+        "image_right_side": "shopify://shop_images/community-03.jpg",
         "section_title": "We are on a mission to create a close-knit community founded on authentic passion and admiration for sneakers.",
         "section_subtitle": "● Join our facebook group",
         "section_subtitle_url": "https://www.facebook.com/groups/upperempire"
@@ -197,20 +197,20 @@
         "whatnot_video_pLrzEj": {
           "type": "whatnot-video",
           "settings": {
-            "video": "shopify://files/videos/MJ 20k box.mp4"
+            "video": "shopify://files/videos/whatnot.mp4"
           }
         },
         "whatnot_image_E9hDgH": {
           "type": "whatnot-image",
           "settings": {
-            "image": "shopify://shop_images/432248613_7004019346391480_6408442333364406157_n.jpg",
+            "image": "shopify://shop_images/whatnot-01_aebed63e-7e8b-467f-b40c-014add2059bb.jpg",
             "image_url": ""
           }
         },
         "whatnot_image_FCwMAh": {
           "type": "whatnot-image",
           "settings": {
-            "image": "shopify://shop_images/432243864_323411054077131_7246398251192015688_n.jpg",
+            "image": "shopify://shop_images/whatnot-02_e3ecb886-c899-40a7-98c5-a83537518cef.jpg",
             "image_url": ""
           }
         }
