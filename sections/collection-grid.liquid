@@ -15,16 +15,18 @@
       <div class="collection-grid-layout collection-grid-layout-splide splide">
         <div class="splide__track">
           <div class="splide__list">
-            {% for collection in collections %}
-              <div class="collection-grid-item splide__slide">
-                <div class="collection-image">
-                  {% render 'responsive-image' with collection.settings.collection_image %}
+            {%- comment -%}
+               {% for collection in collections %}
+                <div class="collection-grid-item splide__slide">
+                  <div class="collection-image">
+                    {% render 'responsive-image' with collection.settings.collection_image %}
+                  </div>
+                  <div class="collection-text" style="color: {{ collection.settings.collection_text_color }}">
+                    <p>{{ collection.settings.collection_text }}</p>
+                  </div>
                 </div>
-                <div class="collection-text" style="color: {{ collection.settings.collection_text_color }}">
-                  <p>{{ collection.settings.collection_text }}</p>
-                </div>
-              </div>
-            {% endfor %}
+              {% endfor %}
+            {%- endcomment -%}
           </div>
         </div>
         <div class="view-more-wrapper">
@@ -36,7 +38,81 @@
 </section>
 
 <script>
-  window.addEventListener('load', (event) => {
+  async function fetchUECollectionImages() {
+    try {
+      // Fetch the HTML content of the target page
+      const response = await fetch('/pages/ue-collection');
+      const htmlText = await response.text();
+
+      // Parse the HTML text
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(htmlText, 'text/html');
+
+      // Find the parent container
+      const grid = doc.querySelector('.ue-collection-grid');
+
+      if (grid) {
+        // Select the first 6 items
+        const items = grid.querySelectorAll('.ue-collection-item');
+        const splideList = document.querySelector('.ue-collection-slider .splide__list');
+
+        if (!splideList) {
+          console.error('Target container .splide__list not found.');
+          return;
+        }
+
+        items.forEach((item, index) => {
+          if (index < 6) {
+            const { 
+              imageText,
+              imageUrl,
+              textColor
+            } = item.dataset;
+            const fullImageUrl = `http:${imageUrl}`;
+            const productText = imageText.replace('<p>', '').replace('</p>', '');
+
+            // Create the HTML structure
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('collection-grid-item', 'splide__slide');
+
+            const imageDiv = document.createElement('div');
+            imageDiv.classList.add('collection-image');
+
+            const responsiveImageDiv = document.createElement('div');
+            responsiveImageDiv.classList.add('responsive-image-wrapper');
+
+            const imgElement = document.createElement('img');
+            imgElement.src = fullImageUrl;
+
+            const textDiv = document.createElement('div');
+            textDiv.classList.add('collection-text');
+            textDiv.style.color = textColor;
+
+            const pElement = document.createElement('p');
+            pElement.textContent = productText;
+
+            // Append elements
+            responsiveImageDiv.appendChild(imgElement);
+            imageDiv.appendChild(responsiveImageDiv);
+            textDiv.appendChild(pElement);
+            itemDiv.appendChild(imageDiv);
+            itemDiv.appendChild(textDiv);
+            splideList.appendChild(itemDiv);
+          }
+        });
+
+        console.log('Images added successfully!');
+      } else {
+        console.error('ue-collection-grid not found');
+      }
+    } catch (error) {
+      console.error('Error fetching UE collection:', error);
+    }
+  }
+
+  window.addEventListener('load', async (event) => {
+    await fetchUECollectionImages();
+
     const loadProductGridSplide = () => {
       var productGridSlide = new Splide('.collection-grid-layout-splide', {
         perPage: 1,
@@ -76,6 +152,7 @@
 {% schema %}
 {
   "name": "Collection Grid",
+  "class": "ue-collection-slider",
   "settings": [
     {
       "type": "text",
