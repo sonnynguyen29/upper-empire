@@ -158,7 +158,7 @@
         "video_item_rqTVUM": {
           "type": "video-item",
           "settings": {
-            "video": "shopify://files/videos/community.mp4",
+            "video": "shopify://files/videos/community-2x.mp4",
             "title": "",
             "description": ""
           }
@@ -166,7 +166,7 @@
         "video_item_RrgdrC": {
           "type": "video-item",
           "settings": {
-            "video": "shopify://files/videos/Travis j4.mp4",
+            "video": "shopify://files/videos/community-01-2x.mp4",
             "title": "",
             "description": ""
           }
@@ -174,7 +174,7 @@
         "video_item_ejFCxW": {
           "type": "video-item",
           "settings": {
-            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "video": "shopify://files/videos/community-02-2x.mp4",
             "title": "",
             "description": ""
           }

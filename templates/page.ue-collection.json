@@ -16,7 +16,7 @@
           "type": "image-item",
           "settings": {
             "link": "https://www.upperempire.com",
-            "image": "shopify://shop_images/ue-collection-01.jpg",
+            "image": "shopify://shop_images/ue-collection-02.jpg",
             "text": "<p>SB Skunks</p>",
             "text_color": "#000000"
           }
@@ -151,7 +151,7 @@
           "type": "image-item",
           "settings": {
             "link": "https://www.upperempire.com",
-            "image": "shopify://shop_images/ue-collection-02.jpg",
+            "image": "shopify://shop_images/ue-collection-01.jpg",
             "text": "<p>SB Skunks</p>",
             "text_color": "#000000"
           }
@@ -524,20 +524,21 @@
     "057a50d5-3fee-4ea2-a832-2d38f47b951a": {
       "type": "ue-collection",
       "blocks": {
+        "image_item_wmrQiY": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-49_18ff7570-6873-4f1b-886d-9f65a329e173.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
         "image_item_HeEMey": {
           "type": "image-item",
           "settings": {
             "link": "https://www.upperempire.com",
-            "text": "<p>Product Text</p>",
-            "text_color": "#000000"
-          }
-        },
-        "image_item_LQazbw": {
-          "type": "image-item",
-          "settings": {
-            "link": "https://www.upperempire.com",
-            "image": "shopify://shop_images/ue-collection-08.jpg",
-            "text": "<p>Product Text</p>",
+            "image": "shopify://shop_images/ue-collection-48_bde60c79-314d-4d89-bf93-0eef5919bc3d.jpg",
+            "text": "<p>UE Collection</p>",
             "text_color": "#000000"
           }
         },
@@ -546,7 +547,16 @@
           "settings": {
             "link": "https://www.upperempire.com",
             "image": "shopify://shop_images/ue-collection-10.jpg",
-            "text": "<p>Product Text</p>",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_LQazbw": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-08.jpg",
+            "text": "<p>UE Collection</p>",
             "text_color": "#000000"
           }
         },
@@ -555,15 +565,16 @@
           "settings": {
             "link": "https://www.upperempire.com",
             "image": "shopify://shop_images/ue-collection-09.jpg",
-            "text": "<p>Product Text</p>",
+            "text": "<p>UE Collection</p>",
             "text_color": "#000000"
           }
         }
       },
       "block_order": [
+        "image_item_wmrQiY",
         "image_item_HeEMey",
-        "image_item_LQazbw",
         "image_item_Mw3mP4",
+        "image_item_LQazbw",
         "image_item_EREVje"
       ],
       "settings": {
