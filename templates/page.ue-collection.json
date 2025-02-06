@@ -6,8 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
-*/
- {
+ */
+{
   "sections": {
     "057a50d5-3fee-4ea2-a832-2d38f47b959a": {
       "type": "ue-collection",
@@ -16,77 +16,99 @@
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/supreme-collage-zip-up-hoodie-ss24-white-02_a46dd763-b7dd-4310-9a4d-01f88c64e5e9.jpg"
+            "image": "shopify://shop_images/supreme-collage-zip-up-hoodie-ss24-white-02_a46dd763-b7dd-4310-9a4d-01f88c64e5e9.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         },
         "image_item_8T8P4D": {
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-white-cement-02_2bc0d489-260b-49a2-a5dc-e2d624a40cd2.jpg"
+            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-white-cement-02_2bc0d489-260b-49a2-a5dc-e2d624a40cd2.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         },
         "image_item_8VnRTK": {
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-red-cement-04_845e2d98-1b02-4344-8bf2-e22e196c662c.jpg"
+            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-red-cement-04_845e2d98-1b02-4344-8bf2-e22e196c662c.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         },
         "image_item_xfUDnk": {
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-red-cement-01_f566b6f8-568e-4843-add1-420c69d49364.jpg"
+            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-red-cement-01_f566b6f8-568e-4843-add1-420c69d49364.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         },
         "image_item_w9X3zJ": {
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-heineken-02_e30b56cf-ab65-4871-bd76-c541a3bbc5a7.jpg"
+            "image": "shopify://shop_images/nike-sb-dunk-low-heineken-02_e30b56cf-ab65-4871-bd76-c541a3bbc5a7.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         },
         "image_item_yUc9n9": {
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/C6D1E1A7-64FE-4AEC-BEFD-60F4FE475C7A.jpg"
+            "image": "shopify://shop_images/C6D1E1A7-64FE-4AEC-BEFD-60F4FE475C7A.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         },
         "image_item_dY3Cyj": {
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/IMG-0484.jpg"
+            "image": "shopify://shop_images/IMG-0484.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         },
         "image_item_zTqhcb": {
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/IMG-0486.jpg"
+            "image": "shopify://shop_images/IMG-0486.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         },
         "image_item_H9D7Q9": {
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/IMG-0487.jpg"
+            "image": "shopify://shop_images/IMG-0487.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         },
         "image_item_c3qHjE": {
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-black-cement-01_699103d3-c7d2-43a2-8ccc-9bfcc4b6b5b5.jpg"
+            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-black-cement-01_699103d3-c7d2-43a2-8ccc-9bfcc4b6b5b5.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         },
         "image_item_gcpFwH": {
           "type": "image-item",
           "settings": {
             "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-what-the-dunk-01_4e967875-f64c-4769-ae64-abe3fa95536e.jpg"
+            "image": "shopify://shop_images/nike-sb-dunk-low-what-the-dunk-01_4e967875-f64c-4769-ae64-abe3fa95536e.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
           }
         }
       },
@@ -105,7 +127,7 @@
       ],
       "settings": {
         "header": "UE COLLECTION",
-        "sub_header": ""
+        "sub_header": "Step into the perfect blend of performance, comfort, and cutting-edge design with our exclusive Nike collection—crafted for athletes, sneaker enthusiasts, and everyday trendsetters."
       }
     }
   },
