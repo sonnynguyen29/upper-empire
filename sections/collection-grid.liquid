@@ -8,22 +8,27 @@
   <div class="collection-grid-container">
     <div class="collection-grid-wrapper">
       <div class="collection-grid-title">
-        <h2>{{ section.settings.section_title }}</h2>
+        <a href="pages/{{ section.settings.section_title_url }}">
+          <h2>{{ section.settings.section_title }}</h2>
+        </a>
       </div>
       <div class="collection-grid-layout collection-grid-layout-splide splide">
         <div class="splide__track">
           <div class="splide__list">
             {% for collection in collections %}
-              <a href="{{ collection.settings.collection.url }}" class="collection-grid-item splide__slide">
+              <div class="collection-grid-item splide__slide">
                 <div class="collection-image">
                   {% render 'responsive-image' with collection.settings.collection_image %}
                 </div>
                 <div class="collection-text" style="color: {{ collection.settings.collection_text_color }}">
                   <p>{{ collection.settings.collection_text }}</p>
                 </div>
-              </a>
+              </div>
             {% endfor %}
           </div>
+        </div>
+        <div class="view-more-wrapper">
+          <a href="pages/{{ section.settings.section_title_url }}" class="view-more">View More</a>
         </div>
       </div>
     </div>
@@ -77,6 +82,11 @@
       "id": "section_title",
       "label": "Section Title",
       "default": "Our Collection"
+    },
+    {
+      "type": "page",
+      "id": "section_title_url",
+      "label": "Select Page"
     }
   ],
   "blocks": [

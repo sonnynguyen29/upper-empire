@@ -35,6 +35,7 @@
             .collection-image {
                 height: 100%;
                 width: 100%;
+
                 .responsive-image-wrapper {
                     height: 100%;
                     width: 100%;
@@ -69,7 +70,27 @@
                 h2 {
                     font-size: 38px;
                 }
+
+                a:hover {
+                    text-decoration: underline;
+                    transition: all 500ms ease-in-out;
+                }
             }
+        }
+    }
+}
+
+.view-more-wrapper {
+    text-align: center;
+    padding: 20px 0;
+
+    .view-more {
+        font-size: 18px;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+            transition: all 500ms ease-in-out;
         }
     }
 }

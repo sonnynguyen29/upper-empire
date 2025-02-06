@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "hero_banner": {
       "type": "hero-banner",
@@ -16,42 +16,48 @@
           "type": "hero_banner_desktop",
           "settings": {
             "hero_banner_image_desktop": "shopify://shop_images/desktop-hero-image.png",
-            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
+            "hero_banner_link": ""
           }
         },
         "hero_banner_desktop_nabi6P": {
           "type": "hero_banner_desktop",
           "settings": {
             "hero_banner_image_desktop": "shopify://shop_images/mp-desktop_88536c2a-1051-461e-9de9-46c7b565ed5c.jpg",
-            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
+            "hero_banner_link": ""
           }
         },
         "hero_banner_desktop_jBMf4T": {
           "type": "hero_banner_desktop",
           "settings": {
             "hero_banner_image_desktop": "shopify://shop_images/99235.png",
-            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
+            "hero_banner_link": ""
           }
         },
         "hero_banner_mobile_WR4U9f": {
           "type": "hero_banner_mobile",
           "settings": {
             "hero_banner_image_mobile": "shopify://shop_images/mobile-hero-image.png",
-            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
+            "hero_banner_link": ""
           }
         },
         "hero_banner_mobile_XidkEr": {
           "type": "hero_banner_mobile",
           "settings": {
             "hero_banner_image_mobile": "shopify://shop_images/mp-desktop_88536c2a-1051-461e-9de9-46c7b565ed5c.jpg",
-            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
+            "hero_banner_link": ""
           }
         },
         "hero_banner_mobile_MRnmCH": {
           "type": "hero_banner_mobile",
           "settings": {
             "hero_banner_image_mobile": "shopify://shop_images/99235.png",
-            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
+            "hero_banner_link": ""
           }
         }
       },
@@ -142,7 +148,8 @@
         "collection_U7c8dK"
       ],
       "settings": {
-        "section_title": "Our Collections"
+        "section_title": "UE Collection",
+        "section_title_url": "ue-collection"
       }
     },
     "video-section": {
@@ -162,25 +169,29 @@
         "instagram_image_m87PNa": {
           "type": "instagram-image",
           "settings": {
-            "image": "shopify://shop_images/432121939_774218811273980_7552797366821012998_n.jpg"
+            "image": "shopify://shop_images/432121939_774218811273980_7552797366821012998_n.jpg",
+            "image_url": ""
           }
         },
         "instagram_image_ffCBar": {
           "type": "instagram-image",
           "settings": {
-            "image": "shopify://shop_images/432248630_948762373915641_6136749529405811846_n.jpg"
+            "image": "shopify://shop_images/432248630_948762373915641_6136749529405811846_n.jpg",
+            "image_url": ""
           }
         },
         "instagram_image_nRnM9Q": {
           "type": "instagram-image",
           "settings": {
-            "image": "shopify://shop_images/432240444_887971216413761_2254936241483375737_n.jpg"
+            "image": "shopify://shop_images/432240444_887971216413761_2254936241483375737_n.jpg",
+            "image_url": ""
           }
         },
         "instagram_image_xPCp3U": {
           "type": "instagram-image",
           "settings": {
-            "image": "shopify://shop_images/432121824_946114286865808_291591982407326616_n.jpg"
+            "image": "shopify://shop_images/432121824_946114286865808_291591982407326616_n.jpg",
+            "image_url": ""
           }
         },
         "whatnot_video_pLrzEj": {
@@ -192,13 +203,15 @@
         "whatnot_image_E9hDgH": {
           "type": "whatnot-image",
           "settings": {
-            "image": "shopify://shop_images/432248613_7004019346391480_6408442333364406157_n.jpg"
+            "image": "shopify://shop_images/432248613_7004019346391480_6408442333364406157_n.jpg",
+            "image_url": ""
           }
         },
         "whatnot_image_FCwMAh": {
           "type": "whatnot-image",
           "settings": {
-            "image": "shopify://shop_images/432243864_323411054077131_7246398251192015688_n.jpg"
+            "image": "shopify://shop_images/432243864_323411054077131_7246398251192015688_n.jpg",
+            "image_url": ""
           }
         }
       },
@@ -214,8 +227,10 @@
       "settings": {
         "instagram_image": "shopify://shop_images/instagram.png",
         "instagram_title": "INSTAGRAM",
+        "instagram_url": "",
         "whatnot_image": "shopify://shop_images/whatnot.png",
-        "whatnot_title": "WHATNOT"
+        "whatnot_title": "WHATNOT",
+        "whatnot_url": ""
       }
     }
   },

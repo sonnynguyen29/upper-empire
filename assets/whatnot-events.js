@@ -145,7 +145,8 @@ class WhatnotEvents extends HTMLElement {
         this.initWhatnotEvents();
 
         this.whatnotUpcomingEventEl = document.querySelector('whatnot-upcoming-event');
-        this.whatnotUpcomingEventEl.setEventText(this.upComingEvents);
+
+        if(this.whatnotUpcomingEventEl) this.whatnotUpcomingEventEl.setEventText(this.upComingEvents);
     }
 }
 

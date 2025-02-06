@@ -50,6 +50,23 @@
   #collection-grid .collection-grid-container .collection-grid-title h2 {
     font-size: 38px;
   }
+  #collection-grid .collection-grid-container .collection-grid-title a:hover {
+    text-decoration: underline;
+    transition: all 500ms ease-in-out;
+  }
+}
+
+.view-more-wrapper {
+  text-align: center;
+  padding: 20px 0;
+}
+.view-more-wrapper .view-more {
+  font-size: 18px;
+  font-weight: 600;
+}
+.view-more-wrapper .view-more:hover {
+  text-decoration: underline;
+  transition: all 500ms ease-in-out;
 }
 
 .splide__arrow {

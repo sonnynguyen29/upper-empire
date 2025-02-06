@@ -1,0 +1,96 @@
+{{ 'ue-collection.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<section id="ue-collection">
+  <div class="container">
+    <div class="ue-collection-header">
+      <h2 class="ue-collection__title">{{ section.settings.header }}</h2>
+      {% if section.settings.sub_header %}
+        <p>{{ section.settings.sub_header }}</p>
+      {% endif %}
+    </div>
+    <div class="ue-collection-grid">
+      {% for block in section.blocks %}
+        {% if block.settings.image %}
+          {% liquid
+            assign delay_time = 50 | times: forloop.index
+          %}
+          <div
+            href="{{ block.settings.link }}"
+            class="ue-collection-item"
+            data-image-url="{{ block.settings.image.src | image_url }}"
+            data-aos="fade-up"
+            data-aos-offset="-400"
+            data-aos-delay="{{ delay_time }}"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+          >
+            {% render 'responsive-image' with block.settings.image, alt: block.settings.image.alt | escape -%}
+            {% if block.settings.text %}
+              <div class="ue-collection-item-text" style="color: {{ block.settings.text_color }}">
+                {{ block.settings.text }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script src="{{ 'ue-collection-gallery.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "UE Collection",
+  "class": "ue-collection-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header",
+      "default": "UE Collection"
+    },
+    {
+      "type": "text",
+      "id": "sub_header",
+      "label": "Sub Header"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image-item",
+      "name": "Image item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link",
+          "label": "Link",
+          "default": "https://www.upperempire.com"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Product Text</p>"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "#000000"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
