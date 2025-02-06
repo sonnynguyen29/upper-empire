@@ -16,6 +16,14 @@
       </template>
       <div class="column video-section-wrapper">
         <div id="video-section">
+          <div class="controls">
+            <button id="prevBtn">
+              {% render 'theme-icon' with icon: 'chevron_left', iconSize: 18, iconHeight: 18 %}
+            </button>
+            <button id="nextBtn">
+              {% render 'theme-icon' with icon: 'chevron_right', iconSize: 18, iconHeight: 18 %}
+            </button>
+          </div>
           <video id="videoPlayer" muted></video>
           <div class="progress-container" id="progressContainer"></div>
           {% comment %} {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }} {% endcomment %}

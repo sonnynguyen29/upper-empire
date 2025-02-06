@@ -179,3 +179,30 @@
   transition: width 0.3s linear;
   border-radius: 10px;
 }
+#video-section story-video .controls {
+  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#video-section story-video .controls button {
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+#video-section story-video .controls button:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}

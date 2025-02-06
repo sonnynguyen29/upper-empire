@@ -3,6 +3,7 @@ class StoryVideo extends HTMLElement {
         super();
 
         this.storyVideos = [];
+        this.currentVideoIndex = 0;
     }
 
     getVideoElement() {
@@ -21,7 +22,6 @@ class StoryVideo extends HTMLElement {
     }
 
     initializeStoryVideo() {
-        let currentVideoIndex = 0;
         const videoPlayer = this.querySelector('#videoPlayer');
         const progressContainer = this.querySelector('#progressContainer');
 
@@ -37,7 +37,7 @@ class StoryVideo extends HTMLElement {
         const progressBars = this.querySelectorAll('.progress-bar div');
 
         const switchVideo = (index) => {
-            currentVideoIndex = index;
+            this.currentVideoIndex = index;
             videoPlayer.src = this.storyVideos[index];
             videoPlayer.muted = true;
             videoPlayer.play();
@@ -64,17 +64,34 @@ class StoryVideo extends HTMLElement {
 
         const updateProgress = () => {
             const progress = (videoPlayer.currentTime / videoPlayer.duration) * 100;
-            progressBars[currentVideoIndex].style.width = progress + '%';
+            progressBars[this.currentVideoIndex].style.width = progress + '%';
         }
 
         videoPlayer.addEventListener('timeupdate', updateProgress);
         videoPlayer.addEventListener('ended', () => {
-            if (currentVideoIndex < this.storyVideos.length - 1) {
-                switchVideo(currentVideoIndex + 1);
+            if (this.currentVideoIndex < this.storyVideos.length - 1) {
+                switchVideo(this.currentVideoIndex + 1);
             } else {
                 switchVideo(0); // Loop back to the first video
             }
         });
+            
+        const prevVideo = () => {
+            if (this.currentVideoIndex > 0) {
+                switchVideo(this.currentVideoIndex - 1);
+            }
+        }
+        
+        const nextVideo = () => {
+            if (this.currentVideoIndex < this.storyVideos.length - 1) {
+                switchVideo(this.currentVideoIndex + 1);
+            } else {
+                switchVideo(0); // Loop back to the first video
+            }
+        }
+
+        this.querySelector('#prevBtn').addEventListener('click', () => prevVideo());
+        this.querySelector('#nextBtn').addEventListener('click', () => nextVideo());
 
         switchVideo(0);
     }
