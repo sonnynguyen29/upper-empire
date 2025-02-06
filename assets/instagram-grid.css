@@ -7,11 +7,6 @@
 #instagram-grid .image-grid-item {
   aspect-ratio: 1/1;
 }
-@media screen and (min-width: 768px) {
-  #instagram-grid .image-grid-item {
-    aspect-ratio: 1.074;
-  }
-}
 #instagram-grid .title-wrapper img {
   margin-bottom: 5px;
 }

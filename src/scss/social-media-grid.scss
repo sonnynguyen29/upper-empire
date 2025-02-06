@@ -91,7 +91,7 @@
 
             .whatnot-video {
                 position: relative;
-                padding-bottom: 176.6%;
+                padding-bottom: 201.5%;
                 height: 0;
                 display: block;
 
@@ -167,7 +167,7 @@
             padding: 15px;
             background-color: #000;
             gap: 15px;
-            grid-template-columns: 1.142857fr 1fr;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             grid-template-rows: repeat(2, 1fr);
 
             .whatnot-grid-images {
