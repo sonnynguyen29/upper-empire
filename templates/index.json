@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "hero_banner": {
       "type": "hero-banner",
@@ -154,13 +154,44 @@
     },
     "video-section": {
       "type": "video-section",
+      "blocks": {
+        "video_item_RrgdrC": {
+          "type": "video-item",
+          "settings": {
+            "video": "shopify://files/videos/Travis j4.mp4",
+            "title": "",
+            "description": ""
+          }
+        },
+        "video_item_ejFCxW": {
+          "type": "video-item",
+          "settings": {
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "title": "",
+            "description": ""
+          }
+        },
+        "video_item_rqTVUM": {
+          "type": "video-item",
+          "settings": {
+            "video": "shopify://files/videos/community.mp4",
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_item_RrgdrC",
+        "video_item_ejFCxW",
+        "video_item_rqTVUM"
+      ],
       "settings": {
         "video": "shopify://files/videos/community.mp4",
         "video_thumbnail": "shopify://shop_images/video-thumb.jpg",
         "image_right_side": "shopify://shop_images/community-03.jpg",
         "section_title": "We are on a mission to create a close-knit community founded on authentic passion and admiration for sneakers.",
         "section_subtitle": "● Join our facebook group",
-        "section_subtitle_url": "https://www.facebook.com/groups/upperempire"
+        "section_subtitle_url": "https://www.facebook.com/groups/1278696162746210"
       }
     },
     "social-media-grid": {

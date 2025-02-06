@@ -1,23 +1,45 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign video_list = section.blocks | where: 'type', 'video-item'
+%}
+
 <section id="video-section">
   <div class="video-section-container">
-    <div class="column video-section-wrapper">
-      <div id="video-section">
-        {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+    <story-video>
+      <template>
+        {% for video_item in video_list %}
+          <div class="video-item">
+            {{ video_item.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+          </div>
+        {% endfor %}
+      </template>
+      <div class="column video-section-wrapper">
+        <div id="video-section">
+          <video id="videoPlayer" muted></video>
+          <div class="progress-container" id="progressContainer"></div>
+          {% comment %} {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }} {% endcomment %}
+        </div>
       </div>
-    </div>
+    </story-video>
     <div class="column image-right-side-wrapper">
       {{ section.settings.image_right_side | image_url: height: 400 | image_tag }}
       <div class="video-section-title-wrapper">
         <h2 class="video-section-brand-name">Upper Empire</h2>
         <div class="video-section-title-wrapper-content">
           <h2>{{ section.settings.section_title }}</h2>
-          <a href="{{ section.settings.section_subtitle_url }}">{{ section.settings.section_subtitle }}</a>
+          <div>
+            <a href="{{ section.settings.section_subtitle_url }}" class="cta-button">
+              {{- section.settings.section_subtitle -}}
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script src="{{ 'video-section.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
@@ -52,6 +74,29 @@
       "type": "text",
       "id": "section_subtitle_url",
       "label": "Section Subtitle URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video-item",
+      "name": "Video Item",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
     }
   ]
 }
