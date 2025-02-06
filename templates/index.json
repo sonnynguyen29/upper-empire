@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "hero_banner": {
       "type": "hero-banner",
@@ -169,28 +169,28 @@
         "instagram_image_m87PNa": {
           "type": "instagram-image",
           "settings": {
-            "image": "shopify://shop_images/432121939_774218811273980_7552797366821012998_n.jpg",
+            "image": "shopify://shop_images/ue-collection-10.jpg",
             "image_url": ""
           }
         },
         "instagram_image_ffCBar": {
           "type": "instagram-image",
           "settings": {
-            "image": "shopify://shop_images/432248630_948762373915641_6136749529405811846_n.jpg",
+            "image": "shopify://shop_images/ue-collection-29.jpg",
             "image_url": ""
           }
         },
         "instagram_image_nRnM9Q": {
           "type": "instagram-image",
           "settings": {
-            "image": "shopify://shop_images/432240444_887971216413761_2254936241483375737_n.jpg",
+            "image": "shopify://shop_images/ue-collection-08.jpg",
             "image_url": ""
           }
         },
         "instagram_image_xPCp3U": {
           "type": "instagram-image",
           "settings": {
-            "image": "shopify://shop_images/432121824_946114286865808_291591982407326616_n.jpg",
+            "image": "shopify://shop_images/ue-collection-19.jpg",
             "image_url": ""
           }
         },

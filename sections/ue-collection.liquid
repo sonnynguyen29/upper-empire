@@ -4,18 +4,25 @@
 
 <section id="ue-collection">
   <div class="container">
-    <div class="ue-collection-header">
-      <h2 class="ue-collection__title">{{ section.settings.header }}</h2>
-      {% if section.settings.sub_header %}
-        <p>{{ section.settings.sub_header }}</p>
-      {% endif %}
-    </div>
+    {% if section.settings.header != blank %}
+      <div class="ue-collection-header">
+        <h2 class="ue-collection__title">{{ section.settings.header }}</h2>
+        {% if section.settings.sub_header %}
+          <p>{{ section.settings.sub_header }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
     <div class="ue-collection-grid">
       {% for block in section.blocks %}
         {% if block.settings.image %}
           {% liquid
-            assign delay_time = 50 | times: forloop.index
+            assign delay_time = 50
+            if forloop.index > 10 or section.settings.is_first_section == false
+              assign delay_time = 5
+            endif
+            assign delay_time = delay_time | times: forloop.index
           %}
+
           <div
             href="{{ block.settings.link }}"
             class="ue-collection-item"
@@ -61,6 +68,12 @@
       "type": "text",
       "id": "sub_header",
       "label": "Sub Header"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_first_section",
+      "label": "Is First Section",
+      "default": false
     }
   ],
   "blocks": [

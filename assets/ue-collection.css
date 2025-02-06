@@ -1,10 +1,10 @@
 #ue-collection .container {
   background-color: black;
-  padding: 60px 8px;
+  padding: 0px 8px 8px 8px;
 }
 #ue-collection .container .ue-collection-header {
   text-align: center;
-  margin: 60px 0;
+  padding: 120px 0 60px 0;
 }
 #ue-collection .container .ue-collection-header .ue-collection__title {
   font-size: 24px;

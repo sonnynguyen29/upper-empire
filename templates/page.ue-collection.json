@@ -7,131 +7,777 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "057a50d5-3fee-4ea2-a832-2d38f47b959a": {
       "type": "ue-collection",
       "blocks": {
-        "image_item_UBcE4R": {
+        "image_item_9WfRVz": {
           "type": "image-item",
           "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/supreme-collage-zip-up-hoodie-ss24-white-02_a46dd763-b7dd-4310-9a4d-01f88c64e5e9.jpg",
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-01.jpg",
+            "text": "<p>SB Skunks</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_c9LVXJ": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-45.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_7Tqezw": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-29.jpg",
+            "text": "<p>Bred October</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_R7idx3": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-46.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_pGW49t": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-48.jpg",
+            "text": "<p>SB</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_LkerU8": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-04.jpg",
+            "text": "<p>SB Skunks</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_4VPCAK": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-15.jpg",
+            "text": "<p>Nike SB Swarovski</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_WBE3zB": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-07.jpg",
+            "text": "<p>SB Skunks</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_c69ihk": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-43.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_NLVGRQ": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-06.jpg",
+            "text": "<p>SB Skunks</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_xkNatK": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-05.jpg",
+            "text": "<p>SB Skunks</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_hUPhVf": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-36.jpg",
+            "text": "<p>Bred October</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_94JwdG": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-03.jpg",
+            "text": "<p>SB Skunks</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_anbz8T": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-02.jpg",
+            "text": "<p>SB Skunks</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_yPV6Gx": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-47.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_JqHNkw": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-38.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_XqRknK": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-44.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_nRYNrr": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-53.jpg",
+            "text": "<p>SB</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_j4LAqk": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-42.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_LXBcex": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-41.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_DrJPBc": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-40.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_z6yxjM": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-39.jpg",
+            "text": "<p>UE Collection</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_MVrRBx": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-37.jpg",
+            "text": "<p>Bred October</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_Xjep8r": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-35.jpg",
+            "text": "<p>Bred October</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_hNyhyh": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-34.jpg",
+            "text": "<p>Bred October</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_Ph6Bdn": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-28.jpg",
+            "text": "<p>LVxNike</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_aXqRjc": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-33.jpg",
+            "text": "<p>Bred October</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_bpQAbV": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-51.jpg",
+            "text": "<p>SB</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_7e3zdR": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-32.jpg",
+            "text": "<p>Bred October</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_T4q7nh": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-31.jpg",
+            "text": "<p>Bred October</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_AcBYxk": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-23.jpg",
+            "text": "<p>LVxNike</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_R4jQT9": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-13.jpg",
+            "text": "<p>Nike SB Swarovski</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_pMVDbx": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-30.jpg",
+            "text": "<p>Bred October</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_GhbBfr": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-54.jpg",
+            "text": "<p>SB</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_9m6VUQ": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-52.jpg",
+            "text": "<p>SB</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_WfcpDC": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-50.jpg",
+            "text": "<p>SB</p><p></p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_rjXb7Q": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-49.jpg",
+            "text": "<p>SB</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_GM9jtx": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-11.jpg",
+            "text": "<p>Nike SB Swarovski</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_MinTiX": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-27.jpg",
+            "text": "<p>LVxNike</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_heVmY7": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-26.jpg",
+            "text": "<p>LVxNike</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_CjDQFH": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-17.jpg",
+            "text": "<p>Nike SB Swarovski</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_FmKEMy": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-24.jpg",
+            "text": "<p>LVxNike</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_Ddm6gp": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-22.jpg",
+            "text": "<p>LVxNike</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_xwDUfk": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-21.jpg",
+            "text": "<p>LVxNike</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_GwwiT3": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-20.jpg",
+            "text": "<p>LVxNike</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_9HGJpk": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-19.jpg",
+            "text": "<p>LVxNike</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_eWkNpi": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-12.jpg",
+            "text": "<p>Nike SB Swarovski</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_txrq4a": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-16.jpg",
+            "text": "<p>Nike SB Swarovski</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_xWjPLk": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-18.jpg",
+            "text": "<p>Nike SB Swarovski</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_97JweT": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-14.jpg",
+            "text": "<p>Nike SB Swarovski</p>",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_9WfRVz",
+        "image_item_c9LVXJ",
+        "image_item_7Tqezw",
+        "image_item_R7idx3",
+        "image_item_pGW49t",
+        "image_item_LkerU8",
+        "image_item_4VPCAK",
+        "image_item_WBE3zB",
+        "image_item_c69ihk",
+        "image_item_NLVGRQ",
+        "image_item_xkNatK",
+        "image_item_hUPhVf",
+        "image_item_94JwdG",
+        "image_item_anbz8T",
+        "image_item_yPV6Gx",
+        "image_item_JqHNkw",
+        "image_item_XqRknK",
+        "image_item_nRYNrr",
+        "image_item_j4LAqk",
+        "image_item_LXBcex",
+        "image_item_DrJPBc",
+        "image_item_z6yxjM",
+        "image_item_MVrRBx",
+        "image_item_Xjep8r",
+        "image_item_hNyhyh",
+        "image_item_Ph6Bdn",
+        "image_item_aXqRjc",
+        "image_item_bpQAbV",
+        "image_item_7e3zdR",
+        "image_item_T4q7nh",
+        "image_item_AcBYxk",
+        "image_item_R4jQT9",
+        "image_item_pMVDbx",
+        "image_item_GhbBfr",
+        "image_item_9m6VUQ",
+        "image_item_WfcpDC",
+        "image_item_rjXb7Q",
+        "image_item_GM9jtx",
+        "image_item_MinTiX",
+        "image_item_heVmY7",
+        "image_item_CjDQFH",
+        "image_item_FmKEMy",
+        "image_item_Ddm6gp",
+        "image_item_xwDUfk",
+        "image_item_GwwiT3",
+        "image_item_9HGJpk",
+        "image_item_eWkNpi",
+        "image_item_txrq4a",
+        "image_item_xWjPLk",
+        "image_item_97JweT"
+      ],
+      "settings": {
+        "header": "UE COLLECTION",
+        "sub_header": "The most unique sneaker collection from team UE, sought after by the sneaker community and streetwear enthusiasts alike."
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b951a": {
+      "type": "ue-collection",
+      "blocks": {
+        "image_item_Mw3mP4": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-39.jpg",
             "text": "<p>Product Text</p>",
             "text_color": "#000000"
           }
         },
-        "image_item_8T8P4D": {
+        "image_item_EREVje": {
           "type": "image-item",
           "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-white-cement-02_2bc0d489-260b-49a2-a5dc-e2d624a40cd2.jpg",
-            "text": "<p>Product Text</p>",
-            "text_color": "#000000"
-          }
-        },
-        "image_item_8VnRTK": {
-          "type": "image-item",
-          "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-red-cement-04_845e2d98-1b02-4344-8bf2-e22e196c662c.jpg",
-            "text": "<p>Product Text</p>",
-            "text_color": "#000000"
-          }
-        },
-        "image_item_xfUDnk": {
-          "type": "image-item",
-          "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-red-cement-01_f566b6f8-568e-4843-add1-420c69d49364.jpg",
-            "text": "<p>Product Text</p>",
-            "text_color": "#000000"
-          }
-        },
-        "image_item_w9X3zJ": {
-          "type": "image-item",
-          "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-heineken-02_e30b56cf-ab65-4871-bd76-c541a3bbc5a7.jpg",
-            "text": "<p>Product Text</p>",
-            "text_color": "#000000"
-          }
-        },
-        "image_item_yUc9n9": {
-          "type": "image-item",
-          "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/C6D1E1A7-64FE-4AEC-BEFD-60F4FE475C7A.jpg",
-            "text": "<p>Product Text</p>",
-            "text_color": "#000000"
-          }
-        },
-        "image_item_dY3Cyj": {
-          "type": "image-item",
-          "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/IMG-0484.jpg",
-            "text": "<p>Product Text</p>",
-            "text_color": "#000000"
-          }
-        },
-        "image_item_zTqhcb": {
-          "type": "image-item",
-          "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/IMG-0486.jpg",
-            "text": "<p>Product Text</p>",
-            "text_color": "#000000"
-          }
-        },
-        "image_item_H9D7Q9": {
-          "type": "image-item",
-          "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/IMG-0487.jpg",
-            "text": "<p>Product Text</p>",
-            "text_color": "#000000"
-          }
-        },
-        "image_item_c3qHjE": {
-          "type": "image-item",
-          "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-supreme-black-cement-01_699103d3-c7d2-43a2-8ccc-9bfcc4b6b5b5.jpg",
-            "text": "<p>Product Text</p>",
-            "text_color": "#000000"
-          }
-        },
-        "image_item_gcpFwH": {
-          "type": "image-item",
-          "settings": {
-            "link": "https://www.uecollection.com",
-            "image": "shopify://shop_images/nike-sb-dunk-low-what-the-dunk-01_4e967875-f64c-4769-ae64-abe3fa95536e.jpg",
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-51.jpg",
             "text": "<p>Product Text</p>",
             "text_color": "#000000"
           }
         }
       },
       "block_order": [
-        "image_item_UBcE4R",
-        "image_item_8T8P4D",
-        "image_item_8VnRTK",
-        "image_item_xfUDnk",
-        "image_item_w9X3zJ",
-        "image_item_yUc9n9",
-        "image_item_dY3Cyj",
-        "image_item_zTqhcb",
-        "image_item_H9D7Q9",
-        "image_item_c3qHjE",
-        "image_item_gcpFwH"
+        "image_item_Mw3mP4",
+        "image_item_EREVje"
       ],
       "settings": {
-        "header": "UE COLLECTION",
-        "sub_header": "Step into the perfect blend of performance, comfort, and cutting-edge design with our exclusive Nike collection—crafted for athletes, sneaker enthusiasts, and everyday trendsetters."
+        "header": "",
+        "sub_header": ""
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b952a": {
+      "type": "ue-collection",
+      "blocks": {
+        "image_item_Mw3mP4": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-39.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_EREVje": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-51.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_Mw3mP4",
+        "image_item_EREVje"
+      ],
+      "settings": {
+        "header": "",
+        "sub_header": ""
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b953a": {
+      "type": "ue-collection",
+      "blocks": {
+        "image_item_Mw3mP4": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-39.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_EREVje": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-51.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_Mw3mP4",
+        "image_item_EREVje"
+      ],
+      "settings": {
+        "header": "",
+        "sub_header": ""
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b954a": {
+      "type": "ue-collection",
+      "blocks": {
+        "image_item_Mw3mP4": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-39.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_EREVje": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-51.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_Mw3mP4",
+        "image_item_EREVje"
+      ],
+      "settings": {
+        "header": "",
+        "sub_header": ""
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b955a": {
+      "type": "ue-collection",
+      "blocks": {
+        "image_item_Mw3mP4": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-39.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_EREVje": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-51.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_Mw3mP4",
+        "image_item_EREVje"
+      ],
+      "settings": {
+        "header": "",
+        "sub_header": ""
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b956a": {
+      "type": "ue-collection",
+      "blocks": {
+        "image_item_Mw3mP4": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-39.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_EREVje": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-51.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_Mw3mP4",
+        "image_item_EREVje"
+      ],
+      "settings": {
+        "header": "",
+        "sub_header": ""
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b957a": {
+      "type": "ue-collection",
+      "blocks": {
+        "image_item_Mw3mP4": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-39.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_EREVje": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-51.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_Mw3mP4",
+        "image_item_EREVje"
+      ],
+      "settings": {
+        "header": "",
+        "sub_header": ""
+      }
+    },
+    "057a50d5-3fee-4ea2-a832-2d38f47b958a": {
+      "type": "ue-collection",
+      "blocks": {
+        "image_item_Mw3mP4": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-39.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        },
+        "image_item_EREVje": {
+          "type": "image-item",
+          "settings": {
+            "link": "https://www.upperempire.com",
+            "image": "shopify://shop_images/ue-collection-51.jpg",
+            "text": "<p>Product Text</p>",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_Mw3mP4",
+        "image_item_EREVje"
+      ],
+      "settings": {
+        "header": "",
+        "sub_header": ""
       }
     }
   },
   "order": [
-    "057a50d5-3fee-4ea2-a832-2d38f47b959a"
+    "057a50d5-3fee-4ea2-a832-2d38f47b959a",
+    "057a50d5-3fee-4ea2-a832-2d38f47b951a",
+    "057a50d5-3fee-4ea2-a832-2d38f47b952a",
+    "057a50d5-3fee-4ea2-a832-2d38f47b953a",
+    "057a50d5-3fee-4ea2-a832-2d38f47b954a",
+    "057a50d5-3fee-4ea2-a832-2d38f47b955a",
+    "057a50d5-3fee-4ea2-a832-2d38f47b956a",
+    "057a50d5-3fee-4ea2-a832-2d38f47b957a",
+    "057a50d5-3fee-4ea2-a832-2d38f47b958a",
   ]
 }
