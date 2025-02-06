@@ -37,7 +37,6 @@
   grid-auto-rows: 1fr;
 }
 #ue-collection .container .ue-collection-grid .ue-collection-item {
-  background-color: white;
   position: relative;
 }
 #ue-collection .container .ue-collection-grid .ue-collection-item .responsive-image-wrapper {
