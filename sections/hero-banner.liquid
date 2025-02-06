@@ -16,8 +16,14 @@
         <div class="splide__track">
           <div class="splide__list">
             {% for item in banner_desktop %}
-              <a href="{{ item.settings.hero_banner_lin | default: '#' }}" class="hero__banner-image-desktop splide__slide">
-                {% render 'responsive-image' with item.settings.hero_banner_image_desktop %}
+              <a
+                href="{{ item.settings.hero_banner_lin | default: '#' }}"
+                class="hero__banner-image-desktop splide__slide"
+              >
+                <div class="responsive-image-wrapper">
+                  {{ item.settings.hero_banner_image_desktop | image_url: width: 3840 | image_tag }}
+                </div>
+                {% comment %} {% render 'responsive-image' with item.settings.hero_banner_image_desktop %} {% endcomment %}
                 <div class="hero__banner-title">{{ item.settings.hero_banner_title }}</div>
               </a>
             {% endfor %}
@@ -29,8 +35,14 @@
         <div class="splide__track">
           <div class="splide__list">
             {% for item in banner_mobile %}
-              <a href="{{ item.settings.hero_banner_link | default: '#' }}" class="hero__banner-image-mobile splide__slide">
-                {% render 'responsive-image' with item.settings.hero_banner_image_mobile %}
+              <a
+                href="{{ item.settings.hero_banner_link | default: '#' }}"
+                class="hero__banner-image-mobile splide__slide"
+              >
+                <div class="responsive-image-wrapper">
+                  {{ item.settings.hero_banner_image_mobile | image_url: width: 1500 | image_tag }}
+                </div>
+                {% comment %} {% render 'responsive-image' with item.settings.hero_banner_image_mobile %} {% endcomment %}
                 <div class="hero__banner-title">{{ item.settings.hero_banner_title }}</div>
               </a>
             {% endfor %}

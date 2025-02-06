@@ -20,6 +20,9 @@ section#hero-banner .hero__banner-container .hero__banner-image-wrapper .mobile-
     display: none;
   }
 }
+section#hero-banner .hero__banner-container .hero__banner-image-wrapper .mobile-splide .hero__banner-title {
+  transform: translateY(0%) !important;
+}
 section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-desktop,
 section#hero-banner .hero__banner-container .hero__banner-image-wrapper .hero__banner-image-mobile {
   width: 100%;
