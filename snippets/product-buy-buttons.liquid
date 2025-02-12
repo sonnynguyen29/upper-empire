@@ -1,6 +1,14 @@
 {% liquid
-  assign is_pre_order_product = product.metafields.custom.pre_order
+  assign is_pre_order_product = true
+
+  if product.metafields.custom.disable_preorder == true
+    assign is_pre_order_product = false
+  endif
 %}
+
+<script>
+  console.log('product.metafields.custom.disable_preorder', {{  product.metafields.custom.disable_preorder | json }})
+</script>
 
 {% if is_pre_order_product == true and current_variant.available == false %}
   <button

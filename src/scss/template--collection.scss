@@ -27,6 +27,7 @@
 
         .collection-main-body {
             margin: 0;
+
             .collection-main-body-inner {
                 margin: 0;
                 display: grid;
@@ -34,13 +35,18 @@
                 gap: 8px;
 
                 @media screen and (min-width: 768px) {
-                    grid-template-columns: 1fr 1fr;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
                     row-gap: 20px;
                 }
 
                 @media screen and (min-width: 1280px) {
-                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
                 }
+
+                @media screen and (min-width: 1440px) {
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                }
+
                 .grid__item {
                     width: unset !important;
                     padding: 0;
@@ -50,8 +56,13 @@
                         text-align: start;
                         margin: 0;
 
+                        .product-grid--title {
+                            font-size: 16px;
+                        }
+
                         .product-card-detail--wrapper {
                             position: relative;
+
                             .product-card-detail {
                                 position: relative;
                                 opacity: 1;
@@ -97,6 +108,10 @@
                                 }
                             }
                         }
+
+                        .grid-view-item-image {
+                            margin-bottom: 13px;
+                        }
                     }
 
                     &:hover {
@@ -108,6 +123,16 @@
 
                                 .product-cart-variants {
                                     opacity: 1;
+                                }
+
+                                &.product_no_variant { 
+                                    .product-card-detail {
+                                        opacity: 1;
+                                    }
+
+                                    .product-cart-variants {
+                                        opacity: 0;
+                                    }
                                 }
                             }
                         }

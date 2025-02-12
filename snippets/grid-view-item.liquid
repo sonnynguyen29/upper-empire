@@ -280,7 +280,16 @@
     {%- endcase -%}
   {%- endfor -%}
 
-  <div class="product-card-detail--wrapper">
+  {% liquid
+    assign product_no_variant = false
+    assign first_variant = product.variants | first
+
+    if first_variant.title == 'Default Title'
+      assign product_no_variant = true
+    endif
+  %}
+
+  <div class="product-card-detail--wrapper{% if product_no_variant == true %} product_no_variant{% endif %}">
     <div class="product-card-detail">
       {{ product_title }}
       <div class="product-card--price-vendor-wrapper">
@@ -297,11 +306,13 @@
 
     <div class="product-cart-variants">
       {% for variant in product.variants %}
-        <a href="{{ variant.url }}" class="product-cart-variants__variant" data-variant-id="{{ variant.id }}">
-          <label for="variant-{{ variant.id }}">
-            <span class="product-grid--title product-grid--title-font-body">{{ variant.title }}</span>
-          </label>
-        </a>
+        {% if variant.title != 'Default Title' %}
+          <a href="{{ variant.url }}" class="product-cart-variants__variant" data-variant-id="{{ variant.id }}">
+            <label for="variant-{{ variant.id }}">
+              <span class="product-grid--title product-grid--title-font-body">{{ variant.title }}</span>
+            </label>
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
   </div>

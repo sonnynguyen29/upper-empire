@@ -116,7 +116,6 @@
     const loadProductGridSplide = () => {
       var productGridSlide = new Splide('.collection-grid-layout-splide', {
         perPage: 1,
-        perMove: 1,
         mediaQuery: 'min',
         arrows: false,
         pagination: false,
@@ -130,8 +129,11 @@
             arrows: true,
             padding: { left: 0, right: 0 },
           },
-          1280: {
+          1024: {
             perPage: 3,
+          },
+          1440: {
+            perPage: 4,
           },
         },
       });
