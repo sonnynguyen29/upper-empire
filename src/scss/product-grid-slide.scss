@@ -1,15 +1,24 @@
 #product-grid-slide {
     background-color: #f9f9f9;
-    padding: 60px 8px;
+    padding: 0px 8px 60px 8px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 120px;
+        
+    }
     .product-grid-container {
         .product-grid-title {
             text-align: center;
 
             h2 {
-                font-size: 38px;
+                font-size: 24px;
                 font-weight: 700;
                 margin-bottom: 20px;
                 text-transform: uppercase;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 32px;
+                }
             }
         }
 

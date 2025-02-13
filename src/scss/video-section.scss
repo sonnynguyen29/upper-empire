@@ -1,5 +1,6 @@
 #video-section {
     background-color: #f9f9f9;
+    padding-bottom: 60px;
 
     img {
         height: 100%;
@@ -13,7 +14,6 @@
         gap: 8px;
 
         .image-right-side-wrapper {
-            display: none;
             position: relative;
         }
 
@@ -38,25 +38,52 @@
             object-fit: cover;
         }
 
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+
+            @media screen and (min-width: 1280px) {
+                background: rgba(0, 0, 0, 0.2);
+                
+            }
+        }
+
         .video-section-title-wrapper {
             position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
 
-            .video-section-title-wrapper-content {
-                h2 {
-                    font-size: 24px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    padding: 0 8px;
-                    text-align: justify;
-                    text-justify: inter-word;
-                }
+            .video-section-brand-name {
+                font-family: "Regensburg";
+                font-size: 15vw;
+                margin-bottom: 0;
+                color: white;
+            }
+
+            h2 {
+                font-size: 6vw;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 0 8px;
+                text-align: justify;
+                text-justify: inter-word;
+                margin: 0;
             }
 
             a {
-                visibility: hidden;
                 font-weight: 700;
                 text-transform: uppercase;
-                font-size: 12px;
+                font-size: 3vw;
                 color: white;
                 border: 1px solid white;
                 padding: 20px 15px;
@@ -71,14 +98,13 @@
     }
 
     @media screen and (min-width: 768px) {
-        padding: 0 8px;
+        padding: 0 8px 120px 8px;
 
         .video-section-container {
             grid-template-columns: repeat(2, 1fr);
             gap: 8px;
 
             .column {
-                aspect-ratio: 708 / 732;
                 width: 100%;
                 background-color: #f0f0f0;
             }
@@ -87,38 +113,26 @@
                 height: 100%;
             }
 
-            .image-right-side-wrapper {
-                display: block;
-            }
-
             .video-section-title-wrapper {
                 position: absolute;
-                top: 8%;
-                left: 8%;
-                right: 8%;
-
-                a {
-                    visibility: visible;
-                }
 
                 .video-section-brand-name {
                     font-family: Regensburg;
-                    font-size: 65px;
+                    font-size: 9vw;
                     margin-bottom: 0;
                     color: white;
+                    line-height: 1;
                 }
 
-                .video-section-title-wrapper-content {
-                    display: flex;
-                    flex-direction: column;
-                    color: white;
+                h2 {
+                    padding: 0;
+                    font-weight: 800;
+                    font-size: 3.2vw;
+                    letter-spacing: -2px;
+                }
 
-                    h2 {
-                        padding: 0;
-                        font-weight: 800;
-                        font-size: 32px;
-                        letter-spacing: -2px;
-                    }
+                a { 
+                    font-size: 1.5vw;
                 }
             }
         }
@@ -130,20 +144,23 @@
                 top: 10%;
                 left: 10%;
                 right: 10%;
+                width: unset;
+                height: unset;
+
+                justify-content: start;
+                gap: 40px;
 
                 .video-section-brand-name {
-                    font-size: 107px;
+                    font-size: 6vw;
                 }
 
-                .video-section-title-wrapper-content {
-                    h2 {
-                        font-size: 40px;
-                    }
+                // h2 {
+                //     font-size: 40px;
+                // }
 
-                    a {
-                        font-size: 14px;
-                    }
-                }
+                // a {
+                //     font-size: 14px;
+                // }
             }
         }
     }
@@ -152,17 +169,11 @@
         .video-section-container {
             .video-section-title-wrapper {
                 .video-section-brand-name {
-                    font-size: 121px;
+                    font-size: 8vw;
                 }
 
-                .video-section-title-wrapper-content {
-                    h2 {
-                        font-size: 49px;
-                    }
-
-                    a {
-                        font-size: 18px;
-                    }
+                h2 {
+                    font-size: 3vw;
                 }
             }
         }
@@ -245,7 +256,7 @@
             width: 30px;
             height: 30px;
             border: 0;
-            opacity: .7;    
+            opacity: .7;
             transition: all 0.5s;
 
             &:hover {

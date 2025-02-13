@@ -1,5 +1,6 @@
 #video-section {
   background-color: #f9f9f9;
+  padding-bottom: 60px;
 }
 #video-section img {
   height: 100%;
@@ -12,7 +13,6 @@
   gap: 8px;
 }
 #video-section .video-section-container .image-right-side-wrapper {
-  display: none;
   position: relative;
 }
 #video-section .video-section-container .video-section-wrapper {
@@ -33,22 +33,49 @@
   height: 100%;
   object-fit: cover;
 }
+#video-section .video-section-container .background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 1280px) {
+  #video-section .video-section-container .background-overlay {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
 #video-section .video-section-container .video-section-title-wrapper {
   position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-#video-section .video-section-container .video-section-title-wrapper .video-section-title-wrapper-content h2 {
-  font-size: 24px;
+#video-section .video-section-container .video-section-title-wrapper .video-section-brand-name {
+  font-family: "Regensburg";
+  font-size: 15vw;
+  margin-bottom: 0;
+  color: white;
+}
+#video-section .video-section-container .video-section-title-wrapper h2 {
+  font-size: 6vw;
   font-weight: 700;
   text-transform: uppercase;
   padding: 0 8px;
   text-align: justify;
   text-justify: inter-word;
+  margin: 0;
 }
 #video-section .video-section-container .video-section-title-wrapper a {
-  visibility: hidden;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 3vw;
   color: white;
   border: 1px solid white;
   padding: 20px 15px;
@@ -60,48 +87,37 @@
 }
 @media screen and (min-width: 768px) {
   #video-section {
-    padding: 0 8px;
+    padding: 0 8px 120px 8px;
   }
   #video-section .video-section-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
   #video-section .video-section-container .column {
-    aspect-ratio: 708/732;
     width: 100%;
     background-color: #f0f0f0;
   }
   #video-section .video-section-container .video-section-wrapper {
     height: 100%;
   }
-  #video-section .video-section-container .image-right-side-wrapper {
-    display: block;
-  }
   #video-section .video-section-container .video-section-title-wrapper {
     position: absolute;
-    top: 8%;
-    left: 8%;
-    right: 8%;
-  }
-  #video-section .video-section-container .video-section-title-wrapper a {
-    visibility: visible;
   }
   #video-section .video-section-container .video-section-title-wrapper .video-section-brand-name {
     font-family: Regensburg;
-    font-size: 65px;
+    font-size: 9vw;
     margin-bottom: 0;
     color: white;
+    line-height: 1;
   }
-  #video-section .video-section-container .video-section-title-wrapper .video-section-title-wrapper-content {
-    display: flex;
-    flex-direction: column;
-    color: white;
-  }
-  #video-section .video-section-container .video-section-title-wrapper .video-section-title-wrapper-content h2 {
+  #video-section .video-section-container .video-section-title-wrapper h2 {
     padding: 0;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 3.2vw;
     letter-spacing: -2px;
+  }
+  #video-section .video-section-container .video-section-title-wrapper a {
+    font-size: 1.5vw;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -109,26 +125,21 @@
     top: 10%;
     left: 10%;
     right: 10%;
+    width: unset;
+    height: unset;
+    justify-content: start;
+    gap: 40px;
   }
   #video-section .video-section-container .video-section-title-wrapper .video-section-brand-name {
-    font-size: 107px;
-  }
-  #video-section .video-section-container .video-section-title-wrapper .video-section-title-wrapper-content h2 {
-    font-size: 40px;
-  }
-  #video-section .video-section-container .video-section-title-wrapper .video-section-title-wrapper-content a {
-    font-size: 14px;
+    font-size: 6vw;
   }
 }
 @media screen and (min-width: 1440px) {
   #video-section .video-section-container .video-section-title-wrapper .video-section-brand-name {
-    font-size: 121px;
+    font-size: 8vw;
   }
-  #video-section .video-section-container .video-section-title-wrapper .video-section-title-wrapper-content h2 {
-    font-size: 49px;
-  }
-  #video-section .video-section-container .video-section-title-wrapper .video-section-title-wrapper-content a {
-    font-size: 18px;
+  #video-section .video-section-container .video-section-title-wrapper h2 {
+    font-size: 3vw;
   }
 }
 #video-section story-video {

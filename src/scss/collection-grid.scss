@@ -1,6 +1,6 @@
 #collection-grid {
     background-color: #f9f9f9;
-    padding: 60px 0px 100px 0px;
+    padding: 0px 8px 60px 8px;
 
     .collection-grid-container {
         .collection-grid-title {
@@ -63,7 +63,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        padding: 60px 8px;
+        padding: 0px 8px 120px 8px;
 
         .collection-grid-container {
             .collection-grid-title {

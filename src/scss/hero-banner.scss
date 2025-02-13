@@ -1,6 +1,15 @@
+$mobile-hero-banner-height: 66vh;
+
+
 section#hero-banner {
     .hero__banner-container {
+        background-color: #f9f9f9;
+        padding-bottom:  60px;
         position: relative;
+
+        @media screen and (min-width: 768px) {
+            padding-bottom: 120px;
+        }
 
         .hero__banner-image-wrapper {
             .splide__track {
@@ -27,6 +36,15 @@ section#hero-banner {
                     transform: translateY(0%) !important;
                 }
 
+                .background-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
             }
 
             .hero__banner-image-desktop,
@@ -62,6 +80,14 @@ section#hero-banner {
                     }
                 }
             }
+
+            .hero__banner-image-mobile {
+                height: $mobile-hero-banner-height !important;
+
+                .responsive-image-wrapper {
+                    height: $mobile-hero-banner-height !important;
+                }
+            }
         }
 
         .hero__banner-title {
@@ -74,9 +100,15 @@ section#hero-banner {
             font-size: 24px;
             font-weight: 700;
             line-height: 1.2;
-            margin-left: 3.5rem;
+            margin-left: 1.5rem;
+            z-index: 2;
             margin-bottom: 3.5rem;
-            width: 70%;
+
+            @media screen and (max-width: 768px) {
+                top: calc($mobile-hero-banner-height / 2 - 10px);
+                margin-left: 1.5rem;
+                z-index: 2;
+            }
 
             @media screen and (min-width: 768px) {
                 width: auto;

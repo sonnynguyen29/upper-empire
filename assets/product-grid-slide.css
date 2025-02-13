@@ -1,15 +1,25 @@
 #product-grid-slide {
   background-color: #f9f9f9;
-  padding: 60px 8px;
+  padding: 0px 8px 60px 8px;
+}
+@media screen and (min-width: 768px) {
+  #product-grid-slide {
+    padding-bottom: 120px;
+  }
 }
 #product-grid-slide .product-grid-container .product-grid-title {
   text-align: center;
 }
 #product-grid-slide .product-grid-container .product-grid-title h2 {
-  font-size: 38px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  #product-grid-slide .product-grid-container .product-grid-title h2 {
+    font-size: 32px;
+  }
 }
 #product-grid-slide .product-grid-container .splide .splide__arrow {
   background: transparent;

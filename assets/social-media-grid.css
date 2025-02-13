@@ -1,6 +1,6 @@
 #social-media-grid {
   background-color: #f9f9f9;
-  padding: 60px 0px 0 0px;
+  padding-bottom: 60px;
 }
 #social-media-grid h2 {
   text-align: center;
@@ -67,7 +67,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 4px;
+  gap: 2px;
+}
+@media screen and (max-width: 768px) {
+  #social-media-grid .whatnot-grid-layout {
+    background-color: #000;
+  }
 }
 #social-media-grid .whatnot-grid-layout .whatnot-grid-video {
   display: inline-block;
@@ -166,7 +171,7 @@
 }
 @media screen and (min-width: 768px) {
   #social-media-grid {
-    padding: 60px 8px;
+    padding: 0px 8px 120px 8px;
   }
   #social-media-grid h2 {
     font-size: 24px;

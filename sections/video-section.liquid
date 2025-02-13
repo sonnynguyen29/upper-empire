@@ -24,7 +24,7 @@
               {% render 'theme-icon' with icon: 'chevron_right', iconSize: 18, iconHeight: 18 %}
             </button>
           </div>
-          <video id="videoPlayer" muted></video>
+          <video id="videoPlayer" playsinline="true" autoplay="autoplay" muted="muted" preload="metadata"></video>
           <div class="progress-container" id="progressContainer"></div>
           {% comment %} {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }} {% endcomment %}
         </div>
@@ -32,15 +32,14 @@
     </story-video>
     <div class="column image-right-side-wrapper">
       {{ section.settings.image_right_side | image_url: height: 1600 | image_tag }}
+      <div class="background-overlay"></div>
       <div class="video-section-title-wrapper">
-        <h2 class="video-section-brand-name">Upper Empire</h2>
-        <div class="video-section-title-wrapper-content">
-          <h2>{{ section.settings.section_title }}</h2>
-          <div>
-            <a href="{{ section.settings.section_subtitle_url }}" class="cta-button">
-              {{- section.settings.section_subtitle -}}
-            </a>
-          </div>
+        <h3 class="video-section-brand-name">Upper Empire</h3>
+        <h2>{{ section.settings.section_title }}</h2>
+        <div>
+          <a href="{{ section.settings.section_subtitle_url }}" class="cta-button">
+            {{- section.settings.section_subtitle -}}
+          </a>
         </div>
       </div>
     </div>

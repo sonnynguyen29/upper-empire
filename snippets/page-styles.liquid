@@ -11,6 +11,7 @@
       background-color: var(--body-color);
       height: 100%;
       margin: 0;
+      /* overflow-x: hidden; */
     }
 
     body {
@@ -118,8 +119,7 @@
       src: url("{{ 'PP Neue Montreal-Variable.ttf' | asset_url }}") format('truetype');
       font-weight: 900;
       font-style: normal;
-  }t-style: normal;
-    }
+  }
 {% endstyle %}
 
 {{ 'theme.min.css' | asset_url | stylesheet_tag }}

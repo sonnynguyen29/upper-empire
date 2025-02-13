@@ -1,6 +1,6 @@
 #collection-grid {
   background-color: #f9f9f9;
-  padding: 60px 0px 100px 0px;
+  padding: 0px 8px 60px 8px;
 }
 #collection-grid .collection-grid-container .collection-grid-title {
   text-align: center;
@@ -45,7 +45,7 @@
 }
 @media screen and (min-width: 768px) {
   #collection-grid {
-    padding: 60px 8px;
+    padding: 0px 8px 120px 8px;
   }
   #collection-grid .collection-grid-container .collection-grid-title h2 {
     font-size: 38px;
