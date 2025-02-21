@@ -1,10 +1,10 @@
-$mobile-hero-banner-height: 66vh;
+$mobile-hero-banner-height: 55vh;
 
 
 section#hero-banner {
     .hero__banner-container {
         background-color: #f9f9f9;
-        padding-bottom:  60px;
+        padding-bottom: 30px;
         position: relative;
 
         @media screen and (min-width: 768px) {
@@ -31,20 +31,11 @@ section#hero-banner {
                     display: none;
                 }
 
-                .hero__banner-title {
+                // .hero__banner-title {
 
-                    transform: translateY(0%) !important;
-                }
+                //     transform: translateY(0%) !important;
+                // }
 
-                .background-overlay {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(0, 0, 0, 0.2);
-                    z-index: 1;
-                }
             }
 
             .hero__banner-image-desktop,
@@ -90,31 +81,31 @@ section#hero-banner {
             }
         }
 
-        .hero__banner-title {
-            position: -webkit-sticky !important; // for safari
-            position: sticky !important;
-            top: 50%;
-            transform: translateY(49%);
-            text-align: left;
-            color: #fff;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-left: 1.5rem;
-            z-index: 2;
-            margin-bottom: 3.5rem;
+        // .hero__banner-title {
+        //     position: -webkit-sticky !important; // for safari
+        //     position: sticky !important;
+        //     top: 50%;
+        //     transform: translateY(49%);
+        //     text-align: left;
+        //     color: #fff;
+        //     font-size: 24px;
+        //     font-weight: 700;
+        //     line-height: 1.2;
+        //     margin-left: 1.5rem;
+        //     z-index: 2;
+        //     margin-bottom: 3.5rem;
 
-            @media screen and (max-width: 768px) {
-                top: calc($mobile-hero-banner-height / 2 - 10px);
-                margin-left: 1.5rem;
-                z-index: 2;
-            }
+        //     @media screen and (max-width: 768px) {
+        //         top: calc($mobile-hero-banner-height / 2 - 10px);
+        //         margin-left: 1.5rem;
+        //         z-index: 2;
+        //     }
 
-            @media screen and (min-width: 768px) {
-                width: auto;
-                margin-left: 4rem;
-                margin-bottom: 4.5rem;
-            }
-        }
+        //     @media screen and (min-width: 768px) {
+        //         width: auto;
+        //         margin-left: 4rem;
+        //         margin-bottom: 4.5rem;
+        //     }
+        // }
     }
 }

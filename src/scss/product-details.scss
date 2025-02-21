@@ -55,7 +55,10 @@
         // font-size: 12px;
         color: rgba(0, 0, 0, 1);
         font-weight: 500;
-        width: 80%;
+
+        @media screen and (min-width: 768px) {
+            width: 80%;
+        }
     }
 
     .swatch:not(.is-color-swatch):not(.linked-products-swatch) .soldout label {
@@ -113,24 +116,32 @@
         ul {
             transition: opacity 0.3s ease 0s;
             opacity: 0;
+
             li {
                 list-style-type: none;
                 position: relative;
             }
 
             & li::before {
-                content: "-"; /* Dash as bullet */
+                content: "-";
+                /* Dash as bullet */
                 position: absolute;
-                left: -20px; /* Position dash outside the content */
+                left: -20px;
+                /* Position dash outside the content */
             }
         }
     }
 
     .paymentButtonsWrapper {
-        margin: 60px 0 15px 0 !important;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            gap: 13px;
+        }
 
         .add-to-cart--secondary#AddToCart {
             background-color: transparent;

@@ -157,8 +157,8 @@
         "product_card_price"
       ],
       "settings": {
-        "products-per-page": 10,
-        "desktop-products-per-row": 3,
+        "products-per-page": 9,
+        "desktop-products-per-row": 4,
         "mobile-products-per-row": "2",
         "pagination_options": "pagination_default",
         "desktop_position": "topbar",

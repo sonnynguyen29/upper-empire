@@ -1,3 +1,7 @@
+.shopify-section .homepage-sections-wrapper {
+  padding: 15px 0;
+}
+
 #suggestion-products .suggestion-products-wrapper .suggestion-products-title {
   width: 100%;
   text-align: center;
@@ -32,6 +36,7 @@
   font-weight: 500;
   letter-spacing: -0.02rem;
   position: relative;
+  font-size: 14px;
 }
 #suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-description {
   display: flex;
@@ -46,7 +51,7 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap: 6px;
+  flex-wrap: wrap;
 }
 #suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-description .product-card--price-vendor-wrapper .sold-out {
   font-weight: 700;
@@ -56,6 +61,30 @@
   height: 4px;
   border-radius: 50%;
   background: #d9d9d9;
+  margin: 6px;
+}
+#suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-description .product-card--price-vendor-wrapper .dot-2 {
+  display: none;
+}
+#suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-description .product-card--price-vendor-wrapper .product-request-for-order {
+  flex-basis: 100%;
+}
+@media screen and (min-width: 768px) {
+  #suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-info {
+    font-size: 16px;
+  }
+  #suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-info .product-description .product-card--price-vendor-wrapper {
+    gap: 6px;
+  }
+  #suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-info .product-description .product-card--price-vendor-wrapper .dot {
+    padding: 0;
+  }
+  #suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-info .product-description .product-card--price-vendor-wrapper .dot-2 {
+    display: none;
+  }
+  #suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-info .product-description .product-card--price-vendor-wrapper .product-request-for-order {
+    flex-basis: 100%;
+  }
 }
 #suggestion-products .suggestion-products-wrapper .product-grid-item .product-info .product-variants {
   display: flex;

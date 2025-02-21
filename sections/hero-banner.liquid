@@ -39,12 +39,11 @@
                 href="{{ item.settings.hero_banner_link | default: '#' }}"
                 class="hero__banner-image-mobile splide__slide"
               >
-                <div class="background-overlay"></div>
                 <div class="responsive-image-wrapper">
                   {{ item.settings.hero_banner_image_mobile | image_url: width: 1500 | image_tag }}
                 </div>
                 {% comment %} {% render 'responsive-image' with item.settings.hero_banner_image_mobile %} {% endcomment %}
-                <div class="hero__banner-title">{{ item.settings.hero_banner_title }}</div>
+                {% comment %} <div class="hero__banner-title">{{ item.settings.hero_banner_title }}</div> {% endcomment %}
               </a>
             {% endfor %}
           </div>

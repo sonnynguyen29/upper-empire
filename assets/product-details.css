@@ -38,7 +38,11 @@
 .product-section .product-description {
   color: rgb(0, 0, 0);
   font-weight: 500;
-  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .product-section .product-description {
+    width: 80%;
+  }
 }
 .product-section .swatch:not(.is-color-swatch):not(.linked-products-swatch) .soldout label:after {
   position: relative;
@@ -87,15 +91,23 @@
   position: relative;
 }
 .product-section .content ul li::before {
-  content: "-"; /* Dash as bullet */
+  content: "-";
+  /* Dash as bullet */
   position: absolute;
-  left: -20px; /* Position dash outside the content */
+  left: -20px;
+  /* Position dash outside the content */
 }
 .product-section .paymentButtonsWrapper {
-  margin: 60px 0 15px 0 !important;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .product-section .paymentButtonsWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+  }
 }
 .product-section .paymentButtonsWrapper .add-to-cart--secondary#AddToCart {
   background-color: transparent;

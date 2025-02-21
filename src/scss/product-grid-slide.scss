@@ -1,6 +1,6 @@
 #product-grid-slide {
     background-color: #f9f9f9;
-    padding: 0px 8px 60px 8px;
+    padding: 0px 8px 30px 8px;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 120px;
@@ -177,9 +177,15 @@
             text-align: center;
 
             a {
-                text-transform: uppercase;
+                text-transform: capitalize;
                 font-weight: 700;
                 font-size: 14px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                a {
+                    font-size: 16px;
+                }
             }
         }
     }

@@ -75,6 +75,7 @@
         data-swatch-sold-out-string="{{ 'products.product.sold_out' | t }}"
         class="swatch{% if is_color %} is-color-swatch{% endif %}"
         data-option-index="{{ option_index }}"
+        style="margin-left: 2px;"
       >
         {% if product.options_with_values.size > 0 or is_color == true %}
           <div class="option-label-wrapper{% if is_color %} is-color-label{% endif %}">

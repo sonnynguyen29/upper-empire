@@ -12,8 +12,11 @@
           <h2>{{ section.settings.section_title }}</h2>
         </a>
       </div>
-      <div class="collection-grid-layout collection-grid-layout-splide splide">
-        <div class="splide__track">
+      <div class="collection-grid-layout">
+        <div class="collection-grid-layout-splide">
+
+        </div>
+        {% comment %} <div class="splide__track">
           <div class="splide__list">
             {%- comment -%}
                {% for collection in collections %}
@@ -28,7 +31,7 @@
               {% endfor %}
             {%- endcomment -%}
           </div>
-        </div>
+        </div> {% endcomment %}
         <div class="view-more-wrapper">
           <a href="pages/{{ section.settings.section_title_url }}" class="view-more">View More</a>
         </div>
@@ -54,7 +57,7 @@
       if (grid) {
         // Select the first 6 items
         const items = grid.querySelectorAll('.ue-collection-item');
-        const splideList = document.querySelector('.ue-collection-slider .splide__list');
+        const splideList = document.querySelector('.ue-collection-slider .collection-grid-layout-splide');
 
         if (!splideList) {
           console.error('Target container .splide__list not found.');
@@ -62,7 +65,7 @@
         }
 
         items.forEach((item, index) => {
-          if (index < 6) {
+          if (index < 4) {
             const { imageText, imageUrl, textColor } = item.dataset;
             const fullImageUrl = `http:${imageUrl}`;
             const productText = imageText.replace('<p>', '').replace('</p>', '');
@@ -107,9 +110,8 @@
   }
 
   window.addEventListener('load', async (event) => {
-    await fetchUECollectionImages();
-
-    const loadProductGridSplide = () => {
+    fetchUECollectionImages();
+    {% comment %} const loadProductGridSplide = () => {
       var productGridSlide = new Splide('.collection-grid-layout-splide', {
         mediaQuery: 'min',
         arrows: false,
@@ -142,16 +144,16 @@
         },
       });
       productGridSlide.mount(window.splide.Extensions);
-    };
+    }; {% endcomment %}
 
-    loadProductGridSplide();
+    // loadProductGridSplide();
 
-    document.querySelectorAll('.product-variants-title').forEach(function (element) {
+    {% comment %} document.querySelectorAll('.product-variants-title').forEach(function (element) {
       element.addEventListener('click', function (event) {
         event.preventDefault();
         window.location.href = element.getAttribute('data-variant-url');
       });
-    });
+    }); {% endcomment %}
   });
 </script>
 
