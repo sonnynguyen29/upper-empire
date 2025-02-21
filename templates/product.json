@@ -218,7 +218,8 @@
       ],
       "settings": {
         "product_recommendations_heading": "You may also like"
-      }
+      },
+      "disabled": true
     },
     "pre-order-form": {
       "type": "template--product--pre-order-form",

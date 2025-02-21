@@ -99,7 +99,7 @@
                         }
                     }
 
-                    .product-info {
+                    .product-info:not(.product_no_variant) {
                         .product-description {
                             opacity: 0;
                         }

@@ -10,6 +10,14 @@
         <div class="product-grid splide__track">
           <ul class="splide__list">
             {% for product in section.settings.collection.products %}
+              {% liquid
+                assign product_no_variant = false
+                assign first_variant = product.variants | first
+            
+                if first_variant.title == 'Default Title'
+                  assign product_no_variant = true
+                endif
+              %}
               <a href="{{ product.url }}" class="splide__slide">
                 <div class="product-grid-item">
                   <div class="product-image">
@@ -26,7 +34,7 @@
                       %}
                     </div>
                   </div>
-                  <div class="product-info">
+                  <div class="product-info{% if product_no_variant == true %} product_no_variant{% endif %}">
                     <div class="product-description">
                       <p class="product-title">{{ product.title }}</p>
                       <div class="product-card--price-vendor-wrapper">
@@ -35,8 +43,8 @@
                         {% else %}
                           <span class="dot"></span>
                           <span class="product-grid--title sold-out">Sold Out</span>
-                          <span class="dot"></span>
-                          <span class="product-grid--title">Request for Order</span>
+                          <span class="dot dot-2"></span>
+                          <span class="product-grid--title product-request-for-order">Request for Order</span>
                         {% endif %}
                       </div>
                     </div>
@@ -74,7 +82,7 @@
   window.addEventListener('load', (event) => {
     const loadProductGridSplide = () => {
       var productGridSlide = new Splide('.product-grid-splide', {
-        perPage: 1,
+        perPage: 2,
         mediaQuery: 'min',
         arrows: false,
         pagination: false,

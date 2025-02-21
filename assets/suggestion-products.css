@@ -80,10 +80,10 @@
   #suggestion-products .suggestion-products-wrapper .product-grid-item:hover .product-image .product-image--hover {
     opacity: 1;
   }
-  #suggestion-products .suggestion-products-wrapper .product-grid-item:hover .product-info .product-description {
+  #suggestion-products .suggestion-products-wrapper .product-grid-item:hover .product-info:not(.product_no_variant) .product-description {
     opacity: 0;
   }
-  #suggestion-products .suggestion-products-wrapper .product-grid-item:hover .product-info .product-variants {
+  #suggestion-products .suggestion-products-wrapper .product-grid-item:hover .product-info:not(.product_no_variant) .product-variants {
     opacity: 1;
   }
 }

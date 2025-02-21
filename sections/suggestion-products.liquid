@@ -223,11 +223,14 @@
 
               {% liquid
                 assign suggestion_product = all_products[handle]
+
+                assign product_no_variant = false
+                assign first_variant = suggestion_product.variants | first
+            
+                if first_variant.title == 'Default Title'
+                  assign product_no_variant = true
+                endif
               %}
-              <script>
-                console.log('handle', {{ handle | json }})
-                console.log('product', {{ suggestion_product | json }})
-              </script>
               <a href="{{ suggestion_product.url }}" class="splide__slide">
                 <div class="product-grid-item">
                   <div class="product-image">
@@ -244,7 +247,7 @@
                       %}
                     </div>
                   </div>
-                  <div class="product-info">
+                  <div class="product-info{% if product_no_variant == true %} product_no_variant{% endif %}">
                     <div class="product-description">
                       <p class="product-title">{{ suggestion_product.title }}</p>
                       <div class="product-card--price-vendor-wrapper">
@@ -260,13 +263,15 @@
                     </div>
                     <div class="product-variants">
                       {% for variant in suggestion_product.variants %}
-                        <span
-                          class="product-variants-title"
-                          data-variant-url="{{ variant.url }}"
-                          data-variant-id="{{ variant.id }}"
-                        >
-                          {{- variant.title -}}
-                        </span>
+                        {% if variant.title != 'Default Title' %}
+                          <span
+                            class="product-variants-title"
+                            data-variant-url="{{ variant.url }}"
+                            data-variant-id="{{ variant.id }}"
+                          >
+                            {{- variant.title -}}
+                          </span>
+                        {% endif %}
                       {% endfor %}
                     </div>
                   </div>

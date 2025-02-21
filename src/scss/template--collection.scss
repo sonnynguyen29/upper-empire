@@ -149,23 +149,13 @@
 
                     &:hover {
                         product-card {
-                            .product-card-detail--wrapper {
+                            .product-card-detail--wrapper:not(.product_no_variant) {
                                 .product-card-detail {
                                     opacity: 0;
                                 }
 
                                 .product-cart-variants {
                                     opacity: 1;
-                                }
-
-                                &.product_no_variant {
-                                    .product-card-detail {
-                                        opacity: 1;
-                                    }
-
-                                    .product-cart-variants {
-                                        opacity: 0;
-                                    }
                                 }
                             }
                         }

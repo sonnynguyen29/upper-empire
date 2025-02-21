@@ -25,7 +25,7 @@
 /* Select */
 summary .icon-caret,
 .select .icon-caret,
-.customer select + svg {
+.customer select+svg {
     pointer-events: none;
     position: absolute;
     top: 30%;
@@ -143,12 +143,12 @@ summary .icon-caret,
 //     border: solid var(--filter-border-color) 1px;
 // }
 
-.field__input:focus ~ .field__label,
-.field__input:not(:placeholder-shown) ~ .field__label,
-.field__input:-webkit-autofill ~ .field__label,
-.customer .field input:focus ~ label,
-.customer .field input:not(:placeholder-shown) ~ label,
-.customer .field input:-webkit-autofill ~ label {
+.field__input:focus~.field__label,
+.field__input:not(:placeholder-shown)~.field__label,
+.field__input:-webkit-autofill~.field__label,
+.customer .field input:focus~label,
+.customer .field input:not(:placeholder-shown)~label,
+.customer .field input:-webkit-autofill~label {
     font-size: 0.7rem;
     top: 0.3em;
     letter-spacing: 0.04rem;
@@ -267,6 +267,7 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (min-width: 768px) {
+
     .collection .grid__item,
     .template-search .grid__item {
         padding-bottom: 5rem;
@@ -281,6 +282,7 @@ summary::-webkit-details-marker {
 .template-search .negative-margin {
     margin-bottom: -2rem;
 }
+
 .collection .negative-margin,
 .template-search .negative-margin {
     margin-bottom: -5rem;
@@ -362,9 +364,13 @@ summary::-webkit-details-marker {
 }
 
 .collection-filters__item {
-    display: flex;
     grid-column: 2;
     grid-row: 1;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .collection-filters__field {
@@ -467,7 +473,7 @@ summary::-webkit-details-marker {
     }
 }
 
-.facets__summary > span {
+.facets__summary>span {
     line-height: 1.3;
 }
 
@@ -548,14 +554,14 @@ summary::-webkit-details-marker {
     border-bottom: none;
 }
 
-.facet-checkbox > svg,
-.facet-checkbox > div.filter-swatch {
+.facet-checkbox>svg,
+.facet-checkbox>div.filter-swatch {
     background-color: var(--filter-background-color);
     margin-right: 11px;
     flex-shrink: 0;
 }
 
-.facet-checkbox > div.filter-swatch {
+.facet-checkbox>div.filter-swatch {
     width: var(--filter-base-font-size);
     height: var(--filter-base-font-size);
     border: 1px solid var(--border-color);
@@ -567,7 +573,7 @@ summary::-webkit-details-marker {
     z-index: 5;
 }
 
-.facet-checkbox > input[type="checkbox"]:checked ~ .icon-checkmark {
+.facet-checkbox>input[type="checkbox"]:checked~.icon-checkmark {
     visibility: visible;
 }
 
@@ -577,7 +583,7 @@ summary::-webkit-details-marker {
 
 .facets__price {
     display: flex;
-    padding: 2px 2px 20px 2px;
+    padding: 2px 2px 5px 2px;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
@@ -714,7 +720,7 @@ a.active-facets__button:focus {
     border-radius: 50%;
 }
 
-.facets__summary > div {
+.facets__summary>div {
     display: flex;
     align-items: center;
 }
@@ -746,6 +752,7 @@ a.active-facets__button:focus {
 .js-drawer-open .drawer__close {
     display: block;
 }
+
 .mobile-facets__open {
     text-align: center;
     width: 100%;
@@ -755,7 +762,8 @@ a.active-facets__button:focus {
 .mobile-facets__open {
     display: none;
 }
-.mobile-facets__open > * + * {
+
+.mobile-facets__open>*+* {
     margin-left: 1rem;
 }
 
@@ -782,7 +790,7 @@ details[open] .mobile-facets__open {
     max-width: 90%;
     width: 100%;
     transition: right 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 5px 10px 10px;
     overflow: auto;
 
     @media screen and (min-width: 768px) {
@@ -842,14 +850,14 @@ collection-filtering-form .drawer__close button {
     flex-direction: column-reverse;
     gap: 2rem;
     justify-content: space-between;
-    height: 100%;
-    overflow: scroll;
+    padding-right: 5px
 }
 
 .facets__wrapper {
     display: block !important;
 }
-input[data-swatch="true"]:checked + div.filter-swatch {
+
+input[data-swatch="true"]:checked+div.filter-swatch {
     border: 2px solid var(--text-color);
     box-shadow: 0 0 0 2px var(--filter-background-color) inset;
 }
