@@ -44776,6 +44776,7 @@ class PhotoSwipeLightbox extends PhotoSwipeBase {
   }
 }
 
+window.PhotoSwipeLightbox = PhotoSwipeLightbox
 
 //# sourceMappingURL=photoswipe-lightbox.esm.js.map
 
@@ -51395,6 +51396,7 @@ class PhotoSwipe extends photoswipe_esm_PhotoSwipeBase {
   }
 }
 
+window.PhotoSwipe = PhotoSwipe;
 
 //# sourceMappingURL=photoswipe.esm.js.map
 

@@ -117,7 +117,8 @@
     letter-spacing: -2px;
   }
   #video-section .video-section-container .video-section-title-wrapper a {
-    font-size: 1.5vw;
+    font-size: 1vw;
+    padding: 0.7vw;
   }
 }
 @media screen and (min-width: 1280px) {

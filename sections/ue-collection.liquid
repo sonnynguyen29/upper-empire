@@ -23,8 +23,8 @@
             assign delay_time = delay_time | times: forloop.index
           %}
 
-          <div
-            href="{{ block.settings.link }}"
+          <a
+            href="{{ block.settings.image.src | image_url }}"
             class="ue-collection-item"
             data-image-url="{{ block.settings.image.src | image_url }}"
             data-image-text="{{ block.settings.text }}"
@@ -37,6 +37,9 @@
             data-aos-mirror="true"
             data-aos-once="true"
             data-aos-anchor-placement="top-center"
+            target="_blank"
+            data-pswp-width="{{ block.settings.image.width }}"
+            data-pswp-height="{{ block.settings.image.height }}"
           >
             {% render 'responsive-image' with block.settings.image, alt: block.settings.image.alt | escape -%}
             {% if block.settings.text %}
@@ -44,7 +47,7 @@
                 {{ block.settings.text }}
               </div>
             {% endif %}
-          </div>
+          </a>
         {% endif %}
       {% endfor %}
     </div>
