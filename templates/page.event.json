@@ -1,0 +1,274 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "event-hero-banner": {
+      "type": "event--hero-banner",
+      "blocks": {
+        "event_highlights_gWxkRb": {
+          "type": "event_highlights",
+          "settings": {
+            "title": "<p>📌 Rare & Limited-Edition Drops</p>",
+            "description": "<p>Get access to ultra-rare sneakers, limited releases, and exclusive collaborations that you won’t find anywhere else.</p>",
+            "image": "shopify://shop_images/home-mobile-banner-01.jpg"
+          }
+        },
+        "event_highlights_ttCPN9": {
+          "type": "event_highlights",
+          "settings": {
+            "title": "<p>🎁🔥 Giveaway Games</p>",
+            "description": "<p>Join exciting challenges and win exclusive sneakers & merch!</p>",
+            "image": "shopify://shop_images/Rectangle_27.png"
+          }
+        },
+        "event_highlights_yLw3QW": {
+          "type": "event_highlights",
+          "settings": {
+            "title": "<p>🤩 Meet Sneaker Culture Icons</p>",
+            "description": "<p>Connect with sneaker designers, influencers, and industry leaders who shape the future of sneaker culture.</p>",
+            "image": "shopify://shop_images/Rectangle_27_1.png"
+          }
+        },
+        "event_highlights_TbyGzF": {
+          "type": "event_highlights",
+          "settings": {
+            "title": "<p>🤟 Live Customization & Restorations</p>",
+            "description": "<p>Experience live sneaker customization, restoration services, and one-of-a-kind artistic creations by talented designers.</p>",
+            "image": "shopify://shop_images/Rectangle_27_2.png"
+          }
+        },
+        "event_highlights_CDt3rA": {
+          "type": "event_highlights",
+          "settings": {
+            "title": "<p>⚡ Sneaker Authentication On-Site</p>",
+            "description": "<p>Ensure your kicks are legit with professional authentication services, protecting buyers and sellers from counterfeits.</p>",
+            "image": "shopify://shop_images/Rectangle_27_3.png"
+          }
+        },
+        "event_highlights_L8XE6c": {
+          "type": "event_highlights",
+          "settings": {
+            "title": "<p>🏀 Sneakerhead Community</p>",
+            "description": "<p>Join thousands of fans in the ultimate sneaker culture experience.</p>",
+            "image": "shopify://shop_images/Rectangle_27_4.png"
+          }
+        }
+      },
+      "block_order": [
+        "event_highlights_gWxkRb",
+        "event_highlights_ttCPN9",
+        "event_highlights_yLw3QW",
+        "event_highlights_TbyGzF",
+        "event_highlights_CDt3rA",
+        "event_highlights_L8XE6c"
+      ],
+      "settings": {
+        "title": "UE x Sneakercon - Hawaii 2024",
+        "description": "With each event, our goal is the inspire change, spread joy, and cultivate a lasting impression of positivity for event attendees. Feel free to join our Instagram and Facebook community to get the most updated news on when we attend events or host giveaways! We look forward to connecting with you and making every moment special",
+        "video_recap": "shopify://files/videos/community-02-2x.mp4"
+      }
+    },
+    "event-video-embed": {
+      "type": "event--video-embed",
+      "blocks": {
+        "video_JNAAy7": {
+          "type": "video",
+          "settings": {
+            "youtube_link": "https://www.youtube.com/watch?v=zj1w5p82G94"
+          }
+        },
+        "video_DTj4Fj": {
+          "type": "video",
+          "settings": {
+            "youtube_link": "https://www.youtube.com/watch?v=tza-BH4kjWM"
+          }
+        },
+        "video_9M8GEH": {
+          "type": "video",
+          "settings": {
+            "youtube_link": "https://www.youtube.com/watch?v=HmiP6xKHbLk"
+          }
+        },
+        "video_XKzdnW": {
+          "type": "video",
+          "settings": {
+            "youtube_link": "https://www.youtube.com/watch?v=ivUIaDToaQI"
+          }
+        },
+        "video_CEQ437": {
+          "type": "video",
+          "settings": {
+            "youtube_link": "https://www.youtube.com/watch?v=Llz7Ym03wK4"
+          }
+        }
+      },
+      "block_order": [
+        "video_JNAAy7",
+        "video_DTj4Fj",
+        "video_9M8GEH",
+        "video_XKzdnW",
+        "video_CEQ437"
+      ],
+      "settings": {
+        "section_title": "Video Collections"
+      }
+    },
+    "event-photo-gallery": {
+      "type": "event--photo-gallery",
+      "blocks": {
+        "photo_RpmUrt": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27_4.png"
+          }
+        },
+        "photo_LRPBfw": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27_3.png"
+          }
+        },
+        "photo_FNYDLC": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27_2.png"
+          }
+        },
+        "photo_Fen6aB": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27_1.png"
+          }
+        },
+        "photo_LmeBjf": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/event-hero-banner.png"
+          }
+        },
+        "photo_my4nVd": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/ue-collection-48_bde60c79-314d-4d89-bf93-0eef5919bc3d.jpg"
+          }
+        },
+        "photo_DeXUdc": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/home-banner.jpg"
+          }
+        },
+        "photo_TW6AjH": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/community-04.jpg"
+          }
+        },
+        "photo_6BXYgk": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/ue-collection-38.jpg"
+          }
+        },
+        "photo_8RkNWE": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/whatnot-02_e3ecb886-c899-40a7-98c5-a83537518cef.jpg"
+          }
+        },
+        "photo_neDpaY": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/whatnot-01.jpg"
+          }
+        },
+        "photo_RF6dMW": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/video-thumb.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "photo_RpmUrt",
+        "photo_LRPBfw",
+        "photo_FNYDLC",
+        "photo_Fen6aB",
+        "photo_LmeBjf",
+        "photo_my4nVd",
+        "photo_DeXUdc",
+        "photo_TW6AjH",
+        "photo_6BXYgk",
+        "photo_8RkNWE",
+        "photo_neDpaY",
+        "photo_RF6dMW"
+      ],
+      "settings": {
+        "title": "Photo gallery"
+      }
+    },
+    "event-relative-events": {
+      "type": "event--relative-events",
+      "blocks": {
+        "event_CJQQf7": {
+          "type": "event",
+          "settings": {
+            "image": "shopify://shop_images/ue-81.png",
+            "title": "Sneakercon",
+            "location": "Seattle",
+            "year": "2024"
+          }
+        },
+        "event_EYtkMe": {
+          "type": "event",
+          "settings": {
+            "image": "shopify://shop_images/ue-85.png",
+            "title": "UE x Sneakercon",
+            "location": "Hawaii",
+            "year": "2023"
+          }
+        },
+        "event_R7c4dt": {
+          "type": "event",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_13.png",
+            "title": "UE x Sneakercon",
+            "location": "LA",
+            "year": "2024"
+          }
+        },
+        "event_EGyykT": {
+          "type": "event",
+          "settings": {
+            "image": "shopify://shop_images/ue-3.png",
+            "title": "UE x Sneakercon",
+            "location": "Bay Area",
+            "year": "2024"
+          }
+        }
+      },
+      "block_order": [
+        "event_CJQQf7",
+        "event_EYtkMe",
+        "event_R7c4dt",
+        "event_EGyykT"
+      ],
+      "settings": {
+        "section_title": "Related Events"
+      }
+    }
+  },
+  "order": [
+    "event-hero-banner",
+    "event-video-embed",
+    "event-photo-gallery",
+    "event-relative-events"
+  ]
+}

@@ -32,7 +32,7 @@
 }
 #ue-collection .container .ue-collection-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 8px;
   grid-auto-rows: 1fr;
 }
@@ -68,11 +68,6 @@
   margin: 0;
 }
 @media screen and (min-width: 768px) {
-  #ue-collection .container .ue-collection-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (min-width: 992px) {
   #ue-collection .container .ue-collection-grid {
     grid-template-columns: repeat(3, 1fr);
   }

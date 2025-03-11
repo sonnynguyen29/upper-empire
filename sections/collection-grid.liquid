@@ -66,13 +66,14 @@
 
         items.forEach((item, index) => {
           if (index < 4) {
-            const { imageText, imageUrl, textColor } = item.dataset;
+            const { imageText, imageUrl, textColor, imageId } = item.dataset;
             const fullImageUrl = `http:${imageUrl}`;
             const productText = imageText.replace('<p>', '').replace('</p>', '');
 
             // Create the HTML structure
-            const itemDiv = document.createElement('div');
+            const itemDiv = document.createElement('a');
             itemDiv.classList.add('collection-grid-item', 'splide__slide');
+            itemDiv.href = `pages/ue-collection?image-id=${imageId}`;
 
             const imageDiv = document.createElement('div');
             imageDiv.classList.add('collection-image');

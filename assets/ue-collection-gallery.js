@@ -34,6 +34,21 @@ if (!window.ueCollectionFinishSetup) {
 
     AOS.init();
 
+    const triggerClickIfImageIdExists = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageId = urlParams.get('image-id');
+
+        if (imageId) {
+            const targetElement = document.querySelector(`a.ue-collection-item[data-image-id="${imageId}"]`);
+            if (targetElement) {
+                targetElement.click();
+
+                const newUrl = window.location.origin + window.location.pathname;
+                window.history.replaceState({}, document.title, newUrl);s
+            }
+        }
+    }
+
     window.addEventListener('load', () => {
         if (typeof setUpUeCollectionPhotoSwipe === 'undefined') {
             const setUpUeCollectionPhotoSwipe = () => {
@@ -89,6 +104,8 @@ if (!window.ueCollectionFinishSetup) {
             };
 
             setUpUeCollectionPhotoSwipe();
+
+            triggerClickIfImageIdExists();
         }
 
     });

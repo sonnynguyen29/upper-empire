@@ -1,0 +1,69 @@
+{{ 'event--relative-events.css' | asset_url | stylesheet_tag }}
+
+{% assign events = section.blocks | where: 'type', 'event' %}
+
+{% if events.size > 0 %}
+  <section class="event-related-events">
+    <h2>{{ section.settings.section_title }}</h2>
+    <div class="related-events-grid">
+      {% for event in events %}
+        <div class="related-events-grid__item">
+          {{ event.settings.image | image_url: width: 1000, height: 1000 | image_tag: alt: event.settings.image.alt }}
+          <div class="overlay"></div>
+          <div class="related-events-grid__item__details">
+            <h3>{{ event.settings.title }}</h3>
+            <div class="related-events-grid__item__details__meta">
+              <p>{{ event.settings.location }}</p>
+              <span> ● </span>
+              <p>{{ event.settings.year }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% else %}
+  <p>No related events found.</p>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Related Events",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Titlte",
+      "default": "Related Events"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "event",
+      "name": "Event",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Event Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Event Title"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Event Location"
+        },
+        {
+          "type": "text",
+          "id": "year",
+          "label": "Event Year"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

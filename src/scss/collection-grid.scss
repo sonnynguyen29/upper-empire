@@ -51,6 +51,7 @@
             position: relative;
 
             .collection-text {
+                display: none;
                 position: absolute;
                 left: 20px;
                 bottom: 20px;
@@ -101,11 +102,6 @@
             .collection-grid-title {
                 h2 {
                     font-size: 38px;
-                }
-
-                a:hover {
-                    text-decoration: underline;
-                    transition: all 500ms ease-in-out;
                 }
             }
         }

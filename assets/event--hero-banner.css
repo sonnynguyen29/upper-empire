@@ -1,0 +1,81 @@
+.event-hero-banner {
+  padding: 0 8px 40px 8px;
+}
+.event-hero-banner video {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .event-hero-banner video {
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
+.event-hero-banner__content {
+  margin-top: 20px;
+  padding: 20px 0;
+}
+.event-hero-banner__content__title {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0;
+}
+.event-hero-banner__content__description {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+.event-hero-banner .event-highlights__container .event-highlights {
+  display: grid;
+  grid-template-rows: minmax(0, 355px) 1fr;
+  border: 1px solid #DEDEDE;
+  border-radius: 8px;
+}
+.event-hero-banner .event-highlights__container .event-highlights__media {
+  height: 100%;
+}
+.event-hero-banner .event-highlights__container .event-highlights__media img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.event-hero-banner .event-highlights__container .event-highlights__content {
+  padding: 15px 20px;
+  background-color: #f4f4f4;
+}
+.event-hero-banner .event-highlights__container .event-highlights__content__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.event-hero-banner .event-highlights__container .event-highlights__content__description {
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (min-width: 1280px) {
+  .event-hero-banner .event-highlights__container .event-highlights {
+    grid-template-rows: minmax(0, 464px) 1fr;
+  }
+  .event-hero-banner .event-highlights__container .event-highlights__content {
+    padding: 15px 20px;
+  }
+  .event-hero-banner .event-highlights__container .event-highlights__content__title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .event-hero-banner .event-highlights__container .event-highlights__content__description {
+    font-weight: 500;
+  }
+}
+.event-hero-banner .event-highlights__container p {
+  margin-bottom: 0;
+}
+.event-hero-banner .event-highlights__container .splide__arrow {
+  background-color: white;
+  border-radius: unset;
+  opacity: 1;
+  width: 40px;
+  height: 40px;
+}
