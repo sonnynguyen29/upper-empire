@@ -1,0 +1,214 @@
+.about--events {
+  background-color: rgb(3, 3, 3);
+}
+.about--events__wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.about--events__header {
+  margin: 0 20px;
+}
+.about--events__header__title {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.about--events__header__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.about--events__main-event {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.about--events__main-event video {
+  width: 100%;
+  height: 100%;
+}
+.about--events__main-event__content {
+  padding: 0 8px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 8px;
+  flex-direction: column;
+}
+.about--events__main-event__title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+}
+.about--events__main-event__info-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+.about--events__main-event__location, .about--events__main-event__year {
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
+.about--events__main-event__subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+.about--events__main-event span {
+  opacity: 0.8;
+  color: white;
+}
+.about--events__main-event__button {
+  padding-top: 10px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  border-width: 1px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(3, 3, 3);
+}
+.about--events__main-event__button a {
+  color: white;
+}
+@media screen and (min-width: 1280px) {
+  .about--events__main-event {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 20px;
+  }
+  .about--events__main-event video {
+    width: 100%;
+  }
+}
+.about--events__event-list {
+  padding: 0 8px;
+  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.about--events__event-list__item {
+  position: relative;
+}
+.about--events__event-list__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  aspect-ratio: 175.5/216.79;
+}
+.about--events__event-list__wrapper {
+  position: absolute;
+  top: auto;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 4px;
+  flex-direction: column;
+}
+.about--events__event-list__info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  gap: 4px;
+  color: white;
+  opacity: 0.8;
+}
+.about--events__event-list__title {
+  font-weight: 800;
+  font-size: 16px;
+  color: white;
+}
+.about--events__event-list__location, .about--events__event-list__year {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+.about--events__event-list span {
+  color: white;
+}
+.about--events__event-list__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0.5;
+}
+.about--events__event-list__view-more {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(3, 3, 3);
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+.about--events hr {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .about--events {
+    padding: 0 8px;
+  }
+  .about--events__header {
+    width: 100%;
+  }
+  .about--events__header__title {
+    font-size: 60px;
+    line-height: 100%;
+  }
+  .about--events__header__title h2 {
+    margin: 0;
+  }
+  .about--events__header__subtitle {
+    font-size: 16px;
+    max-width: 762px;
+    margin: 0 auto;
+  }
+  .about--events__main-event video {
+    border-radius: 15px;
+  }
+  .about--events__main-event__content {
+    padding: 0;
+  }
+  .about--events__main-event__location, .about--events__main-event__year {
+    font-size: 19px;
+  }
+  .about--events__main-event__subtitle {
+    font-size: 16px;
+  }
+  .about--events__event-list {
+    padding: 0;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .about--events hr {
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    width: 100%;
+    margin: 0;
+    padding: 0 8px;
+  }
+}

@@ -1,0 +1,53 @@
+{{ 'about--hero-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="about-hero-banner">
+  <div class="hero-banner-video">
+    {{ section.settings.hero_banner_video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+    <div class="hero-banner-content">
+      {{
+        section.settings.title_image
+        | image_url: width: 3000, height: 1000
+        | image_tag: alt: 'Hero Banner Image', class: 'hero-banner-content__image'
+      }}
+      <p>{{ section.settings.hero_banner_subtitle }}</p>
+    </div>
+  </div>
+
+  <div class="navigation-container">
+    <div class="navigation">
+      <a href="#about-culture" class="navigation__link">Culture</a>
+      <a href="#about-values" class="navigation__link">Team</a>
+      <a href="#about-team" class="navigation__link">Events</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Hero Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "title_image",
+      "label": "Title Image"
+    },
+    {
+      "type": "text",
+      "id": "hero_banner_subtitle",
+      "label": "Subtitle",
+      "default": "Your Subtitle Here"
+    },
+    {
+      "type": "video",
+      "id": "hero_banner_video",
+      "label": "Hero Banner Video"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Hero Banner",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

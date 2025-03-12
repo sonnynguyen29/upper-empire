@@ -1,0 +1,74 @@
+.about-culture__spread-joy {
+    &__container {
+        background: linear-gradient(180deg, #000000 0%, #280202 72.07%, #000000 95.06%);
+    }
+
+    &__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10vw
+    }
+
+    &__hoodie {
+        width: 100vw;
+    }
+
+    &__spread-joy {
+        width: 80vw;
+        aspect-ratio: 334.17442764484787/196.19339529998197;
+        transform: rotate(1.2deg);
+    }
+
+    &__content {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 3.5vw;
+        position: absolute;
+        top: 33vw;
+        left: 9vw;
+        width: 60vw;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        &__wrapper {
+            flex-direction: row-reverse;
+            gap: unset;
+            justify-content: space-between;
+        }
+
+        &__spread-joy {
+            width: 589.1983427926677px;
+            height: 345.9175722286529px;
+            transform: rotate(9deg);
+        }
+
+        &__hoodie {
+            width: 722px;
+            height: 722px;
+        }
+
+        &__content {
+            width: 544.0460315347px;
+            height: 150.282609641px;
+            top: 415px;
+            right: 45px;
+            transform: rotate(12deg);
+            opacity: .8;
+            font-size: 24px;
+            line-height: 31.1px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            left: auto;
+        }
+    }
+}

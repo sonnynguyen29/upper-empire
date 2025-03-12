@@ -1,0 +1,42 @@
+.about-team {
+    &__container {
+        background: rgba(3, 3, 3, 1);
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-rows: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 4px;
+    }
+
+    &__image {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        transition: .85s cubic-bezier(.455, .03, .21, .985);
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (min-width: 1280px) {
+        &__wrapper {
+            padding: 0 8px;
+            display: grid;
+            grid-template-rows: repeat(2, minmax(0, 1fr));
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        &__image-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            &:hover {
+                img {
+                    transform: scale(1.075);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+.about-culture__inspire-change {
+    height: 150vw;
+
+    &__container {
+        background: linear-gradient(180deg, #000000 0.69%, #313131 37.66%, #000000 100%);
+        width: 100vw;
+        height: 100%;
+
+    }
+
+    &__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__image {
+        position: absolute;
+    }
+
+    &__man-sneaker {
+        top: 73vw;
+        right: 0;
+        width: 55vw;
+    }
+
+    &__human {
+        top: 13vw;
+        left: 10vw;
+        width: 20vw;
+        z-index: 2;
+    }
+
+    &__red-circle {
+        top: 80vw;
+        left: 5vw;
+        width: 25vw;
+    }
+
+    &__blue-circle,
+    &__yellow-circle {
+        width: 15vw;
+    }
+
+    &__blue-circle {
+        top: 72vw;
+        left: 32vw;
+    }
+
+    &__yellow-circle {
+        top: 98vw;
+        right: auto;
+        left: 21vw;
+    }
+
+    &__title {
+        width: 60vw;
+        top: 5vw;
+        right: 5vw;
+        transform: rotate(2.75deg);
+    }
+
+    &__content {
+        font-weight: 700;
+        font-size: 4vw;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        opacity: .8;
+        width: 60vw;
+        display: block;
+        top: 47vw;
+        position: absolute;
+        left: 30vw;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 450px) {
+        height: 150vw;
+    }
+
+    @media screen and (min-width: 800px) {
+        height: 140vw;
+    }
+
+    @media screen and (min-width: 1280px) {
+        height: 780px;
+
+        &__man-sneaker {
+            width: 634.4609375px;
+            height: 626.0244140625px;
+            top: 79px;
+            right: 0;
+            left: auto
+        }
+
+        &__human {
+            width: 170px;
+            height: 651px;
+            top: 10px;
+            left: 60px;
+            z-index: 2;
+        }
+
+        &__red-circle {
+            width: 257px;
+            height: 146px;
+            top: 559px;
+            left: 0px;
+        }
+
+        &__blue-circle {
+            width: 141px;
+            height: 80.1011657715px;
+            top: 547px;
+            left: 500px;
+        }
+
+        &__yellow-circle {
+            width: 141px;
+            height: 80.1011657715px;
+            top: 450px;
+            left: 291px;
+        }
+
+        &__title {
+            width: 433.809932903px;
+            height: 316.7019321714px;
+            top: 0;
+            left: 359.84px;
+            transform: rotate(4.81deg);
+        }
+
+        &__content {
+            width: 472.6948242188px;
+            height: 94px;
+            top: 312.65px;
+            left: 315px;
+            opacity: .8;
+            font-size: 24px;
+        }
+    }
+}

@@ -1,0 +1,176 @@
+{{ 'about--culture.css' | asset_url | stylesheet_tag }}
+{{ 'about--culture-spread-joy.css' | asset_url | stylesheet_tag }}
+{{ 'about--culture-inspire-change.css' | asset_url | stylesheet_tag }}
+{{ 'about--culture-support-share.css' | asset_url | stylesheet_tag }}
+
+<section class="about-culture">
+  <div class="about-culture__container">
+    <div class="about-culture__wrapper">
+      <div class="about-culture__spreading-good-vibe">
+        <img
+          src="{{ 'Adobe_Express_-_file_1_1.png' | file_url }}"
+          alt="Spreading Good Vibe"
+          class="about-culture__spreading-good-vibe__image about-culture__spreading-good-vibe__shoes"
+          width="500"
+          height="500"
+        >
+        <img
+          src="{{ 'Group_4.png' | file_url }}"
+          alt="Spreading Good Vibe"
+          class="about-culture__spreading-good-vibe__image about-culture__spreading-good-vibe__content"
+          width="500"
+          height="500"
+        >
+        <img
+          src="{{ 'Mask_group_1.png' | file_url }}"
+          alt="Spreading Good Vibe"
+          class="about-culture__spreading-good-vibe__image about-culture__spreading-good-vibe__human"
+          width="500"
+          height="500"
+        >
+        <img
+          src="{{ 'Adobe_Express_-_file_3_1.png' | file_url }}"
+          alt="Spreading Good Vibe"
+          class="about-culture__spreading-good-vibe__image about-culture__spreading-good-vibe__tshirt"
+          width="500"
+          height="500"
+        >
+        <img
+          src="{{ 'Linked_Path_Group.png' | file_url }}"
+          alt="Spreading Good Vibe"
+          class="about-culture__spreading-good-vibe__image about-culture__spreading-good-vibe__sub-title"
+          width="500"
+          height="500"
+        >
+        <img
+          src="{{ 'Adobe_Express_-_file.png' | file_url }}"
+          alt="Spreading Good Vibe"
+          class="about-culture__spreading-good-vibe__image about-culture__spreading-good-vibe__shoes_collection"
+          width="500"
+          height="500"
+        >
+      </div>
+    </div>
+  </div>
+  <div class="about-culture__spread-joy__container">
+    <div class="about-culture__spread-joy__wrapper">
+      <img
+        src="{{ 'Spread-Joy-1.png' | file_url }}"
+        alt="Spread Joy Culture"
+        class="about-culture__spread-joy__image about-culture__spread-joy__spread-joy"
+        width="500"
+        height="500"
+      >
+      <span class="about-culture__spread-joy__content">
+        <p>
+          Upper Empire continues to unite sneaker enthusiasts and members around the world. We dedicate our focus and
+          resources towards
+        </p>
+      </span>
+      <img
+        src="{{ 'HOODIE-COMMUNITY-design_1.png' | file_url }}"
+        alt="Spread Joy Culture"
+        class="about-culture__spread-joy__image about-culture__spread-joy__hoodie"
+        width="500"
+        height="500"
+      >
+    </div>
+  </div>
+  <div class="about-culture__inspire-change">
+    <div class="about-culture__inspire-change__container">
+      <div class="about-culture__inspire-change__wrapper">
+        <img
+          src="{{ 'Group_17.png' | file_url }}"
+          alt="Inspire Change Culture"
+          class="about-culture__inspire-change__image about-culture__inspire-change__man-sneaker"
+          width="500"
+          height="500"
+        >
+        <img
+          src="{{ 'inspire-change.png' | file_url }}"
+          alt="Inspire Change Culture"
+          class="about-culture__inspire-change__image about-culture__inspire-change__title"
+          width="500"
+          height="500"
+        >
+        <img
+          src="{{ 'human.png' | file_url }}"
+          alt="Inspire Change Culture"
+          class="about-culture__inspire-change__image about-culture__inspire-change__human"
+          width="500"
+          height="500"
+        >
+        <img
+          src="{{ 'red-circle.png' | file_url }}"
+          alt="Inspire Change Culture"
+          class="about-culture__inspire-change__image about-culture__inspire-change__red-circle"
+          width="500"
+          height="500"
+        >
+        <img
+          src="{{ 'blue-circle.png' | file_url }}"
+          alt="Inspire Change Culture"
+          class="about-culture__inspire-change__image about-culture__inspire-change__blue-circle"
+          width="500"
+          height="500"
+        >
+        <img
+          src="{{ 'yellow-circle.png' | file_url }}"
+          alt="Inspire Change Culture"
+          class="about-culture__inspire-change__image about-culture__inspire-change__yellow-circle"
+          width="500"
+          height="500"
+        >
+        <span class="about-culture__inspire-change__content">
+          <p>Upper Empire continues to unite sneaker enthusiasts and members around the world.</p>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="about-culture__support-share">
+    <div class="about-culture__support-share__container">
+      <div class="about-culture__support-share__wrapper">
+        <div class="about-culture__support-share__content">
+          <img
+            src="{{ 'support-share-title.png' | file_url }}"
+            alt="Support Share Culture"
+            width="1000"
+            height="1000"
+            class="about-culture__support-share__image about-culture__support-share_title"
+          >
+          <p>
+            We attend numerous events and organize giveaways to give back to those who support and share the same
+            passion as us within the sneaker community.
+          </p>
+        </div>
+
+        <img
+          src="{{ '3-mans-2.png' | file_url }}"
+          alt="Support Share Culture"
+          width="1000"
+          height="1000"
+          class="about-culture__support-share__image about-culture__support-share_title"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Culture",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "title_image",
+      "label": "Image Picker Sample"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Culture",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

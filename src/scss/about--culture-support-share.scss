@@ -1,0 +1,49 @@
+.about-culture__support-share {
+    &__container {
+        background: rgba(3, 3, 3, 1);
+    }
+
+    &__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        padding: 0 30px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        p {
+            margin: 0;
+            font-weight: 700;
+            font-size: 3.5vw;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+            opacity: 0.8;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        &__wrapper {
+            justify-content: space-between;
+            grid-template-rows: repeat(1, minmax(0, 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            padding: 0 0 40px 0;
+        }
+
+        &__content {
+    
+            p {
+                font-size: 24px;
+                width: 564px;
+            }
+        }
+    }
+}

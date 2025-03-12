@@ -1,0 +1,175 @@
+{{ 'about--events.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign main_event = section.blocks | where: 'type', 'main-event' | first
+  assign event_list = section.blocks | where: 'type', 'event'
+%}
+
+<section class="about--events">
+  <div class="about--events__container">
+    <div class="about--events__wrapper">
+      <div class="about--events__header">
+        <div class="about--events__header__title">
+          <h2>{{ section.settings.section_title }}</h2>
+        </div>
+        <div class="about--events__header__subtitle">
+          <p>
+            {{ section.settings.section_subtitle }}
+          </p>
+        </div>
+      </div>
+      <div class="about--events__main-event">
+        <div class="about--events__main-event__video">
+          {{ main_event.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+        </div>
+        <div class="about--events__main-event__content">
+          <div class="about--events__main-event__title">
+            {{ main_event.settings.title }}
+          </div>
+          <div class="about--events__main-event__info-wrapper">
+            <div class="about--events__main-event__location">
+              {{ main_event.settings.location }}
+            </div>
+            <span> ● </span>
+            <div class="about--events__main-event__year">
+              {{ main_event.settings.year }}
+            </div>
+          </div>
+          <div class="about--events__main-event__subtitle">
+            {{ main_event.settings.subtitle }}
+          </div>
+          <button class="about--events__main-event__button">
+            <a href="{{ main_event.settings.event-page }}">View Details</a>
+          </button>
+        </div>
+      </div>
+      <hr>
+      <div class="about--events__event-list">
+        {% for event in event_list %}
+          <div class="about--events__event-list__item">
+            {{
+              event.settings.image
+              | image_url: width: 1000, height: 1000
+              | image_tag: alt: 'Event Image', class: 'about--events__event-list__image'
+            }}
+            <div class="about--events__event-list__overlay"></div>
+            <div class="about--events__event-list__wrapper">
+              <div class="about--events__event-list__title">
+                {{ event.settings.title }}
+              </div>
+              <div class="about--events__event-list__info-wrapper">
+                <div class="about--events__event-list__location">
+                  {{ event.settings.location }}
+                </div>
+                <span> ● </span>
+                <div class="about--events__event-list__year">
+                  {{ event.settings.year }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <button class="about--events__event-list__view-more">View More</button>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Events",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "More Than Community"
+    },
+    {
+      "type": "text",
+      "id": "section_subtitle",
+      "label": "Section Subtitle",
+      "default": "With each event, our goal is the inspire change, spread joy, and cultivate a lasting impression of positivity for event attendees. "
+    }
+  ],
+  "blocks": [
+    {
+      "type": "main-event",
+      "name": "Main Event",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Main Event Video"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Main Event Title",
+          "default": "UE x Sneakercon"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Main Event Subtitle",
+          "default": "With each event, our goal is the inspire change, spread joy, and cultivate a lasting impression of positivity for event attendees. Feel free to join our Instagram and Facebook community to get the most updated news on when we attend events or host giveaways!"
+        },
+        {
+          "type": "text",
+          "id": "year",
+          "label": "Main Event Year",
+          "default": "2024"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Main Event Location",
+          "default": "Hawaii"
+        },
+        {
+          "type": "page",
+          "id": "event-page",
+          "label": "Event Page"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "event",
+      "name": "Event",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Event Title",
+          "default": "Sneakercon"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Event Location",
+          "default": "Hawaii"
+        },
+        {
+          "type": "text",
+          "id": "year",
+          "label": "Event Year",
+          "default": "2024"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Event Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Event",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,43 @@
+{{ 'about--team.css' | asset_url | stylesheet_tag }}
+
+<section id="about-team">
+  <div class="about-team__container">
+    <div class="about-team__wrapper">
+      {% for member in section.blocks %}
+        <div class="about-team__image-container">
+          {{
+            member.settings.image
+            | image_url: width: 1000, height: 1000
+            | image_tag: alt: 'Team Member', class: 'about-team__image'
+          }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Team",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "member",
+      "name": "Team Members",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Team",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

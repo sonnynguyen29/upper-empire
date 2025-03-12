@@ -1,0 +1,63 @@
+.about-culture__spread-joy__container {
+  background: linear-gradient(180deg, #000000 0%, #280202 72.07%, #000000 95.06%);
+}
+.about-culture__spread-joy__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10vw;
+}
+.about-culture__spread-joy__hoodie {
+  width: 100vw;
+}
+.about-culture__spread-joy__spread-joy {
+  width: 80vw;
+  aspect-ratio: 334.1744276448/196.1933953;
+  transform: rotate(1.2deg);
+}
+.about-culture__spread-joy__content {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.5vw;
+  position: absolute;
+  top: 33vw;
+  left: 9vw;
+  width: 60vw;
+}
+.about-culture__spread-joy__content p {
+  margin: 0;
+}
+@media screen and (min-width: 1280px) {
+  .about-culture__spread-joy__wrapper {
+    flex-direction: row-reverse;
+    gap: unset;
+    justify-content: space-between;
+  }
+  .about-culture__spread-joy__spread-joy {
+    width: 589.1983427927px;
+    height: 345.9175722287px;
+    transform: rotate(9deg);
+  }
+  .about-culture__spread-joy__hoodie {
+    width: 722px;
+    height: 722px;
+  }
+  .about-culture__spread-joy__content {
+    width: 544.0460315347px;
+    height: 150.282609641px;
+    top: 415px;
+    right: 45px;
+    transform: rotate(12deg);
+    opacity: 0.8;
+    font-size: 24px;
+    line-height: 31.1px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    left: auto;
+  }
+}

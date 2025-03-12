@@ -1,0 +1,174 @@
+.about-culture {
+  background-color: black;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+.about-culture__container {
+  background: linear-gradient(180deg, #000000 0%, #322D07 52.59%, #000000 89.06%);
+}
+.about-culture__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.about-culture__spreading-good-vibe {
+  height: 580px;
+  width: 100%;
+}
+.about-culture__spreading-good-vibe img {
+  position: absolute;
+}
+.about-culture__spreading-good-vibe__shoes {
+  width: 40vw;
+  height: 40vw;
+  top: 68vw;
+  right: -1vw;
+  transform: rotate(-10.48deg);
+  z-index: 3;
+}
+.about-culture__spreading-good-vibe__content {
+  width: 70vw;
+  top: 2vw;
+  left: 25vw;
+  transform: rotate(6.62deg);
+  aspect-ratio: 278.474980618/180.8931154514;
+}
+.about-culture__spreading-good-vibe__human {
+  width: 66vw;
+  top: 34vw;
+  left: 4vw;
+  z-index: 1;
+}
+.about-culture__spreading-good-vibe__tshirt {
+  width: 254.3590330866px;
+  height: 233.6540000022px;
+  top: 406.73px;
+  left: 67.25px;
+  z-index: 3;
+  display: none;
+}
+.about-culture__spreading-good-vibe__sub-title {
+  width: 781.3px;
+  height: auto;
+  top: 89vw;
+  left: 0;
+  z-index: 2;
+  object-fit: cover;
+  height: 160px;
+  object-position: center center;
+}
+.about-culture__spreading-good-vibe__shoes_collection {
+  width: 18vw;
+  height: 18vw;
+  top: 13vw;
+  left: 64vw;
+}
+@media screen and (min-width: 507px) {
+  .about-culture__spreading-good-vibe {
+    height: 680px;
+  }
+  .about-culture__spreading-good-vibe__shoes {
+    top: 60vw;
+  }
+  .about-culture__spreading-good-vibe__human {
+    top: 24vw;
+    left: 1vw;
+  }
+  .about-culture__spreading-good-vibe__sub-title {
+    top: 82vw;
+  }
+}
+@media screen and (min-width: 684px) {
+  .about-culture__spreading-good-vibe {
+    height: 780px;
+  }
+  .about-culture__spreading-good-vibe__shoes {
+    top: 52vw;
+  }
+  .about-culture__spreading-good-vibe__sub-title {
+    top: 87vw;
+  }
+  .about-culture__spreading-good-vibe__sub-title {
+    width: 100vw;
+    height: auto;
+    top: 89vw;
+    left: 0;
+    z-index: 2;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 700px) {
+  .about-culture__spreading-good-vibe {
+    height: 900px;
+  }
+  .about-culture__spreading-good-vibe__sub-title {
+    top: 85vw;
+  }
+}
+@media screen and (min-width: 800px) {
+  .about-culture__spreading-good-vibe {
+    height: 1000px;
+  }
+  .about-culture__spreading-good-vibe__sub-title {
+    top: 85vw;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .about-culture__spreading-good-vibe {
+    height: 1100px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .about-culture__spreading-good-vibe {
+    height: 1300px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-culture__spreading-good-vibe {
+    height: 780px;
+  }
+  .about-culture__spreading-good-vibe__shoes {
+    width: 300.9703645538px;
+    height: 300.9703645538px;
+    top: 401px;
+    left: auto;
+    right: 53px;
+  }
+  .about-culture__spreading-good-vibe__content {
+    width: 548.8758644105px;
+    height: 356.5413882787px;
+    top: 0vw;
+    left: auto;
+    right: 190px;
+  }
+  .about-culture__spreading-good-vibe__human {
+    width: 511px;
+    height: 623px;
+    top: 0;
+    left: 270px;
+  }
+  .about-culture__spreading-good-vibe__tshirt {
+    width: 254.3590330866px;
+    height: 233.6540000022px;
+    top: 311px;
+    left: 10px;
+    display: block;
+  }
+  .about-culture__spreading-good-vibe__sub-title {
+    width: 100vw;
+    max-width: 1440px;
+    height: auto;
+    bottom: 100px;
+    left: 0;
+    z-index: 2;
+    top: auto;
+  }
+  .about-culture__spreading-good-vibe__shoes_collection {
+    width: 150px;
+    height: 150px;
+    top: 74px;
+    left: auto;
+    right: 270px;
+  }
+}
