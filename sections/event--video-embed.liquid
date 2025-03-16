@@ -50,21 +50,21 @@
         <div
           class="video-embed-grid__video"
           data-video-position="{{ forloop.index0 }}"
+          data-video-id={{ video_id }}
           style="{% if forloop.index == 1 %}display: block;{% else %}display: none;{% endif %}"
         >
-          <iframe
+          {% comment %} <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/{{ video_id }}?controls=0&modestbranding=1&showinfo=0&rel=0"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
-          ></iframe>
+          ></iframe> {% endcomment %}
         </div>
       {% endfor %}
     </div>
-
-    <div class="video-embed-grid__thumbnail_grid video-embed__splide splide">
+    <div class="video-embed-grid__thumbnail_grid video-embed__splide splide" data-size="{{ youtube_links.size }}">
       <div class="splide__track">
         <div class="splide__list">
           {% for youtube_link in youtube_links %}
@@ -73,14 +73,14 @@
               assign video_id = youtube_link_settings | strip | split: 'v=' | last
             %}
             <div
-              class="video-embed-grid__thumbnail_grid__thumbnail splide__slide"
+              class="video-embed-grid__thumbnail_grid__thumbnail splide__slide{% if forloop.index0 == 0 %} video-embed-grid__thumbnail_grid__thumbnail--active{% endif %}"
               data-video-position="{{ forloop.index0 }}"
             >
               <img
                 src="https://img.youtube.com/vi/{{ video_id }}/maxresdefault.jpg"
                 alt="Thumbnail"
-                width="510"
-                height="300"
+                width="600"
+                height="400"
               >
             </div>
           {% endfor %}

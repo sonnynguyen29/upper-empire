@@ -1,20 +1,27 @@
 .event-hero-banner {
-    padding: 0 8px 40px 8px;
-
-    video {
-        height: 100%;
+    &__video__container {
         width: 100%;
+        height: 100%;
+
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
 
         @media screen and (min-width: 1280px) {
             height: 70vh;
             width: 100vw;
-            object-fit: cover;
         }
     }
 
+    .event-hero-container { 
+        padding: 20px 8px;
+    }
+
     &__content {
-        margin-top: 20px;
-        padding: 20px 0;
+        max-width: 1440px;
+        margin: 0 auto;
 
         &__title {
             font-size: 36px;
@@ -30,6 +37,9 @@
     }
 
     .event-highlights__container {
+        max-width: 1440px;
+        margin: 0 auto;
+
         .event-highlights {
             display: grid;
             grid-template-rows: minmax(0, 355px) 1fr;
@@ -60,7 +70,7 @@
                 &__description {
                     font-size: 16px;
                     font-weight: 400;
-                } 
+                }
             }
 
             @media screen and (min-width: 1280px) {
@@ -73,7 +83,7 @@
                         font-size: 20px;
                         font-weight: 700;
                     }
-    
+
                     &__description {
                         font-weight: 500;
                     }
@@ -85,12 +95,18 @@
             margin-bottom: 0;
         }
 
-        .splide__arrow { 
+        .splide__arrow {
             background-color: white;
             border-radius: unset;
             opacity: 1;
             width: 40px;
             height: 40px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        .event-hero-container {
+            padding: 40px 8px;
         }
     }
 }

@@ -8,6 +8,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .event-photo-gallery h2 {
   font-size: 36px;
@@ -25,6 +27,7 @@
   height: 100%;
   overflow: hidden;
   transition: opacity 0.5s ease, height 0.5s ease;
+  border-radius: 4px;
 }
 .event-photo-gallery .photo-gallery__photo-item img {
   border-radius: 4px;

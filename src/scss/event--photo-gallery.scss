@@ -8,6 +8,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
     }
 
     h2 {
@@ -27,6 +29,7 @@
             height: 100%;
             overflow: hidden;
             transition: opacity 0.5s ease, height 0.5s ease;
+            border-radius: 4px;
 
             img {
                 border-radius: 4px;

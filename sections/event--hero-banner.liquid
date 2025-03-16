@@ -1,39 +1,43 @@
 {{ 'event--hero-banner.css' | asset_url | stylesheet_tag }}
 
 <section class="event-hero-banner">
-  {{ section.settings.video_recap | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
-  <div class="event-hero-banner__content">
-    <h1 class="event-hero-banner__content__title">{{ section.settings.title }}</h1>
-    <p class="event-hero-banner__content__description">{{ section.settings.description }}</p>
+  <div class="event-hero-banner__video__container">
+    {{ section.settings.video_recap | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
   </div>
-  <div class="event-highlights__container event-highlights__splide splide">
-    <div class="splide__track">
-      <div class="splide__list">
-        {% for block in section.blocks %}
-          <div class="event-highlights splide__slide">
-            <div class="event-highlights__media">
-              {% if block.settings.video %}
-                {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
-              {% endif %}
-              {% if block.settings.image %}
-                {{
-                  block.settings.image
-                  | image_url: width: 2000, height: 2000
-                  | image_tag: alt: block.settings.image.alt
-                  | escape
-                }}
-              {% endif %}
+  <div class="event-hero-container">
+    <div class="event-hero-banner__content">
+      <h2 class="event-hero-banner__content__title">{{ section.settings.title }}</h2>
+      <p class="event-hero-banner__content__description">{{ section.settings.description }}</p>
+    </div>
+    <div class="event-highlights__container event-highlights__splide splide">
+      <div class="splide__track">
+        <div class="splide__list">
+          {% for block in section.blocks %}
+            <div class="event-highlights splide__slide">
+              <div class="event-highlights__media">
+                {% if block.settings.video %}
+                  {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+                {% endif %}
+                {% if block.settings.image %}
+                  {{
+                    block.settings.image
+                    | image_url: width: 2000, height: 2000
+                    | image_tag: alt: block.settings.image.alt
+                    | escape
+                  }}
+                {% endif %}
+              </div>
+              <div class="event-highlights__content">
+                <h2 class="event-highlights__content__title">
+                  {{ block.settings.title | remove: '<p>' | remove: '</p>' }}
+                </h2>
+                <p class="event-highlights__content__description">
+                  {{ block.settings.description | remove: '<p>' | remove: '</p>' }}
+                </p>
+              </div>
             </div>
-            <div class="event-highlights__content">
-              <h2 class="event-highlights__content__title">
-                {{ block.settings.title | remove: '<p>' | remove: '</p>' }}
-              </h2>
-              <p class="event-highlights__content__description">
-                {{ block.settings.description | remove: '<p>' | remove: '</p>' }}
-              </p>
-            </div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
@@ -48,7 +52,7 @@
         perMove: 1,
         pagination: false,
         arrows: false,
-        gap: '1rem',
+        gap: '8px',
         mediaQuery: 'min',
         padding: { left: 0, right: '20%' },
         arrowPath:
@@ -56,7 +60,6 @@
         breakpoints: {
           768: {
             perPage: 2,
-            gap: '8px',
           },
           1280: {
             perPage: 3,

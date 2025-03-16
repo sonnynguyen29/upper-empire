@@ -1,5 +1,13 @@
 {{ 'footer-main.css' | asset_url | stylesheet_tag }}
 
+{% liquid
+  assign is_display_image = false
+
+  unless template contains 'product' or template contains 'collection'
+    assign is_display_image = true
+  endunless
+%}
+
 <footer id="footer-section">
   <div class="footer-section-container">
     <div class="footer-section-wrapper">
@@ -50,7 +58,7 @@
       </div>
     </div>
   </div>
-  {% if template contains 'index' %}
+  {% if is_display_image == true %}
     <div class="image-with-text">
       <div
         class="image-background"
@@ -88,7 +96,7 @@
   {% endif %}
 </footer>
 
-{% if template contains 'index' %}
+{% if is_display_image == true %}
   <script src="{{ 'footer-main.js' |  asset_url }}" defer></script>
 {% endif %}
 

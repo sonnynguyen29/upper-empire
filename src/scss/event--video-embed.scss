@@ -1,5 +1,5 @@
 .event-video-embed-section {
-    padding: 20px 8px 0 8px;
+    padding: 20px 8px 15px 8px;
     border-bottom: 1px solid #CECECE;
     display: flex;
     justify-content: center;
@@ -18,24 +18,30 @@
         flex-direction: column;
         width: 100%;
 
+        .video-embed-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
         &__video {
-            iframe {
-                border-radius: 8px;
-                height: 100%;
-                aspect-ratio: 359/240;
-                width: calc(100vw - 16px);
-            }
+            border-radius: 8px;
+            height: 100%;
+            aspect-ratio: 16 / 9;
+            max-width: calc(100vw - 16px);
         }
 
         &__thumbnail_grid {
+            max-width: 1000px;
+            margin: 0 auto;
+
             &__thumbnail {
-                margin: 20px 0;
+                margin: 10px 0 15px 0;
 
                 img {
                     border-radius: 8px;
                 }
 
-                &.is-active,
+                &--active,
                 &:hover {
                     outline: 2px solid #fff;
                     border-radius: 10px;
@@ -48,7 +54,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        padding: 40px 8px 20px 8px;
+        padding: 40px 8px 30px 8px;
         gap: 20px;
 
         h2 {
@@ -59,13 +65,15 @@
         .video-embed-grid {
 
             &__video {
-                iframe {}
+                aspect-ratio: 16 / 9;
+                width: 100% !important;
+                min-width: 1000px;
             }
 
             &__thumbnail_grid {
-                .splide__list {
-                    justify-content: center;
-                }
+                // .splide__list {
+                //     justify-content: center;
+                // }
 
                 &__thumbnail {
                     margin: 20px 0;
@@ -79,7 +87,7 @@
                         max-height: 100px;
                     }
 
-                    &.is-active,
+                    &--active,
                     &:hover {
                         outline: 2px solid #fff;
                         border-radius: 10px;
