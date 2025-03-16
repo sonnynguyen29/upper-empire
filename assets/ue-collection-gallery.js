@@ -60,45 +60,9 @@ if (!window.ueCollectionFinishSetup) {
                     gallery: '.ue-collection-grid.ue-collection-grid--main',
                     children: 'a',
                     bgOpacity: 1,
-                    // howAnimationDuration: 200,
-                    // hideAnimationDuration: 200,
-                    // arrowPrevSVG: leftArrowSVG,
-                    // arrowNextSVG: leftArrowSVG,
-                    // // right arrow is a flipped left arrow
-                    // zoomSVG: zoomSVGs,
-                    // // the switch between zoom-in and zoom-out icon happens with .pswp--zoomed-in class
-                    // closeSVG: closeSVG,
                     pswpModule: window.PhotoSwipe
                 });
 
-                // lightbox.on('uiRegister', function () {
-                //     lightbox.pswp.ui.registerElement({
-                //         name: 'bulletsIndicator',
-                //         className: 'pswp__bullets-indicator',
-                //         appendTo: 'wrapper',
-                //         onInit: (el, pswp) => {
-                //             const bullets = [];
-                //             let bullet;
-                //             let prevIndex = -1;
-                //             for (let i = 0; i < pswp.getNumItems(); i++) {
-                //                 bullet = document.createElement('div');
-                //                 bullet.className = 'pswp__bullet';
-                //                 bullet.onclick = e => {
-                //                     pswp.goTo(bullets.indexOf(e.target));
-                //                 };
-                //                 el.appendChild(bullet);
-                //                 bullets.push(bullet);
-                //             }
-                //             pswp.on('change', a => {
-                //                 if (prevIndex >= 0) {
-                //                     bullets[prevIndex].classList.remove('pswp__bullet--active');
-                //                 }
-                //                 bullets[pswp.currIndex].classList.add('pswp__bullet--active');
-                //                 prevIndex = pswp.currIndex;
-                //             });
-                //         }
-                //     });
-                // });
 
                 lightbox.init();
             };

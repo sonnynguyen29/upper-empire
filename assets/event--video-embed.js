@@ -5,13 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
         perMove: 1,
         pagination: false,
         arrows: false,
-        gap: '8px',
         mediaQuery: 'min',
+        // gap: '8px',
         padding: { left: 0, right: '20%'},
         breakpoints: {
             1280: {
                 perPage: 5,
-                gap: '16px',
+                padding: { left: 0, right: 0 },
+                // gap: '16px',
             },
         },
     }).mount();

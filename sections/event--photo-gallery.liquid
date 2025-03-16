@@ -5,13 +5,20 @@
     class="container"
     data-initial-photos="{{ section.settings.initial_photos }}"
     data-additional-photos="{{ section.settings.additional_photos }}"
+    data-total-photo-in-gallery="{{ section.blocks.size }}"
   >
     <h2>{{ section.settings.title }}</h2>
     <div class="photo-gallery">
       {% for photo in section.blocks %}
-        <div class="photo-gallery__photo-item{% if forloop.index0 < section.settings.initial_photos %} visible{% else %} hidden{% endif %}">
+        <a
+          href="{{ photo.settings.image.src | image_url }}"
+          class="photo-gallery__photo-item{% if forloop.index0 < section.settings.initial_photos %} visible{% else %} hidden{% endif %}"
+          target="_blank"
+          data-pswp-width="{{ photo.settings.image.width }}"
+          data-pswp-height="{{ photo.settings.image.height }}"
+        >
           {{ photo.settings.image | image_url: width: 1000, height: 1000 | image_tag: alt: photo.settings.image.alt }}
-        </div>
+        </a>
       {% endfor %}
     </div>
     <div class="photo-gallery__buttons">

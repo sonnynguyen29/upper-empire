@@ -32,7 +32,7 @@
   margin: 0 auto;
 }
 .event-video-embed-section .video-embed-grid__thumbnail_grid__thumbnail {
-  margin: 10px 0 15px 0;
+  margin: 8px 0px 8px 8px;
 }
 .event-video-embed-section .video-embed-grid__thumbnail_grid__thumbnail img {
   border-radius: 8px;
@@ -57,7 +57,7 @@
     min-width: 1000px;
   }
   .event-video-embed-section .video-embed-grid__thumbnail_grid__thumbnail {
-    margin: 20px 0;
+    margin: 16px 0px 16px 16px;
     cursor: pointer;
     transition: box-shadow 0.3s ease;
     border-radius: 10px;
