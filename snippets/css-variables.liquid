@@ -9,7 +9,7 @@
 {% case settings.type_navigation_font %}
   {% when 'heading' %}
     {% assign navigation_font = settings.type_header_font %}
-    {% assign navigation_font_letter_spacing = settings.heading_spacing | append: 'px' %}
+    {% assign navigation_font_letter_spacing = settings.heading_spacing %}
   {% when 'body' %}
     {% assign navigation_font = settings.type_base_font %}
     {% assign navigation_font_letter_spacing = 'normal' %}
@@ -50,11 +50,11 @@
 
 :root {
 
-  --font-weight-normal: {{ base_font.weight | default: 400 }};
+  --font-weight-normal: 500;
   --font-weight-bold: {{ base_font_bold.weight | default: 700 }};
   --font-weight-header-bold: {{ header_font_bold.weight | default: 700 }};
 
-  --header-font-stack: {{ header_font.family }}, {{ header_font.fallback_families }};
+  --header-font-stack: "PPNeueMontreal", sans-serif;
   --header-font-weight: {{ header_font.weight }};
   --header-font-style: {{ header_font.style }};
   --header-text-size: {{ settings.header-text-size }};
@@ -65,27 +65,27 @@
   --header-font-size: {{ settings.header_font_size }};
   --header-font-size-px: {{ settings.header_font_size }}px;
 
-  --heading-spacing: {{ settings.heading_spacing }}px;
+  --heading-spacing: {{ settings.heading_spacing }};
   --heading-font-case: {{ settings.heading_font_case }};
   --heading-font-stack: {{ settings.type_header_font }};
 
-  --body-font-stack: {{ base_font.family }}, {{ base_font.fallback_families }};
-  --body-font-weight: {{ base_font.weight }};
+  --body-font-stack: "PPNeueMontreal", sans-serif;
+  --body-font-weight: 500;
   --body-font-style: {{ base_font.style }};
 
-  --label-font-stack: {{ label_font.family }}, {{ label_font.fallback_families }};
+  --label-font-stack: "PPNeueMontreal", sans-serif;
   --label-font-weight: {{ label_font.weight }};
   --label-font-style: {{ label_font.style }};
   --label-font-case: {{ settings.label_font_case }};
-  --label-spacing: {{ settings.label_spacing }}px;
+  --label-spacing: "-0.02rem";
 
-  --navigation-font-stack: {{ navigation_font.family }}, {{ navigation_font.fallback_families }};
+  --navigation-font-stack: "PPNeueMontreal", sans-serif;
   --navigation-font-weight: {{ navigation_font.weight }};
   --navigation-font-style: {{ navigation_font.style }};
   --navigation-font-letter-spacing: {{ navigation_font_letter_spacing }};
 
   --base-font-size-int: {{ settings.typography-body-font-size }};
-  --base-font-size: {{ settings.typography-body-font-size }}px;
+  --base-font-size: {{ settings.typography-body-font-size }};
 
   --body-font-size-12-to-em: {{ 12 | times: 1.0 | divided_by: settings.typography-body-font-size | round: 2 | append: 'em' }};
   --body-font-size-14-to-em: {{ 14 | times: 1.0 | divided_by: settings.typography-body-font-size | round: 2 | append: 'em' }};
@@ -111,7 +111,7 @@
   --button-text-case: {{ settings.button_text_case }};
   --button-font-size: {{ settings.button_font_size }};
   --button-font-size-px: {{ settings.button_font_size }}px;
-  --button-text-spacing-px: {{ settings.button_text_spacing }}px;
+  --button-text-spacing-px: "-0.02rem";
 
   --secondary-btn-text-color: {{ settings.color_secondary_button_text }};
   --secondary-btn-bg-color: {{ settings.color_secondary_button_background }};
@@ -200,7 +200,7 @@
   --header-border-color: {{ settings.header-border-color }};
 
   --announcement-text-size: {{ settings.announcement_text_size }}px;
-  --announcement-text-spacing: {{ settings.announcement_text_spacing }}px;
+  --announcement-text-spacing: {{ settings.announcement_text_spacing }};
 
   --logo-font-size: {{settings.logo_font_size}}px;
 

@@ -1,8 +1,31 @@
 <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-<span id="ProductPrice" itemprop="price"
-  content="{{ current_variant.price | divided_by: 100 }}"
-  v-bind:content="variant ? variant.price / 100 : null"
-  v-html="variant ? money(variant.price) : '{{ 'products.product.unavailable' | t }}'"
->
-  <span class="money">{{ current_variant.price | money }}</span>
-</span>
+<div class="product-price-wrapper">
+  <span
+    class="product-price"
+    id="ProductPrice"
+    itemprop="price"
+    content="{{ current_variant.price | divided_by: 100 }}"
+    v-bind:content="variant ? variant.price / 100 : null"
+    v-html="variant ? money(variant.price) : '{{ 'products.product.unavailable' | t }}'"
+  >
+    <span class="money" data-money="{{ current_variant.price | divided_by: 100 }}">
+      {{- current_variant.price | divided_by: 100 | money -}}
+    </span>
+  </span>
+
+  {% if sold_out_badge_settings %}
+    <div
+      class="sold-out-badge-wrapper"
+      style="
+        background-color: {{ sold_out_badge_settings.settings.badge_color }};
+        color: {{ sold_out_badge_settings.settings.badge_text_color }};
+      "
+    >
+      <span>{{ sold_out_badge_settings.settings.badge_text }}</span>
+    </div>
+  {% endif %}
+</div>
+
+<script>
+  console.log('123', {{ sold_out_badge_settings.settings | json }})
+</script>

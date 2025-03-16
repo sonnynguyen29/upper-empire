@@ -1,0 +1,134 @@
+{{ 'hero-banner.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign desktop_sizes = '(min-width: 1920px) 75vw, (min-width: 1440px) 50vw, (min-width: 1280px) 25vw, 100vw'
+%}
+
+{% liquid
+  assign banner_desktop = section.blocks | where: 'type', 'hero_banner_desktop'
+  assign banner_mobile = section.blocks | where: 'type', 'hero_banner_mobile'
+%}
+
+<section id="hero-banner">
+  <div class="hero__banner-container">
+    <div class="hero__banner-image-wrapper">
+      <div class="desktop-splide splide">
+        <div class="splide__track">
+          <div class="splide__list">
+            {% for item in banner_desktop %}
+              <a href="{{ item.settings.hero_banner_lin | default: '#' }}" class="hero__banner-image-desktop splide__slide">
+                {% render 'responsive-image' with item.settings.hero_banner_image_desktop %}
+                <div class="hero__banner-title">{{ item.settings.hero_banner_title }}</div>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-splide splide">
+        <div class="splide__track">
+          <div class="splide__list">
+            {% for item in banner_mobile %}
+              <a href="{{ item.settings.hero_banner_link | default: '#' }}" class="hero__banner-image-mobile splide__slide">
+                {% render 'responsive-image' with item.settings.hero_banner_image_mobile %}
+                <div class="hero__banner-title">{{ item.settings.hero_banner_title }}</div>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  window.addEventListener('load', (event) => {
+    const loadHeroBannderSplideDesktop = () => {
+      var desktopSplide = new Splide('.desktop-splide', {
+        type: 'loop',
+        perPage: 1,
+        perMove: 1,
+        mediaQuery: 'min',
+        arrows: true,
+        pagination: false,
+        //autoplay: 'play',
+        interval: 3000,
+        arrowPath:
+          'M 39.511719 19.195312 L 24.511719 34.382812 C 24.199219 34.699219 23.773438 34.875 23.332031 34.875 C 22.890625 34.875 22.464844 34.699219 22.152344 34.382812 C 21.839844 34.066406 21.664062 33.636719 21.664062 33.1875 C 21.664062 32.738281 21.839844 32.308594 22.152344 31.992188 L 34.308594 19.6875 L 1.667969 19.6875 C 1.222656 19.6875 0.800781 19.511719 0.488281 19.191406 C 0.175781 18.875 0 18.449219 0 18 C 0 17.550781 0.175781 17.125 0.488281 16.808594 C 0.800781 16.492188 1.222656 16.3125 1.667969 16.3125 L 34.308594 16.3125 L 22.152344 4.007812 C 21.839844 3.691406 21.664062 3.261719 21.664062 2.8125 C 21.664062 2.363281 21.839844 1.933594 22.152344 1.617188 C 22.464844 1.300781 22.890625 1.125 23.332031 1.125 C 23.773438 1.125 24.199219 1.300781 24.511719 1.617188 L 39.511719 16.804688 C 39.667969 16.964844 39.789062 17.148438 39.875 17.355469 C 39.957031 17.558594 40 17.777344 40 18 C 40 18.222656 39.957031 18.441406 39.875 18.644531 C 39.789062 18.851562 39.667969 19.039062 39.511719 19.195312 Z M 39.511719 19.195312',
+      });
+      desktopSplide.mount();
+    };
+
+    const loadHeroBannderSplideMobile = () => {
+      var desktopSplide = new Splide('.mobile-splide', {
+        type: 'loop',
+        perPage: 1,
+        perMove: 1,
+        mediaQuery: 'min',
+        arrows: true,
+        pagination: false,
+        //autoplay: 'play',
+        interval: 3000,
+        arrowPath:
+          'M 39.511719 19.195312 L 24.511719 34.382812 C 24.199219 34.699219 23.773438 34.875 23.332031 34.875 C 22.890625 34.875 22.464844 34.699219 22.152344 34.382812 C 21.839844 34.066406 21.664062 33.636719 21.664062 33.1875 C 21.664062 32.738281 21.839844 32.308594 22.152344 31.992188 L 34.308594 19.6875 L 1.667969 19.6875 C 1.222656 19.6875 0.800781 19.511719 0.488281 19.191406 C 0.175781 18.875 0 18.449219 0 18 C 0 17.550781 0.175781 17.125 0.488281 16.808594 C 0.800781 16.492188 1.222656 16.3125 1.667969 16.3125 L 34.308594 16.3125 L 22.152344 4.007812 C 21.839844 3.691406 21.664062 3.261719 21.664062 2.8125 C 21.664062 2.363281 21.839844 1.933594 22.152344 1.617188 C 22.464844 1.300781 22.890625 1.125 23.332031 1.125 C 23.773438 1.125 24.199219 1.300781 24.511719 1.617188 L 39.511719 16.804688 C 39.667969 16.964844 39.789062 17.148438 39.875 17.355469 C 39.957031 17.558594 40 17.777344 40 18 C 40 18.222656 39.957031 18.441406 39.875 18.644531 C 39.789062 18.851562 39.667969 19.039062 39.511719 19.195312 Z M 39.511719 19.195312',
+      });
+      desktopSplide.mount();
+    };
+
+    loadHeroBannderSplideDesktop();
+    loadHeroBannderSplideMobile();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Banner Desktop",
+      "type": "hero_banner_desktop",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "hero_banner_image_desktop",
+          "label": "Hero Banner Image"
+        },
+        {
+          "type": "text",
+          "id": "hero_banner_title",
+          "label": "Hero Banner Title"
+        },
+        {
+          "type": "url",
+          "id": "hero_banner_link",
+          "label": "Hero Banner Link"
+        }
+      ],
+      "limit": 3
+    },
+    {
+      "name": "Banner Mobile",
+      "type": "hero_banner_mobile",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "hero_banner_image_mobile",
+          "label": "Hero Banner Image"
+        },
+        {
+          "type": "text",
+          "id": "hero_banner_title",
+          "label": "Hero Banner Title"
+        },
+        {
+          "type": "url",
+          "id": "hero_banner_link",
+          "label": "Hero Banner Link"
+        }
+      ],
+      "limit": 3
+    }
+  ]
+}
+{% endschema %}

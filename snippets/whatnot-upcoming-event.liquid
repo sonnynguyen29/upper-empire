@@ -1,0 +1,15 @@
+<whatnot-upcoming-event
+  class="whatnot-events-wrapper"
+>
+  <a href="#" class="whatnot-video whatnot-video-href" target="_blank">
+    <div class="whatnot-up-coming-event">
+      <h4 class="whatnot__sub-heading"></h4>
+      <div class="whatnot__date-time__wrapper">
+        <span class="whatnot__date-time"> </span>
+      </div>
+    </div>
+    {{ video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+
+    <h4 class="whatnot__heading"></h4>
+  </a>
+</whatnot-upcoming-event>

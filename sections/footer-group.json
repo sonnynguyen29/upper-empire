@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer",
@@ -5,49 +14,216 @@
     "footer-main": {
       "type": "footer-main",
       "blocks": {
-        "social": {
-          "type": "social",
+        "social_media_76xCBa": {
+          "type": "social-media",
           "settings": {
-            "social_title": "Connect with us"
+            "title": "Facebook",
+            "link": "https://www.facebook.com/profile.php?id=100089191310223",
+            "is_open_in_new_tab": true
           }
         },
-        "newsletter": {
-          "type": "newsletter",
+        "social_media_rELK4p": {
+          "type": "social-media",
           "settings": {
-            "newsletter_title": "Join the Mailing List",
-            "footer_newsletter_description": "<p>Subscribe! Be the first to know about new collections and exclusive promos!<\/p>"
+            "title": "Youtube",
+            "link": "https://www.youtube.com/@UpperEmpire",
+            "is_open_in_new_tab": true
           }
         },
-        "menu_nyiLVm": {
-          "type": "menu",
+        "social_media_T47HmL": {
+          "type": "social-media",
           "settings": {
-            "menu_title": "Navigation",
-            "footer_linklist": "footer"
+            "title": "Instagram",
+            "link": "https://www.instagram.com/upper.empire/",
+            "is_open_in_new_tab": true
+          }
+        },
+        "social_media_j86ky8": {
+          "type": "social-media",
+          "settings": {
+            "title": "Whatnot",
+            "link": "https://www.whatnot.com/user/upperempire/shows",
+            "is_open_in_new_tab": true
+          }
+        },
+        "social_media_7egz3K": {
+          "type": "social-media",
+          "settings": {
+            "title": "Tiktok",
+            "link": "https://www.tiktok.com/@upper.empire",
+            "is_open_in_new_tab": true
+          }
+        },
+        "navigation_Hejrpw": {
+          "type": "navigation",
+          "settings": {
+            "title": "Blogs",
+            "page": "",
+            "link": "https://upperempire.com/blogs/news",
+            "is_open_in_new_tab": false
+          }
+        },
+        "navigation_F8zFcJ": {
+          "type": "navigation",
+          "settings": {
+            "title": "Refund policy",
+            "page": "",
+            "link": "https://upperempire.com/policies/refund-policy",
+            "is_open_in_new_tab": false
+          }
+        },
+        "navigation_EEF6rw": {
+          "type": "navigation",
+          "settings": {
+            "title": "Shipping policy",
+            "page": "",
+            "link": "https://upperempire.com/policies/shipping-policy",
+            "is_open_in_new_tab": false
+          }
+        },
+        "navigation_jJgD3y": {
+          "type": "navigation",
+          "settings": {
+            "title": "Terms of Service",
+            "page": "",
+            "link": "https://upperempire.com/policies/terms-of-service",
+            "is_open_in_new_tab": false
           }
         }
       },
       "block_order": [
-        "social",
-        "newsletter",
-        "menu_nyiLVm"
+        "social_media_76xCBa",
+        "social_media_rELK4p",
+        "social_media_T47HmL",
+        "social_media_j86ky8",
+        "social_media_7egz3K",
+        "navigation_Hejrpw",
+        "navigation_F8zFcJ",
+        "navigation_EEF6rw",
+        "navigation_jJgD3y"
       ],
       "settings": {
-        "alignment": "left"
+        "footer_background_text_image": "shopify://shop_images/footer_image_Desktop.png",
+        "footer_background_text_image_mobile": "shopify://shop_images/footer_image_Mobile.png",
+        "footer_background_mask": "shopify://shop_images/mask-1.png",
+        "footer_background_text": "Upper empire"
       }
     },
-    "footer-bottom": {
-      "type": "footer-bottom",
+    "whatnot-events": {
+      "type": "whatnot-events",
+      "blocks": {
+        "whatnot_event_1A2B3C": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Winter Sneaker Collection",
+            "date_time": "11/29/2024, 10:00 AM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/1a2b3c123?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_4D5E6F": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Holiday Sneaker Extravaganza",
+            "date_time": "11/30/2024, 5:30 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/4d5e6f456?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_7G8H9I": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Luxury Leather Sneakers",
+            "date_time": "12/02/2024, 2:00 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/7g8h9i789?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_JK1L2M": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Retro Sneakers Revival",
+            "date_time": "12/03/2024, 6:45 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/jk1l2m123?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_N3O4P5": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "High-Performance Sneakers",
+            "date_time": "12/04/2024, 4:30 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/n3o4p5n3o4?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_Q6R7S8": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Classic Canvas Sneakers",
+            "date_time": "12/18/2024, 1:15 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/q6r7s8q6r?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_T9U1V2": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Designer Sneakers Showcase",
+            "date_time": "12/21/2024, 3:00 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/t9u1v2t9u?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_W3X4Y5": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "Custom Kicks Experience",
+            "date_time": "12/25/2024, 12:00 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/w3x4y5w3x?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        },
+        "whatnot_event_Z6A7B8": {
+          "type": "whatnot-event",
+          "settings": {
+            "heading": "End-of-Year Sneaker Sale",
+            "date_time": "12/30/2024, 7:30 PM",
+            "video": "shopify://files/videos/MJ 20k box.mp4",
+            "link": "https://www.whatnot.com/live/z6a7b8z6a?referringSource=listings_serp",
+            "sub_heading": "Upcoming Shows"
+          }
+        }
+      },
+      "block_order": [
+        "whatnot_event_1A2B3C",
+        "whatnot_event_4D5E6F",
+        "whatnot_event_7G8H9I",
+        "whatnot_event_JK1L2M",
+        "whatnot_event_N3O4P5",
+        "whatnot_event_Q6R7S8",
+        "whatnot_event_T9U1V2",
+        "whatnot_event_W3X4Y5",
+        "whatnot_event_Z6A7B8"
+      ],
       "settings": {
-        "show_methods_of_payment": true,
-        "center_content_on_desktop": true,
-        "footer_text": "",
-        "show_currency_selector": true,
-        "show_locale_selector": true
+        "default_heading": "EXCLUSIVE TRAVIS MERCH & UNRELEASED TRAVIS SHOE, $1 STARTS!",
+        "default_sub_heading": "No Upcoming Shows",
+        "default_video": "shopify://files/videos/MJ 20k box.mp4",
+        "link": "https://upperempire.com"
       }
     }
   },
   "order": [
     "footer-main",
-    "footer-bottom"
+    "whatnot-events"
   ]
 }

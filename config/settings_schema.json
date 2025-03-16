@@ -303,14 +303,10 @@
 				"default": 24
 			},
 			{
-				"type": "range",
+				"type": "text",
 				"id": "heading_spacing",
-				"min": 0,
-				"max": 5,
-				"step": 1,
-				"unit": "t:all.px",
 				"label": "t:all.Letter_spacing",
-				"default": 0
+				"default": "-0.02em"
 			},
 			{
 				"type": "select",

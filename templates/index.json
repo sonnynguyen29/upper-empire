@@ -1,281 +1,229 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "video_video_hero_iM9X83": {
-      "type": "video--video-hero",
-      "settings": {
-        "url": "https:\/\/www.youtube.com\/watch?v=1suFpXIuGDA&t=214s",
-        "desktopHeight": "450",
-        "mobileHeight": "250",
-        "title": "",
-        "subheading": "",
-        "textAlignment": "center",
-        "textColor": "#262428",
-        "textShadow": false,
-        "heading--text-size": 50,
-        "subheading--text-size": 24,
-        "link": "",
-        "button_label": "",
-        "button-text": "#ffffff",
-        "button-background": "#373737",
-        "hover-button-text": "#ffffff",
-        "hover-button-background": "#494949"
-      }
-    },
-    "3643d38b-24f2-4040-ab67-4b4b44a63aab": {
-      "type": "collection--featured-collection",
+    "hero_banner": {
+      "type": "hero-banner",
       "blocks": {
-        "template--15051013783622__3643d38b-24f2-4040-ab67-4b4b44a63aab-product_card_image-1": {
-          "type": "product_card_image",
+        "hero_banner_desktop_NJwjwc": {
+          "type": "hero_banner_desktop",
           "settings": {
-            "enable_quick_shop": false,
-            "disable_quick_shop_mobile": true
+            "hero_banner_image_desktop": "shopify://shop_images/desktop-hero-image.png",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
           }
         },
-        "template--15051013783622__3643d38b-24f2-4040-ab67-4b4b44a63aab-product_card_title-1": {
-          "type": "product_card_title",
+        "hero_banner_desktop_nabi6P": {
+          "type": "hero_banner_desktop",
           "settings": {
-            "product_card_title__font": "body"
+            "hero_banner_image_desktop": "shopify://shop_images/mp-desktop_88536c2a-1051-461e-9de9-46c7b565ed5c.jpg",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
           }
         },
-        "template--15051013783622__3643d38b-24f2-4040-ab67-4b4b44a63aab-product_card_price-1": {
-          "type": "product_card_price",
+        "hero_banner_desktop_jBMf4T": {
+          "type": "hero_banner_desktop",
           "settings": {
-            "product_card_price__font": "body"
+            "hero_banner_image_desktop": "shopify://shop_images/99235.png",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+          }
+        },
+        "hero_banner_mobile_WR4U9f": {
+          "type": "hero_banner_mobile",
+          "settings": {
+            "hero_banner_image_mobile": "shopify://shop_images/mobile-hero-image.png",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+          }
+        },
+        "hero_banner_mobile_XidkEr": {
+          "type": "hero_banner_mobile",
+          "settings": {
+            "hero_banner_image_mobile": "shopify://shop_images/mp-desktop_88536c2a-1051-461e-9de9-46c7b565ed5c.jpg",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
+          }
+        },
+        "hero_banner_mobile_MRnmCH": {
+          "type": "hero_banner_mobile",
+          "settings": {
+            "hero_banner_image_mobile": "shopify://shop_images/99235.png",
+            "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique."
           }
         }
       },
       "block_order": [
-        "template--15051013783622__3643d38b-24f2-4040-ab67-4b4b44a63aab-product_card_image-1",
-        "template--15051013783622__3643d38b-24f2-4040-ab67-4b4b44a63aab-product_card_title-1",
-        "template--15051013783622__3643d38b-24f2-4040-ab67-4b4b44a63aab-product_card_price-1"
+        "hero_banner_desktop_NJwjwc",
+        "hero_banner_desktop_nabi6P",
+        "hero_banner_desktop_jBMf4T",
+        "hero_banner_mobile_WR4U9f",
+        "hero_banner_mobile_XidkEr",
+        "hero_banner_mobile_MRnmCH"
       ],
+      "settings": {}
+    },
+    "product-grid-slide": {
+      "type": "product-grid-slide",
       "settings": {
-        "rows": 2,
-        "grid-desktop": 3,
-        "grid-mobile": "2",
-        "colors": "white",
-        "title": "NEW ARRIVALS",
-        "richtext": "",
+        "section_title": "New Arrivals",
+        "product_list": [
+          "adidas-yeezy-boost-350-v2-beluga-reflective",
+          "adidas-yeezy-boost-350-v2-bred-infants",
+          "adidas-yeezy-boost-350-v2-static-black-reflective",
+          "adidas-yeezy-boost-700-wave-runner",
+          "adidas-yeezy-desert-boot-oil",
+          "adidas-yeezy-desert-boot-rock",
+          "adidas-yeezy-boost-700-wave-runner-infants",
+          "adidas-yeezy-foam-runner-mx-cinder",
+          "adidas-yeezy-foam-runner-mx-granite",
+          "adidas-yeezy-foam-runner-sand"
+        ],
         "collection": "new-arrivals",
-        "show_view_all": true
+        "redirect_label": "● Shop all"
       }
     },
-    "image_gallery_Q4QX9m": {
-      "type": "image--gallery",
+    "collection-grid": {
+      "type": "collection-grid",
       "blocks": {
-        "image_YRWwyE": {
-          "type": "image",
+        "collection_JN6Jf9": {
+          "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_50802177_1.jpg",
-            "link": "",
-            "title": "",
-            "subheading": "",
-            "overlay-btn-text": "",
-            "show-gradient-overlay": false,
-            "overlay_font_color": "#262428",
-            "overlay_color": "#ffffff"
+            "collection": "adidas",
+            "collection_image": "shopify://shop_images/collection-grid-image-1.png",
+            "collection_text": "Nike Air Max Plus TNPO",
+            "collection_text_color": "#000000"
           }
         },
-        "image_UWUh7G": {
-          "type": "image",
+        "collection_9zy8YR": {
+          "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_50736641.jpg",
-            "link": "",
-            "title": "",
-            "subheading": "",
-            "overlay-btn-text": "",
-            "show-gradient-overlay": false,
-            "overlay_font_color": "#262428",
-            "overlay_color": "#ffffff"
+            "collection": "clothing",
+            "collection_image": "shopify://shop_images/collection-grid-image-2.png",
+            "collection_text": "Air Jordan 4 Retro \"Oxidized Green\"",
+            "collection_text_color": "#000000"
           }
         },
-        "image_CiUG6p": {
-          "type": "image",
+        "collection_g6NUeq": {
+          "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_50736641_1.jpg",
-            "link": "",
-            "title": "",
-            "subheading": "",
-            "overlay-btn-text": "",
-            "show-gradient-overlay": false,
-            "overlay_font_color": "#262428",
-            "overlay_color": "#ffffff"
+            "collection": "shirts-tops",
+            "collection_image": "shopify://shop_images/collection-grid-image-3.png",
+            "collection_text": "Nike Air Force 1 '07",
+            "collection_text_color": "#ffffff"
+          }
+        },
+        "collection_kqxfhm": {
+          "type": "collection",
+          "settings": {
+            "collection": "socks",
+            "collection_image": "shopify://shop_images/Frame_42.png",
+            "collection_text": "",
+            "collection_text_color": "#000000"
+          }
+        },
+        "collection_U7c8dK": {
+          "type": "collection",
+          "settings": {
+            "collection": "sneakers",
+            "collection_image": "shopify://shop_images/Frame_134.png",
+            "collection_text": "",
+            "collection_text_color": "#000000"
           }
         }
       },
       "block_order": [
-        "image_YRWwyE",
-        "image_UWUh7G",
-        "image_CiUG6p"
+        "collection_JN6Jf9",
+        "collection_9zy8YR",
+        "collection_g6NUeq",
+        "collection_kqxfhm",
+        "collection_U7c8dK"
       ],
       "settings": {
-        "colors": "white",
-        "title": "",
-        "richtext": "",
-        "remove-spacing": true,
-        "full-width": false,
-        "section-width": "full",
-        "content-position": "hide"
+        "section_title": "Our Collections"
       }
     },
-    "image_image_with_text_b8ADBp": {
-      "type": "image--image-with-text",
+    "video-section": {
+      "type": "video-section",
       "settings": {
-        "colors": "light",
-        "image": "shopify:\/\/shop_images\/seattler-15.jpg",
-        "text_overlapping_image": false,
-        "section-width": "full",
-        "layout": "left",
-        "text_alignment": "left",
-        "title": "Upper Empire Community",
-        "text": "<p>We are on a mission to create a close-knit community founded on authentic passion and admiration for sneakers. Our commitment is simple: putting the community first by creating an inclusive space for enthusiasts to connect and share. <\/p><p>Join Upper Empire, where every pair tells a story, and together we redefine the essence of sneaker culture.<\/p>",
-        "button_label": "READ MORE",
-        "button_link": "shopify:\/\/pages\/about-us"
+        "video": "shopify://files/videos/Travis j4.mp4",
+        "video_thumbnail": "shopify://shop_images/Travis_j4_1.png",
+        "image_right_side": "shopify://shop_images/11304_2.png",
+        "section_title": "We are on a mission to create a close-knit community founded on authentic passion and admiration for sneakers.",
+        "section_subtitle": "● Join our facebook group",
+        "section_subtitle_url": "https://www.facebook.com/groups/upperempire"
       }
     },
-    "50b03afc-6c7a-4252-94c2-7579c9d3b3ee": {
-      "type": "collage-builder",
+    "social-media-grid": {
+      "type": "social-media-grid",
       "blocks": {
-        "83447c73-f480-4c7d-8508-249f594f3aa3": {
-          "type": "image",
+        "instagram_image_m87PNa": {
+          "type": "instagram-image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/DSC09688.jpg",
-            "heading": "",
-            "heading_size": 28,
-            "button_label": "",
-            "url": "shopify:\/\/collections\/clothing",
-            "desktop_position": "md-min-align-center md-min-justify-left",
-            "mobile_position": "md-max-align-center md-max-justify-left",
-            "text_color": "#242424",
-            "button_color": "#e6e5e7",
-            "button_background_color": "#262428",
-            "button_hover_color": "#d4d3d4",
-            "button_hover_background_color": "#494949",
-            "overlay_color": "rgba(0,0,0,0)"
+            "image": "shopify://shop_images/432121939_774218811273980_7552797366821012998_n.jpg"
           }
         },
-        "0d4c44b0-cb7c-43dc-829a-743dfa47a878": {
-          "type": "image",
+        "instagram_image_ffCBar": {
+          "type": "instagram-image",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/phoenix-61_1.jpg",
-            "heading": "",
-            "heading_size": 28,
-            "button_label": "",
-            "url": "shopify:\/\/collections\/clothing",
-            "desktop_position": "md-min-align-center md-min-justify-left",
-            "mobile_position": "md-max-align-center md-max-justify-left",
-            "text_color": "#242424",
-            "button_color": "#e6e5e7",
-            "button_background_color": "#262428",
-            "button_hover_color": "#d4d3d4",
-            "button_hover_background_color": "#494949",
-            "overlay_color": "rgba(0,0,0,0)"
+            "image": "shopify://shop_images/432248630_948762373915641_6136749529405811846_n.jpg"
+          }
+        },
+        "instagram_image_nRnM9Q": {
+          "type": "instagram-image",
+          "settings": {
+            "image": "shopify://shop_images/432240444_887971216413761_2254936241483375737_n.jpg"
+          }
+        },
+        "instagram_image_xPCp3U": {
+          "type": "instagram-image",
+          "settings": {
+            "image": "shopify://shop_images/432121824_946114286865808_291591982407326616_n.jpg"
+          }
+        },
+        "whatnot_video_pLrzEj": {
+          "type": "whatnot-video",
+          "settings": {
+            "video": "shopify://files/videos/MJ 20k box.mp4"
+          }
+        },
+        "whatnot_image_E9hDgH": {
+          "type": "whatnot-image",
+          "settings": {
+            "image": "shopify://shop_images/432248613_7004019346391480_6408442333364406157_n.jpg"
+          }
+        },
+        "whatnot_image_FCwMAh": {
+          "type": "whatnot-image",
+          "settings": {
+            "image": "shopify://shop_images/432243864_323411054077131_7246398251192015688_n.jpg"
           }
         }
       },
       "block_order": [
-        "83447c73-f480-4c7d-8508-249f594f3aa3",
-        "0d4c44b0-cb7c-43dc-829a-743dfa47a878"
+        "instagram_image_m87PNa",
+        "instagram_image_ffCBar",
+        "instagram_image_nRnM9Q",
+        "instagram_image_xPCp3U",
+        "whatnot_video_pLrzEj",
+        "whatnot_image_E9hDgH",
+        "whatnot_image_FCwMAh"
       ],
       "settings": {
-        "color_scheme": "white",
-        "title": "",
-        "description": "",
-        "remove_spacing": false,
-        "section_width": "content",
-        "width_1": "2",
-        "height_1": "4",
-        "width_2": "2",
-        "height_2": "4",
-        "width_3": "3",
-        "height_3": "3",
-        "width_4": "2",
-        "height_4": "2",
-        "width_5": "2",
-        "height_5": "2",
-        "width_6": "1",
-        "height_6": "6",
-        "block_alignment": "center"
-      }
-    },
-    "3c4d9433-fe83-4e4a-afa6-63c348fea245": {
-      "type": "collection--featured-collection",
-      "blocks": {
-        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_image-1": {
-          "type": "product_card_image",
-          "settings": {
-            "enable_quick_shop": false,
-            "disable_quick_shop_mobile": true
-          }
-        },
-        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_title-1": {
-          "type": "product_card_title",
-          "settings": {
-            "product_card_title__font": "body"
-          }
-        },
-        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_price-1": {
-          "type": "product_card_price",
-          "settings": {
-            "product_card_price__font": "body"
-          }
-        },
-        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_quick_shop-1": {
-          "type": "product_card_quick_shop",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_image-1",
-        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_title-1",
-        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_price-1",
-        "template--14831909208134__3c4d9433-fe83-4e4a-afa6-63c348fea245-product_card_quick_shop-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "rows": 1,
-        "grid-desktop": 4,
-        "grid-mobile": "2",
-        "colors": "white",
-        "title": "BEST SELLERS",
-        "richtext": "",
-        "collection": "clothing",
-        "show_view_all": false
-      }
-    },
-    "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949": {
-      "type": "blog--blog-posts",
-      "blocks": {
-        "article_yWyh7C": {
-          "type": "article",
-          "settings": {
-            "blog_post_1": "news\/dior-x-jordan-1",
-            "blog_post_2": "news\/air-jordan-1-travis-x-fragment",
-            "blog_post_3": "news\/off-white-jordan-2-low",
-            "blog_post_4": ""
-          }
-        }
-      },
-      "block_order": [
-        "article_yWyh7C"
-      ],
-      "settings": {
-        "colors": "light",
-        "title": "Check out our blogs",
-        "richtext": "",
-        "blog_show_date": false,
-        "post_limit": 3
+        "instagram_image": "shopify://shop_images/instagram.png",
+        "instagram_title": "INSTAGRAM",
+        "whatnot_image": "shopify://shop_images/whatnot.png",
+        "whatnot_title": "WHATNOT"
       }
     }
   },
   "order": [
-    "video_video_hero_iM9X83",
-    "3643d38b-24f2-4040-ab67-4b4b44a63aab",
-    "image_gallery_Q4QX9m",
-    "image_image_with_text_b8ADBp",
-    "50b03afc-6c7a-4252-94c2-7579c9d3b3ee",
-    "3c4d9433-fe83-4e4a-afa6-63c348fea245",
-    "3f1d5abc-4a41-4b0f-98ca-29a6a3d95949"
+    "hero_banner",
+    "product-grid-slide",
+    "collection-grid",
+    "video-section",
+    "social-media-grid"
   ]
 }

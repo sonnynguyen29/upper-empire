@@ -1,0 +1,144 @@
+.product-section {
+  padding: 0 12px;
+  /* Arrow icon */
+  /* Rotate the SVG icon when details is open */
+}
+@media screen and (max-width: 767px) {
+  .product-section .product-single-wrapper .product-medias {
+    flex-direction: column;
+  }
+  .product-section .product-single-wrapper .product-medias .product-medias__main {
+    width: 100%;
+  }
+  .product-section .product-single-wrapper .product-medias .product-medias__main .swiper-pagination {
+    display: none;
+  }
+  .product-section .product-single-wrapper .product-medias .product-medias__thumbnails {
+    width: 100%;
+    display: flex !important;
+    overflow-x: scroll;
+  }
+}
+.product-section .product-price-group .product-price-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+.product-section .product-price-group .sold-out-badge-wrapper {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 5px;
+  border-radius: 5px;
+}
+.product-section #ComparePrice.sale-price {
+  color: rgba(0, 0, 0, 0.5);
+}
+.product-section .product-description {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  width: 80%;
+}
+.product-section .swatch:not(.is-color-swatch):not(.linked-products-swatch) .soldout label:after {
+  position: relative;
+}
+.product-section .swatch [data-swatch-option-available=true] label {
+  outline: 1px solid #000;
+}
+.product-section details {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+.product-section summary {
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-section summary svg {
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+.product-section details[open] summary .icon {
+  transform: scaleY(-1);
+}
+.product-section details[open] summary .icon .v-line {
+  display: none;
+}
+.product-section details[open] .content ul {
+  transition: opacity 0.3s ease 0.1s;
+  opacity: 1;
+}
+.product-section .content {
+  margin: 10px 0;
+  overflow: hidden;
+  transition: height 0.3s cubic-bezier(0.2, 0.6, 0.4, 1);
+}
+.product-section .content ul {
+  transition: opacity 0.3s ease 0s;
+  opacity: 0;
+}
+.product-section .content ul li {
+  list-style-type: none;
+  position: relative;
+}
+.product-section .content ul li::before {
+  content: "-"; /* Dash as bullet */
+  position: absolute;
+  left: -20px; /* Position dash outside the content */
+}
+.product-section .paymentButtonsWrapper {
+  margin: 60px 0 15px 0 !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 13px;
+}
+.product-section .paymentButtonsWrapper .add-to-cart--secondary#AddToCart {
+  background-color: transparent;
+  border-color: #000;
+  color: #000;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px !important;
+}
+.product-section .paymentButtonsWrapper .add-to-cart--secondary#AddToCart span.add-to-cart {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  align-items: center;
+}
+.product-section .paymentButtonsWrapper .add-to-cart--secondary#AddToCart:hover {
+  background-color: #000;
+  color: #fff;
+}
+.product-section .paymentButtonsWrapper .add-to-cart--secondary#AddToCart:hover svg path {
+  fill: #fff;
+}
+.product-section .paymentButtonsWrapper .add-to-cart--secondary#AddToCart.add-to-cart--secondary.disabled {
+  background: var(--secondary-btn-bg-color);
+  color: var(--secondary-btn-text-color);
+}
+.product-section .paymentButtonsWrapper #CheckOut {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+  border: 1px solid #000;
+  font-size: 14px;
+}
+.product-section .paymentButtonsWrapper #CheckOut:hover {
+  background-color: #fff;
+  color: #000;
+}
+.product-section .paymentButtonsWrapper #CheckOut:hover svg path {
+  fill: #000;
+}

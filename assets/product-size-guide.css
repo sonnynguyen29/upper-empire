@@ -1,0 +1,76 @@
+@charset "UTF-8";
+#product-size-guide .size-chart-container .size-chart-unit-switch button {
+  border: 1px solid #000;
+  color: #000;
+  padding: 15px 45px;
+  background-color: white;
+  width: 100px;
+  transition: all 0.3s;
+  font-weight: 500;
+  padding: 2px;
+}
+#product-size-guide .size-chart-container .size-chart-unit-switch button.active, #product-size-guide .size-chart-container .size-chart-unit-switch button:hover {
+  color: white;
+  background-color: black;
+  border-bottom: 3px solid #000;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table {
+  display: none;
+  visibility: hidden;
+  transition: all 0.3s;
+  overflow-x: auto;
+  cursor: all-scroll;
+  padding-bottom: 8px;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table,
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table th,
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table td {
+  border: 1px solid #e5e5e5;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table.visible {
+  display: block;
+  visibility: visible;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table {
+  font-size: 13px;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table thead th:first-child {
+  background-color: #e5e5e5;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table th:first-child {
+  width: 140px;
+  word-wrap: break-word;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: white;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table th:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table td,
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table th {
+  min-width: 100px;
+  text-align: center;
+  border-bottom: none;
+  padding: 12px;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table td:nth-child(even) {
+  background-color: #eceff1;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table ::-webkit-scrollbar {
+  height: 4px; /* height of horizontal scrollbar ← You're missing this */
+  width: 4px; /* width of vertical scrollbar */
+  border: 1px solid #d5d5d5;
+  -webkit-appearance: none;
+}
+#product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table.table-adidas-cm thead th, #product-size-guide .size-chart-container .size-chart-wrapper .size-chart-table table.table-adidas-inch thead th {
+  background-color: black;
+  color: white;
+}

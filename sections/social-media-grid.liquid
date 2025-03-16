@@ -1,0 +1,130 @@
+{{ 'social-media-grid.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign instagram_images = section.blocks | where: 'type', 'instagram-image'
+  assign whatnot_videos = section.blocks | where: 'type', 'whatnot-video'
+  assign whatnot_images = section.blocks | where: 'type', 'whatnot-image'
+%}
+
+<section id="social-media-grid">
+  <div class="social-media-wrapper">
+    {% render 'instagram-grid',
+      instagram_images: instagram_images,
+      title: section.settings.instagram_title,
+      logo_image: section.settings.instagram_image
+      url: section.settings.instagram_url
+    %}
+    <div class="whatnot-grid">
+      <div class="whatnot-grid-container">
+        <div class="whatnot-grid-title title-wrapper">
+          {% render 'responsive-image' with section.settings.whatnot_image %}
+          <a href="{{ section.settings.whatnot_url | default: '#' }}" class="title"><h2>{{ section.settings.whatnot_title }}</h2></a>
+        </div>
+        <div class="whatnot-grid-layout">
+          {% for video in whatnot_videos %}
+            <div class="whatnot-grid-video">
+              {% render 'whatnot-upcoming-event', video: video.settings.video %}
+            </div>
+          {% endfor %}
+          {% for image in whatnot_images %}
+            <div class="whatnot-grid-image image-grid-item">
+              <div class="image">
+                <a href="{{ image.settings.image_url | default: '#' }}">
+                  {% render 'responsive-image' with image.settings.image %}
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Social Media Grid",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "instagram_image",
+      "label": "Instagram Image"
+    },
+    {
+      "type": "text",
+      "id": "instagram_title",
+      "label": "Instagram Title",
+      "default": "INSTAGRAM"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram Url"
+    },
+    {
+      "type": "image_picker",
+      "id": "whatnot_image",
+      "label": "Whatnot Image"
+    },
+    {
+      "type": "text",
+      "id": "whatnot_title",
+      "label": "Whatnot Title",
+      "default": "WHATNOT"
+    },
+    {
+      "type": "url",
+      "id": "whatnot_url",
+      "label": "Whatnot Url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "instagram-image",
+      "name": "Instagram Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "image_url",
+          "label": "Image Link"
+        }
+      ],
+      "limit": 4
+    },
+    {
+      "type": "whatnot-video",
+      "name": "Whatnot Video",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "whatnot-image",
+      "name": "Whatnot Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "image_url",
+          "label": "Image Link"
+        }
+      ],
+      "limit": 2
+    }
+  ]
+}
+{% endschema %}

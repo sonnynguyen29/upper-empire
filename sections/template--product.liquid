@@ -1,3 +1,10 @@
+<link
+  rel="preload"
+  href="{{ 'product-details.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+>
+
 <div
   itemscope
   itemtype="http://schema.org/Product"
@@ -269,10 +276,24 @@
                                   v-if="isSale"
                                   v-money="variant.compare_at_price"
                                 >
-                                  <span class="money">{{ current_variant.compare_at_price | money }}</span>
+                                  <span
+                                    class="money"
+                                  >
+                                    {{- current_variant.compare_at_price | divided_by: 100 | money -}}
+                                  </span>
                                 </p>
 
-                                {% render 'product-pricing', current_variant: current_variant %}
+                                {% if current_variant.available == false %}
+                                  {% assign sold_out_badge_settings = section.blocks
+                                    | where: 'type', 'sold-out-badge'
+                                    | first
+                                  %}
+                                {% endif %}
+
+                                {% render 'product-pricing',
+                                  current_variant: current_variant,
+                                  sold_out_badge_settings: sold_out_badge_settings
+                                %}
                                 {% render 'unit-price-measurement-variant', variant: current_variant %}
                               </div>
 
@@ -436,12 +457,14 @@
                               </div>
                             {%- endif -%}
 
-                          {%- when 'separator' -%}
-                            <div
-                              class="product-form-separator {{ spacing_classes }}"
-                              style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
-                              {{ block.shopify_attributes }}
-                            ></div>
+                            {% comment %}
+                              {%- when 'separator' -%}
+                              <div
+                                class="product-form-separator {{ spacing_classes }}"
+                                style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
+                                {{ block.shopify_attributes }}
+                              ></div>
+                            {% endcomment %}
 
                           {%- when 'collapsible-tab' -%}
                             {% liquid
@@ -498,145 +521,97 @@
                               {% endif %}
                             {%- endif -%}
 
-                          {%- when 'quantity' -%}
-                            <div
-                              class="{{ spacing_classes }} {% if section.settings.image_size == 'large' %}col-md-12{% else %}col-md-6{% endif %} col-sm-12 col-xs-12"
-                              style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
-                              {{ block.shopify_attributes }}
-                            >
-                              <label for="Quantity" class="quantity-selector product-sub-label label-font">
-                                {{- 'products.product.quantity' | t -}}
-                              </label>
-
-                              <div class="js-qty">
-                                <button
-                                  type="button"
-                                  aria-label="-"
-                                  class="js-qty__adjust js-qty__adjust--minus icon-fallback-text"
-                                  v-on:click="decreaseQuantity"
-                                >
-                                  {% render 'theme-icon' with icon: 'minus', iconClasses: 'flex-full', iconAttributes: 'aria-hidden="true"' %}
-                                  <span class="fallback-text">−</span>
-                                </button>
-                                <input
-                                  v-model="quantity"
-                                  type="text"
-                                  class="js-qty__num"
-                                  value="1"
-                                  min="1"
-                                  aria-label="quantity"
-                                  pattern="[0-9]*"
-                                  name="quantity-js"
-                                  id="Quantity"
-                                >
-                                <button
-                                  type="button"
-                                  aria-label="+"
-                                  class="js-qty__adjust js-qty__adjust--plus icon-fallback-text"
-                                  v-on:click="increaseQuantity"
-                                >
-                                  {% render 'theme-icon' with icon: 'plus', iconClasses: 'flex-full', iconAttributes: 'aria-hidden="true"' %}
-                                  <span class="fallback-text">+</span>
-                                </button>
-                              </div>
-
-                              <noscript>
-                                <input
-                                  class="quantity-noscript"
-                                  type="number"
-                                  name="quantity"
-                                  id="Quantity-{{ section.id }}"
-                                  aria-label="quantity"
-                                  min="1"
-                                  value="1"
-                                >
-                              </noscript>
-                            </div>
-
-                          {%- when 'buy_buttons' -%}
-                            {% liquid
-                              assign is_pre_order_product = product.metafields.custom.pre_order
-                            %}
-                            {% if is_pre_order_product == true %}
-                              {% liquid
-                                for block in section.blocks
-                                  if block.type == 'pre-order-button'
-                                    assign block_settings = block.settings
-                                  endif
-                                endfor
-
-                                render 'pre-order-button', block_settings: block_settings
-                              %}
-                            {% else %}
+                            {% comment %}
+                              {%- when 'quantity' -%}
                               <div
-                                class="{{ spacing_classes }}"
+                                class="{{ spacing_classes }} {% if section.settings.image_size == 'large' %}col-md-12{% else %}col-md-6{% endif %} col-sm-12 col-xs-12"
                                 style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
                                 {{ block.shopify_attributes }}
                               >
-                                {%- if product.gift_card?
-                                  and block.settings.enable_gift_card_recipient_form
-                                  and product.available
-                                -%}
-                                  {% render 'gift-card-recipient-form' %}
-                                {%- endif -%}
+                                <label for="Quantity" class="quantity-selector product-sub-label label-font">
+                                  {{- 'products.product.quantity' | t -}}
+                                </label>
 
-                                <div class="paymentButtonsWrapper">
+                                <div class="js-qty">
                                   <button
-                                    type="submit"
-                                    data-cart-url="{{ routes.cart_url }}"
-                                    aria-label="{{ 'products.product.add_to_cart' | t }}"
-                                    name="add"
-                                    id="AddToCart"
-                                    class="btn{% if buttons_block.settings.show_smart_checkout and product.selling_plan_groups.size == 0 %} add-to-cart--secondary{% endif %}"
-                                    v-bind:class="{ disabled: addToCartDisabled }"
-                                    v-bind:disabled="addToCartDisabled"
+                                    type="button"
+                                    aria-label="-"
+                                    class="js-qty__adjust js-qty__adjust--minus icon-fallback-text"
+                                    v-on:click="decreaseQuantity"
                                   >
-                                    {% assign icon_attrs = 'v-if="state === '
-                                      | append: "'adding'"
-                                      | append: '" v-cloak'
-                                    %}
-                                    {% render 'theme-icon' with icon: 'circle-notch', iconClasses: 'spin js fa-2x flex-full', iconAttributes: icon_attrs, icon_fill: settings.color_primary_button_text -%}
-                                    <span class="sr-only">{{ 'collections.paginate.loading' | t }}</span>
-                                    <span
-                                      class="{% if current_variant.available %}js{% endif %}"
-                                      v-if="state === 'ready'"
-                                      {% unless current_variant.available %}
-                                        v-cloak
-                                      {% endunless %}
-                                    >
-                                      {{- 'products.product.add_to_cart' | t -}}
-                                    </span>
-                                    <span class="js" v-if="state === 'added'" v-cloak>
-                                      {{- 'products.product.added' | t -}}
-                                    </span>
-                                    <span
-                                      class="{% unless current_variant.available %}js{% endunless %}"
-                                      v-if="state === 'soldOut'"
-                                      v-cloak
-                                    >
-                                      {{- 'products.product.sold_out' | t -}}
-                                    </span>
-                                    <span class="js" v-if="state === 'unavailable'" v-cloak>
-                                      {{- 'products.product.unavailable' | t -}}
-                                    </span>
+                                    {% render 'theme-icon' with icon: 'minus', iconClasses: 'flex-full', iconAttributes: 'aria-hidden="true"' %}
+                                    <span class="fallback-text">−</span>
                                   </button>
-
-                                  <noscript>
-                                    <button
-                                      type="submit"
-                                      class="btn"
-                                      aria-label="{{ 'products.product.add_to_cart' | t }}"
-                                    >
-                                      <span>{{ 'products.product.add_to_cart' | t }}</span>
-                                    </button>
-                                  </noscript>
-
-                                  {% if buttons_block.settings.show_smart_checkout %}
-                                    {{ form | payment_button }}
-                                  {% endif %}
+                                  <input
+                                    v-model="quantity"
+                                    type="text"
+                                    class="js-qty__num"
+                                    value="1"
+                                    min="1"
+                                    aria-label="quantity"
+                                    pattern="[0-9]*"
+                                    name="quantity-js"
+                                    id="Quantity"
+                                  >
+                                  <button
+                                    type="button"
+                                    aria-label="+"
+                                    class="js-qty__adjust js-qty__adjust--plus icon-fallback-text"
+                                    v-on:click="increaseQuantity"
+                                  >
+                                    {% render 'theme-icon' with icon: 'plus', iconClasses: 'flex-full', iconAttributes: 'aria-hidden="true"' %}
+                                    <span class="fallback-text">+</span>
+                                  </button>
                                 </div>
+
+                                <noscript>
+                                  <input
+                                    class="quantity-noscript"
+                                    type="number"
+                                    name="quantity"
+                                    id="Quantity-{{ section.id }}"
+                                    aria-label="quantity"
+                                    min="1"
+                                    value="1"
+                                  >
+                                </noscript>
                               </div>
+                            {% endcomment %}
+
+                          {% when 'product-size-guide' %}
+                            {% if product.tags contains 'Sneaker' %}
+                              {% render 'product-size-guide', settings: block.settings, product: product %}
                             {% endif %}
+
+                          {% when 'product-shipping-return' %}
+                            {% render 'product-shipping-return', settings: block.settings %}
+
+                          {% when 'size_notice' %}
+                            {% if product.tags contains 'Sneaker'
+                              and product.tags contains 'Men'
+                              and product.vendor == 'Nike'
+                            %}
+                              <div id="size_notice" style="margin-top: 30px;">{{ block.settings.notice }}</div>
+                            {% endif %}
+
+                          {%- when 'buy_buttons' -%}
+                            {% liquid
+                              for block in section.blocks
+                                if block.type == 'pre-order-button'
+                                  assign block_settings = block.settings
+                                endif
+                              endfor
+                            %}
+                            {% render 'product-buy-buttons',
+                              block: block,
+                              product: product,
+                              buttons_block: buttons_block,
+                              current_variant: current_variant,
+                              routes: routes,
+                              settings: settings,
+                              form: form,
+                              block_settings: block_settings
+                            %}
 
                           {%- when 'local_pickup' -%}
                             <div
@@ -719,16 +694,18 @@
                               </div>
                             {%- endif -%}
 
-                          {%- when 'social_sharing' -%}
-                            {%- if settings.share_facebook or settings.share_x or settings.share_pinterest %}
-                              <div
-                                class="{{ spacing_classes }}"
-                                style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
-                                {{ block.shopify_attributes }}
-                              >
-                                {% render 'social-share' %}
-                              </div>
-                            {%- endif -%}
+                            {% comment %}
+                              {%- when 'social_sharing' -%}
+                              {%- if settings.share_facebook or settings.share_x or settings.share_pinterest %}
+                                <div
+                                  class="{{ spacing_classes }}"
+                                  style="--custom-margin-bottom: {{ block.settings.margin_bottom }}px"
+                                  {{ block.shopify_attributes }}
+                                >
+                                  {% render 'social-share' %}
+                                </div>
+                              {%- endif -%}
+                            {% endcomment %}
 
                           {%- when 'custom_liquid' -%}
                             {%- if block.settings.custom_liquid != blank -%}
@@ -919,12 +896,15 @@
                       <div class="errors qty-error" v-if="hasErrors" v-html="hasErrors" v-cloak></div>
                     {% endform %}
 
-                    {% if section.settings.show_out_of_stock_email %}
+                    {% comment %}
                       {% render 'out-of-stock-form' %}
-                      <div class="shopify-disclaimer--hidden">
-                        {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
-                      </div>
-                    {% endif %}
+                      {% if section.settings.show_out_of_stock_email %}
+                        {% render 'out-of-stock-form' %}
+                        <div class="shopify-disclaimer--hidden">
+                          {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+                        </div>
+                      {% endif %}
+                    {% endcomment %}
                   </div>
                 </div>
               </div>
@@ -957,6 +937,8 @@
       </style>
   {%- endcase -%}
 {%- endfor -%}
+
+<script src="{{ 'product-details-collapse.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
@@ -2789,6 +2771,66 @@
       ]
     },
     {
+      "type": "product-size-guide",
+      "name": "Product Size Guide",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Block Settings"
+        },
+        {
+          "type": "text",
+          "id": "block_title",
+          "label": "Block Title",
+          "default": "Size guide"
+        },
+        {
+          "type": "text",
+          "id": "block_content",
+          "label": "Block Content",
+          "default": "<ul><li>Nike Wmns Air Max SNDR</li><li>Neoprene upper</li><li>Lace shroud with zip closure</li><li>Pull tab on heel</li><li>3M reflective detailing</li><li>Foam midsole</li><li>Rubber outsole</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "product-shipping-return",
+      "name": "Product Shipping&Return",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Block Settings"
+        },
+        {
+          "type": "text",
+          "id": "block_title",
+          "label": "Block Title",
+          "default": "Shipping and return"
+        },
+        {
+          "type": "text",
+          "id": "block_content",
+          "label": "Block Content",
+          "default": "<ul><li>Nike Wmns Air Max SNDR</li><li>Neoprene upper</li><li>Lace shroud with zip closure</li><li>Pull tab on heel</li><li>3M reflective detailing</li><li>Foam midsole</li><li>Rubber outsole</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "size_notice",
+      "name": "Size Notice",
+      "settings": [
+        {
+          "type": "html",
+          "id": "notice",
+          "label": "Notice"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection Notice"
+        }
+      ]
+    },
+    {
       "type": "pre-order-button",
       "name": "Pre-order Button",
       "limit": 1,
@@ -2803,7 +2845,7 @@
           "type": "text",
           "id": "button_text",
           "label": "Button Text",
-          "default": "Pre-order"
+          "default": "Sold Out - Click here to be notified by email when product becomes available"
         },
         {
           "type": "text",
@@ -2816,6 +2858,31 @@
           "id": "form_submit_button_text",
           "label": "Form Button Text",
           "default": "Submit"
+        }
+      ]
+    },
+    {
+      "type": "sold-out-badge",
+      "name": "Sold Out Badge",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "badge_color",
+          "label": "Badge Color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "badge_text_color",
+          "label": "Badge Text Color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Badge Text",
+          "default": "Sold Out"
         }
       ]
     }

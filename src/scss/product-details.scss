@@ -1,0 +1,188 @@
+.product-section {
+    padding: 0 12px;
+
+    .product-single-wrapper {
+        @media screen and (max-width: 767px) {
+            .product-medias {
+                flex-direction: column;
+
+                .product-medias__main {
+                    width: 100%;
+
+                    .swiper-pagination {
+                        display: none;
+                    }
+                }
+
+                .product-medias__thumbnails {
+                    width: 100%;
+                    display: flex !important;
+                    overflow-x: scroll;
+                }
+            }
+        }
+    }
+
+    .product-details-product-title {
+        // font-weight: 500;
+        // font-size: 14px;
+    }
+
+    .product-price-group {
+        // font-size: 14px;
+
+        .product-price-wrapper {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            flex-direction: row;
+        }
+
+        .sold-out-badge-wrapper {
+            font-size: 10px;
+            font-weight: 800;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+
+    #ComparePrice.sale-price {
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .product-description {
+        // font-size: 12px;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 500;
+        width: 80%;
+    }
+
+    .swatch:not(.is-color-swatch):not(.linked-products-swatch) .soldout label {
+        &:after {
+            position: relative;
+        }
+    }
+
+    .swatch [data-swatch-option-available="true"] label {
+        outline: 1px solid #000;
+    }
+
+    details {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #000;
+    }
+
+    summary {
+        font-weight: 500;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Arrow icon */
+    summary svg {
+        transition: transform 0.3s ease;
+        margin-left: 10px;
+    }
+
+    /* Rotate the SVG icon when details is open */
+    details[open] {
+        summary .icon {
+            transform: scaleY(-1);
+
+            .v-line {
+                display: none;
+            }
+        }
+
+        .content ul {
+            transition: opacity 0.3s ease 0.1s;
+            opacity: 1;
+        }
+    }
+
+    .content {
+        margin: 10px 0;
+        overflow: hidden;
+        transition: height 0.3s cubic-bezier(0.2, 0.6, 0.4, 1);
+
+        ul {
+            transition: opacity 0.3s ease 0s;
+            opacity: 0;
+            li {
+                list-style-type: none;
+                position: relative;
+            }
+
+            & li::before {
+                content: "-"; /* Dash as bullet */
+                position: absolute;
+                left: -20px; /* Position dash outside the content */
+            }
+        }
+    }
+
+    .paymentButtonsWrapper {
+        margin: 60px 0 15px 0 !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 13px;
+
+        .add-to-cart--secondary#AddToCart {
+            background-color: transparent;
+            border-color: #000;
+            color: #000;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px !important;
+
+            span.add-to-cart {
+                display: flex;
+                justify-content: center;
+                gap: 14px;
+                align-items: center;
+            }
+
+            &:hover {
+                background-color: #000;
+                color: #fff;
+
+                svg path {
+                    fill: #fff;
+                }
+            }
+
+            &.add-to-cart--secondary.disabled {
+                background: var(--secondary-btn-bg-color);
+                color: var(--secondary-btn-text-color);
+            }
+        }
+
+        #CheckOut {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            height: 100%;
+            border: 1px solid #000;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #fff;
+                color: #000;
+
+                svg path {
+                    fill: #000;
+                }
+            }
+        }
+    }
+}

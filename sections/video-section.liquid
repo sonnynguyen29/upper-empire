@@ -1,0 +1,58 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+<section id="video-section">
+  <div class="video-section-container">
+    <div class="column video-section-wrapper">
+      <div id="video-section">
+        {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+      </div>
+    </div>
+    <div class="column image-right-side-wrapper">
+      {{ section.settings.image_right_side | image_url: height: 400 | image_tag }}
+      <div class="video-section-title-wrapper">
+        <h2 class="video-section-brand-name">Upper Empire</h2>
+        <div class="video-section-title-wrapper-content">
+          <h2>{{ section.settings.section_title }}</h2>
+          <a href="{{ section.settings.section_subtitle_url }}">{{ section.settings.section_subtitle }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Video Section",
+  "settings": [
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "video_thumbnail",
+      "label": "Video Thumbnail"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_right_side",
+      "label": "Image Right Side"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title"
+    },
+    {
+      "type": "text",
+      "id": "section_subtitle",
+      "label": "Section Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "section_subtitle_url",
+      "label": "Section Subtitle URL"
+    }
+  ]
+}
+{% endschema %}

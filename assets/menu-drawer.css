@@ -1,0 +1,42 @@
+#NavDrawer.drawer .mobile-nav__logo-title {
+  padding: 0 10px;
+}
+#NavDrawer.drawer .mobile-nav__logo-title .mobile-nav__logo-title--inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: none;
+}
+#NavDrawer.drawer .mobile-nav__logo-title .mobile-nav__logo-title--inner .mobile-nav__logo-title--title {
+  font-weight: 700;
+}
+#NavDrawer.drawer .mobile-nav__logo-title .mobile-nav__logo-title--inner .mobile-menu--close-btn {
+  display: none;
+}
+#NavDrawer.drawer .mobile-nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#NavDrawer.drawer .mobile-nav .mobile-nav__item.top-level {
+  padding: 8px 0;
+}
+#NavDrawer.drawer .mobile-nav .mobile-nav__item.top-level a {
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+#NavDrawer.drawer .mobile-nav .mobile-nav__item.top-level .mobile-nav__toggle {
+  padding: 0;
+}
+#NavDrawer.drawer .mobile-nav .mobile-nav__item.top-level > .mobile-nav__sublist > .mobile-nav__item {
+  padding-top: 15px;
+}
+#NavDrawer.drawer .mobile-nav .mobile-nav__item .mobile-nav__sublist {
+  border-left: unset;
+  padding: 0;
+}
+#NavDrawer.drawer .mobile-nav .mobile-nav__item .mobile-nav__sublist .third-child__nav-item a {
+  color: rgba(0, 0, 0, 0.6);
+}

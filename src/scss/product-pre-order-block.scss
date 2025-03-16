@@ -63,19 +63,20 @@
                 }
             }
 
+            .form.hidden {
+                display: none;
+            }
+
             pre-order-form {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
 
-                &.hidden {
-                    display: none;
-                }
-
                 .form-field {
                     position: relative;
 
-                    input {
+                    input,
+                    textarea {
                         width: 100%;
                         padding: 22.5px 15px 7.5px 15px;
                         border: 1px solid var(--border-color);
@@ -158,8 +159,8 @@
             }
         }
 
-        .success-notification {
-            position: absolute;
+        .submitted-notification {
+            // position: absolute;
             top: 0;
             right: 0;
             background-color: white;
@@ -168,11 +169,6 @@
             padding: 30px;
             text-align: center;
         }
-    }
-
-    .pre-order-button {
-        width: 100%;
-        max-width: none;
     }
 }
 
