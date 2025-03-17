@@ -41,7 +41,7 @@
   gap: 8px;
   flex-direction: column;
 }
-.about--events__main-event__title {
+.about--events__main-event__title a {
   font-weight: 800;
   font-size: 24px;
   line-height: 100%;
@@ -170,16 +170,18 @@
 }
 @media screen and (min-width: 1280px) {
   .about--events {
-    padding: 0 8px;
+    padding: 30px 8px;
+  }
+  .about--events__container {
+    max-width: 1440px;
+    margin: 0 auto;
   }
   .about--events__header {
     width: 100%;
   }
-  .about--events__header__title {
+  .about--events__header__title h2 {
     font-size: 60px;
     line-height: 100%;
-  }
-  .about--events__header__title h2 {
     margin: 0;
   }
   .about--events__header__subtitle {

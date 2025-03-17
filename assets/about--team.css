@@ -1,5 +1,9 @@
-.about-team__container {
+.about-team {
   background: rgb(3, 3, 3);
+}
+.about-team__container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .about-team__wrapper {
   display: grid;
@@ -15,6 +19,9 @@
   height: 100%;
 }
 @media screen and (min-width: 1280px) {
+  .about-team {
+    padding: 23px 8px;
+  }
   .about-team__wrapper {
     padding: 0 8px;
     display: grid;

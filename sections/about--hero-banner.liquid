@@ -1,8 +1,22 @@
 {{ 'about--hero-banner.css' | asset_url | stylesheet_tag }}
 
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.76/build/spline-viewer.js"></script>
+
+<style>
+  .sticky-header {
+    position: static !important;
+  }
+</style>
+
 <section class="about-hero-banner">
   <div class="hero-banner-video">
-    {{ section.settings.hero_banner_video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+    <div class="hero-banner-video__wrapper">
+      {{ section.settings.hero_banner_video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+      <div class="hero-banner-video__wrapper__logo">
+        <spline-viewer url="https://prod.spline.design/5NBEfxhymyhmmjQ3/scene.splinecode"></spline-viewer>
+      </div>
+    </div>
+    <div class="hero-banner-video__overlay"></div>
     <div class="hero-banner-content">
       {{
         section.settings.title_image
@@ -16,11 +30,63 @@
   <div class="navigation-container">
     <div class="navigation">
       <a href="#about-culture" class="navigation__link">Culture</a>
-      <a href="#about-values" class="navigation__link">Team</a>
-      <a href="#about-team" class="navigation__link">Events</a>
+      <a href="#about-team" class="navigation__link">Team</a>
+      <a href="#about-events" class="navigation__link">Events</a>
     </div>
   </div>
 </section>
+
+<script>
+  window.onload = function () {
+    setTimeout(() => {
+      const splineViewer = document.querySelector('spline-viewer');
+      if (splineViewer && splineViewer.shadowRoot) {
+        const logo = splineViewer.shadowRoot.querySelector('#logo');
+        if (logo) {
+          logo.style.display = 'none';
+        }
+      }
+    }, 1000);
+
+    document.querySelectorAll('.navigation__link').forEach((link) => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          const offset = 57; // Adjust based on your actual navbar height
+          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: elementPosition - offset,
+            behavior: 'smooth',
+          });
+        }
+      });
+    });
+
+    const nav = document.querySelector('.navigation');
+    const navContainer = document.querySelector('.navigation-container');
+    const navHeight = nav.offsetHeight;
+    const navOffset = navContainer.offsetTop + navContainer.offsetHeight;
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY >= navOffset) {
+        navContainer.style.position = 'fixed';
+        navContainer.style.top = '0';
+        navContainer.style.left = '0';
+        navContainer.style.width = '100%';
+        navContainer.style.zIndex = '1000';
+        navContainer.style.paddingTop = `0`;
+        navContainer.style.marginTop = '0';
+      } else {
+        navContainer.style.position = 'relative';
+        navContainer.style.paddingTop = '0';
+        navContainer.style.marginTop = '30px';
+      }
+    });
+  };
+</script>
 
 {% schema %}
 {

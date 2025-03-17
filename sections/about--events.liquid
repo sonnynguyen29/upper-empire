@@ -5,7 +5,7 @@
   assign event_list = section.blocks | where: 'type', 'event'
 %}
 
-<section class="about--events">
+<section id="about-events" class="about--events">
   <div class="about--events__container">
     <div class="about--events__wrapper">
       <div class="about--events__header">
@@ -20,11 +20,15 @@
       </div>
       <div class="about--events__main-event">
         <div class="about--events__main-event__video">
-          {{ main_event.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+          <a href="{{ main_event.settings.event-page }}">
+            {{ main_event.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+          </a>
         </div>
         <div class="about--events__main-event__content">
           <div class="about--events__main-event__title">
-            {{ main_event.settings.title }}
+            <a href="{{ main_event.settings.event-page }}">
+              {{ main_event.settings.title }}
+            </a>
           </div>
           <div class="about--events__main-event__info-wrapper">
             <div class="about--events__main-event__location">
