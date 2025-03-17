@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+window.onload = function () {
     new Splide('.video-embed__splide', {
         type: 'slide',
         perPage: 2,
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         arrows: false,
         mediaQuery: 'min',
         // gap: '8px',
-        padding: { left: 0, right: '20%'},
+        padding: { left: 0, right: '20%' },
         breakpoints: {
             1280: {
                 perPage: 5,
@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
         },
     }).mount();
-
-});
+}
 
 let videoPlayers = document.querySelectorAll(".video-embed-grid__video");
 let thumbnails = document.querySelectorAll(".video-embed-grid__thumbnail_grid__thumbnail");
