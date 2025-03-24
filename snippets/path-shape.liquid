@@ -1,0 +1,109 @@
+{% comment %}
+   <svg width="1515" height="307" viewBox="0 0 1515 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M733.893 145.792C366.726 269.615 107.459 96.0752 0.0701311 22.4941L0.0701314 161.702C157.176 288.977 477.521 358.492 752.864 260.771C998.387 173.634 1359.56 115.184 1514.15 119.757L1507.49 0.618616C1440.07 1.97617 1160.2 2.02384 733.893 145.792Z" fill="#EFDC2C"/>
+  </svg>
+
+  <svg width="1831" height="333" viewBox="0 0 1831 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M35 129.128C99 173 479.8 373.528 887 207.128C1294.2 40.7276 1678.33 49.7943 1819.5 75.1276" stroke="#EFDC2C" stroke-width="121"/>
+  </svg>
+
+      <!-- Văn bản chạy trên đường cong -->
+
+    <!-- Đường cong cho văn bản -->
+    <path id="textPathCurve"
+      d="M-10.04 104.995C609.169 481.893 737.826 82.87 1530.906 73.772"
+      fill="transparent" stroke="none"/>
+
+
+    <text font-size="50" font-weight="bold" fill="black">
+      <textPath href="#textPathCurve">
+        <animate attributeName="startOffset" from="-100%" to="100%" dur="18s" begin="0s" repeatCount="indefinite"/>
+        Unite sneaker enthusiasts and members around the world
+      </textPath>
+    </text>
+
+    <!-- Second text animation -->
+    <text font-size="50" font-weight="bold" fill="red" display="none">
+      <textPath href="#textPathCurve">
+        <animate attributeName="startOffset" from="-120%" to="100%" dur="18s" begin="8s" repeatCount="indefinite"/>
+        Unite sneaker enthusiasts and members around the world
+      </textPath>
+    </text>
+{% endcomment %}
+
+{{ 'path--shape.css' | asset_url | stylesheet_tag }}
+<div class="path-shape">
+  <div class="path-shape__background">
+    <svg
+      width="100vw"
+      height="330px"
+      viewBox="0 0 1515 307"
+      preserveAspectRatio="none"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <!-- Background Shape -->
+      <path d="M733.893 145.792C366.726 269.615 107.459 96.0752.0701 22.4941L.0701 161.702C157.176 288.977 477.521 358.492 752.864 260.771 998.387 173.634 1359.56 115.184 1514.15 119.757L1519.886 2.143C1440.07 1.9762 1160.2 2.0238 733.893 145.792Z" fill="#EFDC2C"/>
+    </svg>
+  </div>
+  <div
+    class="path-shape__content"
+    style="opacity: 0;"
+  >
+    <svg
+      width="100vw"
+      height="330px"
+      viewBox="0 0 1515 307"
+      preserveAspectRatio="none"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <!-- Đường cong cho văn bản -->
+      <path id="textPathCurve"
+        d="M.437 80.146C725.85 418.531 573.577 75.916 1523.17 39.962"
+        fill="transparent" stroke="121"/>
+
+      <!-- Văn bản chạy trên đường cong -->
+
+      <text font-size="50" font-weight="bold" fill="black">
+        <textPath href="#textPathCurve">
+          <animate attributeName="startOffset" from="0%" to="100%" dur="10s" begin="0s"/>
+          Unite sneaker enthusiasts and members around the world
+        </textPath>
+      </text>
+
+      <text font-size="50" font-weight="bold" fill="black" style="opacity: 0">
+        <textPath href="#textPathCurve">
+          <animate attributeName="startOffset" from="-100%" to="100%" dur="18s" begin="1s" repeatCount="indefinite"/>
+          Unite sneaker enthusiasts and members around the world
+        </textPath>
+      </text>
+
+      <!-- Second text animation -->
+ed
+      <text font-size="50" font-weight="bold" fill="black" style="opacity: 0">
+        <textPath href="#textPathCurve">
+          <animate attributeName="startOffset" from="-100%" to="100%" dur="18s" begin="10s" repeatCount="indefinite"/>
+          Unite sneaker enthusiasts and members around the world
+        </textPath>
+      </text>
+    </svg>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(() => {
+      document.querySelector('.path-shape__content').style.opacity = 1;
+    }, 500);
+    setTimeout(() => {
+      document.querySelectorAll('.path-shape__content text')[1].style.opacity = 1;
+    }, 2500);
+    setTimeout(() => {
+      document.querySelectorAll('.path-shape__content text')[0].style.opacity = 0;
+    }, 10000);
+    setTimeout(() => {
+      document.querySelectorAll('.path-shape__content text')[2].style.opacity = 1;
+    }, 11000);
+  });
+</script>

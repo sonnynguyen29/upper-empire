@@ -1,5 +1,5 @@
 .event-video-embed-section {
-    padding: 20px 8px 15px 8px;
+    padding: 20px 0 15px 0;
     border-bottom: 1px solid #CECECE;
     display: flex;
     justify-content: center;
@@ -19,8 +19,9 @@
         width: 100%;
 
         .video-embed-container {
-            max-width: 1000px;
+            max-width: 1440px;
             margin: 0 auto;
+            padding: 0 8px;
         }
 
         &__video {
@@ -31,11 +32,11 @@
         }
 
         &__thumbnail_grid {
-            max-width: 1000px;
+            max-width: 1440px;
             margin: 0 auto;
 
             &__thumbnail {
-                margin: 8px 0px 8px 8px;
+                margin: 8px 0px;
 
                 img {
                     border-radius: 8px;
@@ -63,11 +64,12 @@
         }
 
         .video-embed-grid {
-
+            .video-embed-container {
+                padding: 0;
+            }
+            
             &__video {
-                aspect-ratio: 16 / 9;
-                width: 100% !important;
-                min-width: 1000px;
+                width: 100vw;
             }
 
             &__thumbnail_grid {
@@ -76,7 +78,7 @@
                 // }
 
                 &__thumbnail {
-                    margin: 16px 0px 16px 16px;
+                    margin: 16px 0px;
                     cursor: pointer;
                     transition: box-shadow 0.3s ease;
                     border-radius: 10px;
@@ -85,6 +87,7 @@
                         border-radius: 8px;
                         object-fit: cover;
                         max-height: 100px;
+                        aspect-ratio: 1.4;
                     }
 
                     &--active,
@@ -96,6 +99,14 @@
                     }
                 }
 
+            }
+        }
+    }
+
+    @media screen and (min-width: 1456px) {
+        .video-embed-grid {
+            &__video {
+                max-width: 1440px;
             }
         }
     }

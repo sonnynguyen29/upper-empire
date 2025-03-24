@@ -18,10 +18,13 @@
 }
 .about-hero-banner .hero-banner-video__wrapper__logo {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+}
+.about-hero-banner .hero-banner-video__wrapper__logo spline-viewer {
+  display: none;
 }
 .about-hero-banner .hero-banner-video__overlay {
   position: absolute;
@@ -82,7 +85,7 @@
 }
 @media screen and (min-width: 768px) {
   .about-hero-banner .hero-banner-video video {
-    width: unset;
+    width: 100vw;
     height: unset;
   }
   .about-hero-banner .hero-banner-content {
@@ -104,10 +107,16 @@
     display: flex;
     position: relative;
     justify-content: center;
-    /* Prevents any z-index issues */
     width: 100%;
     z-index: 1000;
-    /* Ensures it's above other content */
     overflow: visible;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .about-hero-banner .hero-banner-video video {
+    margin-top: -20vw;
+  }
+  .about-hero-banner .hero-banner-video__wrapper__logo {
+    left: 51.5%;
   }
 }

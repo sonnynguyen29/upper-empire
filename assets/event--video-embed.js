@@ -6,13 +6,13 @@ window.onload = function () {
         pagination: false,
         arrows: false,
         mediaQuery: 'min',
-        // gap: '8px',
-        padding: { left: 0, right: '20%' },
+        gap: '8px',
+        padding: { left: '8px', right: '20%' },
         breakpoints: {
             1280: {
-                perPage: 5,
-                padding: { left: 0, right: 0 },
-                // gap: '16px',
+                perPage: 4,
+                padding: { left: '16px', right: '16px' },
+                gap: '16px',
             },
         },
     }).mount();

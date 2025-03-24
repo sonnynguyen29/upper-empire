@@ -50,6 +50,11 @@ class EventPhotoGallery extends HTMLElement {
 
     viewMore() {
         this.totalVisiblePhotos += this.additionalPhotos;
+
+        if (this.totalVisiblePhotos > this.totalPhotoInGallery) {
+            this.totalVisiblePhotos = this.totalPhotoInGallery;
+        }
+
         this.showPhotos();
     }
 

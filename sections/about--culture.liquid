@@ -5,6 +5,7 @@
 
 <section id="about-culture" class="about-culture">
   <div class="about-culture__container">
+    {% render 'path-shape' %}
     <div class="about-culture__wrapper">
       <div class="about-culture__spreading-good-vibe">
         <img
@@ -35,13 +36,13 @@
           width="500"
           height="500"
         >
-        <img
+        {% comment %} <img
           src="{{ 'Linked_Path_Group.png' | file_url }}"
           alt="Spreading Good Vibe"
           class="about-culture__spreading-good-vibe__image about-culture__spreading-good-vibe__sub-title"
           width="500"
           height="500"
-        >
+        > {% endcomment %}
         <img
           src="{{ 'Adobe_Express_-_file.png' | file_url }}"
           alt="Spreading Good Vibe"

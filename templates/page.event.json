@@ -123,6 +123,60 @@
     "event-photo-gallery": {
       "type": "event--photo-gallery",
       "blocks": {
+        "photo_XziUNk": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/whatnot-02_e3ecb886-c899-40a7-98c5-a83537518cef.jpg"
+          }
+        },
+        "photo_geJ4QD": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/event-hero-banner.png"
+          }
+        },
+        "photo_gdmdBQ": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/video-thumb.jpg"
+          }
+        },
+        "photo_x3UA7k": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/whatnot-01.jpg"
+          }
+        },
+        "photo_xTUegp": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/ue-collection-27.jpg"
+          }
+        },
+        "photo_Atcz9h": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/ue-collection-21.jpg"
+          }
+        },
+        "photo_rdzDmg": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/whatnot-02_e3ecb886-c899-40a7-98c5-a83537518cef.jpg"
+          }
+        },
+        "photo_h6itVY": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/community-01.jpg"
+          }
+        },
+        "photo_Raawx7": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27_4.png"
+          }
+        },
         "photo_RpmUrt": {
           "type": "photo",
           "settings": {
@@ -197,6 +251,15 @@
         }
       },
       "block_order": [
+        "photo_XziUNk",
+        "photo_geJ4QD",
+        "photo_gdmdBQ",
+        "photo_x3UA7k",
+        "photo_xTUegp",
+        "photo_Atcz9h",
+        "photo_rdzDmg",
+        "photo_h6itVY",
+        "photo_Raawx7",
         "photo_RpmUrt",
         "photo_LRPBfw",
         "photo_FNYDLC",
@@ -211,7 +274,9 @@
         "photo_RF6dMW"
       ],
       "settings": {
-        "title": "Photo gallery"
+        "title": "Photo gallery",
+        "initial_photos": 15,
+        "additional_photos": 3
       }
     },
     "event-relative-events": {

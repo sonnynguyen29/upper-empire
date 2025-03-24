@@ -18,10 +18,14 @@
 
             &__logo {
                 position: absolute;
-                top: 50%;
+                top: 40%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 z-index: 3;
+
+                spline-viewer { 
+                    display: none;
+                }
             }
         }
 
@@ -94,7 +98,7 @@
     @media screen and (min-width: 768px) {
         .hero-banner-video {
             video {
-                width: unset;
+                width: 100vw;
                 height: unset;
             }
         }
@@ -102,7 +106,6 @@
         .hero-banner-content {
             width: 50%;
         }
-
     }
 
     @media screen and (min-width: 1280px) {
@@ -125,14 +128,26 @@
             display: flex;
             position: relative;
             justify-content: center;
-            /* Prevents any z-index issues */
             width: 100%;
             z-index: 1000;
-            /* Ensures it's above other content */
-            overflow: visible; 
+            overflow: visible;
 
         }
-
     }
 
+    @media screen and (min-width: 1920px) {
+        .hero-banner-video {
+            video {
+                margin-top: -20vw;
+
+            }
+
+            &__wrapper {
+
+                &__logo {
+                    left: 51.5%;
+                }
+            }
+        }
+    }
 }

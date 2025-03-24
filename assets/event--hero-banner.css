@@ -88,6 +88,18 @@
   height: 40px;
 }
 @media screen and (min-width: 1280px) {
+  .event-hero-banner__content {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .event-hero-banner__content__title {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0;
+  }
+  .event-hero-banner__content__description {
+    margin-bottom: 30px;
+  }
   .event-hero-banner .event-hero-container {
     padding: 40px 8px;
   }

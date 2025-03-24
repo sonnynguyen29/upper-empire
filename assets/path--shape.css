@@ -1,0 +1,116 @@
+.path-shape {
+  position: absolute;
+  top: 72vw;
+  opacity: 1;
+  z-index: 2;
+}
+.path-shape__background {
+  width: 100vw;
+  height: 300px;
+}
+.path-shape__background svg {
+  position: absolute;
+  width: 300vw;
+  height: 250px;
+  left: -100vw;
+}
+.path-shape__background text {
+  font-size: 10vw;
+}
+@media screen and (min-width: 728px) {
+  .path-shape__background svg {
+    width: 200vw;
+    left: -60vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .path-shape__background svg {
+    width: 100vw;
+    left: 0;
+  }
+  .path-shape__background text {
+    font-size: clamp(20px, 5vw, 50px);
+  }
+}
+@media screen and (min-width: 728px) {
+  .path-shape {
+    top: 80vw;
+  }
+}
+@media screen and (min-width: 991px) {
+  .path-shape {
+    top: 85vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .path-shape {
+    top: 400px;
+  }
+}
+.path-shape__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.path-shape__content svg {
+  position: absolute;
+  width: 300vw;
+  height: 250px;
+  left: -100vw;
+  top: 32px;
+}
+@media screen and (min-width: 580px) {
+  .path-shape__content svg {
+    width: 250vw;
+    left: -80vw;
+    top: 39px;
+  }
+  .path-shape__content text {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 728px) {
+  .path-shape__content svg {
+    width: 200vw;
+    left: -60vw;
+  }
+  .path-shape__content text {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 890px) {
+  .path-shape__content svg {
+    left: -50vw;
+    top: 30px;
+  }
+  .path-shape__content text {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 890px) {
+  .path-shape__content svg {
+    left: -50vw;
+    top: 30px;
+  }
+  .path-shape__content text {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .path-shape__content svg {
+    left: -50vw;
+    top: 30px;
+  }
+  .path-shape__content text {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .path-shape__content svg {
+    width: 100vw;
+    left: 0;
+  }
+  .path-shape__content text {
+    font-size: clamp(20px, 5vw, 50px);
+  }
+}

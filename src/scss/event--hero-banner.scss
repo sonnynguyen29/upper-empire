@@ -15,7 +15,7 @@
         }
     }
 
-    .event-hero-container { 
+    .event-hero-container {
         padding: 20px 8px;
     }
 
@@ -105,6 +105,21 @@
     }
 
     @media screen and (min-width: 1280px) {
+        &__content {
+            max-width: 1440px;
+            margin: 0 auto;
+
+            &__title {
+                font-size: 36px;
+                font-weight: 800;
+                margin: 0;
+            }
+
+            &__description {
+                margin-bottom: 30px;
+            }
+        }
+
         .event-hero-container {
             padding: 40px 8px;
         }
