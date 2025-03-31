@@ -1,34 +1,44 @@
 {% comment %}
-   <svg width="1515" height="307" viewBox="0 0 1515 307" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M733.893 145.792C366.726 269.615 107.459 96.0752 0.0701311 22.4941L0.0701314 161.702C157.176 288.977 477.521 358.492 752.864 260.771C998.387 173.634 1359.56 115.184 1514.15 119.757L1507.49 0.618616C1440.07 1.97617 1160.2 2.02384 733.893 145.792Z" fill="#EFDC2C"/>
+     <svg width="1515" height="307" viewBox="0 0 1515 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M733.893 145.792C366.726 269.615 107.459 96.0752 0.0701311 22.4941L0.0701314 161.702C157.176 288.977 477.521 358.492 752.864 260.771C998.387 173.634 1359.56 115.184 1514.15 119.757L1507.49 0.618616C1440.07 1.97617 1160.2 2.02384 733.893 145.792Z" fill="#EFDC2C"/>
+    </svg>
+
+    <svg width="1831" height="333" viewBox="0 0 1831 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M35 129.128C99 173 479.8 373.528 887 207.128C1294.2 40.7276 1678.33 49.7943 1819.5 75.1276" stroke="#EFDC2C" stroke-width="121"/>
+    </svg>
+
+        <!-- Văn bản chạy trên đường cong -->
+
+      <!-- Đường cong cho văn bản -->
+      <path id="textPathCurve"
+        d="M-10.04 104.995C609.169 481.893 737.826 82.87 1530.906 73.772"
+        fill="transparent" stroke="none"/>
+
+
+      <text font-size="50" font-weight="bold" fill="black">
+        <textPath href="#textPathCurve">
+          <animate attributeName="startOffset" from="-100%" to="100%" dur="18s" begin="0s" repeatCount="indefinite"/>
+          Unite sneaker enthusiasts and members around the world
+        </textPath>
+      </text>
+
+      <!-- Second text animation -->
+      <text font-size="50" font-weight="bold" fill="red" display="none">
+        <textPath href="#textPathCurve">
+          <animate attributeName="startOffset" from="-120%" to="100%" dur="18s" begin="8s" repeatCount="indefinite"/>
+          Unite sneaker enthusiasts and members around the world
+        </textPath>
+      </text>
+
+      <svg width="1519" height="315" viewBox="0 0 1519 315" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M736.062 145.92C367.094 264.268 110.436 86.8916 4.15386 11.7214L2.0835 150.914C157.279 280.512 476.555 354.783 753.321 261.168C1000.11 177.692 1362.11 124.62 1516.62 131.492L1511.73 12.2674C1444.3 12.6221 1164.46 8.50748 736.062 145.92Z" fill="#EFDC2C"/>
   </svg>
 
-  <svg width="1831" height="333" viewBox="0 0 1831 333" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M35 129.128C99 173 479.8 373.528 887 207.128C1294.2 40.7276 1678.33 49.7943 1819.5 75.1276" stroke="#EFDC2C" stroke-width="121"/>
-  </svg>
-
-      <!-- Văn bản chạy trên đường cong -->
-
-    <!-- Đường cong cho văn bản -->
-    <path id="textPathCurve"
-      d="M-10.04 104.995C609.169 481.893 737.826 82.87 1530.906 73.772"
-      fill="transparent" stroke="none"/>
 
 
-    <text font-size="50" font-weight="bold" fill="black">
-      <textPath href="#textPathCurve">
-        <animate attributeName="startOffset" from="-100%" to="100%" dur="18s" begin="0s" repeatCount="indefinite"/>
-        Unite sneaker enthusiasts and members around the world
-      </textPath>
-    </text>
 
-    <!-- Second text animation -->
-    <text font-size="50" font-weight="bold" fill="red" display="none">
-      <textPath href="#textPathCurve">
-        <animate attributeName="startOffset" from="-120%" to="100%" dur="18s" begin="8s" repeatCount="indefinite"/>
-        Unite sneaker enthusiasts and members around the world
-      </textPath>
-    </text>
+        <!-- Second text animation -->
+  e
 {% endcomment %}
 
 {{ 'path--shape.css' | asset_url | stylesheet_tag }}
@@ -43,7 +53,7 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <!-- Background Shape -->
-      <path d="M733.893 145.792C366.726 269.615 107.459 96.0752.0701 22.4941L.0701 161.702C157.176 288.977 477.521 358.492 752.864 260.771 998.387 173.634 1359.56 115.184 1514.15 119.757L1519.886 2.143C1440.07 1.9762 1160.2 2.0238 733.893 145.792Z" fill="#EFDC2C"/>
+      <path d="M736.062 145.92C367.094 264.268 110.436 86.8916 4.15386 11.7214L2.0835 150.914C157.279 280.512 476.555 354.783 753.321 261.168C1000.11 177.692 1362.11 124.62 1516.62 131.492L1511.73 12.2674C1444.3 12.6221 1164.46 8.50748 736.062 145.92Z" fill="#EFDC2C"/>
     </svg>
   </div>
   <div
@@ -60,30 +70,28 @@
     >
       <!-- Đường cong cho văn bản -->
       <path id="textPathCurve"
-        d="M.437 80.146C725.85 418.531 573.577 75.916 1523.17 39.962"
+        d="M1.21704 69.9561C83.0466 149.26 364.157 322.503 733.125 204.154C1161.53 66.7421 1441.36 70.8568 1508.79 70.502"
         fill="transparent" stroke="121"/>
 
       <!-- Văn bản chạy trên đường cong -->
 
-      <text font-size="50" font-weight="bold" fill="black">
-        <textPath href="#textPathCurve">
-          <animate attributeName="startOffset" from="0%" to="100%" dur="10s" begin="0s"/>
+      <text font-size="55" font-weight="bold" fill="black">
+        <textPath href="#textPathCurve" textLength="100%">
+          <animate attributeName="startOffset" from="0%" to="100%" dur="8.5s" begin="0s"/>
           Unite sneaker enthusiasts and members around the world
         </textPath>
       </text>
 
-      <text font-size="50" font-weight="bold" fill="black" style="opacity: 0">
-        <textPath href="#textPathCurve">
-          <animate attributeName="startOffset" from="-100%" to="100%" dur="18s" begin="1s" repeatCount="indefinite"/>
+      <text font-size="55" font-weight="bold" fill="black">
+        <textPath href="#textPathCurve" textLength="100%">
+          <animate attributeName="startOffset" from="-100%" to="100%" dur="17s" begin="0s" repeatCount="indefinite"/>
           Unite sneaker enthusiasts and members around the world
         </textPath>
       </text>
 
-      <!-- Second text animation -->
-ed
-      <text font-size="50" font-weight="bold" fill="black" style="opacity: 0">
-        <textPath href="#textPathCurve">
-          <animate attributeName="startOffset" from="-100%" to="100%" dur="18s" begin="10s" repeatCount="indefinite"/>
+      <text font-size="55" font-weight="bold" fill="black" style="opacity: 0">
+        <textPath href="#textPathCurve" textLength="100%">
+          <animate attributeName="startOffset" from="-100%" to="100%" dur="17s" begin="8.5s" repeatCount="indefinite"/>
           Unite sneaker enthusiasts and members around the world
         </textPath>
       </text>
@@ -98,12 +106,12 @@ ed
     }, 500);
     setTimeout(() => {
       document.querySelectorAll('.path-shape__content text')[1].style.opacity = 1;
-    }, 2500);
+    }, 2000);
     setTimeout(() => {
       document.querySelectorAll('.path-shape__content text')[0].style.opacity = 0;
-    }, 10000);
+    }, 8700);
     setTimeout(() => {
       document.querySelectorAll('.path-shape__content text')[2].style.opacity = 1;
-    }, 11000);
+    }, 9000);
   });
 </script>
