@@ -1,0 +1,105 @@
+{{ 'events-event--collection.css' | asset_url | stylesheet_tag }}
+
+<div class="event-collection" data-event-collection>
+  {% assign events_by_year = section.blocks | where: 'type', 'event' %}
+
+  <div class="events" data-size="{{ events_by_year.size }}">
+    <div class="event-group" data-event-year="{{ section.settings.event_year }}">
+      <h2>{{ section.settings.event_year }}</h2>
+      <div class="event-list">
+        {% for block in events_by_year %}
+          <div
+            class="event"
+            data-event-name="{{ block.settings.event_name }}"
+            data-event-date="{{ block.settings.date }}"
+            data-event-type="{{ block.settings.type }}"
+            data-event-location="{{ block.settings.location }}"
+            data-event-description="{{ block.settings.description }}"
+          >
+            <h3>{{ block.settings.event_name }}</h3>
+
+            {% if block.settings.thumbnail %}
+              {{ block.settings.thumbnail | image_url: width: 1000, height: 1000 | image_tag }}
+            {% endif %}
+
+            <p><strong>Date:</strong> {{ block.settings.date }}</p>
+            <p><strong>Type:</strong> {{ block.settings.type }}</p>
+            <p><strong>Location:</strong> {{ block.settings.location }}</p>
+            <p>{{ block.settings.description }}</p>
+
+            {% if block.settings.page %}
+              <a href="{{ block.settings.page }}" data-event-page="{{ block.settings.page }}">Learn More</a>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Event Collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "event_year",
+      "label": "Event Year"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "event",
+      "name": "Event",
+      "settings": [
+        {
+          "type": "text",
+          "id": "event_name",
+          "label": "Event Name"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "thumbnail",
+          "label": "Thumbnail"
+        },
+        {
+          "type": "url",
+          "id": "page",
+          "label": "Page"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date"
+        },
+        {
+          "type": "text",
+          "id": "type",
+          "label": "Type"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Event Collection",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "event"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

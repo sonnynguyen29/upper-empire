@@ -1,0 +1,90 @@
+.latest-events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 8px;
+}
+@media screen and (min-width: 1280px) {
+  .latest-events {
+    padding: 30px 8px;
+  }
+}
+.latest-events h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 1280px) {
+  .latest-events h2 {
+    font-size: 48px;
+  }
+}
+.latest-events .events-list {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 1280px) {
+  .latest-events .events-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}
+.latest-events .events-list .event-item {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media screen and (min-width: 1280px) {
+  .latest-events .events-list .event-item {
+    border-radius: 8px;
+  }
+}
+.latest-events .events-list .event-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  aspect-ratio: 175.5/216.79;
+}
+.latest-events .events-list .event-item:hover img {
+  transform: scale(1.05);
+}
+.latest-events .events-list .event-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0.5;
+}
+.latest-events .events-list .event-item .event-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  padding: 15px;
+  color: #fff;
+  text-align: left;
+}
+.latest-events .events-list .event-item .event-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin: 0;
+  padding: 0;
+}
+.latest-events .events-list .event-item .event-info p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,553 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "events-event-collection-2025": {
+      "type": "events-event--collection",
+      "blocks": {
+        "event_1": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon New York",
+            "description": "The world's largest sneaker convention happening in New York.",
+            "thumbnail": "shopify://shop_images/whatnot-01.jpg",
+            "page": "#",
+            "date": "2025-01-15",
+            "type": "Convention",
+            "location": "New York"
+          }
+        },
+        "event_2": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Los Angeles",
+            "description": "A massive sneaker gathering in Los Angeles.",
+            "thumbnail": "shopify://shop_images/Rectangle_27_4.png",
+            "page": "#",
+            "date": "2025-02-20",
+            "type": "Convention",
+            "location": "Los Angeles"
+          }
+        }
+      },
+      "block_order": [
+        "event_1",
+        "event_2"
+      ],
+      "settings": {
+        "event_year": "2025"
+      }
+    },
+    "events-event-collection-2024": {
+      "type": "events-event--collection",
+      "blocks": {
+        "event_1": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Miami",
+            "description": "Miami’s top sneaker expo.",
+            "thumbnail": "shopify://shop_images/home-banner.jpg",
+            "page": "#",
+            "date": "2024-03-10",
+            "type": "Convention",
+            "location": "Miami"
+          }
+        },
+        "event_2": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Houston",
+            "description": "The Texas sneaker hub.",
+            "thumbnail": "shopify://shop_images/community-04.jpg",
+            "page": "#",
+            "date": "2024-04-22",
+            "type": "Convention",
+            "location": "Houston"
+          }
+        },
+        "event_3": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Chicago",
+            "description": "A sneakerhead meetup in Chicago.",
+            "thumbnail": "shopify://shop_images/Rectangle_13.png",
+            "page": "#",
+            "date": "2024-05-15",
+            "type": "Convention",
+            "location": "Chicago"
+          }
+        },
+        "event_4": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon San Francisco",
+            "description": "A premier sneaker event in San Francisco.",
+            "thumbnail": "shopify://shop_images/ue-85.png",
+            "page": "#",
+            "date": "2024-06-18",
+            "type": "Convention",
+            "location": "San Francisco"
+          }
+        },
+        "event_5": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Orlando",
+            "description": "Florida’s ultimate sneaker event.",
+            "thumbnail": "shopify://shop_images/ue-81.png",
+            "page": "#",
+            "date": "2024-07-12",
+            "type": "Convention",
+            "location": "Orlando"
+          }
+        },
+        "event_6": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Detroit",
+            "description": "A sneaker lovers' meet in Detroit.",
+            "thumbnail": "shopify://shop_images/barista-pours-over-coffee-at-cafe.jpg",
+            "page": "#",
+            "date": "2024-08-19",
+            "type": "Convention",
+            "location": "Detroit"
+          }
+        },
+        "event_7": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Seattle",
+            "description": "A big sneaker event in Seattle.",
+            "thumbnail": "shopify://shop_images/Rectangle_27_4.png",
+            "page": "#",
+            "date": "2024-09-10",
+            "type": "Convention",
+            "location": "Seattle"
+          }
+        },
+        "event_8": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Boston",
+            "description": "East Coast sneaker extravaganza in Boston.",
+            "thumbnail": "shopify://shop_images/Rectangle_27_3.png",
+            "page": "#",
+            "date": "2024-10-05",
+            "type": "Convention",
+            "location": "Boston"
+          }
+        },
+        "event_9": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Las Vegas",
+            "description": "The ultimate sneaker event in Vegas.",
+            "thumbnail": "shopify://shop_images/Rectangle_27_2.png",
+            "page": "#",
+            "date": "2024-11-15",
+            "type": "Convention",
+            "location": "Las Vegas"
+          }
+        },
+        "event_10": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Phoenix",
+            "description": "A massive sneaker event in Phoenix.",
+            "thumbnail": "shopify://shop_images/Rectangle_27_1.png",
+            "page": "#",
+            "date": "2024-12-01",
+            "type": "Convention",
+            "location": "Phoenix"
+          }
+        },
+        "event_11": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Atlanta",
+            "description": "Georgia’s top sneaker event.",
+            "thumbnail": "shopify://shop_images/Rectangle_27.png",
+            "page": "#",
+            "date": "2024-06-20",
+            "type": "Convention",
+            "location": "Atlanta"
+          }
+        },
+        "event_12": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Washington D.C.",
+            "description": "Capital sneaker event in D.C.",
+            "thumbnail": "shopify://shop_images/event-hero-banner.png",
+            "page": "#",
+            "date": "2024-12-10",
+            "type": "Convention",
+            "location": "Washington D.C."
+          }
+        }
+      },
+      "block_order": [
+        "event_1",
+        "event_2",
+        "event_3",
+        "event_4",
+        "event_5",
+        "event_6",
+        "event_7",
+        "event_8",
+        "event_9",
+        "event_10",
+        "event_11",
+        "event_12"
+      ],
+      "settings": {
+        "event_year": "2024"
+      }
+    },
+    "events-event-collection-2023": {
+      "type": "events-event--collection",
+      "blocks": {
+        "event_1": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Atlanta",
+            "description": "Georgia’s biggest sneaker expo.",
+            "thumbnail": "shopify://shop_images/community-04.jpg",
+            "page": "#",
+            "date": "2023-05-08",
+            "type": "Convention",
+            "location": "Atlanta"
+          }
+        },
+        "event_2": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Dallas",
+            "description": "A massive sneaker event in Dallas.",
+            "thumbnail": "shopify://shop_images/community-01.jpg",
+            "page": "#",
+            "date": "2023-06-15",
+            "type": "Convention",
+            "location": "Dallas"
+          }
+        },
+        "event_3": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Los Angeles",
+            "description": "Sneaker event in Los Angeles.",
+            "thumbnail": "shopify://shop_images/whatnot-02_e3ecb886-c899-40a7-98c5-a83537518cef.jpg",
+            "page": "#",
+            "date": "2023-07-10",
+            "type": "Convention",
+            "location": "Los Angeles"
+          }
+        },
+        "event_4": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Miami",
+            "description": "Top sneaker event in Miami.",
+            "thumbnail": "shopify://shop_images/whatnot-01_aebed63e-7e8b-467f-b40c-014add2059bb.jpg",
+            "page": "#",
+            "date": "2023-08-14",
+            "type": "Convention",
+            "location": "Miami"
+          }
+        },
+        "event_5": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Chicago",
+            "description": "The ultimate sneaker convention in Chicago.",
+            "thumbnail": "shopify://shop_images/ue-collection-27.jpg",
+            "page": "#",
+            "date": "2023-09-18",
+            "type": "Convention",
+            "location": "Chicago"
+          }
+        },
+        "event_6": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Houston",
+            "description": "Texas’ premier sneaker expo.",
+            "thumbnail": "shopify://shop_images/ue-3.png",
+            "page": "#",
+            "date": "2023-10-10",
+            "type": "Convention",
+            "location": "Houston"
+          }
+        },
+        "event_7": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon San Francisco",
+            "description": "Sneaker event in San Francisco.",
+            "thumbnail": "shopify://shop_images/Rectangle_13.png",
+            "page": "#",
+            "date": "2023-11-05",
+            "type": "Convention",
+            "location": "San Francisco"
+          }
+        },
+        "event_8": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon New York",
+            "description": "The sneaker event of the year in New York.",
+            "thumbnail": "shopify://shop_images/ue-85.png",
+            "page": "#",
+            "date": "2023-12-02",
+            "type": "Convention",
+            "location": "New York"
+          }
+        },
+        "event_9": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Las Vegas",
+            "description": "Las Vegas sneaker showcase.",
+            "thumbnail": "shopify://shop_images/ue-81.png",
+            "page": "#",
+            "date": "2023-12-12",
+            "type": "Convention",
+            "location": "Las Vegas"
+          }
+        },
+        "event_10": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Philadelphia",
+            "description": "Philly’s biggest sneaker event.",
+            "thumbnail": "shopify://shop_images/barista-pours-over-coffee-at-cafe.jpg",
+            "page": "#",
+            "date": "2023-10-15",
+            "type": "Convention",
+            "location": "Philadelphia"
+          }
+        },
+        "event_11": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Detroit",
+            "description": "Sneaker convention in Detroit.",
+            "thumbnail": "shopify://shop_images/Rectangle_27_4.png",
+            "page": "#",
+            "date": "2023-09-30",
+            "type": "Convention",
+            "location": "Detroit"
+          }
+        },
+        "event_12": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Boston",
+            "description": "A top sneaker event in Boston.",
+            "thumbnail": "shopify://shop_images/Rectangle_27_2.png",
+            "page": "#",
+            "date": "2023-11-25",
+            "type": "Convention",
+            "location": "Boston"
+          }
+        }
+      },
+      "block_order": [
+        "event_1",
+        "event_2",
+        "event_3",
+        "event_4",
+        "event_5",
+        "event_6",
+        "event_7",
+        "event_8",
+        "event_9",
+        "event_10",
+        "event_11",
+        "event_12"
+      ],
+      "settings": {
+        "event_year": "2023"
+      }
+    },
+    "events-event-collection-2022": {
+      "type": "events-event--collection",
+      "blocks": {
+        "event_1": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Phoenix",
+            "description": "Arizona's top sneaker trade show.",
+            "thumbnail": "shopify://shop_images/home-banner.jpg",
+            "page": "#",
+            "date": "2022-07-05",
+            "type": "Convention",
+            "location": "Phoenix"
+          }
+        },
+        "event_2": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Philadelphia",
+            "description": "Philly’s biggest sneaker event.",
+            "thumbnail": "shopify://shop_images/community-04.jpg",
+            "page": "#",
+            "date": "2022-08-30",
+            "type": "Convention",
+            "location": "Philadelphia"
+          }
+        },
+        "event_3": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon New York",
+            "description": "Sneaker convention in New York.",
+            "thumbnail": "shopify://shop_images/community-03.jpg",
+            "page": "#",
+            "date": "2022-09-10",
+            "type": "Convention",
+            "location": "New York"
+          }
+        },
+        "event_4": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Los Angeles",
+            "description": "A sneaker event in Los Angeles.",
+            "thumbnail": "shopify://shop_images/community-01.jpg",
+            "page": "#",
+            "date": "2022-10-12",
+            "type": "Convention",
+            "location": "Los Angeles"
+          }
+        },
+        "event_5": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Miami",
+            "description": "The biggest sneaker event in Miami.",
+            "thumbnail": "shopify://shop_images/video-thumb.jpg",
+            "page": "#",
+            "date": "2022-11-15",
+            "type": "Convention",
+            "location": "Miami"
+          }
+        },
+        "event_6": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Chicago",
+            "description": "A major sneaker expo in Chicago.",
+            "thumbnail": "shopify://shop_images/whatnot-02_e3ecb886-c899-40a7-98c5-a83537518cef.jpg",
+            "page": "#",
+            "date": "2022-12-05",
+            "type": "Convention",
+            "location": "Chicago"
+          }
+        },
+        "event_7": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Houston",
+            "description": "The ultimate sneaker event in Houston.",
+            "thumbnail": "shopify://shop_images/whatnot-01_aebed63e-7e8b-467f-b40c-014add2059bb.jpg",
+            "page": "#",
+            "date": "2022-11-20",
+            "type": "Convention",
+            "location": "Houston"
+          }
+        },
+        "event_8": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon San Francisco",
+            "description": "Top sneaker event in San Francisco.",
+            "thumbnail": "shopify://shop_images/whatnot-02.jpg",
+            "page": "#",
+            "date": "2022-12-12",
+            "type": "Convention",
+            "location": "San Francisco"
+          }
+        },
+        "event_9": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Boston",
+            "description": "Massachusetts' premier sneaker event.",
+            "thumbnail": "shopify://shop_images/ue-collection-45.jpg",
+            "page": "#",
+            "date": "2022-08-25",
+            "type": "Convention",
+            "location": "Boston"
+          }
+        },
+        "event_10": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Detroit",
+            "description": "The biggest sneaker gathering in Detroit.",
+            "thumbnail": "shopify://shop_images/ue-collection-47.jpg",
+            "page": "#",
+            "date": "2022-06-30",
+            "type": "Convention",
+            "location": "Detroit"
+          }
+        },
+        "event_11": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Orlando",
+            "description": "Florida’s top sneaker expo.",
+            "thumbnail": "shopify://shop_images/ue-collection-42.jpg",
+            "page": "#",
+            "date": "2022-09-18",
+            "type": "Convention",
+            "location": "Orlando"
+          }
+        },
+        "event_12": {
+          "type": "event",
+          "settings": {
+            "event_name": "Sneakercon Seattle",
+            "description": "Top sneaker convention in Seattle.",
+            "thumbnail": "shopify://shop_images/video-thumb.jpg",
+            "page": "#",
+            "date": "2022-10-22",
+            "type": "Convention",
+            "location": "Seattle"
+          }
+        }
+      },
+      "block_order": [
+        "event_1",
+        "event_2",
+        "event_3",
+        "event_4",
+        "event_5",
+        "event_6",
+        "event_7",
+        "event_8",
+        "event_9",
+        "event_10",
+        "event_11",
+        "event_12"
+      ],
+      "settings": {
+        "event_year": "2022"
+      }
+    }
+  },
+  "order": [
+    "events-event-collection-2025",
+    "events-event-collection-2024",
+    "events-event-collection-2023",
+    "events-event-collection-2022"
+  ]
+}

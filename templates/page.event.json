@@ -325,15 +325,21 @@
         "event_R7c4dt",
         "event_EGyykT"
       ],
+      "disabled": true,
       "settings": {
         "section_title": "Recent Events"
       }
+    },
+    "lastest_events_fBU3Eg": {
+      "type": "lastest-events",
+      "settings": {}
     }
   },
   "order": [
     "event-hero-banner",
     "event-video-embed",
     "event-photo-gallery",
-    "event-relative-events"
+    "event-relative-events",
+    "lastest_events_fBU3Eg"
   ]
 }

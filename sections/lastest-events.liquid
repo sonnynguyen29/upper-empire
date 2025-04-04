@@ -1,0 +1,77 @@
+{{ 'latest-event.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "Latest Events",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Latest Events"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="latest-events" id="latest-events-container">
+  <h2>Latest Events</h2>
+  <div class="events-list"></div>
+</div>
+
+<script>
+  async function fetchLatestEvents() {
+    try {
+      const response = await fetch('/pages/events');
+      const text = await response.text();
+
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(text, 'text/html');
+
+      const eventElements = doc.querySelectorAll('.event');
+      let eventData = [];
+
+      eventElements.forEach((event) => {
+        let eventDate = event.getAttribute('data-event-date');
+
+        if (eventDate) {
+          eventData.push({
+            date: eventDate,
+            name: event.getAttribute('data-event-name'),
+            type: event.getAttribute('data-event-type'),
+            location: event.getAttribute('data-event-location'),
+            description: event.getAttribute('data-event-description'),
+            thumbnail: event.querySelector('img')?.getAttribute('src') || '',
+            page: event.querySelector('a.view-more')?.getAttribute('href') || '#',
+          });
+        }
+      });
+
+      eventData.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      let latestEvents = eventData.slice(0, 4);
+
+      const container = document.querySelector('#latest-events-container .events-list');
+      container.innerHTML = '';
+
+      latestEvents.forEach((event) => {
+        const eventHTML = `
+                <a href="${event.page}" class="event-item">
+                    ${event.thumbnail ? `<img class="event-image" src="${event.thumbnail}" alt="${event.name}">` : ''}
+                    <div class="overlay"></div>
+                    <div class="event-info">
+                        <h3>${event.name}</h3>
+                        <p><strong>Type:</strong> ${event.type}</p>
+                        <p>${event.location.toUpperCase()} ● ${event.date}</p>
+                        <p>${event.description}</p>
+                    </div>
+                </a>
+            `;
+        container.innerHTML += eventHTML;
+      });
+    } catch (error) {
+      console.error('Lỗi khi lấy dữ liệu sự kiện:', error);
+    }
+  }
+
+  // Gọi API sau khi trang load
+  document.addEventListener('DOMContentLoaded', fetchLatestEvents);
+</script>
