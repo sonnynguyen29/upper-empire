@@ -1,0 +1,101 @@
+{% comment %} sections/blog--image-gallery.liquid {% endcomment %}
+
+<div class="blog-gallery">
+  {% if section.blocks.size > 0 %}
+    <div class="blog-gallery__grid">
+      {% for block in section.blocks %}
+        <div class="blog-gallery__item">
+          {% if block.settings.image %}
+            {{ block.settings.image | image_url: width: 600 | image_tag: 
+              class: 'blog-gallery__img',
+              alt: block.settings.image.alt,
+              loading: 'lazy',
+              width: 600,
+              height: 600
+            }}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Blog Image Gallery",
+  "blocks": [
+    {
+      "type": "gallery_image",
+      "name": "Gallery Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Image Gallery",
+      "blocks": [
+        {
+          "type": "gallery_image"
+        },
+        {
+          "type": "gallery_image"
+        },
+        {
+          "type": "gallery_image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.blog-gallery {
+  margin: 2em 0;
+  padding: 0 8px;
+}
+
+.blog-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 8px;
+  width: 100%;
+}
+
+.blog-gallery__item {
+  position: relative;
+  padding-bottom: 100%; /* Creates a square aspect ratio */
+  width: 100%;
+  overflow: hidden;
+}
+
+.blog-gallery__img {
+  position: absolute;
+  inset: 0; /* Shorthand for top: 0, right: 0, bottom: 0, left: 0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-gallery {
+    padding: 0;
+  }
+
+  .blog-gallery__grid {
+    gap: 8px 8px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-gallery__img {
+    border-radius: 0; /* Remove border radius on mobile */
+  }
+}
+{% endstylesheet %}

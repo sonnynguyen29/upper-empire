@@ -1,0 +1,425 @@
+{% assign number_of_comments = article.comments_count %}
+
+{% comment %}
+  If a comment was just submitted and it has no blank fields, we have an extra comment to count.
+{% endcomment %}
+{% if comment and comment.created_at %}
+  {% assign number_of_comments = article.comments_count %}
+{% endif %}
+
+{% if blog.comments_enabled? %}
+  {% comment %}
+    Just like blog.liquid page, define how many comments should be on each page.
+  {% endcomment %}
+  {% paginate article.comments by 5 %}
+    {% comment %}
+      #comments is required, it is used as an anchor link by Shopify.
+    {% endcomment %}
+    <div id="comments">
+      {% if number_of_comments > 0 %}
+        <div class="h3">{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</div>
+      {% endif %}
+      {% comment %}
+        {% if comment and comment.created_at %}
+          <p class="note form-success">
+            {% if blog.moderated? %}
+              {{ 'blogs.comments.success_moderated' | t }}
+            {% else %}
+              {{ 'blogs.comments.success' | t }}
+            {% endif %}
+          </p>
+        {% endif %}
+      {% endcomment %}
+
+      {% if number_of_comments > 0 %}
+        <ul class="no-bullets">
+          {% comment %}
+            If a comment was just submitted with no blank field, show it.
+          {% endcomment %}
+          {% comment %}
+            {% if comment and comment.created_at %}
+              <li
+                id="{{ comment.id }}"
+                class="comment comment-wrapper first{% if article.comments_count == 0 %} last{% endif %}"
+              >
+                <div class="comment">
+                  <div class="rte text-link-animated">
+                    {{ comment.content }}
+                  </div>
+
+                  <span class="comment-data">
+                    {% capture author %}{{ comment.author }}{% endcapture %}
+                    {% if section.settings.blog_show_date %}
+                      {% capture date %}<time datetime="{{ comment.created_at | date: '%Y-%m-%d' }}">{{ comment.created_at | time_tag: format: 'date' }}</time>{% endcapture %}
+                    {% endif %}
+                    {{ 'blogs.article.comment_meta_html' | t: author: author, date: date }}
+                  </span>
+                </div>
+              </li>
+            {% endif %}
+          {% endcomment %}
+
+          {% comment %}
+            Showing the rest of the comments.
+          {% endcomment %}
+          {% for comment in article.comments %}
+            <li
+              id="{{ comment.id }}"
+              class="comment comment-wrapper {% unless number_of_comments > article.comments_count %}{% if forloop.first %} first{% endif %}{% endunless %}{% if forloop.last %} last {% endif %}"
+            >
+              <div class="comment">
+                <div class="rte text-link-animated">
+                  {{ comment.content }}
+                </div>
+
+                <span class="comment-data">
+                  {% capture author %}
+                    <span class="author">{{ comment.author }}</span>
+                  {% endcapture %}
+
+                  {% capture date %}
+                    <span class="separator"></span>
+                    <time datetime="{{ comment.created_at | date: '%Y-%m-%d' }}">
+                      {{ comment.created_at | date: '%B %d, %Y' }}
+                    </time>
+                  {% endcapture %}
+
+                  {{ author -}}
+                  {{- date }}
+                </span>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+
+        {% if paginate.pages > 1 %}
+          <div class="pagination">
+            <ul>
+              {% if paginate.previous %}
+                <li class="pagination-arrow">
+                  <a href="{{ paginate.previous.url }}">
+                    {% render 'theme-icon', icon: 'chevron_left', iconSize: 20 %}
+                  </a>
+                </li>
+              {% else %}
+                <li class="prev disabled"><a href="#" onclick="return false;">&laquo;</a></li>
+              {% endif %}
+
+              {% for part in paginate.parts %}
+                {% if part.is_link %}
+                  <li class="pagination-number">{{ part.title | link_to: part.url }}</li>
+                {% else %}
+                  {% if part.title == '&hellip;' %}
+                    <li class="ellipsis">{{ part.title }}</li>
+                  {% else %}
+                    <li class="active pagination-number">{{ part.title | link_to: part.url }}</li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+
+              {% if paginate.next %}
+                <li class="pagination-arrow">
+                  <a href="{{ paginate.next.url }}">
+                    {% render 'theme-icon', icon: 'chevron_right', iconSize: 20 %}
+                  </a>
+                </li>
+              {% else %}
+                <li class="next disabled"><a href="#" onclick="return false;">&raquo;</a></li>
+              {% endif %}
+            </ul>
+          </div>
+        {% endif %}
+
+        <hr>
+      {% endif %}
+
+      <div class="form-vertical">
+        {% form 'new_comment', article %}
+          <div class="h3">{{ 'blogs.comments.title' | t }}</div>
+
+          {{ form.errors | default_errors }}
+
+          <div class="grid">
+            <div class="grid__item">
+              <label for="CommentAuthor" class="hidden-label">{{ 'blogs.comments.name' | t }}</label>
+              <input
+                type="text"
+                name="comment[author]"
+                id="CommentAuthor"
+                class="input-full{% if form.errors contains 'author' %} error{% endif %} "
+                placeholder="{{ 'blogs.comments.name' | t }}"
+                value="{{ form.author }}"
+                autocapitalize="words"
+              >
+
+              <label for="CommentEmail" class="hidden-label">{{ 'blogs.comments.email' | t }}</label>
+              <input
+                type="email"
+                name="comment[email]"
+                id="CommentEmail"
+                class="input-full{% if form.errors contains 'email' %} error{% endif %} "
+                placeholder="{{ 'blogs.comments.email' | t }}"
+                value="{{ form.email }}"
+                autocorrect="off"
+                autocapitalize="off"
+              >
+            </div>
+
+            <div class="grid__item grid__comment-textarea">
+              <label for="CommentBody" class="hidden-label">{{ 'blogs.comments.message' | t }}</label>
+              <textarea
+                name="comment[body]"
+                id="CommentBody"
+                class="input-full{% if form.errors contains 'body' %} error{% endif %}"
+                placeholder="{{ 'blogs.comments.message' | t }}"
+              >{{ form.body }}</textarea>
+            </div>
+          </div>
+
+          {% if blog.moderated? %}
+            <div class="comment-form-moderated">
+              <p>{{ 'blogs.comments.moderated' | t }}</p>
+            </div>
+          {% endif %}
+
+          <input type="submit" class="btn article-comment--btn" value="{{ 'blogs.comments.post' | t }}">
+        {% endform %}
+      </div>
+    </div>
+  {% endpaginate %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Blog Comment",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Blog Comment",
+      "category": "Blog"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+  /* Comments container */
+  #comments {
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+  /* Comment count heading */
+  .h3 {
+    font-size: 24px;
+    font-weight: 700;
+    background: transparent;
+    margin: 0;
+  }
+
+  /* Comments list */
+  .no-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+  }
+
+  /* Individual comment */
+  .comment-wrapper {
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    background: transparent;
+  }
+
+  .comment-wrapper:last-child {
+    border-bottom: none;
+  }
+
+  /* Comment content */
+  #comments .comment {
+    background: transparent;
+    margin-top: 0;
+  }
+
+  #comments .comment-wrapper {
+    padding: 20px 0;
+  }
+
+  .comment .rte {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    background: transparent;
+  }
+
+  /* Comment metadata */
+  #comments .comment-wrapper .comment-data {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-weight: 400;
+    background: transparent;
+  }
+
+  .separator {
+    margin: 0 4px;
+    opacity: 0.5;
+    width: 4px;
+    height: 4px;
+    background: #00000080;
+    border-radius: 50%;
+  }
+
+  /* Comment form */
+  .form-vertical {
+  }
+
+  .form-vertical input {
+    margin: 0;
+  }
+
+  .grid {
+    width: 100%;
+    margin: 0;
+  }
+
+  .grid .grid__item {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0;
+  }
+
+  /* Form inputs */
+  .input-full {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    font-size: 16px;
+    background: transparent;
+    transition: border-color 0.2s ease;
+  }
+
+  .input-full::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+  }
+
+  .input-full:focus {
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+
+  /* Comment textarea */
+  textarea.input-full {
+    grid-column: 1 / -1;
+    min-height: 180px;
+    resize: vertical;
+  }
+
+  .comment-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Submit button */
+  #comments .article-comment--btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 253px;
+    padding: 16px 32px;
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 16px auto 0 auto;
+  }
+
+  #comments .article-comment--btn:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  .comment-form-moderated {
+    width: 100%;
+    text-align: start;
+  }
+
+  .comment-form-moderated p {
+    font-style: italic;
+    font-size: 10px;
+    opacity: 0.7;
+  }
+
+  /* Desktop styles */
+  @media (min-width: 768px) {
+    .grid {
+    }
+    /*
+    .grid__item.large--one-half {
+      width: calc(50% - 12px);
+    }
+
+    .grid__item.large--one-half:last-child {
+      width: 100%;
+    } */
+  }
+
+  #comments p {
+    margin: 0;
+  }
+
+  /* Mobile styles */
+  @media (max-width: 767px) {
+    #comments {
+      padding: 0 16px;
+    }
+
+    .h3 {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+
+    .form-vertical {
+      margin-top: 48px;
+      padding-top: 48px;
+    }
+
+    .form-vertical .h3 {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .article-comment--btn {
+      width: 100%;
+    }
+
+    textarea.input-full {
+      min-height: 150px;
+    }
+  }
+{% endstylesheet %}

@@ -1,0 +1,143 @@
+{% comment %} sections/blog--hero-banner.liquid {% endcomment %}
+
+<div class="blog-heading">
+  <h1
+    class="blog-heading__title"
+    style="
+      font-size: {{ section.settings.heading_size }}px;
+      font-weight: {{ section.settings.heading_weight }};
+    "
+  >
+    {{ section.settings.custom_title | default: article.title }}
+  </h1>
+  <div class="blog-heading__meta">
+    <span class="blog-heading__date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
+    {% if article.tags.size > 0 %}
+      <span class="blog-heading__category">{{ article.tags.first }}</span>
+    {% endif %}
+
+    <span class="blog-heading__comments">
+      <a href="#comments">
+        {% render 'theme-icon' with icon: 'comment' %}
+        {{- article.comments_count }}
+        {% comment %} {{ article.comments_count | pluralize: 'comment', 'comments' -}} {% endcomment %}
+      </a>
+    </span>
+    {% if article.comments_count > 0 %}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog Heading",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_title",
+      "label": "Custom Title"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 24,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading Size",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading Weight",
+      "options": [
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semibold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "700"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Heading",
+      "category": "Blog"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+  .blog-heading {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blog-heading__meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    color: #666666;
+  }
+
+  .blog-heading__date {
+    font-weight: 500;
+  }
+
+  .blog-heading__category {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .blog-heading__comments a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .blog-heading__comments a:hover {
+    text-decoration: none;
+  }
+
+  .blog-heading__title {
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+
+  @media screen and (max-width: 768px) {
+    .blog-heading {
+      padding: 24px 16px;
+    }
+
+    .blog-heading__meta {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .blog-heading__title {
+      font-size: 24px !important;
+    }
+  }
+{% endstylesheet %}

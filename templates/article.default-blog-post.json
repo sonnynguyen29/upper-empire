@@ -1,0 +1,211 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/image.png",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_G7y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From high-end performance for road runners to styling staples for trendsetters, Nike’s Vomero lineage does it all — with the highest levels of cushion and comfort.<br/>An emphasis on early-aughts nostalgia, versatility and all-day wearability is at the center of the remastered Vomero 5, now available in kids’ sizing and several new colorways, as well as the new Vomero Roam, a weatherized lifestyle offering that brings traction, protection and all-season resilience to a staple Nike silhouette.</p><p>True to its roots in performance running, dating to its original launch in 2011, the Vomero 5 leverages a proprietary Zoom Air cushioning system in the heel to deliver exceptional comfort. Ventilation ports keep the silhouette light and breathable, and an upper comprised of synthetic leather and mesh TecTuff provides a layered look that’s built to last. The introduction of new statement colors and neutral hues to the Vomero 5 lineup provides even more styling options.The Vomero 5 kids’ model, introduced this fall, incorporates subtle design changes for a kid-right fit, such as a more durable rubber outsole material, an upgraded sock liner and pull tabs that make it easier to put on the shoe.</p>"
+          }
+        },
+        "image_3VPj7i": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image_6.png",
+            "caption": ""
+          }
+        },
+        "heading_y8QNLG": {
+          "type": "heading",
+          "settings": {
+            "title": "The Vomero 5 is very comfy. It gives this retro vibe,",
+            "heading_size": 32
+          }
+        },
+        "text_G9A3zi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“The Vomero 5 is very comfy. It gives this retro vibe,” says Nike athlete and UConn guard Paige Bueckers. “A lot of the shoes that I’ve been wearing since I was little have the same look and feel, so it gives me something different. I love the colorways, I love the feel, I love the look.”<br/>The Vomero Roam is the latest weatherized addition to the Nike Roam collection of functional, simple and stylish silhouettes engineered to hold up against the rigors of all seasons.<br/>The shoe is designed for form and function, with bold tooling complementing a simplistic upper and a stacked heel delivering expressive traction. Clean and smooth-coated leathers are treated with water-resistant textile finishes, and thermal linings and closed seams provide low-bulk warming benefits. Versatile colorways anchor the Vomero Roam lineup, while strategic pops of color add a contemporary edge.</p>"
+          }
+        },
+        "video_DpjWe6": {
+          "type": "video",
+          "settings": {
+            "video_source": "file",
+            "video_url": "",
+            "video_file": "shopify://files/videos/community-2x.mp4",
+            "autoplay": true,
+            "loop": true,
+            "muted": true,
+            "video_caption": ""
+          }
+        },
+        "quote_FLkCXm": {
+          "type": "quote",
+          "settings": {
+            "quote_text": "<p>While the Vomero 5’s origins remain rooted in performance, it was adapted to a streetwear and lifestyle context in 2018 when <a href=\"https://about.nike.com/en/newsroom/releases/nike-a-cold-wall-capsule-collection\" target=\"_blank\" title=\"https://about.nike.com/en/newsroom/releases/nike-a-cold-wall-capsule-collection\">Nike partnered with British fashion designer Samuel Ross</a> to redesign the shoe’s aesthetic, blending nostalgic design elements that were becoming popular in the fashion world with Vomero performance features runners have loved for years.</p>",
+            "quote_author": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_G7y",
+        "image_3VPj7i",
+        "heading_y8QNLG",
+        "text_G9A3zi",
+        "video_DpjWe6",
+        "quote_FLkCXm"
+      ],
+      "settings": {}
+    },
+    "blog_image_gallery_VeD4eK": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_Rfp74G": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/ue-3.png"
+          }
+        },
+        "gallery_image_8AA6WH": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_13.png"
+          }
+        },
+        "gallery_image_q8rUxN": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/ue-85.png"
+          }
+        },
+        "gallery_image_K6bYtb": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/ue-81.png"
+          }
+        },
+        "gallery_image_x7gQXR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/barista-pours-over-coffee-at-cafe.jpg"
+          }
+        },
+        "gallery_image_84hDC7": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27_4.png"
+          }
+        },
+        "gallery_image_jKC6Fh": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27_2.png"
+          }
+        },
+        "gallery_image_YmBXdW": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27_2.png"
+          }
+        },
+        "gallery_image_BtxW8y": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27_1.png"
+          }
+        },
+        "gallery_image_eeBdff": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_27.png"
+          }
+        },
+        "gallery_image_zi3eD3": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/event-hero-banner.png"
+          }
+        },
+        "gallery_image_FqFit4": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/whatnot-01_aebed63e-7e8b-467f-b40c-014add2059bb.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_Rfp74G",
+        "gallery_image_8AA6WH",
+        "gallery_image_q8rUxN",
+        "gallery_image_K6bYtb",
+        "gallery_image_x7gQXR",
+        "gallery_image_84hDC7",
+        "gallery_image_jKC6Fh",
+        "gallery_image_YmBXdW",
+        "gallery_image_BtxW8y",
+        "gallery_image_eeBdff",
+        "gallery_image_zi3eD3",
+        "gallery_image_FqFit4"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_kacjre": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_VeD4eK",
+    "main",
+    "blog_comment_kacjre",
+    "blog_recently_post_YYpqDc"
+  ]
+}

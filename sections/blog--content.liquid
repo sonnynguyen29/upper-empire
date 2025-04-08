@@ -1,0 +1,356 @@
+{% comment %} sections/blog-content-blocks.liquid {% endcomment %}
+
+<div class="blog-content">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'heading' %}
+        <div class="blog-content__heading" {{ block.shopify_attributes }}>
+          <h2 style="font-size: {{ block.settings.heading_size }}px;">
+            {{ block.settings.title }}
+          </h2>
+        </div>
+
+      {% when 'text' %}
+        <div class="blog-content__text" {{ block.shopify_attributes }}>
+          {{ block.settings.text }}
+        </div>
+
+      {% when 'image' %}
+        <div class="blog-content__image" {{ block.shopify_attributes }}>
+          {% if block.settings.image %}
+            {{
+              block.settings.image
+              | image_url: width: 1200
+              | image_tag: class: 'blog-content__img', alt: block.settings.image.alt, loading: 'lazy'
+            }}
+            {% if block.settings.caption != blank %}
+              <p class="blog-content__caption">{{ block.settings.caption }}</p>
+            {% endif %}
+          {% endif %}
+        </div>
+
+      {% when 'video' %}
+        <div class="blog-content__video" {{ block.shopify_attributes }}>
+          {% if block.settings.video_source == 'url' and block.settings.video_url != blank %}
+            <div class="blog-content__video-wrapper">
+              {{ block.settings.video_url | video_tag: controls: true }}
+            </div>
+          {% elsif block.settings.video_source == 'file' and block.settings.video_file != blank %}
+            <div class="blog-content__video-wrapper">
+              {{
+                block.settings.video_file
+                | video_tag:
+                  controls: true,
+                  autoplay: block.settings.autoplay,
+                  loop: block.settings.loop,
+                  muted: block.settings.muted,
+                  class: 'blog-content__video-file'
+              }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.video_caption != blank %}
+            <p class="blog-content__caption">{{ block.settings.video_caption }}</p>
+          {% endif %}
+        </div>
+
+      {% when 'quote' %}
+        <blockquote class="blog-content__quote" {{ block.shopify_attributes }}>
+          <div class="blog-content__quote-text">{{ block.settings.quote_text }}</div>
+          {% if block.settings.quote_author != blank %}
+            <cite class="blog-content__quote-author">{{ block.settings.quote_author }}</cite>
+          {% endif %}
+        </blockquote>
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Blog Content Blocks",
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading Text",
+          "default": "Add your heading"
+        },
+        {
+          "type": "range",
+          "id": "heading_size",
+          "min": 20,
+          "max": 60,
+          "step": 2,
+          "unit": "px",
+          "label": "Heading Size",
+          "default": 32
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text Content",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Add your content here</p>"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "select",
+          "id": "video_source",
+          "label": "Video Source",
+          "options": [
+            {
+              "value": "url",
+              "label": "YouTube/Vimeo URL"
+            },
+            {
+              "value": "file",
+              "label": "Video File"
+            }
+          ],
+          "default": "url"
+        },
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "Video URL",
+          "info": "YouTube or Vimeo URL"
+        },
+        {
+          "type": "video",
+          "id": "video_file",
+          "label": "Video File",
+          "info": "Upload or select a video file"
+        },
+        {
+          "type": "checkbox",
+          "id": "autoplay",
+          "label": "Autoplay",
+          "default": false,
+          "info": "Video will be muted when autoplay is enabled"
+        },
+        {
+          "type": "checkbox",
+          "id": "loop",
+          "label": "Loop Video",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "muted",
+          "label": "Mute Video",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "video_caption",
+          "label": "Video Caption"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "name": "Quote",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "quote_text",
+          "label": "Quote Text"
+        },
+        {
+          "type": "text",
+          "id": "quote_author",
+          "label": "Quote Author"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Content Blocks",
+      "blocks": [
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+  .blog-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Heading styles */
+  .blog-content__heading {
+    margin: 2em 0 1em;
+  }
+
+  .blog-content__heading h2 {
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+
+  /* Text styles */
+  .blog-content__text {
+    margin: 1.5em 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #333333;
+  }
+
+  /* Image styles */
+  .blog-content__image {
+    margin: 2em 0;
+  }
+
+  .blog-content__img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .blog-content__caption {
+    margin-top: 0.5em;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+  }
+
+  /* Video styles */
+  .blog-content__video {
+    margin: 2em 0;
+  }
+
+  .blog-content__video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #000000;
+  }
+
+  .blog-content__video-wrapper iframe,
+  .blog-content__video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-content__video-file {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Custom video player controls */
+  .blog-content__video-wrapper video::-webkit-media-controls {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .blog-content__video-wrapper video::-webkit-media-controls-panel {
+    display: flex !important;
+    opacity: 1 !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .blog-content {
+      padding: 0 8px;
+    }
+
+    .blog-content__video-wrapper {
+      margin: 0 -8px;
+      border-radius: 8px;
+    }
+  }
+
+  /* Quote styles */
+  .blog-content__quote {
+    margin: 2em 0;
+    padding: 2em;
+    background-color: #f8f8f8;
+    border-left: 4px solid #000000;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .blog-content__quote-text {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 36px;
+  }
+  
+  .blog-content__quote-text a { 
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .blog-content__quote-author {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+    font-style: normal;
+  }
+
+  .blog-content__quote-author::before {
+    content: '— ';
+  }
+
+  @media screen and (max-width: 768px) {
+    .blog-content__heading h2 {
+      font-size: 24px !important;
+    }
+
+    .blog-content__text {
+      font-size: 16px;
+    }
+
+    .blog-content__quote {
+      padding: 1.5em;
+    }
+
+    .blog-content__quote-text {
+      font-size: 20px;
+    }
+  }
+{% endstylesheet %}

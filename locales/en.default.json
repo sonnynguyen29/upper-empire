@@ -85,11 +85,11 @@
     },
     "comments": {
       "title": "Leave a comment",
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Comment",
       "post": "Post comment",
-      "moderated": "Please note, comments must be approved before they are published",
+      "moderated": "* Please note, comments must be approved before they are published",
       "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
       "success": "Your comment was posted successfully! Thank you!",
       "with_count": {
