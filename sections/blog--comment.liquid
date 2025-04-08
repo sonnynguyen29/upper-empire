@@ -1,4 +1,4 @@
-{{  'blog--comment.css' | asset_url | stylesheet_tag }}
+{{ 'blog--comment.css' | asset_url | stylesheet_tag }}
 
 {% assign number_of_comments = article.comments_count %}
 
@@ -58,9 +58,13 @@
         {% endif %}
       {% endif %}
 
+      <hr>
+
       <div class="blog-comment__form">
         {% form 'new_comment', article %}
-          <h3 class="blog-comment__form-title">{{ 'blogs.comments.title' | t }}</h3>
+          <div class="blog-comment__form__wrapper-title">
+            <h3 class="blog-comment__form-title">{{ 'blogs.comments.title' | t }}</h3>
+          </div>
           {{ form.errors | default_errors }}
 
           <div class="blog-comment__form-grid">
