@@ -1,5 +1,7 @@
 .related-post {
   padding: 20px 8px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 .related-post hr {
   height: 1px;
