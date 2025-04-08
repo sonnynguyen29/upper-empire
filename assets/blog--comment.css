@@ -1,0 +1,126 @@
+.blog-comment {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.blog-comment__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.blog-comment__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.blog-comment__item {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.blog-comment__item:last-child {
+  border-bottom: none;
+}
+.blog-comment__content {
+  margin-bottom: 10px;
+}
+.blog-comment__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  color: #333;
+}
+.blog-comment__meta {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+.blog-comment__meta > *:not(:last-child) {
+  margin-right: 8px;
+}
+.blog-comment__author {
+  font-weight: 600;
+}
+.blog-comment__separator {
+  width: 4px;
+  height: 4px;
+  background-color: #666;
+  border-radius: 50%;
+}
+.blog-comment__pagination {
+  margin-top: 20px;
+}
+.blog-comment__pagination-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.blog-comment__pagination-item {
+  margin: 0 5px;
+}
+.blog-comment__pagination-item--active {
+  font-weight: bold;
+}
+.blog-comment__pagination-link {
+  text-decoration: none;
+  color: #333;
+}
+.blog-comment__pagination-link:hover {
+  text-decoration: underline;
+}
+.blog-comment__form {
+  margin-top: 40px;
+}
+.blog-comment__form-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.blog-comment__form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .blog-comment__form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.blog-comment__form-group {
+  display: flex;
+  flex-direction: column;
+}
+.blog-comment__form-group--textarea {
+  grid-column: 1/-1;
+}
+.blog-comment__form-label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.blog-comment__form-input, .blog-comment__form-textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.blog-comment__form-input--error, .blog-comment__form-textarea--error {
+  border-color: red;
+}
+.blog-comment__form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.blog-comment__form-submit {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.blog-comment__form-submit:hover {
+  background-color: #555;
+}
