@@ -1,0 +1,50 @@
+{{ 'blog--sneaker-header.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "Blog Sneaker Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_header",
+      "label": "Custom Header"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Sneaker Header",
+      "category": "Blog"
+    }
+  ]
+}
+{% endschema %}
+
+{% capture heading %}
+    <h1 class="blog-sneaker-header__title">
+        {% if section.settings.custom_header != blank %}
+          {{ section.settings.custom_header }}
+        {% else %}
+          {{ blog.title }}
+        {% endif %}
+    </h1>
+{% endcapture %}
+
+<div class="blog-sneaker-header">
+  <div class="blog-sneaker-header__wrapper">
+    {{ heading }}
+    <div class="blog-sneaker-header__image">
+        <div class="blog-sneaker-header__image-overlay"></div>
+      {% if section.settings.image %}
+        {{ section.settings.image | image_url: width: 1920 | image_tag: class: 'blog-sneaker-header__image-img' }}
+      {% endif %}
+    </div>
+  </div>
+  <div class="blog-sneaker-header__content">
+    {{ heading }}
+  </div>
+</div>

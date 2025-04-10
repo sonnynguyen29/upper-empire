@@ -1,0 +1,57 @@
+.blog-sneaker-header__wrapper {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(0deg, #F4EEE9 0%, #F4EEE9 100%), url(<path-to-image>) lightgray 50%/cover no-repeat;
+  align-items: center;
+}
+.blog-sneaker-header__wrapper h1 {
+  margin: 0 0 0 30px;
+}
+.blog-sneaker-header__image {
+  width: 50vw;
+  height: 100%;
+  position: relative;
+}
+.blog-sneaker-header__image-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.blog-sneaker-header__image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(244, 238, 233) 0%, rgba(0, 212, 255, 0) 50%);
+}
+.blog-sneaker-header__content {
+  display: flex;
+  padding: 15.707px 94px 0.293px 95px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+.blog-sneaker-header__title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .blog-sneaker-header__title {
+    font-size: 66.554px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: -1.331px;
+  }
+  .blog-sneaker-header__content {
+    display: none;
+  }
+  .blog-sneaker-header__wrapper {
+    display: grid;
+  }
+}
