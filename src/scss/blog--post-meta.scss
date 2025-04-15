@@ -1,0 +1,55 @@
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+
+    &__date {
+        color: rgba(0, 0, 0, 0.80);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+    }
+
+    .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #D9D9D9;
+    }
+
+    svg {
+        margin-bottom: 2px;
+    }
+
+    &__comments {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+
+        &-text {
+            color: rgba(0, 0, 0, 0.80);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: normal;
+        }
+    }
+
+
+    @media screen and (min-width: 1024px) {
+        &__date {
+            font-size: 16px;
+        }
+
+        &__comments {
+            &-text {
+                font-size: 16px;
+            }
+        }
+
+    }
+}

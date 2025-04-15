@@ -1,0 +1,82 @@
+.blog-main-ue-sneaker-guides {
+  padding: 8px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.blog-main-ue-sneaker-guides hr {
+  display: none;
+}
+.blog-main-ue-sneaker-guides__header {
+  margin-bottom: 16px;
+}
+.blog-main-ue-sneaker-guides__title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.blog-main-ue-sneaker-guides__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.blog-main-ue-sneaker-guides__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.blog-main-ue-sneaker-guides__view-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 1px solid #000;
+  width: 100%;
+  height: 40px;
+}
+.blog-main-ue-sneaker-guides__view-more:hover {
+  background-color: #000;
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+  .blog-main-ue-sneaker-guides {
+    margin-top: 45px;
+  }
+  .blog-main-ue-sneaker-guides hr {
+    display: block;
+    background: #000;
+    height: 1px;
+    margin: 20px 0;
+  }
+  .blog-main-ue-sneaker-guides__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .blog-main-ue-sneaker-guides__title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+  }
+  .blog-main-ue-sneaker-guides__view-more {
+    width: 191px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .blog-main-ue-sneaker-guides {
+    padding: 8px 0;
+  }
+}

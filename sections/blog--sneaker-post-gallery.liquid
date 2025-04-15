@@ -1,13 +1,103 @@
 {{ 'blog--sneaker-post-gallery.css' | asset_url | stylesheet_tag }}
 
+<div class="blog-sneaker-post-gallery">
+  {% if section.settings.heading != blank %}
+    <h2 class="blog-sneaker-post-gallery__heading">{{ section.settings.heading }}</h2>
+  {% endif %}
+  <div class="blog-sneaker-post-gallery__wrapper">
+    {% if section.settings.blog != blank %}
+      {% assign blog = blogs[section.settings.blog] %}
+      {% if blog.articles_count > 0 %}
+        <div class="blog-sneaker-post-gallery__articles">
+          {% for article in blog.articles %}
+            {% liquid
+              assign is_highlighted = false
+              if section.settings.highlight_first_article and forloop.first 
+                assign is_highlighted = true
+              endif
+            %}
+            {% render 'blog--article', article: article, is_highlighted: is_highlighted %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endif %}
+
+    <div class="blog-sneaker-post-gallery__newsletter">
+      {% for block in section.blocks %}
+        {% if block.type == 'newsletter' %}
+          <div class="blog-sneaker-post-gallery__newsletter-wrapper">
+            <div class="blog-sneaker-post-gallery__newsletter-content">
+              <h2 class="blog-sneaker-post-gallery__newsletter-heading">{{ block.settings.heading }}</h2>
+              <p class="blog-sneaker-post-gallery__newsletter-subheading">{{ block.settings.subheading }}</p>
+            </div>
+
+            <div class="blog-sneaker-post-gallery__newsletter-form">
+              <input
+                type="email"
+                class="blog-sneaker-post-gallery__newsletter-input"
+                placeholder="Your email"
+                aria-label="Email address"
+                required
+              >
+              <button class="btn blog-sneaker-post-gallery__newsletter-subscribe">
+                {{ block.settings.button_text }}
+              </button>
+            </div>
+          </div>
+          {% if block.settings.image %}
+            <div class="blog-sneaker-post-gallery__newsletter-image">
+              {{ block.settings.image | image_url: width: 600 | image_tag }}
+            </div>
+            <div class="blog-sneaker-post-gallery__newsletter-image-overlay"></div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="blog-sneaker-post-gallery__view-more">
+      <button class="blog-sneaker-post-gallery__view-more_btn">View More</button>
+    </div>
+  </div>
+</div>
+
 {% schema %}
 {
   "name": "Blog Sneaker Post Gallery",
   "settings": [
     {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
       "type": "blog",
       "id": "blog",
       "label": "Blog"
+    },
+    {
+      "type": "checkbox",
+      "id": "highlight_first_article",
+      "label": "Highlight the first article"
+    },
+    {
+      "type": "range",
+      "id": "total_articles_displayed",
+      "label": "Total Articles Displayed",
+      "default": 3,
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "art"
+    },
+    {
+      "type": "range",
+      "id": "tatal_articles_view_more",
+      "label": "Total Articles Click View More",
+      "default": 3,
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "art"
     }
   ],
   "blocks": [
@@ -49,100 +139,3 @@
   ]
 }
 {% endschema %}
-
-<div class="blog-sneaker-post-gallery">
-  <div class="blog-sneaker-post-gallery__wrapper">
-    {% if section.settings.blog != blank %}
-      {% assign blog = blogs[section.settings.blog] %}
-      {% if blog.articles_count > 0 %}
-        <div class="blog-sneaker-post-gallery__articles">
-          {% for article in blog.articles %}
-            <a href="{{ article.url }}" class="blog-sneaker-post-gallery__article">
-              <div class="blog-sneaker-post-gallery__article-image">
-                {% if article.image %}
-                  {{
-                    article.image
-                    | image_url: width: 600
-                    | image_tag: class: 'blog-sneaker-post-gallery__article-img'
-                  }}
-                {% else %}
-                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                {% endif %}
-              </div>
-              <div class="blog-sneaker-post-gallery__article-content">
-                <h3 class="blog-sneaker-post-gallery__article-title">{{ article.title }}</h3>
-                <p class="blog-sneaker-post-gallery__article-meta">
-                  <span class="blog-sneaker-post-gallery__article-meta__date">
-                    {% assign today_timestamp = 'now' | date: '%s' %}
-                    {% assign published_timestamp = article.published_at | date: '%s' %}
-                    {% assign seconds_difference = today_timestamp | minus: published_timestamp %}
-                    {% assign days_difference = seconds_difference | divided_by: 86400 | floor %}
-
-                    {% if days_difference == 0 %}
-                      Today
-                    {% elsif days_difference == 1 %}
-                      a day ago
-                    {% elsif days_difference < 7 %}
-                      {{ days_difference }} days ago
-                    {% else %}
-                      {{ article.published_at | date: '%B %d, %Y' }}
-                    {% endif %}
-                  </span>
-                  <span class="dot">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
-                      <circle cx="2" cy="2.47461" r="2" fill="#D9D9D9"/>
-                    </svg>
-                  </span>
-                  <span
-                    class="blog-sneaker-post-gallery__article-meta__comments"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <g opacity="0.8">
-                      <path d="M13.5 3.47461H2.50002C2.2348 3.47461 1.98045 3.57997 1.79291 3.7675C1.60537 3.95504 1.50002 4.20939 1.50002 4.47461V14.4746C1.49886 14.6653 1.55281 14.8523 1.65537 15.013C1.75793 15.1738 1.90473 15.3015 2.07814 15.3809C2.21029 15.4424 2.35425 15.4744 2.50002 15.4746C2.73477 15.474 2.96174 15.3903 3.14064 15.2384L3.14627 15.234L5.18752 13.4746H13.5C13.7652 13.4746 14.0196 13.3693 14.2071 13.1817C14.3947 12.9942 14.5 12.7398 14.5 12.4746V4.47461C14.5 4.20939 14.3947 3.95504 14.2071 3.7675C14.0196 3.57997 13.7652 3.47461 13.5 3.47461ZM13.5 12.4746H5.00002C4.87996 12.4747 4.76394 12.5179 4.67314 12.5965L2.50002 14.4746V4.47461H13.5V12.4746Z" fill="black"/>
-                      </g>
-                    </svg>
-                    <span class="blog-sneaker-post-gallery__article-meta__comments-text">
-                      {{ article.comments_count }}
-                    </span>
-                  </span>
-                </p>
-              </div>
-            </a>
-          {% endfor %}
-        </div>
-      {% endif %}
-    {% endif %}
-
-    <div class="blog-sneaker-post-gallery__newsletter">
-      {% for block in section.blocks %}
-        {% if block.type == 'newsletter' %}
-          <div class="blog-sneaker-post-gallery__newsletter-wrapper">
-            <div class="blog-sneaker-post-gallery__newsletter-content">
-              <h2 class="blog-sneaker-post-gallery__newsletter-heading">{{ block.settings.heading }}</h2>
-              <p class="blog-sneaker-post-gallery__newsletter-subheading">{{ block.settings.subheading }}</p>
-            </div>
-
-            <div class="blog-sneaker-post-gallery__newsletter-form">
-              <input
-                type="email"
-                class="blog-sneaker-post-gallery__newsletter-input"
-                placeholder="Your email"
-                aria-label="Email address"
-                required
-              >
-              <button class="btn blog-sneaker-post-gallery__newsletter-subscribe">
-                {{ block.settings.button_text }}
-              </button>
-            </div>
-          </div>
-          {% if block.settings.image %}
-            <div class="blog-sneaker-post-gallery__newsletter-image">
-              {{ block.settings.image | image_url: width: 600 | image_tag }}
-            </div>
-            <div class="blog-sneaker-post-gallery__newsletter-image-overlay">
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</div>

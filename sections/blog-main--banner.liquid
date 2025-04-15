@@ -1,0 +1,49 @@
+{{ 'blog-main--banner.css' | asset_url | stylesheet_tag }}
+
+<div class="blog-main-banner">
+  <div class="blog-main-banner__wrapper">
+    <div class="blog-main-banner__content">
+      <h1 class="blog-main-banner__title">{{ section.settings.title }}</h1>
+      {% if section.settings.subtitle %}
+        <p class="blog-main-banner__subtitle">{{ section.settings.subtitle }}</p>
+      {% endif %}
+    </div>
+    <div class="blog-main-banner__image">
+      {% if section.settings.image %}
+        {{ section.settings.image | image_url: width: 1600 | image_tag: class: 'blog-main-banner__img' }}
+      {% endif %}
+      <div class="blog-main-banner__overlay"></div>
+      <div class="blog-main-banner__overlay-dark"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog Main Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Banner Title",
+      "default": "The Most Expensive Air Jordans Ever"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Banner Subtitle",
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Banner Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Main Banner",
+      "category": "Blog"
+    }
+  ]
+}
+{% endschema %}

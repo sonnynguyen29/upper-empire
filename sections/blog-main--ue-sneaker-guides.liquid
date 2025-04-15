@@ -1,0 +1,118 @@
+{{ 'blog-main--ue-sneaker-guides.css' | asset_url | stylesheet_tag }}
+
+<div class="blog-main-ue-sneaker-guides">
+  <div class="blog-main-ue-sneaker-guides__header">
+    <h2 class="blog-main-ue-sneaker-guides__title">{{ section.settings.title }}</h2>
+  </div>
+  <hr>
+  <div class="blog-main-ue-sneaker-guides__grid">
+    {% for article in blogs[section.settings.articles].articles %}
+      {% comment %}
+        <div class="blog-main-ue-sneaker-guides__item">
+          <a href="{{ article.url }}" class="blog-main-ue-sneaker-guides__link">
+            <div class="blog-main-ue-sneaker-guides__image">
+              {% if article.image %}
+                {{ article.image | image_url: width: 600 | image_tag: class: 'blog-main-ue-sneaker-guides__image-img' }}
+              {% endif %}
+            </div>
+            <div class="blog-main-ue-sneaker-guides__content">
+              {% liquid
+                assign blog_handle = article.handle | split: '/' | first
+                assign blog_title = blogs[blog_handle].title
+              %}
+              <p class="blog-main-ue-sneaker-guides__category">{{ blog_title }}</p>
+              <h3 class="blog-main-ue-sneaker-guides__article-title">{{ article.title }}</h3>
+              {% render 'blog--post-meta', article: article %}
+            </div>
+          </a>
+        </div>
+      {% endcomment %}
+      {% liquid
+        assign is_highlighted = false
+        if section.settings.highlight_first_article and forloop.first
+          assign is_highlighted = true
+        endif
+
+        assign article_layout = section.settings.article_layout
+      %}
+      {% render 'blog--article', article: article, is_highlighted: is_highlighted, article_layout: article_layout %}
+    {% endfor %}
+  </div>
+  <div class="blog-main-ue-sneaker-guides__footer">
+    <a href="{{ section.settings.view_more_url }}" class="blog-main-ue-sneaker-guides__view-more">
+      {{- section.settings.view_more_text -}}
+    </a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "UE Sneaker Guides",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "UE Sneaker Guides"
+    },
+    {
+      "type": "blog",
+      "id": "articles",
+      "label": "Articles"
+    },
+    {
+      "type": "text",
+      "id": "view_more_text",
+      "label": "View More Text",
+      "default": "View More"
+    },
+    {
+      "type": "checkbox",
+      "id": "highlight_first_article",
+      "label": "Highlight the first article"
+    },
+    {
+      "type": "range",
+      "id": "total_articles_displayed",
+      "label": "Total Articles Displayed",
+      "default": 3,
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "art"
+    },
+    {
+      "type": "range",
+      "id": "tatal_articles_view_more",
+      "label": "Total Articles Click View More",
+      "default": 3,
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "art"
+    },
+    {
+      "type": "select",
+      "id": "article_layout",
+      "label": "Article Layout",
+      "options": [
+        {
+          "value": "vertical",
+          "label": "Vertical"
+        },
+        {
+          "value": "horizontal",
+          "label": "Horizontal"
+        }
+      ],
+      "default": "horizontal"
+    }
+  ],
+  "presets": [
+    {
+      "name": "UE Sneaker Guides",
+      "category": "Blog"
+    }
+  ]
+}
+{% endschema %}

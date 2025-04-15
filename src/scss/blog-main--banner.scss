@@ -1,0 +1,112 @@
+.blog-main-banner {
+    background-color: black;
+    margin-bottom: 40px;
+
+    &__wrapper {
+        max-width: 1920px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__content {
+        position: absolute;
+        top: 32px;
+        left: 19px;
+        right: 19px;
+        bottom: auto;
+    }
+
+    &__title {
+        color: #FFF;
+        text-align: center;
+        font-size: 38.079px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 34.329px;
+        letter-spacing: -0.762px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__subtitle {}
+
+    &__image {
+
+        &-img {}
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 0;
+
+        &__wrapper {
+            height: 250px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+
+        &__content {
+            position: static;
+            padding-left: 72px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        &__title {
+            color: #FFF;
+            font-size: 66.554px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 60px;
+            /* 90.152% */
+            letter-spacing: -1.331px;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        &__subtitle {}
+
+        &__image {
+            position: relative;
+            height: 250px;
+        }
+
+        &__img {
+            height: 250px;
+            object-fit: cover;
+            object-position: 50% 61%;
+        }
+
+        &__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.76) 0%, rgba(250, 250, 250, 0) 19%);
+        }
+
+        &__overlay-dark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 85%, rgba(0, 0, 0, 0.76) 100%);
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        &__wrapper {
+            max-width: 1440px;
+        }
+
+
+
+        &__content {
+            padding-left: 0;
+            width: 80%;
+        }
+    }
+}

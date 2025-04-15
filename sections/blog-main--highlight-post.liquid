@@ -1,0 +1,155 @@
+{{ 'blog-main--highlight-post.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign main_highlight_post = section.blocks | where: 'type', 'main_highlight' | first
+  assign highlight_posts = section.blocks | where: 'type', 'highlight_post'
+%}
+
+<div class="blog-main-highlight-post">
+  <div class="blog-main-highlight-post__wrapper">
+    <div class="blog-main-highlight-post__main">
+      <a href="{{ main_highlight_post.settings.article | article_url }}" class="blog-main-highlight-post__main-link">
+        <div class="blog-main-highlight-post__main-image">
+          {% if main_highlight_post.settings.image %}
+            {{
+              main_highlight_post.settings.image
+              | image_url: width: 1200
+              | image_tag: class: 'blog-main-highlight-post__main-img'
+            }}
+          {% else %}
+            {% assign article = main_highlight_post.settings.article %}
+            {% if article.image %}
+              {{ article.image | image_url: width: 1200 | image_tag: class: 'blog-main-highlight-post__main-img' }}
+            {% endif %}
+          {% endif %}
+        </div>
+        <div class="blog-main-highlight-post__main-content">
+          {% liquid
+            assign article = articles[main_highlight_post.settings.article]
+            assign title = main_highlight_post.settings.title | default: article.title
+
+            assign blog_handle = article.handle | split: '/' | first
+            assign blog_title = blogs[blog_handle].title
+          %}
+
+          <p class="blog-main-highlight-post__main-blog-title">{{ blog_title }}</p>
+          <h2 class="blog-main-highlight-post__main-title">{{ title }}</h2>
+          {% render 'blog--post-meta', article: main_highlight_post.settings.article %}
+        </div>
+      </a>
+    </div>
+
+    <div class="blog-main-highlight-post__highlights">
+      {% for block in highlight_posts %}
+        <div class="blog-main-highlight-post__highlight">
+          <a href="{{ block.settings.article | article_url }}" class="blog-main-highlight-post__highlight-link">
+            <div class="blog-main-highlight-post__highlight-image">
+              {% if block.settings.image %}
+                {{
+                  block.settings.image
+                  | image_url: width: 600
+                  | image_tag: class: 'blog-main-highlight-post__highlight-img'
+                }}
+              {% else %}
+                {% assign article = block.settings.article %}
+                {% if article.image %}
+                  {{
+                    article.image
+                    | image_url: width: 600
+                    | image_tag: class: 'blog-main-highlight-post__highlight-img'
+                  }}
+                {% endif %}
+              {% endif %}
+            </div>
+            <div class="blog-main-highlight-post__highlight-content">
+              {% liquid
+                assign article = articles[block.settings.article]
+                assign title = block.settings.title | default: article.title
+
+                assign blog_handle = article.handle | split: '/' | first
+                assign blog_title = blogs[blog_handle].title
+              %}
+
+              <p class="blog-main-highlight-post__highlight-blog-title">{{ blog_title }}</p>
+              <h3 class="blog-main-highlight-post__highlight-title">{{ title }}</h3>
+              {% render 'blog--post-meta', article: article %}
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog Main Highlight Post",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "main_highlight",
+      "name": "Main Highlight Block",
+      "settings": [
+        {
+          "type": "article",
+          "id": "article",
+          "label": "Article"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Main Highlight Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Main highlight description goes here."
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "highlight_post",
+      "name": "Highlight Post Block",
+      "settings": [
+        {
+          "type": "article",
+          "id": "article",
+          "label": "Article"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Highlight Post Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Highlight post description goes here."
+        }
+      ],
+      "limit": 3
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Main Highlight Post",
+      "category": "Blog"
+    }
+  ]
+}
+{% endschema %}

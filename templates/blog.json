@@ -1,7 +1,105 @@
-{
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
   "sections": {
+    "blog_main_highlight_post_bnktkg": {
+      "type": "blog-main--highlight-post",
+      "blocks": {
+        "main_highlight_F7pzjh": {
+          "type": "main_highlight",
+          "settings": {
+            "article": "news/off-white-lot-dunks",
+            "title": "",
+            "description": ""
+          }
+        },
+        "highlight_post_LggAHJ": {
+          "type": "highlight_post",
+          "settings": {
+            "article": "sneaker-news/how-to-clean-and-maintain-your-sneakers-like-a-pro",
+            "title": "",
+            "description": ""
+          }
+        },
+        "highlight_post_iH6Ktr": {
+          "type": "highlight_post",
+          "settings": {
+            "article": "sneaker-news/top-5-sneakers-you-need-in-your-rotation-this-year",
+            "title": "",
+            "description": ""
+          }
+        },
+        "highlight_post_3VDQ9K": {
+          "type": "highlight_post",
+          "settings": {
+            "article": "sneaker-news/nike-vomero-advances-retro-running-style-with-new-colors-and-weatherized-silhouette",
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "main_highlight_F7pzjh",
+        "highlight_post_LggAHJ",
+        "highlight_post_iH6Ktr",
+        "highlight_post_3VDQ9K"
+      ],
+      "settings": {}
+    },
+    "blog_main_banner_8FV4Qy": {
+      "type": "blog-main--banner",
+      "settings": {
+        "title": "The Most Expensive Air Jordans Ever",
+        "subtitle": "",
+        "image": "shopify://shop_images/ee644f51df689bc66b0e569de57c38ff.png"
+      }
+    },
+    "blog_sneaker_post_gallery_DkcJ7w": {
+      "type": "blog--sneaker-post-gallery",
+      "blocks": {
+        "newsletter_HUkziD": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Subscribe to our newsletter",
+            "subheading": "Get the latest updates on new products and upcoming sales",
+            "button_text": "Subscribe",
+            "image": "shopify://shop_images/f36bcfeceeb1c08e92d62940fcfafb76.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_HUkziD"
+      ],
+      "settings": {
+        "heading": "lastest news",
+        "blog": "news",
+        "highlight_first_article": true,
+        "total_articles_displayed": 3,
+        "tatal_articles_view_more": 3
+      }
+    },
+    "blog_main_ue_sneaker_guides_iMmRi8": {
+      "type": "blog-main--ue-sneaker-guides",
+      "settings": {
+        "title": "UE Sneaker Guides",
+        "articles": "sneaker-news",
+        "view_more_text": "View More",
+        "highlight_first_article": true,
+        "total_articles_displayed": 3,
+        "tatal_articles_view_more": 3,
+        "article_layout": "vertical"
+      }
+    },
     "e15cd669-6e10-45b6-87de-7377df6538ba": {
       "type": "text--rich-text",
+      "disabled": true,
       "settings": {
         "colors": "white",
         "section_width": "narrow",
@@ -19,13 +117,14 @@
         "layout": "left",
         "text_alignment": "center",
         "title": "Share brand or product details",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
         "button_label": "Read more",
-        "button_link": "shopify:\/\/blogs\/news"
+        "button_link": "shopify://blogs/news"
       }
     },
     "main": {
       "type": "template--blog",
+      "disabled": true,
       "settings": {
         "show_author_name": false,
         "blog-sidebar-description": "",
@@ -43,9 +142,9 @@
           "settings": {
             "grid_image_size": "wide",
             "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.</p>",
             "button_text": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         },
         "template--14795084955718__67543449-bf33-4648-97bf-c7e5c527ccf2-1688737988dceb6ec0-1": {
@@ -53,9 +152,9 @@
           "settings": {
             "grid_image_size": "wide",
             "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.</p>",
             "button_text": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         },
         "fac94e75-038c-49a0-9ab0-446701305b55": {
@@ -63,9 +162,9 @@
           "settings": {
             "grid_image_size": "wide",
             "heading": "Heading",
-            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.<\/p>",
+            "text": "<p>Use text paired with images to create a captivating brand story, explain details of your products, or highlight store promotions.</p>",
             "button_text": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/all"
+            "button_link": "shopify://collections/all"
           }
         }
       },
@@ -86,6 +185,10 @@
     }
   },
   "order": [
+    "blog_main_highlight_post_bnktkg",
+    "blog_main_banner_8FV4Qy",
+    "blog_sneaker_post_gallery_DkcJ7w",
+    "blog_main_ue_sneaker_guides_iMmRi8",
     "e15cd669-6e10-45b6-87de-7377df6538ba",
     "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54",
     "main",

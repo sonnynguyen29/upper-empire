@@ -1,0 +1,145 @@
+.blog-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        display: grid;
+
+        img {
+            align-self: stretch;
+            aspect-ratio: 175.50/117.16;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__category {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #888;
+        margin: 0;
+        line-height: normal;
+
+        &--desktop {
+            display: none;
+            gap: 6px;
+            justify-content: center;
+            align-items: center;
+
+            .dot {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        &--mobile {}
+    }
+
+    &__content {
+        display: flex;
+        padding-top: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        flex: 1 0 0;
+    }
+
+    &__title {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        color: #000;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &--highlight {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr auto;
+
+            .blog-article__content,
+            .blog-sneaker-post-gallery__article-content {
+                padding: 0;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        gap: 20px;
+
+        &__image {
+            img {
+                aspect-ratio: 461/308;
+            }
+        }
+
+        &__content {
+            padding: 0;
+            gap: 13px;
+        }
+
+        &__title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        &__category {
+            font-size: 16px;
+
+            &--desktop {
+                display: flex;
+            }
+
+            &--mobile {
+                display: none;
+            }
+        }
+
+        &--vertical {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr minmax(0, 115px);
+            gap: 8px;
+
+            .blog-article__category--mobile {
+                display: flex;
+                font-size: 14px;
+            }
+
+            .blog-article__category--desktop {
+                display: none;
+            }
+
+            .blog-article__content {
+                gap: 8px
+            }
+
+            .blog-article__title {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px;
+                text-overflow: ellipsis;
+            }
+
+            .post-meta__date,
+            .post-meta__comments {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: normal;
+            }
+        }
+    }
+}

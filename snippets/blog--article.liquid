@@ -1,0 +1,30 @@
+{{ 'blog--article.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign blog_handle = article.handle | split: '/' | first
+  assign blog_title = blogs[blog_handle].title
+  assign class_name = 'blog-article'
+
+  if is_highlighted
+    assign class_name = class_name | append: ' blog-article--highlight'
+  endif
+
+  if article_layout == 'vertical'
+    assign class_name = class_name | append: ' blog-article--vertical'
+  else
+    assign class_name = class_name | append: ' blog-article--horizontal'
+  endif
+%}
+<a
+  href="{{ article.url }}"
+  class="{{ class_name }}"
+>
+  <div class="blog-article__image">
+    {{ article.image | image_url: width: 600 | image_tag: class: 'blog-article__image__img' }}
+  </div>
+  <div class="blog-article__content">
+    <p class="blog-article__category blog-article__category--mobile">{{ blog_title }}</p>
+    <h3 class="blog-article__title">{{ article.title }}</h3>
+    {% render 'blog--post-meta', article: article, blog_title: blog_title %}
+  </div>
+</a>

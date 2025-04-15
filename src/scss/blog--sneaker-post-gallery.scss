@@ -1,99 +1,45 @@
 .blog-sneaker-post-gallery {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 8px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "articles" 
+        "view-more" 
+        "newsletter";
+    }
+
+    &__heading {
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: -0.48px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
 
     &__articles {
         display: flex;
-        padding: 8px;
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
         align-self: stretch;
-    }
-
-    &__article {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-
-        &-image {
-            width: 100%;
-            height: 100%;
-
-            img {
-                align-self: stretch;
-                aspect-ratio: 175.50/117.16;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-
-        &-content {
-            display: flex;
-            padding-top: 8px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 8px;
-            flex: 1 0 0;
-        }
-
-        &-title {
-            overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 20px;
-            margin: 0;
-            padding: 0;
-        }
-
-        &-meta {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            margin: 0;
-            padding: 0;
-
-            &__date {
-                color: rgba(0, 0, 0, 0.80);
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 450;
-                line-height: normal;
-            }
-
-            .dot,
-            svg {
-                margin-bottom: 2px;
-            }
-
-            &__comments {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 4px;
-
-                &-text {
-                    color: rgba(0, 0, 0, 0.80);
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 450;
-                    line-height: normal;
-                }
-            }
-        }
+        grid-area: articles;
     }
 
     &__newsletter {
-        display: none;
         position: relative;
         height: fit-content;
         max-height: 550px;
         position: sticky;
         top: 57px;
         z-index: 10;
+        grid-area: newsletter;
 
         &-wrapper {
             position: absolute;
@@ -124,7 +70,7 @@
                 width: 100%;
                 height: 100%;
                 background: #000;
-                opacity: 0.2;
+                opacity: 0.4;
                 z-index: 1;
             }
         }
@@ -230,55 +176,109 @@
         }
     }
 
+    &__view-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: view-more;
+        margin-top: 20px;
+
+        &_btn {
+            display: flex;
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            color: #000;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.28px;
+            text-transform: uppercase;
+            border: 1px solid #000;
+            border-radius: 0;
+            background-color: #FFF;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+
     @media screen and (min-width: 1024px) {
+        padding: 40px 8px 0 8px;
+
+        &__heading {
+            color: #000;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
         &__wrapper {
-            padding: 40px 8px 0 8px;
             display: grid;
-            grid-template-columns: 1fr minmax(0, 428px);
-            gap: 40px;
+            grid-template-columns: 1fr minmax(0, 350px);
+            grid-template-rows: auto auto;
+
+            width: 100%;
+            gap: 20px;
+
+            grid-template-areas:
+                "articles newsletter"
+                "view-more view-more";
         }
 
         &__articles {
             border-top: 1px solid #000;
             padding: 20px 0 0 0;
-
         }
+    }
 
-        &__article {
-            gap: 20px;
+    @media screen and (min-width: 1280px) {
+        &__wrapper {
+            grid-template-columns: 1fr minmax(0, 428px);
+            gap: 40px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__newsletter {
+            height: 300px;
+            max-height: unset;
+            margin: 40px 0 32px 0;
 
             &-image {
                 img {
-                    aspect-ratio: 461/308;
+                    height: 300px;
+                    max-height: unset;
                 }
             }
 
             &-content {
-                padding: 0;
-                gap: 13px;
+                gap: 8px;
             }
 
-            &-title {
-                font-size: 28px;
-                font-weight: 700;
-                line-height: normal;
+            &-heading {
+                font-size: 32px;
             }
 
-            &-meta {
-                &__date {
-                    font-size: 16px;
-                }
-
-                &__comments {
-                    &-text {
-                        font-size: 16px;
-                    }
-                }
+            &-subheading {
+                font-size: 18px;
             }
         }
 
-        &__newsletter {
-            display: block;
-        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding: 8px 0;
     }
 }
