@@ -207,6 +207,9 @@
     border-top: 1px solid #000;
     padding: 20px 0 0 0;
   }
+  .blog-sneaker-post-gallery__view-more_btn {
+    width: 191px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .blog-sneaker-post-gallery__wrapper {
