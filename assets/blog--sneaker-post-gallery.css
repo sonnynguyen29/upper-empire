@@ -28,7 +28,6 @@
   grid-area: articles;
 }
 .blog-sneaker-post-gallery__newsletter {
-  position: relative;
   height: fit-content;
   max-height: 550px;
   position: sticky;

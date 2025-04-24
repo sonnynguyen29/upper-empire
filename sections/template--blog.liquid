@@ -1,260 +1,153 @@
-<!-- /templates/blog.liquid -->
-{% comment %}
+{% if section.settings.is_show_highlight_blog %}
+  {{ 'blog--sneaker-highlight-spot.css' | asset_url | stylesheet_tag }}
+  <div class="blog-sneaker-highlight-spot">
+    <div class="blog-sneaker-highlight-spot__wrapper">
+      <div class="blog-sneaker-highlight-spot__articles">
+        {% for article in blogs[blog.handle].articles %}
+          {% if forloop.index < 4 %}
+            <a href="{{ article.url }}" class="blog-sneaker-highlight-spot__article">
+              <div class="blog-sneaker-highlight-spot__article-image">
+                {% if article.image %}
+                  {{
+                    article.image
+                    | image_url: width: 600
+                    | image_tag: class: 'blog-sneaker-highlight-spot__article-img'
+                  }}
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+              <div class="blog-sneaker-highlight-spot__article-content">
+                <h3 class="blog-sneaker-highlight-spot__article-title">{{ article.title }}</h3>
+                <p class="blog-sneaker-highlight-spot__article-meta">
+                  <span class="blog-sneaker-highlight-spot__article-meta__date">
+                    {% assign today_timestamp = 'now' | date: '%s' %}
+                    {% assign published_timestamp = article.published_at | date: '%s' %}
+                    {% assign seconds_difference = today_timestamp | minus: published_timestamp %}
+                    {% assign days_difference = seconds_difference | divided_by: 86400 | floor %}
 
-  Loop through a defined number of articles with the 'paginate' tag.
-  Don't forget to close the tag after your loop.
+                    {% if days_difference == 0 %}
+                      Today
+                    {% elsif days_difference == 1 %}
+                      a day ago
+                    {% elsif days_difference < 7 %}
+                      {{ days_difference }} days ago
+                    {% else %}
+                      {{ article.published_at | date: '%B %d, %Y' }}
+                    {% endif %}
+                  </span>
 
-{% endcomment %}
-
-{% paginate blog.articles by 4 %}
-
-{% comment %}
-  This template is also used for listing out articles of a specific tag.
-  You can change layouts or styles by checking if current_tags is true.
-{% endcomment %}
-
-<div class="wrapper-padded main-page-container">
-  <div class="grid blog-main--wrapper">
-
-    <div class="sitewide--title-wrapper">
-      {% if current_tags %}
-
-        <h1 class="page--title">{{ blog.title | link_to: blog.url }} &mdash; {{ current_tags.first }}</h1>
-      {% else %}
-
-        <h1 class="page--title">
-          <span class="blog-main--title">{{ blog.title }}</span>
-          <a href="{{ shop.url }}{{ blog.url }}.atom" class="blog-main--title-icon">
-            {% render 'theme-icon' with icon: 'rss', iconSize: 16, iconAttributes: 'aria-hidden="true"', iconClasses: 'fa-rss' %}
-          </a>
-        </h1>
-      {% endif %}
-    </div>
-
-    <div class="grid__item large--three-quarters blog-template--main">
-
-      {% comment %}
-        Loop through each article in your blog. This is limited to what you set for pagination above.
-
-        For more info on article liquid tags:
-          - http://docs.shopify.com/themes/liquid-variables/article
-      {% endcomment %}
-
-      {% for article in blog.articles %}
-
-        <div class="article--indiv grid">
-
-          <div class="grid__item large--one-quarter blog-template--individual">
-            <div>
-              {% if section.settings.show_author_name %}
-                {{ article.author }}<br />
-              {% endif %}
-              {% if section.settings.blog_show_date %}
-                <time class="indiv-post-time" datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | time_tag: format: 'date' }}</time>
-              {% endif %}
-            </div>
-
-        <ul class="blog-sidebar--meta nav-link-animated--custom">
-        {% if blog.comments_enabled? %}
-        <li>
-        <a class="animated-link--item" href="{{ article.url }}#comments">
-        {{ 'blogs.comments.with_count' | t: count: article.comments_count }}
-        </a>
-        </li>
-        {% endif %}
-
-  {% if article.tags.size > 0 %}
-    <li>
-      <span>{{ 'blogs.article.tags' | t }}:</span>
-      {% for tag in article.tags %}
-        <a class="animated-link--item" href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-      {% endfor %}
-    </li>
-  {% endif %}
-        </ul>
-
-      </div>
-
-          <div class="grid__item large--three-quarters">
-
-            {% if article.image %}
-            <div class="article__featured-image-wrap">
-              <a class="article__featured-image{% if settings.ken_burns_enabled %} kb-enabled{% endif %}" href="{{ article.url }}">
-                {% capture article_alt %}{{ article.image.alt | default: article.title }}{% endcapture %}
-                {% render 'responsive-image' with article.image, alt: article_alt | escape %}
-              </a>
-            </div>
-            {% endif %}
-
-              <h2 class="blog-main--article-title">
-                <a href="{{ article.url }}">{{ article.title }}</a>
-              </h2>
-
-            {% comment %}
-              Add a surrounding div with class 'rte' to anything that will come from the rich text editor.
-              Since this is just a listing page, you can either use the excerpt or truncate the full article.
-            {% endcomment %}
-            <div class="rte">
-                {{ article.excerpt_or_content | strip_html | truncatewords: 100 }}
-            </div>
-
-            <p class="blog-main--article-read-more-link nav-link-animated--custom">
-              <a class="animated-link--item" href="{{ article.url }}">{{ 'blogs.article.read_more' | t }}</a>
-              {% render 'theme-icon' with icon: 'chevron_right', iconSize: 16 %}
-            </p>
-
-      </div>
-
-        </div>
-
-        {% unless forloop.last %}<hr>{% endunless %}
-
-      {% endfor %}
-
-    </div>
-
-    <div class="grid__item large--one-quarter">
-
-      {% if section.settings.blog-sidebar-image %}
-        {% if section.settings.blog-sidebar-link %}
-          <a href="{{ section.settings.blog-sidebar-link }}" itemprop="url">
-        {% endif %}
-
-        {% capture blog_sidebar_alt %}{{ section.settings.blog-sidebar-image.alt | default: shop.name }}{% endcapture %}
-        {% render 'responsive-image' with section.settings.blog-sidebar-image, alt: article.title, class: 'blog-sidebar-image', alt: blog_sidebar_alt | escape %}
-
-        {% if section.settings.blog-sidebar-link %}
-          </a>
-        {% endif %}
-      {% endif %}
-
-      {% if section.settings.blog-sidebar-description != '' %}
-        <div class="rte text-link-animated">{{ section.settings.blog-sidebar-description }}</div>
-      {% endif %}
-
-      {% if section.settings.show_recent_posts %}
-      <div class="h4">{{ 'blogs.sidebar.recent_articles' | t }}</div>
-      <ul class="no-bullets blog-sidebar--recent-articles nav-link-animated--custom">
-        {% for article in blogs[blog.handle].articles limit:6 %}
-          <li>
-            <a class="animated-link--item" href="{{ article.url }}">{{ article.title }}</a>
-            <br>
-            {% if section.settings.blog_show_date %}
-              <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | time_tag: format: 'date' }}</time>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-
-      {% if section.settings.show_blog_tags %}
-        <div class="h4">{{ 'blogs.sidebar.categories' | t }}</div>
-        <ul class="no-bullets blog-sidebar--all-categories">
-          {% for tag in blog.all_tags %}
-            {% if current_tags contains tag %}
-            <li>{{ tag }}</li>
-            {% else %}
-            <li>{{ tag | link_to_tag: tag }}</li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      {% endif %}
-
-
-
-    </div>
-
-    <div class="grid__item large--one-whole pagination-wrapper">
-        {% if paginate.pages > 1 %}
-  <div class="pagination grid__item large--one-whole">
-
-    <ul>
-      {% if paginate.previous %}
-        <li class="pagination-arrow"><a href="{{ paginate.previous.url }}">
-          {% render 'theme-icon', icon: 'chevron_left', iconSize: 20 %}
-        </a></li>
-      {% else %}
-        <li class="prev disabled"><a href="#" onclick="return false;">&laquo;</a></li>
-      {% endif %}
-
-      {% for part in paginate.parts %}
-        {% if part.is_link %}
-          <li class="pagination-number">{{ part.title | link_to: part.url }}</li>
-        {% else %}
-          {% if part.title == '&hellip;' %}
-          <li class="ellipsis">{{ part.title }}</li>
-          {% else %}
-          <li class="active pagination-number">{{ part.title | link_to: part.url }}</li>
+                  <span class="dot">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                      <circle cx="2" cy="2.47461" r="2" fill="#D9D9D9"/>
+                    </svg>
+                  </span>
+                  <span
+                    class="blog-sneaker-highlight-spot__article-meta__comments"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                      <g opacity="0.8">
+                      <path d="M13.5 3.47461H2.50002C2.2348 3.47461 1.98045 3.57997 1.79291 3.7675C1.60537 3.95504 1.50002 4.20939 1.50002 4.47461V14.4746C1.49886 14.6653 1.55281 14.8523 1.65537 15.013C1.75793 15.1738 1.90473 15.3015 2.07814 15.3809C2.21029 15.4424 2.35425 15.4744 2.50002 15.4746C2.73477 15.474 2.96174 15.3903 3.14064 15.2384L3.14627 15.234L5.18752 13.4746H13.5C13.7652 13.4746 14.0196 13.3693 14.2071 13.1817C14.3947 12.9942 14.5 12.7398 14.5 12.4746V4.47461C14.5 4.20939 14.3947 3.95504 14.2071 3.7675C14.0196 3.57997 13.7652 3.47461 13.5 3.47461ZM13.5 12.4746H5.00002C4.87996 12.4747 4.76394 12.5179 4.67314 12.5965L2.50002 14.4746V4.47461H13.5V12.4746Z" fill="black"/>
+                      </g>
+                    </svg>
+                    <span>
+                      {{ article.comments_count }}
+                    </span>
+                  </span>
+                </p>
+              </div>
+            </a>
           {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      {% if paginate.next %}
-        <li class="pagination-arrow"><a href="{{ paginate.next.url }}">
-          {% render 'theme-icon', icon: 'chevron_right', iconSize: 20 %}
-        </a></li>
-      {% else %}
-        <li class="next disabled"><a href="#" onclick="return false;">&raquo;</a></li>
-      {% endif %}
-    </ul>
-
-  </div>
-  {% endif %}
-
+        {% endfor %}
+      </div>
     </div>
-
   </div>
-</div>
+{% endif %}
 
-{% endpaginate %}
+{% liquid
+  assign newsletter_block = section.blocks | where: 'type', 'newsletter' | first
+  assign blog_handle = blog.handle
+%}
+
+{% render 'blog--sneaker-post-gallery',
+  heading: section.settings.heading,
+  blog_handle: blog_handle,
+  highlight_first_article: section.settings.highlight_first_article,
+  total_articles_displayed: section.settings.total_articles_displayed,
+  total_articles_view_more: section.settings.tatal_articles_view_more,
+  newsletter_block: newsletter_block
+%}
 
 {% schema %}
 {
-	"name": "t:sections.template--blog.name",
-	"settings": [
-		{
-			"type": "checkbox",
-			"id": "show_author_name",
-			"label": "t:sections.template--blog.settings.show_author_name.label",
-			"default": true
-		},
-		{
-			"type": "header",
-			"content": "t:all.Sidebar"
-		},
-		{
-			"type": "image_picker",
-			"id": "blog-sidebar-image",
-			"label": "t:all.Image"
-		},
-		{
-			"type": "richtext",
-			"id": "blog-sidebar-description",
-			"label": "t:all.Description"
-		},
-		{
-			"type": "url",
-			"id": "blog-sidebar-link",
-			"label": "t:all.Link"
-		},
-		{
-			"type": "checkbox",
-			"id": "show_blog_tags",
-			"label": "t:all.Show_tags",
-			"default": false
-		},
-		{
-			"type": "checkbox",
-			"id": "show_recent_posts",
-			"label": "t:sections.template--blog.settings.show_recent_posts.label",
-			"default": true
-		},
-		{
-			"type": "checkbox",
-			"id": "blog_show_date",
-			"label": "t:all.Show_dates",
-			"default": true
-		}
-	]
+  "name": "t:sections.template--blog.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "label": "Is show highlight blog",
+      "id": "is_show_highlight_blog"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "highlight_first_article",
+      "label": "Highlight the first article"
+    },
+    {
+      "type": "range",
+      "id": "total_articles_displayed",
+      "label": "Total Articles Displayed",
+      "default": 3,
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "art"
+    },
+    {
+      "type": "range",
+      "id": "tatal_articles_view_more",
+      "label": "Total Articles Click View More",
+      "default": 3,
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "art"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Subscribe to our newsletter"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Get the latest updates on new products and upcoming sales"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Subscribe"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

@@ -1,64 +1,16 @@
-{{ 'blog--sneaker-post-gallery.css' | asset_url | stylesheet_tag }}
+{% liquid
+  assign newsletter_block = section.blocks | where: 'type', 'newsletter' | first
+  assign blog_handle = section.settings.blog.handle | default: blog.handle 
+%}
 
-<div class="blog-sneaker-post-gallery">
-  {% if section.settings.heading != blank %}
-    <h2 class="blog-sneaker-post-gallery__heading">{{ section.settings.heading }}</h2>
-  {% endif %}
-  <div class="blog-sneaker-post-gallery__wrapper">
-    {% if section.settings.blog != blank %}
-      {% assign blog = blogs[section.settings.blog] %}
-      {% if blog.articles_count > 0 %}
-        <div class="blog-sneaker-post-gallery__articles">
-          {% for article in blog.articles %}
-            {% liquid
-              assign is_highlighted = false
-              if section.settings.highlight_first_article and forloop.first
-                assign is_highlighted = true
-              endif
-            %}
-            {% render 'blog--article', article: article, is_highlighted: is_highlighted %}
-          {% endfor %}
-        </div>
-      {% endif %}
-    {% endif %}
-
-    <div class="blog-sneaker-post-gallery__newsletter">
-      {% for block in section.blocks %}
-        {% if block.type == 'newsletter' %}
-          <div class="blog-sneaker-post-gallery__newsletter-wrapper">
-            <div class="blog-sneaker-post-gallery__newsletter-content">
-              <h2 class="blog-sneaker-post-gallery__newsletter-heading">{{ block.settings.heading }}</h2>
-              <p class="blog-sneaker-post-gallery__newsletter-subheading">{{ block.settings.subheading }}</p>
-            </div>
-
-            <div class="blog-sneaker-post-gallery__newsletter-form">
-              <input
-                type="email"
-                class="blog-sneaker-post-gallery__newsletter-input"
-                placeholder="Your email"
-                aria-label="Email address"
-                required
-              >
-              <button class="btn blog-sneaker-post-gallery__newsletter-subscribe">
-                {{ block.settings.button_text }}
-              </button>
-            </div>
-          </div>
-          {% if block.settings.image %}
-            <div class="blog-sneaker-post-gallery__newsletter-image">
-              {{ block.settings.image | image_url: width: 600 | image_tag }}
-            </div>
-            <div class="blog-sneaker-post-gallery__newsletter-image-overlay"></div>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="blog-sneaker-post-gallery__view-more">
-      <button class="blog-sneaker-post-gallery__view-more_btn">View More</button>
-    </div>
-  </div>
-</div>
+{% render 'blog--sneaker-post-gallery',
+  heading: section.settings.heading,
+  blog_handle: blog_handle,
+  highlight_first_article: section.settings.highlight_first_article,
+  total_articles_displayed: section.settings.total_articles_displayed,
+  total_articles_view_more: section.settings.tatal_articles_view_more
+  newsletter_block: newsletter_block
+%}
 
 {% schema %}
 {

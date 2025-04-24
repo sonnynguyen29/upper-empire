@@ -3,7 +3,7 @@
 <div class="blog-sneaker-highlight-spot">
   <div class="blog-sneaker-highlight-spot__wrapper">
     <div class="blog-sneaker-highlight-spot__articles">
-      {% for article in section.settings.blog.articles %}
+      {% for article in blogs[blog.handle].articles %}
         {% if forloop.index < 4 %}
           <a href="{{ article.url }}" class="blog-sneaker-highlight-spot__article">
             <div class="blog-sneaker-highlight-spot__article-image">

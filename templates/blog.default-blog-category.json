@@ -16,36 +16,6 @@
         "image": "shopify://shop_images/image_17.png"
       }
     },
-    "blog_sneaker_highlight_spot_pcKyE3": {
-      "type": "blog-sneaker-highlight-spot",
-      "settings": {
-        "blog": "sneaker-news"
-      }
-    },
-    "blog_sneaker_post_gallery_Ah67aq": {
-      "type": "blog--sneaker-post-gallery",
-      "blocks": {
-        "newsletter_QyxW6K": {
-          "type": "newsletter",
-          "settings": {
-            "heading": "Subscribe to our newsletter",
-            "subheading": "Keep upwith our latest news & event",
-            "button_text": "Subscribe",
-            "image": "shopify://shop_images/f36bcfeceeb1c08e92d62940fcfafb76.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "newsletter_QyxW6K"
-      ],
-      "settings": {
-        "heading": "",
-        "blog": "sneaker-news",
-        "highlight_first_article": false,
-        "total_articles_displayed": 3,
-        "tatal_articles_view_more": 3
-      }
-    },
     "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54": {
       "type": "image--image-with-text",
       "disabled": true,
@@ -63,14 +33,26 @@
     },
     "main": {
       "type": "template--blog",
-      "disabled": true,
+      "blocks": {
+        "newsletter_mHi4td": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Subscribe to our newsletter",
+            "subheading": "Keep upwith our latest news & event",
+            "button_text": "Subscribe",
+            "image": "shopify://shop_images/f36bcfeceeb1c08e92d62940fcfafb76.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_mHi4td"
+      ],
       "settings": {
-        "show_author_name": false,
-        "blog-sidebar-description": "",
-        "blog-sidebar-link": "",
-        "show_blog_tags": false,
-        "show_recent_posts": true,
-        "blog_show_date": true
+        "is_show_highlight_blog": true,
+        "heading": "",
+        "highlight_first_article": false,
+        "total_articles_displayed": 3,
+        "tatal_articles_view_more": 3
       }
     },
     "e15cd669-6e10-45b6-87de-7377df6538ba": {
@@ -135,8 +117,6 @@
   },
   "order": [
     "blog_sneaker_header_piLjMV",
-    "blog_sneaker_highlight_spot_pcKyE3",
-    "blog_sneaker_post_gallery_Ah67aq",
     "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54",
     "main",
     "e15cd669-6e10-45b6-87de-7377df6538ba",

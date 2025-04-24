@@ -1,0 +1,55 @@
+{{ 'blog--sneaker-post-gallery.css' | asset_url | stylesheet_tag }}
+
+<div class="blog-sneaker-post-gallery">
+  {% if heading != blank %}
+    <h2 class="blog-sneaker-post-gallery__heading">{{ heading }}</h2>
+  {% endif %}
+  <div class="blog-sneaker-post-gallery__wrapper" data-blog-handle="{{ blog_handle }}">
+    {% assign blog = blogs[blog_handle].articles %}
+    <div class="blog-sneaker-post-gallery__articles">
+      {% for article in blog %}
+        {% liquid
+          assign is_highlighted = false
+          if highlight_first_article and forloop.first
+            assign is_highlighted = true
+          endif
+        %}
+        {% render 'blog--article', article: article, is_highlighted: is_highlighted %}
+      {% endfor %}
+    </div>
+
+    <div class="blog-sneaker-post-gallery__newsletter">
+      {% if newsletter_block %}
+        <div class="blog-sneaker-post-gallery__newsletter-wrapper">
+          <div class="blog-sneaker-post-gallery__newsletter-content">
+            <h2 class="blog-sneaker-post-gallery__newsletter-heading">{{ newsletter_block.settings.heading }}</h2>
+            <p class="blog-sneaker-post-gallery__newsletter-subheading">{{ newsletter_block.settings.subheading }}</p>
+          </div>
+
+          <div class="blog-sneaker-post-gallery__newsletter-form">
+            <input
+              type="email"
+              class="blog-sneaker-post-gallery__newsletter-input"
+              placeholder="Your email"
+              aria-label="Email address"
+              required
+            >
+            <button class="btn blog-sneaker-post-gallery__newsletter-subscribe">
+              {{ newsletter_block.settings.button_text }}
+            </button>
+          </div>
+        </div>
+        {% if newsletter_block.settings.image %}
+          <div class="blog-sneaker-post-gallery__newsletter-image">
+            {{ newsletter_block.settings.image | image_url: width: 600 | image_tag }}
+          </div>
+          <div class="blog-sneaker-post-gallery__newsletter-image-overlay"></div>
+        {% endif %}
+      {% endif %}
+    </div>
+
+    <div class="blog-sneaker-post-gallery__view-more">
+      <button class="blog-sneaker-post-gallery__view-more_btn">View More</button>
+    </div>
+  </div>
+</div>
