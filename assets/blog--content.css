@@ -4,6 +4,9 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+.blog-content a {
+  text-decoration: underline;
+}
 .blog-content__heading {
   margin: 2em 0 1em;
 }
