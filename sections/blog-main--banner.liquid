@@ -1,6 +1,6 @@
 {{ 'blog-main--banner.css' | asset_url | stylesheet_tag }}
 
-<div class="blog-main-banner">
+<a href="{{ section.settings.url }}" class="blog-main-banner">
   <div class="blog-main-banner__wrapper">
     <div class="blog-main-banner__content">
       <h1 class="blog-main-banner__title">{{ section.settings.title }}</h1>
@@ -16,12 +16,17 @@
       <div class="blog-main-banner__overlay-dark"></div>
     </div>
   </div>
-</div>
+</a>
 
 {% schema %}
 {
   "name": "Blog Main Banner",
   "settings": [
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Banner URL"
+    },
     {
       "type": "text",
       "id": "title",
@@ -31,7 +36,7 @@
     {
       "type": "textarea",
       "id": "subtitle",
-      "label": "Banner Subtitle",
+      "label": "Banner Subtitle"
     },
     {
       "type": "image_picker",

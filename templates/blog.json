@@ -56,6 +56,7 @@
     "blog_main_banner_8FV4Qy": {
       "type": "blog-main--banner",
       "settings": {
+        "url": "shopify://blogs/news",
         "title": "The Most Expensive Air Jordans Ever",
         "subtitle": "",
         "image": "shopify://shop_images/ee644f51df689bc66b0e569de57c38ff.png"
@@ -90,7 +91,7 @@
       "settings": {
         "title": "UE Sneaker Guides",
         "articles": "sneaker-news",
-        "view_more_text": "View More",
+        "view_more_text": "View All",
         "highlight_first_article": true,
         "total_articles_displayed": 3,
         "tatal_articles_view_more": 3,

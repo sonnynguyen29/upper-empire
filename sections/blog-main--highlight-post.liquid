@@ -1,42 +1,66 @@
 {{ 'blog-main--highlight-post.css' | asset_url | stylesheet_tag }}
 
 {% liquid
-  assign main_highlight_post = section.blocks | where: 'type', 'main_highlight' | first
+  assign main_highlight_posts = section.blocks | where: 'type', 'main_highlight'
   assign highlight_posts = section.blocks | where: 'type', 'highlight_post'
+  assign total_main_highlight_posts = main_highlight_posts.size
 %}
 
 <div class="blog-main-highlight-post">
   <div class="blog-main-highlight-post__wrapper">
-    <div class="blog-main-highlight-post__main">
-      <a href="{{ main_highlight_post.settings.article | article_url }}" class="blog-main-highlight-post__main-link">
-        <div class="blog-main-highlight-post__main-image">
-          {% if main_highlight_post.settings.image %}
-            {{
-              main_highlight_post.settings.image
-              | image_url: width: 1200
-              | image_tag: class: 'blog-main-highlight-post__main-img'
-            }}
-          {% else %}
-            {% assign article = main_highlight_post.settings.article %}
-            {% if article.image %}
-              {{ article.image | image_url: width: 1200 | image_tag: class: 'blog-main-highlight-post__main-img' }}
-            {% endif %}
-          {% endif %}
-        </div>
-        <div class="blog-main-highlight-post__main-content">
-          {% liquid
-            assign article = articles[main_highlight_post.settings.article]
-            assign title = main_highlight_post.settings.title | default: article.title
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for main_highlight_post in main_highlight_posts %}
+            <li class="splide__slide">
+              <div class="blog-main-highlight-post__main">
+                <a
+                  href="{{ main_highlight_post.settings.article | article_url }}"
+                  class="blog-main-highlight-post__main-link"
+                >
+                  <div class="blog-main-highlight-post__main-image">
+                    {% if main_highlight_post.settings.image %}
+                      {{
+                        main_highlight_post.settings.image
+                        | image_url: width: 1200
+                        | image_tag: class: 'blog-main-highlight-post__main-img'
+                      }}
+                    {% else %}
+                      {% assign article = main_highlight_post.settings.article %}
+                      {% if article.image %}
+                        {{
+                          article.image
+                          | image_url: width: 1200
+                          | image_tag: class: 'blog-main-highlight-post__main-img'
+                        }}
+                      {% endif %}
+                    {% endif %}
+                  </div>
+                  <div class="blog-main-highlight-post__main-content">
+                    {% liquid
+                      assign article = articles[main_highlight_post.settings.article]
+                      assign title = main_highlight_post.settings.title | default: article.title
 
-            assign blog_handle = article.handle | split: '/' | first
-            assign blog_title = blogs[blog_handle].title
-          %}
+                      assign blog_handle = article.handle | split: '/' | first
+                      assign blog_title = blogs[blog_handle].title
+                      assign blog_url = blogs[blog_handle].url
+                    %}
 
-          <p class="blog-main-highlight-post__main-blog-title">{{ blog_title }}</p>
-          <h2 class="blog-main-highlight-post__main-title">{{ title }}</h2>
-          {% render 'blog--post-meta', article: main_highlight_post.settings.article %}
-        </div>
-      </a>
+                    <p
+                      class="blog-main-highlight-post__main-blog-title"
+                      onclick="event.preventDefault(); window.location.href='{{ blog_url }}';"
+                    >
+                      {{- blog_title -}}
+                    </p>
+                    <h2 class="blog-main-highlight-post__main-title">{{ title }}</h2>
+                    {% render 'blog--post-meta', article: main_highlight_post.settings.article %}
+                  </div>
+                </a>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
 
     <div class="blog-main-highlight-post__highlights">
@@ -68,9 +92,15 @@
 
                 assign blog_handle = article.handle | split: '/' | first
                 assign blog_title = blogs[blog_handle].title
+                assign blog_url = blogs[blog_handle].url
               %}
 
-              <p class="blog-main-highlight-post__highlight-blog-title">{{ blog_title }}</p>
+              <p
+                class="blog-main-highlight-post__highlight-blog-title"
+                onclick="event.preventDefault(); window.location.href='{{ blog_url }}';"
+              >
+                {{ blog_title }}
+              </p>
               <h3 class="blog-main-highlight-post__highlight-title">{{ title }}</h3>
               {% render 'blog--post-meta', article: article %}
             </div>
@@ -80,6 +110,21 @@
     </div>
   </div>
 </div>
+
+<script defer>
+  const total_main_highlight_posts = parseInt('{{ total_main_highlight_posts }}');
+  const splide = new Splide('.splide', {
+    type: 'splide',
+    perPage: 1,
+    perMove: 1,
+    gap: '20px',
+    mediaQuery: 'min',
+    pagination: false,
+    breakpoints: {},
+    arrows: false,
+  });
+  splide.mount();
+</script>
 
 {% schema %}
 {
@@ -113,7 +158,7 @@
           "default": "Main highlight description goes here."
         }
       ],
-      "limit": 1
+      "limit": 3
     },
     {
       "type": "highlight_post",

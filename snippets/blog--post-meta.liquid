@@ -24,7 +24,7 @@
 
 <div class="post-meta">
   {% if blog_title %}
-    <div class="blog-article__category blog-article__category--desktop">
+    <div class="blog-article__category blog-article__category--desktop" onclick="event.preventDefault(); window.location.href='{{ blog_url }}';">
       <span>
         {{ blog_title }}
       </span>

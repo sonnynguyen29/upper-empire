@@ -6,12 +6,17 @@
 		margin: 8px 8px 36px 8px;
 	}
 
+	&__articles {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+	}
+
 	&__article {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 1fr minmax(0, 90px);
 		gap: 8px;
-		align-self: stretch;
 
 		.dot {
 			margin-bottom: 2px;
@@ -22,9 +27,22 @@
 		}
 	}
 
+	@media screen and (max-width: 1024px) {
+		&__articles {
+			grid-template-columns: 1fr;
+		}
+
+		&__article:nth-child(2),
+		&__article:nth-child(3) {
+			display: none;
+		}
+
+	}
+
 	&__article-image {
 		width: 100%;
 		height: 100%;
+		display: flex;
 
 		img {
 			align-self: stretch;
@@ -71,7 +89,7 @@
 
 	@media screen and (min-width: 1024px) {
 		&__wrapper {
-			margin: 20px 8px;
+			margin: 20px 0px;
 		}
 
 		&__article-image {
@@ -92,4 +110,23 @@
 			}
 		}
 	}
+}
+
+
+.blog-article--horizontal:nth-of-type(1) {
+	display: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.blog-article--horizontal:nth-of-type(2) {
+		display: none;
+	}
+
+	.blog-article--horizontal:nth-of-type(3) {
+		display: none;
+	}
+}
+
+.blog-sneaker-post-gallery {
+	margin-bottom: 60px !important;
 }

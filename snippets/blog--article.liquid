@@ -3,6 +3,7 @@
 {% liquid
   assign blog_handle = article.handle | split: '/' | first
   assign blog_title = blogs[blog_handle].title
+  assign blog_url = blogs[blog_handle].url
   assign class_name = 'blog-article'
 
   if is_highlighted
@@ -23,8 +24,11 @@
     {{ article.image | image_url: width: 600 | image_tag: class: 'blog-article__image__img' }}
   </div>
   <div class="blog-article__content">
-    <p class="blog-article__category blog-article__category--mobile">{{ blog_title }}</p>
+    <p onclick="event.preventDefault(); window.location.href='{{ blog_url }}';" 
+      class="blog-article__category blog-article__category--mobile">
+      {{ blog_title }}
+    </p>
     <h3 class="blog-article__title">{{ article.title }}</h3>
-    {% render 'blog--post-meta', article: article, blog_title: blog_title %}
+    {% render 'blog--post-meta', article: article, blog_title: blog_title, blog_url: blog_url %}
   </div>
 </a>

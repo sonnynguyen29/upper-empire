@@ -5,12 +5,16 @@
 .blog-sneaker-highlight-spot__wrapper {
   margin: 8px 8px 36px 8px;
 }
+.blog-sneaker-highlight-spot__articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
 .blog-sneaker-highlight-spot__article {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr minmax(0, 90px);
   gap: 8px;
-  align-self: stretch;
 }
 .blog-sneaker-highlight-spot__article .dot {
   margin-bottom: 2px;
@@ -18,9 +22,18 @@
 .blog-sneaker-highlight-spot__article svg {
   margin-bottom: 2px;
 }
+@media screen and (max-width: 1024px) {
+  .blog-sneaker-highlight-spot__articles {
+    grid-template-columns: 1fr;
+  }
+  .blog-sneaker-highlight-spot__article:nth-child(2), .blog-sneaker-highlight-spot__article:nth-child(3) {
+    display: none;
+  }
+}
 .blog-sneaker-highlight-spot__article-image {
   width: 100%;
   height: 100%;
+  display: flex;
 }
 .blog-sneaker-highlight-spot__article-image img {
   align-self: stretch;
@@ -61,7 +74,7 @@
 }
 @media screen and (min-width: 1024px) {
   .blog-sneaker-highlight-spot__wrapper {
-    margin: 20px 8px;
+    margin: 20px 0px;
   }
   .blog-sneaker-highlight-spot__article-image {
     max-height: 100% !important;
@@ -74,4 +87,20 @@
   .blog-sneaker-highlight-spot__article:hover img {
     transform: scale(1.1);
   }
+}
+
+.blog-article--horizontal:nth-of-type(1) {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .blog-article--horizontal:nth-of-type(2) {
+    display: none;
+  }
+  .blog-article--horizontal:nth-of-type(3) {
+    display: none;
+  }
+}
+.blog-sneaker-post-gallery {
+  margin-bottom: 60px !important;
 }

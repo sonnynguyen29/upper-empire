@@ -1,3 +1,7 @@
+.blog-main-highlight-post {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .blog-main-highlight-post__wrapper {
   display: flex;
   justify-content: center;
@@ -28,12 +32,19 @@
   width: 100%;
   height: 100%;
   display: grid;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden;
 }
 .blog-main-highlight-post__main-image img {
   align-self: stretch;
   aspect-ratio: 359/239.66;
   width: 100%;
   object-fit: cover;
+  transition: 0.85s cubic-bezier(0.455, 0.03, 0.21, 0.985);
+}
+.blog-main-highlight-post__main:hover img {
+  transform: scale(1.1);
 }
 .blog-main-highlight-post__main-content {
   display: flex;
@@ -104,23 +115,40 @@
   width: 100%;
   height: 100%;
   display: grid;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden;
 }
 .blog-main-highlight-post__highlight-image img {
   align-self: stretch;
   aspect-ratio: 175.5/117.16;
   width: 100%;
   object-fit: cover;
+  transition: 0.85s cubic-bezier(0.455, 0.03, 0.21, 0.985);
+}
+.blog-main-highlight-post__highlight:hover img {
+  transform: scale(1.1);
 }
 .blog-main-highlight-post .post-meta__date,
 .blog-main-highlight-post .post-meta__comments-text {
   font-size: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .blog-main-highlight-post .post-meta__date {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .blog-main-highlight-post .post-meta svg path {
+    fill: rgba(255, 255, 255, 0.8) !important;
+  }
+  .blog-main-highlight-post .post-meta__comments-text {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
 }
 @media screen and (min-width: 1024px) {
   .blog-main-highlight-post__wrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 0 8px;
   }
   .blog-main-highlight-post__main-link {
     display: grid;

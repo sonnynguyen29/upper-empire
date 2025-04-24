@@ -3,10 +3,24 @@
 <div class="blog-main-ue-sneaker-guides">
   <div class="blog-main-ue-sneaker-guides__header">
     <h2 class="blog-main-ue-sneaker-guides__title">{{ section.settings.title }}</h2>
+    <a href="{{ section.settings.view_more_url }}" class="blog-main-ue-sneaker-guides__header__view-more">
+      {{- section.settings.view_more_text -}}
+    </a>
   </div>
   <hr>
   <div class="blog-main-ue-sneaker-guides__grid">
     {% for article in blogs[section.settings.articles].articles %}
+      {% if forloop.index < 7 %}
+        {% liquid
+          assign is_highlighted = false
+          if section.settings.highlight_first_article and forloop.first
+            assign is_highlighted = true
+          endif
+
+          assign article_layout = section.settings.article_layout
+        %}
+        {% render 'blog--article', article: article, is_highlighted: is_highlighted, article_layout: article_layout %}
+      {% endif %}
       {% comment %}
         <div class="blog-main-ue-sneaker-guides__item">
           <a href="{{ article.url }}" class="blog-main-ue-sneaker-guides__link">
@@ -27,15 +41,6 @@
           </a>
         </div>
       {% endcomment %}
-      {% liquid
-        assign is_highlighted = false
-        if section.settings.highlight_first_article and forloop.first
-          assign is_highlighted = true
-        endif
-
-        assign article_layout = section.settings.article_layout
-      %}
-      {% render 'blog--article', article: article, is_highlighted: is_highlighted, article_layout: article_layout %}
     {% endfor %}
   </div>
   <div class="blog-main-ue-sneaker-guides__footer">
@@ -64,32 +69,12 @@
       "type": "text",
       "id": "view_more_text",
       "label": "View More Text",
-      "default": "View More"
+      "default": "View All"
     },
     {
       "type": "checkbox",
       "id": "highlight_first_article",
       "label": "Highlight the first article"
-    },
-    {
-      "type": "range",
-      "id": "total_articles_displayed",
-      "label": "Total Articles Displayed",
-      "default": 3,
-      "min": 0,
-      "max": 10,
-      "step": 1,
-      "unit": "art"
-    },
-    {
-      "type": "range",
-      "id": "tatal_articles_view_more",
-      "label": "Total Articles Click View More",
-      "default": 3,
-      "min": 0,
-      "max": 10,
-      "step": 1,
-      "unit": "art"
     },
     {
       "type": "select",

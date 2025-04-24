@@ -12,7 +12,7 @@
           {% for article in blog.articles %}
             {% liquid
               assign is_highlighted = false
-              if section.settings.highlight_first_article and forloop.first 
+              if section.settings.highlight_first_article and forloop.first
                 assign is_highlighted = true
               endif
             %}

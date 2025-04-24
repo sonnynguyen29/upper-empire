@@ -9,6 +9,29 @@
 
     &__header {
         margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        &__view-more {
+            display: none;
+            background-color: transparent;
+            background-image: linear-gradient(to top, var(--nav-text-hover) 0, var(--nav-text-hover) 0), linear-gradient(to top, transparent 0, transparent 0);
+            background-repeat: no-repeat;
+            background-position: left bottom, left bottom;
+            background-size: 0 1px, 100% 1px;
+            transition-property: background-size;
+            transition-timing-function: ease;
+            transition-duration: .25s;
+            color: #000;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            &:hover {
+                background-position: left bottom, left bottom;
+                background-size: 100% 1px, 100% 1px;
+            }
+        }
     }
 
     &__title {
@@ -61,11 +84,17 @@
     @media screen and (min-width: 1024px) {
         margin-top: 45px;
 
+        &__header {
+            &__view-more {
+                display: block;
+            }
+        }
+
         hr {
             display: block;
             background: #000;
             height: 1px;
-            margin: 20px 0;
+            margin: 0 0 20px 0;
         }
 
         &__grid {
@@ -84,6 +113,10 @@
 
         &__view-more {
             width: 191px;
+        }
+
+        &__footer {
+            display: none;
         }
     }
 

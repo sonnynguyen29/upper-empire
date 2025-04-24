@@ -1,9 +1,9 @@
 .blog-main-banner {
-    background-color: black;
     margin-bottom: 40px;
 
     &__wrapper {
-        max-width: 1920px;
+        background-color: black;
+        max-width: 1440px;
         margin: 0 auto;
         position: relative;
     }
@@ -102,10 +102,7 @@
             max-width: 1440px;
         }
 
-
-
         &__content {
-            padding-left: 0;
             width: 80%;
         }
     }

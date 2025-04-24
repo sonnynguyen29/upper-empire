@@ -1,4 +1,7 @@
 .blog-sneaker-header {
+	max-width: 1440px;
+	margin: 0 auto;
+
 	&__wrapper {
 		display: none;
 		grid-template-columns: 1fr 1fr;
@@ -12,7 +15,6 @@
 	}
 
 	&__image {
-		width: 50vw;
 		height: 100%;
 		position: relative;
 
