@@ -1,0 +1,224 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/LIS09324.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Are the Nike SB Dunk Low x CPFM \"Swarovski Pack\" the Sparkliest Sneakers Ever?",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_G7y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Move over, everyday sneakers—the Nike SB Dunk Low x Cactus Plant Flea Market (CPFM) \"Swarovski Pack\" has arrived, dazzling the sneaker world with unmatched crystal embellishment. These glittering creations redefine bold footwear with an avalanche of sparkle that transforms every step into a statement.</p>"
+          }
+        },
+        "heading_y8QNLG": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_G9A3zi": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike SB Dunk Low x Cactus Plant Flea Market Swarovski Pack \"Pure Platinum\"</h3><ul><li><strong>Colorways: </strong>Pure Platinum</li><li><strong>SKU: </strong>CZ2670-001</li><li><strong>MSRP:</strong> $550</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$6,115</li><li><strong>Release Date:</strong> November 18, 2020</li></ul>"
+          }
+        },
+        "image_JpBanm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS09313.jpg",
+            "caption": ""
+          }
+        },
+        "text_KGhfDF": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike SB Dunk Low x Cactus Plant Flea Market Swarovski Pack \"Spiral Sage\"</h3><ul><li><strong>Colorways: </strong>Spiral Sage</li><li><strong>SKU: </strong>CZ2670-300</li><li><strong>MSRP:</strong> $550</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$11,040</li><li><strong>Release Date:</strong> November 18, 2020</li></ul>"
+          }
+        },
+        "image_7Qf4jW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS09316.jpg",
+            "caption": ""
+          }
+        },
+        "text_YFXYyN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ever seen a disco ball turned sneaker? Meet the CPFM x Nike SB Dunk Low \"Swarovski Pack,\" where every crystal-encrusted inch exudes unmatched luxury. The playful oversized Swoosh contrasts with the bold, vivid green insoles branded \"AIR SUNSHINE,\" a signature nod to CPFM’s eccentric aesthetic. The \"Pure Platinum\" colorway gleams with icy brilliance, while the \"Spiral Sage\" brings a refined, earthy charm. Together, they redefine streetwear opulence with a balance of boldness and sophistication.</p>"
+          }
+        },
+        "image_LkXDdE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS09309.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All that glitters isn’t always uncomfortable! These Nike SB Dunk Low x CPFM \"Swarovski Pack\" sneakers feature a padded tongue and breathable mesh lining for surprisingly comfortable wear, even if they’re more for showing off than working out. The detachable double lace flaps offer customizable fit options, adding practicality to their dazzling design.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_59f0b8e5-dbb4-4280-b668-0bbee4fbfca4.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each pair arrives in a vivid green box featuring bold \"AIR SUNSHINE\" branding, complete with a coordinated felt dust bag for protection and style.</p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS09325.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_G7y",
+        "heading_y8QNLG",
+        "text_G9A3zi",
+        "image_JpBanm",
+        "text_KGhfDF",
+        "image_7Qf4jW",
+        "text_YFXYyN",
+        "image_LkXDdE",
+        "text_bUzB6C",
+        "image_nYPr3G",
+        "text_FzHiKD",
+        "image_WcYwcY"
+      ],
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/2_59f0b8e5-dbb4-4280-b668-0bbee4fbfca4.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/3.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1_4e073f44-5c74-4e41-a177-eee45b66b145.jpg"
+          }
+        },
+        "gallery_image_KmbVpp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS09325.jpg"
+          }
+        },
+        "gallery_image_DELnNU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS09309.jpg"
+          }
+        },
+        "gallery_image_cM7UxJ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS09316.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_DRJnMP",
+        "gallery_image_X6tjKR",
+        "gallery_image_KmbVpp",
+        "gallery_image_DELnNU",
+        "gallery_image_cM7UxJ"
+      ],
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><strong>What’s Your Take?</strong></h2><p>Are these crystal-studded wonders a must-have or just another flash in the sneaker pan? Let us know in the comments or flex your pair on social – and don’t forget to tag us @UpperEmpire! Looking to snag a pair? Hit up <a href=\"https://upperempire.com/products/nike-dunk-low-cactus-plant-flea-market-swarovski-crystals\" target=\"_blank\" title=\"https://upperempire.com/products/nike-dunk-low-cactus-plant-flea-market-swarovski-crystals\">Upper Empire</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_URDPWL"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "blog_main_highlight_post_bnktkg": {
       "type": "blog-main--highlight-post",
@@ -81,7 +81,7 @@
         "heading": "lastest news",
         "blog": "news",
         "highlight_first_article": true,
-        "total_articles_displayed": 3,
+        "total_articles_displayed": 10,
         "tatal_articles_view_more": 3
       }
     },
