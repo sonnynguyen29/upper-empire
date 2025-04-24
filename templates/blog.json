@@ -93,8 +93,6 @@
         "articles": "sneaker-news",
         "view_more_text": "View All",
         "highlight_first_article": true,
-        "total_articles_displayed": 3,
-        "tatal_articles_view_more": 3,
         "article_layout": "vertical"
       }
     },

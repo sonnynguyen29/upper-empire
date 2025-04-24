@@ -7,16 +7,43 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
-    "e15cd669-6e10-45b6-87de-7377df6538ba": {
-      "type": "text--rich-text",
-      "disabled": true,
+    "blog_sneaker_header_piLjMV": {
+      "type": "blog-sneaker-header",
       "settings": {
-        "colors": "white",
-        "section_width": "narrow",
-        "text_alignment_desktop": "center",
-        "text_alignment_mobile": "center"
+        "custom_header": "",
+        "image": "shopify://shop_images/image_17.png"
+      }
+    },
+    "blog_sneaker_highlight_spot_pcKyE3": {
+      "type": "blog-sneaker-highlight-spot",
+      "settings": {
+        "blog": "sneaker-news"
+      }
+    },
+    "blog_sneaker_post_gallery_Ah67aq": {
+      "type": "blog--sneaker-post-gallery",
+      "blocks": {
+        "newsletter_QyxW6K": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Subscribe to our newsletter",
+            "subheading": "Keep upwith our latest news & event",
+            "button_text": "Subscribe",
+            "image": "shopify://shop_images/f36bcfeceeb1c08e92d62940fcfafb76.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_QyxW6K"
+      ],
+      "settings": {
+        "heading": "",
+        "blog": "sneaker-news",
+        "highlight_first_article": false,
+        "total_articles_displayed": 3,
+        "tatal_articles_view_more": 3
       }
     },
     "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54": {
@@ -44,6 +71,16 @@
         "show_blog_tags": false,
         "show_recent_posts": true,
         "blog_show_date": true
+      }
+    },
+    "e15cd669-6e10-45b6-87de-7377df6538ba": {
+      "type": "text--rich-text",
+      "disabled": true,
+      "settings": {
+        "colors": "white",
+        "section_width": "narrow",
+        "text_alignment_desktop": "center",
+        "text_alignment_mobile": "center"
       }
     },
     "67543449-bf33-4648-97bf-c7e5c527ccf2": {
@@ -94,50 +131,15 @@
         "text_alignment": "center",
         "vertical_alignment": "top"
       }
-    },
-    "blog_sneaker_header_piLjMV": {
-      "type": "blog-sneaker-header",
-      "settings": {
-        "custom_header": "",
-        "image": "shopify://shop_images/image_17.png"
-      }
-    },
-    "blog_sneaker_highlight_spot_pcKyE3": {
-      "type": "blog-sneaker-highlight-spot",
-      "settings": {
-        "article_1": "sneaker-news/how-to-clean-and-maintain-your-sneakers-like-a-pro",
-        "article_2": "sneaker-news/top-5-sneakers-you-need-in-your-rotation-this-year",
-        "article_3": "sneaker-news/how-to-spot-fake-sneakers-a-quick-guide-for-every-sneakerhead"
-      }
-    },
-    "blog_sneaker_post_gallery_Ah67aq": {
-      "type": "blog--sneaker-post-gallery",
-      "blocks": {
-        "newsletter_QyxW6K": {
-          "type": "newsletter",
-          "settings": {
-            "heading": "Subscribe to our newsletter",
-            "subheading": "Keep upwith our latest news & event",
-            "button_text": "Subscribe",
-            "image": "shopify://shop_images/f36bcfeceeb1c08e92d62940fcfafb76.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "newsletter_QyxW6K"
-      ],
-      "settings": {
-        "blog": "sneaker-news"
-      }
     }
   },
   "order": [
-    "e15cd669-6e10-45b6-87de-7377df6538ba",
-    "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54",
-    "main",
-    "67543449-bf33-4648-97bf-c7e5c527ccf2",
     "blog_sneaker_header_piLjMV",
     "blog_sneaker_highlight_spot_pcKyE3",
-    "blog_sneaker_post_gallery_Ah67aq"
+    "blog_sneaker_post_gallery_Ah67aq",
+    "a8e32830-43e6-4a8e-b1bf-20aa1fdb6f54",
+    "main",
+    "e15cd669-6e10-45b6-87de-7377df6538ba",
+    "67543449-bf33-4648-97bf-c7e5c527ccf2"
   ]
 }
