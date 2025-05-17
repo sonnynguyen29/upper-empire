@@ -1,5 +1,9 @@
 window.onload = function () {
-    new Splide('.video-embed__splide', {
+    const videoEmbedGrid = document.querySelector('.video-embed__splide');
+
+    const videoQuantity = parseInt(videoEmbedGrid.dataset.size);
+
+    const splide = new Splide('.video-embed__splide', {
         type: 'slide',
         perPage: 2,
         perMove: 1,
@@ -15,7 +19,12 @@ window.onload = function () {
                 gap: '16px',
             },
         },
-    }).mount();
+    })
+    splide.mount();
+
+    if (videoQuantity < 4) { 
+        splide.destroy();
+    }
 }
 
 let videoPlayers = document.querySelectorAll(".video-embed-grid__video");

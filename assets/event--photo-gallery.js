@@ -10,8 +10,6 @@ class EventPhotoGallery extends HTMLElement {
         this.additionalPhotos = parseInt(this.dataset.additionalPhotos);
         this.totalPhotoInGallery = parseInt(this.dataset.totalPhotoInGallery);
         this.totalVisiblePhotos = parseInt(this.initialPhotos);
-
-        console.log('this', this);
     }
 
     showPhotos() {
