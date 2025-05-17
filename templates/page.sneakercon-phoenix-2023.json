@@ -17,7 +17,7 @@
           "settings": {
             "title": "<p>📌 Rare & Limited-Edition Drops</p>",
             "description": "<p>Get access to ultra-rare sneakers, limited releases, and exclusive collaborations that you won’t find anywhere else.</p>",
-            "image": "shopify://shop_images/ue-24.jpg"
+            "image": "shopify://shop_images/phoenix-27_b183fec7-58ab-48ce-9d52-a6c69a4f38d3.jpg"
           }
         },
         "event_highlights_ttCPN9": {
@@ -25,7 +25,7 @@
           "settings": {
             "title": "<p>🎁🔥 Giveaway Games</p>",
             "description": "<p>Join exciting challenges and win exclusive sneakers & merch!</p>",
-            "image": "shopify://shop_images/ue-67.jpg"
+            "image": "shopify://shop_images/phoenix-63.jpg"
           }
         },
         "event_highlights_yLw3QW": {
@@ -33,46 +33,19 @@
           "settings": {
             "title": "<p>🤩 Meet Sneaker Culture Icons</p>",
             "description": "<p>Connect with sneaker designers, influencers, and industry leaders who shape the future of sneaker culture.</p>",
-            "image": "shopify://shop_images/ue-107.jpg"
-          }
-        },
-        "event_highlights_TbyGzF": {
-          "type": "event_highlights",
-          "settings": {
-            "title": "<p>🤟 Live Customization & Restorations</p>",
-            "description": "<p>Experience live sneaker customization, restoration services, and one-of-a-kind artistic creations by talented designers.</p>",
-            "image": "shopify://shop_images/Rectangle_27_2.png"
-          }
-        },
-        "event_highlights_CDt3rA": {
-          "type": "event_highlights",
-          "settings": {
-            "title": "<p>⚡ Sneaker Authentication On-Site</p>",
-            "description": "<p>Ensure your kicks are legit with professional authentication services, protecting buyers and sellers from counterfeits.</p>",
-            "image": "shopify://shop_images/Rectangle_27_3.png"
-          }
-        },
-        "event_highlights_L8XE6c": {
-          "type": "event_highlights",
-          "settings": {
-            "title": "<p>🏀 Sneakerhead Community</p>",
-            "description": "<p>Join thousands of fans in the ultimate sneaker culture experience.</p>",
-            "image": "shopify://shop_images/Rectangle_27_4.png"
+            "image": "shopify://shop_images/phoenix-40.jpg"
           }
         }
       },
       "block_order": [
         "event_highlights_gWxkRb",
         "event_highlights_ttCPN9",
-        "event_highlights_yLw3QW",
-        "event_highlights_TbyGzF",
-        "event_highlights_CDt3rA",
-        "event_highlights_L8XE6c"
+        "event_highlights_yLw3QW"
       ],
       "settings": {
-        "title": "UE x Sneakercon - BAY AREA 20241",
-        "description": "Follow along as our team takes on SneakerCon Bay Area to end 2024 with the best home event! Tons of prizes, giveaways, and memories made during Bay Area SneakerCon between our team and our community!",
-        "video_recap": "shopify://files/videos/bay-area.mp4"
+        "title": "UE x Sneakercon - Phoenix Arizona 2023",
+        "description": "Recap of our first SneakerCon in Phoenix Arizona! Tons of mini-games and giveaway throughout our first event at SneakerCon! Who's ready for us at our next event!",
+        "video_recap": "shopify://files/videos/phoenix.mp4"
       }
     },
     "event-video-embed": {
@@ -81,7 +54,7 @@
         "video_DTj4Fj": {
           "type": "video",
           "settings": {
-            "youtube_link": "https://www.youtube.com/watch?v=jppurXytBXo"
+            "youtube_link": "https://www.youtube.com/watch?v=1suFpXIuGDA"
           }
         }
       },
@@ -98,181 +71,145 @@
         "photo_LfGkcb": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue.jpg"
+            "image": "shopify://shop_images/phoenix-2.jpg"
           }
         },
         "photo_nzCbgt": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-2.jpg"
+            "image": "shopify://shop_images/phoenix-3_8ca0f319-9257-4beb-b9b0-85af82ec0185.jpg"
           }
         },
         "photo_RnirUd": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-3.jpg"
+            "image": "shopify://shop_images/phoenix-6_59c544eb-3a6b-42e4-9a80-ff8694abbd61.jpg"
           }
         },
         "photo_ezTPAp": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-5.jpg"
+            "image": "shopify://shop_images/phoenix-7.jpg"
           }
         },
         "photo_cVBHe9": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-6.jpg"
+            "image": "shopify://shop_images/phoenix-8.jpg"
           }
         },
         "photo_rbwJym": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-10.jpg"
+            "image": "shopify://shop_images/phoenix-12.jpg"
           }
         },
         "photo_PJaYh4": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-11.jpg"
+            "image": "shopify://shop_images/phoenix-15.jpg"
           }
         },
         "photo_qpRXMH": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-13.jpg"
+            "image": "shopify://shop_images/phoenix-20.jpg"
           }
         },
         "photo_kVGcLa": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-16.jpg"
+            "image": "shopify://shop_images/phoenix-22_2ce3baf6-7459-4b3d-8643-8c49fe1dccaa.jpg"
           }
         },
         "photo_Y7xDXn": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-17.jpg"
+            "image": "shopify://shop_images/phoenix-23.jpg"
           }
         },
         "photo_rYqeCn": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-19.jpg"
+            "image": "shopify://shop_images/phoenix-24_439f9beb-6c71-43b7-8237-39ac36762669.jpg"
           }
         },
         "photo_JVUzLQ": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-22.jpg"
+            "image": "shopify://shop_images/phoenix-27_b183fec7-58ab-48ce-9d52-a6c69a4f38d3.jpg"
           }
         },
         "photo_bfNcC6": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-24.jpg"
+            "image": "shopify://shop_images/phoenix-28_f74037b4-5e42-4995-819c-0ab51c988205.jpg"
           }
         },
         "photo_cUrdeN": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-26.jpg"
+            "image": "shopify://shop_images/phoenix-34.jpg"
           }
         },
         "photo_CHizLG": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-30.jpg"
+            "image": "shopify://shop_images/phoenix-37.jpg"
           }
         },
         "photo_cWVLVz": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-59.jpg"
+            "image": "shopify://shop_images/phoenix-40_90b99bb7-6a12-480d-a524-bd99aced683d.jpg"
           }
         },
         "photo_ykgUHK": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-61.jpg"
+            "image": "shopify://shop_images/phoenix-47.jpg"
           }
         },
         "photo_3qT3f7": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-67.jpg"
+            "image": "shopify://shop_images/phoenix-52.jpg"
           }
         },
         "photo_AhN8nP": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-69.jpg"
+            "image": "shopify://shop_images/phoenix-55.jpg"
           }
         },
         "photo_XqNDEw": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-83.jpg"
+            "image": "shopify://shop_images/phoenix-58.jpg"
           }
         },
         "photo_z3UNej": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-82.jpg"
+            "image": "shopify://shop_images/phoenix-61.jpg"
           }
         },
         "photo_7BTtGc": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-85.jpg"
+            "image": "shopify://shop_images/phoenix-62.jpg"
           }
         },
         "photo_NM3kjw": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-97.jpg"
+            "image": "shopify://shop_images/phoenix-63.jpg"
           }
         },
         "photo_zfYrnJ": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/ue-99.jpg"
-          }
-        },
-        "photo_hpLjBD": {
-          "type": "photo",
-          "settings": {
-            "image": "shopify://shop_images/ue-100.jpg"
-          }
-        },
-        "photo_XDyftF": {
-          "type": "photo",
-          "settings": {
-            "image": "shopify://shop_images/ue-104.jpg"
-          }
-        },
-        "photo_JimBFE": {
-          "type": "photo",
-          "settings": {
-            "image": "shopify://shop_images/ue-107.jpg"
-          }
-        },
-        "photo_NgBgar": {
-          "type": "photo",
-          "settings": {
-            "image": "shopify://shop_images/ue-115.jpg"
-          }
-        },
-        "photo_dt6VkA": {
-          "type": "photo",
-          "settings": {
-            "image": "shopify://shop_images/ue-116.jpg"
-          }
-        },
-        "photo_8nB4mH": {
-          "type": "photo",
-          "settings": {
-            "image": "shopify://shop_images/ue-117.jpg"
+            "image": "shopify://shop_images/phoenix-74.jpg"
           }
         }
       },
@@ -300,13 +237,7 @@
         "photo_z3UNej",
         "photo_7BTtGc",
         "photo_NM3kjw",
-        "photo_zfYrnJ",
-        "photo_hpLjBD",
-        "photo_XDyftF",
-        "photo_JimBFE",
-        "photo_NgBgar",
-        "photo_dt6VkA",
-        "photo_8nB4mH"
+        "photo_zfYrnJ"
       ],
       "settings": {
         "title": "Photo gallery",

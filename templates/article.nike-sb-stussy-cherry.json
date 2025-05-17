@@ -1,0 +1,236 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/a1.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Nike SB Dunk Low Stussy Cherry: Why This 2005 Release Still Dominates the Game?",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Is the Nike SB Dunk Low Stussy Cherry worth the hype, or just another flashy piece in sneaker history? Let’s dive into the cherry-topped sundae of design, storytelling, and collector’s nostalgia.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/a2.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/a4.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/a5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_DRJnMP"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Stussy Cherry Dunk is a visual treat that blends nostalgia with design mastery. Drawing inspiration from Neapolitan ice cream, it boasts chocolate-brown leather overlays, strawberry-pink nubuck panels, and vanilla-cream accents. The cherry-red embroidery on the tongue—an iconic nod to Stussy’s flair—elevates its status as a collector’s grail. Adding to the charm are waffle cone-patterned insoles, a subtle yet striking homage to dessert aesthetics.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/a4.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Stussy Cherry SB Dunk Low, a 2005 gem, epitomizes Nike SB's skateboarding heritage with its iconic \"fat tongue\" padding. While cutting-edge tech has evolved since its debut, this pair remains a collector's treasure, celebrated more for its style than skate functionality. The nubuck and leather upper delivers premium appeal, making it a standout for casual wear or sneakerhead showcases alike.</p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/a3.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Stussy Cherry, part of Nike’s iconic Team Manager series, redefined the potential of collaborations in sneaker culture. By fusing innovative storytelling, bold cherry-inspired colorways, and premium suede detailing, it elevated sneakers from functional footwear to symbols of artistic expression. Nearly two decades later, this 2005 release remains a grail for collectors and enthusiasts, standing out for its blend of heritage and hype.</p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/a2.jpg",
+            "caption": ""
+          }
+        },
+        "text_bBLpby": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nostalgia. Exclusivity. Aesthetic mastery. The Nike SB Dunk Low Stussy Cherry captures the mid-2000s golden age of sneaker culture like no other. Its rarity and vibrant cherry-blossom-inspired design make it a grail that still turns heads in the hype-driven sneaker scene nearly two decades later.</p>"
+          }
+        },
+        "image_JnPTnP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/a5.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_EaY7eD": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_nYPr3G",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_bBLpby",
+        "image_JnPTnP",
+        "horizontal_line_EaY7eD"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-sb-dunk-low-stussy-cherry?_pos=1&_psq=Nike+SB+Dunk+Low+Stussy+Cherry&_ss=e&_v=1.0\" target=\"_blank\" title=\"https://upperempire.com/products/nike-sb-dunk-low-stussy-cherry?_pos=1&_psq=Nike+SB+Dunk+Low+Stussy+Cherry&_ss=e&_v=1.0\">Nike SB Dunk Low Stussy Cherry</a></h3><ul><li><strong>Colorways: </strong>Shy Pink/Vanilla</li><li><strong>SKU: </strong>304292-671</li><li><strong>MSRP:</strong> $150</li><li><strong>Resale Price (as of 2025): </strong>Around $3,658</li><li><strong>Release Date:</strong> 07/01/2005</li></ul>"
+          }
+        },
+        "image_UT86gy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/a1.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_UT86gy"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_hqeBH9": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Is it worth the $3,658 resale tag? That depends on how much you value sneaker history. For collectors, it’s a no-brainer. For casual fans, it might be overkill. Either way, the Nike SB Dunk Low Stussy Cherry is a feast for the eyes and a testament to what makes sneaker culture so special.<br/><br/>What do you think? Is the Stussy Cherry Dunk a must-have or a museum piece? Let us know in the comments!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_hqeBH9",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

@@ -1,0 +1,464 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/C2.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Travis Scott Mocha Pack: High OG, Reverse Mocha, and Low OG Shine in Sneaker History",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Travis Scott x Air Jordan 1 Mocha Pack: Is this the ultimate sneaker collab? With its groundbreaking design, reversed Swoosh, and premium suede, it’s a cultural phenomenon redefining sneaker culture. Loved for its exclusivity and iconic appeal, these kicks are every collector’s dream. Let’s break down why they stand out in a world of heat drops and grails.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_content_zxzdPL": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bTaVhJ": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "horizontal_line_bTaVhJ"
+      ],
+      "name": "Line",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_KmbVpp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/C15.jpg"
+          }
+        },
+        "gallery_image_cM7UxJ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/C18.jpg"
+          }
+        },
+        "gallery_image_DELnNU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/C17.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_KmbVpp",
+        "gallery_image_cM7UxJ",
+        "gallery_image_DELnNU"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_DTX77j": {
+          "type": "heading",
+          "settings": {
+            "title": "Jordan 1 Retro High OG SP Travis Scott Mocha",
+            "heading_size": 32
+          }
+        },
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Featuring dark mocha suede paired with crisp white leather overlays, the High OG Mocha is versatile and striking. Its standout feature? The reversed Swoosh. A hidden stash pocket in the collar lining adds both mystery and functionality, while bold red accents on the tongue and embossed logos make it an instant classic.</p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/c.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Equipped with full-length Nike Air cushioning, these sneakers offer style and comfort in equal measure. Go true to size unless you prefer a snug fit.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/c55.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_JF7ijB": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_DTX77j",
+        "text_EhzrgM",
+        "image_z8pVe3",
+        "text_bUzB6C",
+        "image_nYPr3G",
+        "horizontal_line_JF7ijB"
+      ],
+      "name": "Sneaker Infor 1",
+      "settings": {}
+    },
+    "blog_image_gallery_8NVyRe": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_PcmJRW": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/C10.jpg"
+          }
+        },
+        "gallery_image_w4Pieb": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/C14.jpg"
+          }
+        },
+        "gallery_image_eQfQfK": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/C9.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_PcmJRW",
+        "gallery_image_w4Pieb",
+        "gallery_image_eQfQfK"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_XAEH7y": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_B76CeT": {
+          "type": "heading",
+          "settings": {
+            "title": "Jordan 1 Retro Low OG SP Travis Scott Reverse Mocha",
+            "heading_size": 32
+          }
+        },
+        "text_qktQ9w": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This Travis Scott x Air Jordan 1 Mocha Pack redefines sneaker aesthetics with creamy sail hues paired seamlessly with rich light brown nubuck. The tumbled leather radiates sophistication, while bold scarlet accents and asymmetrical heel logos add a touch of individuality. <br/></p>"
+          }
+        },
+        "image_TWxwcE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C11.jpg",
+            "caption": ""
+          }
+        },
+        "text_dfNkU8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>An exclusive Reverse Mocha, crafted for Travis Scott’s HBCU Celebrity Softball Classic, boasts an enhanced sole for superior comfort and performance. </p>"
+          }
+        },
+        "image_iBqXm3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C12.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_ijqiFc": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_B76CeT",
+        "text_qktQ9w",
+        "image_TWxwcE",
+        "text_dfNkU8",
+        "image_iBqXm3",
+        "horizontal_line_ijqiFc"
+      ],
+      "name": "Sneaker infor 2",
+      "settings": {}
+    },
+    "blog_image_gallery_aci9dt": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_ityXat": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/C4.jpg"
+          }
+        },
+        "gallery_image_UaJTwa": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/C6.jpg"
+          }
+        },
+        "gallery_image_Tp8WdF": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/C5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_ityXat",
+        "gallery_image_UaJTwa",
+        "gallery_image_Tp8WdF"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_XE39MX": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_i3qrLG": {
+          "type": "heading",
+          "settings": {
+            "title": "Jordan 1 Retro Low OG SP Travis Scott Mocha",
+            "heading_size": 32
+          }
+        },
+        "text_Ycp7Dr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The OG Low Mocha fuses sleek black nubuck with rich mocha suede, punctuated by bold University Red accents. Featuring the legendary reversed Swoosh, co-branded insoles, and a heritage-driven design, it’s a must-have for collectors. <br/></p>"
+          }
+        },
+        "image_T3m8Nm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C5.jpg",
+            "caption": ""
+          }
+        },
+        "text_pLyc9U": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With a lifestyle-driven design, the Travis Scott x Air Jordan 1 Mocha Pack seamlessly blends retro basketball heritage with contemporary streetwear swagger. Engineered for both form and function, they come prepped for action straight out of the box, showcasing a tactile suede finish, iconic backward Swoosh, and earthy Mocha tones that redefine casual luxury.<br/></p>"
+          }
+        },
+        "image_RPTM9V": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C7.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_jR3NtY": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_ei6wCE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The versatile mocha-inspired colorways pair seamlessly with a variety of outfits, making these sneakers a staple for any wardrobe. For collectors and investors, their high resale value boosts their desirability, while the meticulously designed packaging underscores their exclusivity and prestige.</p>"
+          }
+        },
+        "image_NYRAGt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C2.jpg",
+            "caption": ""
+          }
+        },
+        "text_wnUbyy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Yet, owning a pair comes with its hurdles. The steep retail and resale prices can be a significant barrier. Limited stock enhances their allure but turns acquisition into a challenge. While undeniably stylish, their comfort falls short compared to sneakers utilizing advanced cushioning technologies. The delicate suede uppers demand careful upkeep, ensuring they remain flawless over time. Additionally, the overwhelming demand has spurred a surge in counterfeit pairs, making authenticity checks crucial for buyers.</p>"
+          }
+        },
+        "horizontal_line_6w9xHy": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_i3qrLG",
+        "text_Ycp7Dr",
+        "image_T3m8Nm",
+        "text_pLyc9U",
+        "image_RPTM9V",
+        "horizontal_line_jR3NtY",
+        "text_ei6wCE",
+        "image_NYRAGt",
+        "text_wnUbyy",
+        "horizontal_line_6w9xHy"
+      ],
+      "name": "Sneaker infor 3",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-travis-high-jordan-1-mocha?_pos=6&_sid=f9cad4d93&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-travis-high-jordan-1-mocha?_pos=6&_sid=f9cad4d93&_ss=r\">Jordan 1 Retro High OG SPTravis Scott Mocha</a></h3><ul><li><strong>Colorways: </strong>Sail/Black-Dark Mocha-University Red</li><li><strong>SKU: </strong>CD4487-100</li><li><strong>MSRP:</strong> $175</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$1,129</li><li><strong>Release Date:</strong> 05/11/2019</li></ul>"
+          }
+        },
+        "image_PEWRKN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C2_a6339550-83f5-4edf-9319-81e98f2b1584.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_rgWtqa": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_PWHjPn": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-jordan-1-retro-low-og-sp-travis-scott-reverse-mocha?_pos=5&_sid=f9cad4d93&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-jordan-1-retro-low-og-sp-travis-scott-reverse-mocha?_pos=5&_sid=f9cad4d93&_ss=r\">Jordan 1 Retro Low OG SPTravis Scott Reverse Mocha</a></h3><ul><li><strong>Colorways: </strong>Sail/University Red-Ridgerock</li><li><strong>SKU: </strong>DM7866-162</li><li><strong>MSRP:</strong> $190</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$1,431</li><li><strong>Release Date:</strong> 07/21/2022</li></ul>"
+          }
+        },
+        "image_97nbEb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C2_fae741dd-e6a8-4fa8-8c11-cdf1a0116240.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_atgQcB": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_wQK6zf": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-jordan-1-retro-low-og-sp-travis-scott-mocha?_pos=4&_sid=f9cad4d93&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-jordan-1-retro-low-og-sp-travis-scott-mocha?_pos=4&_sid=f9cad4d93&_ss=r\">Jordan 1 Retro Low OG  SP Travis Scott Mocha</a></h3><ul><li><strong>Colorways: </strong>Black/Dark Mocha-University Red-Sail</li><li><strong>SKU: </strong>CQ4277-001</li><li><strong>MSRP:</strong> $130</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$2,094</li><li><strong>Release Date:</strong> 07/20/2019</li></ul>"
+          }
+        },
+        "image_tJwh9B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C2_b08b83bf-efea-42b3-b9c4-c1a62c99cefa.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_PEWRKN",
+        "horizontal_line_rgWtqa",
+        "text_PWHjPn",
+        "image_97nbEb",
+        "horizontal_line_atgQcB",
+        "text_wQK6zf",
+        "image_tJwh9B"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_cm7GFj": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Travis Scott x Air Jordan 1 Mocha Pack isn’t just footwear—it’s a cultural phenomenon. From the streets to collectors’ shelves, these sneakers symbolize timeless style and bold creativity. They’re an investment, but true icons always are.<br/><br/>Step up your sneaker game and claim your piece of history. With premium materials, unmistakable mocha tones, and the signature reverse Swoosh, these kicks redefine streetwear. Don’t wait—the Mocha Pack is your gateway to sneaker legend.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_cm7GFj",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_content_zxzdPL",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_8NVyRe",
+    "blog_content_XAEH7y",
+    "blog_image_gallery_aci9dt",
+    "blog_content_XE39MX",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

@@ -19,182 +19,25 @@
     "blog-heading": {
       "type": "blog--heading",
       "settings": {
-        "custom_title": "Louis Vuitton x Nike Air Force 1: The Crown Jewel of Sneaker Collabs?",
+        "custom_title": "Louis Vuitton x Nike Air Force 1: When High Fashion Meets Street Culture",
         "heading_size": 32,
         "heading_weight": "700"
       }
     },
-    "blog_content_bxMwhf": {
+    "blog_content_RnnMkG": {
       "type": "blog--content",
       "blocks": {
-        "text_G7y": {
+        "text_47BghY": {
           "type": "text",
           "settings": {
             "text": "<p>The Louis Vuitton x Nike Air Force 1 transcends footwear—it defines modern culture. Guided by Virgil Abloh's innovation, this collaboration merges luxury craftsmanship with streetwear’s bold energy. As a status symbol and a style icon, it redefines what sneakers can be. But does it live up to the buzz? Let’s explore.</p>"
           }
-        },
-        "heading_y8QNLG": {
-          "type": "heading",
-          "settings": {
-            "title": "Release Details",
-            "heading_size": 32
-          }
-        },
-        "text_G9A3zi": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Louis Vuitton x Air Force 1 Low 'White Comet Red'</h3><p><strong>Colorway:</strong> White/Comet Red</p><p><strong>SKU:</strong> 1A9V WHITE RED</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $13,603</p><p><strong>Release Date:</strong> July 19, 2022</p>"
-          }
-        },
-        "image_JpBanm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1-3.jpg",
-            "caption": ""
-          }
-        },
-        "text_KGhfDF": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Louis Vuitton x Air Force 1 Low 'White Gym Green'</h3><p><strong>Colorway:</strong> White/Gym Green</p><p><strong>SKU:</strong> 1A9V WHITE GREEN</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $13,499</p><p><strong>Release Date:</strong> July 19, 2022</p>"
-          }
-        },
-        "image_7Qf4jW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1-7.jpg",
-            "caption": ""
-          }
-        },
-        "text_whpd9w": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Louis Vuitton x Air Force 1 Low 'White Team Royal'</h3><p><strong>Colorway:</strong> White/Team Royal</p><p><strong>SKU:</strong> 1A9V WHITE ROYAL</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $18,131</p><p><strong>Release Date:</strong> July 19, 2022</p>"
-          }
-        },
-        "image_bjC3jT": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1-11.jpg",
-            "caption": ""
-          }
-        },
-        "text_gbrpet": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Louis Vuitton x Air Force 1 Low 'Triple White'</h3><p><strong>Colorway:</strong> White/White/White</p><p><strong>SKU:</strong> 1A9V WHITE LOW</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $12,147</p><p><strong>Release Date:</strong> July 19, 2022</p>"
-          }
-        },
-        "image_XqaeTY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_11f723b6-640b-451c-9048-362df023bc78.jpg",
-            "caption": ""
-          }
-        },
-        "text_kCTA9U": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Louis Vuitton x Air Force 1 Low 'Triple Black'</h3><p><strong>Colorway:</strong> Black/Black/Anthracite</p><p><strong>SKU:</strong> 1A9V BLACK LOW</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $7,300</p><p><strong>Release Date:</strong> July 19, 2022</p>"
-          }
-        },
-        "image_njdHXx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1-2.jpg",
-            "caption": ""
-          }
-        },
-        "text_d6nMnz": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Louis Vuitton x Air Force 1 Mid 'Graffiti'</h3><p><strong>Colorway:</strong> Sail/Multi-Color</p><p><strong>SKU:</strong> 1A9V GRAFFITI MID</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $16,998</p><p><strong>Release Date:</strong> July 19, 2022</p>"
-          }
-        },
-        "image_3gaPhB": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1-10.jpg",
-            "caption": ""
-          }
-        },
-        "text_RAW8bU": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Louis Vuitton x Air Force 1 Low 'Multi-Color Patchwork'</h3><p><strong>Colorway:</strong> Metallic Silver/Black/Dark Purple Dusk/Topaz Gold</p><p><strong>SKU:</strong> 1A9V MULTI PATCH</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $21,317</p><p><strong>Release Date:</strong> July 19, 2022</p>"
-          }
-        },
-        "image_yCJDFV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1-8.jpg",
-            "caption": ""
-          }
-        },
-        "text_QrHRRP": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Louis Vuitton x Air Force 1 Low 'Metallic Gold'</h3><p><strong>Colorway:</strong> Metallic Gold/Metallic Gold/Baroque Brown/Black</p><p><strong>SKU:</strong> 1A9VG3</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $19,377</p><p><strong>Release Date:</strong> July 19, 2022</p>"
-          }
-        },
-        "image_hPNFgx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1-5.jpg",
-            "caption": ""
-          }
-        },
-        "text_4GRtHi": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Crafted in Italy at Louis Vuitton’s Fiesso d’Artico workshop, these sneakers redefine luxury. The iconic Air Force 1 silhouette is transformed with Louis Vuitton’s signature monogram patterns, high-grade calf leather, and meticulous embossing. Each pair represents the intersection of classic streetwear and Parisian haute couture, making it a collector’s dream.</p>"
-          }
-        },
-        "image_3DkBia": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1-9.jpg",
-            "caption": ""
-          }
-        },
-        "text_TbKq9k": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Louis Vuitton x Nike Air Force 1 sneakers aren’t meant for the treadmill, but they excel as stylish companions for casual outings or sneaker conventions. Crafted with premium materials, they offer an impeccable fit, available in Nike US Men’s sizes from 3.5 to 18. These sneakers blend high-fashion aesthetics with athletic heritage, making them iconic collector's items.</p>"
-          }
-        },
-        "image_3kkNP4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1-6.jpg",
-            "caption": ""
-          }
         }
       },
       "block_order": [
-        "text_G7y",
-        "heading_y8QNLG",
-        "text_G9A3zi",
-        "image_JpBanm",
-        "text_KGhfDF",
-        "image_7Qf4jW",
-        "text_whpd9w",
-        "image_bjC3jT",
-        "text_gbrpet",
-        "image_XqaeTY",
-        "text_kCTA9U",
-        "image_njdHXx",
-        "text_d6nMnz",
-        "image_3gaPhB",
-        "text_RAW8bU",
-        "image_yCJDFV",
-        "text_QrHRRP",
-        "image_hPNFgx",
-        "text_4GRtHi",
-        "image_3DkBia",
-        "text_TbKq9k",
-        "image_3kkNP4"
+        "text_47BghY"
       ],
+      "name": "Description",
       "settings": {}
     },
     "blog_image_gallery_KVU3ca": {
@@ -204,12 +47,6 @@
           "type": "gallery_image",
           "settings": {
             "image": "shopify://shop_images/1-10.jpg"
-          }
-        },
-        "gallery_image_DRJnMP": {
-          "type": "gallery_image",
-          "settings": {
-            "image": "shopify://shop_images/1-6.jpg"
           }
         },
         "gallery_image_X6tjKR": {
@@ -259,17 +96,10 @@
           "settings": {
             "image": "shopify://shop_images/1-11.jpg"
           }
-        },
-        "gallery_image_twhNLG": {
-          "type": "gallery_image",
-          "settings": {
-            "image": "shopify://shop_images/1-9.jpg"
-          }
         }
       },
       "block_order": [
         "gallery_image_cHQEpt",
-        "gallery_image_DRJnMP",
         "gallery_image_X6tjKR",
         "gallery_image_KmbVpp",
         "gallery_image_DELnNU",
@@ -277,22 +107,318 @@
         "gallery_image_6mWkym",
         "gallery_image_7Q39Qy",
         "gallery_image_yc3KEd",
-        "gallery_image_BDG7Xa",
-        "gallery_image_twhNLG"
+        "gallery_image_BDG7Xa"
       ],
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_rHxDFT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These aren’t your everyday Air Force 1s. Crafted with premium Louis Vuitton monogram canvas and embossed leather, they redefine the iconic silhouette. Each pair, meticulously handcrafted in Louis Vuitton’s Italian ateliers, marks a departure from the AF1’s 40-year tradition of Nike factory production.</p>"
+          }
+        },
+        "image_3DkBia": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-9.jpg",
+            "caption": ""
+          }
+        },
+        "text_4GRtHi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Some designs stay understated with monochromatic whites and blacks, while others boldly showcase metallic gold or graffiti-inspired Damier patterns. Virgil Abloh’s iconic touches, like quotation marks around \"AIR\" and \"Lacet,\" emphasize the collaboration’s fusion of high fashion and streetwear.</p>"
+          }
+        },
+        "image_3kkNP4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05682-2.jpg",
+            "caption": ""
+          }
+        },
+        "text_TbKq9k": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Louis Vuitton x Nike Air Force 1 commands presence—nearly double the weight of standard AF1s, thanks to luxurious materials like monogram-embossed leather and reinforced padding. Comfort isn’t compromised, though; they offer plush support after a brief break-in period.<br/><br/>Stick with your regular Air Force 1 size, but consider thicker socks to complement the structured fit and prevent slippage.<br/><br/>These aren’t your everyday beaters. Designed for collectors and enthusiasts, they serve more as statement pieces, emerging for curated showcases or exclusive occasions rather than casual streetwear.</p>"
+          }
+        },
+        "image_yKtMRi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05681.jpg",
+            "caption": ""
+          }
+        },
+        "text_GLQ4CN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Louis Vuitton x Nike Air Force 1 collection embodies Virgil Abloh’s masterful ability to unite high fashion and street culture, blending two realms once thought worlds apart. These sneakers stand as enduring symbols of his creative genius and one of his last contributions to Louis Vuitton’s legacy.<br/></p>"
+          }
+        },
+        "image_4regeD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05674.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_rHxDFT",
+        "image_3DkBia",
+        "text_4GRtHi",
+        "image_3kkNP4",
+        "text_TbKq9k",
+        "image_yKtMRi",
+        "text_GLQ4CN",
+        "image_4regeD"
+      ],
+      "name": "Sneaker Info",
+      "settings": {}
+    },
+    "blog_content_YBFm3J": {
+      "type": "blog--content",
+      "blocks": {
+        "text_VptFUj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every detail reflects deliberate craftsmanship: custom lace tags engraved with \"Air Louis,\" monogrammed hangtags, and opulent packaging echoing the elegance of Louis Vuitton trunks. This is more than footwear—it’s a declaration of style, culture, and history.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_VptFUj"
+      ],
+      "name": "Blog Content Blocks",
+      "settings": {}
+    },
+    "blog_image_gallery_eUJKPp": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_MPMNwp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05659.jpg"
+          }
+        },
+        "gallery_image_8MWJQX": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05666.jpg"
+          }
+        },
+        "gallery_image_Ahizr7": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05643.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_MPMNwp",
+        "gallery_image_8MWJQX",
+        "gallery_image_Ahizr7"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_EaRkVe": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_pnCDYX": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_XtiqQV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WWwNQX": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Louis Vuitton x Air Force 1 Low 'White Comet Red'</h3><p><strong>Colorway:</strong> White/Comet Red</p><p><strong>SKU:</strong> 1A9V WHITE RED</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $13,603</p><p><strong>Release Date:</strong> July 19, 2022</p>"
+          }
+        },
+        "image_eEdJYT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-3.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_dNqq8k": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_WK4FHH": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Louis Vuitton x Air Force 1 Low 'White Gym Green'</h3><p><strong>Colorway:</strong> White/Gym Green</p><p><strong>SKU:</strong> 1A9V WHITE GREEN</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $13,499</p><p><strong>Release Date:</strong> July 19, 2022</p>"
+          }
+        },
+        "image_rpJm3C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-7.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_jT7Ami": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_TiXQ8f": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Louis Vuitton x Air Force 1 Low 'White Team Royal'</h3><p><strong>Colorway:</strong> White/Team Royal</p><p><strong>SKU:</strong> 1A9V WHITE ROYAL</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $18,131</p><p><strong>Release Date:</strong> July 19, 2022</p>"
+          }
+        },
+        "image_wr48FY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-11.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_AcVW64": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_cxFP4m": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Louis Vuitton x Air Force 1 Low 'Triple White'</h3><p><strong>Colorway:</strong> White/White/White</p><p><strong>SKU:</strong> 1A9V WHITE LOW</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $12,147</p><p><strong>Release Date:</strong> July 19, 2022</p>"
+          }
+        },
+        "image_Ed3kXd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_11f723b6-640b-451c-9048-362df023bc78.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_JbrTwV": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_VRyPHq": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Louis Vuitton x Air Force 1 Low 'Triple Black'</h3><p><strong>Colorway:</strong> Black/Black/Anthracite</p><p><strong>SKU:</strong> 1A9V BLACK LOW</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $7,300</p><p><strong>Release Date:</strong> July 19, 2022</p>"
+          }
+        },
+        "image_DDXVYw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-2.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_NGWRkc": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_RzGfH8": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Louis Vuitton x Air Force 1 Mid 'Graffiti'</h3><p><strong>Colorway:</strong> Sail/Multi-Color</p><p><strong>SKU:</strong> 1A9V GRAFFITI MID</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $16,998</p><p><strong>Release Date:</strong> July 19, 2022</p>"
+          }
+        },
+        "image_CqVP3F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-10.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_8dEVBq": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_69TBRz": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Louis Vuitton x Air Force 1 Low 'Multi-Color Patchwork'</h3><p><strong>Colorway:</strong> Metallic Silver/Black/Dark Purple Dusk/Topaz Gold</p><p><strong>SKU:</strong> 1A9V MULTI PATCH</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $21,317</p><p><strong>Release Date:</strong> July 19, 2022</p>"
+          }
+        },
+        "image_3UKFJN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-8.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_HVg9tY": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_97VRWU": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Louis Vuitton x Air Force 1 Low 'Metallic Gold'</h3><p><strong>Colorway:</strong> Metallic Gold/Metallic Gold/Baroque Brown/Black</p><p><strong>SKU:</strong> 1A9VG3</p><p><strong>MSRP:</strong> $2,750 USD (Low-tops), $3,450 USD (Mid-tops)</p><p><strong>Resale Price:</strong> Around $19,377</p><p><strong>Release Date:</strong> July 19, 2022</p>"
+          }
+        },
+        "image_xB8mgN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-5.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_pnCDYX",
+        "heading_XtiqQV",
+        "text_WWwNQX",
+        "image_eEdJYT",
+        "horizontal_line_dNqq8k",
+        "text_WK4FHH",
+        "image_rpJm3C",
+        "horizontal_line_jT7Ami",
+        "text_TiXQ8f",
+        "image_wr48FY",
+        "horizontal_line_AcVW64",
+        "text_cxFP4m",
+        "image_Ed3kXd",
+        "horizontal_line_JbrTwV",
+        "text_VRyPHq",
+        "image_DDXVYw",
+        "horizontal_line_NGWRkc",
+        "text_RzGfH8",
+        "image_CqVP3F",
+        "horizontal_line_8dEVBq",
+        "text_69TBRz",
+        "image_3UKFJN",
+        "horizontal_line_HVg9tY",
+        "text_97VRWU",
+        "image_xB8mgN"
+      ],
+      "name": "Release Details",
       "settings": {}
     },
     "blog_content_TYHkaF": {
       "type": "blog--content",
       "blocks": {
+        "horizontal_line_9bWhpY": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
         "text_URDPWL": {
           "type": "text",
           "settings": {
-            "text": "<h2><strong>What’s Your Take?</strong></h2><p>Are these kicks a collector’s holy grail or just overpriced hype? We want to hear from you! Drop a comment, share your thoughts, or show off your LV x Nike fit on social. Let’s talk sneakers!</p>"
+            "text": "<h2><strong>What’s Your Take?</strong></h2><p>Would you drop thousands on these if you could, or are you team \"sneakers should be worn, not displayed\"? Drop your hottest take below!</p>"
           }
         }
       },
       "block_order": [
+        "horizontal_line_9bWhpY",
         "text_URDPWL"
       ],
       "settings": {}
@@ -324,8 +450,12 @@
   "order": [
     "blog-hero-banner",
     "blog-heading",
-    "blog_content_bxMwhf",
+    "blog_content_RnnMkG",
     "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_YBFm3J",
+    "blog_image_gallery_eUJKPp",
+    "blog_content_EaRkVe",
     "blog_content_TYHkaF",
     "main",
     "blog_comment_YY9CwA",

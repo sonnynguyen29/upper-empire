@@ -1,0 +1,337 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/3_01abc6c5-dcbd-4a72-9e63-203d173cdc6a.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Nike SB Dunk High ‘Reverse Skunk’: Sneaker Myth or Collector’s Dream?",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ever fantasized about owning a sneaker so rare it feels like urban legend? Meet the Nike SB Dunk High ‘Reverse Skunk’—a masterpiece blending vibrant artistry, cultural homage, and exclusivity. With only 420 individually numbered pairs in existence, this sneaker transcends fashion, becoming a symbol of cannabis culture and a pinnacle of sneakerhead devotion. Let’s clear the smoke and explore why this grail stands apart.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/9.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/6.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/5_f8f23870-7b1c-4b14-9607-abb8f193c05a.jpg"
+          }
+        },
+        "gallery_image_KmbVpp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/12.jpg"
+          }
+        },
+        "gallery_image_DELnNU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/10.jpg"
+          }
+        },
+        "gallery_image_cM7UxJ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/15_b92775f2-beca-437c-b7d2-c1ecc9321061.jpg"
+          }
+        },
+        "gallery_image_49XCBU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/17.jpg"
+          }
+        },
+        "gallery_image_FNJdEU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/16.jpg"
+          }
+        },
+        "gallery_image_TfLhEf": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/18_ab79dabd-9964-45bd-889b-37d984d3c98e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_DRJnMP",
+        "gallery_image_X6tjKR",
+        "gallery_image_KmbVpp",
+        "gallery_image_DELnNU",
+        "gallery_image_cM7UxJ",
+        "gallery_image_49XCBU",
+        "gallery_image_FNJdEU",
+        "gallery_image_TfLhEf"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk High ‘Reverse Skunk’ reinvents the legacy of the original 2010 ‘Skunk’ Dunk with daring creativity. Its plush, hairy purple suede upper provides a rich, tactile texture that mirrors the fuzzy look of a skunk's fur, instantly captivating attention. Green accents on the Swoosh and heel tab inject a vibrant contrast, while the glow-in-the-dark green outsole amplifies its visual impact, making it a true head-turner.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4.jpg",
+            "caption": ""
+          }
+        },
+        "text_nmLxkz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Adding a layer of storytelling is the skunk graphic emblazoned on the insole—a clever homage to its cannabis-themed inspiration, celebrated annually on 4/20. Each of the 420 individually laser-numbered pairs underscores the sneaker's extreme rarity and collector appeal.</p>"
+          }
+        },
+        "image_rh6b96": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/10.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk High ‘Reverse Skunk’ isn’t just a visual standout—it delivers on comfort too. Featuring extra padding around the collar and tongue, it provides exceptional ankle support, while the Zoom Air unit in the sole ensures responsive cushioning for casual wear or light skating. That said, the hairy suede upper, though premium and tactile, demands careful maintenance, as its distinctive fuzz can be challenging to clean with frequent use.</p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/7.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This isn’t just footwear—it’s a cultural icon. Crafted by Todd Bratrud, renowned for his storytelling through design, and launched in partnership with Familia Skateshop, the ‘Reverse Skunk’ encapsulates artistry and exclusivity. Packaged with a custom box featuring bold graphics, a themed keychain, collectible stickers, and detailed graphic prints, this sneaker transcends function. Limited to only 420 individually numbered pairs, it stands as a rare blend of innovation and heritage in sneaker culture.</p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/8.jpg",
+            "caption": ""
+          }
+        },
+        "text_bBLpby": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The ‘Reverse Skunk’ transcends footwear to become a cultural icon. Commemorating the 10th anniversary of the original ‘Skunk’ Dunk, this release pays homage to cannabis culture while captivating sneaker enthusiasts with its exclusivity and craftsmanship. Owning a pair not only highlights your collection but solidifies your legacy within the sneakerhead community.</p>"
+          }
+        },
+        "image_JnPTnP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_c6464fe5-af61-4389-bd2b-3e7ffb981f0d.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_nYPr3G",
+        "text_nmLxkz",
+        "image_rh6b96",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_bBLpby",
+        "image_JnPTnP"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_RikwdT": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-sb-dunk-high-reverse-skunks?_pos=3&_sid=f801c35c9&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-sb-dunk-high-reverse-skunks?_pos=3&_sid=f801c35c9&_ss=r\">Nike SB Dunk High ‘Reverse Skunk’</a></h3><ul><li><strong>Colorways: </strong>Hairy purple suede, green Swoosh/outsole, purple midsole</li><li><strong>SKU: </strong>CW9971-500</li><li><strong>MSRP:</strong> $120</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$8,000</li><li><strong>Release Date:</strong> April 20, 2020</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_RikwdT",
+        "heading_gLUUFV",
+        "text_WmUGkh"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_image_gallery_H7Bwem": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_GjA8UM": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/2_eff4fae1-eeac-4ccc-9b72-f497747f15ce.jpg"
+          }
+        },
+        "gallery_image_ram8g3": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/19_ac3a03b8-5223-40b0-9a0d-588d4ea2b2bf.jpg"
+          }
+        },
+        "gallery_image_rTNcBc": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/20.jpg"
+          }
+        },
+        "gallery_image_yczNT8": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/13.jpg"
+          }
+        },
+        "gallery_image_qQ3LAh": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/11_d03e57bc-74cc-416e-ad3d-513b4e7b4b9e.jpg"
+          }
+        },
+        "gallery_image_33gjEV": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/14.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_GjA8UM",
+        "gallery_image_ram8g3",
+        "gallery_image_rTNcBc",
+        "gallery_image_yczNT8",
+        "gallery_image_qQ3LAh",
+        "gallery_image_33gjEV"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_7rgaMn": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What’s your verdict on the ‘Reverse Skunk’? Are you team “Wear it proudly” or “Keep it pristine”? Drop your thoughts in the comments or share this post with your fellow sneakerheads. Let’s keep the buzz alive!</p><p>🚨 Don’t just dream about it—make it yours! These gems won’t wait forever, so snag your pair before they vanish!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_7rgaMn",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_image_gallery_H7Bwem",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

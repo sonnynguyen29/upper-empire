@@ -1,0 +1,298 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/117_ec5ebb1d-f7ea-4ab4-9e1d-e69db2aa025a.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Virgil Abloh’s Masterpieces: Brooklyn, ICA, and MCA",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When sneaker culture fuses with high fashion, it creates magic, and the Off-White x Nike Air Force 1 embodies this alchemy. Virgil Abloh, celebrated for his deconstructive genius, reimagined the timeless silhouette as wearable art. Brooklyn’s green glow dazzles alongside ICA’s gilded brilliance and MCA’s cobalt allure, crafting not just sneakers but cultural milestones. These designs reflect innovation, craftsmanship, and Abloh's vision, bridging the worlds of streetwear, art, and luxury.<br/></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_content_zxzdPL": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bTaVhJ": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "horizontal_line_bTaVhJ"
+      ],
+      "name": "Line",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cM7UxJ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/119_ce62e8aa-97a4-4681-99ca-456e0806f1b9.jpg"
+          }
+        },
+        "gallery_image_KmbVpp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/123.jpg"
+          }
+        },
+        "gallery_image_DELnNU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/120_9fe6aeaf-231d-4abb-b79f-d8a3f88e7b76.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cM7UxJ",
+        "gallery_image_KmbVpp",
+        "gallery_image_DELnNU"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The \"Brooklyn\" colorway, known as “Light Green Spark,” pays a vibrant tribute to Virgil Abloh’s artistic legacy. Its monochromatic green upper is paired with a metallic silver Swoosh and accented by loose black stitching for a bold, industrial edge. An off-center tongue logo and the signature zip-tie tag complete the look with Abloh’s unmistakable touch. Critics call it daring; we call it iconic.<br/></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/122.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The “ICA” colorway shines in dazzling yellow leather, launched alongside the “Figures of Speech” exhibit at ICA Boston. A metallic silver Swoosh and black zigzag stitching contrast sharply with the bright yellow, while an orange fabric tab adds a striking pop of color. This design isn’t just eye-catching—it’s a bold statement piece that turns heads and starts conversations.<br/></p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/121.jpg",
+            "caption": ""
+          }
+        },
+        "text_gxiqQ7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The “MCA” is the ultimate grail. Its \"University Blue\" leather upper, accented with vivid orange, radiates cool confidence. Originally reserved for Chicago’s Museum of Contemporary Art staff and event attendees, its rarity amplifies its allure.<br/></p>"
+          }
+        },
+        "image_mghHgF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/124.jpg",
+            "caption": ""
+          }
+        },
+        "text_yDReHN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The designs captivate with their bold aesthetics, yet practicality varies. The Brooklyn and ICA colorways, with their daring hues, stand out more for show than for daily rotation. In contrast, MCA's soft blue tones hit a sweet spot of versatility. Featuring premium leather, they promise solid comfort, though, let’s face it, these kicks are more about flexing than functionality.</p><p></p>"
+          }
+        },
+        "image_JagDrh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/119_ce62e8aa-97a4-4681-99ca-456e0806f1b9.jpg",
+            "caption": ""
+          }
+        },
+        "text_niYdpY": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Pro Tip:</em> Whether you’re rocking them or stocking them, keep those zip-ties intact—it’s the Off-White way!<br/></p>"
+          }
+        },
+        "horizontal_line_JF7ijB": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_z8pVe3",
+        "text_bUzB6C",
+        "image_nYPr3G",
+        "text_gxiqQ7",
+        "image_mghHgF",
+        "text_yDReHN",
+        "image_JagDrh",
+        "text_niYdpY",
+        "horizontal_line_JF7ijB"
+      ],
+      "name": "Sneaker Infor 1",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-air-force-1-low-off-white-brooklyn-green?_pos=1&_sid=e3c73c6df&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-air-force-1-low-off-white-brooklyn-green?_pos=1&_sid=e3c73c6df&_ss=r\">Nike Air Force 1 Low Off-White Brooklyn</a></h3><ul><li><strong>Colorways: </strong>Light Green Spark/Metallic Silver-Light Green Spark</li><li><strong>SKU: </strong>DX1419-300</li><li><strong>MSRP:</strong> $160</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$1,378</li><li><strong>Release Date:</strong> 09/15/2022</li></ul>"
+          }
+        },
+        "image_PEWRKN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/119.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_rgWtqa": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_PWHjPn": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-air-force-1-low-off-white-ica-lemonade?_pos=1&_sid=725a5eb53&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-air-force-1-low-off-white-ica-lemonade?_pos=1&_sid=725a5eb53&_ss=r\">Nike Air Force 1 Low Off-White ICA University Gold</a></h3><ul><li><strong>Colorways: </strong>University Gold/Black-Metallic Silver</li><li><strong>SKU: </strong>DD1876-700</li><li><strong>MSRP:</strong> $150</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$1,298</li><li><strong>Release Date:</strong> 07/10/2021</li></ul>"
+          }
+        },
+        "image_97nbEb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/120.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_atgQcB": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_wQK6zf": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-air-force-1-low-off-white-mca-university-blue?_pos=1&_sid=850b753de&_ss=r&variant=42155516264527\" target=\"_blank\" title=\"https://upperempire.com/products/nike-air-force-1-low-off-white-mca-university-blue?_pos=1&_sid=850b753de&_ss=r&variant=42155516264527\">Nike Air Force 1 Low Off-White MCA University Blue</a></h3><ul><li><strong>Colorways: </strong>University Blue/Metallic Silver-White</li><li><strong>SKU: </strong>CI1173-400</li><li><strong>MSRP:</strong> $150</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$2,100</li><li><strong>Release Date:</strong> 07/20/2019</li></ul>"
+          }
+        },
+        "image_tJwh9B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/117.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_PEWRKN",
+        "horizontal_line_rgWtqa",
+        "text_PWHjPn",
+        "image_97nbEb",
+        "horizontal_line_atgQcB",
+        "text_wQK6zf",
+        "image_tJwh9B"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_cm7GFj": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Your Turn to Weigh In!</h3><p>Are these sneakers worth the chase or just another hype trap? Which pair tops your list? Sound off in the comments or flex your favorites on Instagram. Remember—every sneaker tells a story, and these Off-White x Nike masterpieces are storytelling at its finest.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_cm7GFj",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_content_zxzdPL",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

@@ -67,6 +67,15 @@
             <cite class="blog-content__quote-author">{{ block.settings.quote_author }}</cite>
           {% endif %}
         </blockquote>
+      {% when 'horizontal_line' %}
+        <style>
+          .blog-content__horizontal-line {
+            opacity: .3;
+            background: #000;
+            height: 1px;
+          }
+        </style>
+        <hr class="blog-content__horizontal-line" />
     {% endcase %}
   {% endfor %}
 </div>
@@ -198,6 +207,10 @@
           "label": "Quote Author"
         }
       ]
+    },
+    {
+      "type": "horizontal_line",
+      "name": "Horizontal Line"
     }
   ],
   "presets": [

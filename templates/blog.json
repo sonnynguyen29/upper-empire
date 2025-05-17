@@ -122,7 +122,7 @@
       }
     },
     "main": {
-      "type": "template--blog",
+      "type": "template--blog--old",
       "disabled": true,
       "settings": {
         "show_author_name": false,

@@ -24,14 +24,28 @@
         "heading_weight": "700"
       }
     },
-    "blog_content_bxMwhf": {
+    "blog_content_WegVtG": {
       "type": "blog--content",
       "blocks": {
-        "text_G7y": {
+        "text_cNLP9f": {
           "type": "text",
           "settings": {
             "text": "<p>When you think of Devin Booker, it’s hard not to picture him dominating on the court or rocking impeccable sneakers courtside. But what happens when the Phoenix Suns star fuses his passion for basketball, vintage cars, and sneaker culture? Enter the <strong>Devin Booker x Nike x Chevrolet collection</strong>—a three-sneaker pack set to release on <strong>April 22, 2025</strong>, that redefines style with a personal twist. Drawing inspiration from Booker’s treasured <strong>1972 Chevy Blazer K5</strong>, this collab bridges the gap between sneaker innovation and automotive heritage.</p>"
           }
+        }
+      },
+      "block_order": [
+        "text_cNLP9f"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bPQXXi": {
+          "type": "horizontal_line",
+          "settings": {}
         },
         "heading_y8QNLG": {
           "type": "heading",
@@ -43,121 +57,16 @@
         "text_G9A3zi": {
           "type": "text",
           "settings": {
-            "text": "<h3>Nike Blazer Low x Chevrolet “Team Dark Green”</h3><p><strong>On-sale</strong>: 22 Apr 25</p><p><strong>Colorway</strong>: Team Dark Green</p><p><strong>SKU</strong>: HV2197-300</p><p><strong>MSRP</strong>: $100</p>"
-          }
-        },
-        "image_JpBanm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/blazer-low-x-book-chevy-dark-green-hv2197-300-release-date_2.jpg",
-            "caption": ""
-          }
-        },
-        "text_KGhfDF": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Nike Blazer Low x Chevrolet “Surf Blue”</h3><p><strong>On-sale</strong>: 22 Apr 25</p><p><strong>Colorway</strong>: Surf Blue</p><p><strong>SKU</strong>: HV2197-400</p><p><strong>MSRP</strong> : $100</p>"
-          }
-        },
-        "image_7Qf4jW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/nike-blazer-low-x-chevy-surf-blue-1_9b336f65-949c-46b0-86e3-3421937c2f98.jpg",
-            "caption": ""
-          }
-        },
-        "text_whpd9w": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Nike Book 1 x Chevrolet “Dark Gold Leaf”</h3><p><strong>On-sale</strong>: 22 Apr 25</p><p><strong>Colorway</strong>: Dark Gold Leaf</p><p><strong>SKU</strong>: IH0890-700</p><p><strong>MSRP</strong>: $150</p>"
-          }
-        },
-        "image_bjC3jT": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/book-1-x-chevy-dark-gold-leaf-ih0890-700-release-date_438be886-d442-49ac-b016-5423a022c68b.jpg",
-            "caption": ""
-          }
-        },
-        "quote_FLkCXm": {
-          "type": "quote",
-          "settings": {
-            "quote_text": "<p>The Chevrolet x Book 1 \"Dark Gold Leaf\" and Chevrolet x Blazer Low \"Team Dark Green\" are set to drop on April 22 via SNKRS, while the \"Surf Blue\" Blazer Low will be available at select Nike retailers.</p>",
-            "quote_author": ""
-          }
-        },
-        "text_n7mehD": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Nike Blazer Low x Chevrolet “Team Dark Green”</h3><p>This model channels retro Chevrolet advertisements with its <strong>green hairy suede upper</strong>, complemented by a sleek white leather Swoosh and a classic gum outsole. Signature touches, like the <strong>\"BOOK\" branding on the heel</strong> and custom packaging featuring vintage-inspired designs, make it a must-have for collectors.</p>"
-          }
-        },
-        "image_BhUhCn": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/blazer-low-x-book-chevy-dark-green-hv2197-300-release-date_1_9b3c6102-1fe2-4dde-aed4-653a55cf8906.jpg",
-            "caption": ""
-          }
-        },
-        "text_9BCqCy": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Nike Blazer Low x Chevrolet “Surf Blue”</h3><p>Sporting a <strong>Surf Blue suede upper</strong>, this design is all about keeping it clean and versatile. Its <strong>Sail-Gum Dark Brown sole</strong> ensures that it transitions effortlessly from casual wear to making a bold statement.</p>"
-          }
-        },
-        "image_RTAzwx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Chevrolet-x-Nike-Blazer-Low-Surf-Blue-HV2197-400-09.jpg",
-            "caption": ""
-          }
-        },
-        "text_J7cHT4": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Nike Book 1 x Chevrolet “Dark Gold Leaf”</h3><p>The headliner of the collection, this pair is a tribute to Booker’s mustard-colored Chevy Blazer. With a <strong>hairy suede upper</strong>, <strong>Chevy logo branding on the tongue</strong>, and “Chevrolet” embossed on the heel, it seamlessly merges storytelling with lifestyle design.</p>"
-          }
-        },
-        "image_AJJBpH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/book-1-x-chevy-dark-gold-leaf-ih0890-700-release-date_1_10.39.33_CH.jpg",
-            "caption": ""
-          }
-        },
-        "heading_fqTqwc": {
-          "type": "heading",
-          "settings": {
-            "title": "Exclusive Friends and Family Edition",
-            "heading_size": 32
-          }
-        },
-        "text_YFXYyN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>On top of the three pairs set to release on April 22, a <strong>Friends and Family edition of the Blazer Low</strong> in the 'Dark Gold Leaf' colorway has also surfaced. Previously seen only on the Book 1, this ultra-limited pair features a <strong>“57 of ’72” stamp on the sock liner</strong>, confirming only <strong>72 pairs</strong> exist. Images shared by <a href=\"https://sneakernews.com/2025/04/16/chevy-nike-devin-booker-friends-and-family/\" target=\"_blank\" title=\"https://sneakernews.com/2025/04/16/chevy-nike-devin-booker-friends-and-family/\">Sneaker News</a> give sneakerheads a glimpse at this collectible masterpiece, making it a true grail for Booker fans and sneaker enthusiasts alike.</p>"
+            "text": "<h3>Nike Blazer Low x Chevrolet “Team Dark Green”</h3><p><strong>On-sale</strong>: 22 Apr 25</p><p><strong>Colorway</strong>: Team Dark Green/Sail-Gum Yellow</p><p><strong>SKU</strong>: HV2197-300</p><p><strong>MSRP</strong>: $100</p>"
           }
         }
       },
       "block_order": [
-        "text_G7y",
+        "horizontal_line_bPQXXi",
         "heading_y8QNLG",
-        "text_G9A3zi",
-        "image_JpBanm",
-        "text_KGhfDF",
-        "image_7Qf4jW",
-        "text_whpd9w",
-        "image_bjC3jT",
-        "quote_FLkCXm",
-        "text_n7mehD",
-        "image_BhUhCn",
-        "text_9BCqCy",
-        "image_RTAzwx",
-        "text_J7cHT4",
-        "image_AJJBpH",
-        "heading_fqTqwc",
-        "text_YFXYyN"
+        "text_G9A3zi"
       ],
+      "name": "Release Details 1",
       "settings": {}
     },
     "blog_image_gallery_KVU3ca": {
@@ -180,38 +89,104 @@
           "settings": {
             "image": "shopify://shop_images/blazer-low-x-book-chevy-dark-green-hv2197-300-release-date_3_b370cb50-5950-4e09-bf35-cd4982ac2f7f.jpg"
           }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_DRJnMP",
+        "gallery_image_X6tjKR"
+      ],
+      "name": "Sneaker gallery 1",
+      "settings": {}
+    },
+    "blog_content_RKxci9": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_MFfNqb": {
+          "type": "horizontal_line",
+          "settings": {}
         },
-        "gallery_image_KmbVpp": {
+        "text_nGG84d": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike Blazer Low x Chevrolet “Surf Blue”</h3><p><strong>On-sale</strong>: 22 Apr 25</p><p><strong>Colorway</strong>: Surf Blue/Sail-Gum Dark Brown</p><p><strong>SKU</strong>: HV2197-400</p><p><strong>MSRP</strong> : $100</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_MFfNqb",
+        "text_nGG84d"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_image_gallery_ABmkGP": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_PPKLY3": {
           "type": "gallery_image",
           "settings": {
             "image": "shopify://shop_images/Chevrolet-x-Nike-Blazer-Low-Surf-Blue-HV2197-400-10.jpg"
           }
         },
-        "gallery_image_DELnNU": {
+        "gallery_image_g3J4mE": {
           "type": "gallery_image",
           "settings": {
             "image": "shopify://shop_images/Chevrolet-x-Nike-Blazer-Low-Surf-Blue-HV2197-400-05.jpg"
           }
         },
-        "gallery_image_cM7UxJ": {
+        "gallery_image_dc93ee": {
           "type": "gallery_image",
           "settings": {
             "image": "shopify://shop_images/Chevrolet-x-Nike-Blazer-Low-Surf-Blue-HV2197-400-11.jpg"
           }
+        }
+      },
+      "block_order": [
+        "gallery_image_PPKLY3",
+        "gallery_image_g3J4mE",
+        "gallery_image_dc93ee"
+      ],
+      "name": "Sneaker gallery 2",
+      "settings": {}
+    },
+    "blog_content_iwzhMM": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_NrbBLc": {
+          "type": "horizontal_line",
+          "settings": {}
         },
-        "gallery_image_6mWkym": {
+        "text_QgHtCq": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike Book 1 x Chevrolet “Dark Gold Leaf”</h3><p><strong>On-sale</strong>: 22 Apr 25</p><p><strong>Colorway</strong>: Dark Gold Leaf/Sail/Natural</p><p><strong>SKU</strong>: IH0890-700</p><p><strong>MSRP</strong>: $150</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_NrbBLc",
+        "text_QgHtCq"
+      ],
+      "name": "Release Details 3",
+      "settings": {}
+    },
+    "blog_image_gallery_fd7aTt": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_ppt9GE": {
           "type": "gallery_image",
           "settings": {
             "image": "shopify://shop_images/book-1-x-chevy-dark-gold-leaf-ih0890-700-release-date_9cc68d70-f9f2-4e04-8591-88fdbe929590.jpg"
           }
         },
-        "gallery_image_7Q39Qy": {
+        "gallery_image_jBXMFF": {
           "type": "gallery_image",
           "settings": {
             "image": "shopify://shop_images/book-1-x-chevy-dark-gold-leaf-ih0890-700-release-date_1_624be7a7-841b-4539-8a98-25f6e6b9ee40.jpg"
           }
         },
-        "gallery_image_yc3KEd": {
+        "gallery_image_ydLQNB": {
           "type": "gallery_image",
           "settings": {
             "image": "shopify://shop_images/book-1-x-chevy-dark-gold-leaf-ih0890-700-release-date_3.jpg"
@@ -219,29 +194,116 @@
         }
       },
       "block_order": [
-        "gallery_image_cHQEpt",
-        "gallery_image_DRJnMP",
-        "gallery_image_X6tjKR",
-        "gallery_image_KmbVpp",
-        "gallery_image_DELnNU",
-        "gallery_image_cM7UxJ",
-        "gallery_image_6mWkym",
-        "gallery_image_7Q39Qy",
-        "gallery_image_yc3KEd"
+        "gallery_image_ppt9GE",
+        "gallery_image_jBXMFF",
+        "gallery_image_ydLQNB"
       ],
+      "name": "Sneaker gallery 3",
+      "settings": {}
+    },
+    "blog_content_btpML6": {
+      "type": "blog--content",
+      "blocks": {
+        "quote_YmtNKe": {
+          "type": "quote",
+          "settings": {
+            "quote_text": "<p>The Chevrolet x Book 1 \"Dark Gold Leaf\" and Chevrolet x Blazer Low \"Team Dark Green\" are set to drop on April 22 via SNKRS, while the \"Surf Blue\" Blazer Low will be available at select Nike retailers.</p>",
+            "quote_author": ""
+          }
+        },
+        "horizontal_line_jh4wqp": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_wwtm88": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The \"Team Dark Green\" edition, crafted in rugged hairy suede, reflects the tough, vintage character of Booker’s iconic green K5 Blazer. In contrast, the \"Surf Blue\" variant embodies the laid-back, breezy energy of his beloved \"Uncle Larry\" Blazer. Both designs showcase premium materials, evoking the indulgent comfort of classic leather upholstery.<br/></p>"
+          }
+        },
+        "image_mhLWNm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/blazer-low-x-book-chevy-dark-green-hv2197-300-release-date_1_9b3c6102-1fe2-4dde-aed4-653a55cf8906.jpg",
+            "caption": ""
+          }
+        },
+        "text_7Pqfh4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chrome hangtags showcasing Chevrolet’s iconic bowtie and Booker’s signature branding? Absolutely. Distinct logos grace the tongue and insole, reinforcing the collaboration’s automotive inspiration. The \"BOOK\" heel embossing complements the crisp white leather Swooshes, offering sharp contrast to the vibrant, car-inspired hues. Pure artistry—a nod to Chevrolet’s heritage of classic style.</p>"
+          }
+        },
+        "image_LmCEYA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Chevrolet-x-Nike-Blazer-Low-Surf-Blue-HV2197-400-09.jpg",
+            "caption": ""
+          }
+        },
+        "text_64FE6N": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The \"Dark Gold Leaf\" Book 1 stands as a premium highlight in Devin Booker’s collaboration with Nike and Chevrolet. This opulent edition transforms Booker’s signature sneaker with a dazzling golden finish that exudes luxury, inspired by his prized vintage Chevrolet. </p>"
+          }
+        },
+        "image_h4UtR6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/book-1-x-chevy-dark-gold-leaf-ih0890-700-release-date_1_10.39.33_CH.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_V6b7cz": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_aXBRca": {
+          "type": "heading",
+          "settings": {
+            "title": "Exclusive Friends and Family Edition",
+            "heading_size": 32
+          }
+        },
+        "text_G8q3Q3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>On top of the three pairs set to release on April 22, a <strong>Friends and Family edition of the Blazer Low</strong> in the 'Dark Gold Leaf' colorway has also surfaced. Previously seen only on the Book 1, this ultra-limited pair features a <strong>“57 of ’72” stamp on the sock liner</strong>, confirming only <strong>72 pairs</strong> exist. Images shared by <a href=\"https://sneakernews.com/2025/04/16/chevy-nike-devin-booker-friends-and-family/\" target=\"_blank\" title=\"https://sneakernews.com/2025/04/16/chevy-nike-devin-booker-friends-and-family/\">Sneaker News</a> give sneakerheads a glimpse at this collectible masterpiece, making it a true grail for Booker fans and sneaker enthusiasts alike.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_YmtNKe",
+        "horizontal_line_jh4wqp",
+        "text_wwtm88",
+        "image_mhLWNm",
+        "text_7Pqfh4",
+        "image_LmCEYA",
+        "text_64FE6N",
+        "image_h4UtR6",
+        "horizontal_line_V6b7cz",
+        "heading_aXBRca",
+        "text_G8q3Q3"
+      ],
+      "name": "Common Infor",
       "settings": {}
     },
     "blog_content_TYHkaF": {
       "type": "blog--content",
       "blocks": {
+        "horizontal_line_kAtPa7": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
         "text_URDPWL": {
           "type": "text",
           "settings": {
-            "text": "<h3>🏁 <strong>Gearing Up to Grab a Pair?</strong></h3><p>Ready to step into style? Whether you're all about Booker’s Blazer-inspired kicks or just love the thrill of a great sneaker drop, this collection is one for the books. <strong>Which pair is your favorite?</strong> Let us know in the comments, and don’t forget to <strong>follow Upper Empire</strong> for updates and exclusive insights into this collab and other must-have releases!</p>"
+            "text": "<h3>🏁 <strong>Gearing Up to Grab a Pair?</strong></h3><p>Ready to bring some automotive swagger to your sneaker rotation? These won't idle in stores for long. Did you manage to score a pair, or are you still hunting? Drop a comment below. </p><p>Don’t forget to follow Upper Empire for updates and exclusive insights into this collab and other must-have releases!<br/></p>"
           }
         }
       },
       "block_order": [
+        "horizontal_line_kAtPa7",
         "text_URDPWL"
       ],
       "settings": {}
@@ -273,8 +335,14 @@
   "order": [
     "blog-hero-banner",
     "blog-heading",
+    "blog_content_WegVtG",
     "blog_content_bxMwhf",
     "blog_image_gallery_KVU3ca",
+    "blog_content_RKxci9",
+    "blog_image_gallery_ABmkGP",
+    "blog_content_iwzhMM",
+    "blog_image_gallery_fd7aTt",
+    "blog_content_btpML6",
     "blog_content_TYHkaF",
     "main",
     "blog_comment_YY9CwA",

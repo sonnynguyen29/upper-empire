@@ -1,0 +1,283 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/LIS05855_bb3fad6a-cba5-4c31-bfd7-a94134f64fb6.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Air Jordan 1: OG Fragment vs. Travis High vs. Travis Low – Who Reigns Supreme?",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re breaking down the trio of sneaker greatness: the Air Jordan 1 Retro High OG “Fragment,” Travis Scott x Fragment Air Jordan 1 High, and Travis Scott x Fragment Air Jordan 1 Low. This is the ultimate clash of basketball legacy, street culture, and exclusivity, all draped in premium leather and striking colorways.</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_content_zxzdPL": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bTaVhJ": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "horizontal_line_bTaVhJ"
+      ],
+      "name": "Line",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_KmbVpp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05891.jpg"
+          }
+        },
+        "gallery_image_cM7UxJ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05880.jpg"
+          }
+        },
+        "gallery_image_DELnNU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05895.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_KmbVpp",
+        "gallery_image_cM7UxJ",
+        "gallery_image_DELnNU"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Back in 2014, Hiroshi Fujiwara, the Japanese streetwear legend, dropped his first Jordan collab: the Air Jordan 1 Retro High OG “Fragment.” A tribute to the 1985 Air Jordan 1, but with a twist—Fragment’s signature lightning bolt on the heel and a black, white, and royal blue colorway that screamed \"grail status.\"</p><p>With just 2,000 pairs released, these kicks became instant icons. The leather? Smooth as butter. The stitching? Perfect. The hype? Through the roof. Fast forward to 2025, and they’re selling for over $3,000 on resale. Why buy a car when you could rock these?</p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05912.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 2021, Travis Scott linked up with Fragment and Jordan Brand to drop two more iconic sneakers: the Travis Scott x Fragment Air Jordan 1 High and Low. These weren’t just kicks; they were a statement.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05912_16836517-e7cf-45ea-a130-daee18122f9d.jpg",
+            "caption": ""
+          }
+        },
+        "text_gxiqQ7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The High model took inspiration from 1985’s original design, with a military blue and sail colorway. But Travis added his signature rebellious vibe—reverse Swooshes, hidden stash pockets, and dual branding with Fragment. The Low, on the other hand, brought a laid-back style, with a deconstructed tongue and exposed foam collars, giving off that “DIY, but make it premium” feel.</p>"
+          }
+        },
+        "image_mghHgF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05895.jpg",
+            "caption": ""
+          }
+        },
+        "text_yDReHN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Here’s the scoop: these collabs aren’t just shoes—they’re a statement. But with resale prices skyrocketing, owning a pair seems like a distant dream for many true fans. Add in the rise of high-quality replicas, and the line between \"authentic\" and \"counterfeit\" blurs. It’s enough to make even the most dedicated sneakerheads second-guess the game.</p>"
+          }
+        },
+        "horizontal_line_JF7ijB": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_z8pVe3",
+        "text_bUzB6C",
+        "image_nYPr3G",
+        "text_gxiqQ7",
+        "image_mghHgF",
+        "text_yDReHN",
+        "horizontal_line_JF7ijB"
+      ],
+      "name": "Sneaker Infor 1",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-air-jordan-1-retro-high-og-fragment?_pos=2&_sid=1a606223e&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-air-jordan-1-retro-high-og-fragment?_pos=2&_sid=1a606223e&_ss=r\">Air Jordan 1 Retro High OG \"Fragment\"</a></h3><ul><li><strong>Colorways: </strong>Black/Sport Blue-White</li><li><strong>SKU: </strong>716371-040</li><li><strong>MSRP:</strong> $185</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$2,275</li><li><strong>Release Date:</strong> 12/27/2014</li></ul>"
+          }
+        },
+        "image_PEWRKN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/nike-air-jordan-1-retro-high-og-fragment-02_78ea97c0-70cc-4f8e-a6ef-bb66e1e9b91f.webp",
+            "caption": ""
+          }
+        },
+        "horizontal_line_rgWtqa": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_PWHjPn": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-jordan-1-retro-high-og-sp-fragment-x-travis-scott?_pos=1&_psq=Jordan+1+Retro+High+OG+SP+Fragment+x+Travis+Scott&_ss=e&_v=1.0\" target=\"_blank\" title=\"https://upperempire.com/products/nike-jordan-1-retro-high-og-sp-fragment-x-travis-scott?_pos=1&_psq=Jordan+1+Retro+High+OG+SP+Fragment+x+Travis+Scott&_ss=e&_v=1.0\">Jordan 1 Retro High OG SPFragment x Travis Scott</a></h3><ul><li><strong>Colorways: </strong>Sail/Black-Military Blue-Shy Pink</li><li><strong>SKU: </strong>DH3227-105</li><li><strong>MSRP:</strong> $200</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$2,398</li><li><strong>Release Date:</strong> 07/29/2021</li></ul>"
+          }
+        },
+        "image_97nbEb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/nike-jordan-1-retro-high-og-sp-fragment-x-travis-scott-02_e520b9d4-afe3-4b4b-a007-4548baea54cb.webp",
+            "caption": ""
+          }
+        },
+        "horizontal_line_atgQcB": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_wQK6zf": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-jordan-1-retro-low-og-sp-fragment-x-travis-scott?_pos=2&_sid=ca9051fb0&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-jordan-1-retro-low-og-sp-fragment-x-travis-scott?_pos=2&_sid=ca9051fb0&_ss=r\">Jordan 1 Retro Low OG SPFragment x Travis Scott</a></h3><ul><li><strong>Colorways: </strong>White/Black-Royal-Sail</li><li><strong>SKU: </strong>DM7866-140</li><li><strong>MSRP:</strong> $150</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$1,810</li><li><strong>Release Date:</strong> 08/13/2021</li></ul>"
+          }
+        },
+        "image_tJwh9B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05855_73d6fd6c-2b3e-4c2a-ac96-b9fe119ef5e5.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_PEWRKN",
+        "horizontal_line_rgWtqa",
+        "text_PWHjPn",
+        "image_97nbEb",
+        "horizontal_line_atgQcB",
+        "text_wQK6zf",
+        "image_tJwh9B"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_cm7GFj": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you’re showing off on Instagram or appreciating the design, the Jordan 1 x Fragment collection is more than just a pair of sneakers—it’s a bold statement. It represents innovation, style fusion, and the culture that defines today’s sneaker community.<br/><br/>So, which one stands out for you: the classic OG Fragment, the iconic High, or the versatile Low? Drop your thoughts—because sneaker culture is all about connection, storytelling, and the love for that perfect pair.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_cm7GFj",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_content_zxzdPL",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

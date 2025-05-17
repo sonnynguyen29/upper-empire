@@ -1,0 +1,377 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/1LN03213.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Travis Scott x Nike Air Jordan 4: The Battle Between Dark Mocha and Purple Suede",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore the iconic Travis Scott x Nike Air Jordan 4, from the timeless Dark Mocha to the vibrant Purple Suede, and see why these sneakers redefine modern streetwear. With their premium materials, unique colorways, and the La Flame legacy, they remain the pinnacle of sneaker culture.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03200.jpg"
+          }
+        },
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03215-min_1.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03201.jpg"
+          }
+        },
+        "gallery_image_KmbVpp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03241.jpg"
+          }
+        },
+        "gallery_image_DELnNU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03224.jpg"
+          }
+        },
+        "gallery_image_cM7UxJ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03236.jpg"
+          }
+        },
+        "gallery_image_r3FWE3": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03207.jpg"
+          }
+        },
+        "gallery_image_GreHnL": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03203.jpg"
+          }
+        },
+        "gallery_image_VfQBG8": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03234.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_DRJnMP",
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_KmbVpp",
+        "gallery_image_DELnNU",
+        "gallery_image_cM7UxJ",
+        "gallery_image_r3FWE3",
+        "gallery_image_GreHnL",
+        "gallery_image_VfQBG8"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Dark Mocha Jordan 4 channels a retro-modern aesthetic with its rich nubuck upper and creamy sail midsole, accented by subtle red branding for a refined pop. </p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03192.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Purple Suede, in contrast, exudes opulence with its velvety, color-shifting suede that demands attention from every angle. Details like the black netting, translucent eyestays, and custom Cactus Jack logos encapsulate Travis Scott’s daring design ethos, blending streetwear culture with collector-grade craftsmanship.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03226.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jordan 4 fans, rejoice! The Travis Scott x Nike Air Jordan 4 Mocha and Purple Suede bring serious heat to any collection. True to size, they offer a snug yet comfortable fit. The Mocha shines with its roomy toe box—ideal for wider feet—while the Purple Suede flexes luxury with a buttery-soft interior (thankfully minus that infamous squeak). Heads up: these premium kicks aren’t built for rough wear; their high-end materials demand care. Style them to impress, not distress!<br/></p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03203.jpg",
+            "caption": ""
+          }
+        },
+        "text_CrmnyJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Owning the Travis Scott x Nike Air Jordan 4 feels like joining an exclusive circle—Friends and Family access only, with an entry fee as steep as the resale market. These kicks don’t just come in a box; they arrive as artifacts, with every detail designed to elevate the experience. From the Jumpman logos to the iconic Cactus Jack branding on the heel, every element screams hype and heritage, making them an undeniable grail for sneakerheads chasing exclusivity and cultural impact.</p><h3></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_z8pVe3",
+        "text_bUzB6C",
+        "image_nYPr3G",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_CrmnyJ"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_image_gallery_8EzbYD": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_eV6Rii": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03199.jpg"
+          }
+        },
+        "gallery_image_EkhaLU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03220.jpg"
+          }
+        },
+        "gallery_image_m7a966": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03233.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_eV6Rii",
+        "gallery_image_EkhaLU",
+        "gallery_image_m7a966"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_V7Te3d": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_3xndzB": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_PWHjPn": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike Air Jordan 4 Retro Travis Scott 'Mocha' (Friends and Family)</h3><ul><li><strong>Colorways: </strong>Dark Mocha / Sail / Brown Grey</li><li><strong>SKU: </strong>N/A</li><li><strong>MSRP:</strong> N/A</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$35,000</li><li><strong>Release Date:</strong> 2017</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_V7Te3d",
+        "heading_3xndzB",
+        "text_PWHjPn"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_image_gallery_6PEr7e": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_dryPFU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03192.jpg"
+          }
+        },
+        "gallery_image_GVGyKd": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03210.jpg"
+          }
+        },
+        "gallery_image_MbTcYL": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03196.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_dryPFU",
+        "gallery_image_GVGyKd",
+        "gallery_image_MbTcYL"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_JQKQ6C": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_biaRhK": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_6HtaQF": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-air-jordan-4-retro-travis-scott-purple-suede?_pos=5&_sid=a9a81dfb2&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-air-jordan-4-retro-travis-scott-purple-suede?_pos=5&_sid=a9a81dfb2&_ss=r\">Nike Air Jordan 4 Retro Travis Scott Purple Suede (Friends & Family)</a></h3><ul><li><strong>Colorways: </strong>Purple/Black</li><li><strong>SKU: </strong>766296 LN4</li><li><strong>MSRP:</strong> $210</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$25,000</li><li><strong>Release Date:</strong> 02/09/2019</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_biaRhK",
+        "text_6HtaQF"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_image_gallery_EPjDqB": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_ApaaXE": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03223.jpg"
+          }
+        },
+        "gallery_image_fFTQCY": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03243.jpg"
+          }
+        },
+        "gallery_image_ANCL7P": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03230.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_ApaaXE",
+        "gallery_image_fFTQCY",
+        "gallery_image_ANCL7P"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_Enfw6r": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What’s your pick—the earthy elegance of the Dark Mocha or the bold flair of the Purple Suede? Share your thoughts in the comments below, or tag us on Instagram with your favorite pair! Let’s keep the conversation (and the sneaker envy) alive.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_Enfw6r",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_8EzbYD",
+    "blog_content_gnJbfa",
+    "blog_image_gallery_6PEr7e",
+    "blog_content_JQKQ6C",
+    "blog_image_gallery_EPjDqB",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

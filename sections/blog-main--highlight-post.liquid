@@ -1,5 +1,4 @@
 {{ 'blog-main--highlight-post.css' | asset_url | stylesheet_tag }}
-
 {% liquid
   assign main_highlight_posts = section.blocks | where: 'type', 'main_highlight'
   assign highlight_posts = section.blocks | where: 'type', 'highlight_post'
@@ -112,18 +111,34 @@
 </div>
 
 <script defer>
-  const total_main_highlight_posts = parseInt('{{ total_main_highlight_posts }}');
-  const splide = new Splide('.splide', {
-    type: 'splide',
-    perPage: 1,
-    perMove: 1,
-    gap: '20px',
-    mediaQuery: 'min',
-    pagination: false,
-    breakpoints: {},
-    arrows: false,
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   const total_main_highlight_posts = parseInt('{{ total_main_highlight_posts }}');
+  //   const splide = new Splide('.splide', {
+  //     type: 'splide',
+  //     perPage: 1,
+  //     perMove: 1,
+  //     gap: '20px',
+  //     mediaQuery: 'min',
+  //     pagination: false,
+  //     breakpoints: {},
+  //     arrows: false,
+  //   });
+  //   splide.mount();
+  // });
+  window.addEventListener('load', function () {
+    const total_main_highlight_posts = parseInt('{{ total_main_highlight_posts }}');
+    const splide = new Splide('.splide', {
+      type: 'splide',
+      perPage: 1,
+      perMove: 1,
+      gap: '20px',
+      mediaQuery: 'min',
+      pagination: false,
+      breakpoints: {},
+      arrows: false,
+    });
+    splide.mount();
   });
-  splide.mount();
 </script>
 
 {% schema %}

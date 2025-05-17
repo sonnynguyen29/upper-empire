@@ -1,0 +1,266 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/DSC00100.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Nike SB Dunk Low London: A Tribute to the Streets",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Is the Nike SB Dunk Low London the ultimate streetwear essential? With its minimalist grey suede upper inspired by the urban aesthetics of London’s architecture, this sneaker perfectly blends style and utility. Lightweight, durable, and crafted for skaters and streetwear enthusiasts alike, it embodies both performance and flair. A tribute to the timeless charm of the city streets, it’s a sneaker designed to be as iconic as London itself.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00090.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00093.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00094.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_DRJnMP"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>London, reimagined in simplicity. The Nike SB Dunk Low London features a sleek grey leather upper, a nod to the city's overcast charm and urban grit. This low-top silhouette merges minimalist aesthetics with streetwise flair, delivering a sneaker that transitions seamlessly from skate parks to cityscapes. Durable construction ensures all-day wearability, while its understated elegance makes it a timeless choice for sneaker enthusiasts.<br/></p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00102.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Why settle for less when you can have it all? The Nike SB Dunk Low London, inspired by the city’s vibrant streets, seamlessly blends performance and style. With Zoom Air cushioning in the heel, every step feels smooth, whether you're landing tricks or strolling through the urban jungle. The padded tongue and collar provide unmatched support for long days on the move.<br/></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00094.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed with skaters in mind, the durable rubber outsole ensures top-notch grip and longevity. Its snug, foot-hugging fit enhances stability, giving you the confidence to conquer any terrain. Sure, it might need a little break-in time, but the payoff? Supreme comfort and flexibility that only gets better.</p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00093.jpg",
+            "caption": ""
+          }
+        },
+        "text_bBLpby": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Paying tribute to London’s iconic streets, the Nike SB Dunk Low London seamlessly blends style and substance in the SB Dunk lineup. Featuring a responsive Zoom Air unit, it ensures a springy, energized stride, perfect for navigating urban landscapes.<br/></p>"
+          }
+        },
+        "image_JnPTnP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00090.jpg",
+            "caption": ""
+          }
+        },
+        "text_dKLYN4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The durable rubber sole is built to withstand the challenges of city life, while customizable lacing options offer a unique, personal twist. Subtle details like the embroidered city coordinates and muted gray tones mirror London’s skyline, adding layers of storytelling.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_nYPr3G",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_bBLpby",
+        "image_JnPTnP",
+        "text_dKLYN4"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_T6DcQN": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike SB Dunk LowLondon</h3><ul><li><strong>Colorways: </strong>Soft Grey/Magnet</li><li><strong>SKU: </strong>308269-111</li><li><strong>MSRP:</strong> $60</li><li><strong>Resale Price (as of 2025): </strong>Around $5,400</li><li><strong>Release Date:</strong> 01/01/2004</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_T6DcQN",
+        "heading_gLUUFV",
+        "text_WmUGkh"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_image_gallery_kFhVpL": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_4R4Hfr": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00097.jpg"
+          }
+        },
+        "gallery_image_NKCLYC": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00106.jpg"
+          }
+        },
+        "gallery_image_grBhXe": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00090.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_4R4Hfr",
+        "gallery_image_NKCLYC",
+        "gallery_image_grBhXe"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_WWw4bL": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk Low London strikes a balance between performance and style, paying homage to the city’s iconic streetscape. While it’s slightly heavier than typical lifestyle sneakers and may require some break-in time, its cultural significance and street-ready design make it a standout for both sneakerheads and skaters.</p><p>Is the Nike SB Dunk Low London a must-have for your collection or a pass for your rotation? Let us know your thoughts, or flex your streetwear fit featuring these kicks!</p><p>Stick with us for the latest sneaker drops, in-depth reviews, and style inspiration—because your lineup deserves nothing less.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_WWw4bL",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_image_gallery_kFhVpL",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

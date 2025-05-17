@@ -1,0 +1,382 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/BB1.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "From Ox to Rabbit: The Iconic Air Jordan 1 Low OG Chinese New Year Collection",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When it comes to blending culture and style, few sneaker releases rival Jordan Brand’s Chinese New Year (CNY) editions of the Air Jordan 1 Low OG. These limited-edition sneakers don’t just hit the streets; they leave a cultural footprint. Today, we’re diving into two standout releases: the 2021 \"Year of the Ox\" and 2023 \"Year of the Rabbit\" models. Grab your popcorn—or better yet, your kicks—because this is one story worth stepping into.</p>"
+          }
+        },
+        "horizontal_line_AGHVYC": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_P6LMCy",
+        "horizontal_line_AGHVYC"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/BB2.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/BB7.png"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/BB3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_DRJnMP"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_bDjCAi": {
+          "type": "heading",
+          "settings": {
+            "title": "2021: The Year of the Ox",
+            "heading_size": 32
+          }
+        },
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Air Jordan 1 Low OG \"Year of the Ox\" reimagines the iconic \"Bred\" colorway with opulent jacquard textiles and intricate ox-themed patterns, celebrating Lunar New Year in style. Metallic gold accents—embroidered ox motifs and shimmering overlays—add a festive, premium touch. A removable red-and-gold rope tassel offers a customizable flair, ideal for expressing cultural pride or keeping it low-key.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BB2.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The translucent icy outsole? Pure artistry. Subtle ox illustrations beneath the surface bring an understated \"if you know, you know\" charm. The packaging takes it to the next level with gold foil floral designs and a numbered authenticity card—essential for collectors.</p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BB3.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Air Jordan 1 Low OG \"Year of the Ox\" delivers a story steeped in heritage, but not without quirks. Its woven upper, a nod to tradition and luxury, exudes a premium aura at the expense of breathability—leather might have been more practical. The vintage-style rigid cupsole stays true to its OG essence, offering a classic, flat-footed ride better suited for casual strolls than marathon sessions. </p><p>Got wider feet? Sizing up is wise, as the snug toe box could be a dealbreaker. With a design that blends history, craftsmanship, and streetwear culture, this sneaker embodies the perfect balance of style and storytelling.<br/></p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BB7.png",
+            "caption": ""
+          }
+        },
+        "text_bBLpby": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Limited to 8,500 pairs, the Air Jordan 1 Low OG \"Year of the Ox\" epitomizes exclusivity. Its design echoes Lunar New Year traditions, with fireworks-inspired textures and red envelope packaging featuring a Michael Jordan proverb. Each detail celebrates heritage and artistry, elevating it beyond mere footwear. Released primarily in Asia, its scarcity fuels skyrocketing resale prices, attracting collectors worldwide.<br/></p>"
+          }
+        },
+        "horizontal_line_b37k7m": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_bDjCAi",
+        "text_EhzrgM",
+        "image_nYPr3G",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_bBLpby",
+        "horizontal_line_b37k7m"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_image_gallery_QTt9Th": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_TmhaNU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/BB5_5b0bacc8-246d-4642-9774-cb2389b6beea.jpg"
+          }
+        },
+        "gallery_image_dLLANY": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/BB6_2bb51349-710d-486f-9a01-3f1e6f5a6e62.jpg"
+          }
+        },
+        "gallery_image_3rhVcM": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/BB4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_TmhaNU",
+        "gallery_image_dLLANY",
+        "gallery_image_3rhVcM"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_8rK8p6": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_wgKTn3": {
+          "type": "heading",
+          "settings": {
+            "title": "2023: The Year of the Rabbit",
+            "heading_size": 32
+          }
+        },
+        "text_7zURXe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Step into 2023, and the vibe shifts dramatically. Limited to just 5,000 pairs, the \"Year of the Rabbit\" brought a fresh perspective with an emphasis on texture and versatility over loud, attention-grabbing designs.<br/></p>"
+          }
+        },
+        "image_aKNt6T": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BB5_5b0bacc8-246d-4642-9774-cb2389b6beea.jpg",
+            "caption": ""
+          }
+        },
+        "text_W6jjLJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This drop featured soft, neutral tones inspired by a rabbit's fur—cream suede, gray leather, and brown terry cloth. Fuzzy laces added a whimsical edge, while the semi-translucent brown outsole offered a nostalgic, vintage feel. Intricate rabbit motifs on the inner tongue tags and subtle gold-and-red Lunar New Year accents on the insoles seamlessly honored tradition without veering into cliché territory.<br/></p>"
+          }
+        },
+        "image_6WKVNP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BB4.jpg",
+            "caption": ""
+          }
+        },
+        "text_jw8zYU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The understated palette ensured these kicks weren’t just tied to festive celebrations—they transitioned effortlessly into everyday wear. While some enthusiasts applauded the elevated design and broad appeal, others missed the bold flair typical of Chinese New Year releases. Minor quality concerns, like glue stains and uneven suede, slightly marred the otherwise standout execution.<br/></p>"
+          }
+        },
+        "horizontal_line_H6CNXV": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "image_gx8jwF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BB7_2b32e900-88b7-4e8e-b12f-1606031638e4.png",
+            "caption": ""
+          }
+        },
+        "text_F7mRa8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Both the Ox and Rabbit models stuck to the classic Air Jordan 1 Low OG silhouette: true-to-size fit, padded collar, and nylon tongue. While perfect for streetwear flexes, the lack of advanced cushioning means these aren’t your go-to for long walks.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wgKTn3",
+        "text_7zURXe",
+        "image_aKNt6T",
+        "text_W6jjLJ",
+        "image_6WKVNP",
+        "text_jw8zYU",
+        "horizontal_line_H6CNXV",
+        "image_gx8jwF",
+        "text_F7mRa8"
+      ],
+      "name": "Blog Content Blocks",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_geYdXC": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-air-jordan-1-retro-high-og-chinese-new-year?_pos=1&_sid=861cd8007&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-air-jordan-1-retro-high-og-chinese-new-year?_pos=1&_sid=861cd8007&_ss=r\">Jordan 1 Low OG Chinese New Year</a></h3><ul><li><strong>Colorways: </strong>Black/University Red-Metallic Gold-White</li><li><strong>SKU: </strong>DD2233-001</li><li><strong>MSRP:</strong> $130</li><li><strong>Resale Price (as of 2025): </strong>Around $750</li><li><strong>Release Date:</strong> 01/31/2021</li></ul>"
+          }
+        },
+        "image_UT86gy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BB7.png",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_geYdXC",
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_UT86gy"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_content_RViUNx": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_tT8FPd": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_nJYQBg": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Jordan 1 Retro Low OG Year of the Rabbit</h3><ul><li><strong>Colorways: </strong>Sail/University Red-Brown</li><li><strong>SKU: </strong>DV1312-200</li><li><strong>MSRP:</strong> $140</li><li><strong>Resale Price (as of 2025): </strong>Around $794</li><li><strong>Release Date:</strong> 01/21/2023</li></ul>"
+          }
+        },
+        "image_TGVymR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BB7_c1bb66af-abf0-446c-8463-95c1edff2f82.png",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_tT8FPd",
+        "text_nJYQBg",
+        "image_TGVymR"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_VRKxaR": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These CNY editions aren’t just sneakers; they’re bridges between tradition and modernity, East and West, culture and commerce. Whether you’re into the bold elegance of the Ox or the understated charm of the Rabbit, one thing’s clear: Jordan Brand knows how to celebrate in style.</p><p>So, sneakerheads, which camp are you in? Team Ox or Team Rabbit? Drop your thoughts, flex your pairs, and keep the sneaker love alive.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_VRKxaR",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_QTt9Th",
+    "blog_content_8rK8p6",
+    "blog_content_gnJbfa",
+    "blog_content_RViUNx",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

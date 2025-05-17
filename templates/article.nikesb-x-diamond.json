@@ -1,0 +1,244 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/132.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Diamond Supply Co. x Nike SB 'Tiffany': What Made This Dunk an Instant OG Grail?",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Is the Tiffany Dunk truly a legend, or just another hypebeast fantasy? With its unmistakable Tiffany blue, premium croc-embossed leather, and iconic silver Swoosh, this Nike SB collaboration redefined sneaker culture. It’s more than hype—it’s history in a shoebox.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/128.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/132.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/129.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_DRJnMP"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Tiffany Dunk’s design perfectly fuses luxury, skate culture, and sneaker innovation. Created by Nick Tershay (aka Nicky Diamond), this grail borrows Tiffany & Co.'s signature blue and elevates it with black crocodile-embossed leather. A metallic silver Swoosh and precise white stitching complete the look, embodying understated opulence. As part of Nike’s exclusive Team Manager series, it carries an elite status, resonating deeply with sneakerheads and collectors alike.<br/></p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/131.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This isn’t just about looks. Behind the premium \"Tiffany\" exterior, the Diamond Supply Co. x Nike SB Dunk Low Pro shines as a skate icon. Built with Nike SB tech, it delivers upgraded cushioning, reinforced durability, and grip that conquers skateparks and streets alike. Whether carving through a bowl or stealing likes on social media, it performs with style and purpose.<br/></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/129.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Tiffany Dunks, with only 4,000 pairs ever released, instantly sparked a “must-cop” frenzy, leaving sneakerheads no choice but to hustle or regret. But their magic extended beyond the skate scene. Spotted on icons like Tom Cruise and Marc Jacobs, these kicks broke boundaries, becoming a cultural juggernaut.<br/></p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/128.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_nYPr3G",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_rBxLw9": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike SB Dunk Low x Diamond Supply Co. ‘Tiffany’</h3><ul><li><strong>Colorways: </strong>Aqua/Chrome</li><li><strong>SKU: </strong>304292-402</li><li><strong>MSRP:</strong> $65</li><li><strong>Resale Price (as of 2025): </strong>Around $4,931</li><li><strong>Release Date:</strong> 08/20/2005</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_rBxLw9",
+        "heading_gLUUFV",
+        "text_WmUGkh"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_image_gallery_NMAD9V": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_NrwPLL": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/130.jpg"
+          }
+        },
+        "gallery_image_rzDDee": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/125.jpg"
+          }
+        },
+        "gallery_image_bgi7yH": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/126.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_NrwPLL",
+        "gallery_image_rzDDee",
+        "gallery_image_bgi7yH"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_n6kK98": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>What’s your take on the Diamond Supply Co. x Nike SB 'Tiffany' Dunk Low?</strong> Is this iconic turquoise-and-chrome masterpiece the pinnacle of sneaker culture or just another overhyped drop? Share your thoughts in the comments below—let’s debate the legacy of this OG grail!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_n6kK98",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_image_gallery_NMAD9V",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

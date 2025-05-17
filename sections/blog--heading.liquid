@@ -12,10 +12,14 @@
   </h1>
   <div class="blog-heading__meta">
     <span class="blog-heading__date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
-    {% if article.tags.size > 0 %}
-      <span class="blog-heading__category">{{ article.tags.first }}</span>
-    {% endif %}
-
+    {% liquid
+      assign handle_parts = article.handle | split: '/'
+      assign blog_handle = handle_parts.first
+      assign blog = blogs[blog_handle]
+    %}
+    <a href="{{ blog.url }}">
+      <span class="blog-heading__category">{{ blog.title }}</span>
+    </a>
     <span class="blog-heading__comments">
       <a href="#comments">
         {% render 'theme-icon' with icon: 'comment' %}

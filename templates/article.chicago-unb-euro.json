@@ -1,0 +1,327 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/11_f8805741-01a4-405b-895d-6ab2bde4f94a.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "The Air Jordan 1 Off-White: Chicago, University Blue (UNC), and Euro",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When it comes to merging legendary heritage with avant-garde innovation, the Air Jordan 1 Off-White series—featuring Chicago, University Blue (UNC), and Europe-exclusive colorways—is a game-changer in sneaker culture. But do these grails genuinely earn their iconic status, or is the buzz just overhyped? Let’s cut to the chase—design, storytelling, and everything that makes these kicks stand out.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_content_zxzdPL": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bTaVhJ": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "horizontal_line_bTaVhJ"
+      ],
+      "name": "Line",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_KmbVpp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/111_ae957fab-e086-465a-882f-26c3e3408df5.jpg"
+          }
+        },
+        "gallery_image_cM7UxJ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/13_398d6399-9b4b-42f7-8f2c-03ccd5edbca0.jpg"
+          }
+        },
+        "gallery_image_DELnNU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/15_ab28d19d-8a43-4da1-b16c-ca25b057d9c3.jpg"
+          }
+        },
+        "gallery_image_bBPWAA": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/18_c386c817-9b04-458d-a9bf-200898479537.jpg"
+          }
+        },
+        "gallery_image_VmXiYk": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/17_7e7fcfca-463b-4575-9778-2eeb3eacec81.jpg"
+          }
+        },
+        "gallery_image_Dqq94K": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/11_182b87ae-ae6b-4197-adab-7aa888074aca.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_KmbVpp",
+        "gallery_image_cM7UxJ",
+        "gallery_image_DELnNU",
+        "gallery_image_bBPWAA",
+        "gallery_image_VmXiYk",
+        "gallery_image_Dqq94K"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Air Jordan 1 Off-White collection is a cornerstone of modern sneaker culture, with the Chicago, UNC, and Euro colorways each telling a unique story.<br/><br/>The Chicago Off-White AJ1, launched in 2017 as part of Virgil Abloh’s legendary \"The Ten\" collection, redefined what a sneaker collaboration could achieve. Its deconstructed leather upper in varsity red, white, and black captures the soul of the OG Air Jordan 1 while pushing boundaries. Features like the exposed foam tongue, Off-White’s signature zip tie, and the medial text nod to industrial design while celebrating sneaker heritage. It's a grail that elevated the hype game.</p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/16_30a7b023-7b80-4a36-b2bc-bc4313e09c68.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The University Blue (UNC) channels Michael Jordan’s college days with a vibrant blue base and striking neon orange stitching. These accents add playful energy while maintaining the silhouette's iconic status. Perfect for summer rotations, the UNC merges legacy and modernity, giving sneakerheads both nostalgia and fresh vibes.<br/></p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/14_0fbcbbfc-d3fa-45cc-b6eb-13fdd41232a5.jpg",
+            "caption": ""
+          }
+        },
+        "text_UHJzJA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Euro colorway, also called Euro White or Alaska, first dropped as a European exclusive and quickly became a low-key classic. Its minimalist white leather and suede upper with exposed stitching make it a standout in any collection. Initially overlooked, its scarcity and clean aesthetic have made it a must-have for purists. With the 2025 re-release as \"Alaska,\" it’s stepping back into the spotlight for a new generation.</p>"
+          }
+        },
+        "image_akXXb4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/19_ba387eae-912c-47a8-92b2-aba47693e646.jpg",
+            "caption": ""
+          }
+        },
+        "text_r4AVNX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Despite boasting high-fashion credentials, the Air Jordan 1 Off-White (Chicago, UNC, and Euro editions) maintains the iconic Jordan 1 silhouette. It offers a true-to-size fit, reliable arch support, and everyday comfort. Crafted with premium materials like leather, suede, and foam, these sneakers deliver both durability and a distinctive aesthetic. While their outsole traction emphasizes style over court performance, let’s face it—they’re designed more for flexing on social media than dominating the hardwood.</p><h3></h3>"
+          }
+        },
+        "image_PPfHMq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/110.jpg",
+            "caption": ""
+          }
+        },
+        "text_EJ6NMm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Off-White Air Jordan 1s, including the Chicago, University Blue (UNC), and Euro editions, redefine sneaker culture with their deconstructed brilliance. Features like exposed foam, stitched swooshes, and an unfiltered design aesthetic transform these shoes into wearable art. The instantly recognizable zip tie—polarizing yet iconic—amplifies their streetwear credibility. Virgil Abloh’s signature \"AIR\" text on the midsole adds understated swagger, embodying his minimalist yet bold philosophy. Each colorway tells its own story, from the bold Chicago reds to the breezy UNC blues and the understated Euro neutrals, solidifying their status as must-haves for collectors and sneakerheads alike.<br/></p>"
+          }
+        },
+        "image_tj9nqC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20_3b3c1b51-1e0c-405e-892d-1e3bc53045be.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_JF7ijB": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_z8pVe3",
+        "text_bUzB6C",
+        "image_nYPr3G",
+        "text_UHJzJA",
+        "image_akXXb4",
+        "text_r4AVNX",
+        "image_PPfHMq",
+        "text_EJ6NMm",
+        "image_tj9nqC",
+        "horizontal_line_JF7ijB"
+      ],
+      "name": "Sneaker Infor 1",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Jordan 1 Retro High Off-White Chicago</h3><ul><li><strong>Colorways: </strong>White/Black-Varsity Red</li><li><strong>SKU: </strong>AA3834-101</li><li><strong>MSRP:</strong> $190</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$3,721</li><li><strong>Release Date:</strong> 11/09/2017</li></ul>"
+          }
+        },
+        "image_PEWRKN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/facebook_cover.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_rgWtqa": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_PWHjPn": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Jordan 1 Retro High Off-White University Blue</h3><ul><li><strong>Colorways: </strong>White/Dark Powder Blue-Cone</li><li><strong>SKU: </strong>AQ0818-148</li><li><strong>MSRP:</strong> $190</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$1,288</li><li><strong>Release Date:</strong> 06/23/2018</li></ul>"
+          }
+        },
+        "image_97nbEb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/15_fd3290ab-96fa-4f72-abc2-cf2a6838ca62.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_atgQcB": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_wQK6zf": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Jordan 1 Retro High Off-White Euro</h3><ul><li><strong>Colorways: </strong>White/White</li><li><strong>SKU: </strong>AQ0818-100</li><li><strong>MSRP:</strong> $190</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$3,732</li><li><strong>Release Date:</strong> 03/03/2018</li></ul>"
+          }
+        },
+        "image_tJwh9B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/18_3065104f-297d-4566-9800-5225d8777e39.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_PEWRKN",
+        "horizontal_line_rgWtqa",
+        "text_PWHjPn",
+        "image_97nbEb",
+        "horizontal_line_atgQcB",
+        "text_wQK6zf",
+        "image_tJwh9B"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_cm7GFj": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Which colorway reigns supreme in your eyes? Drop your thoughts in the comments or flex your favorites on IG—tag us @UpperEmpire. Love it or leave it, these sneakers are making waves. Don’t miss your chance to be part of the legacy!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_cm7GFj",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_content_zxzdPL",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

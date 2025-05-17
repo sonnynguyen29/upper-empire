@@ -1,0 +1,266 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/115_d350747c-0aa4-43c1-affb-c19db39b93e5.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Nike Air Force 1 Low VLONE (2017): A Tale of Hype, Heritage, and Harlem",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When Nike dropped the Air Force 1 Low VLONE in 2017, it marked more than a sneaker drop—it ignited a cultural phenomenon. This electrifying collaboration married the timeless Air Force 1 design with VLONE’s raw Harlem roots, reflecting a streetwise grit that resonated deeply with sneaker culture. Revered as a grail, the shoe became a canvas for self-expression, a nod to Harlem’s influence, and, for many, an expensive obsession.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/200003.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/114.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/115_d350747c-0aa4-43c1-affb-c19db39b93e5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_DRJnMP"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Air Force 1, launched in 1982, wasn’t just another basketball shoe—it was a game-changer. Nike’s innovative Air technology and the sleek, adaptable design turned it into an instant icon. By 2016, the AF1 had become more than footwear; it was a cultural staple. To honor its 35th anniversary, Nike sought collaborators who embodied distinct cultural movements. Enter VLONE, the Harlem-rooted streetwear label co-founded by A$AP Bari of the A$AP Mob.<br/></p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/200004.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>VLONE, with its ethos “Every Living Creative Dies Alone,” represents the raw, unfiltered energy of Harlem. This collaboration was Bari’s way of celebrating the neighborhood’s lasting impact on style, creativity, and culture. The design fused the AF1’s legacy with VLONE’s unapologetic aesthetic, creating a bold statement piece that resonated with young Black creatives and sneaker enthusiasts alike.</p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/200001.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nike and VLONE didn’t just launch the Air Force 1 Low VLONE; they ignited a cultural moment. First teased at ComplexCon in November 2016, a mere 20 pairs were raffled, sparking instant demand. By February 2017, a New York Fashion Week pop-up in Harlem dropped another 200 pairs. Fans braved icy streets, eager for a slice of Harlem’s legacy woven into every stitch.<br/></p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/114.jpg",
+            "caption": ""
+          }
+        },
+        "text_XCFhLn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Scarcity was the strategy, and it worked flawlessly. With under 400 pairs worldwide—including ultra-limited releases in London and exclusive NikeLab locations—the Air Force 1 Low VLONE cemented itself as a grail-worthy piece of sneaker history. Its rarity wasn’t just a feature; it was the heartbeat of its allure.</p>"
+          }
+        },
+        "image_kAtref": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/200002.jpg",
+            "caption": ""
+          }
+        },
+        "text_qQii7N": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Air Force 1 Low VLONE is bold in both design and story. Its black tumbled leather upper radiates premium quality, while neon orange accents on the Swoosh, heel tab, and outsole deliver a striking contrast. Whether you see it as gothic or Halloween-inspired, one thing’s certain: it’s unforgettable.<br/></p>"
+          }
+        },
+        "image_ehF467": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/200003_e9d730f6-7233-453e-b0a5-1da52455d291.jpg",
+            "caption": ""
+          }
+        },
+        "text_AVbrDa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subtle branding elevates its mystique. VLONE’s reversed “V” replaces the classic Nike logo on the tongue, and the heel strap carries the chilling message, “Every Living Creative Dies Alone,” in vibrant orange embroidery. These iconic details became essential for spotting counterfeits, adding to the shoe's allure.</p>"
+          }
+        },
+        "image_gmjje6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/115.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_nYPr3G",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_XCFhLn",
+        "image_kAtref",
+        "text_qQii7N",
+        "image_ehF467",
+        "text_AVbrDa",
+        "image_gmjje6"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_rBxLw9": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike Air Force 1 Low VLONE (2017)</h3><ul><li><strong>Colorways: </strong>Black/Orange</li><li><strong>SKU: </strong>AA5360-001</li><li><strong>MSRP:</strong> $250</li><li><strong>Resale Price (as of 2025): </strong>Around $5,582</li><li><strong>Release Date:</strong> 02/11/2017</li></ul>"
+          }
+        },
+        "image_dg6eY8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/200003.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_rBxLw9",
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_dg6eY8"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_n6kK98": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike Air Force 1 Low VLONE isn’t just a sneaker—it’s a chapter in streetwear history. Born from Harlem’s raw energy and infused with Nike’s timeless legacy, it’s a symbol of exclusivity, collaboration, and the cultural edge that drives the sneaker world. Whether you call it a masterpiece or an overhyped grail, its bold orange accents on black leather and the phrase “Every Living Creative Dies Alone” stitched into the heel make a statement that’s hard to ignore. It’s not just about the hype; it’s about the story it tells and the streets it represents.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_n6kK98",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

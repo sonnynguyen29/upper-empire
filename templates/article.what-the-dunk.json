@@ -1,0 +1,259 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/DSC00030.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "The Nike SB Dunk Low \"What the Duck\": A Quirky Tribute to Oregon's Legacy",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ever wondered what happens when two decades of Oregon Ducks’ football legacy crash into daring sneaker artistry? Meet the Nike SB Dunk Low \"What the Duck,\" a chaotic yet iconic tribute to the University of Oregon. This bold pair blends vibrant elements from the Ducks' iconic green and yellow uniforms with an eccentric, mismatched patchwork design, turning athletic tradition into wearable art.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00025.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00038.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00028.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_DRJnMP"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk Low \"What the Duck\" pushes mismatched design to bold new heights. Each shoe fuses suede, nubuck, and patent leather, channeling the spirit of Oregon’s iconic sports jerseys. The \"Home\" edition exudes a moody black-and-green palette with neon-green soles, while the \"Away\" version showcases crisp white and silver punctuated by apple green and yellow accents.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00031.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Quirky details abound: asymmetrical branding (Nike on one heel, DOAF on the other) and insoles adorned with Oregon’s beloved duck mascot. These sneakers don’t just tell a story—they start conversations.</p><p>Verdict: Love them or leave them, these standout kicks turn heads.</p><p></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00032.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For a steep price of around $18,226, you'd expect luxury comfort, right? Not here. Unlike classic SB Dunks, these stick to a standard Dunk Low frame—no padded tongues, no Zoom Air cushioning, and a rigid, \"cardboard-flat\" sole. If you've got wider feet, sizing up is the way to go.<br/><br/>The materials do loosen with time, but the initial break-in might leave you reaching for more forgiving kicks. Oregon’s quirky tribute might win style points, but it falls short on day-to-day wearability.</p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00042.jpg",
+            "caption": ""
+          }
+        },
+        "text_XCFhLn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk Low \"What the Duck\" isn’t just footwear—it’s a celebration of Oregon pride. Crafted through a collaboration between Nike, Division Street’s Ducks of a Feather (DOAF), and the University of Oregon, these Dunks fuse athletic heritage with vibrant design. Proceeds directly benefit the university’s student-athletes, strengthening the connection between sport and community.</p><h3></h3>"
+          }
+        },
+        "image_kAtref": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00036.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_nYPr3G",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_XCFhLn",
+        "image_kAtref"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_rBxLw9": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-sb-dunk-low-what-the-dunk?_pos=1&_psq=Nike+SB+Dunk+Low+What+the+Dunk&_ss=e&_v=1.0\" target=\"_blank\" title=\"https://upperempire.com/products/nike-sb-dunk-low-what-the-dunk?_pos=1&_psq=Nike+SB+Dunk+Low+What+the+Dunk&_ss=e&_v=1.0\">Nike SB Dunk LowWhat the Dunk</a></h3><ul><li><strong>Colorways: </strong>White/College Blue-Chrome-Deep Red</li><li><strong>SKU: </strong>318403-141</li><li><strong>MSRP:</strong> $120</li><li><strong>Resale Price (as of 2025): </strong>Around $18,226</li><li><strong>Release Date:</strong> 10/01/2007</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_rBxLw9",
+        "heading_gLUUFV",
+        "text_WmUGkh"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_image_gallery_ppArji": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_tWhVma": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00023.jpg"
+          }
+        },
+        "gallery_image_PxcWei": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00039_4f7f802f-2d32-45a3-8fa1-8cc41955faf2.jpg"
+          }
+        },
+        "gallery_image_FVGXN9": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00026.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_tWhVma",
+        "gallery_image_PxcWei",
+        "gallery_image_FVGXN9"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_n6kK98": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk Low \"What the Duck\" boldly celebrates Oregon's heritage with a design that fuses playful storytelling and vibrant craftsmanship. Its daring aesthetics, rooted in the state’s iconic wildlife and bold creativity, make it a head-turner. Yet, while its philanthropic undertones and unique appeal capture attention, its niche design and rumored lack of comfort might divide opinions among sneakerheads.</p><p>What’s your take? A collector’s dream, a design misstep, or something in between? Share your thoughts below or dive into the sneaker debates across socials. Love it or hate it, one thing’s clear: the \"What the Duck\" is ruffling feathers in the sneaker world.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_n6kK98",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_image_gallery_ppArji",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

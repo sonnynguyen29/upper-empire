@@ -1,0 +1,243 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/134.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Nike SB Dunk High \"Strawberry Cough\": From Controversial to Coveted",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When it comes to sneaker culture, few releases ignite debate like the Nike SB Dunk High \"Strawberry Cough.\" Designed by renowned artist Todd Bratrud, this sneaker blends bold aesthetics, vibrant colorways, and a nod to 4/20 culture with playful storytelling. Its textured overlays, translucent sole, and intricate strawberry-themed details have captivated collectors worldwide. But is this vibrant Dunk a timeless grail or just another hype-fueled release? Let’s unpack its appeal.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/139.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/140.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/133.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_DRJnMP"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The \"Strawberry Cough\" earns its name with bold red leather resembling strawberry skin, complemented by green suede overlays that evoke leafy tops and hint at cannabis culture. A playful coughing strawberry logo on the heel adds personality, while a translucent sole and plush velour collar enhance its luxurious, street-ready appeal.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/133.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk High \"Strawberry Cough\" features an intricate design with textured leather and hairy suede uppers, creating a bold, multi-dimensional aesthetic that evokes its namesake. The velour-lined collar offers plush comfort and a touch of luxury, elevating the wearer's experience. Red and green translucent outsoles, crafted with custom pigment blending, provide a striking visual finish, resembling the hues of a ripe strawberry.</p><p></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/140.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>While the padded tongue and Zoom Air insoles deliver classic Nike SB comfort, the narrow toe box and hefty overlays may not suit all preferences. Casual wearers will appreciate the plush lining for its cozy feel, but skaters might find the materials lacking the durability needed for intense sessions. The \"Strawberry Cough\" design, with its vibrant red and green hues inspired by its namesake, adds a playful twist, but this aesthetic may not resonate with everyone.</p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/138.jpg",
+            "caption": ""
+          }
+        },
+        "text_XCFhLn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Originally slated for a 4/20 release in 2020, the Nike SB Dunk High \"Strawberry Cough\" faced delays, eventually debuting in October 2021. Its vibrant design by Todd Bratrud, nodding to cannabis culture, quickly turned it into a sought-after collectible within the sneaker community.</p>"
+          }
+        },
+        "image_kAtref": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/135.jpg",
+            "caption": ""
+          }
+        },
+        "text_qQii7N": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The coughing strawberry mascot, though playful, sparked mixed reactions during a pandemic when coughing was no laughing matter. Yet, the sneaker’s bold narrative, exceptional craftsmanship, and unique storytelling secured its place as a standout in Nike SB's iconic lineup.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_nYPr3G",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_XCFhLn",
+        "image_kAtref",
+        "text_qQii7N"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_rBxLw9": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-sb-dunk-high-strawberry-cough?_pos=1&_psq=strawberry+&_ss=e&_v=1.0\" target=\"_blank\" title=\"https://upperempire.com/products/nike-sb-dunk-high-strawberry-cough?_pos=1&_psq=strawberry+&_ss=e&_v=1.0\">Nike SB Dunk High Strawberry Cough</a></h3><ul><li><strong>Colorways: </strong>University Red/Spinach Green-Magic Ember</li><li><strong>SKU: </strong>CW7093-600</li><li><strong>MSRP:</strong> $110</li><li><strong>Resale Price (as of 2025): </strong>Around $314</li><li><strong>Release Date:</strong> 10/22/2021</li></ul>"
+          }
+        },
+        "image_dg6eY8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/134.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_rBxLw9",
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_dg6eY8"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_n6kK98": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk High \"Strawberry Cough\" stands out as more than just footwear—it’s a cultural emblem. Its vivid design, inspired by the sweet yet pungent allure of strawberries and cannabis culture, creates a unique narrative that captivates sneakerheads and casual buyers alike. While its striking aesthetics make it a standout, its unconventional theme and bold visuals may limit everyday wearability. Whether you see it as a collector’s grail or an overhyped release, this pair undoubtedly leaves an impression.</p><p>What do you think about the \"Strawberry Cough\"? Are you rocking or shelving these? Let us know in the comments below!<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_n6kK98",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

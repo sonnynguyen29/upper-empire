@@ -1,0 +1,221 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/LIS05609.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Nike SB Dunk Low HUF \"Wait, What!?\" (Friends and Family): A Story-Driven Masterpiece",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Is the Nike SB Dunk Low HUF \"Wait, What!?\" (Friends and Family) worth the hype? With only 74 pairs in existence, this ultra-exclusive release has sneakerheads talking—and for good reason.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05607.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05614.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05612.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_DRJnMP"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_b73Pzr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This sneaker isn’t just a collector's dream—it’s a narrative on feet. With only 74 numbered pairs ever made, these exclusives weren’t sold to the public. Instead, they were gifted to HUF and Nike SB’s closest allies, cementing their status as one of the rarest gems in Nike SB history. The design features premium tumbled leather, concealing vibrant tie-dye panels that pay homage to HUF’s iconic 2004 Dunk High collab and the bold spirit of San Francisco. Want to uncover the story? Cut the leather and let the city’s energy shine through.<br/></p>"
+          }
+        },
+        "image_ceGUp6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05621.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With OG SB Dunk tooling, this sneaker offers top-tier durability and comfort. The slim Air Jordan 1-style tongue has stirred up some debate, as fans weigh the nostalgic appeal against their loyalty to the classic padded SB Dunk tongue. </p><p>For the best fit, go half a size up—especially if you’re used to the chunkier feel of SB Dunk tongues.<br/></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05606.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk Low HUF \"Wait, What!?\" (Friends and Family) pays tribute to skate legend Keith Hufnagel’s journey. Reflective cityscape heel graphics honor New York and San Francisco, pivotal locations in Hufnagel's career. \"Keith Forever\" embroidery immortalizes the skateboarding icon. Bright green insoles showcase Bones, Hufnagel's dog and HUF’s original mascot, adding a personal, emotional connection to the design.<br/></p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05620.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_b73Pzr",
+        "image_ceGUp6",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_KpgQX7": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike SB Dunk Low HUF \"Wait, What!?\" (Friends and Family)</h3><ul><li><strong>Colorways: </strong>Anthracite/Electric Green/Medium Grey</li><li><strong>SKU: </strong>FD8775-002</li><li><strong>MSRP:</strong> $130</li><li><strong>Resale Price (as of 2025): </strong>Over $7,451</li><li><strong>Release Date:</strong> 10/22/2022</li></ul>"
+          }
+        },
+        "image_UT86gy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05613.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_KpgQX7",
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_UT86gy"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_ce3JDE": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you admire it from afar or snag one for your collection, the Nike SB Dunk Low HUF \"Wait, What!?\" encapsulates passion, legacy, and artistry.<br/><br/>What’s your take? Love it or leave it? Drop a comment or flex it on IG with #UpperEmpire!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_ce3JDE",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

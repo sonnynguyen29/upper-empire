@@ -1,0 +1,333 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/118.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Are the Jordan 1 Retro High & Low Dior the Pinnacle of Sneaker Luxury?",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What happens when high fashion meets the streets? Enter the Jordan 1 Retro High and Low Dior—where timeless basketball style fuses with Parisian couture. These sneakers aren't just shoes; they’re a statement. With Dior’s signature Oblique monogram, premium Italian leather, and icy translucent soles, they redefine sneaker luxury.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/112.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/115_dea28372-98be-449f-b4a9-6732149b2b21.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/118.jpg"
+          }
+        },
+        "gallery_image_KmbVpp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/119_0b1cba9d-2e33-4f66-80ad-5c26893c4904.jpg"
+          }
+        },
+        "gallery_image_DELnNU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/116.jpg"
+          }
+        },
+        "gallery_image_cM7UxJ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/122_eec112b7-06fc-48e9-a838-9871428f8d4e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_DRJnMP",
+        "gallery_image_X6tjKR",
+        "gallery_image_KmbVpp",
+        "gallery_image_DELnNU",
+        "gallery_image_cM7UxJ"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Jordan 1 Dior lineup exudes timeless sophistication with a minimalist edge. Crafted from ultra-premium Italian leather in sail and Dior Gray, these High and Low silhouettes are a seamless blend of basketball heritage and haute couture. The translucent icy outsole adorned with \"Dior\" and \"Air Jordan\" logos? Pure art. The High Dior’s bold oblique monogrammed Swooshes and the iconic AIR DIOR Wings logo elevate it to grail status. </p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/114_e60a449a-1ab4-4228-9ac8-bc9776fd8e96.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Low Dior, equally captivating, channels versatility with design nods to Dior’s B-23 sneaker, merging luxury with modern street style.<br/></p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/113_2762b170-4701-4bf7-85c3-b7090fa628fa.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Let’s talk feel. Spoiler: these aren’t your marathon-ready sneakers. The Jordan 1 High Dior fits true to size but requires patience to break in—blame the premium, yet stiff, calfskin leather. Perfect for flexing in your collection, less ideal for extended wear. The Low Dior scores higher on wearability but comes with its own quirks, like a snug midfoot and a heel collar that doesn’t let you forget it’s there. Both pairs prioritize Dior’s signature luxury aesthetic over Nike's athletic cushioning, so pack those thick socks.<br/></p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/112.jpg",
+            "caption": ""
+          }
+        },
+        "text_k8MGiC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Exclusivity defines the Dior x Air Jordan collaboration. The Jordan 1 High Dior, capped at just 8,500 pairs, arrives with luxury essentials: a silver hangtag, a numbered authenticity card, and premium dust bags. Meanwhile, the Low Dior, limited to an even scarcer 4,700 pairs, offers a sleek, versatile design that's easy to style, though some argue it leans a bit too safe. The partnership merges Dior's haute couture finesse with Jordan Brand's iconic streetwear legacy, elevating sneaker culture to unparalleled luxury.<br/></p>"
+          }
+        },
+        "image_HLpVcG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/122_eec112b7-06fc-48e9-a838-9871428f8d4e.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_zHifmU": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_z8pVe3",
+        "text_bUzB6C",
+        "image_nYPr3G",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_k8MGiC",
+        "image_HLpVcG",
+        "horizontal_line_zHifmU"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-air-jordan-1-high-dior?_pos=4&_sid=f6f81813a&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-air-jordan-1-high-dior?_pos=4&_sid=f6f81813a&_ss=r\">Jordan 1 Retro High Dior</a></h3><ul><li><strong>Colorways: </strong>Wolf Grey/Sail-Photon Dust-White</li><li><strong>SKU: </strong>CN8607-002</li><li><strong>MSRP:</strong> $2,000</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$8,260</li><li><strong>Release Date:</strong> 04/06/2020</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_image_gallery_mYfh8Y": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_Eqibw6": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/121_70429a39-705e-4d1f-8ad7-e3f5f0c1dc34.jpg"
+          }
+        },
+        "gallery_image_mTwa49": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/119_0b1cba9d-2e33-4f66-80ad-5c26893c4904.jpg"
+          }
+        },
+        "gallery_image_JBRtmz": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/123_24981351-d67f-4a84-be35-06235cd1d8b5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_Eqibw6",
+        "gallery_image_mTwa49",
+        "gallery_image_JBRtmz"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_d7zHMN": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_yVJLBz": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_HNbYf6": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Jordan 1 Retro Low Dior</h3><ul><li><strong>Colorways: </strong>Grey/Black-Sail</li><li><strong>SKU: </strong>CN8608 002</li><li><strong>MSRP:</strong> $2,000</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$9,211</li><li><strong>Release Date:</strong> 04/06/2020</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_yVJLBz",
+        "text_HNbYf6"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_image_gallery_ixd9Je": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_DP6gFx": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/117_409849f2-5e2a-4a7d-9d2a-73f2f7842474.jpg"
+          }
+        },
+        "gallery_image_f9dUEy": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/119_7bd61287-203c-4995-b541-bf8eb649cd3a.jpg"
+          }
+        },
+        "gallery_image_9qnNgW": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/120_e5953079-2069-4de3-8b5f-ddf6e91ea3ee.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_DP6gFx",
+        "gallery_image_f9dUEy",
+        "gallery_image_9qnNgW"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_qRxbc4": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Love It or Leave It?</strong></h3><p>The Jordan 1 Dior collection isn’t just footwear—it’s a cultural artifact. Whether you’re in it for the prestige, the design, or the community clout, these kicks are conversation starters. But are they practical? Not really. So, what’s your take? Are they worth the splurge, or just a flex for the shelf? Drop your thoughts in the comments or share this with your fellow sneakerheads!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_qRxbc4",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_image_gallery_mYfh8Y",
+    "blog_content_d7zHMN",
+    "blog_image_gallery_ixd9Je",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

@@ -1,0 +1,306 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/11_f9143ccf-6f88-4673-ae15-e813eef16cc5.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "The Collector's Conundrum: Off-White Air Force 1 ComplexCon or the Elusive MoMA Edition?",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Are the Off-White Air Force 1s cultural masterpieces or just hyped artifacts of the streetwear zeitgeist? Let’s break down two legendary designs that redefined sneaker culture: the bold ComplexCon edition, debuting as an LA exclusive, and the refined MoMA iteration, a tribute to modern art's minimalist ethos.</p><h3></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/19_1cd084f6-a972-4485-bc7c-be98fbc30033.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/13_4f0864da-d56f-42ec-bf65-6a477c4a54bc.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/18_31b5c5eb-2801-4ce4-93ca-76b3f8639394.jpg"
+          }
+        },
+        "gallery_image_KmbVpp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/15_c42e7998-8464-4695-b56e-7589e37d8d94.jpg"
+          }
+        },
+        "gallery_image_DELnNU": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/15_8637ea1a-4e23-4ef3-82c3-9237eca93dc8.jpg"
+          }
+        },
+        "gallery_image_cM7UxJ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/17_7b4cd40e-9867-4006-82a8-39c4dfed85da.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_DRJnMP",
+        "gallery_image_X6tjKR",
+        "gallery_image_KmbVpp",
+        "gallery_image_DELnNU",
+        "gallery_image_cM7UxJ"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Virgil Abloh’s deconstructivist design philosophy took center stage with the release of the ComplexCon Edition. It’s chaos in the best possible way—exposed foam collars, zigzag stitching, and the signature zip tie tag. The bold, staggered “AIR” branding on the midsole clashes with the pristine white leather, creating an intriguing tension that’s both striking and rebellious. Plus, the event-specific packaging with that translucent orange dust bag makes it feel like you’re not just getting a sneaker, but a piece of sneaker history.<br/></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/17_7b4cd40e-9867-4006-82a8-39c4dfed85da.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In contrast, the MoMA version shows a more refined side of Abloh. Gone are the wild deconstruction elements, replaced by sleek monochromatic black leather and metallic silver Swooshes. The solid rubber midsole—engraved with “MOMA” and “AF1”—adds a sculptural touch, transforming the sneaker from streetwear to wearable art. With minimalist precision, it embodies Abloh’s evolving interest in purity and simplicity, elevating the sneaker to something more than just a shoe.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/13_5b3237a7-236e-4045-8a2d-3887b995286e.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>While the ComplexCon AF1 looks stunning, it’s not all about comfort. The exposed foam collars and translucent materials may turn heads, but they’re not as durable as traditional leather. Many owners reported color transfer from denim and wear-and-tear on the foam collar after a few uses. The zip tie, while iconic, can also be uncomfortable during long wear. It’s a sneaker that’s more about flexing than long-lasting comfort.<br/></p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/15_c42e7998-8464-4695-b56e-7589e37d8d94.jpg",
+            "caption": ""
+          }
+        },
+        "text_QYqqNw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The MoMA AF1 takes a more practical approach to performance. Featuring full-grain leather and reinforced nylon mesh panels, it’s built to last and offers a snug, structured fit. However, the solid rubber midsole adds some heft, making it a bit heavier than your standard AF1. While it sacrifices some of the signature Nike Air cushioning, it makes up for it with superior durability and an elevated, art-inspired design that holds up in both gallery settings and urban environments.</p>"
+          }
+        },
+        "image_yCYgfh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/16_bed943be-f222-4098-8529-241d9ac0667f.jpg",
+            "caption": ""
+          }
+        },
+        "text_zXxNax": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Released exclusively at ComplexCon in Long Beach, the ComplexCon AF1 became a symbol of hype and exclusivity. ComplexCon was a mecca for sneakerheads, and this sneaker embodied that moment perfectly. Its scarcity created a frenzy, with resale prices soaring to $1,200 within hours. This wasn’t just a sneaker; it was the apex of streetwear’s rise, where demand was driven by scarcity, making it a must-have for serious collectors.<br/></p>"
+          }
+        },
+        "image_yjQKKg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/11_f9143ccf-6f88-4673-ae15-e813eef16cc5.jpg",
+            "caption": ""
+          }
+        },
+        "text_GCArQz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In contrast, the MoMA collaboration elevated sneakers to the realm of high art. Released alongside the \"Items: Is Fashion Modern?\" exhibition at the Museum of Modern Art, this pair redefined sneaker culture. The partnership blurred the lines between commercial design and fine art, pushing sneakers into spaces usually reserved for more traditional art forms. Limited availability meant many fans missed out, but the cultural impact of this collaboration on both the sneaker and art worlds was profound, cementing it as a milestone in sneaker history.<br/></p>"
+          }
+        },
+        "horizontal_line_zHifmU": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_z8pVe3",
+        "text_bUzB6C",
+        "image_nYPr3G",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_QYqqNw",
+        "image_yCYgfh",
+        "text_zXxNax",
+        "image_yjQKKg",
+        "text_GCArQz",
+        "horizontal_line_zHifmU"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike Air Force 1 Low Off-White ComplexCon (AF100)</h3><ul><li><strong>Colorways: </strong>White/Metallic Silver-Sail</li><li><strong>SKU: </strong>AO4297-100</li><li><strong>MSRP:</strong> $150</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$25,000</li><li><strong>Release Date:</strong> 11/04/2017</li></ul>"
+          }
+        },
+        "image_PEWRKN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/12_d00f218d-77b0-4120-90c2-3c46755fbd64.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_yLfAfc": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_PWHjPn": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike Air Force 1 Low '07 Off-White MoMA </h3><ul><li><strong>Colorways: </strong>Black/Metallic Silver-Black</li><li><strong>SKU: </strong>AV5210-001</li><li><strong>MSRP:</strong> $175</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$15,500</li><li><strong>Release Date: </strong>01/27/2017</li></ul>"
+          }
+        },
+        "image_97nbEb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/13_5b3237a7-236e-4045-8a2d-3887b995286e.jpg",
+            "caption": ""
+          }
+        },
+        "text_wRxNjy": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_PEWRKN",
+        "horizontal_line_yLfAfc",
+        "text_PWHjPn",
+        "image_97nbEb",
+        "text_wRxNjy"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_qRxbc4": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>So, what’s your take—are these kicks pure streetwear magic, or are they more at home in a gallery? Let us know in the comments, or flex your pair online with #UpperEmpire!<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_qRxbc4",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

@@ -1,0 +1,598 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/1LN03371_0228b045-fe47-4395-a69d-3fe7e008fa5c.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Nike SB Dunk Low \"Lobster\" Series: Dive Into the Ocean of Style",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_RnnMkG": {
+      "type": "blog--content",
+      "blocks": {
+        "text_47BghY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Is the Nike SB “Lobster” series the most delectable drop in sneaker history? Let’s dive into this iconic collaboration between Nike SB and Concepts, blending bold designs with a seafood-inspired twist that has sneakerheads salivating.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_47BghY"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_eUJKPp": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_MPMNwp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03370_ea3ac19c-80ac-4a2f-992e-c66e7b18847c.png"
+          }
+        },
+        "gallery_image_8MWJQX": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03346_25ab3265-73b5-4506-a574-faa9ce990eb6.jpg"
+          }
+        },
+        "gallery_image_Ahizr7": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03371_3960e147-1c7c-4693-977c-7f3188a9413f.jpg"
+          }
+        },
+        "gallery_image_p7BzQk": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03357_89eafe86-2128-458e-b7a7-0fbbecdcd69e.jpg"
+          }
+        },
+        "gallery_image_6dJJdG": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03363_e6c01d20-6fbc-46d9-bbe4-c090e84b8c17.jpg"
+          }
+        },
+        "gallery_image_GWYgEP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03354_c5fc8f49-31d7-4837-ae50-3e1d56577479.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_MPMNwp",
+        "gallery_image_8MWJQX",
+        "gallery_image_Ahizr7",
+        "gallery_image_p7BzQk",
+        "gallery_image_6dJJdG",
+        "gallery_image_GWYgEP"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_rHxDFT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The speckled texture mirrors a lobster shell's rugged elegance, while the rubber band over the toe box cheekily recalls the way lobster claws are tied. Inside, the gingham lining evokes the cozy charm of seafood dining—a fun, premium nod to culinary culture. This clever design seamlessly blends storytelling with Nike SB's playful yet sophisticated ethos.<br/></p>"
+          }
+        },
+        "image_36JXF4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03348_bd6fd597-dddb-4405-8428-9c396395b576.jpg",
+            "caption": ""
+          }
+        },
+        "text_4GRtHi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lobsters may pinch, but these sneakers don’t. The Nike SB Dunk “Lobster” pairs its classic silhouette with modern comfort, featuring a padded tongue and collar for snug support. A Zoom Air insole keeps your feet cushioned during kickflips or casual strolls. True to size and universally praised by sneakerheads, they're as fresh as they are functional.<br/></p>"
+          }
+        },
+        "image_3kkNP4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03329.jpg",
+            "caption": ""
+          }
+        },
+        "text_GLQ4CN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Orange Lobster isn’t just about looks. Special touches like multiple lace options (orange, white, teal) let you customize your vibe. And did we mention the exclusive Friends & Family packaging? This special box goes above and beyond, featuring seafood-inspired goodies like bibs, shell crackers, and a thematic display that’s perfect for collectors. It’s these thoughtful extras that elevate the experience and make each pair feel like a treasure.</p><p>This collection also features two ultra-rare Friends & Family pairs: the White Lobster and Yellow Lobster. These colorways are highly exclusive, making them some of the most sought-after gems in the sneaker world.</p>"
+          }
+        },
+        "image_4regeD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03346_8c00f779-e313-4a70-ae3f-b37ff11135ae.jpg",
+            "caption": ""
+          }
+        },
+        "text_TbKq9k": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From the OG Red Lobster to 2025 fresh Orange, the Lobster series has always been a grail-worthy collection. While some purists debate whether the Orange Lobster matches the OGs’ charm, most agree it’s a must-have for any collector. The only downside? Bots and low stock made these harder to snag than an actual lobster in the wild.</p>"
+          }
+        },
+        "image_yKtMRi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03354_d3ab1426-9422-454f-9ad0-fcbf18794765.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_PLQBmM": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_rHxDFT",
+        "image_36JXF4",
+        "text_4GRtHi",
+        "image_3kkNP4",
+        "text_GLQ4CN",
+        "image_4regeD",
+        "text_TbKq9k",
+        "image_yKtMRi",
+        "horizontal_line_PLQBmM"
+      ],
+      "name": "Sneaker Info",
+      "settings": {}
+    },
+    "blog_content_EaRkVe": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_XtiqQV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WWwNQX": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Nike SB Dunk Low \"Red Lobster\"</strong></h3><p><strong>Colorway:</strong> Sport Red/Pink Clay</p><p><strong>SKU:</strong> 313170-661</p><p><strong>MSRP:</strong> $125</p><p><strong>Resale Price:</strong> Around $4,994</p><p><strong>Release Date:</strong> May 31st, 2008</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XtiqQV",
+        "text_WWwNQX"
+      ],
+      "name": "Release Details 1",
+      "settings": {}
+    },
+    "blog_image_gallery_K4CqzJ": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_6ezjpk": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03317.jpg"
+          }
+        },
+        "gallery_image_RUyMMH": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03319.jpg"
+          }
+        },
+        "gallery_image_izxndi": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03363.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_6ezjpk",
+        "gallery_image_RUyMMH",
+        "gallery_image_izxndi"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_ccRfjd": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_yGgdbL": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_r4zc3T": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Nike SB Dunk Low \"Blue Lobster\"</strong></h3><p><strong>Colorway:</strong> Nightshade/Dark Slate</p><p><strong>SKU:</strong> 313170-342</p><p><strong>MSRP:</strong> $92</p><p><strong>Resale Price:</strong> Around $4,966</p><p><strong>Release Date:</strong> 20th of June, 2009</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_yGgdbL",
+        "text_r4zc3T"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_image_gallery_FXKWyp": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_9wJhwg": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03346.jpg"
+          }
+        },
+        "gallery_image_FPmtzF": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03371_1d66197a-64a2-4f13-a430-4e021bfa0fc7.jpg"
+          }
+        },
+        "gallery_image_UWFmhw": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03329.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_9wJhwg",
+        "gallery_image_FPmtzF",
+        "gallery_image_UWFmhw"
+      ],
+      "name": "Blog Image Gallery 2",
+      "settings": {}
+    },
+    "blog_content_NrbPe6": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_KYybMd": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_bGYQHr": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Nike SB Dunk Low \"Yellow Lobster\" (Friends & Family)</strong></h3><p><strong>Colorway:</strong> Yellow Ochre/Terra Brown</p><p><strong>SKU:</strong> 313170-137566</p><p><strong>MSRP:</strong> $110</p><p><strong>Resale Price:</strong> Around $89,999</p><p><strong>Release Date:</strong> July 19, 2022</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_KYybMd",
+        "text_bGYQHr"
+      ],
+      "name": "Release Details 3",
+      "settings": {}
+    },
+    "blog_image_gallery_KrEmJe": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_A3Xi7X": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03354.jpg"
+          }
+        },
+        "gallery_image_rJf96n": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03357.jpg"
+          }
+        },
+        "gallery_image_HwXd7b": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03370_45ba59f8-298f-49e3-bfe1-6a1d5c42f9b4.png"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_A3Xi7X",
+        "gallery_image_rJf96n",
+        "gallery_image_HwXd7b"
+      ],
+      "name": "Blog Image Gallery 3",
+      "settings": {}
+    },
+    "blog_content_hRcmnf": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_RhpEtP": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_XEdEBC": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Nike SB Dunk Low \"Purple Lobster\"</strong></h3><p><strong>Colorway:</strong> Voltage Purple/Voltage Purple</p><p><strong>SKU:</strong> BV1310-555</p><p><strong>MSRP:</strong> $130</p><p><strong>Resale Price:</strong> Around $1,478</p><p><strong>Release Date:</strong> 12/14/2018</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_RhpEtP",
+        "text_XEdEBC"
+      ],
+      "name": "Release Details 4",
+      "settings": {}
+    },
+    "blog_image_gallery_PGR8GP": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_9LBPRw": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03333.jpg"
+          }
+        },
+        "gallery_image_dBWz3j": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03346_07aa2c4f-f0bf-4fd9-91d2-07695252ad8a.jpg"
+          }
+        },
+        "gallery_image_dxQ8Yg": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03324.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_9LBPRw",
+        "gallery_image_dBWz3j",
+        "gallery_image_dxQ8Yg"
+      ],
+      "name": "Blog Image Gallery 4",
+      "settings": {}
+    },
+    "blog_content_kM3GmV": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_MdzKhh": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_yPCgVy": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Nike SB Dunk Low \"Green Lobster\"</strong></h3><p><strong>Colorway:</strong> Green Stone/Legion Green-Fir</p><p><strong>SKU:</strong> BV1310-337</p><p><strong>MSRP:</strong> $100</p><p><strong>Resale Price:</strong> Around $2,850</p><p><strong>Release Date:</strong> 12/14/2018</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_MdzKhh",
+        "text_yPCgVy"
+      ],
+      "name": "Release Details 5",
+      "settings": {}
+    },
+    "blog_image_gallery_RCPjT8": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_tUATNz": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03313.jpg"
+          }
+        },
+        "gallery_image_77bqPt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03322.jpg"
+          }
+        },
+        "gallery_image_gfpD6Q": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03346_d0df2c61-0a4f-4eec-800f-151b76fcaf6d.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_tUATNz",
+        "gallery_image_77bqPt",
+        "gallery_image_gfpD6Q"
+      ],
+      "name": "Blog Image Gallery 5",
+      "settings": {}
+    },
+    "blog_content_yVathX": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_fLQyiJ": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_wkKJ7L": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-sb-dunk-low-concepts-orange-lobster?_pos=2&_sid=27d4d2575&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-sb-dunk-low-concepts-orange-lobster?_pos=2&_sid=27d4d2575&_ss=r\"><strong>Nike SB Dunk Low \"Orange Lobster\"</strong></a></h3><p><strong>Colorway:</strong> Orange Frost/Electro Orange/White</p><p><strong>SKU:</strong> FD8776-800</p><p><strong>MSRP:</strong> $120</p><p><strong>Resale Price:</strong> Around $523</p><p><strong>Release Date:</strong> 12/20/2022</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_fLQyiJ",
+        "text_wkKJ7L"
+      ],
+      "name": "Release Details 6",
+      "settings": {}
+    },
+    "blog_image_gallery_77nUbn": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_tAVitd": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03346_8c00f779-e313-4a70-ae3f-b37ff11135ae.jpg"
+          }
+        },
+        "gallery_image_rHH3cR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03351.jpg"
+          }
+        },
+        "gallery_image_Tj9GDd": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03370.png"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_tAVitd",
+        "gallery_image_rHH3cR",
+        "gallery_image_Tj9GDd"
+      ],
+      "name": "Blog Image Gallery 6",
+      "settings": {}
+    },
+    "blog_content_h84MBg": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_Vizy8H": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_wHRM3p": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Nike SB Dunk Low \"White Lobster\" (Friends & Family)</strong></h3><p><strong>Colorway:</strong> White/Photon Dust-Pure</p><p><strong>SKU:</strong> FD8776-100</p><p><strong>MSRP:</strong> $110</p><p><strong>Resale Price:</strong> Around $40,000</p><p><strong>Release Date:</strong> 03/13/2023</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_Vizy8H",
+        "text_wHRM3p"
+      ],
+      "name": "Release Details 7",
+      "settings": {}
+    },
+    "blog_image_gallery_c64zdc": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_e4aDeP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03371.jpg"
+          }
+        },
+        "gallery_image_mVwUQW": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03320.jpg"
+          }
+        },
+        "gallery_image_qH9Pqn": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03346_485f3c17-3fec-4d6c-be1c-4072d1698b39.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_e4aDeP",
+        "gallery_image_mVwUQW",
+        "gallery_image_qH9Pqn"
+      ],
+      "name": "Blog Image Gallery 7",
+      "settings": {}
+    },
+    "blog_content_W4ikmW": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_Tb6mWN": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_nUFmYK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Do the Lobsters crack your top tier of SB Dunks, or are you saving your appetite for another drop? Love it or leave it, drop a comment and share your thoughts with the community!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_Tb6mWN",
+        "text_nUFmYK"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_RnnMkG",
+    "blog_image_gallery_eUJKPp",
+    "blog_content_bxMwhf",
+    "blog_content_EaRkVe",
+    "blog_image_gallery_K4CqzJ",
+    "blog_content_ccRfjd",
+    "blog_image_gallery_FXKWyp",
+    "blog_content_hRcmnf",
+    "blog_image_gallery_PGR8GP",
+    "blog_content_kM3GmV",
+    "blog_image_gallery_RCPjT8",
+    "blog_content_yVathX",
+    "blog_image_gallery_77nUbn",
+    "blog_content_NrbPe6",
+    "blog_image_gallery_KrEmJe",
+    "blog_content_h84MBg",
+    "blog_image_gallery_c64zdc",
+    "blog_content_W4ikmW",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

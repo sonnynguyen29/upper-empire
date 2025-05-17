@@ -1,0 +1,397 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/D2-2.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Two Icons, One Pack: Nike Air Max 1 'Ducks of a Feather' and Huarache UO PE",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sneakerheads, get ready to elevate your game! Nike and the University of Oregon have dropped an exclusive PE pack that’s already turning heads. Enter the Nike Air Max 1 “Ducks of a Feather” and the Nike Air Huarache “University of Oregon” PE—a seamless fusion of heritage, cutting-edge innovation, and bold design. Whether you're into the iconic Air Max cushioning or the snug fit of the Huarache, this pack offers something for every collector. Warning: one look, and you're hooked.<br/></p>"
+          }
+        },
+        "horizontal_line_qa8feL": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_P6LMCy",
+        "horizontal_line_qa8feL"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D2-2.jpg",
+            "caption": ""
+          }
+        },
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The “Ducks of a Feather” program, led by Division Street, isn’t just a catchy name—it’s a game-changer. This NIL (Name, Image, Likeness) platform empowers University of Oregon student-athletes to grow their personal brands, connect with fans, and secure financial support through exclusive sneaker drops. Designed with both impact and style in mind, it’s a testament to Phil Knight’s innovative vision. </p>"
+          }
+        },
+        "horizontal_line_QBhbYp": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_z8pVe3",
+        "text_EhzrgM",
+        "horizontal_line_QBhbYp"
+      ],
+      "name": "Sneaker Infor1",
+      "settings": {}
+    },
+    "blog_image_gallery_f3LgBW": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_tRUPw9": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/D6.jpg"
+          }
+        },
+        "gallery_image_EFWrKF": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/D7.jpg"
+          }
+        },
+        "gallery_image_88tinp": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/D8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_tRUPw9",
+        "gallery_image_EFWrKF",
+        "gallery_image_88tinp"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_74FzUK": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_WMACEr": {
+          "type": "heading",
+          "settings": {
+            "title": "Nike Air Max 1 “Ducks of a Feather”",
+            "heading_size": 32
+          }
+        },
+        "text_H8Kdrh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Details make the difference here. Animal patterns accent the toe box and lace eyelets, adding a layer of texture, while iridescent olive green and navy Swooshes provide a modern contrast. Three lace options—off-white, green, and yellow—let you tweak your style, and the embroidered phrase “Once a duck, always a duck” on the heel seals its Oregon pride.<br/></p>"
+          }
+        },
+        "image_wwUaPw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D8.jpg",
+            "caption": ""
+          }
+        },
+        "text_q3gX9P": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Details make the difference here. Animal patterns accent the toe box and lace eyelets, adding a layer of texture, while iridescent olive green and navy Swooshes provide a modern contrast. Three lace options—off-white, green, and yellow—let you tweak your style, and the embroidered phrase “Once a duck, always a duck” on the heel seals its Oregon pride.<br/></p>"
+          }
+        },
+        "image_UKXWEW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D7.jpg",
+            "caption": ""
+          }
+        },
+        "text_dAewJt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Packaged in a bold neon green box featuring Oregon branding and a QR code linking to the Ducks of a Feather initiative, it reinforced community values. Proceeds supported student-athletes, blending philanthropy with innovation.<br/></p>"
+          }
+        },
+        "image_CBbtW3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D5.jpg",
+            "caption": ""
+          }
+        },
+        "text_HkkmyU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From a performance perspective, the Air Max 1 stands out for its dependable cushioning and lightweight build. Its durable outsole promises longevity, though its breathability might fall short for summer heat. Still, it’s a classic built for lasting impact—both on your feet and in your wardrobe.</p>"
+          }
+        },
+        "horizontal_line_rGUrEf": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_WMACEr",
+        "text_H8Kdrh",
+        "image_wwUaPw",
+        "text_q3gX9P",
+        "image_UKXWEW",
+        "text_dAewJt",
+        "image_CBbtW3",
+        "text_HkkmyU",
+        "horizontal_line_rGUrEf"
+      ],
+      "name": "Sneaker info 2",
+      "settings": {}
+    },
+    "blog_image_gallery_yafAP8": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_7BC4nK": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/D2-2_93f47a6c-b1a3-496b-b2b2-c2b4b4577f5a.jpg"
+          }
+        },
+        "gallery_image_JHTitw": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/D9.jpg"
+          }
+        },
+        "gallery_image_JVWXci": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/D3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_7BC4nK",
+        "gallery_image_JHTitw",
+        "gallery_image_JVWXci"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_4NzUXn": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_49FNb9": {
+          "type": "heading",
+          "settings": {
+            "title": "Nike Air Huarache “University of Oregon” PE",
+            "heading_size": 32
+          }
+        },
+        "text_emXEPE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For those who appreciate a seamless mix of nostalgia and contemporary style, the Huarache PE strikes a perfect chord. Featuring a sleek grey and vibrant cactus green colorway, it subtly nods to Oregon’s iconic green and yellow. Key details like the bold \"O\" logo, textured elephant print accents, and semi-translucent pull tabs add layers of personality and flair.<br/></p>"
+          }
+        },
+        "image_pGzedf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D9.jpg",
+            "caption": ""
+          }
+        },
+        "text_fwpFTk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Crafted by legendary designer and Oregon alum Tinker Hatfield, this sneaker holds deep historical significance. The reimagined retro duck logo bridges the past and present, echoing Hatfield’s roots in Oregon’s track legacy. It’s not just footwear—it’s a story told through design.<br/></p>"
+          }
+        },
+        "image_Jeppmd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D3.jpg",
+            "caption": ""
+          }
+        },
+        "text_UizMcH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With only 345 pairs in existence, this Huarache is a collector’s dream, exclusive to Oregon’s Athletics department. Its snug neoprene fit offers sock-like comfort, though its tailored build might feel tight for some wearers.<br/></p>"
+          }
+        },
+        "image_Q7UVEb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D2-2_93f47a6c-b1a3-496b-b2b2-c2b4b4577f5a.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_a3Cji8": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_49FNb9",
+        "text_emXEPE",
+        "image_pGzedf",
+        "text_fwpFTk",
+        "image_Jeppmd",
+        "text_UizMcH",
+        "image_Q7UVEb",
+        "horizontal_line_a3Cji8"
+      ],
+      "name": "Sneaker info 2",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike Air Max 1 'Ducks of a Feather'</h3><ul><li><strong>Colorways: </strong>Green Strike/Multi-Color</li><li><strong>SKU: </strong>PROMO 5615 1277653 SZ 561517</li><li><strong>MSRP:</strong> N/A</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$15,696</li><li><strong>Release Date:</strong> 2022</li></ul>"
+          }
+        },
+        "image_PEWRKN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D2-2_de308d5b-69cd-44b1-b251-d4ae197289c7.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_yLfAfc": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_PWHjPn": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike Air Huarache “University of Oregon” PE</h3><ul><li><strong>Colorways: </strong>Vast Grey/Bright Cactus/Sail/Faded Spruce</li><li><strong>SKU: </strong>FN1465-001</li><li><strong>MSRP:</strong> N/A</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$370</li><li><strong>Release Date:</strong> 02/19/2023</li></ul>"
+          }
+        },
+        "image_97nbEb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D2-2_c07d8653-502a-47dd-a5ba-63804c252279.jpg",
+            "caption": ""
+          }
+        },
+        "text_wRxNjy": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_PEWRKN",
+        "horizontal_line_yLfAfc",
+        "text_PWHjPn",
+        "image_97nbEb",
+        "text_wRxNjy"
+      ],
+      "name": "Release Details 2",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_qRxbc4": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nike’s Oregon PEs celebrate the legacy of a university that’s been pivotal in Nike’s history while supporting the athletes who’ll shape its future. From thoughtful design to limited availability, these shoes embody the best of what sneaker culture can offer—style, storytelling, and a sense of community.<br/><br/>So, are you ready to hunt for your own piece of Duck history? Or will you simply admire them from afar? Either way, these kicks are worth every ounce of hype.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_qRxbc4",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_f3LgBW",
+    "blog_content_74FzUK",
+    "blog_image_gallery_yafAP8",
+    "blog_content_4NzUXn",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

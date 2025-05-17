@@ -24,102 +24,20 @@
         "heading_weight": "700"
       }
     },
-    "blog_content_bxMwhf": {
+    "blog_content_L7LNGc": {
       "type": "blog--content",
       "blocks": {
-        "text_G7y": {
+        "text_P6LMCy": {
           "type": "text",
           "settings": {
             "text": "<p>Move over, everyday sneakers—the Nike SB Dunk Low x Cactus Plant Flea Market (CPFM) \"Swarovski Pack\" has arrived, dazzling the sneaker world with unmatched crystal embellishment. These glittering creations redefine bold footwear with an avalanche of sparkle that transforms every step into a statement.</p>"
           }
-        },
-        "heading_y8QNLG": {
-          "type": "heading",
-          "settings": {
-            "title": "Release Details",
-            "heading_size": 32
-          }
-        },
-        "text_G9A3zi": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Nike SB Dunk Low x Cactus Plant Flea Market Swarovski Pack \"Pure Platinum\"</h3><ul><li><strong>Colorways: </strong>Pure Platinum</li><li><strong>SKU: </strong>CZ2670-001</li><li><strong>MSRP:</strong> $550</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$6,115</li><li><strong>Release Date:</strong> November 18, 2020</li></ul>"
-          }
-        },
-        "image_JpBanm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LIS09313.jpg",
-            "caption": ""
-          }
-        },
-        "text_KGhfDF": {
-          "type": "text",
-          "settings": {
-            "text": "<h3>Nike SB Dunk Low x Cactus Plant Flea Market Swarovski Pack \"Spiral Sage\"</h3><ul><li><strong>Colorways: </strong>Spiral Sage</li><li><strong>SKU: </strong>CZ2670-300</li><li><strong>MSRP:</strong> $550</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$11,040</li><li><strong>Release Date:</strong> November 18, 2020</li></ul>"
-          }
-        },
-        "image_7Qf4jW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LIS09316.jpg",
-            "caption": ""
-          }
-        },
-        "text_YFXYyN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Ever seen a disco ball turned sneaker? Meet the CPFM x Nike SB Dunk Low \"Swarovski Pack,\" where every crystal-encrusted inch exudes unmatched luxury. The playful oversized Swoosh contrasts with the bold, vivid green insoles branded \"AIR SUNSHINE,\" a signature nod to CPFM’s eccentric aesthetic. The \"Pure Platinum\" colorway gleams with icy brilliance, while the \"Spiral Sage\" brings a refined, earthy charm. Together, they redefine streetwear opulence with a balance of boldness and sophistication.</p>"
-          }
-        },
-        "image_LkXDdE": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LIS09309.jpg",
-            "caption": ""
-          }
-        },
-        "text_bUzB6C": {
-          "type": "text",
-          "settings": {
-            "text": "<p>All that glitters isn’t always uncomfortable! These Nike SB Dunk Low x CPFM \"Swarovski Pack\" sneakers feature a padded tongue and breathable mesh lining for surprisingly comfortable wear, even if they’re more for showing off than working out. The detachable double lace flaps offer customizable fit options, adding practicality to their dazzling design.</p>"
-          }
-        },
-        "image_nYPr3G": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2_59f0b8e5-dbb4-4280-b668-0bbee4fbfca4.jpg",
-            "caption": ""
-          }
-        },
-        "text_FzHiKD": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Each pair arrives in a vivid green box featuring bold \"AIR SUNSHINE\" branding, complete with a coordinated felt dust bag for protection and style.</p>"
-          }
-        },
-        "image_WcYwcY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LIS09325.jpg",
-            "caption": ""
-          }
         }
       },
       "block_order": [
-        "text_G7y",
-        "heading_y8QNLG",
-        "text_G9A3zi",
-        "image_JpBanm",
-        "text_KGhfDF",
-        "image_7Qf4jW",
-        "text_YFXYyN",
-        "image_LkXDdE",
-        "text_bUzB6C",
-        "image_nYPr3G",
-        "text_FzHiKD",
-        "image_WcYwcY"
+        "text_P6LMCy"
       ],
+      "name": "Description",
       "settings": {}
     },
     "blog_image_gallery_KVU3ca": {
@@ -170,11 +88,134 @@
         "gallery_image_DELnNU",
         "gallery_image_cM7UxJ"
       ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These aren’t just sneakers—they’re dazzling wearable art. CPFM and Nike have transformed the SB Dunk Low into shimmering spectacles, embedding every inch with bold Swarovski crystals. The iconic oversized Swoosh, a hallmark of CPFM’s playful design, also gleams with the same dazzling detail, ensuring these shoes stand out from blocks away, whether on the runway or the streets.<br/></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_59f0b8e5-dbb4-4280-b668-0bbee4fbfca4.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These sneakers aren't hitting any skateparks. While they retain the iconic padded SB tongue for comfort, the attached “Handle With Care” tag speaks volumes. Adorned with delicate Swarovski crystals, they’re more suited for display shelves than half-pipes. Even minor mishandling can cause crystals to detach, underlining their fragility.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each pair arrives in a standout green box paired with a terry cloth dust bag featuring CPFM and Nike co-branding, alongside a crystal-studded smiley face keychain. The understated branding, with no visible Nike logos and a dazzling array of Swarovski crystals, transforms these sneakers into wearable luxury art pieces.</p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS09325.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_zHifmU": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_z8pVe3",
+        "text_bUzB6C",
+        "image_nYPr3G",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "horizontal_line_zHifmU"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike SB Dunk Low x Cactus Plant Flea Market Swarovski Pack \"Pure Platinum\"</h3><ul><li><strong>Colorways: </strong>Pure Platinum/Pure Platium</li><li><strong>SKU: </strong>CZ2670-001</li><li><strong>MSRP:</strong> $500</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$6,115</li><li><strong>Release Date:</strong> November 18, 2020</li></ul>"
+          }
+        },
+        "image_PEWRKN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS09313.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_yLfAfc": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_PWHjPn": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike SB Dunk Low x Cactus Plant Flea Market Swarovski Pack \"Spiral Sage\"</h3><ul><li><strong>Colorways: </strong>Spiral Sage/Spiral Sage</li><li><strong>SKU: </strong>CZ2670-300</li><li><strong>MSRP:</strong> $120</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$11,040</li><li><strong>Release Date:</strong> November 18, 2020</li></ul>"
+          }
+        },
+        "image_97nbEb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS09316.jpg",
+            "caption": ""
+          }
+        },
+        "text_wRxNjy": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_PEWRKN",
+        "horizontal_line_yLfAfc",
+        "text_PWHjPn",
+        "image_97nbEb",
+        "text_wRxNjy"
+      ],
+      "name": "Release Details 2",
       "settings": {}
     },
     "blog_content_TYHkaF": {
       "type": "blog--content",
       "blocks": {
+        "horizontal_line_qRxbc4": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
         "text_URDPWL": {
           "type": "text",
           "settings": {
@@ -183,8 +224,10 @@
         }
       },
       "block_order": [
+        "horizontal_line_qRxbc4",
         "text_URDPWL"
       ],
+      "name": "CTA",
       "settings": {}
     },
     "main": {
@@ -214,8 +257,10 @@
   "order": [
     "blog-hero-banner",
     "blog-heading",
-    "blog_content_bxMwhf",
+    "blog_content_L7LNGc",
     "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
     "blog_content_TYHkaF",
     "main",
     "blog_comment_YY9CwA",

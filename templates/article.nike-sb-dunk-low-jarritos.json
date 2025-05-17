@@ -1,0 +1,228 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/LIS05516.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Jarritos x Nike SB Dunk Low: The Ultimate Refresh in Sneaker Collabs",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Could the Nike SB Dunk Low Jarritos be the most exciting sneaker drop of 2023? With its bold design, cultural homage, and buzzworthy features, this collab is turning heads everywhere. Let’s dive into the details and see if it truly lives up to the hype!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05530.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05543.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05535.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_DRJnMP"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_b73Pzr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk Low Jarritos pays tribute to Mexican culture and the iconic Jarritos soda. Its upper features crisp white leather paired with rugged hemp canvas overlays, creating a blend of rustic charm and vibrant energy. Green and orange accents channel the Jarritos aesthetic, while dual branding on the heel and tongue highlights the collaboration.</p><p>What makes this sneaker stand out? Tearaway overlays reveal a bold safety orange layer underneath, offering a customizable, one-of-a-kind look.</p><h3></h3>"
+          }
+        },
+        "image_ceGUp6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05545.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Comfort meets style in the Nike SB Dunk Low Jarritos, boasting a well-padded tongue and collar, perfect for skaters seeking board control and sneakerheads craving a trendy edge. The responsive Zoom Air unit in the heel absorbs impact subtly, while the flat sole enhances precision on the board, prioritizing performance over plushness. </p><p>With its snug toe box, sizing up is advisable for broader feet or a more relaxed fit.<br/></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05527.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk Low Jarritos stands out with meticulous attention to detail. Crafted with premium materials such as leather and hemp, it embodies a fusion of durability and style. The sneaker offers customizable flair with interchangeable laces in cream, white, orange, and green, allowing wearers to match their mood or outfit. Adding a touch of fun, the insoles feature vibrant fruit illustrations, a playful homage to the iconic Jarritos flavors.<br/></p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05551.jpg",
+            "caption": ""
+          }
+        },
+        "text_qTybX7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Jarritos collab brings a lot to the table: a unique design, tearaway elements, and premium craftsmanship. It’s a collector’s dream with its cultural depth and resale value.<br/><br/>However, a snug fit and a flat sole might limit comfort for some. The biggest drawback? Limited availability driving up resale prices.</p>"
+          }
+        },
+        "horizontal_line_FG9PK8": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_b73Pzr",
+        "image_ceGUp6",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_qTybX7",
+        "horizontal_line_FG9PK8"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-sb-dunk-low-jarrito?_pos=2&_sid=8db8effe6&_ss=r\" target=\"_blank\" title=\"https://upperempire.com/products/nike-sb-dunk-low-jarrito?_pos=2&_sid=8db8effe6&_ss=r\">Nike SB Dunk Low Jarritos</a></h3><ul><li><strong>Colorways: </strong>Phantom/Safety Orange/Malachite</li><li><strong>SKU: </strong>FD0860-001</li><li><strong>MSRP:</strong> $130</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$647</li><li><strong>Release Date:</strong> May 10, 2023</li></ul>"
+          }
+        },
+        "image_UT86gy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05550.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_UT86gy"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_hgtnKH": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Final Sip: Should You Cop?</h2><p>The Nike SB Dunk Low Jarritos is more than a sneaker—it’s a statement piece that blends culture, style, and functionality. Whether you’re a collector or just love the soda-inspired vibes, it’s worth the chase.</p><p><strong>What’s your take?</strong> Does this pair refresh your sneaker collection, or is it just another fizz? Share your thoughts and join the conversation!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_hgtnKH",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

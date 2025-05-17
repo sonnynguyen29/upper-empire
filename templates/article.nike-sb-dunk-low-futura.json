@@ -1,0 +1,272 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/1LN03308.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "The Nike SB Dunk Low Futura Laboratories \"Sunblush\" (Friends and Family): A Sneakerhead’s Dream",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Alright, sneaker enthusiasts, let’s talk about a gem that’s making waves across the community: the Nike SB Dunk Low Futura Laboratories \"Sunblush\" Friends and Family edition. Picture this—a sneaker that doesn’t just adorn your feet but tells a story, represents an art movement, and makes every collector’s heart skip a beat. Intrigued? Let’s dive in.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03296.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03303.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03295.jpg"
+          }
+        },
+        "gallery_image_46qjQ4": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03291.jpg"
+          }
+        },
+        "gallery_image_e4NjDQ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03292.jpg"
+          }
+        },
+        "gallery_image_XagQzw": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03310.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_DRJnMP",
+        "gallery_image_X6tjKR",
+        "gallery_image_46qjQ4",
+        "gallery_image_e4NjDQ",
+        "gallery_image_XagQzw"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_b73Pzr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Imagine wearing a sunset. That’s the vibe of the Nike SB Dunk Low Futura Laboratories \"Sunblush.\" Created in collaboration with iconic graffiti artist Futura, this sneaker is more than just footwear—it's art in motion. The design flaunts vivid, graffiti-inspired colors across its panels, seamlessly blending Futura’s signature style with Nike’s SB heritage. The gradient yellow quarter panel, reminiscent of a sun-kissed horizon, takes center stage, radiating warmth and creativity. It’s as if the setting sun was airbrushed directly onto the shoe.<br/></p>"
+          }
+        },
+        "image_ceGUp6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03309.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Complementing this artistry is the coral leather Swoosh, a vibrant yet balanced touch that contrasts without detracting from the dynamic upper. A masterful blend of hues, textures, and innovation, it stands as a grail-worthy addition for collectors and Nike SB Dunk enthusiasts alike.<br/></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03301.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nike spared no effort with the SB Dunk Low Futura Laboratories \"Sunblush.\" Premium leather wraps the upper for both durability and flair. A robust cupsole underpins the design, marrying function with fashion. The translucent, pink-tinted outsole? Pure perfection—a sleek homage to skate culture that stays bold and modern.<br/></p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03299.jpg",
+            "caption": ""
+          }
+        },
+        "text_bdnRKF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Nike SB Dunk Low Futura Laboratories \"Sunblush\" isn’t your typical Dunk drop. With just 250 pairs in existence, this Friends and Family edition is as rare as finding a unicorn shredding a halfpipe. Sotheby’s appraised a 1st Round Sample at an eye-popping $15,000–$20,000, making retail acquisition feel like a Bigfoot sighting.<br/><br/>For sneakerheads steeped in history, the \"Sunblush\" echoes the legendary \"Unkle Dunks\" collaboration from 2004—a testament to Futura’s enduring influence on streetwear culture. This isn’t just footwear; it’s a slice of sneaker lore.</p>"
+          }
+        },
+        "horizontal_line_y7hcUV": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_b73Pzr",
+        "image_ceGUp6",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_bdnRKF",
+        "horizontal_line_y7hcUV"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>The Nike SB Dunk Low Futura Laboratories \"Sunblush\" (Friends and Family)</h3><ul><li><strong>Colorways: </strong>University Gold/Sunblush-Old Royal</li><li><strong>SKU: </strong>HF6061-700</li><li><strong>MSRP:</strong> $135</li><li><strong>Resale Price (as of 2025): </strong>Around<strong> </strong>$40,648</li><li><strong>Release Date:</strong> 05/15/2024</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLUUFV",
+        "text_WmUGkh"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_image_gallery_ptG3WV": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_wmXgjY": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03312.jpg"
+          }
+        },
+        "gallery_image_MzpXtT": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03287.jpg"
+          }
+        },
+        "gallery_image_BcPK9G": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1LN03284.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_wmXgjY",
+        "gallery_image_MzpXtT",
+        "gallery_image_BcPK9G"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bbijyJ": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you’re a collector, an art lover, or a die-hard sneakerhead, this release ticks all the boxes. But let’s be real—most of us will admire these from afar. And that’s okay. Because sometimes, the chase is just as thrilling as the catch. So, what do you think? Is the \"Sunblush\" worth the hype, or is its rarity more frustrating than fascinating? Let’s hear your thoughts in the comments below!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_bbijyJ",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_image_gallery_ptG3WV",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

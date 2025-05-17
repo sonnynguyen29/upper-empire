@@ -24,15 +24,30 @@
         "heading_weight": "700"
       }
     },
+    "blog_content_YPQjcR": {
+      "type": "blog--content",
+      "blocks": {
+        "text_pydUVr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hold onto your sneakerheads, folks—one of the most legendary collaborations in Air Jordan history is making a return. The Undefeated x Air Jordan 4, originally released in 2005 as an exclusive Friends & Family edition, is set to drop again this year to mark its 20th anniversary. This time, it might be available to more than just the lucky few.</p>"
+          }
+        },
+        "horizontal_line_mErPp9": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_pydUVr",
+        "horizontal_line_mErPp9"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
     "blog_content_bxMwhf": {
       "type": "blog--content",
       "blocks": {
-        "text_G7y": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Hold onto your sneakerheads, folks—one of the most legendary collaborations in Air Jordan history is making a return. The Undefeated x Air Jordan 4, originally released in 2005 as an exclusive Friends & Family edition, is set to drop again this year to mark its 20th anniversary. This time, it might be available to more than just the lucky few.</p><h3></h3>"
-          }
-        },
         "heading_y8QNLG": {
           "type": "heading",
           "settings": {
@@ -45,58 +60,13 @@
           "settings": {
             "text": "<p><strong>Name: </strong>UNDEFEATED x Air Jordan 4</p><p><strong>Colorway: </strong>Deep Green/Clementine/Black/Sail</p><p><strong>SKU: </strong>IB1519-200</p><p><strong>MSRP: </strong>$225 USD</p><p><strong>Release Date: </strong>2025</p><p><strong>Where to Buy: </strong><a href=\"https://www.nike.com/launch\" target=\"_blank\">Nike</a>, <a href=\"https://undefeated.com/\" target=\"_blank\">UNDEFEATED</a></p>"
           }
-        },
-        "image_JpBanm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/undefeated-air-jordan-4-2025-release-info-6.webp",
-            "caption": ""
-          }
-        },
-        "text_EkKJbe": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>Flashback to 2005: The OG Drop</h2>"
-          }
-        },
-        "text_rWcWKJ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>In 2005, Undefeated and Jordan Brand released a game-changing collaboration. Only 72 pairs were produced, sold exclusively through an in-store raffle at Undefeated's Los Angeles location. The design featured a military-inspired olive green nubuck upper with black and orange accents, reminiscent of MA-1 flight jackets. A Velcro tongue patch and the \"UNDFTD\" logo on the heel gave it a signature touch. This ultra-limited edition quickly became a collector's grail, with deadstock pairs now commanding resale prices over $20,000.</p>"
-          }
-        },
-        "image_Fd4q7x": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ipad_undefeated-x-air-jordan-4-0.png",
-            "caption": ""
-          }
-        },
-        "heading_fqTqwc": {
-          "type": "heading",
-          "settings": {
-            "title": "👟 What's New in 2025?",
-            "heading_size": 32
-          }
-        },
-        "text_YFXYyN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>The 2025 re-release of the Undefeated x Air Jordan 4 is creating a major buzz in the sneaker world. While official images are yet to surface, leaked specs reveal the colorway as \"Deep Green/Clementine/Black/Sail,\" suggesting it will stay true to the iconic 2005 design. Fans are eagerly awaiting details on any potential changes, such as slight tweaks in colorblocking or materials.</p><p>A standout feature from the original, the removable Velcro Jumpman badge on the tongue, is a fan favorite. Though it’s not confirmed whether this will return, sneakerheads are hoping for its comeback.</p><p>Speculation indicates two versions: one with the \"Nike Air\" logo and another with the \"Jumpman\" logo on the heel tabs. Both versions are expected to retail around $225 USD.</p>"
-          }
         }
       },
       "block_order": [
-        "text_G7y",
         "heading_y8QNLG",
-        "text_G9A3zi",
-        "image_JpBanm",
-        "text_EkKJbe",
-        "text_rWcWKJ",
-        "image_Fd4q7x",
-        "heading_fqTqwc",
-        "text_YFXYyN"
+        "text_G9A3zi"
       ],
+      "name": "Release Details",
       "settings": {}
     },
     "blog_image_gallery_KVU3ca": {
@@ -149,9 +119,77 @@
       ],
       "settings": {}
     },
+    "blog_content_MhfBxX": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_yTfX7D": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_pneMC9": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Flashback to 2005: The OG Drop</h2>"
+          }
+        },
+        "image_AhKERc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/undefeated-air-jordan-4-2025-release-info-6.webp",
+            "caption": ""
+          }
+        },
+        "text_WPUwqA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 2005, Undefeated and Jordan Brand released a game-changing collaboration. Only 72 pairs were produced, sold exclusively through an in-store raffle at Undefeated's Los Angeles location. The design featured a military-inspired olive green nubuck upper with black and orange accents, reminiscent of MA-1 flight jackets. A Velcro tongue patch and the \"UNDFTD\" logo on the heel gave it a signature touch. This ultra-limited edition quickly became a collector's grail, with deadstock pairs now commanding resale prices over $20,000.</p>"
+          }
+        },
+        "image_tRczPk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ipad_undefeated-x-air-jordan-4-0.png",
+            "caption": ""
+          }
+        },
+        "horizontal_line_eL7wgN": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_GYnBxA": {
+          "type": "heading",
+          "settings": {
+            "title": "👟 What's New in 2025?",
+            "heading_size": 32
+          }
+        },
+        "text_3qCUMf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The 2025 re-release of the Undefeated x Air Jordan 4 is creating a major buzz in the sneaker world. While official images are yet to surface, leaked specs reveal the colorway as \"Deep Green/Clementine/Black/Sail,\" suggesting it will stay true to the iconic 2005 design. Fans are eagerly awaiting details on any potential changes, such as slight tweaks in colorblocking or materials.</p><p>A standout feature from the original, the removable Velcro Jumpman badge on the tongue, is a fan favorite. Though it’s not confirmed whether this will return, sneakerheads are hoping for its comeback.</p><p>Speculation indicates two versions: one with the \"Nike Air\" logo and another with the \"Jumpman\" logo on the heel tabs. Both versions are expected to retail around $225 USD.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_yTfX7D",
+        "text_pneMC9",
+        "image_AhKERc",
+        "text_WPUwqA",
+        "image_tRczPk",
+        "horizontal_line_eL7wgN",
+        "heading_GYnBxA",
+        "text_3qCUMf"
+      ],
+      "name": "Flashback to 2005: The OG Drop",
+      "settings": {}
+    },
     "blog_content_TYHkaF": {
       "type": "blog--content",
       "blocks": {
+        "horizontal_line_HUygpa": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
         "text_URDPWL": {
           "type": "text",
           "settings": {
@@ -160,6 +198,7 @@
         }
       },
       "block_order": [
+        "horizontal_line_HUygpa",
         "text_URDPWL"
       ],
       "settings": {}
@@ -191,8 +230,10 @@
   "order": [
     "blog-hero-banner",
     "blog-heading",
+    "blog_content_YPQjcR",
     "blog_content_bxMwhf",
     "blog_image_gallery_KVU3ca",
+    "blog_content_MhfBxX",
     "blog_content_TYHkaF",
     "main",
     "blog_comment_YY9CwA",

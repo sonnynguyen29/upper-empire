@@ -1,0 +1,251 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/LIS05579.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "The Crimson King: Why Nike Air Yeezy 2 \"Red October\" Still Rules the Sneaker World",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_L7LNGc": {
+      "type": "blog--content",
+      "blocks": {
+        "text_P6LMCy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ever wonder what happens when music royalty and sneaker giants collide? The Nike Air Yeezy 2 \"Red October\" didn't just drop—it exploded onto the scene. But does it still justify its legendary status in the ever-evolving sneaker landscape? Let's break it down.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_P6LMCy"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05581.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05601.jpg"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05582.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_X6tjKR",
+        "gallery_image_DRJnMP"
+      ],
+      "name": "Blog Image Gallery 1",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "text_EhzrgM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You’ve seen surprise album drops, but have you ever lived through a surprise sneaker release? February 9, 2014, was chaos in its purest form. After Kanye’s public fallout with Nike, most people assumed the shoes were just a myth. Then BOOM—a cryptic tweet and the rest was history. No hype campaign, no warning, just an iconic shoe released into the wild. Those who copped were crowned kings. The rest? Left mourning in Twitter comment sections.</p>"
+          }
+        },
+        "image_nYPr3G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05569.jpg",
+            "caption": ""
+          }
+        },
+        "text_bUzB6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Before the Red Octobers, all-red sneakers weren’t much of a thing. After? Every brand and its cousins tried to ride the monochrome crimson wave. The design itself was a game-changer, blending premium suede, mesh, and pyramid-textured panels that screamed futuristic royalty. Gold aglets on the laces added a luxurious touch, while hieroglyphic-inspired details gave it a vibe straight out of ancient Egypt, as if King Tut himself shopped for sneakers in space. This wasn’t just a colorway; it was a revolution.<br/></p>"
+          }
+        },
+        "image_z8pVe3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05594.jpg",
+            "caption": ""
+          }
+        },
+        "text_FzHiKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Let’s be honest—most Red Octobers are tucked away in display cases, not on the streets. But for the bold few who choose to wear them, they’re surprisingly comfortable for their era. The Phylon midsole and Air heel unit provide ample cushioning, and the midfoot strap keeps your foot secure like a vault lock. They run snug, so sizing up half a size is recommended. Just be aware—older pairs age like bananas, not wine. The midsoles deteriorate quickly, so handle with care.<br/></p>"
+          }
+        },
+        "image_WcYwcY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05571.jpg",
+            "caption": ""
+          }
+        },
+        "text_bBLpby": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Before Kanye West’s Red October drop, sneakers were ruled by athletes. Afterward? Musicians claimed the throne. Kanye’s bold move away from Nike later paved the way for his billion-dollar Yeezy empire. These kicks didn’t just ride the wave—they created it.<br/></p>"
+          }
+        },
+        "image_JnPTnP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05559.jpg",
+            "caption": ""
+          }
+        },
+        "text_dKLYN4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With resale prices that could rival a luxury car installment, the counterfeit market for the Nike Air Yeezy 2 \"Red October\" thrives. Distinguishing a fake can be challenging: authentic pairs boast precise pyramid studs, flawless stitching, and discreet inscriptions under the strap. Additionally, the box's labeling and packaging quality are tell-tale markers. If the deal appears too good to be true, it’s likely as fake as a Yeezy-inspired diss track.<br/></p>"
+          }
+        },
+        "image_gA9dfb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05582.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_EhzrgM",
+        "image_nYPr3G",
+        "text_bUzB6C",
+        "image_z8pVe3",
+        "text_FzHiKD",
+        "image_WcYwcY",
+        "text_bBLpby",
+        "image_JnPTnP",
+        "text_dKLYN4",
+        "image_gA9dfb"
+      ],
+      "name": "Sneaker Infor",
+      "settings": {}
+    },
+    "blog_content_gnJbfa": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_T6DcQN": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_gLUUFV": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_WmUGkh": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://upperempire.com/products/nike-air-yeezy-2-red-october?_pos=1&_psq=Nike+Air+Yeezy+2+%22Red+October%22&_ss=e&_v=1.0\" target=\"_blank\" title=\"https://upperempire.com/products/nike-air-yeezy-2-red-october?_pos=1&_psq=Nike+Air+Yeezy+2+%22Red+October%22&_ss=e&_v=1.0\">Nike Air Yeezy 2 \"Red October\"</a></h3><ul><li><strong>Colorways: </strong>University Red/University Red</li><li><strong>SKU: </strong>508214-660</li><li><strong>MSRP:</strong> $250</li><li><strong>Resale Price (as of 2025): </strong>Around $10,992</li><li><strong>Release Date:</strong> February 9th, 2014</li></ul>"
+          }
+        },
+        "image_UT86gy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIS05567.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_T6DcQN",
+        "heading_gLUUFV",
+        "text_WmUGkh",
+        "image_UT86gy"
+      ],
+      "name": "Release Details ",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_WWw4bL": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Seen a pair in the wild? Would you rock them or keep them pristine? Drop a comment below!<br/>Don’t forget to follow us for more sneaker stories that hit harder than a surprise Yeezy drop. P.S. Watch out for those fakes. Nothing kills a vibe faster than fake pyramid studs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_WWw4bL",
+        "text_URDPWL"
+      ],
+      "name": "CTA",
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_L7LNGc",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_bxMwhf",
+    "blog_content_gnJbfa",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}
