@@ -30,10 +30,11 @@
   }
 
   &__image {
-    margin-bottom: 2em;
+    margin-bottom: 15px;
 
     &-wrapper {
       width: 100%;
+      display: grid;
     }
 
     &-img {

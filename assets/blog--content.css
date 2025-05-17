@@ -26,10 +26,11 @@
   color: #000;
 }
 .blog-content__image {
-  margin-bottom: 2em;
+  margin-bottom: 15px;
 }
 .blog-content__image-wrapper {
   width: 100%;
+  display: grid;
 }
 .blog-content__image-img {
   width: 100%;
