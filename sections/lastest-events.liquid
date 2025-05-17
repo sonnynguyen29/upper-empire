@@ -40,7 +40,7 @@
             location: event.getAttribute('data-event-location'),
             description: event.getAttribute('data-event-description'),
             thumbnail: event.querySelector('img')?.getAttribute('src') || '',
-            page: event.querySelector('a.view-more')?.getAttribute('href') || '#',
+            page: event.getAttribute('data-event-page')  || '#',
           });
         }
       });

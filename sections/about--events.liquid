@@ -48,38 +48,118 @@
         </div>
       </div>
       <hr>
-      <div class="about--events__event-list">
-        {% for event in event_list %}
-          <div class="about--events__event-list__item">
-            {{
-              event.settings.image
-              | image_url: width: 1000, height: 1000
-              | image_tag: alt: 'Event Image', class: 'about--events__event-list__image'
-            }}
-            <div class="about--events__event-list__overlay"></div>
-            <div class="about--events__event-list__wrapper">
-              <div class="about--events__event-list__title">
-                {{ event.settings.title }}
-              </div>
-              <div class="about--events__event-list__info-wrapper">
-                <div class="about--events__event-list__location">
-                  {{ event.settings.location }}
+
+      <div class="about--events__event-list" id="latest-events-container"></div>
+      {% comment %}
+        <div class="about--events__event-list">
+          {% for event in event_list %}
+            <div class="about--events__event-list__item">
+              {{
+                event.settings.image
+                | image_url: width: 1000, height: 1000
+                | image_tag: alt: 'Event Image', class: 'about--events__event-list__image'
+              }}
+              <div class="about--events__event-list__overlay"></div>
+              <div class="about--events__event-list__wrapper">
+                <div class="about--events__event-list__title">
+                  {{ event.settings.title }}
                 </div>
-                <span> ● </span>
-                <div class="about--events__event-list__year">
-                  {{ event.settings.year }}
+                <div class="about--events__event-list__info-wrapper">
+                  <div class="about--events__event-list__location">
+                    {{ event.settings.location }}
+                  </div>
+                  <span> ● </span>
+                  <div class="about--events__event-list__year">
+                    {{ event.settings.year }}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        {% endfor %}
-      </div>
+          {% endfor %}
+        </div>
+      {% endcomment %}
 
       <button class="about--events__event-list__view-more">View More</button>
     </div>
   </div>
 </section>
 
+<script>
+  async function fetchLatestEvents() {
+    try {
+      const response = await fetch('/pages/events');
+      const text = await response.text();
+
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(text, 'text/html');
+
+      const eventElements = doc.querySelectorAll('.event');
+      let eventData = [];
+
+      eventElements.forEach((event) => {
+        let eventDate = event.getAttribute('data-event-date');
+
+        if (eventDate) {
+          eventData.push({
+            date: eventDate,
+            name: event.getAttribute('data-event-name'),
+            type: event.getAttribute('data-event-type'),
+            location: event.getAttribute('data-event-location'),
+            description: event.getAttribute('data-event-description'),
+            thumbnail: event.querySelector('img')?.getAttribute('src') || '',
+            page: event.getAttribute('data-event-page') || '#',
+          });
+        }
+      });
+
+      // Sort by date descending
+      eventData.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      // Take top 4
+      let latestEvents = eventData.slice(0, 4);
+
+      const container = document.querySelector('#latest-events-container');
+      container.innerHTML = '';
+
+      latestEvents.forEach((event) => {
+        console.log(event);
+        const eventHTML = `
+          <a href="${event.page}">
+            <div class="about--events__event-list__item">
+              ${
+                event.thumbnail
+                  ? `
+                <img class="about--events__event-list__image" src="${event.thumbnail}" alt="${event.name}">
+              `
+                  : ''
+              }
+              <div class="about--events__event-list__overlay"></div>
+              <div class="about--events__event-list__wrapper">
+                <div class="about--events__event-list__title">
+                  ${event.name}
+                </div>
+                <div class="about--events__event-list__info-wrapper">
+                  <div class="about--events__event-list__location">
+                    ${event.location}
+                  </div>
+                  <span> ● </span>
+                  <div class="about--events__event-list__year">
+                    ${event.date}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        `;
+        container.innerHTML += eventHTML;
+      });
+    } catch (error) {
+      console.error('Lỗi khi lấy dữ liệu sự kiện:', error);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', fetchLatestEvents);
+</script>
 {% schema %}
 {
   "name": "About Events",

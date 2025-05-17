@@ -7,13 +7,14 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "events-event-collection-2025": {
       "type": "events-event--collection",
       "blocks": {
         "event_1": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon New York",
             "description": "The world's largest sneaker convention happening in New York.",
@@ -26,6 +27,7 @@
         },
         "event_2": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Los Angeles",
             "description": "A massive sneaker gathering in Los Angeles.",
@@ -41,6 +43,7 @@
         "event_1",
         "event_2"
       ],
+      "name": "Event Collection 2025",
       "settings": {
         "event_year": "2025"
       }
@@ -51,53 +54,54 @@
         "event_1": {
           "type": "event",
           "settings": {
-            "event_name": "Sneakercon Miami",
-            "description": "Miami’s top sneaker expo.",
-            "thumbnail": "shopify://shop_images/home-banner.jpg",
-            "page": "#",
-            "date": "2024-03-10",
-            "type": "Convention",
-            "location": "Miami"
+            "event_name": "UE x Sneakercon - Seattle 2024",
+            "description": "",
+            "thumbnail": "shopify://shop_images/seattler-106_bee7097b-b448-4e01-92d6-25f96d312ef2.jpg",
+            "page": "shopify://pages/sneakercon-seattle-2024",
+            "date": "2024-02-24",
+            "type": "Sneakercon",
+            "location": "Seattle"
           }
         },
         "event_2": {
           "type": "event",
           "settings": {
-            "event_name": "Sneakercon Houston",
-            "description": "The Texas sneaker hub.",
-            "thumbnail": "shopify://shop_images/community-04.jpg",
-            "page": "#",
-            "date": "2024-04-22",
-            "type": "Convention",
-            "location": "Houston"
+            "event_name": "UE x Sneakercon - Hawaii 2024",
+            "description": "",
+            "thumbnail": "shopify://shop_images/Hawaii-76.jpg",
+            "page": "shopify://pages/sneakercon-hawaii-2024",
+            "date": "2024-05-11",
+            "type": "Sneakercon",
+            "location": "Hawaii"
           }
         },
         "event_3": {
           "type": "event",
           "settings": {
-            "event_name": "Sneakercon Chicago",
-            "description": "A sneakerhead meetup in Chicago.",
+            "event_name": "UE x Sneakercon - BAY AREA 2024",
+            "description": "",
             "thumbnail": "shopify://shop_images/Rectangle_13.png",
-            "page": "#",
-            "date": "2024-05-15",
-            "type": "Convention",
-            "location": "Chicago"
+            "page": "shopify://pages/sneakercon-bay-area-2024",
+            "date": "2024-12-22",
+            "type": "Sneakercon",
+            "location": "BAY AREA"
           }
         },
         "event_4": {
           "type": "event",
           "settings": {
-            "event_name": "Sneakercon San Francisco",
-            "description": "A premier sneaker event in San Francisco.",
-            "thumbnail": "shopify://shop_images/ue-85.png",
-            "page": "#",
-            "date": "2024-06-18",
-            "type": "Convention",
-            "location": "San Francisco"
+            "event_name": "UE x Sneakercon - LA 2024",
+            "description": "",
+            "thumbnail": "shopify://shop_images/LA-1-72.jpg",
+            "page": "shopify://pages/sneakercon-la-2024",
+            "date": "2024-07-14",
+            "type": "Sneakercon",
+            "location": "Los Angeles"
           }
         },
         "event_5": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Orlando",
             "description": "Florida’s ultimate sneaker event.",
@@ -110,6 +114,7 @@
         },
         "event_6": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Detroit",
             "description": "A sneaker lovers' meet in Detroit.",
@@ -122,6 +127,7 @@
         },
         "event_7": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Seattle",
             "description": "A big sneaker event in Seattle.",
@@ -134,6 +140,7 @@
         },
         "event_8": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Boston",
             "description": "East Coast sneaker extravaganza in Boston.",
@@ -146,6 +153,7 @@
         },
         "event_9": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Las Vegas",
             "description": "The ultimate sneaker event in Vegas.",
@@ -158,6 +166,7 @@
         },
         "event_10": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Phoenix",
             "description": "A massive sneaker event in Phoenix.",
@@ -170,6 +179,7 @@
         },
         "event_11": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Atlanta",
             "description": "Georgia’s top sneaker event.",
@@ -182,6 +192,7 @@
         },
         "event_12": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Washington D.C.",
             "description": "Capital sneaker event in D.C.",
@@ -207,6 +218,7 @@
         "event_11",
         "event_12"
       ],
+      "name": "Event Collection 2024",
       "settings": {
         "event_year": "2024"
       }
@@ -217,17 +229,18 @@
         "event_1": {
           "type": "event",
           "settings": {
-            "event_name": "Sneakercon Atlanta",
-            "description": "Georgia’s biggest sneaker expo.",
-            "thumbnail": "shopify://shop_images/community-04.jpg",
-            "page": "#",
-            "date": "2023-05-08",
-            "type": "Convention",
-            "location": "Atlanta"
+            "event_name": "UE x Sneakercon - Phoenix Arizona 2023",
+            "description": "",
+            "thumbnail": "shopify://shop_images/phoenix-61.jpg",
+            "page": "shopify://pages/sneakercon-phoenix-2023",
+            "date": "2023-10-07",
+            "type": "Sneakercon",
+            "location": "Phoenix, Arizona"
           }
         },
         "event_2": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Dallas",
             "description": "A massive sneaker event in Dallas.",
@@ -240,6 +253,7 @@
         },
         "event_3": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Los Angeles",
             "description": "Sneaker event in Los Angeles.",
@@ -252,6 +266,7 @@
         },
         "event_4": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Miami",
             "description": "Top sneaker event in Miami.",
@@ -264,6 +279,7 @@
         },
         "event_5": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Chicago",
             "description": "The ultimate sneaker convention in Chicago.",
@@ -276,6 +292,7 @@
         },
         "event_6": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Houston",
             "description": "Texas’ premier sneaker expo.",
@@ -288,6 +305,7 @@
         },
         "event_7": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon San Francisco",
             "description": "Sneaker event in San Francisco.",
@@ -300,6 +318,7 @@
         },
         "event_8": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon New York",
             "description": "The sneaker event of the year in New York.",
@@ -312,6 +331,7 @@
         },
         "event_9": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Las Vegas",
             "description": "Las Vegas sneaker showcase.",
@@ -324,6 +344,7 @@
         },
         "event_10": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Philadelphia",
             "description": "Philly’s biggest sneaker event.",
@@ -336,6 +357,7 @@
         },
         "event_11": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Detroit",
             "description": "Sneaker convention in Detroit.",
@@ -348,6 +370,7 @@
         },
         "event_12": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Boston",
             "description": "A top sneaker event in Boston.",
@@ -373,6 +396,7 @@
         "event_11",
         "event_12"
       ],
+      "name": "Event Collection 2023",
       "settings": {
         "event_year": "2023"
       }
@@ -382,6 +406,7 @@
       "blocks": {
         "event_1": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Phoenix",
             "description": "Arizona's top sneaker trade show.",
@@ -394,6 +419,7 @@
         },
         "event_2": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Philadelphia",
             "description": "Philly’s biggest sneaker event.",
@@ -406,6 +432,7 @@
         },
         "event_3": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon New York",
             "description": "Sneaker convention in New York.",
@@ -418,6 +445,7 @@
         },
         "event_4": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Los Angeles",
             "description": "A sneaker event in Los Angeles.",
@@ -430,6 +458,7 @@
         },
         "event_5": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Miami",
             "description": "The biggest sneaker event in Miami.",
@@ -442,6 +471,7 @@
         },
         "event_6": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Chicago",
             "description": "A major sneaker expo in Chicago.",
@@ -454,6 +484,7 @@
         },
         "event_7": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Houston",
             "description": "The ultimate sneaker event in Houston.",
@@ -466,6 +497,7 @@
         },
         "event_8": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon San Francisco",
             "description": "Top sneaker event in San Francisco.",
@@ -478,6 +510,7 @@
         },
         "event_9": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Boston",
             "description": "Massachusetts' premier sneaker event.",
@@ -490,6 +523,7 @@
         },
         "event_10": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Detroit",
             "description": "The biggest sneaker gathering in Detroit.",
@@ -502,6 +536,7 @@
         },
         "event_11": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Orlando",
             "description": "Florida’s top sneaker expo.",
@@ -514,6 +549,7 @@
         },
         "event_12": {
           "type": "event",
+          "disabled": true,
           "settings": {
             "event_name": "Sneakercon Seattle",
             "description": "Top sneaker convention in Seattle.",
@@ -539,6 +575,8 @@
         "event_11",
         "event_12"
       ],
+      "disabled": true,
+      "name": "Event Collection 2022",
       "settings": {
         "event_year": "2022"
       }
