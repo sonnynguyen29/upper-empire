@@ -83,8 +83,7 @@
 }
 #social-media-grid .whatnot-grid-layout .whatnot-grid-video .whatnot-video {
   position: relative;
-  padding-bottom: 201.5%;
-  height: 0;
+  height: 100%;
   display: block;
 }
 #social-media-grid .whatnot-grid-layout .whatnot-grid-video .whatnot-video video {

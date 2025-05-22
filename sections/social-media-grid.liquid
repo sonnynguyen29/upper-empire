@@ -16,7 +16,7 @@
     %}
     <div class="whatnot-grid">
       <div class="whatnot-grid-container">
-        <div class="whatnot-grid-title title-wrapper">
+        <div class="whatnot-grid-title title-wrapper" style="visibility: hidden;">
           {% render 'responsive-image' with section.settings.whatnot_image %}
           <a href="{{ section.settings.whatnot_url | default: '#' }}" class="title"><h2>{{ section.settings.whatnot_title }}</h2></a>
         </div>
