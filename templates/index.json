@@ -15,7 +15,7 @@
         "hero_banner_desktop_NJwjwc": {
           "type": "hero_banner_desktop",
           "settings": {
-            "hero_banner_image_desktop": "shopify://shop_images/home-banner-01.jpg",
+            "hero_banner_image_desktop": "shopify://shop_images/ue_home_banner.jpg",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
             "hero_banner_link": ""
           }
@@ -23,7 +23,7 @@
         "hero_banner_desktop_nabi6P": {
           "type": "hero_banner_desktop",
           "settings": {
-            "hero_banner_image_desktop": "shopify://shop_images/home-banner-02.jpg",
+            "hero_banner_image_desktop": "shopify://shop_images/ue_home_banner_01.jpg",
             "hero_banner_title": "● Bred October",
             "hero_banner_link": ""
           }
@@ -31,7 +31,7 @@
         "hero_banner_desktop_jBMf4T": {
           "type": "hero_banner_desktop",
           "settings": {
-            "hero_banner_image_desktop": "shopify://shop_images/home-banner-03.jpg",
+            "hero_banner_image_desktop": "shopify://shop_images/ue_home_banner_02.jpg",
             "hero_banner_title": "",
             "hero_banner_link": ""
           }
@@ -39,7 +39,7 @@
         "hero_banner_mobile_WR4U9f": {
           "type": "hero_banner_mobile",
           "settings": {
-            "hero_banner_image_mobile": "shopify://shop_images/home-mobile-banner.jpg",
+            "hero_banner_image_mobile": "shopify://shop_images/ue_home_m_banner.jpg",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
             "hero_banner_link": ""
           }
@@ -47,7 +47,7 @@
         "hero_banner_mobile_XidkEr": {
           "type": "hero_banner_mobile",
           "settings": {
-            "hero_banner_image_mobile": "shopify://shop_images/home-mobile-banner-01.jpg",
+            "hero_banner_image_mobile": "shopify://shop_images/ue_home_m_banner_01.jpg",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
             "hero_banner_link": ""
           }
@@ -55,7 +55,7 @@
         "hero_banner_mobile_MRnmCH": {
           "type": "hero_banner_mobile",
           "settings": {
-            "hero_banner_image_mobile": "shopify://shop_images/home-mobile-banner-3.jpg",
+            "hero_banner_image_mobile": "shopify://shop_images/ue_home_m_banner_02.jpg",
             "hero_banner_title": "● A luxury sneaker, clothing, and collectibles boutique.",
             "hero_banner_link": ""
           }
@@ -200,49 +200,49 @@
         "instagram_image_m87PNa": {
           "type": "instagram-image",
           "settings": {
-            "image": "shopify://shop_images/ue-collection-10.jpg",
-            "image_url": ""
+            "image": "shopify://shop_images/uec-5th-LIS05665.jpg",
+            "image_url": "https://www.instagram.com/upper.empire/"
           }
         },
         "instagram_image_ffCBar": {
           "type": "instagram-image",
           "settings": {
-            "image": "shopify://shop_images/ue-collection-29.jpg",
-            "image_url": ""
+            "image": "shopify://shop_images/uec-2th-19.jpg",
+            "image_url": "https://www.instagram.com/upper.empire/"
           }
         },
         "instagram_image_nRnM9Q": {
           "type": "instagram-image",
           "settings": {
             "image": "shopify://shop_images/ue-collection-08.jpg",
-            "image_url": ""
+            "image_url": "https://www.instagram.com/upper.empire/"
           }
         },
         "instagram_image_xPCp3U": {
           "type": "instagram-image",
           "settings": {
             "image": "shopify://shop_images/ue-collection-19.jpg",
-            "image_url": ""
+            "image_url": "https://www.instagram.com/upper.empire/"
           }
         },
         "whatnot_video_pLrzEj": {
           "type": "whatnot-video",
           "settings": {
-            "video": "shopify://files/videos/whatnot.mp4"
+            "video": "shopify://files/videos/SB Plum.mp4"
           }
         },
         "whatnot_image_E9hDgH": {
           "type": "whatnot-image",
           "settings": {
-            "image": "shopify://shop_images/whatnot-01_aebed63e-7e8b-467f-b40c-014add2059bb.jpg",
-            "image_url": ""
+            "image": "shopify://shop_images/ig_01.jpg",
+            "image_url": "https://www.instagram.com/upper.empire/"
           }
         },
         "whatnot_image_FCwMAh": {
           "type": "whatnot-image",
           "settings": {
-            "image": "shopify://shop_images/whatnot-02_e3ecb886-c899-40a7-98c5-a83537518cef.jpg",
-            "image_url": ""
+            "image": "shopify://shop_images/ig_02.jpg",
+            "image_url": "https://www.instagram.com/upper.empire/"
           }
         }
       },
@@ -258,10 +258,10 @@
       "settings": {
         "instagram_image": "shopify://shop_images/instagram.png",
         "instagram_title": "INSTAGRAM",
-        "instagram_url": "",
-        "whatnot_image": "shopify://shop_images/whatnot.png",
-        "whatnot_title": "WHATNOT",
-        "whatnot_url": ""
+        "instagram_url": "https://www.instagram.com/upper.empire/",
+        "whatnot_image": "shopify://shop_images/instagram.png",
+        "whatnot_title": "INSTAGRAM",
+        "whatnot_url": "https://www.instagram.com/upper.empire/"
       }
     }
   },

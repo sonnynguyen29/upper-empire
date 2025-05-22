@@ -14,22 +14,6 @@
     "footer-main": {
       "type": "footer-main",
       "blocks": {
-        "social_media_76xCBa": {
-          "type": "social-media",
-          "settings": {
-            "title": "Facebook",
-            "link": "https://www.facebook.com/profile.php?id=100089191310223",
-            "is_open_in_new_tab": true
-          }
-        },
-        "social_media_rELK4p": {
-          "type": "social-media",
-          "settings": {
-            "title": "Youtube",
-            "link": "https://www.youtube.com/@UpperEmpire",
-            "is_open_in_new_tab": true
-          }
-        },
         "social_media_T47HmL": {
           "type": "social-media",
           "settings": {
@@ -38,8 +22,25 @@
             "is_open_in_new_tab": true
           }
         },
+        "social_media_76xCBa": {
+          "type": "social-media",
+          "settings": {
+            "title": "Facebook",
+            "link": "https://www.facebook.com/groups/1278696162746210",
+            "is_open_in_new_tab": true
+          }
+        },
+        "social_media_rELK4p": {
+          "type": "social-media",
+          "settings": {
+            "title": "YouTube",
+            "link": "https://www.youtube.com/@UpperEmpire",
+            "is_open_in_new_tab": true
+          }
+        },
         "social_media_j86ky8": {
           "type": "social-media",
+          "disabled": true,
           "settings": {
             "title": "Whatnot",
             "link": "https://www.whatnot.com/user/upperempire/shows",
@@ -48,6 +49,7 @@
         },
         "social_media_7egz3K": {
           "type": "social-media",
+          "disabled": true,
           "settings": {
             "title": "Tiktok",
             "link": "https://www.tiktok.com/@upper.empire",
@@ -56,6 +58,7 @@
         },
         "navigation_Hejrpw": {
           "type": "navigation",
+          "disabled": true,
           "settings": {
             "title": "Blogs",
             "page": "",
@@ -92,9 +95,9 @@
         }
       },
       "block_order": [
+        "social_media_T47HmL",
         "social_media_76xCBa",
         "social_media_rELK4p",
-        "social_media_T47HmL",
         "social_media_j86ky8",
         "social_media_7egz3K",
         "navigation_Hejrpw",

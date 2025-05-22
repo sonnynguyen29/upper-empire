@@ -15,7 +15,15 @@
         "main_highlight_F7pzjh": {
           "type": "main_highlight",
           "settings": {
-            "article": "news/off-white-lot-dunks",
+            "article": "sneaker-news/the-air-jordan-1-off-white-chicago-university-blue-unc-and-euro",
+            "title": "",
+            "description": ""
+          }
+        },
+        "main_highlight_XdkBpj": {
+          "type": "main_highlight",
+          "settings": {
+            "article": "sneaker-news/nike-sb-dunk-low-london-a-tribute-to-the-streets",
             "title": "",
             "description": ""
           }
@@ -23,7 +31,7 @@
         "highlight_post_LggAHJ": {
           "type": "highlight_post",
           "settings": {
-            "article": "sneaker-news/how-to-clean-and-maintain-your-sneakers-like-a-pro",
+            "article": "sneaker-news/travis-scott-x-nike-air-jordan-4-the-battle-between-dark-mocha-and-purple-suede",
             "title": "",
             "description": ""
           }
@@ -31,7 +39,7 @@
         "highlight_post_iH6Ktr": {
           "type": "highlight_post",
           "settings": {
-            "article": "sneaker-news/top-5-sneakers-you-need-in-your-rotation-this-year",
+            "article": "sneaker-news/nike-air-force-1-low-vlone-2017-a-tale-of-hype-heritage-and-harlem",
             "title": "",
             "description": ""
           }
@@ -39,7 +47,7 @@
         "highlight_post_3VDQ9K": {
           "type": "highlight_post",
           "settings": {
-            "article": "sneaker-news/nike-vomero-advances-retro-running-style-with-new-colors-and-weatherized-silhouette",
+            "article": "sneaker-news/the-air-jordan-1-low-og-year-of-the-ox-sneaker-storytelling-at-its-finest",
             "title": "",
             "description": ""
           }
@@ -47,6 +55,7 @@
       },
       "block_order": [
         "main_highlight_F7pzjh",
+        "main_highlight_XdkBpj",
         "highlight_post_LggAHJ",
         "highlight_post_iH6Ktr",
         "highlight_post_3VDQ9K"
@@ -79,18 +88,18 @@
         "newsletter_HUkziD"
       ],
       "settings": {
-        "heading": "lastest news",
-        "blog": "news",
+        "heading": "Lastest News",
+        "blog": "sneaker-news",
         "highlight_first_article": true,
-        "total_articles_displayed": 10,
-        "tatal_articles_view_more": 3
+        "total_articles_displayed": 8,
+        "tatal_articles_view_more": 5
       }
     },
     "blog_main_ue_sneaker_guides_iMmRi8": {
       "type": "blog-main--ue-sneaker-guides",
       "settings": {
-        "title": "UE Sneaker Guides",
-        "articles": "sneaker-news",
+        "title": "SNEAKER RELEASES",
+        "articles": "sneaker-releases",
         "view_more_text": "View All",
         "highlight_first_article": true,
         "article_layout": "vertical"

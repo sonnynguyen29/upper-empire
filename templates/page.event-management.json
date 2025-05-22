@@ -51,36 +51,12 @@
     "events-event-collection-2024": {
       "type": "events-event--collection",
       "blocks": {
-        "event_1": {
-          "type": "event",
-          "settings": {
-            "event_name": "UE x Sneakercon - Seattle 2024",
-            "description": "",
-            "thumbnail": "shopify://shop_images/seattler-106_bee7097b-b448-4e01-92d6-25f96d312ef2.jpg",
-            "page": "shopify://pages/sneakercon-seattle-2024",
-            "date": "2024-02-24",
-            "type": "Sneakercon",
-            "location": "Seattle"
-          }
-        },
-        "event_2": {
-          "type": "event",
-          "settings": {
-            "event_name": "UE x Sneakercon - Hawaii 2024",
-            "description": "",
-            "thumbnail": "shopify://shop_images/Hawaii-76.jpg",
-            "page": "shopify://pages/sneakercon-hawaii-2024",
-            "date": "2024-05-11",
-            "type": "Sneakercon",
-            "location": "Hawaii"
-          }
-        },
         "event_3": {
           "type": "event",
           "settings": {
             "event_name": "UE x Sneakercon - BAY AREA 2024",
-            "description": "",
-            "thumbnail": "shopify://shop_images/Rectangle_13.png",
+            "description": "Follow along as our team takes on SneakerCon Bay Area to end 2024 with the best home event! Tons of prizes, giveaways, and memories made during Bay Area SneakerCon between our team and our community!",
+            "thumbnail": "shopify://shop_images/ue-107.jpg",
             "page": "shopify://pages/sneakercon-bay-area-2024",
             "date": "2024-12-22",
             "type": "Sneakercon",
@@ -91,12 +67,36 @@
           "type": "event",
           "settings": {
             "event_name": "UE x Sneakercon - LA 2024",
-            "description": "",
-            "thumbnail": "shopify://shop_images/LA-1-72.jpg",
+            "description": "Follow along as our team takes on Sneakercon Los Angeles last year! Such a great event hosted by Sneakercon where we made so many memories with our team and community! Watch until the end to find out the dream sneaker she received from us!",
+            "thumbnail": "shopify://shop_images/LA-1-23.jpg",
             "page": "shopify://pages/sneakercon-la-2024",
-            "date": "2024-07-14",
+            "date": "2024-07-13",
             "type": "Sneakercon",
             "location": "Los Angeles"
+          }
+        },
+        "event_2": {
+          "type": "event",
+          "settings": {
+            "event_name": "UE x Sneakercon - Hawaii 2024",
+            "description": "A quick recap of our team at Hawaii Sneakercon this year! Great memories were made from our team and the sneaker community! We can't wait for our next event see you there!",
+            "thumbnail": "shopify://shop_images/Hawaii-37.jpg",
+            "page": "shopify://pages/sneakercon-hawaii-2024",
+            "date": "2024-05-11",
+            "type": "Sneakercon",
+            "location": "Hawaii"
+          }
+        },
+        "event_1": {
+          "type": "event",
+          "settings": {
+            "event_name": "UE x Sneakercon - Seattle 2024",
+            "description": "A quick recap of our team at Seattle Sneakercon this year! Great memories were made from our team and the sneaker community! We can't wait for our next event see you there!",
+            "thumbnail": "shopify://shop_images/seattler-7.jpg",
+            "page": "shopify://pages/sneakercon-seattle-2024",
+            "date": "2024-02-24",
+            "type": "Sneakercon",
+            "location": "Seattle"
           }
         },
         "event_5": {
@@ -106,7 +106,7 @@
             "event_name": "Sneakercon Orlando",
             "description": "Florida’s ultimate sneaker event.",
             "thumbnail": "shopify://shop_images/ue-81.png",
-            "page": "#",
+            "page": "shopify://pages/sneakercon-brooklyn-2024",
             "date": "2024-07-12",
             "type": "Convention",
             "location": "Orlando"
@@ -124,99 +124,15 @@
             "type": "Convention",
             "location": "Detroit"
           }
-        },
-        "event_7": {
-          "type": "event",
-          "disabled": true,
-          "settings": {
-            "event_name": "Sneakercon Seattle",
-            "description": "A big sneaker event in Seattle.",
-            "thumbnail": "shopify://shop_images/Rectangle_27_4.png",
-            "page": "#",
-            "date": "2024-09-10",
-            "type": "Convention",
-            "location": "Seattle"
-          }
-        },
-        "event_8": {
-          "type": "event",
-          "disabled": true,
-          "settings": {
-            "event_name": "Sneakercon Boston",
-            "description": "East Coast sneaker extravaganza in Boston.",
-            "thumbnail": "shopify://shop_images/Rectangle_27_3.png",
-            "page": "#",
-            "date": "2024-10-05",
-            "type": "Convention",
-            "location": "Boston"
-          }
-        },
-        "event_9": {
-          "type": "event",
-          "disabled": true,
-          "settings": {
-            "event_name": "Sneakercon Las Vegas",
-            "description": "The ultimate sneaker event in Vegas.",
-            "thumbnail": "shopify://shop_images/Rectangle_27_2.png",
-            "page": "#",
-            "date": "2024-11-15",
-            "type": "Convention",
-            "location": "Las Vegas"
-          }
-        },
-        "event_10": {
-          "type": "event",
-          "disabled": true,
-          "settings": {
-            "event_name": "Sneakercon Phoenix",
-            "description": "A massive sneaker event in Phoenix.",
-            "thumbnail": "shopify://shop_images/Rectangle_27_1.png",
-            "page": "#",
-            "date": "2024-12-01",
-            "type": "Convention",
-            "location": "Phoenix"
-          }
-        },
-        "event_11": {
-          "type": "event",
-          "disabled": true,
-          "settings": {
-            "event_name": "Sneakercon Atlanta",
-            "description": "Georgia’s top sneaker event.",
-            "thumbnail": "shopify://shop_images/Rectangle_27.png",
-            "page": "#",
-            "date": "2024-06-20",
-            "type": "Convention",
-            "location": "Atlanta"
-          }
-        },
-        "event_12": {
-          "type": "event",
-          "disabled": true,
-          "settings": {
-            "event_name": "Sneakercon Washington D.C.",
-            "description": "Capital sneaker event in D.C.",
-            "thumbnail": "shopify://shop_images/event-hero-banner.png",
-            "page": "#",
-            "date": "2024-12-10",
-            "type": "Convention",
-            "location": "Washington D.C."
-          }
         }
       },
       "block_order": [
-        "event_1",
-        "event_2",
         "event_3",
         "event_4",
+        "event_2",
+        "event_1",
         "event_5",
-        "event_6",
-        "event_7",
-        "event_8",
-        "event_9",
-        "event_10",
-        "event_11",
-        "event_12"
+        "event_6"
       ],
       "name": "Event Collection 2024",
       "settings": {
@@ -231,7 +147,7 @@
           "settings": {
             "event_name": "UE x Sneakercon - Phoenix Arizona 2023",
             "description": "",
-            "thumbnail": "shopify://shop_images/phoenix-61.jpg",
+            "thumbnail": "shopify://shop_images/phoenix-58.jpg",
             "page": "shopify://pages/sneakercon-phoenix-2023",
             "date": "2023-10-07",
             "type": "Sneakercon",
