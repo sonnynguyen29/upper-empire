@@ -4,19 +4,57 @@
   {% if heading != blank %}
     <h2 class="blog-sneaker-post-gallery__heading">{{ heading }}</h2>
   {% endif %}
-  <div class="blog-sneaker-post-gallery__wrapper" data-blog-handle="{{ blog_handle }}">
-    {% assign blog = blogs[blog_handle].articles %}
-    <div class="blog-sneaker-post-gallery__articles">
-      {% for article in blog %}
-        {% liquid
-          assign is_highlighted = false
-          if highlight_first_article and forloop.first
-            assign is_highlighted = true
-          endif
-        %}
-        {% render 'blog--article', article: article, is_highlighted: is_highlighted %}
-      {% endfor %}
-    </div>
+  <div
+    class="blog-sneaker-post-gallery__wrapper"
+    data-blog-handle="{{ blog_handle }}"
+    data-total-articles-displayed="{{ total_articles_displayed }}"
+    data-total-articles-view-more="{{ total_articles_view_more }}"
+  >
+    {% if blog_handle != blank %}
+      {% assign blog = blogs[blog_handle].articles %}
+      <div class="blog-sneaker-post-gallery__articles">
+        {% for article in blog %}
+          {% liquid
+            assign is_highlighted = false
+            if highlight_first_article and forloop.first
+              assign is_highlighted = true
+            endif
+          %}
+          {% render 'blog--article',
+            article: article,
+            is_highlighted: is_highlighted,
+            index: forloop.index,
+            displayed_quantity: total_articles_displayed
+          %}
+        {% endfor %}
+      </div>
+    {% elsif articles %}
+      <div class="blog-sneaker-post-gallery__articles blog-by_published-at">
+        {% for article_handle in articles %}
+          {% liquid
+            assign article_info = article_handle | split: ',' | last
+            assign blog_handle = article_info | split: '/' | first
+            assign articles = blogs[blog_handle].articles
+            for blog in articles
+              if blog.handle == article_info
+                assign article = blog
+              endif
+            endfor
+
+            assign is_highlighted = false
+            if highlight_first_article and forloop.first
+              assign is_highlighted = true
+            endif
+          %}
+          {% render 'blog--article',
+            article: article,
+            is_highlighted: is_highlighted,
+            index: forloop.index,
+            displayed_quantity: total_articles_displayed
+          %}
+        {% endfor %}
+      </div>
+    {% endif %}
 
     <div class="blog-sneaker-post-gallery__newsletter">
       {% if newsletter_block %}
@@ -49,7 +87,47 @@
     </div>
 
     <div class="blog-sneaker-post-gallery__view-more">
-      <button class="blog-sneaker-post-gallery__view-more_btn">View More</button>
-    </div>
+  <button class="blog-sneaker-post-gallery__view-more_btn blog-sneaker-post-gallery__view-more_btn--more">View More</button>
+  <button class="blog-sneaker-post-gallery__view-more_btn blog-sneaker-post-gallery__view-more_btn--less" style="display:none;">See Less</button>
+</div>
   </div>
 </div>
+
+<script>
+  window.addEventListener('load', function () {
+    const viewMoreButton = document.querySelector('.blog-sneaker-post-gallery__view-more_btn--more');
+    const seeLessButton = document.querySelector('.blog-sneaker-post-gallery__view-more_btn--less');
+    const articles = document.querySelectorAll('.blog-sneaker-post-gallery__articles a');
+    const totalDisplayed = parseInt(
+      document.querySelector('.blog-sneaker-post-gallery__wrapper').dataset.totalArticlesDisplayed,
+      10
+    );
+    const viewMoreQuantity = parseInt(
+      document.querySelector('.blog-sneaker-post-gallery__wrapper').dataset.totalArticlesViewMore,
+      10
+    );
+    let displayedCount = totalDisplayed;
+
+    viewMoreButton.addEventListener('click', function () {
+      articles.forEach((article, index) => {
+        if (index >= displayedCount && index < displayedCount + viewMoreQuantity) {
+          article.style.display = 'grid';
+        }
+      });
+      displayedCount += viewMoreQuantity;
+      if (displayedCount >= articles.length) {
+        viewMoreButton.style.display = 'none';
+        seeLessButton.style.display = 'inline-block';
+      }
+    });
+
+    seeLessButton.addEventListener('click', function () {
+      articles.forEach((article, index) => {
+        article.style.display = index < totalDisplayed ? 'grid' : 'none';
+      });
+      displayedCount = totalDisplayed;
+      viewMoreButton.style.display = 'inline-block';
+      seeLessButton.style.display = 'none';
+    });
+  });
+</script>

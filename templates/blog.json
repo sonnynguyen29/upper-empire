@@ -72,8 +72,26 @@
       }
     },
     "blog_sneaker_post_gallery_DkcJ7w": {
-      "type": "blog--sneaker-post-gallery",
+      "type": "blog--post-latest-news",
       "blocks": {
+        "blog_jBF6Hy": {
+          "type": "blog",
+          "settings": {
+            "blog": "news"
+          }
+        },
+        "blog_FW7M8d": {
+          "type": "blog",
+          "settings": {
+            "blog": "sneaker-news"
+          }
+        },
+        "blog_Pb6LJL": {
+          "type": "blog",
+          "settings": {
+            "blog": "sneaker-releases"
+          }
+        },
         "newsletter_HUkziD": {
           "type": "newsletter",
           "settings": {
@@ -85,11 +103,13 @@
         }
       },
       "block_order": [
+        "blog_jBF6Hy",
+        "blog_FW7M8d",
+        "blog_Pb6LJL",
         "newsletter_HUkziD"
       ],
       "settings": {
         "heading": "Lastest News",
-        "blog": "sneaker-news",
         "highlight_first_article": true,
         "total_articles_displayed": 8,
         "tatal_articles_view_more": 5

@@ -59,9 +59,9 @@
                     <div class="overlay"></div>
                     <div class="event-info">
                         <h3>${event.name}</h3>
-                        <p><strong>Type:</strong> ${event.type}</p>
+                        {% comment %} <p><strong>Type:</strong> ${event.type}</p> {% endcomment %}
                         <p>${event.location.toUpperCase()} ● ${event.date}</p>
-                        <p>${event.description}</p>
+                        {% comment %} <p>${event.description}</p> {% endcomment %}
                     </div>
                 </a>
             `;

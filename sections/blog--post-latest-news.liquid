@@ -1,16 +1,32 @@
 {% liquid
   assign newsletter_block = section.blocks | where: 'type', 'newsletter' | first
-  assign blog_handle = section.settings.blog.handle | default: blog.handle 
+  assign blocks = section.blocks | where: 'type', 'blog'
+
+  assign article_published_at_array = ''
+  assign article_handles = ''
+  for block in blocks
+    assign articles = block.settings.blog.articles
+    assign article_handles = article_handles | append: block.settings.blog.handle | append: '|'
+
+    for article in articles
+      assign article_published_at_array = article_published_at_array | append: article.published_at | append: ',' | append: article.handle | append: '|' 
+    endfor
+  endfor
+  assign article_published_at_array = article_published_at_array | split: '|'
+  assign article_published_at_array = article_published_at_array | sort | reverse
+  assign article_handles = article_handles | split: '|'
 %}
 
-{% render 'blog--sneaker-post-gallery',
-  heading: section.settings.heading,
-  blog_handle: blog_handle,
-  highlight_first_article: section.settings.highlight_first_article,
-  total_articles_displayed: section.settings.total_articles_displayed,
-  total_articles_view_more: section.settings.tatal_articles_view_more
-  newsletter_block: newsletter_block
-%}
+<section>
+  {% render 'blog--sneaker-post-gallery',
+    heading: section.settings.heading,
+    articles: article_published_at_array
+    highlight_first_article: section.settings.highlight_first_article,
+    total_articles_displayed: section.settings.total_articles_displayed,
+    total_articles_view_more: section.settings.tatal_articles_view_more,
+    newsletter_block: newsletter_block
+  %}
+</section>
 
 {% schema %}
 {
@@ -20,11 +36,6 @@
       "type": "textarea",
       "id": "heading",
       "label": "Heading"
-    },
-    {
-      "type": "blog",
-      "id": "blog",
-      "label": "Blog"
     },
     {
       "type": "checkbox",
@@ -54,6 +65,17 @@
   ],
   "blocks": [
     {
+      "type": "blog",
+      "name": "Blog",
+      "settings": [
+        {
+          "type": "blog",
+          "id": "blog",
+          "label": "Select Blog"
+        }
+      ]
+    },
+    {
       "type": "newsletter",
       "name": "Newsletter",
       "settings": [
@@ -80,7 +102,8 @@
           "id": "image",
           "label": "Image"
         }
-      ]
+      ],
+      "limit": 1
     }
   ],
   "presets": [

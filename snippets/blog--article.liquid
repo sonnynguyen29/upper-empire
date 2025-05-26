@@ -19,6 +19,9 @@
 <a
   href="{{ article.url }}"
   class="{{ class_name }}"
+  {% if index > displayed_quantity %}
+    style="display: none;"
+  {% endif %}
 >
   <div class="blog-article__image">
     {{ article.image | image_url: width: 600 | image_tag: class: 'blog-article__image__img' }}
