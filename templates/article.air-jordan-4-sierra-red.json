@@ -1,0 +1,188 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/uo9e0isgg2syr7n50eua.png",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Air Jordan 4 \"Sierra Red\" Brings Subtle Fire to Spring 2026",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_WegVtG": {
+      "type": "blog--content",
+      "blocks": {
+        "text_cNLP9f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When neutral tones meet heat-level details, you get the <strong>Air Jordan 4 \"Sierra Red\"</strong> — a women’s exclusive built to flex quietly loud. Dropping early Spring 2026, this one’s for the girls who know the fit starts from the feet up.</p><h3></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cNLP9f"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bPQXXi": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_y8QNLG": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_G9A3zi": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Air Jordan 4 “Sierra Red”</h3><p><strong>Release Date:</strong> February 7, 2026</p><p><strong>Colorway</strong>: Pale Ivory / Sierra Red / Tough Red</p><p><strong>SKU</strong>: HV0823-108</p><p><strong>Retail Price:</strong> $215 USD / €210 / £195</p><p><strong>Sizing:</strong> Women’s exclusive</p><p><strong>Release Format: </strong>Expect raffles — not FCFS</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_bPQXXi",
+        "heading_y8QNLG",
+        "text_G9A3zi"
+      ],
+      "name": "Release Details 1",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/air-jordan-4-sierra-red-hv0823-108-2-1100x688.jpg"
+          }
+        },
+        "gallery_image_Yxty9p": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/air-jordan-4-sierra-red-hv0823-108-3-1100x688.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/air-jordan-4-sierra-red-hv0823-108-3.png"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_Yxty9p",
+        "gallery_image_X6tjKR"
+      ],
+      "name": "Sneaker gallery 1",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "text_Gikrfw": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>From Runway to Runway: Jordan 4 Goes Grown</h3><p>Jordan Brand’s cooking something sophisticated with this release. The \"Sierra Red\" rocks a Pale Ivory leather upper — soft on the eyes, easy on the outfit — with Sierra Red and Tough Red accents hitting the eyelets, mesh panels, and Jumpman logos. It’s the kind of colorway that looks luxe with sweats or a silk set. The classic AJ4 DNA’s still there: mesh ventilation, visible Air cushioning, molded wings — all wrapped in a mid-top frame that’s stood tall since ‘89.<br/></p>"
+          }
+        },
+        "image_ymFPrN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/air-jordan-4-sierra-red-hv0823-108-1.png",
+            "caption": ""
+          }
+        },
+        "text_TN6dqT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>But don’t get it twisted — this ain’t a shrink-it-and-pink-it job. Jordan Brand’s been on a tear with real-deal women’s exclusives, and this pair proves they know exactly what they’re doing.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Gikrfw",
+        "image_ymFPrN",
+        "text_TN6dqT"
+      ],
+      "settings": {}
+    },
+    "blog_content_DpgRzY": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_xMWpqb": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_jpYHzP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>👀 Word is, this will move fast. With the AJ4 wave still strong and women’s colorways heating up every drop season, don’t sleep.<br/><br/>Coppin’ or passin’? Sound off in the comments or tag us on IG with your on-foot shot!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_xMWpqb",
+        "text_jpYHzP"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_WegVtG",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_TYHkaF",
+    "blog_content_DpgRzY",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

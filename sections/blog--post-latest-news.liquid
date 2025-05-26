@@ -1,0 +1,93 @@
+{% liquid
+  assign newsletter_block = section.blocks | where: 'type', 'newsletter' | first
+  assign blog_handle = section.settings.blog.handle | default: blog.handle 
+%}
+
+{% render 'blog--sneaker-post-gallery',
+  heading: section.settings.heading,
+  blog_handle: blog_handle,
+  highlight_first_article: section.settings.highlight_first_article,
+  total_articles_displayed: section.settings.total_articles_displayed,
+  total_articles_view_more: section.settings.tatal_articles_view_more
+  newsletter_block: newsletter_block
+%}
+
+{% schema %}
+{
+  "name": "Blog Sneaker Post Gallery",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Blog"
+    },
+    {
+      "type": "checkbox",
+      "id": "highlight_first_article",
+      "label": "Highlight the first article"
+    },
+    {
+      "type": "range",
+      "id": "total_articles_displayed",
+      "label": "Total Articles Displayed",
+      "default": 3,
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "art"
+    },
+    {
+      "type": "range",
+      "id": "tatal_articles_view_more",
+      "label": "Total Articles Click View More",
+      "default": 3,
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "art"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Subscribe to our newsletter"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Get the latest updates on new products and upcoming sales"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Subscribe"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Sneaker Post Gallery",
+      "category": "Blog"
+    }
+  ]
+}
+{% endschema %}
