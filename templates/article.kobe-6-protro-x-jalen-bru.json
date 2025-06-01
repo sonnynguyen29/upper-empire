@@ -1,0 +1,203 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/nike-kobe-6-protro-jalen-brunson-IQ5774-300-1.webp",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Lady Liberty Laces Up: Kobe 6 Protro x Jalen Brunson Drops This Holiday",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_WegVtG": {
+      "type": "blog--content",
+      "blocks": {
+        "text_cNLP9f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When bronze turns blue and legends touch Liberty, you get the Kobe 6 Protro x Jalen Brunson ‘Statue of Liberty.’ First laced during the 2025 Eastern Conference Finals, this icy turquoise take lit up more than just the scoreboard — it set sneaker Twitter on fire.<br/></p><h3></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cNLP9f"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bPQXXi": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_y8QNLG": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_G9A3zi": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike Kobe 6 Protro Jalen Brunson Statue of Liberty</h3><p><strong>Release Date:</strong> Holiday 2025 (likely between October–December)</p><p><strong>Colorway</strong>: Hyper Turquoise/Metallic Copper</p><p><strong>SKU</strong>: IQ5774-300</p><p><strong>Retail Price:</strong> $190</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_bPQXXi",
+        "heading_y8QNLG",
+        "text_G9A3zi"
+      ],
+      "name": "Release Details 1",
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/upscalemedia-transformed_2.webp"
+          }
+        },
+        "gallery_image_Yxty9p": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/nike-kobe-6-protro-jalen-brunson-IQ5774-300-1.webp"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/upscalemedia-transformed_1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_Yxty9p",
+        "gallery_image_X6tjKR"
+      ],
+      "name": "Sneaker gallery 1",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "text_Gikrfw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The colorway is straight-up symbolism. A rich \"Hyper Turquoise\" upper mirrors the oxidized copper of the Statue of Liberty, that unmistakable green-blue fade seen from the harbor. Then come the accents: metallic copper on the Swoosh, heel counter, and Kobe shield. It's a nod to Lady Liberty's original bronze finish before time took the wheel.<br/></p>"
+          }
+        },
+        "image_ymFPrN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upscalemedia-transformed_1.webp",
+            "caption": ""
+          }
+        },
+        "text_TN6dqT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Let’s talk texture. That scaly upper isn’t just for looks — it's a signature Kobe 6 move, channeling that Mamba mentality with a snakeskin vibe. Underfoot, you’ve got Zoom Air cushioning for bounce and control, all wrapped in a marbled outsole that pulls the whole visual together.<br/></p>"
+          }
+        },
+        "image_My4Fwt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upscalemedia-transformed_2.webp",
+            "caption": ""
+          }
+        },
+        "text_nyYdG9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>But this isn’t just about looks. Originally cooked up as a player exclusive for Jalen Brunson, the hype around its playoff debut flipped the script. Nike took notice, and now we’re getting Brunson’s first retail drop with Kobe Brand. A sneaker with NYC roots and real court DNA.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Gikrfw",
+        "image_ymFPrN",
+        "text_TN6dqT",
+        "image_My4Fwt",
+        "text_nyYdG9"
+      ],
+      "settings": {}
+    },
+    "blog_content_DpgRzY": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_xMWpqb": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_jpYHzP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mark your calendar — the Kobe 6 Protro ‘Statue of Liberty’ lands Holiday 2025 for $190. Expect it to hit the SNKRS app, select boutiques, and likely come with that usual draw-day suspense.<br/><br/>Coppin’ or passin’? Sound off in the comments or tag us on IG with your on-foot shot!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_xMWpqb",
+        "text_jpYHzP"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_WegVtG",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_TYHkaF",
+    "blog_content_DpgRzY",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

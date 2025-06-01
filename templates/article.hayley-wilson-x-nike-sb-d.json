@@ -1,0 +1,250 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/upscalemedia-transformed.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Hayley Wilson x Nike SB Dunk Low: Australia’s Skate Star Goes Global in Court Purple Heat",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_WegVtG": {
+      "type": "blog--content",
+      "blocks": {
+        "text_cNLP9f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When grit meets greatness, you get the Hayley Wilson x Nike SB Dunk Low. This ain’t just another collab — it’s a full-circle moment for one of Australia’s finest, a skater who went from local ledges in Mansfield to the Olympic stage. Now, she’s lacing her story into a Dunk that drips with style, strength, and straight-up skate DNA.<br/></p><h3></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cNLP9f"
+      ],
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bPQXXi": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_y8QNLG": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_G9A3zi": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Nike SB Dunk Low Hayley Wilson</h3><p><strong>Release Date:</strong> 06/05/2025</p><p><strong>Colorway</strong>: Court Purple/Black-White-Lagoon Pulse-Doll</p><p><strong>SKU</strong>: HJ0513-500</p><p><strong>Retail Price:</strong> $135</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_bPQXXi",
+        "heading_y8QNLG",
+        "text_G9A3zi"
+      ],
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date.webp"
+          }
+        },
+        "gallery_image_Yxty9p": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-3.webp"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-1.webp"
+          }
+        },
+        "gallery_image_rY66zF": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-6.webp"
+          }
+        },
+        "gallery_image_jRV4gL": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-4.webp"
+          }
+        },
+        "gallery_image_RBxXrT": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-8.webp"
+          }
+        },
+        "gallery_image_cNRRhX": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-7.webp"
+          }
+        },
+        "gallery_image_ffaTJD": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-9.webp"
+          }
+        },
+        "gallery_image_xQmfCn": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-11.webp"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_Yxty9p",
+        "gallery_image_X6tjKR",
+        "gallery_image_rY66zF",
+        "gallery_image_jRV4gL",
+        "gallery_image_RBxXrT",
+        "gallery_image_cNRRhX",
+        "gallery_image_ffaTJD",
+        "gallery_image_xQmfCn"
+      ],
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "text_Gikrfw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This pair is pure personality. The upper flexes premium nubuck and leather, but it’s that Court Purple suede that commands attention. UV-reactive stitching? Yup, it switches color under sunlight. The Swoosh glows. The heel tabs morph. It's like your kicks got a secret life.<br/></p>"
+          }
+        },
+        "image_ymFPrN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-2.webp",
+            "caption": ""
+          }
+        },
+        "text_TN6dqT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wrap-around barbed wire embroidery brings that raw street energy, while Wilson’s signature phrase “You Reckon” hides under the tongue — Aussie slang turned style flex. The translucent sole reveals tattoo-inspired artwork, pulled straight from Hayley’s ink, with eight balls, spiders, and scorpions giving it that bite. Bonus: custom insoles and a turquoise tongue tag that screams, \"This is Hayley's house.\"<br/></p>"
+          }
+        },
+        "image_BLaNyh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-3.webp",
+            "caption": ""
+          }
+        },
+        "text_eqCXXb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Comfort? Locked in. With Zoom Air in the heel, memory foam pads, and tongue straps, it skates as hard as it stunts. Comes in a <strong>special purple SB box</strong> with <strong>re-sealable blind bags</strong> and <strong>three lace sets</strong> — teal, lavender, and turquoise. Swag switch-ups, all day.</p>"
+          }
+        },
+        "image_rVCKii": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hayley-wilson-nike-sb-dunk-low-release-date-10.webp",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_Gikrfw",
+        "image_ymFPrN",
+        "text_TN6dqT",
+        "image_BLaNyh",
+        "text_eqCXXb",
+        "image_rVCKii"
+      ],
+      "settings": {}
+    },
+    "blog_content_DpgRzY": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_xMWpqb": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_jpYHzP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mark your calendars and hit your local skate shop first — June 5 is the drop. SNKRS follows on June 7. Don’t sleep.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_xMWpqb",
+        "text_jpYHzP"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_WegVtG",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_TYHkaF",
+    "blog_content_DpgRzY",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

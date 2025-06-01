@@ -1,0 +1,222 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/upscalemedia-transformed_d3277e23-fe20-45d0-adf2-d47a0b92846a.jpg",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Air Jordan 4 \"Denim\": Streetwear's Favorite Silhouette Gets a Blue Jean Glow-Up",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_WegVtG": {
+      "type": "blog--content",
+      "blocks": {
+        "text_cNLP9f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Denim on denim ain't just a fit — it's a flex. Dropping August 9, the Air Jordan 4 \"Denim\" (IB6716-100) is Jordan Brand's latest textile twist, blending raw edge workwear vibes with the sneaker game’s most iconic shape. This women's-exclusive colorway takes the blueprint from past Levi’s collabs and runs it through a luxury-washed lens.<br/></p><h3></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cNLP9f"
+      ],
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bPQXXi": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_y8QNLG": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_G9A3zi": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Air Jordan 4 “Denim”</h3><p><strong>Release Date:</strong> August 9, 2025</p><p><strong>Colorway</strong>: Sail/Gum Light Brown/Worn Blue/Sail/Metallic Gold</p><p><strong>SKU</strong>: IB6716-100</p><p><strong>Retail Price:</strong> $215</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_bPQXXi",
+        "heading_y8QNLG",
+        "text_G9A3zi"
+      ],
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Denim-Air-Jordan-4-IB6716-100-1.jpg"
+          }
+        },
+        "gallery_image_Yxty9p": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Denim-Air-Jordan-4-IB6716-100-3.jpg"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/denim-jordan-4s-ib6716-100-5.webp"
+          }
+        },
+        "gallery_image_rY66zF": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Denim-Air-Jordan-4-IB6716-100.jpg"
+          }
+        },
+        "gallery_image_jRV4gL": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/denim-jordan-4s-ib6716-100-3.webp"
+          }
+        },
+        "gallery_image_RBxXrT": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/denim-jordan-4s-ib6716-100-1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_Yxty9p",
+        "gallery_image_X6tjKR",
+        "gallery_image_rY66zF",
+        "gallery_image_jRV4gL",
+        "gallery_image_RBxXrT"
+      ],
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "quote_NEWUfb": {
+          "type": "quote",
+          "settings": {
+            "quote_text": "<p>Photos: JD Sports UK</p>",
+            "quote_author": ""
+          }
+        },
+        "text_Gikrfw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This pair hits different with a two-tone denim upper — light blue on the inside, worn dark blue on the outside. Frayed edges, thick contrast stitching, and grid-style paneling nod to vintage jeans, while denim-wrapped wings and netting flip classic 4s into fabric-forward territory.<br/></p>"
+          }
+        },
+        "image_ymFPrN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Denim-Air-Jordan-4-IB6716-100-1.jpg",
+            "caption": ""
+          }
+        },
+        "text_TN6dqT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Peep the gold dubraes stamped with \"Family,\" and those gum toe and heel hits that balance the rugged with the refined. Even the Jumpman logos are stitched straight into the fabric, not slapped on. This ain't no cut-and-paste collab. It's built like selvedge.<br/></p>"
+          }
+        },
+        "image_yWC6bY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/denim-jordan-4s-ib6716-100-1.webp",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "quote_NEWUfb",
+        "text_Gikrfw",
+        "image_ymFPrN",
+        "text_TN6dqT",
+        "image_yWC6bY"
+      ],
+      "settings": {}
+    },
+    "blog_content_DpgRzY": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_xMWpqb": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_jpYHzP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mark your calendar, prep your rotation, and get that SNKRS trigger finger ready — these drop August 9.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_xMWpqb",
+        "text_jpYHzP"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_WegVtG",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_TYHkaF",
+    "blog_content_DpgRzY",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

@@ -1,0 +1,153 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/FsKbioQWYAADbcZ_1.png",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Could the Air Jordan 4 x Nike SB 'Black Pine Green' Finally Drop?",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_YPQjcR": {
+      "type": "blog--content",
+      "blocks": {
+        "text_pydUVr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When prototypes spark more heat than the actual release, you know something special’s brewing. The Nike SB x Air Jordan 4 \"Black Pine Green\" — a stealthy wear-test sample once thought lost to the vaults — might be sliding from myth to must-cop. And if the latest leaks are legit, we could be looking at 2025’s most hyped SB revival.</p>"
+          }
+        },
+        "horizontal_line_mErPp9": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "text_pydUVr",
+        "horizontal_line_mErPp9"
+      ],
+      "settings": {}
+    },
+    "blog_content_MhfBxX": {
+      "type": "blog--content",
+      "blocks": {
+        "text_pneMC9": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>From Backroom Test to Board-Ready Legend</h3>"
+          }
+        },
+        "text_WPUwqA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This ain't your average B-grade. The \"Black Pine Green\" first surfaced in 2022 as a covert prototype tested by skate legends Eric Koston and P-Rod. Its mission? Camouflage the final colorway while fine-tuning skate-specific tweaks. Think full-grain black suede for grip and grind, a rebuilt toe box from '89, and a forefoot stripped of Air for max board feel. Oh, and that heel tab? Early pairs rocked the Jumpman before Nike SB branding made the final cut.</p>"
+          }
+        },
+        "image_AhKERc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FsKbp5ZXsAA5fb6-pica.png",
+            "caption": ""
+          }
+        },
+        "text_3qCUMf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Twelve pairs allegedly leaked in late 2023 and hit private auctions for up to $12K. That kind of frenzy isn’t just resale greed — it’s reverence. Reddit threads and IG teases like @dropsbyleo’s \"COMING SOON?\" post have only turned up the volume. The streets are talking, and they’re saying: drop it already.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_pneMC9",
+        "text_WPUwqA",
+        "image_AhKERc",
+        "text_3qCUMf"
+      ],
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "image_Nxac7k": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FsKbioQWYAADbcZ_1.png",
+            "caption": ""
+          }
+        },
+        "text_bDbfGK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Word on the street is Nike’s weighing a few paths: a super-limited 50-pair Friends & Family drop like the \"Varsity Red,\" a skate shop-only exclusive echoing the 2023 \"Pine Green\" rollout, or a full-blown 2025 reimagined general release riding the wave of Jordan Brand’s 40th anniversary.</p>"
+          }
+        },
+        "horizontal_line_HUygpa": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Is this a must-cop or just concept-car cool? Drop your take below or join the flame war on our socials.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_Nxac7k",
+        "text_bDbfGK",
+        "horizontal_line_HUygpa",
+        "text_URDPWL"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_YPQjcR",
+    "blog_content_MhfBxX",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

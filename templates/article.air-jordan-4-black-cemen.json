@@ -1,0 +1,172 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/concept-air-jordan-4-black-cement-1.png",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "The Return of a Legend: Air Jordan 4 “Black Cement” Re-Releases with OG Swagger",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_WegVtG": {
+      "type": "blog--content",
+      "blocks": {
+        "text_cNLP9f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The sneaker that made history — and rewrote it. From buzzer-beaters to blockbuster cameos, the Air Jordan 4 “Black Cement” isn’t just a shoe; it’s a cultural artifact. And now, it’s back.<br/></p><h3></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cNLP9f"
+      ],
+      "name": "Description",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bPQXXi": {
+          "type": "horizontal_line",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "horizontal_line_bPQXXi"
+      ],
+      "name": "Release Details 1",
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "text_Gikrfw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Now, after decades of retros, tweaks, and debates over toe boxes and heel tabs, the “Black Cement” is back and truer to form than ever.<br/></p>"
+          }
+        },
+        "image_ymFPrN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/concept-air-jordan-4-black-cement-4.png",
+            "caption": ""
+          }
+        },
+        "text_TN6dqT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Design-wise, it stays faithful to its roots with a black nubuck upper, Cement Grey midsoles and eyelets, plus Fire Red accents. Nike Air branding is stamped on the heel, just like the OG.<br/></p>"
+          }
+        },
+        "image_UhQh3q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/concept-air-jordan-4-black-cement-2.png",
+            "caption": ""
+          }
+        },
+        "text_RRrUmQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Performance? Still built to ball or flex. The upper breathes, the overlays hold firm, and that late-'80s cushioning tech still holds its own whether you’re hitting the hardwood or the city streets.<br/></p>"
+          }
+        },
+        "image_YPb9J8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/concept-air-jordan-4-black-cement-1.png",
+            "caption": ""
+          }
+        },
+        "text_FXg3nW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What makes this fresh drop special is its respect for the original. It channels those 1989 vibes but tightens up the shape and materials—an evolution from the '99 and 2019 versions. It’s nostalgia, but elevated.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Gikrfw",
+        "image_ymFPrN",
+        "text_TN6dqT",
+        "image_UhQh3q",
+        "text_RRrUmQ",
+        "image_YPb9J8",
+        "text_FXg3nW"
+      ],
+      "settings": {}
+    },
+    "blog_content_DpgRzY": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_xMWpqb": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_jpYHzP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Coppin’ or passin’? Sound off in the comments or tag us on IG with your on-foot shot!<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_xMWpqb",
+        "text_jpYHzP"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_WegVtG",
+    "blog_content_bxMwhf",
+    "blog_content_TYHkaF",
+    "blog_content_DpgRzY",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}

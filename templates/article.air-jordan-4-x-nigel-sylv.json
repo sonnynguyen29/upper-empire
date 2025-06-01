@@ -1,0 +1,376 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog-hero-banner": {
+      "type": "blog--hero-banner",
+      "settings": {
+        "hero_banner_image": "shopify://shop_images/nigel-sylverster-air-jordan-1-low-og-nitro-black-IB8958-001-release-info.webp",
+        "enable_parallax": true
+      }
+    },
+    "blog-heading": {
+      "type": "blog--heading",
+      "settings": {
+        "custom_title": "Nigel Sylvester x Air Jordan: Brick by Brick, Fire Red, and Nitro — 2025's Triple Threat",
+        "heading_size": 32,
+        "heading_weight": "700"
+      }
+    },
+    "blog_content_WegVtG": {
+      "type": "blog--content",
+      "blocks": {
+        "text_cNLP9f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nigel Sylvester is back in the spotlight, dropping not one, but three fire collaborations with Jordan Brand in 2025. From the gritty streets of Queens to the global sneaker stage, Sylvester's latest releases—the Air Jordan 4 \"Brick by Brick\" restock, the upcoming \"Fire Red\" AJ4, and the debut of the Air Jordan 1 Low OG \"Nitro\"—are turning heads and setting trends.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cNLP9f"
+      ],
+      "settings": {}
+    },
+    "blog_image_gallery_mgjkJf": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_kJBkPq": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1411279_08_jpg.webp"
+          }
+        },
+        "gallery_image_FDnrLV": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/nigel-sylverster-air-jordan-1-low-og-nitro-black-IB8958-001-release-info-5.webp"
+          }
+        },
+        "gallery_image_kFBmWQ": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Nigel-Sylvester-Air-Jordan-4-Fire-Red-Release-Info_b270dfd5-8e08-412d-b8f0-2f572f075c2a.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_kJBkPq",
+        "gallery_image_FDnrLV",
+        "gallery_image_kFBmWQ"
+      ],
+      "name": "Blog Image Gallery",
+      "settings": {}
+    },
+    "blog_content_bxMwhf": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_bPQXXi": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_y8QNLG": {
+          "type": "heading",
+          "settings": {
+            "title": "Release Details",
+            "heading_size": 32
+          }
+        },
+        "text_G9A3zi": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Air Jordan 4 \"Brick by Brick\" (EU Restock)</h3><p><strong>On-sale</strong>: May 28, 2025</p><p><strong>Colorway</strong>: Firewood Orange/Sail</p><p><strong>SKU</strong>: HF4340-800</p><p><strong>MSRP</strong>: $225</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_bPQXXi",
+        "heading_y8QNLG",
+        "text_G9A3zi"
+      ],
+      "settings": {}
+    },
+    "blog_image_gallery_KVU3ca": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_cHQEpt": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1411279_08_jpg.webp"
+          }
+        },
+        "gallery_image_DRJnMP": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1411279_06_jpg.webp"
+          }
+        },
+        "gallery_image_X6tjKR": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/1411279_03_jpg.webp"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_cHQEpt",
+        "gallery_image_DRJnMP",
+        "gallery_image_X6tjKR"
+      ],
+      "settings": {}
+    },
+    "blog_content_RKxci9": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_MFfNqb": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_nGG84d": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Air Jordan 4 \"Fire Red\" </h3><p><strong>On-sale</strong>: Within 2025</p><p><strong>Colorway</strong>: Fire Red/Coconut Milk/White/Black</p><p><strong>SKU</strong>: N/A</p><p><strong>MSRP</strong>: N/A</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_MFfNqb",
+        "text_nGG84d"
+      ],
+      "settings": {}
+    },
+    "blog_image_gallery_ABmkGP": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_PPKLY3": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Nigel-Sylvester-Air-Jordan-4-Fire-Red-Release-Info.jpg"
+          }
+        },
+        "gallery_image_g3J4mE": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/https___hypebeast.com_image_2025_01_15_nigel-sylvester-air-jordan-4-fire-red-release-info-2-pica.png"
+          }
+        },
+        "gallery_image_dc93ee": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/Nigel-Sylvester-Air-Jordan-4-Fire-Red-Release-Info_b270dfd5-8e08-412d-b8f0-2f572f075c2a.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_PPKLY3",
+        "gallery_image_g3J4mE",
+        "gallery_image_dc93ee"
+      ],
+      "settings": {}
+    },
+    "blog_content_iwzhMM": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_NrbBLc": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_QgHtCq": {
+          "type": "text",
+          "settings": {
+            "text": "<h3> Air Jordan 1 Low OG \"Nitro\"</h3><p><strong>On-sale</strong>: August 2, 2025</p><p><strong>Colorway</strong>: Black/Muslin/Varsity Red</p><p><strong>SKU</strong>: IB8958-001</p><p><strong>MSRP</strong>: $150</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_NrbBLc",
+        "text_QgHtCq"
+      ],
+      "settings": {}
+    },
+    "blog_image_gallery_fd7aTt": {
+      "type": "blog--image-gallery",
+      "blocks": {
+        "gallery_image_ppt9GE": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/nigel-sylverster-air-jordan-1-low-og-nitro-black-IB8958-001-release-info-1.webp"
+          }
+        },
+        "gallery_image_jBXMFF": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/nigel-sylverster-air-jordan-1-low-og-nitro-black-IB8958-001-release-info-3.webp"
+          }
+        },
+        "gallery_image_ydLQNB": {
+          "type": "gallery_image",
+          "settings": {
+            "image": "shopify://shop_images/nigel-sylverster-air-jordan-1-low-og-nitro-black-IB8958-001-release-info-2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_image_ppt9GE",
+        "gallery_image_jBXMFF",
+        "gallery_image_ydLQNB"
+      ],
+      "settings": {}
+    },
+    "blog_content_btpML6": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_jh4wqp": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_wwtm88": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>🔥 Air Jordan 4 \"Brick by Brick\" Restock</h3><p>First released in March, the Nigel Sylvester x Air Jordan 4 \"Brick by Brick\" (HF4340-800) is back for a surprise EU restock on May 28. Inspired by the red-brick backdrop of Queens, this pair rocks a rich \"Firewood Orange\" nubuck upper that’s textured like Sylvester’s stomping grounds. You’ll spot a mini Swoosh on the forefoot, custom \"Bike Air\" heel branding, and even brick-patterned wrap paper in the box. Jordan Brand's EU-only move keeps the heat high and the scarcity real.</p>"
+          }
+        },
+        "image_mhLWNm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1411279_08_jpg.webp",
+            "caption": ""
+          }
+        },
+        "horizontal_line_dacDbx": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_7Pqfh4": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>🔥 Air Jordan 4 \"Fire Red\" – Holiday 2025</h3><p>The OG 1989 vibes are alive—but with a BMX twist. Dropping Holiday 2025, the Nigel Sylvester x Air Jordan 4 \"Fire Red\" updates the classic colorway with vintage-washed suede, white netting panels, and a spicy red mini Swoosh near the toe.<br/><br/>Sylvester's signature \"Bike Air\" branding hits the heel again, and \"GO\"-stamped insoles remind you to ride hard. First seen at a private F&F dinner with 15 matching fits, this pair blends retro drip with rider-ready attitude.</p>"
+          }
+        },
+        "image_LmCEYA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Nigel-Sylvester-Air-Jordan-4-Fire-Red-Release-Info_b270dfd5-8e08-412d-b8f0-2f572f075c2a.jpg",
+            "caption": ""
+          }
+        },
+        "horizontal_line_mhVXhz": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_64FE6N": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>🔥 Air Jordan 1 Low OG \"Nitro\"</h3><p>From F&F legend to general release, the \"Nitro\" finally hits shelves this August. The Nigel Sylvester x Air Jordan 1 Low OG \"Nitro\" (IB8958-001) borrows design DNA from his unreleased 2022 High sample—think black pebbled leather, distressed scuffs, and pre-yellowed midsoles that scream \"daily shredder.\"<br/><br/>At $150, this one’s an easy entry into Sylvester’s BMX-meets-streetwear world. Varsity Red outsoles, \"Bike Air\" tongue tags, and Queens-born attitude make it a no-brainer for both collectors and casuals.</p>"
+          }
+        },
+        "image_h4UtR6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/nigel-sylverster-air-jordan-1-low-og-nitro-black-IB8958-001-release-info.webp",
+            "caption": ""
+          }
+        },
+        "horizontal_line_V6b7cz": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "heading_aXBRca": {
+          "type": "heading",
+          "settings": {
+            "title": "The Bigger Picture",
+            "heading_size": 32
+          }
+        },
+        "text_G8q3Q3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sylvester's 2025 collaborations exemplify a nuanced approach to sneaker culture, balancing exclusivity with accessibility. The \"Brick by Brick\" restock addressed initial scarcity, while the \"Nitro\" Low brings a previously exclusive design to a broader audience. Meanwhile, the \"Fire Red\" AJ4 leverages Jordan Brand’s heritage to attract both purists and new fans.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_jh4wqp",
+        "text_wwtm88",
+        "image_mhLWNm",
+        "horizontal_line_dacDbx",
+        "text_7Pqfh4",
+        "image_LmCEYA",
+        "horizontal_line_mhVXhz",
+        "text_64FE6N",
+        "image_h4UtR6",
+        "horizontal_line_V6b7cz",
+        "heading_aXBRca",
+        "text_G8q3Q3"
+      ],
+      "settings": {}
+    },
+    "blog_content_TYHkaF": {
+      "type": "blog--content",
+      "blocks": {
+        "horizontal_line_kAtPa7": {
+          "type": "horizontal_line",
+          "settings": {}
+        },
+        "text_URDPWL": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>📣 Your Move</h2><p>Which pair are you most hyped for? Sound off in the comments or tag us on IG with your on-foot shots. Let’s see how you rock these!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_line_kAtPa7",
+        "text_URDPWL"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "template--article",
+      "disabled": true,
+      "settings": {
+        "article-sidebar-description": "",
+        "blog-sidebar-link": "",
+        "show_blog_tags": false,
+        "show_recent_posts": false,
+        "blog_show_date": false
+      }
+    },
+    "blog_comment_YY9CwA": {
+      "type": "blog--comment",
+      "settings": {}
+    },
+    "blog_recently_post_YYpqDc": {
+      "type": "blog--recently-post",
+      "settings": {
+        "title": "Related Post",
+        "blog": "sneaker-news",
+        "post_limit": 3
+      }
+    }
+  },
+  "order": [
+    "blog-hero-banner",
+    "blog-heading",
+    "blog_content_WegVtG",
+    "blog_image_gallery_mgjkJf",
+    "blog_content_bxMwhf",
+    "blog_image_gallery_KVU3ca",
+    "blog_content_RKxci9",
+    "blog_image_gallery_ABmkGP",
+    "blog_content_iwzhMM",
+    "blog_image_gallery_fd7aTt",
+    "blog_content_btpML6",
+    "blog_content_TYHkaF",
+    "main",
+    "blog_comment_YY9CwA",
+    "blog_recently_post_YYpqDc"
+  ]
+}
