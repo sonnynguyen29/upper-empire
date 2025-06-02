@@ -13,7 +13,8 @@
     <div class="hero-banner-video__wrapper">
       {{ section.settings.hero_banner_video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
       <div class="hero-banner-video__wrapper__logo">
-        <spline-viewer url="https://prod.spline.design/GM9GoQkhtmP2ggiI/scene.splinecode"></spline-viewer>
+         {{ section.settings.logo }}
+        
       </div>
     </div>
     <div class="hero-banner-video__overlay"></div>
@@ -104,6 +105,11 @@
 {
   "name": "About Hero Banner",
   "settings": [
+    {
+      "type": "html",
+      "id": "logo",
+      "label": "Logo",
+    },
     {
       "type": "image_picker",
       "id": "title_image",

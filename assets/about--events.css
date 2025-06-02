@@ -95,6 +95,13 @@
     width: 100%;
   }
 }
+.about--events .about--events__event-list__cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
 .about--events__event-list {
   padding: 0 8px;
   gap: 12px;
@@ -154,7 +161,7 @@
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   opacity: 0.5;
 }
-.about--events__event-list__view-more {
+.about--events__event-list__view-more, .about--events__event-list__see-less {
   font-weight: 700;
   font-size: 14px;
   text-align: center;

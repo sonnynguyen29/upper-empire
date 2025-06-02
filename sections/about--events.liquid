@@ -49,7 +49,10 @@
       </div>
       <hr>
 
-      <div class="about--events__event-list" id="latest-events-container"></div>
+      <div class="about--events__event-list__cover">
+        <div class="about--events__event-list" id="latest-events-container"></div>
+      </div>
+
       {% comment %}
         <div class="about--events__event-list">
           {% for event in event_list %}
@@ -79,7 +82,7 @@
         </div>
       {% endcomment %}
 
-      <button class="about--events__event-list__view-more">View More</button>
+      {% comment %} <button class="about--events__event-list__view-more">View More</button> {% endcomment %}
     </div>
   </div>
 </section>
@@ -116,15 +119,16 @@
       eventData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
       // Take top 4
-      let latestEvents = eventData.slice(0, 4);
+      //let latestEvents = eventData.slice(0, 4);
+      let latestEvents = eventData;
 
       const container = document.querySelector('#latest-events-container');
       container.innerHTML = '';
 
-      latestEvents.forEach((event) => {
+      latestEvents.forEach((event, index) => {
         console.log(event);
         const eventHTML = `
-          <a href="${event.page}">
+          <a href="${event.page}" style="${index >= 4 ? 'display: none;' : 'display: flex;'}">
             <div class="about--events__event-list__item">
               ${
                 event.thumbnail
@@ -153,6 +157,39 @@
         `;
         container.innerHTML += eventHTML;
       });
+
+      const eventListCoverEl = document.querySelector('.about--events__event-list__cover');
+
+      if (latestEvents.length > 4) {
+        const viewMoreButton = document.createElement('button');
+        viewMoreButton.className = 'about--events__event-list__view-more';
+        viewMoreButton.textContent = 'View More';
+        eventListCoverEl.appendChild(viewMoreButton);
+
+        const seeLessButton = document.createElement('button');
+        seeLessButton.className = 'about--events__event-list__see-less';
+        seeLessButton.textContent = 'See Less';
+        seeLessButton.style.display = 'none';
+        eventListCoverEl.appendChild(seeLessButton);
+
+        viewMoreButton.addEventListener('click', () => {
+          const hiddenEvents = container.querySelectorAll('a[style*="display: none;"]');
+          hiddenEvents.forEach((el) => {
+            el.style.display = 'flex';
+          });
+          viewMoreButton.style.display = 'none';
+          seeLessButton.style.display = 'inline-block';
+        });
+
+        seeLessButton.addEventListener('click', () => {
+          const allEvents = container.querySelectorAll('a');
+          allEvents.forEach((el, idx) => {
+            el.style.display = idx < 4 ? 'flex' : 'none';
+          });
+          viewMoreButton.style.display = 'inline-block';
+          seeLessButton.style.display = 'none';
+        });
+      }
     } catch (error) {
       console.error('Lỗi khi lấy dữ liệu sự kiện:', error);
     }
